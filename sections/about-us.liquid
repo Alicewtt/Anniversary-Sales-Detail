@@ -1,0 +1,39 @@
+
+<section class="aboutbanner" style="background-image: url('{{'about-banner.png' | asset_url}}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 m-auto">
+                <div class="about-main-content wow fadeIn" data-wow-duration="2s">
+                    <h2><img src="{{section.settings.logo | img_url : 'master'}}"></h2>
+                   {{section.settings.text2}}
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "about-us",
+    "settings": [
+{
+            "id": "logo",
+            "type": "image_picker",
+            "label": "Add image"
+          },
+
+        {
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add heading"
+          }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

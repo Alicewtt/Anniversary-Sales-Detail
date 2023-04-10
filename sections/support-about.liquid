@@ -1,0 +1,230 @@
+<section class="about-hozo-section">
+    <div class="container">
+        <div class="about-hozo-section-row">
+            {% if section.settings.image_banner  %}
+            <div class="about-hozo-section-col-12">
+              <img src="{{ section.settings.image_banner | img_url : 'master' }}">
+            </div>
+            {% endif %}
+            <div class="about-hozo-contant-col-12">
+              {% if section.settings.sub_title  %}
+                <div class="about-hozo-contant-col-4">
+                    <h2> {{ section.settings.title }}</h2>
+                </div> 
+              {% endif %}
+              {% if section.settings.title %}
+                <div class="about-hozo-contant-col-8"> 
+                {{ section.settings.sub_title }}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section> 
+
+<section class="spacer">
+  <div class="container">
+    <div class="about-hozo-date-inner">
+      <div class="support-about-hozo-section">
+          <div class="testi-user-img">
+            <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+
+                    {% for block in section.blocks %}
+                     {% if block.type == 'text' %}
+                        <div class="swiper-slide">
+                          <h1 class="u3">{{block.settings.year}}</h1>
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+                
+                </div>
+            </div>
+          </div>
+          <div class="user-saying">
+                <div class="swiper-container support-about-hozo-slider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper ">
+                            <!-- Slides -->
+
+                          {% for block in section.blocks %}
+                             {% if block.type == 'text' %}
+                                
+                                <div class="swiper-slide">
+                                  <div class="support-about-hozo-slider-row">
+                                    <div class="support-about-hozo-slider-col-4">
+                                        <div class="support-about-hozo-slider-col-4-left">
+                                          <img src="{{block.settings.news_img | img_url : '500x500'}}">
+                                        </div>
+                                    </div>
+                                    <div class="support-about-hozo-slider-col-8">
+                                        <div class="support-about-hozo-slider-col-4-right">
+                                          <h2>{{block.settings.title}}</h2>
+                                          <p>{{block.settings.description}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            
+                              {% endif %}
+                            {% endfor %}
+                           
+                      </div>
+                      <!-- If we need pagination -->
+                      <div class="swiper-pagination swiper-pagination-white"></div>
+                              
+                    </div>
+                  </div>
+        </div>
+         
+      </div>
+    <div class="about-shop-btn"><a href="{{ section.settings.shop_link }}">Shop HOZO Products</a></div>
+  </div>
+</section>
+
+ 
+ <section class="about-award-winning-team">
+   <div class="container">
+     <div class="measzor-top-heading">
+       <span>{{section.settings.award_title}}</span>
+     </div>
+      <div class="about-award-winning-team-row">
+        <div class="about-award-winning-team-col-12">
+           <div class="owl-carousel owl-theme award-winning-team-silder">
+
+             {% for block in section.blocks %}
+               {% if block.type == 'image' %}
+                 <div class="item">
+                    <div class="about-award-winning-team-silder-row">
+                      <div class="about-award-winning-team-col-12">
+                        <div class="award-winning-team-contant-col-12">
+                          <h1>{{block.settings.award_title}}</h1>
+                          <div class="award-winning-team-member-name">
+                              <p>{{block.settings.award_description}}</p>
+                              <p>{{block.settings.award_author}}</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="about-award-winning-team-col-12">
+                        <div class="award-winning-team-img-col-12">
+                          <img src="{{block.settings.award_image | img_url : 'master'}}">
+                        </div> 
+                      </div>
+                    </div>
+                  </div>
+              {% endif %}
+            {% endfor %}
+            
+          </div>  
+      </div>
+    </div>
+  </div>
+ </section>  
+
+                
+{% if section.settings.team_image %}
+ <section class="about-teams-images">
+   <div class="container">
+     <div class="about-teams-imagr-row">
+        <div class="about-teams-image-col">
+          <img src="{{ section.settings.team_image | img_url : 'master' }}">
+        </div>
+     </div>
+   </div>
+ </section>
+{% endif %}
+{% schema %} 
+  {
+"name": "Support About",
+   "settings": [
+       {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "html",
+          "id": "sub_title",
+          "label": "Subtitle"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_banner",
+          "label": "Image"
+        },
+        {
+         "type": "url",
+          "id": "shop_link",
+          "label": "Shop Link"
+        },
+        {
+          "type": "text",
+          "id": "award_title",
+          "label": "Award Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "team_image",
+          "label": "Team Image"
+        }
+     ],
+    "blocks": [{
+            "type": "text",
+            "name": "News",
+            "settings": [
+              {
+                "id": "news_img",
+                "type": "image_picker",
+                "label": "Image"
+              },
+              {
+                "id": "year",
+                "type": "text",
+                "label": "Add year"
+              },
+              {
+                "id": "title",
+                "type": "text",
+                "label": "Add title"
+              },
+              {
+                "id": "description",
+                "type": "textarea",
+                "label": "Add Description"
+              }
+          ]
+        },
+       {
+          "type": "image",
+          "name": "Award",
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "award_image",
+              "label": "Image"
+            },
+            {
+                "type": "textarea",
+                "id": "award_title",
+                "label": "Add title"
+              },
+              {
+                "type": "text",
+                "id": "award_description",
+                "label": "Add Description"
+              },
+              {
+                "type": "text",
+                "id": "award_author",
+                "label": "Author"
+              }
+          ]
+        }
+        
+      ],
+    "presets":[{
+       "name": "Support About",
+      "category": "Support About"
+  }]
+  }
+{% endschema %}

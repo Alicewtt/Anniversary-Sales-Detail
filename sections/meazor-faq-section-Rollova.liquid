@@ -1,0 +1,102 @@
+
+<section class="meazor-faq-section">
+  <div class="container">
+    
+    <div class="faq-section-inner">
+      <div class="measzor-top-heading">
+       <span>{{ section.settings.title }}</span>
+    </div>
+      <div class="dropdown_c dropdown_click">
+  <div class="selected">
+   <span><img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/Vector_11.png?v=1664804011"></span>
+  </div>
+  <div class="drop-content">
+    <ul>
+      <li>
+        <ul class="accordion-list">
+                    
+  {% for block in section.blocks %} 
+
+  <li>
+    <h3>{{ block.settings.qustion }}</h3>
+    <div class="answer">
+    {{ block.settings.answer }}
+
+    </div>
+  </li>
+
+{% endfor %}
+          
+        </ul>
+      </li>
+     
+        
+      </li>
+    </ul>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="more-specs-section">
+  <div class="container">
+    <div class="more-specs-section-inner">
+      <a href="{{ section.settings.button_url }}">{{ section.settings.Button_title }}<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+"name": "meazor-faq-section",
+   "settings": [
+       {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+       {
+      "type": "image_picker",
+      "id": "Vector_image",
+      "label": "Vector Image"
+    },
+   {
+      "type": "text",
+      "id": "Button_title",
+      "label": "Button Title"
+    },
+      {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button Url"
+    }
+     
+ ],
+       "blocks": [
+     {
+       "name": "FAQ",
+       "type": "FAQ",
+       "settings": [
+         {
+           "type": "text",
+           "id": "qustion",
+           "label": "Qustion"
+         },
+           {
+           "type": "html",
+           "id": "answer",
+           "label": "Answer"
+         }
+       ]
+     }
+  ],
+"presets":[{
+ "name": "meazor-faq-section",
+"category": "meazor-faq-section"
+
+}]
+  }
+{% endschema %}

@@ -1,0 +1,45 @@
+   <section class="technology-section">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-10 m-auto text-center">
+                   <div class="technology-content wow fadeIn" data-wow-duration="2s">
+                       <h2>{{section.settings.text1}}</h2>
+                       {{section.settings.text2}}
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+{% schema %}
+  {
+    "name": "Home-technology",
+    "settings": [
+
+        {
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add heading"
+          },
+         {
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add paragraph"
+          }
+
+],
+
+"presets":[{
+ "name": "home-technology",
+"category": "Custom Content"
+
+}]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

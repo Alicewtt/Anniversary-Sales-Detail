@@ -1,0 +1,125 @@
+
+<section class="hozo_drawingmd">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="hozo__drawing-cnt">   
+                    <h2>{{section.settings.text1}}</h2>
+                    <p>{{section.settings.text2}}</p>
+                </div> 
+            </div>
+            <div class="col-md-6">
+                <div class="hozo__drw-imright">   
+                    <img src="{{section.settings.img1 | img_url : 'master'}}">
+                </div> 
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hozo_listmode">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="hozo__drawing-img">   
+                    <img src="{{section.settings.img2 | img_url : 'master'}}" class="hozo__listmode-desktop">
+                    <img src="{{section.settings.img3 | img_url : 'master'}}" class="hozo__listmode-mobile">
+                </div> 
+            </div>
+            <div class="col-md-6">
+                <div class="hozo__drawing-cnt cork__pdlmore">   
+                    <h2>{{section.settings.text3}}</h2>
+                    <p>{{section.settings.text4}}</p>
+                </div> 
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hozo_photodim">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="hozo__drawing-cnt">   
+                    <h2>{{section.settings.text5}}</h2>
+                    <p>{{section.settings.text6}}</p>
+                </div> 
+            </div>
+            <div class="col-md-6">
+                <div class="hozo__photo-img">   
+                    <img src="{{section.settings.img4 | img_url : 'master'}}">
+                </div> 
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Product-info-5",
+    "settings": [
+ {
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add text"
+          },
+ {
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add text"
+          },
+{
+            "id": "img1",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+
+{
+            "id": "img2",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+{
+            "id": "img3",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+
+ {
+            "id": "text3",
+            "type": "textarea",
+            "label": "Add text"
+          },
+ {
+            "id": "text4",
+            "type": "textarea",
+            "label": "Add text"
+          },
+
+ {
+            "id": "text5",
+            "type": "textarea",
+            "label": "Add text"
+          },
+ {
+            "id": "text6",
+            "type": "textarea",
+            "label": "Add text"
+          },
+{
+            "id": "img4",
+            "type": "image_picker",
+            "label": "Add Image"
+          }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

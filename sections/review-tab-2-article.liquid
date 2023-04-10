@@ -1,0 +1,54 @@
+
+    		
+
+
+
+
+{% for block in section.blocks %}
+<div class="col-md-3">
+<!--     				<div class="artical-main text-center">
+    					<div class="artical-image">
+    					    <img src="{{'Archdaily-Logo.png'}}">
+    					</div>
+    					<p>“This Compact "Rolling Ruler" Seeks to Change how Architects Measure”</p>
+    					<a href="https://www.archdaily.com/911299/this-compact-rolling-ruler-seeks-to-change-how-architects-measure " class="read">Read The Full Article</a>
+    				</div> -->
+    			</div>
+{% endfor %}
+{% schema %}
+  {
+    "name": "review-tab-2-article",
+    "settings": [],
+ "blocks": [
+      {
+        "type": "text",
+        "name": "article",
+        "settings": [
+
+         
+            {
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add title"
+          },
+           {
+            "id": "text2",
+            "type": "text",
+            "label": "Add short description"
+          },
+          {
+            "id": "url1",
+            "type": "url",
+            "label": "Add button url"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

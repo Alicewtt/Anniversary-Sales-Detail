@@ -1,0 +1,57 @@
+<section class="artical">
+    	<div class="container">
+    		<div class="top-bar">
+    			<h2>ARTICLES</h2>
+    		</div>
+<div class="row mt-5">
+{% for block in section.blocks %}
+<div class="col-md-3">
+                 
+    				<div class="artical-main text-center wow fadeInUp" data-wow-duration="2s">
+    					<h2>{{block.settings.text1}}</h2>
+    					<p>{{block.settings.text2}}</p>
+    					<a href="{{block.settings.url1}}" class="read">Read The Full Article</a>
+    				</div>
+    			</div>
+{% endfor %}
+</div>
+          </div>
+    	
+    </section>
+{% schema %}
+  {
+    "name": "review-tab-1-article",
+    "settings": [],
+ "blocks": [
+      {
+        "type": "text",
+        "name": "article",
+        "settings": [
+
+         
+            {
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add title"
+          },
+           {
+            "id": "text2",
+            "type": "text",
+            "label": "Add short description"
+          },
+          {
+            "id": "url1",
+            "type": "url",
+            "label": "Add button url"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

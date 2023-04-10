@@ -1,0 +1,76 @@
+ <section class="our-products">
+       <div class="container">
+        <div class="section-title">
+            <h2>{{section.settings.text1}}</h2>
+        </div>
+           <div class="row">
+              {% for block in section.blocks %}
+             {%- assign product = all_products[block.settings.bproduct] -%}
+
+                  <div class="col-md-4">
+                      <div class="Product-card wow fadeInUp" data-wow-duration="2s">
+                          <div class="Product-icon">
+                              <img src="{{product.featured_image | img_url : 'master'}}">
+                          </div>
+                          <div class="Product-details">
+                            <h2>{{product.title}}</h2>
+                              <p>{{block.settings.text1}}</p>
+                            <div class="shopnow-btn">
+                                <a href="{{product.url}}">Shop Now</a>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+             {% endfor %}
+                
+                  
+           </div>
+       </div>
+   </section>
+
+
+{% schema %}
+ {
+   "name": "home-best-seller",
+   "settings": [
+    {
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add heading"
+          }    
+ ],
+ "blocks": [
+      {
+        "type": "text",
+        "name": "product",
+        "settings": [
+          
+          {
+            "id": "bproduct",
+            "type": "product",
+            "label": "Add product"
+          },
+         {
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add short text"
+          }
+        ]
+      }
+    ],
+
+
+"presets":[{
+ "name": "home-best-seller",
+"category": "Custom Content"
+
+}]
+
+ }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

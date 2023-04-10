@@ -1,0 +1,172 @@
+{
+  "sections": {
+    "main": {
+      "type": "tech-section",
+      "blocks": {
+        "500b7cd4-c26d-420d-8b7b-893856697948": {
+          "type": "first",
+          "settings": {
+            "txt1": "MEAZOR APP 2.0",
+            "url1": "<p>Android 6.0 or above and requires minimum 4GB ram. iOS 13 or above. Adapt to Connection protocol: Bluetooth 4.0 wireless connection.<\/p>"
+          }
+        },
+        "99d91095-a501-4f63-a00b-1142a264c23c": {
+          "type": "first",
+          "settings": {
+            "txt1": "Laser Distance",
+            "url1": "<p>- Measure range: 0.3feet-82feets (0.1m-25m).<\/p>\n                                            <p>- Resolution: 0.04inch(1mm)<\/p>\n                                            <p>- Accuracy: +-0.12inch (+-2mm) in ideal circumstance.*<\/p>\n                                            <span>*Non-ideal circumstances such as outdoor with strong light, or under the bad reflective surface, the error will be superimposed with maximum +- 1‰ of the measurement distance.<\/span>"
+          }
+        },
+        "27f1b6a2-35ba-4a4f-b9b2-523249761627": {
+          "type": "first",
+          "settings": {
+            "txt1": "Scale Rolling Ruler",
+            "url1": "<p><strong>Range:<\/strong> 0-300feets (0-99meters)<\/p>\n                                            <p><strong>Resolution:<\/strong> 0.5mm<\/p>\n                                            <p><strong>Accuracy:<\/strong> ±1mm or ±0.2% <\/p>\n                                            <p>in ideal circumstances. **<\/p>\n                                            <span>**Non-ideal circumstances: The accuracy decreases on slippery, uneven, soft, curved surfaces. Inclination, misalignment and other human error factors will also affect the measurement accuracy.<\/span>"
+          }
+        },
+        "8fb313ca-62c8-4ae8-ba6e-b7000ef57329": {
+          "type": "first",
+          "settings": {
+            "txt1": "***Non-ideal Circumstances",
+            "url1": "<p>*Non-ideal circumstances such as outdoor with strong light, or under the bad reflective surface, the error will be superimposed with maximum +- 2‰ of the measurement distance.<\/p>"
+          }
+        },
+        "ecca96fd-ff90-497b-886f-d3b7143e2ad7": {
+          "type": "first",
+          "settings": {
+            "txt1": "Scales Measure",
+            "url1": "<p>Support 4 built-in scale modes with 57 scales in total<\/p>\n                                                <ul class=\"list-inline\">\n                                                    <li>- Metric Architecture<\/li>\n                                                    <li>- Metric Engineering<\/li>\n                                                    <li>- US Architecture<\/li>\n                                                    <li>- US Engineering<\/li>\n                                                <\/ul>"
+          }
+        },
+        "a98f3d57-41c9-469c-9e0c-e86dc81be23a": {
+          "type": "first",
+          "settings": {
+            "txt1": "2D Floor Plan Scanning",
+            "url1": "<p><strong>Measuring Range:<\/strong> maximum room \n                                           <br> size:114×114feet (12900feet²) or<br> 35m×35m (1200m²).\n                                            <\/p><p><b>Accuracy:<\/b> ±1in (±25mm) <br>\nin ideal circumstances* <\/p>"
+          }
+        },
+        "4f16edfb-eba4-4568-9e7f-0a5ad74d119a": {
+          "type": "first",
+          "settings": {
+            "txt1": "Curve Scanning",
+            "url1": "<p>Maximum Curve Length(start point-endpoint): 82feets(25 meters)\n                                                <\/p><p>Angle Resolution : 1.0°, Length Resolution: 0.04inch(+-1mm)\n                                                <\/p>"
+          }
+        },
+        "031a0b7c-6aab-4cbb-b273-6817b02c1fad": {
+          "type": "first",
+          "settings": {
+            "txt1": "Level",
+            "url1": "<p>Range: Dual axis ±90°\n                                                Resolution: 0.1°\n                                                Accuracy: ±0.2°at 0° ~45°. ±0.4° at other angles<\/p>"
+          }
+        },
+        "ff0c0632-3429-499e-8238-d27789bd1a20": {
+          "type": "first",
+          "settings": {
+            "txt1": "Protractor",
+            "url1": "<p>-Pythagorean mode with triangle third-side and area calculation.\n                                                -Area mode with rectangular area calculation.\n                                                -Export drawing to apps<\/p>"
+          }
+        },
+        "291ac65e-657d-4989-9012-9af3082d43f5": {
+          "type": "first",
+          "settings": {
+            "txt1": "Pro-Laser",
+            "url1": "<p>-Pythagorean mode with triangle third-side and area calculation.\n                                                -Area mode with rectangular area calculation.\n                                                -Export drawing to apps<\/p>"
+          }
+        },
+        "b91a428b-55d2-410a-9931-bffb7d1a3ccc": {
+          "type": "first",
+          "settings": {
+            "txt1": "Support Units",
+            "url1": "<p>- General Measure: inch, foot, yard, mm, cm, meter<\/p>\n                                            <p>- Large Scale Measure: inch, foot, yard, miles, mm, cm, meter, km<\/p>"
+          }
+        },
+        "1e32f6ed-a51d-48c0-8815-437da3668756": {
+          "type": "two",
+          "settings": {
+            "txt1": "Display",
+            "url1": "<p>1.3-inch diagonal IPS-backlit display, 240×240 resolution at 184 PPI.<\/p>\n                                            <p>Covered with tempered glass capacitive touch screen.<\/p>"
+          }
+        },
+        "cd3919ff-b6a4-4127-903b-a697be221fcc": {
+          "type": "two",
+          "settings": {
+            "txt1": "Battery",
+            "url1": "<p>Built-in 650 mAh lithium‑polymer battery. <br>\n                                                Support 5V -1A USB-C Port Charging. <br>\n                                                *DO NOT support fast charging protocol adapter.<\/p>"
+          }
+        },
+        "d6700880-9fb3-431a-b8a7-4c87c1fa4d39": {
+          "type": "two",
+          "settings": {
+            "txt1": "Battery Life",
+            "url1": "<p>- 30 days battery life in stand-by mode<\/p>\n                                            <p>- 6 hours continuous use under comprehensive power consumption.<\/p>\n                                            <p>- 0.75 hours continuous use under maximum power consumption.<\/p>"
+          }
+        },
+        "237e6143-31fd-4994-ac57-d4d5ef9b6475": {
+          "type": "two",
+          "settings": {
+            "txt1": "Support Units",
+            "url1": "<p>- General Measure: inch, foot, yard, mm, cm, meter<\/p>\n                                            <p>- Large Scale Measure: inch, foot, yard, miles, mm, cm, meter, km<\/p>"
+          }
+        },
+        "ada21c71-b4c6-41cb-9621-d3407a09a47c": {
+          "type": "two",
+          "settings": {
+            "txt1": "Operating Environment",
+            "url1": "<p><strong>Operating temperature<\/strong> <br>\n                                                50° to 95° F (10° to 35° C)<br>\n                                                <strong>Relative humidity<\/strong> <br>\n                                                0% to 90% noncondensing<\/p>"
+          }
+        },
+        "45c6805b-c8d6-4b00-a67b-52f1d6e35508": {
+          "type": "two",
+          "settings": {
+            "txt1": "Laser",
+            "url1": "<div class=\"bottom-section w-100 d-flex\">\n                                                <figure class=\"mb-0\">\n                                                    <img src=\"\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/t\/21\/assets\/caution.svg?v=128491250521187484951663869724\" class=\"img-fluid\" alt=\"caution\">\n                                                <\/figure>\n                                                <div class=\"paragraph text-start\">\n                                                    <p>CAUTION: :Laser Radiation<\/p>\n                                                    <p> Not Stare into Beam<\/p>\n                                                    <p>Please keep away from children<\/p>\n                                                <\/div>\n                                            <\/div>"
+          }
+        },
+        "e6d0830d-0570-4a36-ba61-9e1770068ff1": {
+          "type": "slider",
+          "settings": {
+            "img1": "shopify:\/\/shop_images\/MEAZOR-1.png"
+          }
+        },
+        "1467b424-0f0a-4f5b-a0c2-2c44e22be76e": {
+          "type": "slider",
+          "settings": {
+            "img1": "shopify:\/\/shop_images\/MEAZOR-2.png"
+          }
+        }
+      },
+      "block_order": [
+        "500b7cd4-c26d-420d-8b7b-893856697948",
+        "99d91095-a501-4f63-a00b-1142a264c23c",
+        "27f1b6a2-35ba-4a4f-b9b2-523249761627",
+        "8fb313ca-62c8-4ae8-ba6e-b7000ef57329",
+        "ecca96fd-ff90-497b-886f-d3b7143e2ad7",
+        "a98f3d57-41c9-469c-9e0c-e86dc81be23a",
+        "4f16edfb-eba4-4568-9e7f-0a5ad74d119a",
+        "031a0b7c-6aab-4cbb-b273-6817b02c1fad",
+        "ff0c0632-3429-499e-8238-d27789bd1a20",
+        "291ac65e-657d-4989-9012-9af3082d43f5",
+        "b91a428b-55d2-410a-9931-bffb7d1a3ccc",
+        "1e32f6ed-a51d-48c0-8815-437da3668756",
+        "cd3919ff-b6a4-4127-903b-a697be221fcc",
+        "d6700880-9fb3-431a-b8a7-4c87c1fa4d39",
+        "237e6143-31fd-4994-ac57-d4d5ef9b6475",
+        "ada21c71-b4c6-41cb-9621-d3407a09a47c",
+        "45c6805b-c8d6-4b00-a67b-52f1d6e35508",
+        "e6d0830d-0570-4a36-ba61-9e1770068ff1",
+        "1467b424-0f0a-4f5b-a0c2-2c44e22be76e"
+      ],
+      "settings": {
+        "txt1": "functions",
+        "url1": "https:\/\/hozodesign.com\/products\/meazor",
+        "txt2": "hardware",
+        "url2": "https:\/\/hozodesign.com\/products\/meazor",
+        "txt3": "MEAZOR",
+        "url3": "https:\/\/hozodesign.com\/products\/meazor"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -1,0 +1,96 @@
+<section class="speces">
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="New-specs">
+                    <div class="specs-main">
+                        <div class="spcs-left">
+                            <h4>ROLLOVA 2.0</h4>
+                        </div>
+                        <div class="specs-right">
+                            <div class="Material-content">
+                                <div class="Material-imag">
+                                  <img src="{{ section.settings.img1 | img_url : 'master'}}" alt="">
+                                </div>
+                                <div class="Material-imag">
+                                  <img src="{{ section.settings.img2 | img_url : 'master'}}" alt="">
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                      {% for block in section.blocks %}
+                    <div class="specs-main">
+                        <div class="spcs-left">
+                            <h4>{{block.settings.text1}}</h4>
+                        </div>
+                        <div class="specs-right">
+                         {{block.settings.text2}}
+                        
+                        </div>
+                    </div>
+                  {% endfor %}
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+            </div>
+        </div>
+      </div>
+      {{ page.metafields.global.details.value }}
+    </section>
+
+
+
+
+{% schema %}
+  {
+    "name": "rollova-2.0.0-spec",
+    "settings": [
+ {
+            "id": "img1",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+{
+            "id": "img2",
+            "type": "image_picker",
+            "label": "Add Image"
+          }
+
+
+],
+"blocks": [
+      {
+        "type": "text",
+        "name": "section",
+        "settings": [
+          {
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add Heading"
+          },
+          {
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add Paragraph"
+          }
+
+
+       
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

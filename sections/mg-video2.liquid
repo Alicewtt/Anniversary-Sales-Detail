@@ -1,0 +1,51 @@
+<section class="video-section video-section-one">
+  <div class="video-main">
+      <div class="video-bg-img">
+       <img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/preview_background-min.png?v=1672801789" class="img-fluid">
+      </div>
+      <div class="video-text">
+            <div class="video-inner">
+              <p>{{ section.settings.txt }}</p>
+            </div>
+         <div class="video-button3">
+           <a href="javascript:void(0)">{{ section.settings.txt2 }}<i class="fa fa-play"></i></a>
+         </div>
+      </div>
+
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Meazor-video",
+    "settings": [
+
+       {
+            "id": "txt",
+            "type": "textarea",
+            "label": "Add text",
+            "default": "Enhance Your Measuring Experience with MEAZOR Accessories"
+          },
+        {
+            "id": "txt2",
+            "type": "textarea",
+            "label": "Add button text",
+            "default": "Watch the film"
+          }
+       
+      
+    ],
+        "presets":[{
+ "name": "Meazor-video2",
+"category": "Custom Content"
+
+}]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

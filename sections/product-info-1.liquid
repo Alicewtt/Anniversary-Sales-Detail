@@ -1,0 +1,119 @@
+<div class="hozo__menzorhed">
+
+    <img src="{{section.settings.img1 | img_url : 'master'}}">
+</div>
+
+<section class="hozo__prd-compactbg" style="background:url('{{section.settings.img2 | img_url : 'master'}}');">
+    <h3>{{section.settings.text1}}</h3>
+</section>
+
+<section class="hozo_3dcoloum">
+    <div class="container">
+        <div class="hozo_Ferocioushed"><img src="{{section.settings.img3 | img_url : 'master'}}"></div>
+    
+        <div class="row">
+            <div class="col-md-6">
+                <div class="hozo__3dfirst" style="background:url('{{section.settings.img4 | img_url : 'master'}}');">
+                    <h3>{{section.settings.text01}}</h3>
+                    <div class="hozo__btnsection-3d">
+                        <img src="{{'3d-1.svg' | asset_url}}">
+                        <p>{{section.settings.text2}}</p>
+                    </div>
+                </div>
+                <div class="corl__3dmobile--div"> 
+                    <h4>{{section.settings.text3}}</h4>
+                </div>   
+            </div>
+            <div class="col-md-6">
+                <div class="hozo__3dfirst" style="background:url('{{section.settings.img5 | img_url : 'master'}}');">
+                    <h3>{{section.settings.text4}}</h3>
+                    <div class="hozo__btnsection-3d">
+                        <img src="{{'3d-2.svg' | asset_url }}">
+                        <p>{{section.settings.text5}}</p>
+                    </div>
+                </div>
+                <div class="corl__3dmobile--div"> 
+                    <h4>{{section.settings.text6}}</h4>
+                </div>    
+            </div>            
+        </div>
+    </div> 
+</section>
+
+
+{% schema %}
+  {
+    "name": "product-info-1",
+    "settings": [
+
+ {
+            "id": "img1",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+ {
+            "id": "img2",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+ {
+            "id": "img3",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+ {
+            "id": "img4",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+{
+            "id": "img5",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+ {
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add text"
+          },
+ {
+            "id": "text01",
+            "type": "textarea",
+            "label": "Add text",
+            "default":"3D Tilt Mode"
+          },
+ {
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add text"
+          },
+ {
+            "id": "text3",
+            "type": "textarea",
+            "label": "Add text"
+          },
+ {
+            "id": "text4",
+            "type": "textarea",
+            "label": "Add text"
+          },
+ {
+            "id": "text5",
+            "type": "textarea",
+            "label": "Add text"
+          },
+ {
+            "id": "text6",
+            "type": "textarea",
+            "label": "Add text"
+          }
+
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

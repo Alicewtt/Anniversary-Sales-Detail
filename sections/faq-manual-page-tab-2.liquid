@@ -1,0 +1,77 @@
+
+ <section class="appdoanload-inner-wraper">
+            <div class="container">
+                <div class="appdoanload-inner">
+                    <div class="appdoanloadbox text-center">
+                        <div class="appdoanload-icon"> <img src="{{section.settings.img1 | img_url : 'master'}}"></div>
+                        <div class="appdoanload-menu">
+                            <ul>
+                              {% for block in section.blocks %}
+                                <li><a href="{{block.settings.url1}}">{{block.settings.text1}}</a></li>
+                              {% endfor %}
+                                
+                            </ul>
+                        </div>
+                        <div class="aap-icon">
+                            <ul>
+                                <li><a href="{{section.settings.url11}}"><img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/app-store.png?v=1638597203"></a></li>
+                                <li><a href="{{section.settings.url12}}"><img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/google-app-store.png?v=1638597203"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+{% schema %}
+  {
+    "name": "Image-content(for tab-2)",
+    "settings": [
+
+  {
+            "id": "img1",
+            "type": "image_picker",
+            "label": "Add image"
+          },
+{
+            "id": "url11",
+            "type": "url",
+            "label": "Add url (Android app store)"
+          },
+{
+            "id": "url12",
+            "type": "url",
+            "label": "Add url (Apple app store)"
+          }
+
+
+],
+"blocks": [
+      {
+        "type": "text",
+        "name": "text",
+        "settings": [
+          
+          {
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add text"
+          },
+         {
+            "id": "url1",
+            "type": "url",
+            "label": "Add url"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

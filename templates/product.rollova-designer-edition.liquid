@@ -1,0 +1,376 @@
+{% section 'product-buyNowTemp' %}
+{% comment %}
+<section class="rolovo-banner bg-black probanner review-banner wvt-rollova-designer-edition-vx ">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                    <!--<div class="proimage">-->
+                    <!--    <img data-swift-lazy=1 loading=lazy src="{{'fp-1.png' | asset_url}}">-->
+                    <!--</div>-->
+                <div class="product-slider wow fadeInLeft" data-wow-duration="2s">
+                     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                      <div class="carousel-inner">
+                        
+                      {%for image in product.images%}
+
+                        <div class="carousel-item {% if forloop.index0 == 0 %}active{% endif %}">
+                         <img data-swift-lazy=1 loading=lazy  src="{{image |  img_url: 'master' }}" alt="First slide">
+                      </div>
+                 {% endfor %}           
+                        
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+                  
+                    <div class="new-product" style="display:none">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+      {%for image in product.images%}
+    <div class="carousel-item {% if forloop.index0 == 0 %}active{% endif %}" data-slide-number="{{forloop.index0}}">
+      <img data-swift-lazy=1 loading=lazy src="{{image |  img_url: 'master' }}" class="d-block w-100" alt="..." data-remote="https://source.unsplash.com/Pn6iimgM-wo/" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+    </div>
+    {% endfor %}
+   
+  </div>
+</div>
+
+<!-- Carousel Navigation -->
+<div id="carousel-thumbs" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row mx-0">
+         {%for image in product.images%}
+        <div id="carousel-selector-{{forloop.index0}}" class="thumb col-4 col-sm-2 px-1 py-2 {% if forloop.index0 == 0 %}selected{% endif %}" data-target="#myCarousel" data-slide-to="{{forloop.index0}}">
+          <img data-swift-lazy=1 loading=lazy src="{{image |  img_url: 'master' }}" class="img-fluid" alt="...">
+        </div>
+        {% endfor %}
+
+       
+      </div>
+    </div>
+    
+  </div>
+  <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+                  </div>
+              </div>
+                
+                </div>
+              <div class="col-md-6">
+                  <div class="meazor-promain wow fadeInRight" data-wow-duration="2s">
+                     <div class="meazor-detail">
+                         <h2>{{product.title}}</h2>
+                         <span class="price-span">{{product.price | money}}</span>
+                	 <form>
+                	<div class="qty">
+                	  <span class="minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+
+                   <input id="quantity" class="evt_qty wtv_oks" name="quantity"  type="text" value="1"/ >
+
+                  <span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                    </div>
+                         <div class="pro-btn">
+                     
+                       <input type="hidden" id="productid" data-productid="{{ product.variants.first.id }}" name="id" value="{{ product.selected_or_first_available_variant.id }}" />
+                        <button type="button" onclick="addtocardForms()" class="mxform">Add to Cart</button>
+
+
+                      </form>
+                <form action="/cart" method="post" id="addToCart">
+             <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" />
+                             <div class="qty" style="display:none">
+                	  <span class="minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+
+                  <input id="quantity"  class="evt_qty" name="quantity"  type="text" value="1"/ >
+
+                  <span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                    </div>
+                       <button type="button" class="buy-btn" onClick="instantBuy({{ product.selected_or_first_available_variant.id }})">Buy Now</button>
+                        
+                            </form>
+                         </div>
+                         <div class="product-tab">
+                             <!-- nav options -->
+    <ul class="nav nav-pills mb-4 shadow-sm" id="pills-tab" role="tablist">
+         <li class="nav-item"> <a class="nav-link active" id="pills-order-tab" data-toggle="pill" href="#pills-order" role="tab" aria-controls="pills-order" aria-selected="true">ABOUT</a> </li>
+         <li class="nav-item"> <a class="nav-link" id="pills-specs-tab" data-toggle="pill" href="#pills-specs" role="tab" aria-controls="pills-specs" aria-selected="false">SPEC</a> </li>
+        {% if  product.metafields.global.SHIPPING.value != blank %}
+      <li class="nav-item"> <a class="nav-link" id="pills-sh-tab" data-toggle="pill" href="#pills-sh" role="tab" aria-controls="pills-sh" aria-selected="false">Pre-order Shipping</a> </li>
+  {% endif %}
+      {% if  product.metafields.global.SHIPPINGINFO.value != blank %}
+      <li class="nav-item"> <a class="nav-link" id="pills-INFO-tab" data-toggle="pill" href="#pills-INFO" role="tab" aria-controls="pills-INFO" aria-selected="false">SHIPPING INFO</a> </li>
+  {% endif %}
+     </ul> <!-- content -->
+     <div class="tab-content" id="pills-tabContent">
+         <!-- 1st card -->
+         <div class="tab-pane fade show active" id="pills-order" role="tabpanel" aria-labelledby="pills-order-tab">
+           <div class="ordertab wvt_rollo">
+              {{ product.description }}
+           </div>
+         </div> <!-- 2nd card -->
+         <div class="tab-pane fade" id="pills-specs" role="tabpanel" aria-labelledby="pills-specs-tab">
+           <div class="specstab">
+              
+                 <p class="" style='color:white'>{{ product.metafields.global.SPEC.value }}</p>
+               
+           </div>
+         </div>
+          <div class="tab-pane fade" id="pills-sh" role="tabpanel" aria-labelledby="pills-sh-tab">
+           <div class="specstab">
+              
+                 <p class="cwhite"> {{ product.metafields.global.SHIPPING.value }}</p>
+               
+           </div>
+         </div>
+       <div class="tab-pane fade" id="pills-INFO" role="tabpanel" aria-labelledby="pills-INFO-tab">
+           <div class="specstab">
+              
+                 <p class="VTC-2" style='color:white'> {{ product.metafields.global.SHIPPINGINFO.value }}</p>
+               
+           </div>
+         </div>
+     </div>
+                         </div>
+                         <div class="social-list">
+                             <ul>
+                                 <li><a href="whatsapp://send?text={{ shop.url | append: share_permalink }}" data-action="share/whatsapp/share" onClick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" title="Share on whatsapp"><img data-swift-lazy=1 loading=lazy src="{{'whatsapp.png' | asset_url}}"></a></li>
+                                 <li><a href="//www.facebook.com/sharer.php?u={{ shop.url | append: share_permalink }}"><img data-swift-lazy=1 loading=lazy src="{{'facebook-logo.png' | asset_url}}"></a></li>
+                                 <li><a href="//twitter.com/share?text={{ share_title | url_param_escape }}&amp;url={{ shop.url | append: share_permalink }}"><img data-swift-lazy=1 loading=lazy src="{{'twitter.png' | asset_url}}"></a></li>
+                                 <li><a href="//pinterest.com/pin/create/button/?url={{ shop.url | append: share_permalink }}&amp;media={{ share_image | img_url: '1024x1024' }}&amp;description={{ share_title | url_param_escape }}"><img data-swift-lazy=1 loading=lazy src="{{'pinterest.png' | asset_url}}"></a></li>
+                             
+                             </ul>
+                         </div>
+                     </div>
+                    </div>
+              </div>
+              <div class="col-md-12">
+          <div class="rollova-textdesign">
+             <img data-swift-lazy=1 loading=lazy src="{{'designeditonimg.png' | asset_url}}">
+             <a href="#" class="designer-btn">designer edition</a>
+             <span class="">a Touch of Black & Gold Modern</span>
+             <a href="#rollova-video"><i class="fa fa-angle-down"></i></a>
+             </div> 
+              </div>
+        </div>
+    </div>
+</section>
+</div>
+  {% endcomment %}                     
+<section class="intro-video bg-black" id="rollova-video">
+        <div class="container">
+            <div class="lineox"></div>
+            <span class="videohead">ROLLOVA BLACK & GOLD DESIGN FILM</span>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                      <div class="introducing-video wow fadeInUp" data-wow-duration="2s">
+                         <iframe loading="lazy" width="560" height="315" lazy-src="https://www.youtube.com/embed/5MajZGoMqZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                </div>
+            </div>
+        </div>
+</section>
+<section class="rollova-design bg-black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="rollva-left wow fadeInLeft" data-wow-duration="2s">
+                    <div class="rollova-text">
+                        <h5>ROLLOVA is designed to transform the way you measure things. A pocket-friendly ruler that measures curves, lines, and a variety of surfaces easier than ever before.</h5>
+                        <a href="#rollova-video1" class="designer-btn">learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="rollova-right">
+                    <div class="rollavo-img wow fadeInRight" data-wow-duration="2s">
+                        <img data-swift-lazy=1 loading=lazy src="{{'designrollovaimg.png' | asset_url}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="intro-video bg-black mt-0" id="rollova-video1">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                      <div class="introducing-video">
+                          <iframe loading="lazy" width="560" height="315" lazy-src="https://www.youtube.com/embed/tI-fJwX1Hrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="rollova-design bg-black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="rollova-right wow fadeInLeft" data-wow-duration="2s">
+                    <div class="rollavo-img">
+                        <img data-swift-lazy=1 loading=lazy src="{{'rollovadesign2.png' | asset_url}}">
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-4">
+                <div class="rollva-left wow fadeInRight" data-wow-duration="2s">
+                    <div class="rollova-text">
+                        <h5>With one easy roll at a time, ROLLOVA provides you with an accurate measurement on its OLED screen.</h5>
+                        <a href="{{shop.url}}/pages/rollova-designer-edition-spec" class="designer-btn">tech specs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="rolovadesign3" style="background-image:url({{'rolava-edition.png' | asset_url}})">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <div class="editionafter">
+             <div class="rollova-text">
+             <h5>The limited edition 18K gold-plated edition ROLLOVA is sleek in design and function.<br>
+             A perfect choice of gift.<br>
+             A premium collection of modern lifestyles.</h5>
+             <a href="#" class="designer-btn">learn more about rollova</a>
+             </div> 
+             </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="rolovadesign2" style="background-image:url({{'designeditionbg.png' | asset_url}})">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+             <div class="rollova-textdesign">
+             <img data-swift-lazy=1 loading=lazy src="{{'designeditonimg.png' | asset_url}}">
+             <a href="#" class="designer-btn">designer edition</a>
+               
+                <form method="post" action="/cart/add">
+
+                      <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                        <button type="submit" class="designer-btn designer-btn2">SHOP NOW</button>
+                      </form>
+               
+           
+             </div> 
+            </div>
+        </div>
+    </div>
+</section>
+{% section 'alireviews-widget-250545' %}
+<div class="divider-section" syle="margin-bottom:10px">
+{% section 'social-4-items' %}
+{% comment %}
+<section class="fixed-cart" id="fix-cart">
+    <div class="container">
+      <div class="fixed-cart-close">
+        <button onclick="closed()"><i class="fa fa-times"></i></button>
+      </div>
+        <div class="fixed-outer">
+        <div class="row justify-content-center">
+            <div class="col-md-3 col-2">
+                <div class="fixed-cart-img">
+                    <img data-swift-lazy=1 loading=lazy src="{{'procardfixed.png' | asset_url}}">
+                </div>
+            </div>
+            <div class="col-md-5 col-7">
+                <div class="fixed-text">
+                   {{ product.metafields.global.quickcart.value }}
+                </div>
+            </div>
+            <div class="col-md-3 col-3">
+                <div class="fixed-shop">
+                   <form method="post" action="/cart/add">
+
+                      <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                        <button type="submit" class="designer-btn designer-btn2">SHOP NOW</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+{% endcomment %}
+<script>
+  // Override default values of shop.strings for each template.
+  // Alternate product templates can change values of
+  // add to cart button, sold out, and unavailable states here.
+  theme.productStrings = {
+    addToCart: {{ 'products.product.add_to_cart' | t | json }},
+    soldOut: {{ 'products.product.sold_out' | t | json }},
+    unavailable: {{ 'products.product.unavailable' | t | json }}
+  };
+
+  if(sessionStorage.backToCollection) {
+    theme.backToCollection = {};
+    theme.backToCollection.collection = JSON.parse(sessionStorage.backToCollection);
+    var productCollections = {{ product.collections | json }};
+    var showCollection = false;
+    if (productCollections) {
+      productCollections.forEach(function(collection) {
+        if (collection.title === theme.backToCollection.collection.title) {
+          showCollection = true;
+        }
+      });
+    }
+    if(showCollection) {
+      var backToCollectionHTML = '<div class="text-center return-link-wrapper page-width"><a href="' + theme.backToCollection.collection.link + '" class="btn btn--secondary btn--has-icon-before">{% include 'icon-arrow-left' %}{{ 'products.product.back_to_collection' | t }} ' + theme.backToCollection.collection.title + '</a></div>';
+      var backToCollectionContainer = document.getElementById('backToCollection');
+      backToCollectionContainer.insertAdjacentHTML('afterbegin', backToCollectionHTML);
+    }
+  }
+</script>
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": {{ product.title | json }},
+  "url": {{ shop.url | append: product.url | json }},
+  {%- if product.featured_media -%}
+    {%- assign media_size = product.featured_media.preview_image.width | append: 'x' -%}
+    "image": [
+      {{ product.featured_media | img_url: media_size | prepend: "https:" | json }}
+    ],
+  {%- endif -%}
+  "description": {{ product.description | strip_html | json }},
+  {%- if current_variant.sku != blank -%}
+    "sku": {{ current_variant.sku | json }},
+  {%- endif -%}
+  "brand": {
+    "@type": "Thing",
+    "name": {{ product.vendor | json }}
+  },
+  "offers": [
+    {%- for variant in product.variants -%}
+      {
+        "@type" : "Offer",
+        {%- if variant.sku != blank -%}
+          "sku": {{ variant.sku | json }},
+        {%- endif -%}
+        "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
+        "price" : {{ variant.price | divided_by: 100.00 | json }},
+        "priceCurrency" : {{ cart.currency.iso_code | json }},
+        "url" : {{ shop.url | append: variant.url | json }}
+      }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+}
+</script>

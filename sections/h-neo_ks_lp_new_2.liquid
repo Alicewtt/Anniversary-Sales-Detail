@@ -1,0 +1,280 @@
+
+<style>
+  .section-2 {
+    padding: 100px 0 100px;
+    background-color: #070a0f;
+  }
+
+  .section-2 .title {
+    font-family: 'alibaba-heavy';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 75px;
+    line-height: 105px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .section-2 .sub-title {
+    font-family: 'alibaba-heavy';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 75px;
+    line-height: 105px;
+    text-align: center;
+    color: #56b1fd;
+  }
+
+  .section-2 .swiper-box {
+    max-width: 907px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .section-2 .swiper-box .item-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1e2024;
+    border: 7px solid #1e2024;
+    border-radius: 15px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .section-2 .swiper-box .item-box img {
+    height: auto;
+    width: 58%;
+    display: block;
+    border-radius: 15px;
+  }
+
+  .section-2 .swiper-box .swiper-1-font {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 44px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+
+  .section-2 .mySwiper2 .swiper-slide {
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .section-2 .mySwiper2 .swiper-pagination {
+    display: flex;
+    position: static;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .section-2 .swiper-pagination-bullet {
+    width: 215px;
+    height: auto;
+    opacity: 1;
+    background: #1e2024;
+    border-radius: 15px;
+  }
+
+  .section-2 .swiper-pagination-bullet:hover {
+    background: #000;
+    border-color: #000;
+  }
+
+  .section-2 .mySwiper2 .swiper-pagination-bullet-active {
+    color: #fff;
+    border: 7px solid #56b1fd;
+  }
+
+  @media (max-width: 900px) {
+    .section-2 {
+      margin: 30px 20px 0;
+      border-radius: 15px;
+      padding:40px 0 100px;
+    }
+    .section-2 .title {
+      font-size: 64px;
+      line-height: 90px;
+    }
+
+    .section-2 .sub-title {
+      font-size: 64px;
+      line-height: 90px;
+    }
+
+    .section-2 .swiper-box {
+      padding: 0 30px;
+    }
+
+    .section-2 .mySwiper2 .swiper-pagination {
+      flex-wrap: wrap;
+      justify-content:space-between;
+      gap:0;
+    }
+
+    .section-2 .mySwiper2 .swiper-pagination .item-box:nth-child(1){
+      margin-bottom:15px;
+    }
+
+    .section-2 .mySwiper2 .swiper-pagination .item-box:nth-child(2){
+      margin-bottom:15px;
+    }
+
+    .section-2 .swiper-pagination-bullet {
+      /* width: 50%; */
+    }
+    .section-2 .swiper-box .item-box {
+      width: calc(100% / 2 - 7px);
+      box-sizing: border-box;
+    }
+
+    .section-2 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+    .section-2 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin: 0;
+    }
+  }
+
+  @media (max-width:420px) {
+    .section-2 {
+      margin: 30px 20px 0;
+      border-radius: 15px;
+      padding:30px 0 30px;
+    }
+    .section-2 .title {
+      font-size: 35px;
+      line-height: 50px;
+    }
+
+    .section-2 .sub-title {
+      font-size: 35px;
+      line-height: 50px;
+    }
+
+    .section-2 .swiper-box {
+      padding: 0 30px;
+    }
+
+    .section-2 .swiper-box .swiper-1-font{
+    
+      font-size:26px;
+    }
+
+    .section-2 .mySwiper2 .swiper-pagination {
+      flex-wrap: wrap;
+    }
+
+    .section-2 .swiper-pagination-bullet {
+      /* width: 50%; */
+    }
+    .section-2 .swiper-box .item-box {
+      width: calc(100% / 2 - 10px);
+      box-sizing: border-box;
+    }
+
+    .section-2 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+    .section-2 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin: 0;
+    }
+  }
+
+</style>
+
+<section class="section-2">
+  <div class="title">Measure Beyond <br class="m-br"><span  class="sub-title">A Ruler</span> </div>
+  <div class="swiper-box">
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+
+        {% for block in section.blocks %}
+          <div class="swiper-slide">
+            <img src="{{ block.settings.slide_image | img_url:'master' }}">
+          </div>
+        {% endfor %}
+        
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  let section_2_swiper_pagin=[
+    '<div class="item-box swiper-pagination-bullet"><img src="https://cdn.shopifycdn.net/s/files/1/0549/7667/6078/files/section-pic-icon-1.png" /><div class="swiper-1-font">Read</div></div>',
+    '<div class="item-box swiper-pagination-bullet"><img src="https://cdn.shopifycdn.net/s/files/1/0549/7667/6078/files/section-pic-icon-2.png" /><div class="swiper-1-font">Draft</div></div>',
+    '<div class="item-box swiper-pagination-bullet"><img src="https://cdn.shopifycdn.net/s/files/1/0549/7667/6078/files/section-pic-icon-3.png" /><div class="swiper-1-font">Caliper</div></div>',
+    '<div class="item-box swiper-pagination-bullet"><img src="https://cdn.shopifycdn.net/s/files/1/0549/7667/6078/files/section-pic-icon-4.png" /><div class="swiper-1-font">Divide</div></div>'
+  ]
+
+  var swiper2 = new Swiper('.mySwiper2', {
+    loop: true,
+   
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return section_2_swiper_pagin[index];
+      },
+    },
+  });
+
+</script>
+
+{% schema %}
+    {
+      "name": "h-neo_kslp_new_2",
+      "settings": [],
+      "max_blocks": 4,
+      "blocks": [
+        {
+          "type": "slide",
+          "name": "slide",
+       
+          "settings": [
+            {
+              "id": "slide_image",
+              "type": "image_picker",
+              "label": "轮播图片"
+            }
+            
+          ]
+        }
+      ],
+
+      "default": {
+        "blocks": [
+          {
+            "type": "slide"
+          },
+          {
+            "type": "slide"
+          },
+          {
+            "type": "slide"
+          },
+          {
+            "type": "slide"
+          }
+        ]
+      }
+    }
+{% endschema %}
+
+{% stylesheet %}
+
+
+{% endstylesheet %}
+
+
+

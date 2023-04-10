@@ -1,0 +1,78 @@
+<section class="feature-product bg-black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-content wow fadeInLeft" data-wow-duration="2s">
+                    <h2>{{section.settings.text1}}</h2>
+                    <p>{{section.settings.text2}}</p>
+                    <div class="diss-btn-1">
+                        <a href="{{section.settings.url1}}">{{section.settings.btext1}}</a>
+                    </div>
+                    <div class="diss-btn-2">
+                        <a href="{{section.settings.url2}}">{{section.settings.btext2}}</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="feature-img text-right wow fadeInRight" data-wow-duration="2s">
+                    <img src="{{'fp-2.png' | asset_url}}">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Home-meet-rollova",
+    "settings": [
+
+{
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add Heading"
+          },
+
+        {
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add paragrapgh"
+          },
+          {
+            "id": "btext1",
+            "type": "textarea",
+            "label": "Add button text"
+          },
+
+           {
+            "id": "url1",
+            "type": "url",
+            "label": "Add button url"
+          },
+  {
+            "id": "btext2",
+            "type": "textarea",
+            "label": "Add button text"
+          },
+
+           {
+            "id": "url2",
+            "type": "url",
+            "label": "Add button url"
+          }
+],
+"presets":[{
+ "name": "Home-meet-rollova",
+"category": "Custom Content"
+
+}]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

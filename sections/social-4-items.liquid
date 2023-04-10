@@ -1,0 +1,72 @@
+<section class="social-section">
+    <div class="container">
+        <div class="hozo_Ferocioushed ultra-heading">
+          <h2>Social Media</h2>
+        </div>
+        <div class="social-chat">
+            <p>Chat with <span>8000</span> members of MEASURE community</p>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="social-img">
+                  <a href="{{ section.settings.url8 }}" target="_blank">  <img src="{{ 'insta-s.png' | asset_url }}"></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="social-img">
+                     <a href="{{ section.settings.url9 }}" target="_blank"> <img src="{{ 'fb-s.png' | asset_url }}"></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="social-img">
+                     <a href="{{ section.settings.url10 }}" target="_blank"> <img src="{{ 'youtube-s.png' | asset_url }}"></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="social-img">
+                    <a href="{{ section.settings.url11 }}" target="_blank">  <img src="{{ 'twitter-s.png' | asset_url }}"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+  {
+    "name": "social-4-items",
+    "settings": [
+
+      {
+            "id": "url8",
+            "type": "url",
+            "label": "Add insta Url"
+          },
+      {
+            "id": "url9",
+            "type": "url",
+            "label": "Add fb Url"
+          },
+      {
+            "id": "url10",
+            "type": "url",
+            "label": "Add youtube Url"
+          },
+      {
+            "id": "url11",
+            "type": "url",
+            "label": "Add twitter Url"
+          }
+      
+    ],
+    "presets":[{
+ "name": "social-4-items",
+"category": "Custom Content"
+
+}]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

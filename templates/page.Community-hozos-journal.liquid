@@ -1,0 +1,76 @@
+              
+<section id="journal" class="hozos-journal-section">
+    <div class="container">
+        <div class="measzor-top-heading">
+            <span>HOZO's Journal</span>
+        </div>
+        <div class="hozos-journal-inner">
+            <div class="owl-carousel owl-theme hozos-journal-blog-slider">
+
+              {% assign blog_handles = "journal" | split: "," %}
+                 {% for handle in blog_handles %}
+                      {% for article in blogs[handle].articles %}
+                              <div class="item">
+                                  <div class="hozos-journal-silder-inner">
+                                      <div class="hozos-journal-inner-col">
+                                          <a href="{{ article.url }}">
+                                              {%- if article.image -%}
+                                                 <img src="{{ article.image | img_url: '1100x1100' }}" alt="{{ article.title }}">
+                                              {%- endif -%}
+                                            </a>
+                                      </div>
+                                      <div class="hozos-journal-inner-col-2">
+                                          <h5><a href="{{ article.url }}">{{ article.title }}</a></h5>
+                                          <div class="hozoa-journal-btn-date">
+                                              <a href="{{ article.url }}">Read more</a>
+                                              <p>{{ article.published_at | time_tag: format: 'date' }}</p>
+                                          </div>
+              
+                                      </div>
+                                  </div>
+                              </div>
+                       {% endfor %}
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="inspirations" class="hozos-journal-section">
+    <div class="container">
+        <div class="measzor-top-heading">
+            <span>User inspirations</span>
+        </div>
+        <div class="hozos-journal-inner">
+            <div class="owl-carousel owl-theme hozos-journal-blog-slider">
+               
+              {% assign blog_handles = "inspirations" | split: "," %}
+                 {% for handle in blog_handles %}
+                      {% for article in blogs[handle].articles %}
+                              <div class="item">
+                                  <div class="hozos-journal-silder-inner">
+                                      <div class="hozos-journal-inner-col">
+                                          <a href="{{ article.url }}">
+                                              {%- if article.image -%}
+                                                 <img src="{{ article.image | img_url: '1100x1100' }}" alt="{{ article.title }}">
+                                              {%- endif -%}
+                                            </a>
+                                      </div>
+                                      <div class="hozos-journal-inner-col-2">
+                                          <h5><a href="{{ article.url }}">{{ article.title }}</a></h5>
+                                          <div class="hozoa-journal-btn-date">
+                                              <a href="{{ article.url }}">Read more</a>
+                                              <p>{{ article.published_at | time_tag: format: 'date' }}</p>
+                                          </div>
+              
+                                      </div>
+                                  </div>
+                              </div>
+                       {% endfor %}
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</section>

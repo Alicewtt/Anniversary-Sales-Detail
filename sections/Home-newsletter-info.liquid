@@ -1,0 +1,261 @@
+<section class="cork__hozo">
+    <div class="container">
+        <iframe width="100%" height="625" src="{{section.settings.url1}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>       
+    </div>                        
+</section>
+
+<section class="hozo-newsletter">
+    <div class="container">
+     {%- assign formId = 'Contact_' | append: section.id -%}
+    {% form 'customer', id: formId, novalidate: 'novalidate', class: 'contact-form form-single-field' %}
+      
+            <div class="form-group">
+                <input type="hidden" name="contact[tags]" value="newsletter">
+                <input type="email"
+          name="contact[email]"
+          id="{{ formId }}-email"
+          required            
+          class="input-group__field{% if form.errors %} input--error{% endif %}"
+          value="{{ form.email }}"
+           placeholder="{%- if form.posted_successfully? -%}Thank you for joining HOZO community!{% else %} Subscribe to Pre-order
+          {%- endif -%}" 
+          aria-label="{{ 'general.newsletter_form.email_placeholder' | t }}"
+          aria-required="true"
+          autocorrect="off"
+          autocapitalize="off"
+          {% if form.errors %}
+            aria-invalid="true"
+            aria-describedby="{{ formId }}-email-error"
+            data-form-status
+          {% endif %}
+                       
+          >
+            </div>
+  {%- if form.posted_successfully? -%}
+      
+  {% elsif form.errors != blank %}   
+     
+  {% for field in form.errors %}
+  
+      {% if field == 'email' %}
+      <p class="errroOnemail">  Please enter a correct email address to unlock the deal.</p>
+      {% else %}
+    
+      {% endif %}
+     {% endfor %}
+      {% else %}
+      {%- unless form.posted_successfully? -%}
+        <p class="errroOnemail  old-subscriber">This email id is already used.</p>
+      {% endunless %}
+{% endif %}
+
+            <div class="form-group">
+                <button type="submit"><img src="{{'msg-btn.svg' | asset_url}}"> {% comment %}{{section.settings.text1}} {% endcomment %} Get Notified</button>
+            </div>
+      
+{% comment %}
+        <div class="hozo__price-d">
+          
+          <a href="#" id="onroadter">
+            <div id="bl_op" class="hozo--blur"   {%- if form.posted_successfully? -%}style="display:none !important" {% endif %}><img src="{{'unloack-h.svg' | asset_url}}" class="hozo-protact-i"></div>
+            <div class="hozo__price-lowests">
+              
+                <div class="hozo__price-dollers">
+                    <div class="hozo__price-check">
+                        <img src="{{'check-1.svg' | asset_url}}">
+                    </div>
+                    <div class="hozo__price-main">
+                        <h2>{{section.settings.pr1}}</h2>
+                    </div>
+                    <div class="hozo__price-nop">
+                        <h5><strike>{{section.settings.pr2}}</strike></h5>
+                    </div>
+                </div>
+              
+                <div class="hozo__ex-dis0">
+                    <p>{{section.settings.pr3}}</p>
+                </div>
+            </div>
+            <div class="hozo__price-lowesth">
+                <h3>{{section.settings.text2}}</h3>
+                <h4>{{section.settings.text3}} </h4>
+            </div>
+            <div class="hozo__kickstarter">
+              <a href="{{section.settings.url03}}">
+                       <img src="{{'kickstarter-logo-green1.svg' | asset_url}}"></a>
+            </div>
+          </a>
+        </div>
+      
+ {% endcomment %}     
+    
+        {%- if form.posted_successfully? -%}
+        <script> 
+          
+          
+    function setCookie(name,value,days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+} 
+    function getCookie(name)  
+    {  
+        var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null; 
+    } 
+         setCookie("newsletter_db","show",30)
+      getCookie();
+    </script>  
+      
+    {% endif %}  
+      
+      
+{% endform %}
+        <div class="hozo__subcnt">
+            <div class="hozo__subleft">
+                {{section.settings.text4}}
+            </div>
+            <div class="hozo__subright">
+               {{section.settings.text5}}
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+{% schema %}
+  {
+    "name": "Home-newsletter",
+    "settings": [
+ {
+            "id": "url1",
+            "type": "url",
+            "label": "Add video url"
+          },
+ {
+            "id": "url02",
+            "type": "url",
+            "label": "Add product url"
+          },
+{
+            "id": "url03",
+            "type": "url",
+            "label": "Add icon url"
+          },
+ {
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add button text"
+          },
+ {
+            "id": "pr1",
+            "type": "textarea",
+            "label": "Add price"
+          },
+ {
+            "id": "pr2",
+            "type": "textarea",
+            "label": "Add strike price "
+          },
+ {
+            "id": "pr3",
+            "type": "textarea",
+            "label": "Add text"
+          },
+ {
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add text"
+          },
+ {
+            "id": "text3",
+            "type": "textarea",
+            "label": "Add text"
+          },
+ {
+            "id": "text4",
+            "type": "textarea",
+            "label": "Add subscription text"
+          },
+{
+            "id": "text5",
+            "type": "textarea",
+            "label": "Add subscription number"
+          }
+],"presets":[{
+ "name": "home-newsletter",
+"category": "Custom Content"
+
+}]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+<script>
+   function getCookie(name)  
+    {  
+        var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null; 
+    } 
+      var priceBp=getCookie("newsletter_db");
+  if(priceBp == 'show'){
+    
+    document.getElementById("bl_op").style.display = "none";
+  document.getElementById('onroadter').href = "{{section.settings.url02}}";
+
+    
+  }
+    </script>  
+  
+  <style>
+  p.errroOnemail {
+    text-align: center;
+    color: red;
+}
+  
+    
+    body.template-captcha {
+    margin-top: 54px;
+}
+</style>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (window.location.href.indexOf("contact%5Btags%5D=newsletter&form_type=customer") > -1) {
+      $(".old-subscriber").addClass("old-subscriber-true");
+    }
+    else {
+    $(".old-subscriber").removeClass("old-subscriber-true");
+    }
+  });
+</script>
+ 
+<style>
+.old-subscriber {
+display: none;
+}
+.old-subscriber-true {
+display: block;
+}
+</style>

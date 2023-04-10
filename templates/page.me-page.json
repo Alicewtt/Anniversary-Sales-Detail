@@ -1,0 +1,400 @@
+{
+  "sections": {
+    "main": {
+      "type": "meazor-template-aug",
+      "blocks": {
+        "7bd15695-618d-47cb-98ef-4b4a437a942d": {
+          "type": "first",
+          "settings": {
+            "pr1": "meazor-3d-protection-kit"
+          }
+        },
+        "9213313b-6791-47ea-a64e-6433771f157b": {
+          "type": "first",
+          "settings": {
+            "pr1": "target-plates-kit"
+          }
+        },
+        "98f7efe9-2197-44ac-bbb6-e61f6c250753": {
+          "type": "first",
+          "settings": {
+            "pr1": "meazor-expert-accessory-kit"
+          }
+        },
+        "39336f30-723e-4934-9d9d-f9ae7fd18875": {
+          "type": "last",
+          "settings": {
+            "pr1": "meazor-master-kit"
+          }
+        },
+        "16bc4de1-0000-4cc7-b036-ee4e6a796ea9": {
+          "type": "last",
+          "settings": {
+            "pr1": "meazor-expert-protractor"
+          }
+        }
+      },
+      "block_order": [
+        "7bd15695-618d-47cb-98ef-4b4a437a942d",
+        "9213313b-6791-47ea-a64e-6433771f157b",
+        "98f7efe9-2197-44ac-bbb6-e61f6c250753",
+        "39336f30-723e-4934-9d9d-f9ae7fd18875",
+        "16bc4de1-0000-4cc7-b036-ee4e6a796ea9"
+      ],
+      "settings": {
+        "img1": "shopify:\/\/shop_images\/3DDisplacement.gif",
+        "img2": "shopify:\/\/shop_images\/3Dtilt.gif",
+        "img3": "shopify:\/\/shop_images\/MEAZOR3D_MONO_L1.png",
+        "text1": "The Future Of Measure",
+        "text2": "40m Multi-room Scan | 3D Obstacle Avoidance | 3D Apps Integration",
+        "p1": "meazor3d",
+        "price": ""
+      }
+    },
+    "1661316640a8eec772": {
+      "type": "mg-video",
+      "settings": {
+        "img1": "shopify:\/\/shop_images\/banner-video.png",
+        "url1": "https:\/\/www.youtube.com\/watch?v=7r9olktD0KI"
+      }
+    },
+    "166131688404187c6c": {
+      "type": "mg-2coloum",
+      "blocks": {
+        "d546a82e-d1bf-4208-8bf2-56f902e5353f": {
+          "type": "section",
+          "settings": {
+            "text1": "3D Displacement",
+            "text2": "Complex & Multiple Room Plan Scanning",
+            "img1": "shopify:\/\/shop_images\/Displacement_1.png",
+            "img2": "shopify:\/\/shop_images\/3DDisplacement_1.gif",
+            "text3": "Capture all details regardless of height or angle"
+          }
+        },
+        "11be780d-6bb0-44fd-839d-54a26db8f1fe": {
+          "type": "section",
+          "settings": {
+            "text1": "3D Tilt",
+            "text2": "Avoid Obstacles & Capture Room Height",
+            "img1": "shopify:\/\/shop_images\/3D-Tilt.png",
+            "img2": "shopify:\/\/shop_images\/3Dtilt.gif",
+            "text3": "Capture all details regardless of height or angle"
+          }
+        }
+      },
+      "block_order": [
+        "d546a82e-d1bf-4208-8bf2-56f902e5353f",
+        "11be780d-6bb0-44fd-839d-54a26db8f1fe"
+      ],
+      "settings": {
+        "text1": "Ferocious 3D Core Functions"
+      }
+    },
+    "1661317161873147b6": {
+      "type": "mg-connectmedia",
+      "blocks": {
+        "9bce9c03-078a-44db-81e6-907277127156": {
+          "type": "top",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/app-p-1.png"
+          }
+        },
+        "fa614568-a896-4f30-b360-a574f23ca07a": {
+          "type": "top",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/app-p-2.png"
+          }
+        },
+        "93f7dcc9-3dcd-4b86-82ba-3271ea3d0951": {
+          "type": "top",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/app-p-3.png"
+          }
+        },
+        "f194911c-2e0b-4528-bb3f-f0f929feb5af": {
+          "type": "bottom",
+          "settings": {
+            "text": "<span>MEAZOR APP 2.0<\/span> available in iOS and Android",
+            "img2": "shopify:\/\/shop_images\/app-img-1.png",
+            "img3": "shopify:\/\/shop_images\/app-img-2.png"
+          }
+        },
+        "3f59a226-0e73-411e-a0d7-6a47c67e9f84": {
+          "type": "bottom",
+          "settings": {
+            "text": "<span>MEAZOR APP 2.0<\/span> available in iOS and Android",
+            "img2": "shopify:\/\/shop_images\/app-img-3.png",
+            "img3": "shopify:\/\/shop_images\/app-img-4.png"
+          }
+        },
+        "df7c73a0-e879-4472-a408-ba35550acf42": {
+          "type": "bottom",
+          "settings": {
+            "text": "<span>MEAZOR APP 2.0<\/span> available in iOS and Android",
+            "img2": "shopify:\/\/shop_images\/app-img-5.png",
+            "img3": "shopify:\/\/shop_images\/app-img-6.png"
+          }
+        }
+      },
+      "block_order": [
+        "9bce9c03-078a-44db-81e6-907277127156",
+        "fa614568-a896-4f30-b360-a574f23ca07a",
+        "93f7dcc9-3dcd-4b86-82ba-3271ea3d0951",
+        "f194911c-2e0b-4528-bb3f-f0f929feb5af",
+        "3f59a226-0e73-411e-a0d7-6a47c67e9f84",
+        "df7c73a0-e879-4472-a408-ba35550acf42"
+      ],
+      "settings": {
+        "text1": "APP Integration"
+      }
+    },
+    "166132046251f6710a": {
+      "type": "mg-6function",
+      "blocks": {
+        "230f94fb-de4f-4343-a296-13e27adfe25c": {
+          "type": "section",
+          "settings": {
+            "video1": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/978a25a38e8b4a068ef2ed79d48e8de5.mp4",
+            "text1": "Rotate MEAZOR by 360° <br>the laser ray shifts across the room <br>and instantly draws a floorplan",
+            "img1": "shopify:\/\/shop_images\/room_scan_d6c83457-d938-444f-bee8-057b8a6b40b2.png",
+            "text2": "Point Scanner"
+          }
+        },
+        "393502df-5151-40e8-a009-52a464260ab8": {
+          "type": "section",
+          "settings": {
+            "video1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/scale_animation-HD_720p.mp4?v=1652080248",
+            "text1": "Rotate MEAZOR by 360° <br>the laser ray shifts across the room <br>and instantly draws a floorplan",
+            "img1": "shopify:\/\/shop_images\/scale_ruler_18bf70c5-b6c6-4214-b943-eea848000b18.png",
+            "text2": "Scale\/Rolling"
+          }
+        },
+        "45338d0b-a3af-456d-8003-8d54342661e3": {
+          "type": "section",
+          "settings": {
+            "video1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/function_gifs-HD_720p.mp4?v=1652080248",
+            "text1": "Rotate MEAZOR by 360° <br>the laser ray shifts across the room <br>and instantly draws a floorplan",
+            "img1": "shopify:\/\/shop_images\/6-1_1.png",
+            "text2": "Laser measure"
+          }
+        },
+        "66e9aa32-68f5-423c-afcc-ff7542eba67f": {
+          "type": "section",
+          "settings": {
+            "video1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/curve_scan_animation-HD_720p_2.mp4?v=1652080248",
+            "text1": "Rotate MEAZOR by 360° <br>the laser ray shifts across the room <br>and instantly draws a floorplan",
+            "img1": "shopify:\/\/shop_images\/curve_scan_ee63db3a-13a5-4057-8c90-7e0e124b4f8e.png",
+            "text2": "Curve Scanner"
+          }
+        },
+        "4e989629-694d-4063-8944-d792f0f1b4dd": {
+          "type": "section",
+          "settings": {
+            "video1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/protractor_animatiom-HD_720p.mp4?v=1652080248",
+            "text1": "Rotate MEAZOR by 360° <br>the laser ray shifts across the room <br>and instantly draws a floorplan",
+            "img1": "shopify:\/\/shop_images\/protractor_df273178-4c17-4eed-826c-eff8c4527cf7.png",
+            "text2": "Protractor"
+          }
+        },
+        "220574e4-fbb0-4fe6-ae91-6a717dc4fbc5": {
+          "type": "section",
+          "settings": {
+            "video1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/level_animation-HD_720p.mp4?v=1652080248",
+            "text1": "Rotate MEAZOR by 360° <br>the laser ray shifts across the room <br>and instantly draws a floorplan",
+            "img1": "shopify:\/\/shop_images\/level_52fee9b6-08c4-40d2-92ff-fbd77480e219.png",
+            "text2": "Level"
+          }
+        }
+      },
+      "block_order": [
+        "230f94fb-de4f-4343-a296-13e27adfe25c",
+        "393502df-5151-40e8-a009-52a464260ab8",
+        "45338d0b-a3af-456d-8003-8d54342661e3",
+        "66e9aa32-68f5-423c-afcc-ff7542eba67f",
+        "4e989629-694d-4063-8944-d792f0f1b4dd",
+        "220574e4-fbb0-4fe6-ae91-6a717dc4fbc5"
+      ],
+      "settings": {
+        "text": "6 core functions"
+      }
+    },
+    "1661356740238e2433": {
+      "type": "mg-scenarios-section",
+      "blocks": {
+        "9b0c74fa-b128-4e6c-850a-6d37fae099d1": {
+          "type": "slider",
+          "settings": {
+            "img1": "shopify:\/\/shop_images\/m-mini-logo.png",
+            "text1": "karl D",
+            "text2": "Surveyor",
+            "text3": "“this small device does the work for me!”2475 sq.ft 4B3B house measured in 37 mins!",
+            "img2": "shopify:\/\/shop_images\/scenarios-img-1.png",
+            "img3": "shopify:\/\/shop_images\/scenarios-img-2.png"
+          }
+        },
+        "e100f0f6-de73-4081-9bbe-56c50ebc416f": {
+          "type": "slider",
+          "settings": {
+            "img1": "shopify:\/\/shop_images\/mic-mini-logo.png",
+            "text1": "Mic",
+            "text2": "Architect",
+            "text3": "“Real work efficiency by extremely fast measure and get floorplan done!”2647 sq.ft store measured by a suveyor in 11 mins.",
+            "img2": "shopify:\/\/shop_images\/scenarios-img-3.png",
+            "img3": "shopify:\/\/shop_images\/scenarios-img-4.png"
+          }
+        },
+        "75957525-4754-4638-beb9-c6488880dee3": {
+          "type": "slider",
+          "settings": {
+            "img1": "shopify:\/\/shop_images\/garcia-mini-logo.png",
+            "text1": "Garcia P",
+            "text2": "Creative Professional",
+            "text3": "“Having trouble finding a tool helps odd shape, till MEAZOR 3D shows up! Swimming pool deck measured in California in 5 mins!",
+            "img2": "shopify:\/\/shop_images\/scenarios-img-5.png",
+            "img3": "shopify:\/\/shop_images\/scenarios-img-6.png"
+          }
+        },
+        "a29e1795-b94a-4727-ab05-d3bfdc975de1": {
+          "type": "slider",
+          "settings": {
+            "img1": "shopify:\/\/shop_images\/lee-mini-logo.png",
+            "text1": "Mark Lee",
+            "text2": "An Interior designer",
+            "text3": "Commercial re-design measure never easy, especially with complex room, until I use MEAZOR 3D!",
+            "img2": "shopify:\/\/shop_images\/scenarios-img-7.png",
+            "img3": "shopify:\/\/shop_images\/scenarios-img-8.png"
+          }
+        }
+      },
+      "block_order": [
+        "9b0c74fa-b128-4e6c-850a-6d37fae099d1",
+        "e100f0f6-de73-4081-9bbe-56c50ebc416f",
+        "75957525-4754-4638-beb9-c6488880dee3",
+        "a29e1795-b94a-4727-ab05-d3bfdc975de1"
+      ],
+      "settings": {
+        "text1": "Multiple measurement scenarios"
+      }
+    },
+    "1661947527a707f4f2": {
+      "type": "apps",
+      "blocks": {
+        "241efc9d-2e06-4e35-a567-c928ea66801b": {
+          "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-box\/bf2eea72-0400-4db1-8908-44b7418f9a88",
+          "settings": {
+            "name": "Review Box",
+            "vertical_alignment": "8",
+            "rating_color": "#faad14",
+            "section_color": "#ffffff",
+            "primary_text_color": "#1f1f1f"
+          }
+        }
+      },
+      "block_order": [
+        "241efc9d-2e06-4e35-a567-c928ea66801b"
+      ],
+      "settings": {
+      }
+    },
+    "1661358831a8d13040": {
+      "type": "mg-enhance__section",
+      "blocks": {
+        "59f205f9-f0c8-47dd-8185-aada8e8b79a4": {
+          "type": "heading",
+          "settings": {
+            "text": "Creative classic"
+          }
+        },
+        "f0cf7cd4-b8d0-4031-88b0-72ca0ee6b360": {
+          "type": "heading",
+          "settings": {
+            "text": "Architect advance"
+          }
+        },
+        "5c1b7c03-d8f5-46c9-9d6c-2241071cb9fb": {
+          "type": "bottom-col-1",
+          "settings": {
+            "prd": "meazor-3d-protection-kit"
+          }
+        },
+        "d50d9a4a-37bb-4441-b5d3-3f6498e03c93": {
+          "type": "bottom-col-1",
+          "settings": {
+            "prd": "target-plates-kit"
+          }
+        },
+        "8a85a07f-56c6-46e1-b906-de3b31d8fa5d": {
+          "type": "bottom-col-1",
+          "settings": {
+            "prd": "meazor-expert-accessory-kit"
+          }
+        },
+        "53b7526d-9cf7-4c2f-a2d5-ca964e1d0451": {
+          "type": "bottom-col-2",
+          "settings": {
+            "prd": "meazor-master-kit"
+          }
+        },
+        "56a53b8e-5cba-499c-bb8a-6ddeb9832423": {
+          "type": "bottom-col-2",
+          "settings": {
+            "prd": "meazor-expert-protractor"
+          }
+        }
+      },
+      "block_order": [
+        "59f205f9-f0c8-47dd-8185-aada8e8b79a4",
+        "f0cf7cd4-b8d0-4031-88b0-72ca0ee6b360",
+        "5c1b7c03-d8f5-46c9-9d6c-2241071cb9fb",
+        "d50d9a4a-37bb-4441-b5d3-3f6498e03c93",
+        "8a85a07f-56c6-46e1-b906-de3b31d8fa5d",
+        "53b7526d-9cf7-4c2f-a2d5-ca964e1d0451",
+        "56a53b8e-5cba-499c-bb8a-6ddeb9832423"
+      ],
+      "settings": {
+        "text1": "Enhance your experience",
+        "text2": "Professional’s Favorite Picks"
+      }
+    },
+    "166136352424d35aa8": {
+      "type": "mg-ultra",
+      "settings": {
+        "url": ""
+      }
+    },
+    "16613669082543a70c": {
+      "type": "mg-feature",
+      "settings": {
+        "url1": "https:\/\/hozodesign.com\/pages\/meazor-3d-spec",
+        "url3": "",
+        "url4": "",
+        "url5": "",
+        "url6": "",
+        "url7": "",
+        "url8": "https:\/\/www.instagram.com\/hozo_design\/",
+        "url9": "https:\/\/www.facebook.com\/HOZODESIGN.Co",
+        "url10": "",
+        "url11": "https:\/\/twitter.com\/HOZODESIGN"
+      }
+    },
+    "alireviews-widget-242740": {
+      "type": "alireviews-widget-242740",
+      "disabled": true,
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1661316640a8eec772",
+    "166131688404187c6c",
+    "1661317161873147b6",
+    "166132046251f6710a",
+    "1661356740238e2433",
+    "1661947527a707f4f2",
+    "1661358831a8d13040",
+    "166136352424d35aa8",
+    "16613669082543a70c",
+    "alireviews-widget-242740"
+  ]
+}

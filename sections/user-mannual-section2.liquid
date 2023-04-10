@@ -1,0 +1,65 @@
+
+<section class="user-mannual-section">
+  <div class="container">
+    <div class="measzor-top-heading">
+       <span> {{ section.settings.title }}</span>
+    </div>
+    <div class="user-mannual-inner">
+      <div class="user-mannual-col-inner">
+        <div class="user-mannual-col-contant">
+          <ul>
+            {% for block in section.blocks %} 
+  
+            <li><a href="{{ block.settings.url}}"><img src="{{ block.settings.image | img_url:'master' }}"></a></li>
+<!--             <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/Frame_40.png?v=1664801148"></a></li>
+            <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/Frame_44.png?v=1664801149"></a></li>
+            <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/Frame_43.png?v=1664801148"></a></li>
+            <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/Frame_51.png?v=1664801148"></a></li>
+            <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/Frame_41.png?v=16648011488"></a></li>
+            <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/Frame_42.png?v=1664801148"></a></li> -->
+         {% endfor %}
+
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+"name": "user-mannual-section",
+   "settings": [
+       {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+   ],
+     "blocks": [
+     {
+       "name": "Flag",
+       "type": "Flag",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         },
+          {
+           "type": "url",
+           "id": "url",
+           "label": "Url"
+         }
+       ]
+     }
+  ],
+
+"presets":[{
+ "name": "user-mannual-section",
+"category": "user-mannual-section"
+
+}]
+  }
+{% endschema %}

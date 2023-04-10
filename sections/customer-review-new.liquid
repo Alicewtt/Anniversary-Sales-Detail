@@ -1,0 +1,130 @@
+<section class="customer-review-new">
+  <div class="container">
+    <div class="head-title1">
+      <h2>{{ section.settings.title }}</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="customer-review-slider">
+          <div class="owl-carousel owl-theme customer-slide">
+            {% for block in section.blocks %} 
+
+              <div class="item">
+                <div class="customer-review-inner">
+                  <h4>{{ block.settings.customer_reviews }}</h4>
+                  <div class="customer-name">
+                    <div class="customer-image">
+                      <img src="{{ block.settings.media-image | img_url :'master' }}" class="img-fluid">
+                    </div>       
+                    <div class="customer-name">
+                      <p>{{ block.settings.customer_name }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+            {% endfor %}
+            
+<!--               <div class="item">
+                <div class="customer-review-inner">
+                  <h4> “MEAZOR 3D has truly become a real-life safer for me! My building is very complex in shape!” </h4>
+                  <div class="customer-name">
+                    <div class="customer-image">
+                      <img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/t/23/assets/customer-image1.png?v=1664299156" class="img-fluid">
+                    </div>       
+                    <div class="customer-name">
+                      <p>Paul Kal</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="customer-review-inner">
+                  <h4> “As a real estate agent this little device truly saved trouble for me move back and forth measure multi room. Auto-stitch floorplan itself!” </h4>
+                  <div class="customer-name">
+                    <div class="customer-image">
+                      <img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/t/23/assets/customer-image2.png?v=1664300170" class="img-fluid">
+                    </div>       
+                    <div class="customer-name">
+                      <p>Lila H</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="customer-review-inner">
+                  <h4> “Recommended this to a few friends. 3D mapping developing in architecture or object design works amazing!”  </h4>
+                  <div class="customer-name">
+                    <div class="customer-image">
+                      <img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/t/23/assets/customer-image3.png?v=1664300177" class="img-fluid">
+                    </div>       
+                    <div class="customer-name">
+                      <p>James L</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="customer-review-inner">
+                  <h4> “In fact MEAZOR 3D can pretty much replace any measuring instrument you currently own.”  </h4>
+                  <div class="customer-name">
+                    <div class="customer-image">
+                      <img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/t/23/assets/customer-image4.png?v=1664300805" class="img-fluid">
+                    </div>       
+                    <div class="customer-name">
+                      <p>Conner Holz</p>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+"name": "Customer Review New",
+   "settings": [
+     {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+ ],
+      "blocks": [
+     {
+       "name": "Customer Says",
+       "type": "FAQ",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "media-image",
+           "label": "Media Image"
+         },
+           {
+           "type": "html",
+           "id": "customer_reviews",
+           "label": "Customer Reviews"
+         },
+       {
+           "type": "text",
+           "id": "customer_name",
+           "label": "Customer Name"
+         }
+         
+       ]
+     }
+  ],
+"presets":[{
+ "name": "Customer Review New",
+"category": "Customer Review New"
+
+}]
+  }
+{% endschema %}

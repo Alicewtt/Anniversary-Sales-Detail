@@ -1,0 +1,133 @@
+<section class="new-feature">
+  <div class="container">
+    <div class="head-section">
+      <h2>Featured products</h2>
+    </div>
+    <div class="row">              
+     
+                  
+      <div class="col-lg-4 d-flex">
+          <div class="Product-card Product-card-new wow fadeInU flex-fill" data-wow-duration="2s">
+              <div class="Product-icon">
+                  <a href="/products/meazor3d"><img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/t/23/assets/feature-new1.png?v=1664131019"></a>
+              </div>
+              <div class="Product-details">
+                <h2>MEAZOR 3D</h2>
+                  <p>3D Floorplanning Laser Measure </p>
+                <div class="shopnow-btn">
+                    <a href="/products/meazor3d">Shop Now</a>
+                </div>
+              </div>
+          </div>
+      </div>
+                   
+      <div class="col-lg-4 col-md-6  d-flex">
+          <div class="Product-card wow fadeInU flex-fill" data-wow-duration="2s">
+              <div class="Product-icon">
+                  <a href="/products/meazor"><img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/t/23/assets/feature-new2.png?v=1664131029"></a>
+              </div>
+              <div class="Product-details">
+                <h2>MEAZOR</h2>
+                  <p>6-IN-1 Compact Laser Measure</p>
+                <div class="shopnow-btn">
+                    <a href="/products/meazor">Shop Now</a>
+                </div>
+              </div>
+          </div>
+      </div>      
+
+       <div class="col-lg-4 col-md-6  d-flex">
+          <div class="Product-card wow fadeInUp flex-fill" data-wow-duration="2s">
+              <div class="Product-icon">
+                  <a href="/products/rollova"><img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/t/23/assets/feature-new3.png?v=1664131038"></a>
+              </div>
+              <div class="Product-details">
+                <h2>ROLLOVA V2.0</h2>
+                  <p>The world's 1st Rolling Ruler</p>
+                <div class="shopnow-btn">
+                    <a href="/products/rollova">Shop Now</a>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="comman-btn-new">
+          <a href="https://hozodesign.com/collections/all-products">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+</section>  
+{% comment %}
+<section class="new-feature">
+  <div class="container">
+    <div class="head-section">
+      <h2> {{ section.settings.title }}</h2>
+    </div>
+    <div class="row">              
+     
+  {% for product in collections[section.settings.feature_collection].products limit:3 %}
+
+    <div class="col-md-4 d-flex">
+          <div class="Product-card wow fadeInU flex-fill" data-wow-duration="2s">
+              <div class="Product-icon">
+               <a href=#><img src={{ product.featured_image | product_img_url: 'master' }}></a>
+              </div>
+              <div class="Product-details">
+                <h2>{{ product.title }}</h2>
+                  <p> {{ product.metafields.custom.subtitle }} </p>
+                <div class="shopnow-btn">
+                    <a href="{{product.url}}">{{ section.settings.btn_title }}</a>
+                </div>
+              </div>
+          </div>
+      </div>
+      
+   <!-- Cool stuff with your popular product -->
+{% endfor %} {% endcomment %}
+
+      
+
+      
+  
+  
+
+
+{% schema %}
+  {
+"name": "New Feature Products",
+   "settings": [
+       {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+   {
+      "type": "collection",
+      "id": "feature_collection",
+      "label": "Feature Collection"
+    },
+       {
+      "type": "text",
+      "id": "btn_title",
+      "label": "Button Title"
+    },
+      {
+      "type": "url",
+      "id": "learnmore_url",
+      "label": "Learnmore Url"
+    }
+ ],
+    
+"presets":[{
+ "name": "home-st-slider",
+"category": "New Feature Products"
+
+}]
+  }
+{% endschema %}

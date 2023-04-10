@@ -1,0 +1,57 @@
+{% for block in section.blocks %}
+<div class="row bg-2">
+    			<div class="col-md-2">
+    				<div class="state">
+    					<h3>{{block.settings.text1}}</h3>
+    					<p>{{block.settings.text2}} <br>{{block.settings.text3}}</p>
+    				</div>
+    			</div>
+    			<div class="col-md-10">
+    				<div class="right-test">
+    					<p> {{block.settings.text4}}</p>
+    				</div>
+    			</div>
+    		</div>
+{% endfor %}
+{% schema %}
+  {
+    "name": "Review-tab-2-Testimonials",
+    "settings": [],
+"blocks": [
+      {
+        "type": "text",
+        "name": "Testimonials",
+        "settings": [
+
+         
+            {
+            "id": "text1",
+            "type": "text",
+            "label": "Add name"
+          },
+           {
+            "id": "text2",
+            "type": "text",
+            "label": "Add country"
+          },
+          {
+            "id": "text3",
+            "type": "text",
+            "label": "Add date"
+          },
+         {
+            "id": "text4",
+            "type": "textarea",
+            "label": "Add comment"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

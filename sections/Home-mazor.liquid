@@ -1,0 +1,69 @@
+<section class="feature-product" style="background-image: url('{{'maker.png' | asset_url}}');">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-8">
+                  <div class="feature-img mt-5 wow fadeInLeft" data-wow-duration="2s">
+                      <img src="{{'fp-1.png' | asset_url}}">
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="feature-content wow fadeInRight" data-wow-duration="2s">
+                      <h2>{{section.settings.text1}}</h2>
+                      <p>{{section.settings.text2}}</p>
+                      <div class="secfeature-cttn">
+                          <img src="{{'565.png' | asset_url}}">
+                      </div>
+                      <div class="all-append-btn">
+                           <a href="{{section.settings.url1}}">{{section.settings.btext1}}</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+
+{% schema %}
+  {
+    "name": "Home-meet-mazore",
+    "settings": [
+
+{
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add Heading"
+          },
+
+        {
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add paragrapgh"
+          },
+          {
+            "id": "btext1",
+            "type": "textarea",
+            "label": "Add button text"
+          },
+
+           {
+            "id": "url1",
+            "type": "url",
+            "label": "Add button url"
+          }
+  
+],
+"presets":[{
+ "name": "Home-meet-mazore",
+"category": "Custom Content"
+
+}]
+  }
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

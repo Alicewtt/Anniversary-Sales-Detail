@@ -1,0 +1,158 @@
+
+<section class="hozo_ultra--3dc">
+    <div class="container">
+        <div class="hozo_ultrahed text-center"><img src="{{section.settings.img1 | img_url : 'master'}}"></div>
+        <!-- <h2 class="heading-fonts">Ultra 3D Adapter</h2>     -->
+        <p>{{section.settings.text1}}</p>
+        <div class="hozo__2images">
+            <img src="{{section.settings.img2 | img_url : 'master'}}" class="cork__hozo-fimg">
+            <img src="{{section.settings.img3 | img_url : 'master'}}" class="cork__hozo-simg">
+        </div>
+    </div>
+</section>
+
+
+
+<section class="hozo_beyond--sec">
+    <div class="container">
+        <h2>Beyond extraordinary in detail</h2>    
+        <div class="row">
+            <div class="col-md-3">
+                <div class="hozo__beyond-1">   
+                    <h3>+60%</h3>
+                    <p>Measuring Range</p>
+                </div> 
+            </div>
+            <div class="col-md-6">
+                <div class="hozo__beyond-2" data-aos="fade-in"
+     data-aos-duration="3000">   
+                    <h4>MEAZOR 3D</h4>   
+                    <div class="hozo__pg--bar"></div>
+                </div>
+                <div class="hozo__beyond-22" data-aos="fade-in"
+     data-aos-duration="4000">   
+                    <h4>MEAZOR</h4>   
+                    <div class="hozo__pg--bar"></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="hozo__beyond-1">   
+                    <h4>40m/131ft</h4>
+                    <h4>25m/82ft</h4>
+                </div> 
+            </div>            
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="hozo__beyond-1">   
+                    <h3>+35%</h3>
+                    <p>Processor Speed</p>
+                </div> 
+            </div>
+            <div class="col-md-6">
+                <div class="hozo__beyond-2" data-aos="fade-in"
+     data-aos-duration="5000">   
+                    <h4>MEAZOR 3D</h4>   
+                    <div class="hozo__pg--bar"></div>
+                </div>
+                <div class="hozo__beyond-22 spacr-more-f" data-aos="fade-in"
+     data-aos-duration="6000">   
+                    <h4>MEAZOR</h4>   
+                    <div class="hozo__pg--bar"></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="hozo__beyond-1">   
+                    <h4>STH7 MCU</h4>
+                    <h4>ST 412 MCU</h4>
+                </div> 
+            </div>            
+        </div>        
+    </div>
+</section>
+
+
+
+{% schema %}
+  {
+    "name": "Product-info-3",
+    "settings": [
+{
+            "id": "img1",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+{
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add heading text"
+          },
+{
+            "id": "img2",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+{
+            "id": "img3",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+{
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add heading text"
+          },
+{
+            "id": "text3",
+            "type": "textarea",
+            "label": "Add text"
+          }
+],
+ "blocks": [
+      {
+        "type": "text",
+        "name": "slider",
+        "settings": [
+{
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add heading text"
+          },
+{
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add paragraph text"
+          },
+{
+            "id": "text3",
+            "type": "textarea",
+            "label": "Add  text"
+          },
+{
+            "id": "text4",
+            "type": "textarea",
+            "label": "Add text"
+          },
+{
+            "id": "text5",
+            "type": "textarea",
+            "label": "Add text"
+          },
+{
+            "id": "text6",
+            "type": "textarea",
+            "label": "Add text"
+          }
+         
+         
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

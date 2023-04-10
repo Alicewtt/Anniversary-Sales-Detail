@@ -1,0 +1,108 @@
+<section class="new-community">
+  <div class="container">
+    <div class="head-section">
+      <h2>{{ section.settings.title }}</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="new-communiy-inner">
+          <div class="community-image">
+            <a href="{{ section.settings.Page_first_url }}"><img src="{{ section.settings.image1 | img_url:'master' }}" class="img-fluid"></a>
+          </div>
+          <div class="community-content">
+            <h5>{{ section.settings.title_first }}</h5>
+            <div class="comman-btn-new">
+              <a href="{{ section.settings.Button_first_url }}">{{ section.settings.Button_first_title }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="new-communiy-inner">
+          <div class="community-image">
+            <a href="{{ section.settings.Page_second_url }}"><img src="{{ section.settings.image2 | img_url:'master' }}" class="img-fluid"></a>
+          </div>
+          <div class="community-content">
+            <h5>{{ section.settings.title_second }}</h5>
+            <div class="comman-btn-new">
+              <a href="{{ section.settings.Button_second_url }}"> 
+                {{ section.settings.Button_second_title }}
+               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Section>
+
+
+{% schema %}
+  {
+"name": "New Community",
+   "settings": [
+       {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+   {
+      "type": "url",
+      "id": "Page_first_url",
+      "label": "Page First Url"
+    },
+       {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "Image Title"
+    },
+      {
+      "type": "text",
+      "id": "title_first",
+      "label": "Title First Url"
+    },
+ {
+      "type": "url",
+      "id": "Button_first_url",
+      "label": "Button First Url"
+    },
+ {
+      "type": "text",
+      "id": "Button_first_title",
+      "label": "Button First Title"
+    },
+{
+      "type": "url",
+      "id": "Page_second_url",
+      "label": "Page second url"
+    },
+   {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Second Image"
+    },
+       {
+      "type": "text",
+      "id": "title_second",
+      "label": "Title Second"
+    },
+        {
+      "type": "url",
+      "id": "Button_second_url",
+      "label": "Button Second Url"
+    },
+  {
+      "type": "text",
+      "id": "Button_second_title",
+      "label": "Button Title"
+    }
+     
+ ],
+    
+"presets":[{
+ "name": "New Community",
+"category": "New Community"
+
+}]
+  }
+{% endschema %}

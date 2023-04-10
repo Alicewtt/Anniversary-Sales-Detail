@@ -1,0 +1,333 @@
+<style>
+  .section-7 {
+    background-color: #fff;
+    padding: 0px 0 30px;
+  }
+
+  .section-7 .inner-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 907px;
+    min-height: 273px;
+    box-sizing: border-box;
+
+    background: #f3f6f8;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1px;
+  }
+
+  .section-7 .title {
+    font-family: 'alibaba-heavy';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 75px;
+    line-height: 105px;
+    text-align: center;
+    color: #56b1fd;
+  }
+
+  .section-7 .input-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 547px;
+    height: 78px;
+    border-radius: 40px;
+    background: #ffffff;
+    border-radius: 40px;
+    margin: 30px auto 15px;
+  }
+
+  .section-7 .input-box .h-input {
+    max-width: 340px;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 37.5px;
+    line-height: 44px;
+    text-align: center;
+    color: #424a54;
+  }
+
+  .section-7 .input-box .h-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3f6f8;
+    border: 3px solid #56b1fd;
+    border-radius: 40px;
+    width: 117.19px;
+    height: 100%;
+    color: #070a0f;
+    font-size: 29px;
+  }
+
+  .section-7 .sub-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28.125px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #070a0f;
+  }
+
+  .m-br {
+    display: none;
+  }
+
+  .section-7 .vector_img {
+    display: block;
+    max-width: 280px;
+    height: auto;
+    margin: 15px auto;
+  }
+
+  @media (max-width: 900px) {
+    .section-7 .title {
+      font-size: 64px;
+      line-height: 90px;
+    }
+
+    .section-7 .inner-box {
+      padding: 1px 30px;
+      margin: 0 20px;
+    }
+
+    .section-7 .input-box {
+      height: 80px;
+      font-size: 36px;
+    }
+    .section-7 .input-box .h-input {
+      width: 100%;
+      font-size: 36px;
+      line-height: 42px;
+    }
+    .section-7 .sub-title {
+      font-size: 33px;
+      line-height: 42px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .section-7 .title {
+      font-size: 35px;
+      line-height: 50px;
+    }
+
+    .section-7 .inner-box {
+      padding: 1px 30px;
+      margin: 0 20px;
+    }
+
+    .section-7 .input-box {
+      height: 44px;
+      font-size: 20px;
+    }
+
+    .section-7 .input-box .h-input {
+      width: 100%;
+      font-size: 20px;
+    }
+    .section-7 .input-box .h-btn {
+      font-size: 24px;
+    }
+
+    .section-7 .sub-title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    .m-br {
+      display: block;
+    }
+  }
+</style>
+<section class="section-7">
+  <div class="title">Subscribe NOW</div>
+  <div class="inner-box">
+    {% comment %} <form
+      id="KlaviyoForm_bottom"
+      class="input-box"
+      action="https://a.klaviyo.com/subscriptions/subscribe"
+      data-ajax-submit="https://a.klaviyo.com/ajax/subscriptions/subscribe"
+      method="get"
+      target="_blank"
+      novalidate="novalidate"
+    >
+      <input class="" type="hidden" name="g" id="Y2vs6e" value="QQZmgU">
+      <input type="email" value="" name="email" data-bottom_email='bottom_email' id="k_id_email_bottom" class="h-input" placeholder="Enter Your Email">
+      <button type="submit" class=" btn--secondary Wheel__spinBtn h-btn">></button>
+    </form> {% endcomment %}
+
+    <div class="klaviyo-form-Y2vs6e"></div>
+    <div class="sub-title">
+      reserve special deals <br class="m-br">
+      on launch day
+    </div>
+    <a href="{{section.settings.discount_url}}">
+      <img class="vector_img" src="https://cdn.shopifycdn.net/s/files/1/0549/7667/6078/files/Vector.png" alt="">
+      
+    </a>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "h-neo_kslp_new_7",
+  "settings": [
+    {
+      "type": "url",
+      "id": "discount_url",
+      "label": "绿色文字跳转链接"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+<script>
+  var _learnq = _learnq || [];
+  KlaviyoSubscribe.attachToForms('#KlaviyoForm_bottom', {
+    hide_form_on_success: true,
+
+    extra_properties: {
+      $list: 'NeoRuler Signup',
+      $source: 'Wheel PopUp',
+      $timezone_offset: 2,
+      $consent_method: 'Klaviyo Form',
+      $consent_form_id: 'Y2vs6e',
+      $consent_form_version: '1037812',
+      $consent_version: 'Embed default text',
+    },
+    success: function ($form) {
+      var email = $form.find('[data-bottom_email="bottom_email"]').val();
+      _learnq.push(['identify', { $email: email }]);
+      _learnq.push(['track', 'Signed Up for Newsletter']);
+    },
+  });
+
+  function register_bottom(email) {
+    var APIKey, APIList;
+    APIKey = 'WyVzPW';
+    APIList = 'Y2vs6e';
+    var actionUrl = 'https://a.klaviyo.com/api/v2/list/Y2vs6e/subscribe';
+    var data = {
+      api_key: 'pk_ab4330e31f128fe8e39dccebab62c8394b',
+      profiles: [{ email: email }],
+    };
+    $.get(actionUrl, data).done(function (d) {});
+
+    var settings = {
+      async: true,
+      crossDomain: true,
+      url: 'https://manage.kmail-lists.com/ajax/subscriptions/subscribe',
+      method: 'POST',
+      headers: {
+        'content-type': 'application/x-www-form-urlencoded',
+        'cache-control': 'no-cache',
+      },
+      data: {
+        custom_source: 'NeoRuler Signup 1st page',
+
+        g: 'QQZmgU', // replace LIST_ID with id of list to be subscribed
+        email: email,
+        list_id: 'QQZmgU',
+        // pass in additional fields, each additional field
+        // must be included in the $fields string separated by commas
+        $fields: '$source, $first_name, $last_name',
+        $source: 'Account Creation',
+        api_key: 'pk_ab4330e31f128fe8e39dccebab62c8394b',
+        profiles: [
+          { email: email, $consent_form_id: 'Y2vs6e', $consent_form_version: 8131168, $consent_method: 'Klaviyo Form' },
+        ],
+      },
+    };
+    $.ajax(settings).done(function (response) {
+      console.log(response);
+
+      if (response.success) {
+        alert('提交成功');
+      }
+    });
+  }
+
+  jQuery(document).on('submit', '#KlaviyoForm_bottom', function (event) {
+    try {
+      var email = jQuery('#k_id_email_bottom').val();
+      var expressionReguliere = /^(([^<>()[]\.,;:s@]+(.[^<>()[]\.,;:s@]+)*)|(.+))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/;
+      if (expressionReguliere.test(email)) {
+        console.log('Mail Okay');
+      } else {
+        console.log('Erreur mail bottom');
+        alert('Erreur mail');
+        return;
+      }
+
+      event.preventDefault();
+      register_bottom(email);
+    } catch (error) {}
+  });
+
+
+  window.addEventListener("klaviyoForms", function(e) { 
+    if (e.detail.type == 'open') {
+
+    }
+  });
+
+
+  // 轮询监听底部邮件实例化
+  let nIntervId;
+
+  function listen_form() {
+    if (!nIntervId) {
+      nIntervId = setInterval(flashText, 300);
+    }
+  }
+
+  function flashText() {
+    const oElem = $('.klaviyo-form-Y2vs6e form')
+    if (oElem) {
+      console.log('已经监听表单实例化成功===停止')
+
+      {% comment %} 添加监听表单 {% endcomment %}
+      window.addEventListener("klaviyoForms", function(e) { 
+        console.dir('获取事件对象',e)
+
+        if (e.detail.type == 'submit') {
+          console.log('成功')
+          window.location.hash = "email_success"
+        }
+      });
+      stop_listen_form()
+
+      
+    } else {
+
+
+      console.log('监听表单实例化成功')
+      
+    }
+  }
+
+  function stop_listen_form() {
+    clearInterval(nIntervId);
+    // release our intervalID from the variable
+    nIntervId = null; 
+  }
+
+  listen_form()
+
+</script>

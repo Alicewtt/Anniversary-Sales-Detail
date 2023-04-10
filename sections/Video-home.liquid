@@ -1,0 +1,74 @@
+
+
+<section class="video-section video-section-one banner-new">
+  <div class="video-main">
+      <div class="video-bg-img">
+       <video autoplay loop playshine="" muted>
+			  <source src="{{ section.settings.video_url }}" type="video/mp4">
+			  <source src="https://cdn.shopify.com/videos/c/o/v/42e3e7e42f95468c849cc5cf5094dbda.mp4" type="video/ogg">
+			</video> 
+      </div>
+      <div class="video-text">
+            <div class="video-inner banner-inner-content">
+              <img data-swift-lazy=1 loading=lazy lazy-src="{{ section.settings.image | img_url:'master' }}" class="img-fluid">
+              <h1>{{ section.settings.video_title }}</h1>
+            </div>
+         <div class="video-button3 banner-inner-btn">
+           <a href="https://hozodesign.com/products/meazor3d" class="custom-btn-new">{{ section.settings.Button_title }}</a>
+           <a href="{{ section.settings.Other_Button_url }}" class="custom-btn-new video-button-new">{{ section.settings.Button_title1 }}<i class="fa fa-play"></i></a>
+         </div>
+      </div>
+
+  </div>
+</section>
+
+
+
+{% schema %}
+  {
+"name": "Video Home",
+   "settings": [
+   {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+      {
+      "type": "url",
+      "id": "video_url",
+      "label": "Video Url"
+    },
+     {
+      "type": "html",
+      "id": "video_title",
+      "label": "Video Title"
+    },
+      {
+      "type": "text",
+      "id": "Button_title",
+      "label": "Button Title"
+    },
+      {
+      "type": "url",
+      "id": "Button_url",
+      "label": "Button Url"
+    },
+      {
+      "type": "text",
+      "id": "Button_title1",
+      "label": "Button Title"
+    },
+      {
+      "type": "url",
+      "id": "Other_Button_url",
+      "label": "Other Button Url"
+    }
+ ],
+    
+"presets":[{
+ "name": "Video Home",
+"category": "Video Home"
+
+}]
+  }
+{% endschema %}

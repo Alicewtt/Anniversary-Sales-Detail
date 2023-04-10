@@ -1,0 +1,81 @@
+<section class="meazor-section-banner"> 
+<div class="container">
+  <div class="meazor-section-banner-inner">
+    <div class="meazor-banner-col-8">
+      <h2> {{ section.settings.title }}</h2>
+      <p> {{ section.settings.subtitle }}</p>
+    </div>
+    <div class="meazor-banner-col-4">
+      <img src=" {{ section.settings.Banner_image |img_url : 'master'}}">
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section class="rolvo-video"> 
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="rolvo-videos">   
+          <span><strong> {{ section.settings.video_title }}</span>
+
+           {% if section.settings.image_banner != blank %}
+            <img src="{{ section.settings.image_banner | img_url : 'master' }}">
+          {% endif %}
+
+         {% if section.settings.video_url != blank %}
+          <div class="introducing-video2 wow fadeInUp animated animated" data-wow-duration="2s" style="visibility: visible;-webkit-animation-duration: 2s; -moz-animation-duration: 2s; animation-duration: 2s;">
+                <iframe width="100%" height="520" src="{{ section.settings.video_url }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            </div>
+         {% endif %}
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+"name": "meazor-section-banner",
+   "settings": [
+       {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+       {
+      "type": "image_picker",
+      "id": "Banner_image",
+      "label": "Banner Image"
+    },
+      {
+      "type": "image_picker",
+      "id": "image_banner",
+      "label": "Image"
+    },
+      {
+      "type": "text",
+      "id": "video_title",
+      "label": "Video Title"
+    },
+      {
+      "type": "url",
+      "id": "video_url",
+      "label": "video Url"
+    }
+ ],
+    
+"presets":[{
+ "name": "meazor-section-banner",
+"category": "meazor-section-banner"
+
+}]
+  }
+{% endschema %}

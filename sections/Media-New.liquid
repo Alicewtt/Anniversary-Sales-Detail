@@ -1,0 +1,132 @@
+<section class="media-new">
+  <div class="container">
+    <div class="head-title1">
+      <h2>{{ section.settings.title }}</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="media-new-slider">
+          <div class="owl-carousel owl-theme media-new-slide">
+            {% for block in section.blocks %} 
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-4 p-0">
+                    <div class="media-new-image">
+                      <div class="media-new-image-inner">
+                        <img src="{{ block.settings.media-image | img_url :'master' }}" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8 p-0">
+                    <div class="media-new-content">
+                      <h4> {{ block.settings.customer_reviews }}</h4>
+                      <p>{{ block.settings.customer_name }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+
+            {% endfor %}
+
+<!--               <div class="item">
+                <div class="row">
+                  <div class="col-md-4 p-0">
+                    <div class="media-new-image">
+                      <div class="media-new-image-inner">
+                        <img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/t/23/assets/rolling.png?v=1664392191" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8 p-0">
+                    <div class="media-new-content">
+                      <h4> “Effortless with 360-degree rotation scanning, data transferring and co-working!”</h4>
+                      <p>RollingStone</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-4 p-0">
+                    <div class="media-new-image">
+                      <div class="media-new-image-inner">
+                        <img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/t/23/assets/buzz.png?v=1664392235" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8 p-0">
+                    <div class="media-new-content">
+                      <h4> “app-enabled laser measure ideal for designers, developers, DIY enthusiasts.”</h4>
+                      <p>BUZZ</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-4 p-0">
+                    <div class="media-new-image">
+                      <div class="media-new-image-inner">
+                        <img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/t/23/assets/Mashable%201.png?v=1664392292" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8 p-0">
+                    <div class="media-new-content">
+                      <h4>“Whether you are DIY crafting or 2D floorplaning, you can always find right tools at HOZO!”</h4>
+                      <p>Mashable</p>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+"name": "Media New",
+   "settings": [
+       {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+ ],
+       "blocks": [
+     {
+       "name": "FAQ",
+       "type": "FAQ",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "media-image",
+           "label": "Media Image"
+         },
+           {
+           "type": "html",
+           "id": "customer_reviews",
+           "label": "Customer Reviews"
+         },
+       {
+           "type": "text",
+           "id": "customer_name",
+           "label": "Customer Name"
+         }
+         
+       ]
+     }
+  ],
+    
+"presets":[{
+ "name": "Media New",
+"category": "Media New"
+
+}]
+  }
+{% endschema %}

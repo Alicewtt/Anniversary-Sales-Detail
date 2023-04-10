@@ -1,0 +1,230 @@
+<div class="page-wrapper techpage-box">
+    <section class="meazor-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="top-heading">
+                        <h5>
+                            <span>
+                                <svg width="14" height="29" viewBox="0 0 14 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.675 28.0025C11.3762 28.0035 11.081 27.9376 10.811 27.8095C10.541 27.6815 10.3032 27.4945 10.115 27.2625L0.454976 15.2625C0.160812 14.9046 0 14.4558 0 13.9925C0 13.5293 0.160812 13.0804 0.454976 12.7225L10.455 0.722505C10.7945 0.314071 11.2823 0.0572225 11.8111 0.008463C12.34 -0.0402965 12.8665 0.123027 13.275 0.462504C13.6834 0.801982 13.9403 1.2898 13.989 1.81866C14.0378 2.34751 13.8745 2.87407 13.535 3.2825L4.59498 14.0025L13.235 24.7225C13.4795 25.0161 13.6349 25.3736 13.6827 25.7527C13.7304 26.1318 13.6686 26.5166 13.5045 26.8617C13.3404 27.2067 13.0808 27.4975 12.7566 27.6997C12.4324 27.9019 12.057 28.007 11.675 28.0025Z" fill="black"/>
+                                </svg>
+                            </span><a href="{{ section.settings.url3 }}"> {{ section.settings.txt3 }}</a>
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 mx-auto">
+                    <div class="meazor-carousel owl-carousel owl-theme">
+                      {%  for block in section.blocks  %}
+                                   {% if block.type == 'slider' %}
+                        <div class="item">
+                            <div class="ipod-image">
+                                 <img src="{{ block.settings.img1 | img_url : 'master'}}" class="img-fluid" alt="Hozo-design">
+                            </div>
+                        </div>
+                                     {%  endif %}
+                                     {% endfor %}
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="nav nav-tabs border-0 justify-content-between" id="myTab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" data-toggle="tab" href="#functions">{{ section.settings.txt1 }}</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#hardware">{{ section.settings.txt2 }}</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane container active" id="functions">
+                            <div class="inner-function">
+                                <div class="row">
+                                 {%  for block in section.blocks  %}
+                                   {% if block.type == 'first' %}
+                                    <div class="col-lg-6 col-md-6  mt-3 {% if forloop.index == 2 %} {% endif %}">
+                                        <div class="function-box">
+                                            <h4>{{ block.settings.txt1 }}</h4>
+                                        {{ block.settings.url1 }}
+                                        </div>
+                                    </div>
+                                     {% endif %}
+                                  {%  endfor %}
+
+                                    <div class="col-lg-12">
+                                        <div class="button">
+                                            <button type="button" onclick="window.location.href='{{ section.settings.url1 }}';" class="btn btn-default">Buy Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                          <div class="tab-pane container" id="hardware">
+                            <div class="inner-function">
+                                <div class="row">
+                               {%  for block in section.blocks  %}
+                                   {% if block.type == 'two' %}
+                                    <div class="col-lg-6 col-md-6  mt-3 {% if forloop.index > 1 %} {% endif %}">
+                                        <div class="function-box">
+                                            <h4>{{ block.settings.txt1 }}</h4>
+                                        {{ block.settings.url1 }}
+                                        </div>
+                                    </div>
+                                      {% endif %}
+                                     {% endfor %}
+
+
+                                    <div class="col-lg-12">
+                                        <div class="button">
+                                            <button type="button" onclick="window.location.href='{{ section.settings.url2 }}';" class="btn btn-default">Buy Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                  
+                    <div class="row">
+                      {{ page.metafields.global.content.value }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+                                  
+
+<script>
+$('.meazor-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoPlaySpeed: 100,
+    autoPlayTimeout: 100,
+    smartSpeed: 1000,
+    nav:false,
+    dots: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            
+            items:1
+        }
+    }
+});
+</script>
+
+{% schema %}
+   {
+    "name": "Tech-section",
+    "settings": [
+     {
+            "id": "txt1",
+            "type": "textarea",
+            "label": "Add tab-1 heading"
+          },
+      {
+            "id": "url1",
+            "type": "url",
+            "label": "Add tab-1 url(buy now)"
+          },
+      {
+            "id": "txt2",
+            "type": "textarea",
+            "label": "Add tab-2 text"
+          },
+   {
+            "id": "url2",
+            "type": "url",
+            "label": "Add tab-2 url(buy now)"
+          },
+  {
+            "id": "txt3",
+            "type": "textarea",
+            "label": "Add back-button text"
+          },
+   {
+            "id": "url3",
+            "type": "url",
+            "label": "Add back-button url"
+          }
+      
+    ],
+     "blocks": [
+       {
+        "type": "slider",
+        "name": "slider",
+        "settings": [
+              {
+            "id": "img1",
+            "type": "image_picker",
+            "label": "Add image"
+          }
+          
+         
+        ]
+      },
+        {
+        "type": "first",
+        "name": "Tab-1",
+        "settings": [
+              {
+            "id": "txt1",
+            "type": "textarea",
+            "label": "Add heading"
+          },
+      {
+            "id": "url1",
+            "type": "html",
+            "label": "Add content"
+          }
+        
+          
+         
+        ]
+      },
+       {
+        "type": "two",
+        "name": "Tab-2",
+        "settings": [
+             {
+            "id": "txt1",
+            "type": "textarea",
+            "label": "Add heading"
+          },
+      {
+            "id": "url1",
+            "type": "html",
+            "label": "Add content"
+          }
+        
+          
+         
+        ]
+      }
+    ],
+    "presets":[{
+ "name": "Tech-section",
+"category": "Custom Content"
+
+}]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,110 @@
+<section class="contact-section-about bg-gray">
+        <div class="container">
+            <div class="contact-section-inner">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-info">
+                            <div class="section-title wow fadeInLeft" data-wow-duration="2s">
+                                <h2>Become a Dealer</h2>
+                                <p>No problem, Just send us a message! And we will get in touch with you soon!</p>
+                            </div>
+                            {%- assign formId = 'ContactForm' -%}
+        {% form 'contact', id: formId %}
+          {% include 'form-status', form: form, form_id: formId %}
+                                <div class="contact-form wow fadeInLeft" data-wow-duration="2s">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" name="contact[name]" placeholder="Name *">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="email" name="contact[email]" placeholder="Email *">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" name="contact[subject]" placeholder="Subject">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <textarea placeholder="Message " name="contact[body]"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <button type="submit">Send</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                             {% endform %}
+                        </div>
+                    </div>
+                
+
+
+
+
+<div class="col-md-6">
+                        <div class="conatct-info-map wow fadeInRight" data-wow-duration="2s">
+                            <div class="info-map-inner">
+                                <iframe src="{{section.settings.gurl}}" width="" height="" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                            <div class="adrress-details">
+                                <p>HOZO Design Hong Kong Headquarters:</p>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>{{section.settings.add}}</a></li>
+                                    <li><a href="tel:{{section.settings.number}}"><i class="fa fa-phone" aria-hidden="true"></i>{{section.settings.number}}</a></li>
+                                    <li><a href="mailto:{{section.settings.mail}}"><i class="fa fa-envelope" aria-hidden="true"></i>{{section.settings.mail}}</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    
+                  
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+{% schema %}
+  {
+    "name": "contact-section-3",
+    "settings": [
+{
+            "id": "gurl",
+            "type": "url",
+            "label": "Add map url"
+          },
+{
+            "id": "add",
+            "type": "textarea",
+            "label": "Add address"
+          },
+{
+            "id": "number",
+            "type": "textarea",
+            "label": "Add number"
+          },
+{
+            "id": "mail",
+            "type": "textarea",
+            "label": "Add email"
+          }
+
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

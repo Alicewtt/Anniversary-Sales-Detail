@@ -1,0 +1,1623 @@
+<script>
+// version 15/02
+var rootLinkTikTokPixel =
+	'https://apps3.omegatheme.com/shopify/tiktok-multi-pixels/server.php';
+var rootAppPublicTikTokPixel =
+	'https://apps3.omegatheme.com/shopify/tiktok-multi-pixels/public';
+var shop = Shopify.shop;
+var pageURL = null;
+const CONTENT_TYPE_IS_PRODUCT_GROUP = 0;
+const CONTENT_TYPE_IS_PRODUCT = 1;
+// if (typeof __st.pageurl != 'undefined') {
+//   pageURL = 'https://' + __st.pageurl;
+// } else {
+//   pageURL = window.location.href;
+// }
+pageURL = window.location.href;
+// if (pageURL.indexOf('&')) {
+//   pageURL = pageURL.split('&')[0];
+// }
+const EVENT_NAME_TOOL = {
+	browse: 'Page View',
+	viewContent: 'View Content',
+	addToCart: 'Add to Cart',
+	startCheckout: 'Initiate Checkout',
+	purchase: 'Complete payment',
+};
+var user_agent = getUserAgent();
+var pageReferrer = '';
+var currency = Shopify.currency.active;
+var cart_url = '//' + window.location.hostname + '/cart.json';
+var itemInCart;
+var otElementButtonAddToCart =
+	".gt_button-atc,#teeAtcButton,#new-form-atc,.ProductForm__AddToCart,.single_add_to_cart_button,#AddToCartForm button,.product__form button.add-to-cart, #AddToCart-product-template,.product-form__cart-submit,[name^='add']";
+var otElementButtonCheckout =
+	'form[action^="/checkout"] :submit[name^="checkout"],form[action^="/checkout"] .checkout-button,.checkout_btn,.OTCheckout,[name^="checkout"],form[action^="/cart"] :submit[name^="checkout"],form[action^="/cart"] .checkout-button,#cart .action_button.right .gt_checkout_button_main';
+var ip = null;
+var ot_ttclid = null;
+!(function (w, d, t) {
+	w.TiktokAnalyticsObject = t;
+	var ttq = (w[t] = w[t] || []);
+	(ttq.methods = [
+		'page',
+		'track',
+		'identify',
+		'instances',
+		'debug',
+		'on',
+		'off',
+		'once',
+		'ready',
+		'alias',
+		'group',
+		'enableCookie',
+		'disableCookie',
+	]),
+		(ttq.setAndDefer = function (t, e) {
+			t[e] = function () {
+				t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+			};
+		});
+	for (var i = 0; i < ttq.methods.length; i++)
+		ttq.setAndDefer(ttq, ttq.methods[i]);
+	(ttq.instance = function (t) {
+		for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)
+			ttq.setAndDefer(e, ttq.methods[n]);
+		return e;
+	}),
+		(ttq.load = function (e, n) {
+			var i = 'https://analytics.tiktok.com/i18n/pixel/events.js';
+			(ttq._i = ttq._i || {}),
+				(ttq._i[e] = []),
+				(ttq._i[e]._u = i),
+				(ttq._t = ttq._t || {}),
+				(ttq._t[e] = +new Date()),
+				(ttq._o = ttq._o || {}),
+				(ttq._o[e] = n || {});
+			var o = document.createElement('script');
+			(o.type = 'text/javascript'),
+				(o.async = !0),
+				(o.src = i + '?sdkid=' + e + '&lib=' + t);
+			var a = document.getElementsByTagName('script')[0];
+			a.parentNode.insertBefore(o, a);
+		});
+	ttq.checkOmega = function () {
+		if (arguments.length > 0) {
+			var oh, nh, ih, event_id;
+			if (typeof arguments[0] == 'string') {
+				oh = arguments[0];
+			}
+			if (typeof arguments[1] == 'string') {
+				nh = arguments[1];
+			}
+			if (typeof arguments[2] == 'object') {
+				ih = arguments[2];
+			}
+			if (typeof arguments[3] == 'string') {
+				event_id = arguments[3];
+				console.log('event_id: ' + event_id);
+			} else if (typeof event_id == 'undefined') {
+				let external_id = generateExternalID(36);
+				event_id = getEventID(external_id);
+				console.log('Create event_id: ' + event_id);
+			}
+			if (
+				'string' == typeof oh &&
+				'' != oh.replace(/\s+/gi, '') &&
+				'string' == typeof nh &&
+				nh.replace(/\s+/gi, '')
+			) {
+				ttq.load(oh);
+				ttq.page();
+				switch (nh) {
+					case 'StartCheckout':
+						ttq.instance(oh).track('InitiateCheckout', ih, {
+							event_id: event_id,
+						});
+						break;
+					case 'Purchase':
+						ttq.instance(oh).track('CompletePayment', ih, {
+							event_id: event_id,
+						});
+						break;
+					case 'ViewContent':
+					case 'Search':
+					case 'AddToCart':
+					case 'AddPaymentInfo':
+					case 'Lead':
+					case 'CompleteRegistration':
+					case 'Checkout':
+					case 'AddToWishlist':
+						ttq.instance(oh).track(nh, ih, { event_id: event_id });
+						break;
+					default:
+						return;
+				}
+			}
+		}
+	};
+
+	//part2
+})(window, document, 'ttq');
+
+if (typeof $ == 'undefined') {
+	javascript: (function (e, s) {
+		e.src = s;
+		e.onload = function () {
+			$ = jQuery.noConflict();
+			if (typeof window.otCheckExistFileTikTokPixel === 'undefined') {
+				if (!Shopify.Checkout) {
+					otIncludeTrackTool();
+				}
+				otTikTokPixelInit($);
+				ot_ttclid = otAddAttributeIDAds($);
+				window.otCheckExistFileTikTokPixel = false;
+			}
+		};
+		document.head.appendChild(e);
+	})(
+		document.createElement('script'),
+		'https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'
+	);
+} else {
+	if (typeof window.otCheckExistFileTikTokPixel === 'undefined') {
+		if (!Shopify.Checkout) {
+			otIncludeTrackTool();
+		}
+		otTikTokPixelInit($);
+		ot_ttclid = otAddAttributeIDAds($);
+		window.otCheckExistFileTikTokPixel = false;
+	}
+}
+async function otTikTokPixelInit($) {
+	if (Shopify.Checkout && Shopify.Checkout.page.indexOf('thank_you') !== -1) {
+		var checkTiktokPixelExpire = await otTikTokPixelCheckExpireApp(
+			$,
+			rootLinkTikTokPixel,
+			shop
+		);
+	} else {
+		var checkTiktokPixelExpire = tikTokPixelCheckExpireApp;
+	}
+	if (
+		!checkTiktokPixelExpire.check_expire &&
+		checkTiktokPixelExpire.enable_app
+	) {
+		await getIP().then((data) => {
+			let ipRegex = /[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/;
+			ip = data.match(ipRegex)[0];
+		});
+
+		otMultiTikTokPixel(
+			$,
+			checkTiktokPixelExpire.content_type_event,
+			typeof checkTiktokPixelExpire.enable_deduplication !== 'undefined'
+				? checkTiktokPixelExpire.enable_deduplication
+				: 0
+		);
+	}
+}
+
+async function otMultiTikTokPixel($, content_type_event, enable_deduplication) {
+	if (
+		typeof arrayTikTokPixelTrackNew != 'undefined' &&
+		typeof arrayTikTokPixelCapiTrackNew != 'undefined'
+	) {
+		arrayTikTokPixelTrackNew.forEach(async function (element, index) {
+			ttq.checkOmega(`${element}`, 'PageView');
+		});
+		//Detect type content_type
+		let content_type = 'product_group';
+		if (content_type_event == CONTENT_TYPE_IS_PRODUCT) {
+			content_type = 'product';
+		}
+		//Detect type content_type
+
+		if (arrayTikTokPixelCapiTrackNew.length > 0) {
+			let external_id = generateExternalID(36);
+			let event_id = getEventID(external_id);
+			trackEventsAPITikTok($, {
+				action: 'Browse',
+				event: 'Browse',
+				eventShowTool: EVENT_NAME_TOOL.browse,
+				event_id: event_id,
+				url: pageURL,
+				pixel_ids: arrayTikTokPixelCapiTrackNew,
+				shop: Shopify.shop,
+				ip: ip !== null ? ip : '',
+				user_agent: user_agent,
+				content_type: content_type,
+				ttclid: ot_ttclid,
+			});
+			if (enable_deduplication == 1) {
+				arrayTikTokPixelCapiTrackNew.forEach(async function (
+					element,
+					index
+				) {
+					ttq.checkOmega(`${element}`, 'PageView', event_id);
+				});
+			}
+		}
+
+		if (pageURL.indexOf('/products/') > -1) {
+			// add event ViewContent
+			if (pageURL.indexOf('?') > -1) {
+				var product_url = pageURL.split('?');
+				product_url = product_url[0] + '.json';
+			} else {
+				var product_url = pageURL + '.json';
+			}
+			var product = await otGetInfoProductByLink(product_url, $);
+			if (product.title.indexOf("'") > -1) {
+				product.title = product.title.replace(/'/g, '');
+			}
+
+			//Detect type content_type
+			let content_id =
+				typeof product.id !== 'undefined'
+					? product.id
+					: meta.product.id;
+			let variant_id = ot_getUrlParam('variant');
+			if (content_type_event == CONTENT_TYPE_IS_PRODUCT) {
+				content_id =
+					variant_id !== null
+						? variant_id
+						: meta.product.variants[0].id;
+			}
+			//Detect type content_type
+
+			arrayTikTokPixelTrackNew.forEach(async function (element, index) {
+				ttq.checkOmega(`${element}`, 'ViewContent', {
+					content_id: `${content_id}`,
+					content_type: content_type,
+					value: otConvertPrice(product.variants[0].price),
+					content_name: `${product.title}`,
+					currency: `${currency}`,
+				});
+			});
+			if (arrayTikTokPixelCapiTrackNew.length > 0) {
+				let external_id = generateExternalID(36);
+				let event_id = getEventID(external_id);
+				trackEventsAPITikTok($, {
+					action: 'ViewContent',
+					event: 'ViewContent',
+					eventShowTool: EVENT_NAME_TOOL.viewContent,
+					event_id: event_id,
+					url: pageURL,
+					pixel_ids: arrayTikTokPixelCapiTrackNew,
+					shop: Shopify.shop,
+					ip: ip !== null ? ip : '',
+					user_agent: user_agent,
+					value: otConvertPrice(product.variants[0].price),
+					content_name: `${product.title}`,
+					currency: `${currency}`,
+					content_id: `${content_id}`,
+					content_type: content_type,
+					ttclid: ot_ttclid,
+				});
+				if (enable_deduplication == 1) {
+					arrayTikTokPixelCapiTrackNew.forEach(async function (
+						element,
+						index
+					) {
+						ttq.checkOmega(
+							`${element}`,
+							'ViewContent',
+							{
+								content_id: `${content_id}`,
+								content_type: content_type,
+								value: otConvertPrice(
+									product.variants[0].price
+								),
+								content_name: `${product.title}`,
+								currency: `${currency}`,
+							},
+							event_id
+						);
+					});
+				}
+			}
+		}
+		if (pageURL.indexOf('/cart') > -1) {
+			getItemOnCartPage($, function (cart) {
+				itemInCart = cart;
+				let items = cart.items;
+				let lastItem = items[items.length - 1];
+				let totalItemCart = localStorage.getItem('OTPX');
+				let checkAddedOnProductPage = localStorage.getItem('OTPXADDED');
+				if (
+					(totalItemCart != cart.item_count ||
+						totalItemCart == null) &&
+					checkAddedOnProductPage != 1
+				) {
+					localStorage.setItem('OTPXADDED', 0);
+					localStorage.setItem('OTPX', cart.item_count);
+
+					//Detect type content_type
+					let content_id = lastItem['product_id'];
+					if (content_type_event == CONTENT_TYPE_IS_PRODUCT) {
+						content_id = lastItem['variant_id'];
+					}
+					//Detect type content_type
+
+					arrayTikTokPixelTrackNew.forEach(async function (
+						element,
+						index
+					) {
+						ttq.checkOmega(`${element}`, 'AddToCart', {
+							content_id: `${content_id}`,
+							content_type: content_type,
+							value: otConvertPrice(
+								parseInt(cart.total_price) / 100
+							),
+							content_name: `${lastItem['product_title']}`,
+							currency: `${currency}`,
+						});
+					});
+					if (arrayTikTokPixelCapiTrackNew.length > 0) {
+						let external_id = generateExternalID(36);
+						let event_id = getEventID(external_id);
+						trackEventsAPITikTok($, {
+							action: 'AddToCart',
+							event: 'AddToCart',
+							eventShowTool: EVENT_NAME_TOOL.addToCart,
+							event_id: event_id,
+							url: pageURL,
+							pixel_ids: arrayTikTokPixelCapiTrackNew,
+							shop: Shopify.shop,
+							ip: ip !== null ? ip : '',
+							user_agent: user_agent,
+							content_id: `${content_id}`,
+							content_type: content_type,
+							value: otConvertPrice(
+								parseInt(cart.total_price) / 100
+							),
+							currency: `${currency}`,
+							ttclid: ot_ttclid,
+						});
+						if (enable_deduplication == 1) {
+							arrayTikTokPixelCapiTrackNew.forEach(
+								async function (element, index) {
+									ttq.checkOmega(
+										`${element}`,
+										'AddToCart',
+										{
+											content_id: `${content_id}`,
+											content_type: content_type,
+											value: otConvertPrice(
+												parseInt(cart.total_price) / 100
+											),
+											content_name: `${lastItem['product_title']}`,
+											currency: `${currency}`,
+										},
+										event_id
+									);
+								}
+							);
+						}
+					}
+				}
+			});
+		}
+		// add event AddToCart
+		$(otElementButtonAddToCart).click(function (e) {
+			setTimeout(function () {
+				$.ajax({
+					type: 'GET',
+					url: '/cart.js',
+					dataType: 'json',
+				}).done((cart) => {
+					localStorage.setItem('OTPXADDED', 1);
+					if (cart.items.length > 0) {
+						let lastItem = cart.items[0];
+
+						//Detect type content_type
+						let content_id = lastItem['product_id'];
+						if (content_type_event == CONTENT_TYPE_IS_PRODUCT) {
+							content_id = lastItem['variant_id'];
+						}
+						//Detect type content_type
+
+						arrayTikTokPixelTrackNew.forEach(async function (
+							element,
+							index
+						) {
+							ttq.checkOmega(`${element}`, 'AddToCart', {
+								content_id: `${content_id}`,
+								content_type: content_type,
+								value: otConvertPrice(
+									parseInt(cart.total_price) / 100
+								),
+								content_name: `${lastItem['product_title']}`,
+								currency: `${currency}`,
+							});
+						});
+						if (arrayTikTokPixelCapiTrackNew.length > 0) {
+							let external_id = generateExternalID(36);
+							let event_id = getEventID(external_id);
+							trackEventsAPITikTok($, {
+								action: 'AddToCart',
+								event: 'AddToCart',
+								eventShowTool: EVENT_NAME_TOOL.addToCart,
+								event_id: event_id,
+								url: pageURL,
+								pixel_ids: arrayTikTokPixelCapiTrackNew,
+								shop: Shopify.shop,
+								ip: ip !== null ? ip : '',
+								user_agent: user_agent,
+								content_id: `${content_id}`,
+								content_type: content_type,
+								value: otConvertPrice(
+									parseInt(cart.total_price) / 100
+								),
+								currency: `${currency}`,
+								ttclid: ot_ttclid,
+							});
+							if (enable_deduplication == 1) {
+								arrayTikTokPixelCapiTrackNew.forEach(
+									async function (element, index) {
+										ttq.checkOmega(
+											`${element}`,
+											'AddToCart',
+											{
+												content_id: `${content_id}`,
+												content_type: content_type,
+												value: otConvertPrice(
+													parseInt(cart.total_price) /
+														100
+												),
+												content_name: `${lastItem['product_title']}`,
+												currency: `${currency}`,
+											},
+											event_id
+										);
+									}
+								);
+							}
+						}
+					} else {
+						if (typeof meta.product != 'undefined') {
+							//Detect type content_type
+							let content_id = meta.product.id;
+							let variant_id = ot_getUrlParam('variant');
+							if (content_type_event == CONTENT_TYPE_IS_PRODUCT) {
+								content_id =
+									variant_id !== null
+										? variant_id
+										: meta.product.variants[0].id;
+							}
+							//Detect type content_type
+
+							arrayTikTokPixelTrackNew.forEach(async function (
+								element,
+								index
+							) {
+								ttq.checkOmega(`${element}`, 'AddToCart', {
+									content_id: `${content_id}`,
+									content_type: content_type,
+									value: otConvertPrice(
+										parseInt(
+											meta.product.variants[0]['price']
+										) / 100
+									),
+									content_name: `${meta.product.variants[0]['name']}`,
+									currency: `${currency}`,
+								});
+							});
+							if (arrayTikTokPixelCapiTrackNew.length > 0) {
+								let external_id = generateExternalID(36);
+								let event_id = getEventID(external_id);
+								trackEventsAPITikTok($, {
+									action: 'AddToCart',
+									event: 'AddToCart',
+									eventShowTool: EVENT_NAME_TOOL.addToCart,
+									event_id: event_id,
+									url: pageURL,
+									pixel_ids: arrayTikTokPixelCapiTrackNew,
+									shop: Shopify.shop,
+									ip: ip !== null ? ip : '',
+									user_agent: user_agent,
+									content_id: `${content_id}`,
+									content_type: content_type,
+									value: otConvertPrice(
+										parseInt(
+											meta.product.variants[0]['price']
+										) / 100
+									),
+									currency: `${currency}`,
+									ttclid: ot_ttclid,
+								});
+								if (enable_deduplication == 1) {
+									arrayTikTokPixelCapiTrackNew.forEach(
+										async function (element, index) {
+											ttq.checkOmega(
+												`${element}`,
+												'AddToCart',
+												{
+													content_id: `${content_id}`,
+													content_type: content_type,
+													value: otConvertPrice(
+														parseInt(
+															meta.product
+																.variants[0][
+																'price'
+															]
+														) / 100
+													),
+													content_name: `${meta.product.variants[0]['name']}`,
+													currency: `${currency}`,
+												},
+												event_id
+											);
+										}
+									);
+								}
+							}
+						}
+					}
+				});
+			}, 500);
+		});
+
+		// add event Checkout
+		$('body').on('click', otElementButtonCheckout, function (e) {
+			if (
+				typeof itemInCart != 'undefined' &&
+				typeof itemInCart.items != 'undefined'
+			) {
+				var cart = itemInCart;
+				if (cart.items.length > 0) {
+					let arrayContent = [];
+					$.each(cart.items, function (index, value) {
+						//Detect type content_type
+						let content_id = value.product_id;
+						if (content_type_event == CONTENT_TYPE_IS_PRODUCT) {
+							content_id = value.variant_id;
+						}
+						//Detect type content_type
+
+						arrayContent.push({
+							content_id: `${content_id}`,
+							content_type: content_type,
+							content_name: value.product_title,
+							quantity: value.quantity,
+							price: otConvertPrice(value.final_price),
+						});
+					});
+					arrayTikTokPixelTrackNew.forEach(async function (
+						element,
+						index
+					) {
+						ttq.checkOmega(`${element}`, 'StartCheckout', {
+							contents: arrayContent,
+							currency: `${currency}`,
+							value: otConvertPrice(cart.total_price / 100),
+						});
+					});
+					if (arrayTikTokPixelCapiTrackNew.length > 0) {
+						let external_id = generateExternalID(36);
+						let event_id = getEventID(external_id);
+						trackEventsAPITikTok($, {
+							action: 'StartCheckout',
+							event: 'StartCheckout',
+							eventShowTool: EVENT_NAME_TOOL.startCheckout,
+							event_id: event_id,
+							url: pageURL,
+							pixel_ids: arrayTikTokPixelCapiTrackNew,
+							shop: Shopify.shop,
+							ip: ip !== null ? ip : '',
+							user_agent: user_agent,
+							contents: arrayContent,
+							currency: `${currency}`,
+							value: otConvertPrice(cart.total_price / 100),
+							ttclid: ot_ttclid,
+						});
+						if (enable_deduplication == 1) {
+							arrayTikTokPixelCapiTrackNew.forEach(
+								async function (element, index) {
+									ttq.checkOmega(
+										`${element}`,
+										'StartCheckout',
+										{
+											contents: arrayContent,
+											currency: `${currency}`,
+											value: otConvertPrice(
+												cart.total_price / 100
+											),
+										},
+										event_id
+									);
+								}
+							);
+						}
+					}
+				}
+			} else {
+				$.ajax({
+					type: 'GET',
+					url: '/cart.js',
+					dataType: 'json',
+				})
+					.done((cart) => {
+						if (cart.items.length > 0) {
+							let arrayContent = [];
+							$.each(cart.items, function (index, value) {
+								//Detect type content_type
+								let content_id = value.product_id;
+								if (
+									content_type_event ==
+									CONTENT_TYPE_IS_PRODUCT
+								) {
+									content_id = value.variant_id;
+								}
+								//Detect type content_type
+
+								arrayContent.push({
+									content_id: `${content_id}`,
+									content_type: content_type,
+									content_name: value.product_title,
+									quantity: value.quantity,
+									price: otConvertPrice(value.final_price),
+								});
+							});
+							arrayTikTokPixelTrackNew.forEach(async function (
+								element,
+								index
+							) {
+								ttq.checkOmega(`${element}`, 'StartCheckout', {
+									contents: arrayContent,
+									currency: `${currency}`,
+									value: otConvertPrice(
+										cart.total_price / 100
+									),
+								});
+							});
+							if (arrayTikTokPixelCapiTrackNew.length > 0) {
+								let external_id = generateExternalID(36);
+								let event_id = getEventID(external_id);
+								trackEventsAPITikTok($, {
+									action: 'StartCheckout',
+									event: 'StartCheckout',
+									eventShowTool:
+										EVENT_NAME_TOOL.startCheckout,
+									event_id: event_id,
+									url: pageURL,
+									pixel_ids: arrayTikTokPixelCapiTrackNew,
+									shop: Shopify.shop,
+									ip: ip !== null ? ip : '',
+									user_agent: user_agent,
+									contents: arrayContent,
+									currency: `${currency}`,
+									value: otConvertPrice(
+										cart.total_price / 100
+									),
+									ttclid: ot_ttclid,
+								});
+								if (enable_deduplication == 1) {
+									arrayTikTokPixelCapiTrackNew.forEach(
+										async function (element, index) {
+											ttq.checkOmega(
+												`${element}`,
+												'StartCheckout',
+												{
+													contents: arrayContent,
+													currency: `${currency}`,
+													value: otConvertPrice(
+														cart.total_price / 100
+													),
+												},
+												event_id
+											);
+										}
+									);
+								}
+							}
+						}
+					})
+					.fail(function (jqXHR, textStatus) {});
+			}
+		});
+	}
+	if (Shopify.Checkout && Shopify.Checkout.page.indexOf('thank_you') !== -1) {
+		let arrayContent = [];
+		var productIds = [];
+		Shopify.checkout.line_items.forEach(function (item, index) {
+			if (item.variant_title != '') {
+				var prod_name = item.title + ' - ' + item.variant_title;
+			} else {
+				var prod_name = item.title;
+			}
+			productIds.push(item.product_id);
+
+			//Detect type content_type
+			let content_type = 'product_group';
+			let content_id = item.product_id;
+			if (content_type_event == CONTENT_TYPE_IS_PRODUCT) {
+				content_id = item.variant_id;
+				content_type = 'product';
+			}
+			//Detect type content_type
+
+			arrayContent.push({
+				content_id: `${content_id}`,
+				content_type: content_type,
+				content_name: prod_name,
+				quantity: item.quantity,
+				price: otConvertPrice(item.price),
+			});
+		});
+
+		addEventPurchaseInThankYouPageTikTok(
+			$,
+			arrayContent,
+			productIds,
+			enable_deduplication
+		);
+	}
+}
+
+function getItemOnCartPage($, callback) {
+	$.ajax({
+		type: 'GET',
+		url: '/cart.js',
+		dataType: 'json',
+	}).done((cart) => {
+		if (typeof callback == 'function') {
+			callback(cart);
+		}
+	});
+}
+function otTikTokPixelCheckExpireApp($, rootLinkTikTokPixel, shop) {
+	'use strict';
+	return new Promise((resolve) => {
+		$.ajax({
+			type: 'GET',
+			data: { shop: shop },
+			url: `${rootLinkTikTokPixel}/api/external/check-expire`,
+			dataType: 'json',
+		}).done((result) => {
+			resolve(result.data);
+		});
+	});
+}
+
+async function addEventPurchaseInThankYouPageTikTok(
+	$,
+	arrayContent,
+	productIds,
+	enable_deduplication
+) {
+	const results = await getAllTikTokPixelInThankYouPage(productIds);
+	if (
+		typeof results['pixels'] !== 'undefined' &&
+		typeof results['pixelsCapi'] !== 'undefined'
+	) {
+		window.arrayTikTokPixelCapiTrackNew = results['pixelsCapi'];
+		window.arrayTikTokPixel = results['pixelCapi_information'];
+		otIncludeTrackTool();
+		var pixels = results['pixels'];
+		var pixelsCapi = results['pixelsCapi'];
+		if (pixels.length > 0) {
+			pixels.forEach(async function (element, index) {
+				ttq.checkOmega(`${element}`, 'Purchase', {
+					contents: arrayContent,
+					currency: `${currency}`,
+					value: otConvertPrice(Shopify.checkout.subtotal_price),
+				});
+				if (shop == 'veralo-br.myshopify.com') {
+					ttq.checkOmega(`${element}`, 'Checkout', {
+						contents: arrayContent,
+						currency: `${currency}`,
+						value: otConvertPrice(Shopify.checkout.subtotal_price),
+					});
+				}
+			});
+		}
+		if (pixelsCapi.length > 0) {
+			let external_id = generateExternalID(36);
+			let event_id = Shopify.checkout.order_id;
+			getInformationCustomerHash(Shopify, external_id).then(
+				(user_infomartion) => {
+					trackEventsAPITikTok($, {
+						action: 'Purchase',
+						event: 'Purchase',
+						eventShowTool: EVENT_NAME_TOOL.purchase,
+						event_id: event_id,
+						url: pageURL,
+						pixel_ids: pixelsCapi,
+						shop: Shopify.shop,
+						ip: ip !== null ? ip : '',
+						user_agent: user_agent,
+						contents: arrayContent,
+						currency: `${currency}`,
+						value: otConvertPrice(Shopify.checkout.subtotal_price),
+						user: user_infomartion,
+						order_id: Shopify.checkout.order_id,
+						ttclid: ot_ttclid,
+					});
+					if (enable_deduplication == 1) {
+						pixelsCapi.forEach(async function (element, index) {
+							ttq.checkOmega(
+								`${element}`,
+								'Purchase',
+								{
+									contents: arrayContent,
+									currency: `${currency}`,
+									value: otConvertPrice(
+										Shopify.checkout.subtotal_price
+									),
+								},
+								event_id.toString()
+							);
+						});
+					}
+				}
+			);
+		}
+	}
+}
+function getAllTikTokPixelInThankYouPage(productIDs) {
+	return new Promise((resolve) => {
+		$.ajax({
+			type: 'GET',
+			data: { product_ids: productIDs, shop: shop },
+			url: `${rootLinkTikTokPixel}/api/external/pixels/purchase`,
+			dataType: 'json',
+		}).done((result) => {
+			if (typeof result == 'string') {
+				result = JSON.parse(result);
+			}
+			resolve(result.data);
+		});
+	});
+}
+
+function otGetInfoProductByLink(URL, $) {
+	return new Promise((resolve) => {
+		$.ajax({
+			url: URL,
+			dataType: 'jsonp',
+			header: { 'Access-Control-Allow-Origin': '*' },
+			success: function (responseData) {
+				if (typeof responseData == 'string') {
+					responseData = JSON.parse(responseData);
+				}
+				resolve(responseData.product);
+			},
+		});
+	});
+}
+Shopify.formatMoney = function (cents, format) {
+	if (typeof cents === 'string') {
+		cents = cents.replace('.', '');
+	}
+	var value = '';
+	var placeholderRegex = /\{\{\s*(\w+)\s*\}\}/;
+	var formatString = format || this.money_format;
+
+	function defaultOption(opt, def) {
+		return typeof opt == 'undefined' ? def : opt;
+	}
+
+	function formatWithDelimiters(number, precision, thousands, decimal) {
+		precision = defaultOption(precision, 2);
+		thousands = defaultOption(thousands, ',');
+		decimal = defaultOption(decimal, '.');
+
+		if (isNaN(number) || number == null) {
+			return 0;
+		}
+
+		number = (number / 100.0).toFixed(precision);
+
+		var parts = number.split('.'),
+			dollars = parts[0].replace(
+				/(\d)(?=(\d\d\d)+(?!\d))/g,
+				'$1' + thousands
+			),
+			cents = parts[1] ? decimal + parts[1] : '';
+
+		return dollars + cents;
+	}
+	switch (formatString.match(placeholderRegex)[1]) {
+		case 'amount':
+			value = formatWithDelimiters(cents, 2);
+			break;
+		case 'amount_no_decimals':
+			value = formatWithDelimiters(cents, 0);
+			break;
+		case 'amount_with_comma_separator':
+			value = formatWithDelimiters(cents, 2, '.', ',');
+			break;
+		case 'amount_no_decimals_with_comma_separator':
+			value = formatWithDelimiters(cents, 0, '.', ',');
+			break;
+	}
+	return formatString.replace(placeholderRegex, value);
+};
+
+function trackEventsAPITikTok($, data) {
+	if (data.action !== 'Purchase') {
+		$.ajax({
+			url: `${rootLinkTikTokPixel}/api/external/events-api`,
+			type: 'POST',
+			contentType: 'application/json; charset=utf-8',
+			dataType: 'json',
+			data: JSON.stringify(data),
+		})
+			.done((response) => {
+				conditionShowTestTool($, data, response);
+			})
+			.fail((error) => {
+				console.log(error);
+			});
+	} else {
+		if (Shopify.shop == 'viralclothingworld.myshopify.com') {
+			$.ajax({
+				url: `${rootLinkTikTokPixel}/api/external/events-api`,
+				type: 'POST',
+				contentType: 'application/json; charset=utf-8',
+				dataType: 'json',
+				data: JSON.stringify(data),
+			})
+				.done((response) => {
+					conditionShowTestTool($, data, response);
+				})
+				.fail((error) => {
+					console.log(error);
+				});
+		} else {
+			conditionShowTestTool($, data, { code: 200 });
+		}
+	}
+}
+
+function conditionShowTestTool($, data, response) {
+	if (
+		sessionStorage.getItem('OT_TIKTOK_TRACK_TOOL_EVENT_API') == 'show' ||
+		ot_getUrlParam('otEnableTrackTool') == '1'
+	) {
+		data.pixel_ids.forEach((pixel) => {
+			let time = new Date().getTime();
+			let specific_dom = data.event + '-' + pixel + '-' + time;
+			const objDomDetect = {
+				domCardPixelTrack: '#ot-card-pixel-' + pixel,
+				domTitlePixelTrack: '#ot-title-pixel-' + pixel,
+				domAttributePixelTrack: 'ot-attribute-event-' + specific_dom,
+				domInformationEventStatus:
+					'ot-information-event-status-' + specific_dom,
+				domSvgLeft: 'ot-svg-left' + specific_dom,
+				domSvgDown: 'ot-svg-down-' + specific_dom,
+			};
+
+			let checkToolAlreadyExists = setInterval(function () {
+				if ($(objDomDetect.domCardPixelTrack).length) {
+					otAppendEventInformation($, objDomDetect, response, data);
+					clearInterval(checkToolAlreadyExists);
+				}
+			}, 100);
+		});
+	}
+}
+
+function getIP() {
+	return fetch('https://www.cloudflare.com/cdn-cgi/trace').then((res) =>
+		res.text()
+	);
+}
+
+function generateExternalID(length) {
+	var a =
+		'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'.split(
+			''
+		);
+	var b = [];
+	for (var i = 0; i < length; i++) {
+		var j = (Math.random() * (a.length - 1)).toFixed(0);
+		b[i] = a[j];
+	}
+	return b.join('');
+}
+
+async function getInformationCustomerHash(Shopify, external_id) {
+	let externalID = await sha256(external_id);
+	let email = await sha256(
+		Shopify.checkout.email == null ? '' : Shopify.checkout.email
+	);
+	let phone = await sha256(
+		Shopify.checkout.phone == null ? '' : Shopify.checkout.phone
+	);
+	return {
+		external_id: externalID,
+		phone_number: phone,
+		email: email,
+	};
+}
+function getEventID(external_id) {
+	return external_id + '_' + randomStringNumber();
+}
+
+function randomStringNumber() {
+	let characters = '0123456789';
+	let randstring = '';
+	for (let i = 0; i < 10; i++) {
+		randstring += characters[Math.floor(Math.random() * 9)];
+	}
+	return randstring;
+}
+
+async function sha256(message) {
+	const msgBuffer = new TextEncoder('utf-8').encode(message);
+	const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+	const hashArray = Array.from(new Uint8Array(hashBuffer));
+	return hashArray.map((b) => ('00' + b.toString(16)).slice(-2)).join('');
+}
+
+function getUserAgent() {
+	return window.navigator.userAgent;
+}
+
+function ot_getUrlParam(paramName) {
+	var match = window.location.search.match(
+		'[?&]' + paramName + '(?:&|$|=([^&]*))'
+	);
+	return match ? (match[1] ? match[1] : '') : null;
+}
+
+function otIncludeTrackTool() {
+	//Check enable track tool
+	let version = new Date().getTime();
+	if (
+		sessionStorage.getItem('OT_TIKTOK_TRACK_TOOL_EVENT_API') == 'show' ||
+		ot_getUrlParam('otEnableTrackTool') == '1'
+	) {
+		sessionStorage.setItem('OT_TIKTOK_TRACK_TOOL_EVENT_API', 'show');
+		$.getScript(
+			`${rootAppPublicTikTokPixel}/js/tiktok-track-tool.js?v=${version}`
+		);
+	}
+}
+
+function otAddAttributeIDAds($) {
+	let ttclid_in_session = otGetCookie('ttclid');
+	let ttclid_in_url = ot_getUrlParam('ttclid');
+	let ttclid_in_local_storage = localStorage.getItem('ttclid');
+	if (
+		isJsonString(ttclid_in_local_storage) &&
+		ttclid_in_local_storage != null
+	) {
+		//delete if expire ttclid
+		let oldDateTime = JSON.parse(ttclid_in_local_storage).time;
+		let currentDateTime = new Date().getTime();
+		if (otGetDayOfTime(oldDateTime, currentDateTime) >= 8) {
+			window.localStorage.removeItem('ttclid');
+		}
+	}
+
+	if (ttclid_in_url != null) {
+		//check in url
+		otSetCookie('ttclid', ttclid_in_url, 6);
+		window.localStorage.setItem(
+			'ttclid',
+			JSON.stringify({
+				time: new Date().getTime(),
+				ttclid: ttclid_in_url,
+			})
+		);
+		otAddAttributeClickIdToOrder($, ttclid_in_url);
+		return ttclid_in_url;
+	} else if (ttclid_in_session != '') {
+		//check in cookie
+		otAddAttributeClickIdToOrder($, ttclid_in_session);
+		return ttclid_in_session;
+	} else if (
+		ttclid_in_local_storage != null &&
+		isJsonString(ttclid_in_local_storage)
+	) {
+		//check in localStorage
+		let temp_ttclid = JSON.parse(ttclid_in_local_storage).ttclid;
+		otAddAttributeClickIdToOrder($, temp_ttclid);
+		return temp_ttclid;
+	} else {
+		return null;
+	}
+}
+
+function otAppendEventInformation($, objDomDetect, response, data) {
+	$(objDomDetect.domCardPixelTrack).append(
+		`<div>
+        <div class = "ot-information-event-status" id = "${
+			objDomDetect.domInformationEventStatus
+		}">
+          <div class = "ot-box-title-event-status">
+            ${
+				response.code == 200
+					? window.OT_SVG_TIKTOK.ot_svg_tick
+					: window.OT_SVG_TIKTOK.ot_svg_error
+			}
+            <span class = "ot-title-event">${data.eventShowTool}</span>
+          </div>
+          <div style="padding: 13px 10px 0px 10px; display: block" id ="${
+				objDomDetect.domSvgLeft
+			}">
+            ${window.OT_SVG_TIKTOK.ot_svg_arrow_left}
+          </div>
+          <div style="padding: 13px 10px 0px 10px; display: none" id ="${
+				objDomDetect.domSvgDown
+			}">
+            ${window.OT_SVG_TIKTOK.ot_svg_arrow_down}
+          </div>
+          </div>
+            <div class = "ot-attribute-event" id = "${
+				objDomDetect.domAttributePixelTrack
+			}">
+            ${
+				response.code !== 200 && response.message
+					? `
+            <span style = "color: #8B8B8B;
+            margin: 5px 0;">ERROR</span>
+            <span><b>${response.message}</b></span>
+            `
+					: ` ${
+							data.content_type && data.event !== 'Browse'
+								? `<span><b>content_type:</b> ${data.content_type}</span>`
+								: ''
+					  }
+                ${
+					data.content_id
+						? `<span><b>content_id:</b> ${data.content_id}</span>`
+						: ''
+				}
+                ${data.value ? `<span><b>value:</b>${data.value}</span>` : ''}
+                ${
+					data.content_name
+						? `<span><b>content_name:</b> ${data.content_type}</span>`
+						: ''
+				}
+                ${
+					data.currency
+						? `<span><b>currency: </b>${data.currency}</span>`
+						: ''
+				}
+                ${
+					data.contents
+						? `<span><b>contents:</b>${JSON.stringify(
+								data.contents
+						  )}</span>`
+						: ''
+				}
+                  <span><b>Page URL:</b> ${data.url}</span>`
+			}
+
+          </div>
+    </div>`
+	);
+	$(objDomDetect.domTitlePixelTrack).css(
+		'border-bottom',
+		'1px solid #e4e4e4'
+	);
+	$('#' + objDomDetect.domInformationEventStatus).click(function () {
+		if (
+			$('#' + objDomDetect.domAttributePixelTrack).css('display') ==
+			'none'
+		) {
+			//Open detail attribute
+			$('#' + objDomDetect.domAttributePixelTrack).css('display', 'flex');
+			$('#' + objDomDetect.domSvgLeft).css('display', 'none');
+			$('#' + objDomDetect.domSvgDown).css('display', 'block');
+		} else {
+			//Close detail attribute
+			$('#' + objDomDetect.domAttributePixelTrack).css('display', 'none');
+			$('#' + objDomDetect.domSvgLeft).css('display', 'block');
+			$('#' + objDomDetect.domSvgDown).css('display', 'none');
+		}
+	});
+}
+
+function sendBrowserUrlLog($, rootLinkTikTokPixel, shop) {
+	'use strict';
+	return new Promise((resolve) => {
+		$.ajax({
+			type: 'GET',
+			data: { shop: shop, url: window.location.href },
+			url: `${rootLinkTikTokPixel}/api/external/browser-url-log`,
+			dataType: 'json',
+		}).done((result) => {
+			resolve(result.data);
+		});
+	});
+}
+
+//Detect cookies
+function otSetCookie(cname, cvalue, exdays) {
+	const d = new Date();
+	d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+	let expires = 'expires=' + d.toGMTString();
+	document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
+}
+
+function otGetCookie(cname) {
+	let name = cname + '=';
+	let decodedCookie = decodeURIComponent(document.cookie);
+	let ca = decodedCookie.split(';');
+	for (let i = 0; i < ca.length; i++) {
+		let c = ca[i];
+		while (c.charAt(0) == ' ') {
+			c = c.substring(1);
+		}
+		if (c.indexOf(name) == 0) {
+			return c.substring(name.length, c.length);
+		}
+	}
+	return '';
+}
+
+function otSaveUrlToMongo($, url, shop) {
+	'use strict';
+	getIP().then((data) => {
+		let rootLinkFBPixelLog =
+			'https://apps2.omegatheme.com/shopify/facebook-pixel-event-log/api/';
+		let ipRegex = /[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/;
+		let ip = data.split('ip=')[1].split('\n')[0];
+		return new Promise((resolve) => {
+			$.ajax({
+				type: 'POST',
+				data: {
+					url: url,
+					shop: shop,
+					ip: ip,
+					user_agent: window.navigator.userAgent,
+				},
+				url: `${rootLinkFBPixelLog}url-logs`,
+				dataType: 'json',
+			}).done((result) => {
+				if (typeof result == 'string') {
+					result = JSON.parse(result);
+				}
+				resolve(result);
+			});
+		});
+	});
+}
+
+function otConvertPrice(number) {
+	if (Number(number) % 1 !== 0) {
+		return parseFloat(number).toFixed(2);
+	} else {
+		return number;
+	}
+}
+
+function otGetDayOfTime(ms1, ms2) {
+	return Math.ceil((ms2 - ms1) / (24 * 60 * 60 * 1000));
+}
+
+function isJsonString(str) {
+	try {
+		JSON.parse(str);
+	} catch (e) {
+		return false;
+	}
+	return true;
+}
+
+function otAddAttributeClickIdToOrder($, ttclid) {
+	let conditionAddAttribute =
+		Shopify.shop == 'paper-republic.myshopify.com' ||
+		Shopify.shop == 'tiktok-multi-pixels.myshopify.com' ||
+		Shopify.shop == 'paper-republic-uk.myshopify.com' ||
+		Shopify.shop == 'paper-republic-fr.myshopify.com' ||
+		Shopify.shop == 'paper-republic-de.myshopify.com' ||
+		Shopify.shop == 'paper-republic-usa.myshopify.com' ||
+		Shopify.shop == 'paper-republic-cz.myshopify.com';
+	if (
+		typeof ttclid !== 'undefined' &&
+		ttclid !== null &&
+		ttclid !== '' &&
+		conditionAddAttribute
+	) {
+		$.ajax({
+			type: 'POST',
+			url: '/cart/update.js',
+			dataType: 'json',
+			data: {
+				attributes: {
+					ot_ttclid: ttclid,
+				},
+			},
+		}).done((cart) => {
+			console.log('Add ttclid: ' + ttclid);
+		});
+	}
+}
+
+//ATC
+setInterval(function () {
+	$.ajax({
+		type: 'GET',
+		url: '/cart.json',
+		dataType: 'json',
+	}).done((cart) => {
+		let item_count = localStorage.getItem('item_count');
+		localStorage.setItem('OTPXADDED', 1);
+		if (item_count != cart.item_count) {
+			window.localStorage.setItem('item_count', cart.item_count);
+			if (cart.items.length > 0) {
+				let lastItem = cart.items[0];
+				arrayTikTokPixelTrackNew.forEach(async function (
+					element,
+					index
+				) {
+					ttq.checkOmega(`${element}`, 'AddToCart', {
+						content_id: `${lastItem['product_id']}`,
+						content_type: 'product_group',
+						value: parseInt(cart.total_price) / 100,
+						content_name: `${lastItem['product_title']}`,
+						currency: `${currency}`,
+					});
+				});
+				if (arrayTikTokPixelCapiTrackNew.length > 0) {
+					let external_id = generateExternalID(36);
+					let event_id = getEventID(external_id);
+					trackEventsAPITikTok($, {
+						action: 'AddToCart',
+						event: 'AddToCart',
+						eventShowTool: EVENT_NAME_TOOL.addToCart,
+						event_id: event_id,
+						url: pageURL,
+						pixel_ids: arrayTikTokPixelCapiTrackNew,
+						shop: Shopify.shop,
+						ip: ip !== null ? ip : '',
+						user_agent: user_agent,
+						content_id: `${lastItem['product_id']}`,
+						content_type: 'product_group',
+						value: parseInt(cart.total_price) / 100,
+						currency: `${currency}`,
+						ttclid: otAddAttributeIDAds(),
+					});
+					if (tikTokPixelCheckExpireApp.enable_deduplication == 1) {
+						console.log({ arrayTikTokPixelCapiTrackNew });
+						arrayTikTokPixelCapiTrackNew.forEach(async function (
+							element,
+							index
+						) {
+							ttq.checkOmega(`${element}`, 'AddToCart', {
+								content_id: `${lastItem['product_id']}`,
+								content_type: 'product_group',
+								value: parseInt(cart.total_price) / 100,
+								content_name: `${lastItem['product_title']}`,
+								currency: `${currency}`,
+							});
+						});
+					}
+				}
+			} else {
+				if (
+					typeof __st.rid != 'undefined' &&
+					typeof meta.product.variants[0]['id'] != 'undefined'
+				) {
+					arrayTikTokPixelTrackNew.forEach(async function (
+						element,
+						index
+					) {
+						ttq.checkOmega(`${element}`, 'AddToCart', {
+							content_id: `${__st.rid}`,
+							content_type: 'product_group',
+							value:
+								parseInt(meta.product.variants[0]['price']) /
+								100,
+							content_name: `${meta.product.variants[0]['name']}`,
+							currency: `${currency}`,
+						});
+					});
+					if (arrayTikTokPixelCapiTrackNew.length > 0) {
+						let external_id = generateExternalID(36);
+						let event_id = getEventID(external_id);
+						trackEventsAPITikTok($, {
+							action: 'AddToCart',
+							event: 'AddToCart',
+							eventShowTool: EVENT_NAME_TOOL.addToCart,
+							event_id: event_id,
+							url: pageURL,
+							pixel_ids: arrayTikTokPixelCapiTrackNew,
+							shop: Shopify.shop,
+							ip: ip !== null ? ip : '',
+							user_agent: user_agent,
+							content_id: `${__st.rid}`,
+							content_type: 'product_group',
+							value:
+								parseInt(meta.product.variants[0]['price']) /
+								100,
+							currency: `${currency}`,
+							ttclid: otAddAttributeIDAds(),
+						});
+						if (
+							tikTokPixelCheckExpireApp.enable_deduplication == 1
+						) {
+							console.log({ arrayTikTokPixelCapiTrackNew });
+							arrayTikTokPixelCapiTrackNew.forEach(
+								async function (element, index) {
+									ttq.checkOmega(`${element}`, 'AddToCart', {
+										content_id: `${__st.rid}`,
+										content_type: 'product_group',
+										value:
+											parseInt(
+												meta.product.variants[0][
+													'price'
+												]
+											) / 100,
+										content_name: `${meta.product.variants[0]['name']}`,
+										currency: `${currency}`,
+									});
+								}
+							);
+						}
+					}
+				}
+			}
+		}
+	});
+}, 1000);
+function generateEventID1(length) {
+	var a =
+		'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789'.split(
+			''
+		);
+	var b = [];
+	for (var i = 0; i < length; i++) {
+		var j = (Math.random() * (a.length - 1)).toFixed(0);
+		b[i] = a[j];
+	}
+	return b.join('');
+}
+
+const otInterval1 = setInterval(myTimer1, 1000);
+function myTimer1() {
+	if (typeof window.icartGtagConversionCheckout != 'undefined') {
+      otStopFunction1();
+      window.icartGtagConversionCheckout = () => {
+   $.ajax({
+		type: 'GET',
+		url: '/cart.js',
+		dataType: 'json',
+	}).done((cart) => {
+		if (cart.items.length > 0) {
+			let arrayContent = [];
+			$.each(cart.items, function (index, value) {
+				//Detect type content_type
+				let content_id = value.product_id + "";
+				let content_type = 'product_group';
+				//Detect type content_type
+
+				arrayContent.push({
+					content_id: content_id,
+					content_type: content_type,
+					content_name: value.product_title,
+					quantity: value.quantity,
+					price: value.final_price,
+				});
+			});
+			arrayTikTokPixelTrackNew.forEach(async function (element, index) {
+				ttq.checkOmega(`${element}`, 'StartCheckout', {
+					contents: arrayContent,
+					currency: `${Shopify.currency.active}`,
+					value: cart.total_price / 100,
+				});
+			});
+			if (arrayTikTokPixelCapiTrackNew.length > 0) {
+				let external_id = generateExternalID(36);
+				let event_id = getEventID(external_id);
+				trackEventsAPITikTok($, {
+					action: 'StartCheckout',
+					event: 'StartCheckout',
+					eventShowTool: EVENT_NAME_TOOL.startCheckout,
+					event_id: event_id,
+					url: pageURL,
+					pixel_ids: arrayTikTokPixelCapiTrackNew,
+					shop: Shopify.shop,
+					ip: ip !== null ? ip : '',
+					user_agent: user_agent,
+					contents: arrayContent,
+					currency: `${currency}`,
+					value: cart.total_price / 100,
+					ttclid: otAddAttributeIDAds(),
+				});
+
+				if (tikTokPixelCheckExpireApp.enable_deduplication == 1) {
+					arrayTikTokPixelCapiTrackNew.forEach(async function (
+						element,
+						index
+					) {
+						ttq.checkOmega(`${element}`, 'StartCheckout', {
+							contents: arrayContent,
+							currency: `${Shopify.currency.active}`,
+							value: cart.total_price / 100,
+						});
+					});
+				}
+			}
+		}
+	});
+   return true;
+}
+      
+    }
+}
+function otStopFunction1() {
+	clearInterval(otInterval1);
+}
+  
+
+// function otStopFunction() {
+// 	clearInterval(otInterval);
+// }
+// buy it now
+// document.addEventListener('click',function(event){
+
+//     if(event.target.matches('.shopify-payment-button__button')){
+//          let arrayContent = [];
+// 				//Detect type content_type
+// 				let content_id = meta.product.variants[0].id + '';
+// 				let content_type = 'product_group';
+// 				//Detect type content_type
+
+// 				arrayContent.push({
+// 					content_id: content_id,
+// 					content_type: content_type,
+// 					content_name: meta.product.variants[0].name,
+// 					quantity: 1,
+// 					price: meta.product.variants[0].price/100,
+// 				});
+// 			arrayTikTokPixelTrackNew.forEach(async function (element, index) {
+// 				ttq.checkOmega(`${element}`, 'StartCheckout', {
+// 					contents: arrayContent,
+// 					currency: `${Shopify.currency.active}`,
+// 					value: meta.product.variants[0].price/100,
+// 				});
+// 			});
+// 			if (arrayTikTokPixelCapiTrackNew.length > 0) {
+// 				let external_id = generateExternalID(36);
+// 				let event_id = getEventID(external_id);
+// 				trackEventsAPITikTok($, {
+// 					action: 'StartCheckout',
+// 					event: 'StartCheckout',
+// 					eventShowTool: EVENT_NAME_TOOL.startCheckout,
+// 					event_id: event_id,
+// 					url: pageURL,
+// 					pixel_ids: arrayTikTokPixelCapiTrackNew,
+// 					shop: Shopify.shop,
+// 					ip: ip !== null ? ip : '',
+// 					user_agent: user_agent,
+// 					contents: arrayContent,
+// 					currency: `${currency}`,
+// 					value: meta.product.variants[0].price/100,
+// 					ttclid: otAddAttributeIDAds(),
+// 				});
+
+// 				if (tikTokPixelCheckExpireApp.enable_deduplication == 1) {
+// 					arrayTikTokPixelCapiTrackNew.forEach(async function (
+// 						element,
+// 						index
+// 					) {
+// 						ttq.checkOmega(`${element}`, 'StartCheckout', {
+// 							contents: arrayContent,
+// 							currency: `${Shopify.currency.active}`,
+// 							value: meta.product.variants[0].price / 100,
+// 						});
+// 					});
+// 				}
+// 			} 
+//     }
+// })
+  
+// function generateEventID1(length) {
+// 	var a = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789'.split("");
+// 	var b = [];
+// 	for (var i = 0; i < length; i++) {
+// 		var j = (Math.random() * (a.length - 1)).toFixed(0);
+// 		b[i] = a[j];
+// 	}
+// 	return b.join("");
+// }
+
+</script>

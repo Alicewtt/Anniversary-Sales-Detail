@@ -1,0 +1,100 @@
+{
+  "sections": {
+    "main": {
+      "type": "tech-section",
+      "blocks": {
+        "f66afedc-a945-4f1e-a29e-1c975c64c1c8": {
+          "type": "slider",
+          "settings": {
+            "img1": "shopify:\/\/shop_images\/ROLLOVA-1.png"
+          }
+        },
+        "a8b22060-bee9-4f0e-b58d-644408316de9": {
+          "type": "slider",
+          "settings": {
+            "img1": "shopify:\/\/shop_images\/ROLLOVA-2.png"
+          }
+        },
+        "171583a1-5225-459f-9399-13fc06d4ab52": {
+          "type": "first",
+          "settings": {
+            "txt1": "Features",
+            "url1": "Point-to-point measure mode <br>Corner-to-point measure mode <br> \nCorner-to-corner measure mode"
+          }
+        },
+        "61e0124a-d395-4aea-abf3-521143278a56": {
+          "type": "first",
+          "settings": {
+            "txt1": "Measuring Range",
+            "url1": "999.9cm in metric mode <br>\n99.99 inches in inches decimal mode <br>\n999.9 inches in inches fraction mode"
+          }
+        },
+        "235a2e33-c893-423e-bc4b-4e2a6121e38a": {
+          "type": "two",
+          "settings": {
+            "txt1": "Accuracy",
+            "url1": "Maximum Tolerance +-0.4%"
+          }
+        },
+        "ce8e404a-c56e-4937-b353-63a5b05aef22": {
+          "type": "two",
+          "settings": {
+            "txt1": "Compatible Units",
+            "url1": "Built-in 650 mAh lithium‑polymer battery. <br>\nSupport 5V -1A USB-C Port Charging. <br>\nSupport fast charging protocol adapter."
+          }
+        },
+        "95c96c79-3f34-49a8-99b8-fcaf000960ed": {
+          "type": "two",
+          "settings": {
+            "txt1": "Display",
+            "url1": "1.2\" OLED Display (Bright Blue)<br>\nResolution:128x64 px"
+          }
+        },
+        "8845a892-ebee-499b-8668-8418e58ef8bb": {
+          "type": "two",
+          "settings": {
+            "txt1": "Battery",
+            "url1": "2 x CR1632 Button Battery (Require to install\nat least one battery)"
+          }
+        },
+        "3ceee563-f77d-4bd6-ab35-27317788fffc": {
+          "type": "two",
+          "settings": {
+            "txt1": "Material",
+            "url1": "304 Stainless Steel, 7075 Aluminum <br>\nAlloy, Nylon Plastic, Silicon Rubber"
+          }
+        },
+        "f90d434d-67b9-47e3-a1c7-e4f255e9b8a9": {
+          "type": "two",
+          "settings": {
+            "txt1": "Standby Time",
+            "url1": "18,000 Hours (Two years) with 2x CR1632\nBattery.*May vary, depends on battery brands,\nhumidity, temperature and other\nenvironmental factors"
+          }
+        }
+      },
+      "block_order": [
+        "f66afedc-a945-4f1e-a29e-1c975c64c1c8",
+        "a8b22060-bee9-4f0e-b58d-644408316de9",
+        "171583a1-5225-459f-9399-13fc06d4ab52",
+        "61e0124a-d395-4aea-abf3-521143278a56",
+        "235a2e33-c893-423e-bc4b-4e2a6121e38a",
+        "ce8e404a-c56e-4937-b353-63a5b05aef22",
+        "95c96c79-3f34-49a8-99b8-fcaf000960ed",
+        "8845a892-ebee-499b-8668-8418e58ef8bb",
+        "3ceee563-f77d-4bd6-ab35-27317788fffc",
+        "f90d434d-67b9-47e3-a1c7-e4f255e9b8a9"
+      ],
+      "settings": {
+        "txt1": "Functions",
+        "url1": "shopify:\/\/products\/rollova",
+        "txt2": "Hardware",
+        "url2": "shopify:\/\/products\/rollova",
+        "txt3": "ROLLOVA",
+        "url3": "https:\/\/hozodesign.com\/products\/rollova"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

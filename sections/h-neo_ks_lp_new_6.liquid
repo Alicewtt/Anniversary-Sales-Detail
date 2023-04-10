@@ -1,0 +1,382 @@
+
+
+<style>
+  .section-6 {
+    background-color: #fff;
+    padding: 60px 0 60px;
+  }
+
+  .section-6 .inner-box {
+  }
+
+  .section-6 .title {
+    font-family: 'alibaba-heavy';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 75px;
+    line-height: 105px;
+    text-align: center;
+
+    color: #56b1fd;
+  }
+
+  .section-6 .sub-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 44px;
+    text-align: center;
+    color: #070a0f;
+  }
+
+  .section-6 .swiper-box {
+    max-width: 907px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .section-6 .mySwiper3 .swiper-pagination_3 {
+      gap: 15px;
+      display: flex;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      width: 632px;
+  }
+
+
+  .section-6 .swiper-box .item-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f4f6f8;
+    border: 10px solid #f4f6f8;
+    border-radius: 15px;
+    margin: 0;
+  }
+
+  .section-6 .swiper-box .item-box img {
+    height: auto;
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+  }
+
+  .section-6 .swiper-box .swiper-1-font {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+
+  .section-6 .mySwiper3 .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .section-6 .mySwiper3 .swiper-slide img {
+    border-radius: 15px;
+  }
+
+  .section-6 .mySwiper3 .text-box .font-1 {
+    font-family: 'alibaba-heavy';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 70px;
+    /* identical to box height */
+    text-align: center;
+    color: #56b1fd;
+    padding-top: 23px;
+  }
+
+  .section-6 .mySwiper3 .text-box .font-2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 44px;
+    text-align: center;
+    color: #070a0f;
+    margin-bottom: 30px;
+  }
+
+
+  .section-6 .swiper-pagination-bullet {
+    width: 275px;
+    height: auto;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: #f4f6f8;
+    border-radius: 15px;
+  }
+
+  .section-6 .swiper-pagination-bullet:hover {
+    background: #f4f6f8;
+
+    border-color: #f4f6f8;
+  }
+
+  .section-6 .mySwiper3 .swiper-pagination-bullet-active {
+    color: #fff;
+    border: 10px solid #56b1fd;
+  }
+
+  @media (max-width: 900px) {
+    .section-6 .title {
+      font-size: 64px;
+      line-height: 90px;
+    }
+
+    .section-6 .sub-title {
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    .section-6 .swiper-box {
+      padding: 0 30px;
+    }
+
+    .section-6 .mySwiper3 .swiper-pagination_3 {
+      padding: 0;
+      flex-wrap: wrap;
+      gap: 15px;
+      position:static;
+      width:auto;
+      transform:translateX(0);
+    }
+
+    .section-6 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+    .section-6 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin: 0;
+    }
+    .section-6 .swiper-box .item-box {
+      box-sizing: border-box;
+    }
+    .section-6 .swiper-box .item-box:nth-child(1) {
+      width: calc((100% - 40px) / 3);
+    }
+    .section-6 .swiper-box .item-box:nth-child(2) {
+      width: calc((100% - 40px) / 3);
+    }
+    .section-6 .swiper-box .item-box:nth-child(3) {
+      width: calc((100% - 40px) / 3);
+    }
+    .section-6 .swiper-box .item-box:nth-child(4) {
+      width: 100%;
+      height: 280px;
+      background-image: url('https://cdn.shopifycdn.net/s/files/1/0549/7667/6078/files/section-6_46_m.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .section-6 .mySwiper3 .text-box .font-1 {
+      font-size: 48px;
+      line-height: 67px;
+    }
+    .section-6 .mySwiper3 .text-box .font-2 {
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    .section-6 .swiper-box .item-box:nth-child(4) img {
+      border-radius: 15px;
+      opacity: 0;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .section-6 .title {
+      font-size: 35px;
+      line-height: 50px;
+    }
+
+    .section-6 .sub-title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    .section-6 .swiper-box {
+      padding: 0 30px;
+    }
+    .section-6 .swiper-box .item-box img{
+      object-fit:contain;
+    }
+    .section-6 .swiper-box .item-box {
+      box-sizing: border-box;
+    }
+
+    .section-6 .swiper-box .item-box:nth-child(4) {
+      width: 100%;
+      height: 180px;
+      background-image: url('https://cdn.shopifycdn.net/s/files/1/0549/7667/6078/files/section-6_46_m.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .section-6 .mySwiper3 .text-box .font-1 {
+      font-size: 48px;
+      line-height: 67px;
+    }
+    .section-6 .mySwiper3 .text-box .font-2 {
+      font-size: 36px;
+      line-height: 42px;
+    }
+  }
+
+  @media(max-width:420px){
+    
+
+    .section-6 .sub-title{
+      margin-bottom:15px;
+    }
+
+    .section-6 .swiper-box{
+      padding:0 15px;
+    }
+
+    .section-6 .mySwiper3 .text-box .font-1{
+      font-size: 26.7429px;
+      line-height: 37px;
+    }
+
+    .section-6 .mySwiper3 .text-box .font-2{
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom:10px;
+    }
+  
+  }
+
+</style>
+<section class="section-6">
+  <div class="title">NeoRuler New Ways</div>
+  <div class="sub-title">Modular Design for Every Possibility</div>
+  <div class="inner-box">
+    <div class="swiper-box">
+      <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper3">
+        <div class="swiper-pagination_3"></div>
+
+        <div class="swiper-wrapper">
+
+          {% for block in section.blocks %}
+           
+
+            <div class="swiper-slide">
+              <div class="text-box">
+                <div class="font-1">{{ block.settings.text_1}}</div>
+                <div class="font-2">{{ block.settings.text_2}}</div>
+              </div>
+              <img src="{{ block.settings.slide_image | img_url:'master' }}">
+            </div>
+          {% endfor %}
+          
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "h-neo_kslp_new_6",
+  "settings": [],
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "slide",
+   
+      "settings": [
+        {
+          "type": "html",
+          "id": "text_1",
+          "label": "轮播文字1",
+          "default":"Drawing Mode"
+        },
+        {
+          "type": "html",
+          "id": "text_2",
+          "label": "轮播文字2",
+          "default":"Only one click away from 2D to 3D Display"
+        },
+        {
+          "id": "slide_image",
+          "type": "image_picker",
+          "label": "轮播图片"
+        }
+        
+      ]
+    }
+  ],
+
+  "default": {
+    "blocks": [
+      {
+        "type": "slide"
+      },
+      {
+        "type": "slide"
+      },
+      {
+        "type": "slide"
+      },
+      {
+        "type": "slide"
+      }
+    ]
+  }
+}
+{% endschema %}
+
+{% stylesheet %}
+
+
+{% endstylesheet %}
+
+
+
+{% javascript %}
+
+
+  let section_6_swiper_pagin=[
+    '<div class="item-box swiper-pagination-bullet"><img src="https://cdn.shopifycdn.net/s/files/1/0549/7667/6078/files/h-section-6_47-1.png" /></div>',
+    '<div class="item-box swiper-pagination-bullet"><img src="https://cdn.shopifycdn.net/s/files/1/0549/7667/6078/files/h-section-6_47-2.png" /></div>',
+    '<div class="item-box swiper-pagination-bullet"><img src="https://cdn.shopifycdn.net/s/files/1/0549/7667/6078/files/h-section-6_47-3.png" /></div>',
+    '<div class="item-box swiper-pagination-bullet"><img src="https://cdn.shopifycdn.net/s/files/1/0549/7667/6078/files/h-section-6_47-4.png" /></div>'
+  ]
+
+
+  var swiper2 = new Swiper('.mySwiper3', {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination_3',
+      clickable: true,
+      renderBullet: function (index, className) {
+        // return '<span class="' + className + '">' + (index + 1) + "</span>";
+        return section_6_swiper_pagin[index];
+      },
+    },
+  });
+  
+{% endjavascript %}

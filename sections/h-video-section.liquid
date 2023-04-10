@@ -1,0 +1,96 @@
+<style>
+  .video-bg-img video{
+    display:block;
+  }
+</style>
+
+
+<section class="video-section">
+
+  <div class="video-main">
+
+    <div class="video-bg-img">
+       <video autoplay loop playshine="" muted>
+
+        <source src="https://cdn.shopify.com/videos/c/o/v/e882c7d51b354b3a9369eb2b44b3a50f.mp4" type="video/mp4">
+
+
+      </video>
+
+    </div>
+
+    <div class="video-text">
+
+      <div class="video-button h-video-button">
+        <a href="javascript:void(0)" data-link="{{section.settings.url1}}"  style="color: #000;">Watch the film <i class="fa fa-play"></i></a>
+      </div>
+
+    </div>
+    
+
+  </div>
+
+  <script>
+   
+
+jQuery('.h-video-button').on('click', function(){
+  var vidoe_src =    jQuery('.h-video-button a').attr('data-link');
+
+  setTimeout(function(){
+    jQuery('.video-box iframe').attr('src', vidoe_src)
+  });
+  jQuery('.video-box').addClass('open-video');
+  e.preventDefault();
+
+}); 
+  
+  </script>
+
+  {% comment %} 
+  <div class="video-main">
+      <div class="video-bg-img">
+       <video autoplay loop playshine="" muted>
+			  <source src="https://cdn.shopify.com/videos/c/o/v/42e3e7e42f95468c849cc5cf5094dbda.mp4" type="video/mp4">
+			  <source src="https://cdn.shopify.com/videos/c/o/v/42e3e7e42f95468c849cc5cf5094dbda.mp4" type="video/ogg">
+			</video> 
+      </div>
+      <div class="video-text">
+         <div class="video-button">
+           <a href="javascript:void(0)">Watch the film <i class="fa fa-play"></i></a>
+         </div>
+      </div>
+
+  </div>
+{% endcomment %}
+
+</section>
+
+{% schema %}
+{
+  "name": "h_ruler-video",
+  "settings": [
+    {
+      "id": "img1",
+      "type": "image_picker",
+      "label": "Add Image"
+    },
+    {
+      "id": "url1",
+      "type": "url",
+      "label": "Add video url"
+    }
+  ],
+  "presets": [
+    {
+      "name": "h-Meazor-video",
+      "category": "Custom Content"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

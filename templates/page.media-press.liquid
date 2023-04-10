@@ -1,0 +1,95 @@
+   <section class="customer-supportnew">
+                <div class="container">
+                    <div class="technology-content text-center">
+                           <h2>Media & Press</h2>
+                       </div>
+                    <div class="customer-supportmain">
+                    
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 d-flex">
+                                <div class="question text-center wow fadeInLeft" data-wow-duration="2s">
+                                    <svg preserveAspectRatio="xMidYMid meet" data-bbox="51 51 98 98" viewBox="51 51 98 98" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true" aria-labelledby="svgcid-fkstcy32t38u"><defs><style>#comp-kmd4ft4x1 svg [data-color="1"] {fill: #a6c9de;}
+                                        #comp-kmd4ft4x1 svg [data-color="2"] {fill: #a6c9de;}</style></defs><title id="svgcid-fkstcy32t38u"></title>
+                                            <g>
+                                                <path d="M100 149c-27.018 0-49-21.982-49-49s21.982-49 49-49 49 21.982 49 49-21.982 49-49 49zm0-91.288c-23.317 0-42.288 18.97-42.288 42.288s18.97 42.288 42.288 42.288 42.288-18.97 42.288-42.288S123.317 57.712 100 57.712z" fill="#a6c9de" data-color="1"></path>
+                                                <path d="M106.353 95.342H93.647a2.014 2.014 0 0 0-2.014 2.014v30.833c0 1.112.902 2.014 2.014 2.014h12.706a2.014 2.014 0 0 0 2.014-2.014V97.356a2.014 2.014 0 0 0-2.014-2.014z" fill="#3270A7" data-color="2"></path>
+                                                <path d="M100 89.148c5.387 0 9.77-4.383 9.77-9.77s-4.383-9.77-9.77-9.77-9.77 4.383-9.77 9.77c0 5.388 4.383 9.77 9.77 9.77z" fill="#3270A7" data-color="2"></path>
+                                            </g>
+                                        </svg>
+                                     <p class="botto">For press, product review, or partnership inquiries.<br> Please contact <a href="mailto:caroline@hozodesign.com">Caroline@hozodesign.com</a></p>
+                            
+                                </div>
+                            </div>
+
+                            <div class="col-md-5">
+                                <div class="ticket-from ticket2 wow fadeInRight" data-wow-duration="2s">
+                                    <h3 class="text-center">Download Press Kit</h3>
+                                    <p  class="text-center">HOZO Press Kit is only one step away! Let us know more about you first</p>
+                                  {%- assign formId = 'ContactForm' -%}
+                               {% form 'contact', id: formId , class: 'from-inline' %}
+                              {% include 'form-status', form: form, form_id: formId %}
+                                  {%- if form.posted_successfully? -%}
+                                  <script>      window.location.replace("https://drive.google.com/drive/folders/1W82rmjyBMmG1UhI1balILoBMH3wgR_YM");
+                                  </script>
+                                  
+                                  {% endif %}
+                                  <input type="hidden"  name="contact[media_press]" value="media and press contact form">
+                                      <div class="row">
+                                        <div class="col-md-6">
+                                          <div class="form-group">
+                                            <input type="text"  class="form-control" name="contact[first_name]" placeholder="First Name">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div class="form-group">
+                                            <input type="text"  class="form-control" name="contact[Last_name]" placeholder="Last Name">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                          <div class="form-group">
+                                            <input type="email"  class="form-control" name="contact[email]" placeholder="Email">
+                                          </div>
+                                        </div>
+                                    
+                                        <div class="col-md-12">
+                                          <div class="form-group">
+                                            <input type="text"  class="form-control" name="contact[company]" placeholder="Company">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                          <div class="form-group">
+                                            <input type="text" class="form-control"name="contact[position]" placeholder="Position">
+                                             <input type="hidden" class="form-control"name="contact[body]" value=''>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group custom-check">
+                                                <input type="checkbox" id="custom-check1" name="contact[terms_ischecked]">
+                                                <label for="custom-check1">I agree to the terms & conditions</label>
+                                            </div>
+                                             <div class="form-group custom-check">
+                                                <input type="checkbox" id="custom-check2" name="contact[subscribe_ischecked]">
+                                                <label for="custom-check2">I want to subscribe to the newsletter.</label>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="col-md-12">
+                                          <div class="form-group">
+                                            <button type="submit" class="dw_click">Download Press Kit</button>
+                                          </div>
+                                        </div>
+
+                                      </div>
+                                   {% endform %}
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+
+
+

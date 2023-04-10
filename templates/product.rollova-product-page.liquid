@@ -1,0 +1,524 @@
+{% section 'Product-head-no-click' %}
+{% comment %}
+ <section class="review-banner probanner probanner2 wvt-rollova-product-page-vx">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!--<div class="proimage">-->
+                    <!--    <img src="{{'fp-1.png' | asset_url}}">-->
+                    <!--</div>-->
+                <div class="product-slider wow fadeInLeft" data-wow-duration="2s">
+                     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                      <div class="carousel-inner">
+                        
+                      {%for image in product.images%}
+
+                        <div class="carousel-item {% if forloop.index0 == 0 %}active{% endif %}">
+                         <img  src="{{image |  img_url: 'master' }}" alt="First slide">
+                      </div>
+                 {% endfor %}           
+                        
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+                  
+                    <div class="new-product" style="display:none">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+      {%for image in product.images%}
+    <div class="carousel-item {% if forloop.index0 == 0 %}active{% endif %}" data-slide-number="{{forloop.index0}}">
+      <img src="{{image |  img_url: 'master' }}" class="d-block w-100" alt="..." data-remote="https://source.unsplash.com/Pn6iimgM-wo/" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+    </div>
+    {% endfor %}
+   
+  </div>
+</div>
+
+<!-- Carousel Navigation -->
+<div id="carousel-thumbs" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row mx-0">
+         {%for image in product.images%}
+        <div id="carousel-selector-{{forloop.index0}}" class="thumb col-4 col-sm-2 px-1 py-2 {% if forloop.index0 == 0 %}selected{% endif %}" data-target="#myCarousel" data-slide-to="{{forloop.index0}}">
+          <img src="{{image |  img_url: 'master' }}" class="img-fluid" alt="...">
+        </div>
+        {% endfor %}
+
+       
+      </div>
+    </div>
+    
+  </div>
+  <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+                  </div>
+              </div>
+                
+                </div>
+                <div class="col-md-6">
+                    <div class="meazor-promain wow fadeInRight" data-wow-duration="2s">
+                     <div class="meazor-detail meazor2">
+                         <h2>{{product.title}}</h2>
+                         <span class="price-span">{{product.price | money}}</span>
+                  <form>
+                	<div class="qty">
+                	  <span class="minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+
+                   <input id="quantity" class="evt_qty wtv_oks" name="quantity"  type="text" value="1"/ >
+
+                  <span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                    </div>
+                         <div class="pro-btn">
+                     
+                       <input type="hidden" id="productid" data-productid="{{ product.variants.first.id }}" name="id" value="{{ product.selected_or_first_available_variant.id }}" />
+                        <button type="button" onclick="addtocardForms()" class="mxform">Add to Cart</button>
+
+
+                      </form>
+                           <form action="/cart" method="post" id="addToCart">
+             <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" />
+                             <div class="qty" style="display:none">
+                	  <span class="minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+
+                  <input id="quantity"  class="evt_qty" name="quantity"  type="text" value="1"/ >
+
+                  <span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                    </div>
+                       <button type="button" class="buy-btn" onClick="instantBuy({{ product.selected_or_first_available_variant.id }})">Buy Now</button>
+                        
+                            </form>
+                           
+                         </div>
+                         <div class="product-tab product-tab2">
+                             <!-- nav options -->
+     <ul class="nav nav-pills mb-4 shadow-sm" id="pills-tab" role="tablist">
+         <li class="nav-item"> <a class="nav-link active" id="pills-order-tab" data-toggle="pill" href="#pills-order" role="tab" aria-controls="pills-order" aria-selected="true">ABOUT</a> </li>
+         <li class="nav-item"> <a class="nav-link" id="pills-specs-tab" data-toggle="pill" href="#pills-specs" role="tab" aria-controls="pills-specs" aria-selected="false">SPEC</a> </li>
+           {% if  product.metafields.global.SHIPPING.value != blank %}
+      <li class="nav-item"> <a class="nav-link" id="pills-sh-tab" data-toggle="pill" href="#pills-sh" role="tab" aria-controls="pills-sh" aria-selected="false">Pre-order Shipping</a> </li>
+  {% endif %}
+       {% if  product.metafields.global.SHIPPINGINFO.value != blank %}
+      <li class="nav-item"> <a class="nav-link" id="pills-INFO-tab" data-toggle="pill" href="#pills-INFO" role="tab" aria-controls="pills-INFO" aria-selected="false">SHIPPING INFO</a> </li>
+  {% endif %}
+     </ul> <!-- content -->
+     <div class="tab-content" id="pills-tabContent">
+         <!-- 1st card -->
+         <div class="tab-pane fade show active" id="pills-order" role="tabpanel" aria-labelledby="pills-order-tab">
+           <div class="ordertab">
+              {{ product.description }}
+           </div>
+         </div> <!-- 2nd card -->
+         <div class="tab-pane fade" id="pills-specs" role="tabpanel" aria-labelledby="pills-specs-tab">
+           <div class="specstab">
+              
+                 <p class="" style='color:black'>{{ product.metafields.global.SPEC.value }}</p>
+               
+           </div>
+         </div>
+          <div class="tab-pane fade" id="pills-sh" role="tabpanel" aria-labelledby="pills-sh-tab">
+           <div class="specstab">
+              
+                 <p class="VTC"> {{ product.metafields.global.SHIPPING.value }}</p>
+               
+           </div>
+         </div>
+       <div class="tab-pane fade" id="pills-INFO" role="tabpanel" aria-labelledby="pills-INFO-tab">
+           <div class="specstab">
+              
+                 <p class="VTC-2" style='color:black'> {{ product.metafields.global.SHIPPINGINFO.value }}</p>
+               
+           </div>
+         </div>
+     </div>
+                         </div>
+                         <div class="social-list">
+                             <ul>
+                                 <li><a href="whatsapp://send?text={{ shop.url | append: share_permalink }}" data-action="share/whatsapp/share" onClick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" title="Share on whatsapp"><img src="{{'whatsapp.png' | asset_url}}"></a></li>
+                                 <li><a href="//www.facebook.com/sharer.php?u={{ shop.url | append: share_permalink }}"><img src="{{'facebook-logo.png' | asset_url}}"></a></li>
+                                 <li><a href="//twitter.com/share?text={{ share_title | url_param_escape }}&amp;url={{ shop.url | append: share_permalink }}"><img src="{{'twitter.png' | asset_url}}"></a></li>
+                                 <li><a href="//pinterest.com/pin/create/button/?url={{ shop.url | append: share_permalink }}&amp;media={{ share_image | img_url: '1024x1024' }}&amp;description={{ share_title | url_param_escape }}"><img src="{{'pinterest.png' | asset_url}}"></a></li>
+                             
+                             </ul>
+                         </div>
+                     </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+</div>
+{% endcomment %}
+            <section class="rolvo-video"> 
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-md-10">
+                    <div class="rolvo-videos">
+                      <span>ROLLOVA | DESIGN FILM</span>
+                      <div class="introducing-video2 wow fadeInUp" data-wow-duration="2s">
+                            <iframe width="100%" height="520" src="{{product.metafields.custom.watch_video}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <span class="story">A story of innovation</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="rolvoholding" style="background-image: url('{{'bag2.png' | asset_url}}');">
+                <div class="container">
+                    <div class="row">
+                      <div class="col-md-4">
+                         <div class="rolvo-text align-items-start wow fadeInLeft" data-wow-duration="2s">
+                            <h2>Revolutionary Way of Measuring</h2>
+                            <p class="pb-3">ROLLOVA is designed to transform the way you measure things. A pocket-friendly ruler that measures curves, lines, and a variety of surfaces easier than ever before.</p>
+<!--                            <a href="#exampleModalCenter" class="read rollobtn" data-toggle="modal" data-target="#exampleModalCenter">LEARN MORE</a> -->
+                         </div> 
+                      </div>
+                        <div class="col-md-8"> 
+                            <div class="rolvo2 wow fadeInRight" data-wow-duration="2s">
+                                <img src="{{'holdingmeasure.jpg' | asset_url}}" class="mb-4">
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </section>
+            <section class="slider-after">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <div class="sound wow fadeInLeft" data-wow-duration="2s">
+                      <img src="{{'Screenshot_3.png' | asset_url}}" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="led wow fadeInRight" data-wow-duration="2s">
+                        <ul>
+                          <li>1.3" OLED SCREEN</li>
+                          <li> STAINLESS STEEL SCREEN</li>
+                          <li> 7075 ALUMINIUM ALLOY BODY</li>
+                          <li>  ALPS SENSOR</li>
+                          <li>OVA2.0 STM32 CHIP</li>
+                        </ul>
+                       <a href="{{shop.url}}/pages/rollova-tech" class="rolva-tech">Tech Specs</a>
+                      </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="alp">
+                      <p>ROLLOVA takes the pain out of measuring surfaces, materials, and objects. With one easy roll at a time, ROLLOVA provides you with an accurate measurement on its digital and high-contrast OLED screen.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="clint">
+              <div class="container-fluid">
+                <div  class="row">
+                  <div class="col-md-5">
+                    <div class="clint-imag wow fadeInLeft" data-wow-duration="2s">
+                      <img src="{{'clint2.jpg' | asset_url}}" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                     <div class="led wow fadeInRight" data-wow-duration="2s">
+                        <p>"ROLLOVA is the perfect replacement for the <br>conventional ruler <br>- and the best fashion gadget!”</p>
+                        <span>Brittany Smith | Fashion Blogger</span>
+                      </div>
+                  </div>
+                  <div class="col-md-7">
+                     <div class="led wow fadeInLeft" data-wow-duration="2s">
+                        <p>The best friend of designers! <br>Any surface, any curves, <br>anyone and anywhere. <br>ROLLOVA amazingly helps with innovations!”</p>
+                        <span>Pierre Dubois | Industrial Designer</span>
+                      </div>
+                  </div>
+                   <div class="col-md-5">
+                    <div class="clint-imag wow fadeInRight" data-wow-duration="2s">
+                      <img src="{{'clint1.jpg' | asset_url}}" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="Accuracy">
+              <div class="container">
+                <div class="row justify-content-center"> 
+                  <div class="col-md-8">
+                    <div class="accurat-text wow fadeInUp" data-wow-duration="2s">
+                      <h2> Accuracy at Your Fingertips</h2>
+                      <img src="{{'explosion.png' | asset_url}}">
+                      <p>Ultra-steady technology brings you exceptionally accurate result of measurement.</p>
+<!--                      <a href="#exampleModalCenter1" class="read rollobtn" data-toggle="modal" data-target="#exampleModalCenter1">LEARN MORE</a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="cortex" style="background-image: url({{'cortex.jpg' | asset_url}});">
+              <div class="container">
+                <div class="top-content">
+                  <h2>Embrace Technology | Embrace Possibility</h2> 
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <div class="Introduce wow fadeIn" data-wow-duration="3s">
+                      <p>Introduce the new generation of microprocessor - <span>OVA 2.0</span></p>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="persnt">
+                            <h5>60%</h5>
+                            <p>--More accurate--</p>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="persnt">
+                            <h5>25% </h5>
+                            <p>Lower power <br>consumption</p>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="persnt">
+                            <h5>37%</h5>
+                            <p>Better Processing <br>Efficiency</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="Science">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="Science-content wow fadeInLeft" data-wow-duration="2s">
+                      <h2>Where Science & <br>Art Converge</h2>
+                      <p>CORNER to CORNER? JUST One-Click Away. It’s simple to measure corner with offset function; ROLLOVA automatic add it’s radius or diameter to your measurement.</p>
+                      <img src="{{'MeasureCorners.jpg' | asset_url}}">
+                    </div>
+                  </div>
+                  <div class="col-md-8 wow fadeInRight" data-wow-duration="2s">
+                    <div class="Science-text">
+                      <h5>ONE</h5>
+                      <p><b>--CLICK--</b> <br>ADD RADIUS<br> 2.6cm/1.02inch</p>
+                    </div>
+                    <div class="Science-text">
+                      <h5>TWO</h5>
+                      <p><b>--CLICK--</b> <br>ADD DIAMETER<br> 5.2 cm/2.04inch</p>
+                    </div>
+                    <div class="Science-text">
+                      <h5>THREE</h5>
+                      <p><b>--CLICK--</b>- <br>NORMAL MODE<br> +- 0.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="clint">
+              <div class="container-fluid">
+                <div  class="row">
+                  <div class="col-md-6">
+                    <div class="clint-imag wow fadeInLeft" data-wow-duration="2s">
+                      <img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/A-Classic.jpg?v=1672803430" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="led wow fadeInRight" data-wow-duration="2s">
+                        <h2>Bring Your Lifestyle To the Spotlight</h2>
+                        <p class="bring">ROLLOVA comes complete with a leather case – sure to become your favorite pocket-sized ruler. It features an OLED screen that is compatible with Major Units of Length and engineered in a stainless-steel wear and tear resistant body. The design is minimalistic, and the measurement is accurate.</p>
+                      </div>
+                  </div>
+                  <div class="col-md-5 Lifestyle wow fadeInLeft" data-wow-duration="2s">
+                    <div class="led2">
+                      <div class="mamory">
+                        <p><strong>-240mah-</strong> <br>2×CR1632 <br>Button Battery</p>
+                      </div>
+                      <div class="mamory">
+                        <p><strong>-Memory-</strong> <br>Save up to 99 <br>Measurement</p>
+                      </div>
+                    </div>
+                     <div class="led2">
+                      <div class="mamory">
+                        <p><strong>-Inches-</strong> <br>Decimal / Fraction <br>Measure up to <br>99.9ft</p>
+                      </div>
+                      <div class="mamory">
+                        <p><strong>-CM-</strong> <br>Centimetre Mode <br>Measure up to <br>999.9cm​</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="clint-imag2 wow fadeInRight" data-wow-duration="2s">
+                      <img src="{{'cdtwo.png' | asset_url}}" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="base">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6  p-0">
+                    <div class="base-imag wow fadeInLeft" data-wow-duration="2s">
+                      <img src="{{'base1.jpg' | asset_url}}" alt="">  
+                    </div>
+                  </div>
+                  <div class="col-md-6 p-0">
+                    <div class="base-imag wow fadeInRight" data-wow-duration="2s">
+                      <img src="{{'base2.jpg' | asset_url}}" alt="">  
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="shop-box32 wow fadeIn" data-wow-duration="2s">
+                        <a href="https://hozodesign.com/collections/all-products" class="shopbtn Meet2">Shop more</a>
+                    </div>
+                  </div>
+<!--                   <div class="col-md-6  p-0">
+                    <div class="base-imag wow fadeInLeft" data-wow-duration="2s">
+                      <img src="{{'base3.jpg' | asset_url}}" alt="">  
+                    </div>
+                  </div>
+                   <div class="col-md-6  p-0">
+                    <div class="base-imag wow fadeInRight" data-wow-duration="2s">
+                      <img src="{{'base4.jpg' | asset_url}}" alt="">  
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </section>
+            <section class="rolvo-gold" style="background-image: url({{'basebg.jpg' | asset_url}});">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="gold-iamg wow fadeInUp" data-wow-duration="2s">
+                      <img src="{{'RollovaGOLD.png' | asset_url}}" alt="">
+                      <a href="" class="adition">DESIGNER EDITION</a>
+                    </div>
+                    <a href="" class="adition2">LEARN MORE</a>
+                    
+                  </div>
+                  
+                </div>
+                
+              </div>
+              
+            </section>
+            <div class="divider-section" syle="margin-bottom:10px">
+{% section 'alireviews-widget-250545' %}
+{% section 'social-4-items' %}
+{% comment %}
+<section class="fixed-cart measor1-fix" id="fix-cart">
+    <div class="container">
+      <div class="fixed-cart-close">
+        <button onclick="closed()"><i class="fa fa-times"></i></button>
+      </div>
+        <div class="fixed-outer">
+        <div class="row justify-content-center">
+            <div class="col-md-3 col-2">
+                <div class="fixed-cart-img">
+                    <img src="{{'ezgif-6-950eac5bd2f4.png' | asset_url'}}">
+                </div>
+            </div>
+            <div class="col-md-5 col-7">
+                <div class="fixed-text">
+                 {{ product.metafields.global.quickcart.value }}
+                </div>
+            </div>
+            <div class="col-md-3 col-3">
+                <div class="fixed-shop">
+                   <form method="post" action="/cart/add">
+
+                      <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                        <button type="submit" class="designer-btn designer-btn2">SHOP NOW</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+{% endcomment %}
+
+
+
+<script>
+  // Override default values of shop.strings for each template.
+  // Alternate product templates can change values of
+  // add to cart button, sold out, and unavailable states here.
+  theme.productStrings = {
+    addToCart: {{ 'products.product.add_to_cart' | t | json }},
+    soldOut: {{ 'products.product.sold_out' | t | json }},
+    unavailable: {{ 'products.product.unavailable' | t | json }}
+  };
+
+  if(sessionStorage.backToCollection) {
+    theme.backToCollection = {};
+    theme.backToCollection.collection = JSON.parse(sessionStorage.backToCollection);
+    var productCollections = {{ product.collections | json }};
+    var showCollection = false;
+    if (productCollections) {
+      productCollections.forEach(function(collection) {
+        if (collection.title === theme.backToCollection.collection.title) {
+          showCollection = true;
+        }
+      });
+    }
+    if(showCollection) {
+      var backToCollectionHTML = '<div class="text-center return-link-wrapper page-width"><a href="' + theme.backToCollection.collection.link + '" class="btn btn--secondary btn--has-icon-before">{% include 'icon-arrow-left' %}{{ 'products.product.back_to_collection' | t }} ' + theme.backToCollection.collection.title + '</a></div>';
+      var backToCollectionContainer = document.getElementById('backToCollection');
+      backToCollectionContainer.insertAdjacentHTML('afterbegin', backToCollectionHTML);
+    }
+  }
+</script>
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": {{ product.title | json }},
+  "url": {{ shop.url | append: product.url | json }},
+  {%- if product.featured_media -%}
+    {%- assign media_size = product.featured_media.preview_image.width | append: 'x' -%}
+    "image": [
+      {{ product.featured_media | img_url: media_size | prepend: "https:" | json }}
+    ],
+  {%- endif -%}
+  "description": {{ product.description | strip_html | json }},
+  {%- if current_variant.sku != blank -%}
+    "sku": {{ current_variant.sku | json }},
+  {%- endif -%}
+  "brand": {
+    "@type": "Thing",
+    "name": {{ product.vendor | json }}
+  },
+  "offers": [
+    {%- for variant in product.variants -%}
+      {
+        "@type" : "Offer",
+        {%- if variant.sku != blank -%}
+          "sku": {{ variant.sku | json }},
+        {%- endif -%}
+        "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
+        "price" : {{ variant.price | divided_by: 100.00 | json }},
+        "priceCurrency" : {{ cart.currency.iso_code | json }},
+        "url" : {{ shop.url | append: variant.url | json }}
+      }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+}
+</script>

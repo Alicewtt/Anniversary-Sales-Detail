@@ -1,0 +1,29 @@
+<div class="contct-banner-content">
+    <h2>{{section.settings.text1}}</h2>
+    <p>{{section.settings.text2}}</p>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Faq-manual",
+    "settings": [
+{
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add heading"
+          },
+{
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add text"
+          }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

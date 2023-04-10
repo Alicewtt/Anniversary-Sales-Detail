@@ -1,0 +1,103 @@
+<section class="hozo_all6coloum">
+    <div class="container">
+        <div class="hozo_six-onehed text-center "><img src="{{section.settings.img1 | img_url : 'master'}}"></div>
+        <div class="desktop__sixclum2">
+        <div class="row">
+          {% for block in section.blocks %}
+            <div class="col-md-4">
+                <div class="hozo_all6inner text-center">
+                    <div class="hozo_all6scnd">
+                        <video autoplay="" muted="" loop="">
+                              <source src="{{block.settings.url1}}" type="video/mp4"> 
+                           </video>
+                        <div class="videotext">
+                            <p>{{block.settings.text1}}</p>
+                        </div>
+                    </div>
+                    <div class="hozo_all6first">
+                        <img src="{{block.settings.img2 | img_url : 'master'}}">
+                        <h4>{{block.settings.text2}}</h4>
+                    </div>
+                </div>
+            </div> 
+          
+          {% endfor %}
+          </div>
+      </div>
+           <div class="six__clmbtnclick--show">
+               {% for block in section.blocks %}
+        <div class="row">
+        	<div class="col-md-4">
+            	<img src="{{block.settings.img2 | img_url : 'master'}}">
+            </div>
+            <div class="col-md-8"> 
+              <h4>{{block.settings.text2}}</h4>	
+              <p>{{block.settings.text1}}</p>
+            </div>
+        </div>
+             {% endfor %}
+       
+       
+        
+      </div>
+      
+      
+      <div class="leran__hzmore3sbtns"><a href="javascript:void(0)">Learn more about MEAZOR 3D functions</a></div>
+    
+</section>
+            
+          
+  
+ 
+
+
+{% schema %}
+  {
+    "name": "Product-info-2",
+    "settings": [
+{
+            "id": "img1",
+            "type": "image_picker",
+            "label": "Add Image"
+          }
+
+],
+  "blocks": [
+      {
+        "type": "text",
+        "name": "slider",
+        "settings": [
+ {
+            "id": "url1",
+            "type": "url",
+            "label": "Add video Url"
+          },
+
+          {
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add text"
+          },
+ {
+            "id": "img2",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+          {
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add text"
+          }
+         
+         
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

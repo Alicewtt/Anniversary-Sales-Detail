@@ -1,0 +1,3887 @@
+{
+  "current": {
+    "favicon": "shopify:\/\/shop_images\/HOZO_LOGO_-FAVICON_1.png",
+    "currency_code_enabled": false,
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "medium",
+    "language_switcher_position": "top-right",
+    "language_switcher_spacing_top": "58",
+    "language_switcher_spacing_right": "165",
+    "language_switcher_label": "language-code",
+    "header_language_switcher_label": "language-code",
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "efab78ee-d2fe-4bd1-a3c1-c64b3789d6af": {
+            "type": "product",
+            "settings": {
+              "text1": "PRODUCTS",
+              "url1": "shopify:\/\/collections\/all-products",
+              "coll": "frontpage"
+            }
+          },
+          "d4e42e04-a0aa-4749-b8bc-566fd6c2b07f": {
+            "type": "contact",
+            "settings": {
+              "ctext1": "CONTACT US",
+              "curl1": "shopify:\/\/pages\/support-ticket",
+              "cmenu1": "contact-menu"
+            }
+          },
+          "d532c15c-3267-4b6d-8ef1-4f1694088e50": {
+            "type": "link",
+            "settings": {
+              "ltext1": "REVIEWS",
+              "lurl1": "shopify:\/\/pages\/reviews"
+            }
+          },
+          "c1d9489a-7250-43e4-9976-28a6b9784b68": {
+            "type": "link",
+            "settings": {
+              "ltext1": "ABOUT US",
+              "lurl1": "shopify:\/\/pages\/about-us"
+            }
+          }
+        },
+        "block_order": [
+          "efab78ee-d2fe-4bd1-a3c1-c64b3789d6af",
+          "d4e42e04-a0aa-4749-b8bc-566fd6c2b07f",
+          "d532c15c-3267-4b6d-8ef1-4f1694088e50",
+          "c1d9489a-7250-43e4-9976-28a6b9784b68"
+        ],
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/logo.png"
+        }
+      },
+      "feature-row": {
+        "type": "feature-row",
+        "settings": {
+          "layout": "left",
+          "title": "带文本图片",
+          "text": "<p>将大文本与图片配对，以便将焦点置于您选择的产品、产品系列或博客文章。添加有关可用性和样式的详细信息，甚至是提供评论。<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "feature-columns": {
+        "type": "feature-columns",
+        "blocks": {
+          "feature-columns-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "title": "添加标题或标语",
+              "text": "<p>与您的客户分享博客文章、产品或促销信息。使用此文本描述产品、分享有关供货情况和风格的详细信息，或将此文本作为显示最近评论或常见问题解答的区域。<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "feature-columns-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "title": "添加标题或标语",
+              "text": "<p>与您的客户分享博客文章、产品或促销信息。使用此文本描述产品、分享有关供货情况和风格的详细信息，或将此文本作为显示最近评论或常见问题解答的区域。<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "feature-columns-2": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "title": "添加标题或标语",
+              "text": "<p>与您的客户分享博客文章、产品或促销信息。使用此文本描述产品、分享有关供货情况和风格的详细信息，或将此文本作为显示最近评论或常见问题解答的区域。<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "feature-columns-0",
+          "feature-columns-1",
+          "feature-columns-2"
+        ],
+        "settings": {
+          "title": "",
+          "align_text": "left"
+        }
+      },
+      "collection": {
+        "type": "collection",
+        "settings": {
+          "title": "特色产品系列",
+          "collection": "",
+          "grid": 4,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "quotes": {
+        "type": "quotes",
+        "blocks": {
+          "quotes-0": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>添加客户评论和感言，以展示对您的商店满意的客户。<\/p>",
+              "author": "作者姓名"
+            }
+          },
+          "quotes-1": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>添加客户评论和感言，以展示对您的商店满意的客户。<\/p>",
+              "author": "作者姓名"
+            }
+          },
+          "quotes-2": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>添加客户评论和感言，以展示对您的商店满意的客户。<\/p>",
+              "author": "作者姓名"
+            }
+          }
+        },
+        "block_order": [
+          "quotes-0",
+          "quotes-1",
+          "quotes-2"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "image-bar": {
+        "type": "image-bar",
+        "blocks": {
+          "image-bar-0": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "image-bar-1": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "image-bar-2": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "image-bar-0",
+          "image-bar-1",
+          "image-bar-2"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "footer-1": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Newsletter"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "footer-1"
+        ],
+        "settings": {
+          "show_payment_icons": true,
+          "color_footer_bg": "#f6f6f6",
+          "color_footer_text": "#333232",
+          "show_currency_selector": true,
+          "show_locale_selector": true
+        }
+      },
+      "new-footer": {
+        "type": "new-footer",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/footer.png",
+          "ct1": "",
+          "coll1": "footer-1",
+          "coll2": "footer-2",
+          "fb": "https:\/\/www.facebook.com\/HOZODESIGN.Co\/",
+          "insta": "https:\/\/twitter.com\/HOZODESIGN",
+          "linkedin": "https:\/\/www.linkedin.com\/company\/hozo-design\/",
+          "yt": "https:\/\/www.youtube.com\/channel\/UCauuxYtF6O7VBNVSrqYBJlA",
+          "copyw": "Copyright © 2018 - 2022 BY HOZO DESIGN. C.O, Limited All rights reserved"
+        }
+      },
+      "contact-top-section": {
+        "type": "contact-top-section",
+        "settings": {
+          "text1": "CONTACT US FOR ANY QUIRY",
+          "text2": "A question, a remark, a suggestion or anything else. We want to hear from you! Let us know your thoughts, we will reply to you as soon as possible."
+        }
+      },
+      "contact-section1": {
+        "type": "contact-section1",
+        "settings": {
+          "url1": "shopify:\/\/pages\/support-ticket",
+          "url2": "shopify:\/\/pages\/media-press",
+          "url3": "shopify:\/\/pages\/contact",
+          "email": "meilin@hozodesign.com"
+        }
+      },
+      "contact-product": {
+        "type": "contact-product",
+        "blocks": {
+          "e1dde14d-17de-4d7a-95f3-aca0327b369e": {
+            "type": "text",
+            "settings": {
+              "img1": "shopify:\/\/shop_images\/rolova.png",
+              "img": "shopify:\/\/shop_images\/contact-prdct.png",
+              "url1": "#",
+              "url2": "#",
+              "cl": "yes"
+            }
+          },
+          "08cb08e3-c530-4e4f-a82e-ca028aed0b64": {
+            "type": "text",
+            "settings": {
+              "img1": "shopify:\/\/shop_images\/mazor.png",
+              "img": "shopify:\/\/shop_images\/contact-prdct-1.png",
+              "url1": "#",
+              "url2": "#",
+              "cl": ""
+            }
+          }
+        },
+        "block_order": [
+          "e1dde14d-17de-4d7a-95f3-aca0327b369e",
+          "08cb08e3-c530-4e4f-a82e-ca028aed0b64"
+        ],
+        "settings": {
+        }
+      },
+      "contact-section-3": {
+        "type": "contact-section-3",
+        "settings": {
+          "gurl": "https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d3691.404175591038!2d114.1764724152121!3d22.30054908532344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400ef69d3b145%3A0x6637a77af60107ee!2sNew%20Mandarin%20Plaza!5e0!3m2!1sen!2ssg!4v1679476865516!5m2!1sen!2ssg",
+          "add": "UNIT 917A, 9\/F., TOWER A, NEW MANDARIN PLAZA, No.14, SCIENCE MUSEUM ROAD TSIMSHATSUI, HK",
+          "number": "+86 19910392536",
+          "mail": "meilin@hozodesign.com"
+        }
+      },
+      "about-us": {
+        "type": "about-us",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/heading-img.png",
+          "text2": "<p>HOZO Design launched the first digital product, ROLLOVA, in 2018, which marks the beginning of a journey to explore and pioneer extraordinary technology. Today, HOZO brings the aesthetics of technology to global consumers through variety of smart devices. <\/p>\n                    <p>We have presence in over 20 countries and regions, and have set up 2 research institutes and R&D centers in both Asia and North America. Together, HOZO Design team members join their efforts to create beautiful life for people.<\/p>"
+        }
+      },
+      "meazore-accessories-products": {
+        "type": "meazore-accessories-products",
+        "settings": {
+          "getcoll": "meazor-accessories",
+          "url1": "shopify:\/\/collections\/all"
+        }
+      },
+      "review-top": {
+        "type": "review-top",
+        "settings": {
+          "img": "shopify:\/\/shop_images\/r-banner.png",
+          "text1": "PRODUCT REVIEWS",
+          "text2": "Video, Press Articles & Customer Testimonials"
+        }
+      },
+      "review-tab-1": {
+        "type": "review-tab-1",
+        "blocks": {
+          "f830d60d-1f1a-4e06-bfe3-6a1ffc69ce95": {
+            "type": "text",
+            "settings": {
+              "text1": "MEAZOR Product Film",
+              "url1": "https:\/\/www.youtube.com\/embed\/WZwzbvMKEjc"
+            }
+          },
+          "2f5c1900-72a3-45de-881a-ceec06f751a7": {
+            "type": "text",
+            "settings": {
+              "text1": "MEAZOR Function Demonstrations",
+              "url1": "https:\/\/www.youtube.com\/embed\/V0xkG_ZWckE"
+            }
+          },
+          "362589c7-9813-40e7-8442-05432be3344a": {
+            "type": "text",
+            "settings": {
+              "text1": "[MEAZOR Unboxing]\nWhat's included in MEAZOR \"Family Bucket\"?",
+              "url1": "https:\/\/www.youtube.com\/embed\/49rMgwHwuCA"
+            }
+          },
+          "40c5e832-7b36-4b33-b7aa-813c43e3ee4d": {
+            "type": "text",
+            "settings": {
+              "text1": "User Instructions - How to use MEAZOR?",
+              "url1": "https:\/\/www.youtube.com\/embed\/C09Rn8TEp2o"
+            }
+          }
+        },
+        "block_order": [
+          "f830d60d-1f1a-4e06-bfe3-6a1ffc69ce95",
+          "2f5c1900-72a3-45de-881a-ceec06f751a7",
+          "362589c7-9813-40e7-8442-05432be3344a",
+          "40c5e832-7b36-4b33-b7aa-813c43e3ee4d"
+        ],
+        "settings": {
+        }
+      },
+      "review-tab-1-article": {
+        "type": "review-tab-1-article",
+        "blocks": {
+          "e021666f-d689-4696-9611-6596fd96076b": {
+            "type": "text",
+            "settings": {
+              "text1": "CYBER SHACK",
+              "text2": "“As far as we can find no other device does it all or is as useful as MEAZOR. ”",
+              "url1": "https:\/\/cybershack.com.au\/reviews\/meazor-6-in-1-laser-measure-and-so-much-more-review\/"
+            }
+          },
+          "f7c77595-a2e0-4416-940e-adef1d79fb5a": {
+            "type": "text",
+            "settings": {
+              "text1": "Yanko Design",
+              "text2": "“This tiny laser device can replace every single measuring tools you use!”",
+              "url1": "https:\/\/www.yankodesign.com\/2021\/11\/18\/this-tiny-laser-device-can-replace-every-single-measuring-tool-you-use-and-its-on-20-discount\/"
+            }
+          },
+          "aabb151f-a3df-412d-a92e-9408dc7f256c": {
+            "type": "text",
+            "settings": {
+              "text1": "CES Bible",
+              "text2": "“The MEAZOR has been engineered to fit seamlessly into creative lifestyles, and is currently the smallest 2D laser room scanner in the world.”",
+              "url1": "https:\/\/thecesbible.com\/hozo-design-launches-meazor-the-worlds-most-compact-6-in-1-multifunctional-laser-measurer-with-cutting-edge-2d-floorplan-scanning-function\/"
+            }
+          },
+          "ecbb3690-3f98-4568-9234-19817509ce23": {
+            "type": "text",
+            "settings": {
+              "text1": "Irish TECH NEWS",
+              "text2": "\"MEAZOR has been meticulously designed to be used in everyday life, to make measuring easier and more enjoyable for all.”",
+              "url1": "https:\/\/irishtechnews.ie\/hozo-meazor-6-in-1-multifunctional-laser-measurer\/"
+            }
+          },
+          "2d8860a8-db2f-4dab-ac50-31358cda9d9d": {
+            "type": "text",
+            "settings": {
+              "text1": "E&T",
+              "text2": "\"MEAZOR, Laser Measure HERO! It offers a tremendous amount of eminently useful measuring functions.\"",
+              "url1": "https:\/\/eandt.theiet.org\/content\/articles\/2021\/12\/hands-on-review-meazor-6-in-1-laser-measurer\/"
+            }
+          },
+          "2f15c9f8-a116-4d04-b6c4-ffdf7deec91b": {
+            "type": "text",
+            "settings": {
+              "text1": "The Herald",
+              "text2": "\"A compact digital laser measurer with more tricks up its sleeve than David Blaine.\"",
+              "url1": "https:\/\/www.heraldscotland.com\/news\/19770683.review-hozo-design-meazor-6-in-1-multifunction-laser-measurer\/"
+            }
+          }
+        },
+        "block_order": [
+          "e021666f-d689-4696-9611-6596fd96076b",
+          "f7c77595-a2e0-4416-940e-adef1d79fb5a",
+          "aabb151f-a3df-412d-a92e-9408dc7f256c",
+          "ecbb3690-3f98-4568-9234-19817509ce23",
+          "2d8860a8-db2f-4dab-ac50-31358cda9d9d",
+          "2f15c9f8-a116-4d04-b6c4-ffdf7deec91b"
+        ],
+        "settings": {
+        }
+      },
+      "Review-tab-1-testis": {
+        "type": "Review-tab-1-testis",
+        "blocks": {
+          "2f77b6aa-d1e9-4660-8722-c7cab2c5ae6c": {
+            "type": "text",
+            "settings": {
+              "text1": "Jay B Swindle",
+              "text2": "United States",
+              "text3": "",
+              "text4": "It's a good value for 2D data collection offering multiple data collection modes and useful file transfer formats.I've been looking for a device to do what MEAZOR does for about the last two years.  I'm glad I finally found it."
+            }
+          },
+          "00ec16e5-206a-437d-a2c6-981932119aa3": {
+            "type": "text",
+            "settings": {
+              "text1": "Bruce W",
+              "text2": "United States",
+              "text3": "",
+              "text4": "MEAZOR is an excellent tool with a really nice build quality. I can imagine that this would be invaluable to a real estate agent.It's quick, accurate and very intuitive to use.  I've check the laser length measurement against known accurate distances and find it to be dead on, and  repeatable. It's also easier to carry than a bulky tape, and I can record measurements automatically,  no need to write anything down.  I love it."
+            }
+          },
+          "27495765-cb2b-47e6-9f46-87af8fbf7295": {
+            "type": "text",
+            "settings": {
+              "text1": "Jason",
+              "text2": "Canada",
+              "text3": "",
+              "text4": "I've already recommended this to a few friends, showed it to them and they've loved it! It not only saves time, but saves you from recording incorrect measurements and takes the guesswork out of determining angles. This device is a game changer."
+            }
+          },
+          "894494bc-519a-4809-b822-1ad93d27ca4f": {
+            "type": "text",
+            "settings": {
+              "text1": "Luise",
+              "text2": "Mexico",
+              "text3": "",
+              "text4": "MEAZOR is the perfect assistant for the work of an Architect, both on site and in the diagnosis of buildings."
+            }
+          },
+          "17eb1a47-d333-4a24-a3e5-64c374d2c351": {
+            "type": "text",
+            "settings": {
+              "text1": "Anonymous",
+              "text2": "Switzerland",
+              "text3": "",
+              "text4": "The MEAZOR is really versatile and can be used in different types of measurement whether in architecture or object design and without forgetting to read a geographical map or even calculate the curves, not to mention accessories and spare parts."
+            }
+          },
+          "169a5a0f-0527-4682-baa8-38e00646c59b": {
+            "type": "text",
+            "settings": {
+              "text1": "Liam B.",
+              "text2": "Gibraltar",
+              "text3": "",
+              "text4": "I bought MEAZOR primarily as a laser measuring device which had the added benefit of having a curve measuring tool.. However, it does so much more than that! Plus, it even fits in my pocket!! 10\/10"
+            }
+          },
+          "433c6557-fa02-498b-8b08-f1207a048007": {
+            "type": "text",
+            "settings": {
+              "text1": "Kat B.",
+              "text2": "United States",
+              "text3": "",
+              "text4": "If you need to measure rooms or distances that are annoying with a tape measure, the Meazor will simplify your life! The laser measuring mode is the most used. Absolutely amazingly useful and easy."
+            }
+          },
+          "e450f869-da43-49d3-98cc-0ec193bf97ef": {
+            "type": "text",
+            "settings": {
+              "text1": "Theodore W.",
+              "text2": "United States",
+              "text3": "",
+              "text4": "I work in architecture. I would recommend MEAZOR to my friends that do residential architecture. It would be great for them to get a laser-accurate measurement of a room when they have a project. If the product could do multiple rooms with accuracy in a single scan, then I would recommend it to anyone in the industry as it would be a much easier version of a point cloud scan of an existing building."
+            }
+          },
+          "633499e5-71d7-4454-8324-06d06ea2d3e3": {
+            "type": "text",
+            "settings": {
+              "text1": "Anonymous",
+              "text2": "New Zealand",
+              "text3": "",
+              "text4": "I've tried a few laser measuring tools over time, but the MEAZOR is the first that is so easy to use, displays all the info I need, and offers so many useful modes. Add in the app that allows all of this to be captured, stored and exported, and you have a great package."
+            }
+          },
+          "2cb6140f-d240-493d-8f45-e1de9df031e9": {
+            "type": "text",
+            "settings": {
+              "text1": "Sergio P.",
+              "text2": "Spain",
+              "text3": "",
+              "text4": "The measurement system is very precise, it is as precise as my old \"LEICA\" equipment.  The most impressive thing about MEAZOR is the generation of 2D plans in the app, very useful for renovations where there are no plans of the place."
+            }
+          },
+          "639af8ab-3095-42d4-b549-d847a4f2457f": {
+            "type": "text",
+            "settings": {
+              "text1": "James L.",
+              "text2": "United States",
+              "text3": "",
+              "text4": "High quality measurements in the palm of your hand.   Easy to use and intuitive, MEAZOR makes mapping out floor plans a breeze."
+            }
+          },
+          "c834ae85-241d-4d02-accc-a63165cf3a25": {
+            "type": "text",
+            "settings": {
+              "text1": "Tim M.",
+              "text2": "United Kingdom",
+              "text3": "",
+              "text4": "Must have for home DIYers. One tool to help you tackle the entire project, from measuring to design and layout, to finishing touches."
+            }
+          },
+          "530cb08d-7596-421f-b7d0-f62c0ddf761a": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "text1": "",
+              "text2": "",
+              "text3": "",
+              "text4": ""
+            }
+          },
+          "d4f0a757-c306-4efc-bc13-88650c6bdea7": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "text1": "",
+              "text2": "",
+              "text3": "",
+              "text4": ""
+            }
+          },
+          "9cffaa36-3b66-4d2d-a26a-765371dccdd7": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "text1": "",
+              "text2": "",
+              "text3": "",
+              "text4": ""
+            }
+          }
+        },
+        "block_order": [
+          "2f77b6aa-d1e9-4660-8722-c7cab2c5ae6c",
+          "00ec16e5-206a-437d-a2c6-981932119aa3",
+          "27495765-cb2b-47e6-9f46-87af8fbf7295",
+          "894494bc-519a-4809-b822-1ad93d27ca4f",
+          "17eb1a47-d333-4a24-a3e5-64c374d2c351",
+          "169a5a0f-0527-4682-baa8-38e00646c59b",
+          "433c6557-fa02-498b-8b08-f1207a048007",
+          "e450f869-da43-49d3-98cc-0ec193bf97ef",
+          "633499e5-71d7-4454-8324-06d06ea2d3e3",
+          "2cb6140f-d240-493d-8f45-e1de9df031e9",
+          "639af8ab-3095-42d4-b549-d847a4f2457f",
+          "c834ae85-241d-4d02-accc-a63165cf3a25",
+          "530cb08d-7596-421f-b7d0-f62c0ddf761a",
+          "d4f0a757-c306-4efc-bc13-88650c6bdea7",
+          "9cffaa36-3b66-4d2d-a26a-765371dccdd7"
+        ],
+        "settings": {
+        }
+      },
+      "review-tab-2-video": {
+        "type": "review-tab-2-video",
+        "blocks": {
+          "d997a105-d4d2-4b8a-8bf4-a0f03141fa21": {
+            "type": "text",
+            "settings": {
+              "text1": "ROLLOVA - Next-Gen Tape Measure?",
+              "url1": "https:\/\/www.youtube.com\/embed\/BUse_s9a6WA"
+            }
+          },
+          "84572e4e-2126-4fa3-85b1-e3e153a69faf": {
+            "type": "text",
+            "settings": {
+              "text1": "“An innovative new way to measure that leaves old-fashioned methods in the dust”",
+              "url1": "https:\/\/www.youtube.com\/embed\/txPwJGYf1Jo"
+            }
+          },
+          "8e4dd99a-fa5f-4f2a-b4ea-74a7d8c6ffc1": {
+            "type": "text",
+            "settings": {
+              "text1": "“ROLLOVA is a futuristic gadget”",
+              "url1": "https:\/\/www.youtube.com\/embed\/G3wSzxrpHUM"
+            }
+          },
+          "de972d66-997d-438a-8674-3c6d7585dbc2": {
+            "type": "text",
+            "settings": {
+              "text1": "“Most Advanced INCH TAPE - ROLLOVA DIGITAL TAPE”",
+              "url1": "https:\/\/www.youtube.com\/embed\/KOyilTTKygI"
+            }
+          }
+        },
+        "block_order": [
+          "d997a105-d4d2-4b8a-8bf4-a0f03141fa21",
+          "84572e4e-2126-4fa3-85b1-e3e153a69faf",
+          "8e4dd99a-fa5f-4f2a-b4ea-74a7d8c6ffc1",
+          "de972d66-997d-438a-8674-3c6d7585dbc2"
+        ],
+        "settings": {
+        }
+      },
+      "review-tab-2-article": {
+        "type": "review-tab-2-article",
+        "blocks": {
+          "63ad104b-2447-4e80-85f9-54f39d863517": {
+            "type": "text",
+            "settings": {
+              "text1": "logo Archdaily",
+              "text2": "“This Compact “Rolling Ruler” Seeks to Change how Architects Measure”",
+              "url1": ""
+            }
+          },
+          "ad96a946-7523-48fd-bbcc-7e94dbc6bc23": {
+            "type": "text",
+            "settings": {
+              "text1": "Gadget Flow",
+              "text2": "“This incredible ruler can measure a wide range of surfaces, objects, and materials with a single motion.”",
+              "url1": ""
+            }
+          },
+          "37be2c42-7154-447a-9c59-b3a0836a1b79": {
+            "type": "text",
+            "settings": {
+              "text1": "The New Atlas",
+              "text2": "“Its obvious strength is in measuring curved or uneven surfaces”",
+              "url1": ""
+            }
+          },
+          "53887d3a-6771-4cb8-b1da-522c6b05e7b4": {
+            "type": "text",
+            "settings": {
+              "text1": "",
+              "text2": "“we found the ROLLOVA impressive”",
+              "url1": ""
+            }
+          },
+          "776f0d96-b6ba-48a2-b687-4312f9eb76fc": {
+            "type": "text",
+            "settings": {
+              "text1": "TECHABLE",
+              "text2": "“ユニークで実用的な機能に加えて、スタイリッシュなデザインが素晴らしい”(In addition to unique and practical features, the stylish design is amazing)",
+              "url1": ""
+            }
+          }
+        },
+        "block_order": [
+          "63ad104b-2447-4e80-85f9-54f39d863517",
+          "ad96a946-7523-48fd-bbcc-7e94dbc6bc23",
+          "37be2c42-7154-447a-9c59-b3a0836a1b79",
+          "53887d3a-6771-4cb8-b1da-522c6b05e7b4",
+          "776f0d96-b6ba-48a2-b687-4312f9eb76fc"
+        ],
+        "settings": {
+        }
+      },
+      "Review-tab-2-testis": {
+        "type": "Review-tab-2-testis",
+        "blocks": {
+          "f5263ba7-868d-41f8-ad93-39f0056c086f": {
+            "type": "text",
+            "settings": {
+              "text1": "Carl E. M.",
+              "text2": "United States",
+              "text3": "12\/2020",
+              "text4": "Got it for my wife mostly. She has a problem seeing a tape measure since she lost vision in her right eye, and having to count the small hash marks. This “roller tape measure” gives the measurements in easy to read digital numbers in and fractions. I love it too. Worth the money!!!"
+            }
+          },
+          "0dba80a1-a08d-4ae8-b43f-7c395a7fe205": {
+            "type": "text",
+            "settings": {
+              "text1": "Scott",
+              "text2": "United States",
+              "text3": "12\/2019",
+              "text4": "“The anticipation for this product was worth the wait. I’m a math teacher and splurged for my ROLLOVA and have been able to show the general rule we strive for in my math classes: strive to find a different, cool, efficient way of doing something that others will find useful and appreciate.”"
+            }
+          },
+          "fc061d13-38df-4ca9-b63f-4b7ef991dfd2": {
+            "type": "text",
+            "settings": {
+              "text1": "Jon",
+              "text2": "United Kingdom",
+              "text3": "12\/2018",
+              "text4": "Its a great design. Well done guys in changing the concept of measuring."
+            }
+          }
+        },
+        "block_order": [
+          "f5263ba7-868d-41f8-ad93-39f0056c086f",
+          "0dba80a1-a08d-4ae8-b43f-7c395a7fe205",
+          "fc061d13-38df-4ca9-b63f-4b7ef991dfd2"
+        ],
+        "settings": {
+        }
+      },
+      "customer-support-pix": {
+        "type": "customer-support-pix",
+        "settings": {
+          "url1": "shopify:\/\/pages\/shipping",
+          "url2": "shopify:\/\/pages\/warranty",
+          "url3": "shopify:\/\/pages\/return-and-refund",
+          "url04": "shopify:\/\/pages\/faq-user-manual"
+        }
+      },
+      "meazor-spec-pix": {
+        "type": "meazor-spec-pix",
+        "blocks": {
+          "b5225015-455f-48b6-af15-32b4ddb38c62": {
+            "type": "text",
+            "settings": {
+              "text1": "Display",
+              "text2": "<p>· 1.3-inch (diagonal) IPS-backlit display\n<br>· 240×240 resolution at 184 pixels per inch with support for millions of colors. <\/p>"
+            }
+          },
+          "34f82f5e-e7ee-4a20-9712-55f4b63f2fbd": {
+            "type": "text",
+            "settings": {
+              "text1": "Size & Weight",
+              "text2": "<p>· Dimension: 3.93×2.12×0.83inch      (100×54×21.3mm)<br><br>· Weight: 110g<\/p>"
+            }
+          },
+          "2c2b24e4-2912-4776-bcf7-ccf9093644a8": {
+            "type": "text",
+            "settings": {
+              "text1": "Battery & Charging",
+              "text2": "<p>· Built-in 650 mAh lithium‑polymer battery\n<br>· Support 5V -1A Charging with USB-C Port. \n<br>0-100% charging time: 2 hours. \n*Adapter with fast charging protocol will not be supported.<\/p>"
+            }
+          },
+          "0f08db6b-eb54-4ee1-ae92-814c72cfea20": {
+            "type": "text",
+            "settings": {
+              "text1": "Battery Life",
+              "text2": "<p>30 days battery life in stand-by mode, 6 hours continuous use under comprehensive power consumption. 0.75 hours continuous use under maximum power consumption.<\/p>"
+            }
+          },
+          "842500e1-d481-4203-bb91-1c05822ebc0b": {
+            "type": "text",
+            "settings": {
+              "text1": "Laser Measure",
+              "text2": "<p><br>· Measure range: 0.3feet-82feets (0.1m-25m).\n<br>· Resolution: 0.04inch(1mm)\n<br>· Accuracy: +-0.12inch (+-3mm) in ideal circumstance.\n*<\/p>"
+            }
+          },
+          "4bae67da-ccf7-4ae2-af8f-6527ce1bfa63": {
+            "type": "text",
+            "settings": {
+              "text1": "*Non-ideal circumstances",
+              "text2": "<p>*Non-ideal circumstances such as outdoor with strong light or under the bad reflective surface, the error will be superimposed with maximum +-1‰ of the measuring distance. <\/p>"
+            }
+          },
+          "8e535059-144a-4a81-925c-c8d495626c57": {
+            "type": "text",
+            "settings": {
+              "text1": "Rolling Ruler",
+              "text2": "<p>· Measure range: 0-300feets (0-99meters)\n<br>· Resolution: 0.04inch(1mm)\n<br>· Accuracy: +-1mm or ±0.2% in ideal circumstances. **\n<\/p>"
+            }
+          },
+          "dafcf8a7-30d9-4f74-b19b-39b96025dadd": {
+            "type": "text",
+            "settings": {
+              "text1": "**Non-ideal circumstances",
+              "text2": "<p>**The accuracy will be decreased on slippery, uneven, soft, curved surfaces. Inclination, misalignment and other human error factors will also affect the measurement accuracy.<\/p>"
+            }
+          },
+          "ec233324-7697-4ffc-a549-c693b48882fc": {
+            "type": "text",
+            "settings": {
+              "text1": "Scales Measure",
+              "text2": "<p>\n· Metric Architecture\n<br>· Metric Engineering\n<br>· US Architecture\n<br>· US Engineering<\/p>"
+            }
+          },
+          "9d7faa5d-2c72-4331-800b-228f115ccdde": {
+            "type": "text",
+            "settings": {
+              "text1": "Point Scanner",
+              "text2": "<p>· Measuring Range: maximum room size:12900feet² or 1200m². \n<br>· Accuracy: +-0.5in² (+-25mm²) in ideal circumstances.***\n<\/p>"
+            }
+          },
+          "f81ffaca-480a-49d1-bb01-577ae7e11bb8": {
+            "type": "text",
+            "settings": {
+              "text1": "***Non-ideal circumstances",
+              "text2": "<p>***Non-ideal circumstances such as outdoor with strong light, or under the bad reflective surface, the error will be superimposed with maximum +- 1‰ of the measuring distance.<\/p>"
+            }
+          },
+          "ed242254-8cb4-4110-b205-6786e1104296": {
+            "type": "text",
+            "settings": {
+              "text1": "Curve Scanner",
+              "text2": "<p>· Maximum Curve Length(start point-endpoint):  82feets(25 meters)\n<br>· Resolution: Angel Resolution : 1.0° <br>· Length Resolution: 0.04inch(+-1mm)<\/p>"
+            }
+          },
+          "ce2989d1-97f7-4867-b6c6-f46671a8d823": {
+            "type": "text",
+            "settings": {
+              "text1": "Level",
+              "text2": "<p>· Measuring range: Dual axis +-90°\n<br>· Resolution: 0.1°\n<br>· Accuracy: ±0.2°at 0° ~45° , ±0.4° at other angles<\/p>"
+            }
+          },
+          "213f2ecd-08c6-42fa-9c92-cd32d8794ac0": {
+            "type": "text",
+            "settings": {
+              "text1": "Protractor",
+              "text2": "<p>\n· Measuring range: 0~360°\n<br>· Resolution: 0.17°\n<br>· Accuracy: ±0.3°at 0°~180°, ±0.4° at other angles<\/p>"
+            }
+          },
+          "3259d450-8a51-4f1c-a157-64b46e86f601": {
+            "type": "text",
+            "settings": {
+              "text1": "Pro-Laser",
+              "text2": "<p>· Pythagorean mode with triangle third-side and area calculation.\n<br>· Area mode with rectangular area calculation.\n<br>· Export graphic to MEAZOR app. <\/p>"
+            }
+          },
+          "ee17cc51-01ce-4a8c-8f42-ae061efd9b2d": {
+            "type": "text",
+            "settings": {
+              "text1": "Operating  Requirements",
+              "text2": "<p><br><br>· Operating temperature: 50° to 95° F (10° to 35° C)<br>· Relative humidity: 0% to 90% noncondensing<\/p>"
+            }
+          },
+          "2405ee18-3617-4d18-9d06-28e68fa4b2f5": {
+            "type": "text",
+            "settings": {
+              "text1": "Support Units",
+              "text2": "<p>· General Measure: inch, foot, yard, mm, cm, meter\n<br>· Large Scale Measure: inch, foot, yard, miles, mm, cm, meter, km<\/p>"
+            }
+          },
+          "1e851bc7-ca7e-4ef3-9f37-0d316ecccde5": {
+            "type": "text",
+            "settings": {
+              "text1": "MEAZOR APP",
+              "text2": "<p><br>· Android 6.0 or above and requires minimum 4GB ram. Adapt to phones and tablets.\n<br>· iOS 13 or above. Adapt to phones and tablets.\n<\/p>"
+            }
+          },
+          "9eadffce-5712-4fb0-b533-81cf3d71de4b": {
+            "type": "text",
+            "settings": {
+              "text1": "Wireless",
+              "text2": "<p>· Connection protocol: Bluetooth 4.0 wireless connection. <\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "b5225015-455f-48b6-af15-32b4ddb38c62",
+          "34f82f5e-e7ee-4a20-9712-55f4b63f2fbd",
+          "2c2b24e4-2912-4776-bcf7-ccf9093644a8",
+          "0f08db6b-eb54-4ee1-ae92-814c72cfea20",
+          "842500e1-d481-4203-bb91-1c05822ebc0b",
+          "4bae67da-ccf7-4ae2-af8f-6527ce1bfa63",
+          "8e535059-144a-4a81-925c-c8d495626c57",
+          "dafcf8a7-30d9-4f74-b19b-39b96025dadd",
+          "ec233324-7697-4ffc-a549-c693b48882fc",
+          "9d7faa5d-2c72-4331-800b-228f115ccdde",
+          "f81ffaca-480a-49d1-bb01-577ae7e11bb8",
+          "ed242254-8cb4-4110-b205-6786e1104296",
+          "ce2989d1-97f7-4867-b6c6-f46671a8d823",
+          "213f2ecd-08c6-42fa-9c92-cd32d8794ac0",
+          "3259d450-8a51-4f1c-a157-64b46e86f601",
+          "ee17cc51-01ce-4a8c-8f42-ae061efd9b2d",
+          "2405ee18-3617-4d18-9d06-28e68fa4b2f5",
+          "1e851bc7-ca7e-4ef3-9f37-0d316ecccde5",
+          "9eadffce-5712-4fb0-b533-81cf3d71de4b"
+        ],
+        "settings": {
+          "img": "shopify:\/\/shop_images\/ezgif-3-bb20f656014d.png"
+        }
+      },
+      "rollova-spec-pix": {
+        "type": "rollova-spec-pix",
+        "blocks": {
+          "1cb4d429-8e23-4ac5-94e2-f089b9382b36": {
+            "type": "text",
+            "settings": {
+              "text1": "Accuracy",
+              "text2": "<p>Maximum Tolerance +-0.4%<\/p>"
+            }
+          },
+          "6f9d5c0c-599d-4d02-98c5-6e035a68bebc": {
+            "type": "text",
+            "settings": {
+              "text1": "Features",
+              "text2": "<p>Point-to-point measure mode <br>Corner-to-point measure mode<br>Corner-to-corner measure mode<\/p>"
+            }
+          },
+          "02957397-cea2-48a1-b750-c7500ec41e67": {
+            "type": "text",
+            "settings": {
+              "text1": "Compatible Units",
+              "text2": "<p>Inch (Decimal)<br>Inch (Fraction)<br>Centimeter Decimal<\/p>"
+            }
+          },
+          "c689aaaf-e8fa-4c73-9ab4-3de7b1e264eb": {
+            "type": "text",
+            "settings": {
+              "text1": "Measuring Range",
+              "text2": "<p>999.9cm in metric mode<br>99.99 inches in inches decimal mode<br>999.9 inches in inches fraction mode<\/p>"
+            }
+          },
+          "ca3fff7c-2e0a-41c3-b4a8-7c2c194c8532": {
+            "type": "text",
+            "settings": {
+              "text1": "Memory",
+              "text2": "<p>Saved up to 99 datas in internal storage<\/p>"
+            }
+          },
+          "ceccea7c-5a84-4fc4-b184-364cfbf57335": {
+            "type": "text",
+            "settings": {
+              "text1": "Display",
+              "text2": "<p>1.2\" OLED Display (Bright Blue)<br>Resolution:128x64 px<\/p>"
+            }
+          },
+          "f5feddac-5adb-4041-b12f-ce358126a731": {
+            "type": "text",
+            "settings": {
+              "text1": "Battery",
+              "text2": "<p>2 x CR1632 Button Battery (Require to install <br>at least one battery)<\/p>"
+            }
+          },
+          "e64f39b2-8671-481c-b045-80f3bd9d95cb": {
+            "type": "text",
+            "settings": {
+              "text1": "Material",
+              "text2": "<p>304 Stainless Steel, 7075 Aluminum <br>Alloy, Nylon Plastic, Silicon Rubber<\/p>"
+            }
+          },
+          "5a9d03b5-5556-4e7f-a9e5-308b3a4b3b58": {
+            "type": "text",
+            "settings": {
+              "text1": "Standby Time",
+              "text2": "<p>18,000 Hours (Two years) with 2x CR1632<br> Battery.*May vary, depends on battery brands,<br> humidity, temperature and other<br> environmental factors<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1cb4d429-8e23-4ac5-94e2-f089b9382b36",
+          "6f9d5c0c-599d-4d02-98c5-6e035a68bebc",
+          "02957397-cea2-48a1-b750-c7500ec41e67",
+          "c689aaaf-e8fa-4c73-9ab4-3de7b1e264eb",
+          "ca3fff7c-2e0a-41c3-b4a8-7c2c194c8532",
+          "ceccea7c-5a84-4fc4-b184-364cfbf57335",
+          "f5feddac-5adb-4041-b12f-ce358126a731",
+          "e64f39b2-8671-481c-b045-80f3bd9d95cb",
+          "5a9d03b5-5556-4e7f-a9e5-308b3a4b3b58"
+        ],
+        "settings": {
+          "img1": "shopify:\/\/shop_images\/Accuracy1_1.png",
+          "img2": "shopify:\/\/shop_images\/Accuracy_1.png"
+        }
+      },
+      "rollova-designer-edition-spec-pix": {
+        "type": "rollova-designer-edition-spec-pix",
+        "blocks": {
+          "85843c0d-61c9-4996-b963-80ec642d6002": {
+            "type": "text",
+            "settings": {
+              "text1": "Accuracy",
+              "text2": "<p>Maximum Tolerance +-0.4%<\/p>"
+            }
+          },
+          "7abf7979-4909-459f-807b-161e721a1193": {
+            "type": "text",
+            "settings": {
+              "text1": "Features",
+              "text2": "<p>Point-to-point measure mode <br>Corner-to-point measure mode<br>Corner-to-corner measure mode<\/p>"
+            }
+          },
+          "24346dba-043b-4fde-9b97-ea9ca07b6a58": {
+            "type": "text",
+            "settings": {
+              "text1": "Compatible Units",
+              "text2": "<p>Inch (Decimal)<br>Inch (Fraction)<br>Centimeter Decimal<\/p>"
+            }
+          },
+          "d9a2a024-f74d-4613-9871-681714030f31": {
+            "type": "text",
+            "settings": {
+              "text1": "Measuring Range",
+              "text2": "<p>999.9cm in metric mode<br>99.99 inches in inches decimal mode<br>999.9 inches in inches fraction mode<\/p>"
+            }
+          },
+          "2b5137a3-ddd3-46f5-b75c-a60bc471b792": {
+            "type": "text",
+            "settings": {
+              "text1": "Memory",
+              "text2": "<p>Saved up to 99 datas in internal storage<\/p>"
+            }
+          },
+          "5ddc4c23-85c5-4533-b14e-643063e80d0f": {
+            "type": "text",
+            "settings": {
+              "text1": "Display",
+              "text2": "<p>1.2\" OLED Display (Clear White)<br>Resolution:128x64 px<\/p>"
+            }
+          },
+          "41374f06-b673-4651-a4c1-2bebbdbbae93": {
+            "type": "text",
+            "settings": {
+              "text1": "Battery",
+              "text2": "<p>2 x Panasonic CR1632 Button Battery (Require to install <br>at least one battery)<\/p>"
+            }
+          },
+          "db57dd80-3389-47ca-89b3-71b97ac69d37": {
+            "type": "text",
+            "settings": {
+              "text1": "Material",
+              "text2": "<p>304 Stainless Steel, 7075 Aluminum <br>Alloy, Nylon Plastic, Silicon Rubber, 18k Gold<\/p>"
+            }
+          },
+          "57a43807-3730-4d0d-bdaa-60a454518dcf": {
+            "type": "text",
+            "settings": {
+              "text1": "Standby Time",
+              "text2": "<p>18,000 Hours (Two years) with 2x CR1632<br> Battery.*May vary, depends on battery brands,<br> humidity, temperature and other<br> environmental factors<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "85843c0d-61c9-4996-b963-80ec642d6002",
+          "7abf7979-4909-459f-807b-161e721a1193",
+          "24346dba-043b-4fde-9b97-ea9ca07b6a58",
+          "d9a2a024-f74d-4613-9871-681714030f31",
+          "2b5137a3-ddd3-46f5-b75c-a60bc471b792",
+          "5ddc4c23-85c5-4533-b14e-643063e80d0f",
+          "41374f06-b673-4651-a4c1-2bebbdbbae93",
+          "db57dd80-3389-47ca-89b3-71b97ac69d37",
+          "57a43807-3730-4d0d-bdaa-60a454518dcf"
+        ],
+        "settings": {
+          "img1": "shopify:\/\/shop_images\/ezgif-3-eb5eed332fb0.png",
+          "img2": "shopify:\/\/shop_images\/ezgif-3-205f88d66e11.png"
+        }
+      },
+      "faq-manual-video-menual": {
+        "type": "faq-manual-video-menual",
+        "settings": {
+          "text1": "CHECK FAQ & USER MANUAL",
+          "text2": "Check our knowledge & FAQ answers!"
+        }
+      },
+      "faq-manual-video-menual-tab-1": {
+        "type": "faq-manual-video-menual-tab-1",
+        "settings": {
+          "url1": "https:\/\/www.youtube.com\/embed\/C09Rn8TEp2o"
+        }
+      },
+      "faq-manual-user-menual-tab-1": {
+        "type": "faq-manual-user-menual-tab-1",
+        "blocks": {
+          "6f211c7f-5e6e-4c7f-9719-8a4c7acb5b46": {
+            "type": "text",
+            "settings": {
+              "img1": "shopify:\/\/shop_images\/arabic.png",
+              "text1": "Arabic",
+              "url1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_User_Instruction_-_Arabic_2022.pdf?v=1650529141",
+              "img2": "shopify:\/\/shop_images\/CN_simplified.png",
+              "text2": "Chinese",
+              "url2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_User_Instruction_-_Chinese_2022.pdf?v=1650529141"
+            }
+          },
+          "2d234e6a-e1a3-4ed2-84ce-e2f2d7f3dc01": {
+            "type": "text",
+            "settings": {
+              "img1": "shopify:\/\/shop_images\/french.png",
+              "text1": "French",
+              "url1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_User_Instruction_-_French_2022.pdf?v=1650529141",
+              "img2": "shopify:\/\/shop_images\/german.png",
+              "text2": "German",
+              "url2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_User_Instruction_-_German_2022.pdf?v=1650529141"
+            }
+          },
+          "4870d8cb-cf63-4fb1-aa0c-f172ede1230b": {
+            "type": "text",
+            "settings": {
+              "img1": "shopify:\/\/shop_images\/Japanese.png",
+              "text1": "Japanese",
+              "url1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_User_Instruction_-_Japanese_2022.pdf?v=1650529141",
+              "img2": "shopify:\/\/shop_images\/spain.png",
+              "text2": "Spanish",
+              "url2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_User_Instruction_-_Spanish_2022.pdf?v=1650529141"
+            }
+          },
+          "01b73b74-6a7f-42c2-85e9-6977b7b12c3e": {
+            "type": "text",
+            "settings": {
+              "img1": "shopify:\/\/shop_images\/English.png",
+              "text1": "English",
+              "url1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_User_Instruction_-_English_2022.pdf?v=1650529141",
+              "img2": "shopify:\/\/shop_images\/Italian.png",
+              "text2": "Italian",
+              "url2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_User_Instruction_-_Italian_2022.pdf?v=1650529141"
+            }
+          }
+        },
+        "block_order": [
+          "6f211c7f-5e6e-4c7f-9719-8a4c7acb5b46",
+          "2d234e6a-e1a3-4ed2-84ce-e2f2d7f3dc01",
+          "4870d8cb-cf63-4fb1-aa0c-f172ede1230b",
+          "01b73b74-6a7f-42c2-85e9-6977b7b12c3e"
+        ],
+        "settings": {
+        }
+      },
+      "faq-manual-page-tab-1": {
+        "type": "faq-manual-page-tab-1",
+        "blocks": {
+          "a5c1b5f0-7206-4c7f-97e9-922c844563b1": {
+            "type": "text",
+            "settings": {
+              "text1": "IMPORT",
+              "url1": ""
+            }
+          },
+          "afd5e5d3-42c7-4fb7-b329-d47a4647ae39": {
+            "type": "text",
+            "settings": {
+              "text1": "DRAW",
+              "url1": ""
+            }
+          },
+          "4f09de53-5d40-43cd-ae3f-9c271691985f": {
+            "type": "text",
+            "settings": {
+              "text1": "EDIT",
+              "url1": ""
+            }
+          },
+          "e35953d1-09c1-462d-bf90-295f89ba2af9": {
+            "type": "text",
+            "settings": {
+              "text1": "SHARE",
+              "url1": ""
+            }
+          }
+        },
+        "block_order": [
+          "a5c1b5f0-7206-4c7f-97e9-922c844563b1",
+          "afd5e5d3-42c7-4fb7-b329-d47a4647ae39",
+          "4f09de53-5d40-43cd-ae3f-9c271691985f",
+          "e35953d1-09c1-462d-bf90-295f89ba2af9"
+        ],
+        "settings": {
+          "img1": "shopify:\/\/shop_images\/meazor-app.png",
+          "url11": "https:\/\/play.google.com\/store\/apps\/details?id=com.yufei.robbiva",
+          "url12": "https:\/\/app.apple.com\/us\/app\/meazor\/id1574713401"
+        }
+      },
+      "faq-manual-faq-tab-1": {
+        "type": "faq-manual-faq-tab-1",
+        "blocks": {
+          "2b025739-35af-408d-b703-10d862969288": {
+            "type": "text",
+            "settings": {
+              "text1": "[Diagnosis] MEAZOR cannot be charged",
+              "text2": "Please follow the steps below at first to self-check\n<p>- Use Support 5V -1A Charging with USB-C Port to charge MEAZOR (takes 2 hours to fully charge). Please note that MEAZOR doesn't support adapters with fast charging protocol.\n<\/p><p>- Unplug and wait 4 seconds then restart the device.\n<\/p><p>If you still have still cannot to charge, please contact support@hozodesign.com for further assistance.<\/p>"
+            }
+          },
+          "67e42ed0-e408-4788-be0a-b825a0d7580a": {
+            "type": "text",
+            "settings": {
+              "text1": "[Diagnosis] MEAZOR crash\/not working",
+              "text2": "Please send the following information to our support team to help a quicker investigation:\n<p>- Has the blue indicator light always on and the screen does not light up of the MEAZOR?\n<\/p><p>- Which specific function\/condition leads to crashes?\n<\/p><p>- What is the frequency of product crashes?\n<\/p><p>- MEAZOR firmware version number\n<\/p><p>- MEAZOR serial number\n\n<\/p><p>Please send us pictures or videos about the MEAZOR crash if you could, so that we could forward to our engineer to solve your problem faster, and please contact us at suopport@hozodesign.com at your convenience.<\/p>"
+            }
+          },
+          "d1d128e5-825f-4c24-a7a7-77b7aaa703d4": {
+            "type": "text",
+            "settings": {
+              "text1": "[Diagnosis] MEAZOR App crash\/not working",
+              "text2": "Please send the following information to our support team to help a quicker investigation:\n<p>- Which specific function\/condition lead to crashes?\n<\/p><p>- What is the frequency of product\/App crashes? \n<\/p><p>- Mobile phone model, mobile phone system and mobile phone brand\n<\/p><p>- MEAZOR App version number\n\n<\/p><p>Please send us pictures or videos about the MEAZOR App crash if you could, so that we could forward to our engineer to solve your problem faster, and please contact us at suopport@hozodesign.com at your convenience.<\/p>"
+            }
+          },
+          "64fec7f6-a308-46df-93de-03e1791cb217": {
+            "type": "text",
+            "settings": {
+              "text1": "Where to find MEAZOR serial number?",
+              "text2": "The serial number of MEAZOR could be found beside the box, and all the products with the serial number on the box is eligible to the 1-year limited warranty, it’s not a test device or demonstration. We've updated the position of the serial number and didn't update it in the user instruction for devices produced before Mar, 2022."
+            }
+          },
+          "5f79bccd-a36b-430d-b100-5150a1a67e06": {
+            "type": "text",
+            "settings": {
+              "text1": "How far is the laser distance measurement range? What is the accuracy?",
+              "text2": "The measurable distance of laser measurers ranges from from 0.1m-25m (0.3feet-82feets), the measurement accuracy stands ±2mm (±0.08 inch)"
+            }
+          },
+          "bedc4a96-4054-49eb-9093-c6723be21968": {
+            "type": "text",
+            "settings": {
+              "text1": "How far can the Rolling Ruler measurement range? What is the accuracy?",
+              "text2": "Rolling Ruler is recommended to measure the length that less than 5m. The measurement accuracy is ±0.2% on rough surfaces, and the accuracy will be impacted due to human error when measuring long distance."
+            }
+          },
+          "20dbc214-0067-49d7-8725-0f944e3ae24e": {
+            "type": "text",
+            "settings": {
+              "text1": "How to determine the Rolling Ruler’s start\/end point?",
+              "text2": "There are three blue indication lights at the bottom of the product for aligning the measurement start\/end points."
+            }
+          },
+          "794f4716-f0ee-4463-bcc5-40822fb5b78f": {
+            "type": "text",
+            "settings": {
+              "text1": "How many scales are supported by the Roller Ruler scale measurement?",
+              "text2": "4 built-in scale modes with 57 scales in total\n- Metric Architecture\n- Metric Engineering\n- US Architecture\n- US Engineering"
+            }
+          },
+          "1ae8cec2-6344-469e-85bf-d919b11847fc": {
+            "type": "text",
+            "settings": {
+              "text1": "How to perform 2D Floorplan Scanning?",
+              "text2": "There are 2 modes of 2D floorplan scanning function: \n1.\tPoint Scanner: Point Scanner is a manual positioning mode that allows you choose key points around the room for precise floorplan captures. It fit measuring demands of floorplan and room plan.\n2.\tCurve Scanner: curve scanner is an automatic mode that can perform scanning by simply turning the machine 360 degrees. It suits measuring demand of odd-shape\/curve-shape objects, structures and architectures."
+            }
+          },
+          "9bfec1d0-69b5-4228-8f8e-847c30c75036": {
+            "type": "text",
+            "settings": {
+              "text1": "What is curve scan? How to use this function?",
+              "text2": "Curve scan is designed mainly for the measurement of irregular curves. Place the product horizontally on the edge of the curved surface and turning the body 360 degrees. The measurement could be sent to the APP for editing via Bluetooth."
+            }
+          },
+          "f9b1731f-18f9-4c97-aa92-a692018eccfd": {
+            "type": "text",
+            "settings": {
+              "text1": "What is the range of Point scanner and curve scanner? What is the accuracy?",
+              "text2": "Point scanner and curve scanner can measure the maximum area of 1200m² (12900feet²). The measurement error is proportional to the area of the scanned floor: ±0.5cm-±10cm (0.2inch-4inch). The source of the measured area and accuracy data is from laboratory test results."
+            }
+          },
+          "40dc2ed1-0e9f-4f1d-8de9-17a8bba3e3f0": {
+            "type": "text",
+            "settings": {
+              "text1": "How many data can MEAZOR store?",
+              "text2": "MEAZOR does not support internal data storage, but if you use MEAZOR App, there is no limit on data storage."
+            }
+          },
+          "3455b1eb-0528-475c-b949-edc70129efe1": {
+            "type": "text",
+            "settings": {
+              "text1": "How long the battery last per full charge? How much is the battery capacity?",
+              "text2": "The theoretical standby time for a fully charged MEAZOR is around 30 days, and the continuous working time last around 16 hours. Battery capacity is 650mah."
+            }
+          },
+          "8ad49a61-18ff-495d-af92-976f66707ede": {
+            "type": "text",
+            "settings": {
+              "text1": "How long does it take to fully charge MEAZOR?",
+              "text2": "2 hours"
+            }
+          },
+          "0736e724-91af-465d-85ec-5be6184c2728": {
+            "type": "text",
+            "settings": {
+              "text1": "What does MEAZOR’s 3 indicator lights stand for?",
+              "text2": "About the Indicator light description that as shown below：\n- Charging or powering: yellow\n- Turn on or Turn off: blue"
+            }
+          },
+          "77dd7396-1b78-4f19-aa7e-ec0e6b6f2173": {
+            "type": "text",
+            "settings": {
+              "text1": "What does the battery icon on the screen stands for?",
+              "text2": "- Charging: white \n- Out of power: red\nWe hope it helps and if you have any question about product please contact us at  \nsuppport@hozodesign.com."
+            }
+          }
+        },
+        "block_order": [
+          "2b025739-35af-408d-b703-10d862969288",
+          "67e42ed0-e408-4788-be0a-b825a0d7580a",
+          "d1d128e5-825f-4c24-a7a7-77b7aaa703d4",
+          "64fec7f6-a308-46df-93de-03e1791cb217",
+          "5f79bccd-a36b-430d-b100-5150a1a67e06",
+          "bedc4a96-4054-49eb-9093-c6723be21968",
+          "20dbc214-0067-49d7-8725-0f944e3ae24e",
+          "794f4716-f0ee-4463-bcc5-40822fb5b78f",
+          "1ae8cec2-6344-469e-85bf-d919b11847fc",
+          "9bfec1d0-69b5-4228-8f8e-847c30c75036",
+          "f9b1731f-18f9-4c97-aa92-a692018eccfd",
+          "40dc2ed1-0e9f-4f1d-8de9-17a8bba3e3f0",
+          "3455b1eb-0528-475c-b949-edc70129efe1",
+          "8ad49a61-18ff-495d-af92-976f66707ede",
+          "0736e724-91af-465d-85ec-5be6184c2728",
+          "77dd7396-1b78-4f19-aa7e-ec0e6b6f2173"
+        ],
+        "settings": {
+        }
+      },
+      "faq-manual-video-menual-tab-2": {
+        "type": "faq-manual-video-menual-tab-2",
+        "settings": {
+          "url1": "https:\/\/www.youtube.com\/embed\/tI-fJwX1Hrs"
+        }
+      },
+      "faq-manual-user-menual-tab-2": {
+        "type": "faq-manual-user-menual-tab-2",
+        "blocks": {
+          "e7c87188-88d6-4d1f-b0d9-b916d2cd6ab5": {
+            "type": "text",
+            "settings": {
+              "img1": "shopify:\/\/shop_images\/English.png",
+              "text1": "English",
+              "url1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR-English-2021.pdf?v=1638596937",
+              "text2": "",
+              "url2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR-Chinese_2021.pdf?v=1638596460"
+            }
+          },
+          "21611a80-8fa2-46fa-8b7c-a1039ed05423": {
+            "type": "text",
+            "settings": {
+              "img1": "shopify:\/\/shop_images\/Japanese.png",
+              "text1": "Japanese",
+              "url1": "",
+              "text2": "",
+              "url2": ""
+            }
+          },
+          "937001fd-52f0-4cc6-8043-cd2ba2f02bd6": {
+            "type": "text",
+            "settings": {
+              "img1": "shopify:\/\/shop_images\/CN_simplified.png",
+              "text1": "Chinese",
+              "url1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR-Chinese_2021.pdf?v=1638596460",
+              "text2": "",
+              "url2": ""
+            }
+          }
+        },
+        "block_order": [
+          "e7c87188-88d6-4d1f-b0d9-b916d2cd6ab5",
+          "21611a80-8fa2-46fa-8b7c-a1039ed05423",
+          "937001fd-52f0-4cc6-8043-cd2ba2f02bd6"
+        ],
+        "settings": {
+        }
+      },
+      "faq-manual-page-tab-2": {
+        "type": "faq-manual-page-tab-2",
+        "blocks": {
+          "253eebe9-1aa9-4450-aaaf-d4922cad2bd2": {
+            "type": "text",
+            "settings": {
+              "text1": "IMPORT",
+              "url1": ""
+            }
+          },
+          "12c10594-b393-425c-87e8-b1428ca9e68a": {
+            "type": "text",
+            "settings": {
+              "text1": "DRAW",
+              "url1": ""
+            }
+          },
+          "dec3fa91-6984-4288-87df-e4838a14daeb": {
+            "type": "text",
+            "settings": {
+              "text1": "EDIT",
+              "url1": ""
+            }
+          },
+          "16c7f594-c4fb-48a7-ad65-9ed6025b0cf0": {
+            "type": "text",
+            "settings": {
+              "text1": "SHARE",
+              "url1": ""
+            }
+          }
+        },
+        "block_order": [
+          "253eebe9-1aa9-4450-aaaf-d4922cad2bd2",
+          "12c10594-b393-425c-87e8-b1428ca9e68a",
+          "dec3fa91-6984-4288-87df-e4838a14daeb",
+          "16c7f594-c4fb-48a7-ad65-9ed6025b0cf0"
+        ],
+        "settings": {
+          "img1": "shopify:\/\/shop_images\/meazor-app.png",
+          "url11": "#",
+          "url12": "#"
+        }
+      },
+      "faq-manual-faq-tab-2": {
+        "type": "faq-manual-faq-tab-2",
+        "blocks": {
+          "5c96c734-9b1a-49ec-90a3-2922841d4b11": {
+            "type": "text",
+            "settings": {
+              "text1": "How does it measure into the corner or between walls?",
+              "text2": "SImply press the offset button at back of ROLLOVA, that can add diameter or radius of ROLLOVA to your measurement."
+            }
+          },
+          "35cefdf9-9023-4efb-bf77-365df6cbde32": {
+            "type": "text",
+            "settings": {
+              "text1": "[Diagnosis]: The main LCD screen is not working and the bottom light still works.",
+              "text2": "The ROLLOVA might have low battery given the description. We recommend you to replace the 1632 button battery. If the screen still not work after replacing batteries, please contact our customer support team."
+            }
+          },
+          "2eb0c1b9-7dee-49ce-9ab3-637eb7be2c7f": {
+            "type": "text",
+            "settings": {
+              "text1": "[Diagnosis]: The ROLLOVA is not rolling smoothly, what happens?",
+              "text2": "The roller system is built with a certain fraction level to ensure it doesn't slip on most surfaces. But because the fraction between ROLLOVA's tire and surfaces could vary among different materials (e.g. glass, rough surfaces), it may give you the impression of not rolling smoothly sometimes."
+            }
+          }
+        },
+        "block_order": [
+          "5c96c734-9b1a-49ec-90a3-2922841d4b11",
+          "35cefdf9-9023-4efb-bf77-365df6cbde32",
+          "2eb0c1b9-7dee-49ce-9ab3-637eb7be2c7f"
+        ],
+        "settings": {
+        }
+      },
+      "meazor-spec-page": {
+        "type": "meazor-spec-page",
+        "blocks": {
+          "5fc30d4a-4357-46bc-af0f-5a9e160662f3": {
+            "type": "text",
+            "settings": {
+              "text1": "Size & Weight",
+              "text2": "<p>Dimension: 3.93×2.12×0.83inch      (100×54×21.3mm) <br>Weight: 110g<\/p>"
+            }
+          },
+          "b8942f58-0f71-4090-a636-914dc8dd31c9": {
+            "type": "text",
+            "settings": {
+              "text1": "MEAZOR APP",
+              "text2": "<p>Android 6.0 or above and requires minimum 4GB ram. \niOS 13 or above. Adapt to \nConnection protocol: Bluetooth 4.0 wireless connection. \n<\/p>"
+            }
+          },
+          "3f933c28-df97-41bb-9aab-a28001232889": {
+            "type": "text",
+            "settings": {
+              "text1": "Display",
+              "text2": "<p>1.3-inch diagonal IPS-backlit display, 240×240 resolution at 184 PPI.<\/p>\n<p>Covered with tempered glass capacitive touch screen.\n<\/p>"
+            }
+          },
+          "19a4c4d0-851f-4211-81ae-2edefdf73daa": {
+            "type": "text",
+            "settings": {
+              "text1": "Battery",
+              "text2": "<p>Built-in 650 mAh lithium‑polymer battery.\nSupport 5V -1A USB-C Port Charging. \n*DO NOT support fast charging protocol adapter.\n<\/p>"
+            }
+          },
+          "8990bace-0ab1-4b0a-a81f-5185b3d63f9f": {
+            "type": "text",
+            "settings": {
+              "text1": "Battery Life",
+              "text2": "<p>- 30 days battery life in stand-by mode\n<br>- 6 hours continuous use under comprehensive power consumption.<br>-  0.75 hours continuous use under maximum power consumption.<\/p>"
+            }
+          },
+          "f5cea0cd-cbd5-4eaa-bd26-70f3b620bffc": {
+            "type": "text",
+            "settings": {
+              "text1": "Operating  Requirements",
+              "text2": "<p>Operating temperature: 50° to 95° F (10° to 35° C)<br>Relative humidity: 0% to 90% noncondensing<\/p>"
+            }
+          },
+          "81cda692-7e7f-4dde-8982-bf4d114f8a9a": {
+            "type": "text",
+            "settings": {
+              "text1": "Laser Measure",
+              "text2": "<p>- Measure range: 0.3feet-82feets (0.1m-25m).\n<br>- Resolution: 0.04inch(1mm)\n<br>- Accuracy: +-0.12inch (+-2mm) in ideal circumstance.*\n<\/p>"
+            }
+          },
+          "e29b4d60-4890-4e79-a8ce-9dd39ee08b00": {
+            "type": "text",
+            "settings": {
+              "text1": "*Non-ideal Circumstances",
+              "text2": "<p> *Non-ideal circumstances such as outdoor with strong light, or under the bad reflective surface, the error will be superimposed with maximum +- 1‰ of the measurement distance.<\/p>"
+            }
+          },
+          "b71957e0-866f-4ad1-b8a7-f5ca08e3caa5": {
+            "type": "text",
+            "settings": {
+              "text1": "Rolling Ruler",
+              "text2": "<p>- Measure range: 0-300feets (0-99meters); Resolution: 1mm <br>\n- Accuracy +-1mm or ±0.2% in ideal circumstances. **<\/p>"
+            }
+          },
+          "abd4f5ad-11e1-46f8-aed6-1966bc3feb11": {
+            "type": "text",
+            "settings": {
+              "text1": "**Non-ideal Circumstances",
+              "text2": "<p>*The accuracy decreases on slippery, uneven, soft, curved surfaces. Inclination, misalignment and other human error factors will also affect the measurement accuracy.<\/p>"
+            }
+          },
+          "a6a8c1b9-0bde-485b-bf1a-9c4de6086509": {
+            "type": "text",
+            "settings": {
+              "text1": "Scales Measure",
+              "text2": "<p>Support 4 built-in scale modes with 57 scales in total\n<br>- Metric Architecture\n<br>- Metric Engineering\n<br>- US Architecture\n<br>- US Engineering\n<\/p>"
+            }
+          },
+          "0bb14347-d6bc-4f48-9782-ad058b7c7981": {
+            "type": "text",
+            "settings": {
+              "text1": "Point Scanner (2D Floorplan Scanning)",
+              "text2": "<p>- Measuring Range: maximum room size:114×114feet (12900feet²) or 35m×35m (1200m²). \n<br>-Accuracy +-0.5in² (+-25mm²) in ideal circumstances.\n<\/p>"
+            }
+          },
+          "2228c163-b820-44a1-927e-9a71832365f1": {
+            "type": "text",
+            "settings": {
+              "text1": "***Non-ideal Circumstances",
+              "text2": "<p>*Non-ideal circumstances such as outdoor with strong light, or under the bad reflective surface, the error will be superimposed with maximum +- 2‰ of the measurement distance.<\/p>"
+            }
+          },
+          "42c3f2c8-7dc1-4c72-8539-f13cb24818b4": {
+            "type": "text",
+            "settings": {
+              "text1": "Curve Scanner",
+              "text2": "<p>- Measuring Range: Maximum Curve Length(start point-endpoint):  82feets(25 meters)\n<br>- Resolution: Angel Resolution : 1.0°, Length Resolution: 0.04inch(+-1mm)\n<\/p>"
+            }
+          },
+          "c6a2e36e-32a6-440e-89b0-d7874027c547": {
+            "type": "text",
+            "settings": {
+              "text1": "Level",
+              "text2": "<p>- Measuring range: Dual axis +-90°\n<br>- Resolution: 0.1°\n<br>- Accuracy: ±0.2°at 0° ~45° , ±0.4° at other angles\n<\/p>"
+            }
+          },
+          "bb1aaf63-9962-4a15-ad5c-9273eacf8b5d": {
+            "type": "text",
+            "settings": {
+              "text1": "Protractor",
+              "text2": "<p>-Support laser assist mode\n<br>- Measuring range: 0~360°\n<br>- Resolution: 0.17°\n<br>- Accuracy: ±0.3°at 0°~180°, ±0.4° at other angles<\/p>"
+            }
+          },
+          "23e567a5-5ad7-4bd1-87bb-fe68cb624be1": {
+            "type": "text",
+            "settings": {
+              "text1": "Pro-laser",
+              "text2": "<p>- Pythagorean mode with triangle third-side and area calculation.\n<br>- Area mode with rectangular area calculation.\n<br>- Export graphic to MEAZOR app<\/p>"
+            }
+          },
+          "310985f1-928e-4eb0-a408-3e6e251d78f9": {
+            "type": "text",
+            "settings": {
+              "text1": "Support Units",
+              "text2": "<p>- General Measure: inch, foot, yard, mm, cm, meter<br>\n- Large Scale Measure: inch, foot, yard, miles, mm, cm, meter, km<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "5fc30d4a-4357-46bc-af0f-5a9e160662f3",
+          "b8942f58-0f71-4090-a636-914dc8dd31c9",
+          "3f933c28-df97-41bb-9aab-a28001232889",
+          "19a4c4d0-851f-4211-81ae-2edefdf73daa",
+          "8990bace-0ab1-4b0a-a81f-5185b3d63f9f",
+          "f5cea0cd-cbd5-4eaa-bd26-70f3b620bffc",
+          "81cda692-7e7f-4dde-8982-bf4d114f8a9a",
+          "e29b4d60-4890-4e79-a8ce-9dd39ee08b00",
+          "b71957e0-866f-4ad1-b8a7-f5ca08e3caa5",
+          "abd4f5ad-11e1-46f8-aed6-1966bc3feb11",
+          "a6a8c1b9-0bde-485b-bf1a-9c4de6086509",
+          "0bb14347-d6bc-4f48-9782-ad058b7c7981",
+          "2228c163-b820-44a1-927e-9a71832365f1",
+          "42c3f2c8-7dc1-4c72-8539-f13cb24818b4",
+          "c6a2e36e-32a6-440e-89b0-d7874027c547",
+          "bb1aaf63-9962-4a15-ad5c-9273eacf8b5d",
+          "23e567a5-5ad7-4bd1-87bb-fe68cb624be1",
+          "310985f1-928e-4eb0-a408-3e6e251d78f9"
+        ],
+        "settings": {
+          "img1": "shopify:\/\/shop_images\/ezgif-3-bb20f656014d_18844670-12df-4cb3-8a24-93792402b3d6.png"
+        }
+      },
+      "Home-newsletter-info": {
+        "type": "Home-newsletter-info",
+        "settings": {
+          "url1": "https:\/\/www.youtube.com\/embed\/7r9olktD0KI",
+          "url02": "https:\/\/www.kickstarter.com\/projects\/hozodesign\/meazor-3d-the-future-of-measure",
+          "url03": "https:\/\/www.kickstarter.com\/projects\/hozodesign\/meazor-3d-the-future-of-measure",
+          "text1": "Unlock the Deal",
+          "pr1": "$199",
+          "pr2": "$299",
+          "pr3": "Exclusive Discount $100 OFF",
+          "text2": "Lowest Price Guarantee",
+          "text3": "First 8hrs Launch Day ONLY",
+          "text4": "",
+          "text5": ""
+        }
+      },
+      "product-info-1": {
+        "type": "product-info-1",
+        "settings": {
+          "img1": "shopify:\/\/shop_images\/meet-mazor.jpg",
+          "img2": "shopify:\/\/shop_images\/Master_pic.jpg",
+          "img3": "shopify:\/\/shop_images\/Ferocious.png",
+          "img4": "shopify:\/\/shop_images\/3d-11.png",
+          "img5": "shopify:\/\/shop_images\/3d-2.png",
+          "text1": "The World’s Most Compact <br>and Most Powerful Measuring Tool",
+          "text01": "3D Tilt Mode",
+          "text2": "Avoid Obstacles &<br> Capture Room Height",
+          "text3": "Capture details regardless of height or angles",
+          "text4": "3D Displacement",
+          "text5": "Complex & Multiple<br> Room Plan Scanning",
+          "text6": "Auto stitch multi-room floorplan in seconds"
+        }
+      },
+      "product-info-2": {
+        "type": "product-info-2",
+        "blocks": {
+          "b8525201-e1e8-4da8-9e7d-06d456a70202": {
+            "type": "text",
+            "settings": {
+              "url1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/point_scan-HD_720p.mp4?v=1652080248",
+              "text1": "Rotate MEAZOR by 360° <br>the laser ray shifts across the room <br>and instantly draws a floorplan",
+              "img2": "shopify:\/\/shop_images\/room_scan.png",
+              "text2": "Point Scanner"
+            }
+          },
+          "cc15f647-864a-41c9-8ec7-e777100f66df": {
+            "type": "text",
+            "settings": {
+              "url1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/scale_animation-HD_720p.mp4?v=1652080248",
+              "text1": "Rotate MEAZOR by 360° <br>the laser ray shifts across the room <br>and instantly draws a floorplan",
+              "img2": "shopify:\/\/shop_images\/scale_ruler.png",
+              "text2": "Scale\/Rolling"
+            }
+          },
+          "e2b5d0e8-1d72-45d6-8b2b-b161949904d7": {
+            "type": "text",
+            "settings": {
+              "url1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/function_gifs-HD_720p.mp4?v=1652080248",
+              "text1": "Rotate MEAZOR by 360° <br>the laser ray shifts across the room <br>and instantly draws a floorplan",
+              "img2": "shopify:\/\/shop_images\/6-1.png",
+              "text2": "Laser Measure"
+            }
+          },
+          "0b1c509d-7b93-4447-b806-b5f5a7611aa4": {
+            "type": "text",
+            "settings": {
+              "url1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/curve_scan_animation-HD_720p_2.mp4?v=1652080248",
+              "text1": "Rotate MEAZOR by 360° <br>the laser ray shifts across the room <br>and instantly draws a floorplan",
+              "img2": "shopify:\/\/shop_images\/curve_scan.png",
+              "text2": "Curve Scanner"
+            }
+          },
+          "d98546ca-22f7-4427-b4f6-3e74534d7f2c": {
+            "type": "text",
+            "settings": {
+              "url1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/protractor_animatiom-HD_720p.mp4?v=1652080248",
+              "text1": "Rotate MEAZOR by 360° <br>the laser ray shifts across the room <br>and instantly draws a floorplan",
+              "img2": "shopify:\/\/shop_images\/protractor_32a047bf-5906-464d-a331-ab5537f9f2aa.png",
+              "text2": "Protractor"
+            }
+          },
+          "d53b26e8-6e0e-4f5d-b8d5-e74c3ad706bf": {
+            "type": "text",
+            "settings": {
+              "url1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/level_animation-HD_720p.mp4?v=1652080248",
+              "text1": "Rotate MEAZOR by 360° <br>the laser ray shifts across the room <br>and instantly draws a floorplan",
+              "img2": "shopify:\/\/shop_images\/level.png",
+              "text2": "Level"
+            }
+          }
+        },
+        "block_order": [
+          "b8525201-e1e8-4da8-9e7d-06d456a70202",
+          "cc15f647-864a-41c9-8ec7-e777100f66df",
+          "e2b5d0e8-1d72-45d6-8b2b-b161949904d7",
+          "0b1c509d-7b93-4447-b806-b5f5a7611aa4",
+          "d98546ca-22f7-4427-b4f6-3e74534d7f2c",
+          "d53b26e8-6e0e-4f5d-b8d5-e74c3ad706bf"
+        ],
+        "settings": {
+          "img1": "shopify:\/\/shop_images\/6-in-one.png"
+        }
+      },
+      "product-info-3": {
+        "type": "product-info-3",
+        "blocks": {
+          "f8c2a6ce-0968-470b-8713-74ad6857ecbf": {
+            "type": "text",
+            "settings": {
+              "text1": "+60",
+              "text2": "Measuring Range",
+              "text3": "MEAZOR 3D",
+              "text4": "MEAZOR",
+              "text5": "40m\/131ft",
+              "text6": "25m\/82ft"
+            }
+          },
+          "e342574b-d329-4746-9d43-a40ed2f2af06": {
+            "type": "text",
+            "settings": {
+              "text1": "+35%",
+              "text2": "Processor Speed",
+              "text3": "MEAZOR 3D",
+              "text4": "MEAZOR",
+              "text5": "STH7 MCU",
+              "text6": "ST 412 MCU"
+            }
+          }
+        },
+        "block_order": [
+          "f8c2a6ce-0968-470b-8713-74ad6857ecbf",
+          "e342574b-d329-4746-9d43-a40ed2f2af06"
+        ],
+        "settings": {
+          "img1": "shopify:\/\/shop_images\/ultra-hed.png",
+          "text1": "Superior Companion with Your Meazor 3D",
+          "img2": "shopify:\/\/shop_images\/3d-ultra1.png",
+          "img3": "shopify:\/\/shop_images\/ultra3d-22.png",
+          "text2": "Beyond extraordinary in detail",
+          "text3": "Superior Companion with Your Meazor 3D"
+        }
+      },
+      "product-info-4": {
+        "type": "product-info-4",
+        "blocks": {
+          "fca989e8-73a4-41d8-a15e-a83ae0bb0fe8": {
+            "type": "text",
+            "settings": {
+              "img1": "shopify:\/\/shop_images\/by-1.png",
+              "text1": "200 Data Built-in  Storage",
+              "text2": "Save up to 100 data <br> for both laser measure and rolling ruler"
+            }
+          },
+          "be899440-0caa-4fcc-b703-ce5cabbfd326": {
+            "type": "text",
+            "settings": {
+              "img1": "shopify:\/\/shop_images\/by-2.png",
+              "text1": "Languages",
+              "text2": "Supports multi-languages <br> for more user communities"
+            }
+          },
+          "a1d99c40-931d-4116-8dc2-fde03561b231": {
+            "type": "text",
+            "settings": {
+              "img1": "shopify:\/\/shop_images\/by-3.png",
+              "text1": "1.3 Inch 184ppi",
+              "text2": "Tempered glass 1.3 inch round supurior 184 ppi sensitive touch screen"
+            }
+          },
+          "efedf461-1976-4895-bafa-e7854be12767": {
+            "type": "text",
+            "settings": {
+              "img1": "shopify:\/\/shop_images\/by-4.png",
+              "text1": "Dual Physical button",
+              "text2": "Match for the next level convinience"
+            }
+          },
+          "29c76ffb-a221-4281-ac62-028354619f23": {
+            "type": "text",
+            "settings": {
+              "img1": "shopify:\/\/shop_images\/by-6.png",
+              "text1": "30 Days",
+              "text2": "Long lasting standby time"
+            }
+          }
+        },
+        "block_order": [
+          "fca989e8-73a4-41d8-a15e-a83ae0bb0fe8",
+          "be899440-0caa-4fcc-b703-ce5cabbfd326",
+          "a1d99c40-931d-4116-8dc2-fde03561b231",
+          "efedf461-1976-4895-bafa-e7854be12767",
+          "29c76ffb-a221-4281-ac62-028354619f23"
+        ],
+        "settings": {
+          "img1": "shopify:\/\/shop_images\/MEAZOR-3D_-1.png",
+          "img2": "shopify:\/\/shop_images\/meazor-image.png",
+          "img3": "shopify:\/\/shop_images\/meazor-logo.png",
+          "text1": "Adapt Your Work to Unlimited Possibility",
+          "text2": "NEW 3D | NEW FUNCTIONS | NEW UI"
+        }
+      },
+      "product-info-5": {
+        "type": "product-info-5",
+        "settings": {
+          "text1": "Drawing Mode",
+          "text2": "Only one click away from 2D to 3D Display",
+          "img1": "shopify:\/\/shop_images\/drawing-img.png",
+          "img2": "shopify:\/\/shop_images\/list-mode.png",
+          "img3": "shopify:\/\/shop_images\/list-mode-s.png",
+          "text3": "List Mode",
+          "text4": "Space\/Volume Auto Calculation",
+          "text5": "Photo Dimension",
+          "text6": "What you see is what you measure",
+          "img4": "shopify:\/\/shop_images\/photo-dim.png"
+        }
+      },
+      "product-info-6": {
+        "type": "product-info-6",
+        "settings": {
+          "img1": "shopify:\/\/shop_images\/Bluetooth_icon_new_41x60_9b7a39ab-8cff-4f86-97c9-0eb17b0827ba.png",
+          "img2": "shopify:\/\/shop_images\/roomle.png",
+          "img3": "shopify:\/\/shop_images\/MEAZOR_app_c68b51f8-84f4-40ad-9d15-b709864ff983.png",
+          "img4": "shopify:\/\/shop_images\/mesa.png",
+          "img5": "shopify:\/\/shop_images\/Roomle_phone.png",
+          "img6": "shopify:\/\/shop_images\/MEAZOR_APP_phone.png",
+          "img7": "shopify:\/\/shop_images\/MS_Phone.png",
+          "img8": "shopify:\/\/shop_images\/Roomle_phone.png",
+          "img9": "shopify:\/\/shop_images\/MEAZOR_APP_phone.png",
+          "img10": "shopify:\/\/shop_images\/MS_Phone.png"
+        }
+      },
+      "product-info-7": {
+        "type": "product-info-7",
+        "settings": {
+          "url03": "https:\/\/www.kickstarter.com\/projects\/hozodesign\/meazor-3d-the-future-of-measure",
+          "img1": "shopify:\/\/shop_images\/kickstarter-logo-green1.png",
+          "text1": "Subscribe now",
+          "text2": "to get a special deal on launch day",
+          "text3": "Subscribe now",
+          "text4": "to get a special DEAL on 12PM EST, Date 14th June 2022",
+          "text5": "<h3>30,776<\/h3>\n                <p>subscribers<\/p>"
+        }
+      },
+      "product-buyNowTemp": {
+        "type": "product-buyNowTemp",
+        "settings": {
+          "img1": "shopify:\/\/shop_images\/28.png",
+          "text1": "Designer Edition",
+          "text2": "First digital measure tape | measure curves and lines | one roll at a time",
+          "p1": ""
+        }
+      },
+      "social-4-items": {
+        "type": "social-4-items",
+        "settings": {
+          "url8": "https:\/\/www.instagram.com\/hozo_design\/",
+          "url9": "https:\/\/www.facebook.com\/HOZODESIGN.Co",
+          "url10": "https:\/\/www.youtube.com\/channel\/UCauuxYtF6O7VBNVSrqYBJlA",
+          "url11": "https:\/\/twitter.com\/HOZODESIGN"
+        }
+      },
+      "meazore-core-head": {
+        "type": "meazore-core-head",
+        "blocks": {
+          "e99bec2d-f8fc-4b5d-8e8c-8eac1db28e40": {
+            "type": "first",
+            "settings": {
+              "pr1": "meazor-protection-accessory-kit"
+            }
+          },
+          "a9f84bae-de9a-4ab3-8030-6dd1827cdd34": {
+            "type": "first",
+            "disabled": true,
+            "settings": {
+              "pr1": "meazor-3d-protection-kit"
+            }
+          },
+          "f5d24479-f836-496e-98f2-ffe64192fb3f": {
+            "type": "first",
+            "settings": {
+              "pr1": "target-plates-kit"
+            }
+          },
+          "718de5ee-8c23-40a5-bcdb-07371a51c984": {
+            "type": "first",
+            "settings": {
+              "pr1": "meazor-expert-accessory-kit"
+            }
+          },
+          "c7072f36-49d9-4873-8d8e-e79922ff3e7d": {
+            "type": "last",
+            "settings": {
+              "pr1": "meazor-master-kit"
+            }
+          },
+          "5da3ba5d-e461-4308-a612-1a3b86322906": {
+            "type": "last",
+            "settings": {
+              "pr1": "meazor-expert-protractor"
+            }
+          }
+        },
+        "block_order": [
+          "e99bec2d-f8fc-4b5d-8e8c-8eac1db28e40",
+          "a9f84bae-de9a-4ab3-8030-6dd1827cdd34",
+          "f5d24479-f836-496e-98f2-ffe64192fb3f",
+          "718de5ee-8c23-40a5-bcdb-07371a51c984",
+          "c7072f36-49d9-4873-8d8e-e79922ff3e7d",
+          "5da3ba5d-e461-4308-a612-1a3b86322906"
+        ],
+        "settings": {
+          "img1": "shopify:\/\/shop_images\/meazore-core.png",
+          "img3": "shopify:\/\/shop_images\/MEAZOR3D_MONO_L_1.png",
+          "text1": "Revolution of Measure",
+          "text2": "6-in-1 Multi-function | 2D Floorplanning | Reliable laser measure",
+          "p1": "",
+          "price": "Starts from $229"
+        }
+      },
+      "alireviews-widget-250545": {
+        "type": "alireviews-widget-250545",
+        "settings": {
+        }
+      },
+      "meazor-template-aug": {
+        "type": "meazor-template-aug",
+        "settings": {
+          "text1": "",
+          "text2": "",
+          "p1": "",
+          "price": ""
+        }
+      },
+      "meazor-core-core-function": {
+        "type": "meazor-core-core-function",
+        "blocks": {
+          "a4f8a17c-2d00-4321-a21c-b248b13c2c59": {
+            "type": "section",
+            "settings": {
+              "video1": "https:\/\/video.wixstatic.com\/video\/df18e3_f0a0fb1288994e96ac6244a776bbc7de\/480p\/mp4\/file.mp4",
+              "text1": "2D Floorplan Scanning",
+              "img1": "shopify:\/\/shop_images\/room_scan_0ae13e12-2f79-477d-a9b4-1becbbb85787.png",
+              "text2": "From Capture to Cadastre in a Flash",
+              "text3": "Rotate MEAZOR by 360° the laser ray shifts across the room and instantly draws a floorplan"
+            }
+          },
+          "84464219-151b-4095-9803-82414b13d9ea": {
+            "type": "section",
+            "settings": {
+              "video1": "https:\/\/video.wixstatic.com\/video\/df18e3_579f04d125b24fa5888f5eb276ec32d8\/480p\/mp4\/file.mp4",
+              "text1": "Scale Unit Measurement & Conversion",
+              "img1": "shopify:\/\/shop_images\/scale_ruler_18bf70c5-b6c6-4214-b943-eea848000b18_2.png",
+              "text2": "Switch Freely Between Scale Drawings and The Reality",
+              "text3": "Conversion among metric\/imperial units and customized scale units in seconds"
+            }
+          },
+          "bfafc591-b585-4dee-8960-803e1cec8449": {
+            "type": "section",
+            "settings": {
+              "video1": "https:\/\/video.wixstatic.com\/video\/df18e3_c1a9445c0cdc49aeb5f628aa7362bb94\/480p\/mp4\/file.mp4",
+              "text1": "Laser Distance Measure",
+              "img1": "shopify:\/\/shop_images\/6-1_1_1.png",
+              "text2": "80ft(25m) High-quality Laser Module within ±0.08inch (2mm) Accuracy",
+              "text3": "Curve Scanning Capture Accurate Curve Features in seconds   Digital Protractor Provide Accurate Reading of All Angles in 360 Degrees"
+            }
+          },
+          "cf9b838e-f055-464c-9f61-23870352432d": {
+            "type": "section",
+            "settings": {
+              "video1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/curve_scan_animation-HD_720p_2.mp4?v=1652080248",
+              "text1": "Curve Scanning",
+              "img1": "shopify:\/\/shop_images\/curve_scan_b4ce1579-a402-42fa-a957-b54754fd7980.png",
+              "text2": "Capture Accurate Curve Features in seconds",
+              "text3": "Rotate MEAZOR by 360° the laser ray shifts across the room and instantly draws a floorplan"
+            }
+          },
+          "839cb87a-add7-4401-bf2f-3dbeb31fbd1c": {
+            "type": "section",
+            "settings": {
+              "video1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/protractor_animatiom-HD_720p.mp4?v=1652080248",
+              "text1": "Digital Protractor",
+              "img1": "shopify:\/\/shop_images\/protractor_df273178-4c17-4eed-826c-eff8c4527cf7_2.png",
+              "text2": "Provide Accurate Reading of All Angles in 360 Degrees",
+              "text3": "Conversion among metric\/imperial units and customized scale units in seconds"
+            }
+          },
+          "acead4e0-8f50-4afc-a3d3-c12218521a22": {
+            "type": "section",
+            "settings": {
+              "video1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/level_animation-HD_720p.mp4?v=1652080248",
+              "text1": "Bubble Level",
+              "img1": "shopify:\/\/shop_images\/level_473d5507-7af5-404c-af64-91bf3f45e302.png",
+              "text2": "Used for a Variety of Applications in  Construction and Home Decoration.",
+              "text3": "Delivers laser precision technology and real-time measurement mode taking instant and reliable measurements up to 25meter \/80 feets"
+            }
+          }
+        },
+        "block_order": [
+          "a4f8a17c-2d00-4321-a21c-b248b13c2c59",
+          "84464219-151b-4095-9803-82414b13d9ea",
+          "bfafc591-b585-4dee-8960-803e1cec8449",
+          "cf9b838e-f055-464c-9f61-23870352432d",
+          "839cb87a-add7-4401-bf2f-3dbeb31fbd1c",
+          "acead4e0-8f50-4afc-a3d3-c12218521a22"
+        ],
+        "settings": {
+          "text": ""
+        }
+      },
+      "Product-head-no-click": {
+        "type": "Product-head-no-click",
+        "settings": {
+          "text1": "",
+          "text2": "12",
+          "p1": ""
+        }
+      },
+      "header-new": {
+        "type": "header-new",
+        "blocks": {
+          "452ecb02-aa22-475d-9c4d-658c9bc39803": {
+            "type": "product",
+            "settings": {
+              "text1": "PRODUCTS",
+              "url1": "https:\/\/hozodesign.com\/collections\/all",
+              "coll": "frontpage"
+            }
+          },
+          "bb17f675-f85d-403d-9157-0369bcf78248": {
+            "type": "link",
+            "settings": {
+              "ltext1": "SUPPORT",
+              "lurl1": "https:\/\/hozodesign.com\/pages\/support-center"
+            }
+          },
+          "469c18c6-e357-4264-a8fe-80d048e78781": {
+            "type": "icon",
+            "settings": {
+              "text1": "COMMUNITY",
+              "url1": "#",
+              "coll1": "community"
+            }
+          },
+          "5b9bc558-3023-4d1b-9aec-25669ae93040": {
+            "type": "icon",
+            "settings": {
+              "text1": "PARTNER",
+              "url1": "#",
+              "coll1": "footer-partner"
+            }
+          },
+          "97f25866-990b-4d33-a6f7-73366738c4ed": {
+            "type": "link",
+            "settings": {
+              "ltext1": "NeoRulerᴺᴱᵂ",
+              "lurl1": "https:\/\/www.kickstarter.com\/projects\/hozodesign\/neoruler-rule-the-scales?ref=ccu0xj"
+            }
+          },
+          "456944c3-de62-40ba-b8c5-fc6f921eded8": {
+            "type": "image",
+            "settings": {
+              "mn": "Hozo Blog",
+              "mi": "shopify:\/\/shop_images\/community_1.png"
+            }
+          },
+          "44d445ba-37a9-4243-9587-bdf5c676a347": {
+            "type": "image",
+            "settings": {
+              "mn": "VIP Group",
+              "mi": "shopify:\/\/shop_images\/community_2.png"
+            }
+          },
+          "b9805dfd-c90d-47ab-8ea9-ef49a8b09e41": {
+            "type": "image",
+            "settings": {
+              "mn": "Affiliate Program",
+              "mi": "shopify:\/\/shop_images\/partner_1_new1.png"
+            }
+          },
+          "9315987e-36bb-4a61-bc04-3850008e4bcf": {
+            "type": "image",
+            "settings": {
+              "mn": "Become a Dealer",
+              "mi": "shopify:\/\/shop_images\/partner_2_new1.webp"
+            }
+          },
+          "05fde1fd-5daa-4d38-ba0c-e94caeacd65f": {
+            "type": "image",
+            "settings": {
+              "mn": "Media & Press",
+              "mi": "shopify:\/\/shop_images\/partner_3_new1.png"
+            }
+          }
+        },
+        "block_order": [
+          "452ecb02-aa22-475d-9c4d-658c9bc39803",
+          "bb17f675-f85d-403d-9157-0369bcf78248",
+          "469c18c6-e357-4264-a8fe-80d048e78781",
+          "5b9bc558-3023-4d1b-9aec-25669ae93040",
+          "97f25866-990b-4d33-a6f7-73366738c4ed",
+          "456944c3-de62-40ba-b8c5-fc6f921eded8",
+          "44d445ba-37a9-4243-9587-bdf5c676a347",
+          "b9805dfd-c90d-47ab-8ea9-ef49a8b09e41",
+          "9315987e-36bb-4a61-bc04-3850008e4bcf",
+          "05fde1fd-5daa-4d38-ba0c-e94caeacd65f"
+        ],
+        "settings": {
+          "enambe_annoncement": true,
+          "annoncement": "FREE TAX & SHIPPING to 40+ COUNTRIES",
+          "logo": "shopify:\/\/shop_images\/logo_1.png",
+          "coll_url": "https:\/\/hozodesign.com\/collections\/all",
+          "coll-img": "shopify:\/\/shop_images\/9d548825-dffb-4dbb-bdb3-6fe8d90ae993.jpg",
+          "coll_title": "ACCESSORIES"
+        }
+      },
+      "footer-new": {
+        "type": "footer-new",
+        "settings": {
+          "ct1": "",
+          "coll1": "community-1",
+          "coll2": "footer-1",
+          "coll3": "footer-partner",
+          "fb": "",
+          "insta": "",
+          "linkedin": "",
+          "yt": "",
+          "copyw": "copyright 2018-2023 BY HOZO DESIGN.C.O,Limited All rights reserved"
+        }
+      },
+      "Video-home": {
+        "type": "Video-home",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/banner-inner-new.png",
+          "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d2183f3534944609871c7bfa4d665f97.mp4",
+          "video_title": "The world's most compact<br>  6-1 laser measure with 3D Floorplaning",
+          "Button_title": "Discover MEAZOR 3D",
+          "Button_url": "#",
+          "Button_title1": "Watch the film",
+          "Other_Button_url": "#"
+        }
+      },
+      "New-feature": {
+        "type": "New-feature",
+        "settings": {
+          "title": "Featured products",
+          "feature_collection": "meazor-accessories",
+          "btn_title": "Shop Now",
+          "learnmore_url": "shopify:\/\/collections"
+        }
+      },
+      "Banner-Accessories": {
+        "type": "Banner-Accessories",
+        "settings": {
+          "banner_title": "Top pick<br> Accessories",
+          "banner_image": "shopify:\/\/shop_images\/top-pick_1.webp",
+          "button_title": "Shop accessories",
+          "url": "shopify:\/\/collections\/meazor-accessories"
+        }
+      },
+      "1664471784dbb69e59": {
+        "type": "Video-home",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/banner-inner-new.png",
+          "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d2183f3534944609871c7bfa4d665f97.mp4",
+          "video_title": "The world's most compact<br>   3D Floorplanning Laser Measure",
+          "Button_title": "Discover MEAZOR 3D",
+          "Button_url": "#",
+          "Button_title1": "Watch the film",
+          "Other_Button_url": "#"
+        }
+      },
+      "1664471946c4545fbb": {
+        "type": "New-community",
+        "settings": {
+          "title": "COMMUNITY",
+          "Page_first_url": "https:\/\/hozodesign.com\/pages\/community-hozos-journal",
+          "image1": "shopify:\/\/shop_images\/community-new1.webp",
+          "title_first": "Check out our latest<br> news and innovations",
+          "Button_first_url": "https:\/\/hozodesign.com\/pages\/community-hozos-journal",
+          "Button_first_title": "HOZO's Journal",
+          "Page_second_url": "https:\/\/hozodesign.com\/pages\/community-hozos-journal#inspirations",
+          "image2": "shopify:\/\/shop_images\/community-new2.webp",
+          "title_second": "Find project ideas<br> from our community",
+          "Button_second_url": "https:\/\/hozodesign.com\/pages\/community-hozos-journal#inspirations",
+          "Button_second_title": "User inspiration"
+        }
+      },
+      "166447196524425efa": {
+        "type": "Banner-Accessories",
+        "settings": {
+          "banner_title": "Top pick<br> Accessories",
+          "banner_image": "shopify:\/\/shop_images\/top-pick_1.webp",
+          "button_title": "Shop accessories",
+          "url": "https:\/\/hozodesign.com\/collections\/all"
+        }
+      },
+      "16644721306d866a07": {
+        "type": "New-feature",
+        "settings": {
+          "title": "Featured products",
+          "feature_collection": "meazor-accessories",
+          "btn_title": "Shop Now",
+          "learnmore_url": "shopify:\/\/collections"
+        }
+      },
+      "1664472257761cda99": {
+        "type": "Media-New",
+        "blocks": {
+          "fda68cd8-1336-4216-b3da-eda7670ead7c": {
+            "type": "FAQ",
+            "settings": {
+              "media-image": "shopify:\/\/shop_images\/Yanko_Design_-_Modern_Industrial_Design_News_2.png",
+              "customer_reviews": "\"This tiny laser device can replace every single measuring tools you use!\"",
+              "customer_name": "YANKO DESIGN"
+            }
+          },
+          "9f2e399f-c00e-4493-8dbd-ef9c63bced60": {
+            "type": "FAQ",
+            "settings": {
+              "media-image": "shopify:\/\/shop_images\/Group.png",
+              "customer_reviews": "“Effortless with 360-degree rotation scanning, data transferring and co-working!”",
+              "customer_name": "ROLLINGSTONE"
+            }
+          },
+          "4514c56b-3220-4b7b-9376-9bdd1ba54f42": {
+            "type": "FAQ",
+            "settings": {
+              "media-image": "shopify:\/\/shop_images\/1_4.png",
+              "customer_reviews": "“app-enabled laser measure ideal for designers, developers, DIY enthusiasts.”",
+              "customer_name": "BUZZ"
+            }
+          },
+          "4ceba461-6997-4f53-af5a-65731a5594fa": {
+            "type": "FAQ",
+            "settings": {
+              "media-image": "shopify:\/\/shop_images\/Mashable_1.png",
+              "customer_reviews": "“Whether you are DIY crafting or 2D floorplaning, you can always find right tools at HOZO!”",
+              "customer_name": "Mashable"
+            }
+          }
+        },
+        "block_order": [
+          "fda68cd8-1336-4216-b3da-eda7670ead7c",
+          "9f2e399f-c00e-4493-8dbd-ef9c63bced60",
+          "4514c56b-3220-4b7b-9376-9bdd1ba54f42",
+          "4ceba461-6997-4f53-af5a-65731a5594fa"
+        ],
+        "settings": {
+          "title": "What Media Says"
+        }
+      },
+      "166447227716fe831c": {
+        "type": "customer-review-new",
+        "blocks": {
+          "cd04c3eb-1581-48fd-8f6a-3d5fe786f96e": {
+            "type": "FAQ",
+            "settings": {
+              "media-image": "shopify:\/\/shop_images\/Sample.png",
+              "customer_reviews": "“MEAZOR 3D has truly become a real-life safer for me! My building is very complex in shape!”",
+              "customer_name": "Paul Kal"
+            }
+          },
+          "4313adc4-4d9b-4160-b2e1-4a661650efda": {
+            "type": "FAQ",
+            "settings": {
+              "media-image": "shopify:\/\/shop_images\/Cute_Avatar.png",
+              "customer_reviews": "“As a real estate agent this little device truly saved trouble for me move back and forth measure multi room. Auto-stitch floorplan itself!”",
+              "customer_name": "Lila H"
+            }
+          },
+          "98e283a5-a586-4073-998e-18bcbf196017": {
+            "type": "FAQ",
+            "settings": {
+              "media-image": "shopify:\/\/shop_images\/Frame_77.png",
+              "customer_reviews": "“Recommended this to a few friends. 3D mapping developing in architecture or object design works amazing!”",
+              "customer_name": "James L"
+            }
+          },
+          "0011668d-43f8-4995-8848-5227ccc1927b": {
+            "type": "FAQ",
+            "settings": {
+              "media-image": "shopify:\/\/shop_images\/Cute_Avatar_1.png",
+              "customer_reviews": "“In fact MEAZOR 3D can pretty much replace any measuring instrument you currently own.”",
+              "customer_name": "Conner Holz"
+            }
+          }
+        },
+        "block_order": [
+          "cd04c3eb-1581-48fd-8f6a-3d5fe786f96e",
+          "4313adc4-4d9b-4160-b2e1-4a661650efda",
+          "98e283a5-a586-4073-998e-18bcbf196017",
+          "0011668d-43f8-4995-8848-5227ccc1927b"
+        ],
+        "settings": {
+          "title": "What Customer Says"
+        }
+      },
+      "meazor-section-banner": {
+        "type": "meazor-section-banner",
+        "settings": {
+          "title": "MEAZOR 3D Support",
+          "subtitle": "Everything you need to know about MEAZOR 3D!",
+          "Banner_image": "shopify:\/\/shop_images\/about-product2.png",
+          "video_title": "Video Tutorial",
+          "video_url": "https:\/\/www.youtube.com\/embed\/C09Rn8TEp2o"
+        }
+      },
+      "user-mannual-section": {
+        "type": "user-mannual-section",
+        "blocks": {
+          "79530351-5655-4960-9f64-d1dc426555a5": {
+            "type": "Flag",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame_51_641c3d8b-f9ec-4a68-b960-4dc4e32617a0.png",
+              "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_3D_User_Instruction.pdf?v=1665650217"
+            }
+          },
+          "0f54c4db-2854-45a4-87cd-32648704721f": {
+            "type": "Flag",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame_53.png",
+              "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_3D_User_Instruction_55830788-ab93-4875-90cf-ad3a6f2ed985.pdf?v=1665650217"
+            }
+          },
+          "6597114e-654a-4421-9ddb-e55986e975b1": {
+            "type": "Flag",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame_40_c34d5316-2a5a-4af5-b249-35dd6084d84d.png",
+              "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_3D_User_Instruction-English.pdf?v=1665650216"
+            }
+          },
+          "cb3fd340-bd66-47dd-a461-1e6eb9413312": {
+            "type": "Flag",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame_41_cb6a1c01-104f-4eca-972a-6fc97bcbd038.png",
+              "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_3D_User_Instruction_fb05cef8-39dc-4ed9-9d91-95d2fe132441.pdf?v=1666061887"
+            }
+          },
+          "ba5e41ec-f881-4263-8c13-b7f9f96b73d5": {
+            "type": "Flag",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame_42_0480bcb6-b49b-4b81-ae61-5a0ab5f4f7da.png",
+              "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_3D_User_Instruction-Spainish.pdf?v=1665650216"
+            }
+          },
+          "e8f7047a-51c0-4b76-8f1c-9a2f2abe8ebd": {
+            "type": "Flag",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame_43_39d87ee4-0633-4143-b65c-a2adc44bddd6.png",
+              "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_3D_User_Instruction-German.pdf?v=1665650216"
+            }
+          },
+          "97a191e2-5f88-4c61-bc6c-e72b3110708b": {
+            "type": "Flag",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame_44_0ba24a36-c1db-414c-a742-ed2f19551b91.png",
+              "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_3D_User_Instruction-French.pdf?v=1665650216"
+            }
+          },
+          "58bf7246-d525-4ab8-b208-d115fc61d754": {
+            "type": "Flag",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame_39_b968ab42-c425-4095-b76d-a86ec1bd8224.png",
+              "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_3D_User_Instruction-Italian_1.1__compressed.pdf?v=1665736960"
+            }
+          }
+        },
+        "block_order": [
+          "79530351-5655-4960-9f64-d1dc426555a5",
+          "0f54c4db-2854-45a4-87cd-32648704721f",
+          "6597114e-654a-4421-9ddb-e55986e975b1",
+          "cb3fd340-bd66-47dd-a461-1e6eb9413312",
+          "ba5e41ec-f881-4263-8c13-b7f9f96b73d5",
+          "e8f7047a-51c0-4b76-8f1c-9a2f2abe8ebd",
+          "97a191e2-5f88-4c61-bc6c-e72b3110708b",
+          "58bf7246-d525-4ab8-b208-d115fc61d754"
+        ],
+        "settings": {
+          "title": "User Manual"
+        }
+      },
+      "meazor-app-section": {
+        "type": "meazor-app-section",
+        "settings": {
+          "title": "MEAZOR APP",
+          "fram_image": "shopify:\/\/shop_images\/Frame_46_94ea2901-a482-4f2d-950c-69c4170f7d24.png",
+          "MEAZOR_title": "MEAZOR APP 2.0",
+          "free_title": "<span>Free <\/span>for life time",
+          "app_url": "https:\/\/apps.apple.com\/......",
+          "app_image": "shopify:\/\/shop_images\/apple_app_store.png",
+          "app_url1": "https:\/\/play.google.com\/store\/apps\/details?id=com.yufei.robbiva",
+          "app_image1": "shopify:\/\/shop_images\/google-play.png"
+        }
+      },
+      "meazor-faq-section": {
+        "type": "meazor-faq-section",
+        "blocks": {
+          "f67a0e63-9fd9-41d9-9ad0-593479863ed4": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "1.  What is the Laser Distance measurement range? What is the accuracy?",
+              "answer": "In the ideal circumstances: the laser measure ranges from 0.3ft-131ft ( 0.1m- 40m ), and the measurement accuracy stands ±1\/16 in (±2mm).\nNon-ideal circumstances: such as outdoors with strong light, or under a bad reflective surface, the error will be superimposed with a maximum +- 1‰ of the measurement distance."
+            }
+          },
+          "a4bc6d34-44c4-4bbb-a228-a4e0024e7d71": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "2.  How many scales are supported by the Roller Ruler scale measurement?",
+              "answer": "The currently supported ratios are 4 built – modes with 57 scales."
+            }
+          },
+          "cdf2a173-1ede-4a75-8a87-91bc000088ed": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "3.  How much data can MEAZOR 3D store?",
+              "answer": "MEAZOR 3D supports 200 built-in data storage, 100 for Laser Distance, and 100 for Scale\/Rolling Ruler. And there is no limit on data storage on MEAZOR APP."
+            }
+          },
+          "81961f6d-ba4d-4351-bd15-c1ea3d58bc05": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "4.  What is the Point Scanner (Floor Plan) measurement range? What is the accuracy？",
+              "answer": "In ideal circumstances: the Point Scanner measurement range is 184ft x 184ft (33,856ft²) or 56m x 56m (3135m²)， and the measurement accuracy stands ±1in (±25mm).\nNon-ideal circumstances: such as outdoors with strong light, or under a bad reflective surface, the error will be superimposed with a maximum +- 2‰ of the measurement distance."
+            }
+          },
+          "eb5a52b2-3b6a-48dd-b3ea-dd230da649af": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "5. How to get a more accurate result for Point Scanner\/Curve Scanner function?",
+              "answer": "There are several key points during operation that can lead to measuring errors, please ensure following MEAZOR 3D Point Scanner Operation Guide at: https:\/\/hozodesign.com\/blogs\/journal\/meazor-3d-dos-donts-operation-guide"
+            }
+          },
+          "eac61c6e-a312-4bd0-b5fb-1659befe251a": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "6. Does MEAZOR 3D support fast charging? How long does it take to fully charge MEAZOR 3D?",
+              "answer": "MEAZOR 3D supports fast charge applicable with USB-C, with 30 days standby, and 6 hours continuous usage. MEAZOR 3D takes 2 hours to be fully charged."
+            }
+          },
+          "1c40068e-0f5a-4b4f-a041-10d32e2e3f2a": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "7. How many units are supported by MEAZOR 3D?",
+              "answer": "-General: mm cm, m, in (decimal), in (fractional), ft-in (decimal), ft-in (fractional), yard,\n-Large Scale Measure: km, mile."
+            }
+          },
+          "ead90c6b-64bf-456d-9a91-9d01c1dc48d7": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "8. What languages does the MEAZOR APP come with?",
+              "answer": "Both MEAZOR 3D and MEAZOR App support 7 Languages: \nEnglish (US), Mandarin (Traditional), Japanese, Italian, German, Spain, French"
+            }
+          },
+          "b782c7d1-afb5-4116-a80d-e97752952c30": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "9. Which file formats are supported for export?",
+              "answer": "MEAZOR APP can export files in dxf .pdf .jpg formats."
+            }
+          },
+          "7e29fe6b-a306-4604-b9b1-cd3590af99cf": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "10. What is the difference between MEAZOR 3D Premium Combo and MEAZOR 3D?",
+              "answer": "Compare to MEAZOR 3D standard edition, MEAZOR 3D Premium Combo includes 2 extra accessories that worth $99:\n1.\tx 1 Ultra 3D Adapter\n2.\tx 2 Target Plates"
+            }
+          },
+          "d9a07180-3c81-45d0-818e-d2c066850f99": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "11. How can MEAZOR 3D measure arch doors and windows?",
+              "answer": "If you would like to scan arch doors and windows (that need to place MEAZOR 3D vertically and scan the vertical shape of the window\/door)\nMEAZOR 3D's curve scanner function was not originally designed to complete vertical scanning tasks, because it requires to use of a third-party joint ball tripod accessory to assist vertical measurement and the accuracy of scanning cannot be guaranteed while using third-party accessories.\nhttps:\/\/hozodesign.com\/pages\/meazor 3d-support"
+            }
+          },
+          "427eccd8-84f1-44dc-b697-961e97e6a031": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "12.Where to find MEAZOR 3D serial number?",
+              "answer": "The serial number of MEAZOR 3D could be found beside the box, and all the products with the serial number on the box are eligible for the 1-year limited warranty, it’s not a test device or demonstration."
+            }
+          },
+          "96239126-2d4e-4a81-ba6e-814714df6572": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "14. What does the battery icon on the screen stands for?",
+              "answer": "- Charging: white \n- Out of power: red"
+            }
+          },
+          "a4f7f9bd-6400-43e1-bdd0-5b00afc3899a": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "15. [Diagnosis] MEAZOR APP crash\/ not working.",
+              "answer": "Please send the following information to our support team to help with a quicker investigation:\n- Which specific function\/condition leads to crashes?\n- What is the frequency of product\/App crashes? \n- Mobile phone model, mobile phone system, and mobile phone brand\n- MEAZOR App version number\n- MEAZOR 3D firmware version\n\nPlease send us pictures or videos about the MEAZOR App crash if you could, so that we could forward it to our engineer to solve your problem faster, and please contact us at suopport@hozodesign.com at your convenience."
+            }
+          },
+          "5dcb089c-9ca0-423b-95c8-8608f981ac0c": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "16.\tWhich Android version does MEAZOR App require？",
+              "answer": "MEAZOR App Android works on Android 9.0 or above and requires at least 4GB ram"
+            }
+          },
+          "75288c5b-476a-4c5e-9533-e11e84382003": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "17.\tWhich IOS version does MEAZOR App require？",
+              "answer": "MEAZOR App iOS works on iOS 14 or above."
+            }
+          },
+          "e0043d00-bd1a-46ab-af2c-b3a4a830637e": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "18.\tWhat languages does the APP comes with?",
+              "answer": "Both MEAZOR and MEAZOR App support 8 Languages: \nEnglish (US), Chinese (Simplified), Chinese (Traditional), Japanese, Italian, German, Spain, French"
+            }
+          },
+          "00f5ba20-61be-40bd-acab-a373876849d3": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "19.\tWhat file formats are supported for export?",
+              "answer": "Drawing Mode: export files in .dxf(2D) .dxf(3D) , Also export scale drawing in .pdf .jpg formats(auto-scale fit to A3(Metrics) \/ Tabloid(Imperial) size paper)\nList Mode: export files in excel sheet(.xls), .txt"
+            }
+          },
+          "91d0e654-31b2-4ac2-a3ed-7e3224cd6bd2": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "20. Does MEAZOR 3D support WIFI\/4G\/Bluetooth?",
+              "answer": "MEAZOR supports Bluetooth 4.0 connection with the MEAZOR App."
+            }
+          },
+          "fad00a6d-97d8-46ea-b66e-cba3019facc1": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "21. How to upgrade MEAZOR 3D? How long does per upgrade take?",
+              "answer": "MEAZOR can be upgraded via Bluetooth after pairing with the MEAZOR App, the upgrade time is around 5 minutes which depends on the Bluetooth speed."
+            }
+          },
+          "14558f1e-bf68-4435-b7ae-8364950a8c2d": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "22. Does MEAZOR App comes with a cloud storage function? Is there an account I can register\/log in?",
+              "answer": "There is no cloud storage function on MEAZOR APP at present. And it doesn’t require signing up\/registering an account"
+            }
+          }
+        },
+        "block_order": [
+          "f67a0e63-9fd9-41d9-9ad0-593479863ed4",
+          "a4bc6d34-44c4-4bbb-a228-a4e0024e7d71",
+          "cdf2a173-1ede-4a75-8a87-91bc000088ed",
+          "81961f6d-ba4d-4351-bd15-c1ea3d58bc05",
+          "eb5a52b2-3b6a-48dd-b3ea-dd230da649af",
+          "eac61c6e-a312-4bd0-b5fb-1659befe251a",
+          "1c40068e-0f5a-4b4f-a041-10d32e2e3f2a",
+          "ead90c6b-64bf-456d-9a91-9d01c1dc48d7",
+          "b782c7d1-afb5-4116-a80d-e97752952c30",
+          "7e29fe6b-a306-4604-b9b1-cd3590af99cf",
+          "d9a07180-3c81-45d0-818e-d2c066850f99",
+          "427eccd8-84f1-44dc-b697-961e97e6a031",
+          "96239126-2d4e-4a81-ba6e-814714df6572",
+          "a4f7f9bd-6400-43e1-bdd0-5b00afc3899a",
+          "5dcb089c-9ca0-423b-95c8-8608f981ac0c",
+          "75288c5b-476a-4c5e-9533-e11e84382003",
+          "e0043d00-bd1a-46ab-af2c-b3a4a830637e",
+          "00f5ba20-61be-40bd-acab-a373876849d3",
+          "91d0e654-31b2-4ac2-a3ed-7e3224cd6bd2",
+          "fad00a6d-97d8-46ea-b66e-cba3019facc1",
+          "14558f1e-bf68-4435-b7ae-8364950a8c2d"
+        ],
+        "settings": {
+          "title": "MEAZOR 3D FAQ",
+          "Button_title": "More specs",
+          "button_url": "https:\/\/hozodesign.com\/pages\/meazor3d-tech"
+        }
+      },
+      "still-need-help-section": {
+        "type": "still-need-help-section",
+        "settings": {
+          "title": "Still Need Help?",
+          "subtitle": "Get Solutions From HOZO Team",
+          "button_url": "https:\/\/hozodesign.com\/pages\/customer-support#support",
+          "Button_title": "Submit your inquiry"
+        }
+      },
+      "about-product": {
+        "type": "about-product",
+        "settings": {
+          "title": "About Product",
+          "protitle1": "MEAZOR  Support",
+          "pro_url1": "https:\/\/hozodesign.com\/pages\/meazor-support",
+          "image1": "shopify:\/\/shop_images\/meazor_600444be-ddc8-4a7f-810c-6ac18386ffd6.png",
+          "protitle2": "MEAZOR 3D Support",
+          "pro_url2": "https:\/\/hozodesign.com\/pages\/support-new-meazor",
+          "image2": "shopify:\/\/shop_images\/about-product2.png",
+          "protitle3": "ROLLOVA Support",
+          "pro_url3": "https:\/\/hozodesign.com\/pages\/rollova-support",
+          "image3": "shopify:\/\/shop_images\/rollova_fc843ec0-f1c2-408a-8fe4-b9e5f9f31b3b.png",
+          "about_title": "About Order",
+          "return_url": "shopify:\/\/pages\/return-and-refund",
+          "ship_image": "shopify:\/\/shop_images\/about-order1_1.png",
+          "ship_title": "Shipping",
+          "ship_url": "shopify:\/\/pages\/shipping",
+          "return_image": "shopify:\/\/shop_images\/about-order2.png",
+          "return_title": "Return & Refund",
+          "warranty_url": "https:\/\/hozodesign.com\/pages\/warranty",
+          "warranty_image": "shopify:\/\/shop_images\/about-order3.png",
+          "Warranty_title": "Warranty"
+        }
+      },
+      "73c55049-ec55-43de-8c02-21c6cc4ae722": {
+        "type": "still-need-help-section",
+        "settings": {
+          "title": "Support Center",
+          "subtitle": "",
+          "button_url": "shopify:\/\/pages\/support-center",
+          "Button_title": "Learn more"
+        }
+      },
+      "support-about": {
+        "type": "support-about",
+        "blocks": {
+          "79f243ba-cfa3-4859-93b6-437e2c9a4cc2": {
+            "type": "text",
+            "settings": {
+              "news_img": "shopify:\/\/shop_images\/about-2018.png",
+              "year": "2018",
+              "title": "HOZO is Born in Rochester, NY",
+              "description": "Launched ROLLOVA - the world’s 1st digital rolling ruler on Kickstarter in RIT studio with a strong passion for bringing technology to people’s lives with authentic design."
+            }
+          },
+          "cb31f47b-1306-4c90-be2a-09de909e44fe": {
+            "type": "text",
+            "settings": {
+              "news_img": "shopify:\/\/shop_images\/about-2019.png",
+              "year": "2019",
+              "title": "Set up R&D Center in Hong Kong",
+              "description": "Kickoff product development to build a product that would resonate on a global scale with a core technological challenge and a compelling impact on the industry."
+            }
+          },
+          "0bb16c53-3743-4c8e-9827-1fe2aa6ea852": {
+            "type": "text",
+            "settings": {
+              "news_img": "shopify:\/\/shop_images\/about-2020.png",
+              "year": "2020",
+              "title": "Began to Grow in Guangzhou",
+              "description": "Bringing together industrial leading product designers, geomatics experts, mechanical engineers and passionate storytellers."
+            }
+          },
+          "67b51c21-1873-4f2e-8db0-5859f4692971": {
+            "type": "text",
+            "settings": {
+              "news_img": "shopify:\/\/shop_images\/team-img-1.png",
+              "year": "2021",
+              "title": "Introducing MEAZOR to the World",
+              "description": "3 years after the original idea was born, HOZO launched the flagship product – MEAZOR on Kickstarter, and the international jury committee honored it with Good Design Award 2021."
+            }
+          },
+          "6fac50d8-2ffb-4de8-8f53-ee9e19d409eb": {
+            "type": "text",
+            "settings": {
+              "news_img": "shopify:\/\/shop_images\/about-2022.png",
+              "year": "2022",
+              "title": "MEAZOR 3D is Born, Better and Stronger",
+              "description": "After reviewing thousands of feedback from MEAZOR users, we learned from the community and launched the next generation, MEAZOR 3D, chosen by Kickstater as Project We Love."
+            }
+          },
+          "c899d109-1224-413e-8aa6-b165fb27cd66": {
+            "type": "text",
+            "settings": {
+              "news_img": "shopify:\/\/shop_images\/about-2023.png",
+              "year": "2023",
+              "title": "Beyond Future",
+              "description": "HOZO team is driven by an obsessive passion for creating better products to make a better life. Be the first to know about our latest innovations by following our newsletter."
+            }
+          },
+          "b1e8b5cc-5e6d-48a9-a145-458e31e6d745": {
+            "type": "image",
+            "settings": {
+              "award_image": "shopify:\/\/shop_images\/team-img-1.png",
+              "award_title": "“Great product design inspires new lifestyle revolution , and shall reinforce technology to serve better for a greater community.",
+              "award_description": "Co-Founder Chief Design Officer",
+              "award_author": "Peter Liang"
+            }
+          },
+          "e0f49c43-169a-4d16-a2c0-4757768e4c8d": {
+            "type": "image",
+            "settings": {
+              "award_image": "shopify:\/\/shop_images\/team-img-1.png",
+              "award_title": "“Great product design inspires new lifestyle revolution , and shall reinforce technology to serve better for a greater community.",
+              "award_description": "Co-Founder Chief Design Officer",
+              "award_author": "Peter Liang"
+            }
+          }
+        },
+        "block_order": [
+          "79f243ba-cfa3-4859-93b6-437e2c9a4cc2",
+          "cb31f47b-1306-4c90-be2a-09de909e44fe",
+          "0bb16c53-3743-4c8e-9827-1fe2aa6ea852",
+          "67b51c21-1873-4f2e-8db0-5859f4692971",
+          "6fac50d8-2ffb-4de8-8f53-ee9e19d409eb",
+          "c899d109-1224-413e-8aa6-b165fb27cd66",
+          "b1e8b5cc-5e6d-48a9-a145-458e31e6d745",
+          "e0f49c43-169a-4d16-a2c0-4757768e4c8d"
+        ],
+        "settings": {
+          "title": "About HOZO",
+          "sub_title": "<p>HOZO Design is an emerging high-tech company dedicated to world's leading innovative design and development of intelligent consumer electronics.<\/p>                 <p>With the idea of \"design + intelligence\", HOZO strives to bring the aesthetics of technology to global consumers with diversified new products.<\/p>",
+          "image_banner": "shopify:\/\/shop_images\/about-img-new.webp",
+          "shop_link": "shopify:\/\/collections\/all",
+          "award_title": "Award Winning Team",
+          "team_image": "shopify:\/\/shop_images\/about-teams-image-1.png"
+        }
+      },
+      "meazor-section-banner1": {
+        "type": "meazor-section-banner1",
+        "settings": {
+          "title": "MEAZOR  Support",
+          "subtitle": "Everything you need to know about MEAZOR!",
+          "Banner_image": "shopify:\/\/shop_images\/image-9_2.png",
+          "video_title": "Video Tutorial",
+          "video_url": "https:\/\/www.youtube.com\/embed\/C09Rn8TEp2o"
+        }
+      },
+      "user-mannual-section2": {
+        "type": "user-mannual-section2",
+        "blocks": {
+          "3145db92-4f13-4b9c-909e-30b0f89fa23c": {
+            "type": "Flag",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame_51_1.png",
+              "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_User_Instruction_-_Chinese_2022.pdf?v=1650529141"
+            }
+          },
+          "9c5dbab9-bd75-44d6-b072-dad4bfd9b930": {
+            "type": "Flag",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame_53.png",
+              "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_User_Instruction_-_Chinese_2022.pdf?v=1650529141"
+            }
+          },
+          "a3b7cc57-5a51-4b19-81db-95af0a159516": {
+            "type": "Flag",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame_40_c34d5316-2a5a-4af5-b249-35dd6084d84d.png",
+              "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_User_Instruction_-_English_2022.pdf?v=1650529141"
+            }
+          },
+          "5e15bdda-6b2b-41e2-8fb6-aef2ac72e515": {
+            "type": "Flag",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame_44_0ba24a36-c1db-414c-a742-ed2f19551b91.png",
+              "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_User_Instruction_-_French_2022.pdf?v=1650529141"
+            }
+          },
+          "0a45bc3f-f18d-4363-b0f7-44c0c986d7e5": {
+            "type": "Flag",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame_43_39d87ee4-0633-4143-b65c-a2adc44bddd6.png",
+              "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_User_Instruction_-_German_2022.pdf?v=1650529141"
+            }
+          },
+          "245618cb-036f-4391-8e92-81eabe606662": {
+            "type": "Flag",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame_41_fa33b065-ee7f-4ff7-83dd-f2b730855067.png",
+              "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_User_Instruction_-_Japanese_2022.pdf?v=1650529141"
+            }
+          },
+          "9818643e-a6ad-4f1a-9655-13b8555507d1": {
+            "type": "Flag",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame_42_0480bcb6-b49b-4b81-ae61-5a0ab5f4f7da.png",
+              "url": ""
+            }
+          },
+          "41b7cac0-4ec9-49d4-95d3-8926d6a4459e": {
+            "type": "Flag",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame_39_b968ab42-c425-4095-b76d-a86ec1bd8224.png",
+              "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/MEAZOR_User_Instruction_-_Italian_2022.pdf?v=1650529141"
+            }
+          }
+        },
+        "block_order": [
+          "3145db92-4f13-4b9c-909e-30b0f89fa23c",
+          "9c5dbab9-bd75-44d6-b072-dad4bfd9b930",
+          "a3b7cc57-5a51-4b19-81db-95af0a159516",
+          "5e15bdda-6b2b-41e2-8fb6-aef2ac72e515",
+          "0a45bc3f-f18d-4363-b0f7-44c0c986d7e5",
+          "245618cb-036f-4391-8e92-81eabe606662",
+          "9818643e-a6ad-4f1a-9655-13b8555507d1",
+          "41b7cac0-4ec9-49d4-95d3-8926d6a4459e"
+        ],
+        "settings": {
+          "title": "User Manual"
+        }
+      },
+      "meazor-app-section3": {
+        "type": "meazor-app-section3",
+        "settings": {
+          "title": "MEAZOR APP 2.0",
+          "fram_image": "shopify:\/\/shop_images\/Frame_46_256x256_17334631-77f9-4277-88a7-481631c5c8f5.png",
+          "MEAZOR_title": "MEAZOR APP 2.0",
+          "free_title": "<span>Free <\/span>for life time",
+          "app_url": "https:\/\/apps.apple.com\/......",
+          "app_image": "shopify:\/\/shop_images\/apple_app_store_256x256_93f2049f-c55b-4b18-9918-c1019d1967e5.png",
+          "app_url1": "https:\/\/play.google.com\/store\/apps\/details?id=com.yufei.robbiva",
+          "app_image1": "shopify:\/\/shop_images\/google-play_256x256_55cda97b-54f5-4199-ae00-bab58d953ad9.png"
+        }
+      },
+      "meazor-faq-section4": {
+        "type": "meazor-faq-section4",
+        "blocks": {
+          "b831e722-7900-49d8-8324-c62c2fe79204": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "1. [Diagnosis] MEAZOR cannot be charged",
+              "answer": "Please follow the steps below at first to self-check\n\n- Use Support 5V -1A Charging with USB-C Port to charge MEAZOR (takes 2 hours to fully charge). Please note that MEAZOR doesn't support adapters with fast charging protocol.\n\n- Unplug and wait 4 seconds then restart the device.\n\nIf you still have still cannot to charge, please contact support@hozodesign.com for further assistance."
+            }
+          },
+          "c0bb5713-e74d-4b02-b274-058b9743926f": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "2. [Diagnosis] MEAZOR crash\/not working",
+              "answer": "Please send the following information to our support team to help a quicker investigation:\n\n- Has the blue indicator light always on and the screen does not light up of the MEAZOR?\n\n- Which specific function\/condition leads to crashes?\n\n- What is the frequency of product crashes?\n\n- MEAZOR firmware version number\n\n- MEAZOR serial number\n\nPlease send us pictures or videos about the MEAZOR crash if you could, so that we could forward to our engineer to solve your problem faster, and please contact us at suopport@hozodesign.com at your convenience."
+            }
+          },
+          "3dddc256-47ce-4562-93fc-6048cb66dbd3": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "3. [Diagnosis] MEAZOR App crash\/not working",
+              "answer": "Please send the following information to our support team to help a quicker investigation:\n\n- Which specific function\/condition lead to crashes?\n\n- What is the frequency of product\/App crashes?\n\n- Mobile phone model, mobile phone system and mobile phone brand\n\n- MEAZOR App version number\n\nPlease send us pictures or videos about the MEAZOR App crash if you could, so that we could forward to our engineer to solve your problem faster, and please contact us at suopport@hozodesign.com at your convenience."
+            }
+          },
+          "8fd75240-91d7-43c1-b13f-1f47c02fdd27": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "4. Where to find MEAZOR serial number?",
+              "answer": "The serial number of MEAZOR could be found beside the box, and all the products with the serial number on the box is eligible to the 1-year limited warranty, it’s not a test device or demonstration. We've updated the position of the serial number and didn't update it in the user instruction for devices produced before Mar, 2022."
+            }
+          },
+          "aef37631-f061-4c09-8506-3c769ba5d96f": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "5.\tHow far is the laser distance measurement range? What is the accuracy?",
+              "answer": "The measurable distance of laser measurers ranges from from 0.1m-25m (0.3feet-82feets), the measurement accuracy stands ±2mm (±0.08 inch)"
+            }
+          },
+          "b2d01062-e689-49da-a6be-f0ff5b36b95c": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "6.\tHow far can the Rolling Ruler measurement range? What is the accuracy?",
+              "answer": "Rolling Ruler is recommended to measure the length that less than 5m. The measurement accuracy is ±0.2% on rough surfaces, and the accuracy will be impacted due to human error when measuring long distance."
+            }
+          },
+          "ff44dde5-c12d-4b0b-8a72-5a16b7b8d36c": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "7.\tHow to determine the Rolling Ruler’s start\/end point?",
+              "answer": "There are three blue indication lights at the bottom of the product for aligning the measurement start\/end points."
+            }
+          },
+          "13e18ca6-a69b-49a0-af50-64d57ac723e9": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "8.\tHow many scales are supported by the Roller Ruler scale measurement?",
+              "answer": "4 built-in scale modes with 57 scales in total - Metric Architecture - Metric Engineering - US Architecture - US Engineering"
+            }
+          },
+          "d0be049d-a76c-47b5-a75b-312c9adb0ae5": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "9. How to perform 2D Floorplan Scanning?",
+              "answer": "There are 2 modes of 2D floorplan scanning function: 1. Point Scanner: Point Scanner is a manual positioning mode that allows you choose key points around the room for precise floorplan captures. It fit measuring demands of floorplan and room plan. 2. Curve Scanner: curve scanner is an automatic mode that can perform scanning by simply turning the machine 360 degrees. It suits measuring demand of odd-shape\/curve-shape objects, structures and architectures."
+            }
+          },
+          "e8673f14-184a-4ed8-8826-364349375b09": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "10.What is curve scan? How to use this function?",
+              "answer": "Curve scan is designed mainly for the measurement of irregular curves. Place the product horizontally on the edge of the curved surface and turning the body 360 degrees. The measurement could be sent to the APP for editing via Bluetooth."
+            }
+          },
+          "8fc55b4e-599f-4e6c-89d4-ea344efa848f": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "11. What is the range of Point scanner and curve scanner? What is the accuracy?",
+              "answer": "Point scanner and curve scanner can measure the maximum area of 1200m² (12900feet²). The measurement error is proportional to the area of the scanned floor: ±0.5cm-±10cm (0.2inch-4inch). The source of the measured area and accuracy data is from laboratory test results."
+            }
+          },
+          "fe73c959-19d0-4ca1-b94c-a7c3ba230761": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "12. How many data can MEAZOR store?",
+              "answer": "MEAZOR does not support internal data storage, but if you use MEAZOR App, there is no limit on data storage."
+            }
+          },
+          "5175ea88-f9ed-474a-8785-8a1f11f1b348": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "13. How long the battery last per full charge? How much is the battery capacity?",
+              "answer": "The theoretical standby time for a fully charged MEAZOR is around 30 days, and the continuous working time last around 16 hours. Battery capacity is 650mah."
+            }
+          },
+          "0a51ce4c-bc22-488f-b0fc-d41c4d762371": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "14. How long does it take to fully charge MEAZOR?",
+              "answer": "2 hours"
+            }
+          },
+          "b24379e1-62e8-4178-9f6d-029b7bcf2f0f": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "15. What does MEAZOR’s 3 indicator lights stand for?",
+              "answer": "About the Indicator light description that as shown below： - Charging or powering: yellow - Turn on or Turn off: blue"
+            }
+          },
+          "28735c90-588e-4f72-a349-494f1b82bd20": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "16. What does the battery icon on the screen stands for?",
+              "answer": "- Charging: white - Out of power: red We hope it helps and if you have any question about product please contact us at suppport@hozodesign.com."
+            }
+          }
+        },
+        "block_order": [
+          "b831e722-7900-49d8-8324-c62c2fe79204",
+          "c0bb5713-e74d-4b02-b274-058b9743926f",
+          "3dddc256-47ce-4562-93fc-6048cb66dbd3",
+          "8fd75240-91d7-43c1-b13f-1f47c02fdd27",
+          "aef37631-f061-4c09-8506-3c769ba5d96f",
+          "b2d01062-e689-49da-a6be-f0ff5b36b95c",
+          "ff44dde5-c12d-4b0b-8a72-5a16b7b8d36c",
+          "13e18ca6-a69b-49a0-af50-64d57ac723e9",
+          "d0be049d-a76c-47b5-a75b-312c9adb0ae5",
+          "e8673f14-184a-4ed8-8826-364349375b09",
+          "8fc55b4e-599f-4e6c-89d4-ea344efa848f",
+          "fe73c959-19d0-4ca1-b94c-a7c3ba230761",
+          "5175ea88-f9ed-474a-8785-8a1f11f1b348",
+          "0a51ce4c-bc22-488f-b0fc-d41c4d762371",
+          "b24379e1-62e8-4178-9f6d-029b7bcf2f0f",
+          "28735c90-588e-4f72-a349-494f1b82bd20"
+        ],
+        "settings": {
+          "title": "MEAZOR FAQ",
+          "Button_title": "More specs",
+          "button_url": "https:\/\/hozodesign.com\/pages\/tech-page"
+        }
+      },
+      "still-need-help-section4": {
+        "type": "still-need-help-section4",
+        "settings": {
+          "title": "Still Need Help?",
+          "subtitle": "Get Solutions From HOZO Team",
+          "button_url": "https:\/\/hozodesign.com\/pages\/customer-support#support",
+          "Button_title": "Submit your inquiry"
+        }
+      },
+      "meazor-section-banner-Rollova": {
+        "type": "meazor-section-banner-Rollova",
+        "settings": {
+          "title": "ROLLOVA Support",
+          "subtitle": "Everything you need to know about ROLLOVA!",
+          "Banner_image": "shopify:\/\/shop_images\/1_3_ec3dc15b-4783-497c-bc16-cfb6c9d9255a.png",
+          "video_title": "Video Tutorial",
+          "video_url": "https:\/\/www.youtube.com\/embed\/tI-fJwX1Hrs"
+        }
+      },
+      "user-mannual-section-Rollova": {
+        "type": "user-mannual-section-Rollova",
+        "blocks": {
+          "3cb646da-c21a-475d-984b-65dbcf2e6408": {
+            "type": "Flag",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame_51_1.png",
+              "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/ROLLOVA2.0_1.pdf?v=1665651246"
+            }
+          },
+          "0aaca986-9abb-418f-9306-869713facdc5": {
+            "type": "Flag",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame_40_c34d5316-2a5a-4af5-b249-35dd6084d84d.png",
+              "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/ROLLOVA2.0_user_manual_EN_1.pdf?v=1665651236"
+            }
+          },
+          "605e642a-e781-4010-801f-9c469d4cecc5": {
+            "type": "Flag",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame_41_fa33b065-ee7f-4ff7-83dd-f2b730855067.png",
+              "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/ROLLOVA2.0_user_manual_JP_1.pdf?v=1665651243"
+            }
+          }
+        },
+        "block_order": [
+          "3cb646da-c21a-475d-984b-65dbcf2e6408",
+          "0aaca986-9abb-418f-9306-869713facdc5",
+          "605e642a-e781-4010-801f-9c469d4cecc5"
+        ],
+        "settings": {
+          "title": "ROLLOVA User Manual"
+        }
+      },
+      "meazor-faq-section-Rollova": {
+        "type": "meazor-faq-section-Rollova",
+        "blocks": {
+          "23123474-8c69-4a9a-9c3c-ac5a5bee62c8": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "How does it measure into the corner or between walls?",
+              "answer": "SImply press the offset button at back of ROLLOVA, that can add diameter or radius of ROLLOVA to your measurement."
+            }
+          },
+          "b3b2bb02-28b6-4397-99b7-a4e9e27e13b3": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "[Diagnosis]: The main LCD screen is not working and the bottom light still works.",
+              "answer": "The ROLLOVA might have low battery given the description. We recommend you to replace the 1632 button battery. If the screen still not work after replacing batteries, please contact our customer support team."
+            }
+          },
+          "a39084f9-27c6-48c9-914b-d38b2b2f441c": {
+            "type": "FAQ",
+            "settings": {
+              "qustion": "[Diagnosis]: The ROLLOVA is not rolling smoothly, what happens?",
+              "answer": "The roller system is built with a certain fraction level to ensure it doesn't slip on most surfaces. But because the fraction between ROLLOVA's tire and surfaces could vary among different materials (e.g. glass, rough surfaces), it may give you the impression of not rolling smoothly sometimes."
+            }
+          }
+        },
+        "block_order": [
+          "23123474-8c69-4a9a-9c3c-ac5a5bee62c8",
+          "b3b2bb02-28b6-4397-99b7-a4e9e27e13b3",
+          "a39084f9-27c6-48c9-914b-d38b2b2f441c"
+        ],
+        "settings": {
+          "title": "ROLLOVA FAQ",
+          "Button_title": "More specs",
+          "button_url": "https:\/\/hozodesign.com\/pages\/rollova-tech"
+        }
+      },
+      "still-need-help-section-Rollav": {
+        "type": "still-need-help-section-Rollav",
+        "settings": {
+          "title": "Still need help?",
+          "subtitle": "Get solutions from HOZO Team",
+          "button_url": "https:\/\/hozodesign.com\/pages\/customer-support#support",
+          "Button_title": "Submit your inquiry"
+        }
+      },
+      "affiliated-program": {
+        "type": "affiliated-program",
+        "blocks": {
+          "81c5ceae-e8b5-4cf1-9746-0893ce97fec9": {
+            "type": "text",
+            "settings": {
+              "commition_img": "shopify:\/\/shop_images\/how-do-icon-1.png",
+              "text": "Register\/Sign Inkickbooster"
+            }
+          },
+          "11d8ebe3-cf5b-43c9-bdeb-5ac44e17d03e": {
+            "type": "text",
+            "settings": {
+              "commition_img": "shopify:\/\/shop_images\/how-do-icon-2.png",
+              "text": "Share Your Exclusive Booster Link To Customer"
+            }
+          },
+          "d5ba8ba8-67f6-4195-8746-869796a7efa6": {
+            "type": "text",
+            "settings": {
+              "commition_img": "shopify:\/\/shop_images\/how-do-icon-3.png",
+              "text": "Wait Them To Make A Purchase"
+            }
+          },
+          "b9de344b-d420-4640-bf43-c86d4a16a5d7": {
+            "type": "text",
+            "settings": {
+              "commition_img": "shopify:\/\/shop_images\/how-do-icon-4.png",
+              "text": "Receive Your Commision"
+            }
+          },
+          "8e368041-a1b1-4fb1-9bdc-ecdab1ae76c1": {
+            "type": "link",
+            "settings": {
+              "video_link": "https:\/\/www.youtube.com\/embed\/7r9olktD0KI",
+              "link_image": "shopify:\/\/shop_images\/professionals-back-img.png"
+            }
+          },
+          "ec3921d9-82f4-48cb-83ef-7ae6f00a148f": {
+            "type": "link",
+            "settings": {
+              "video_link": "https:\/\/www.youtube.com\/embed\/G3wSzxrpHUM",
+              "link_image": "shopify:\/\/shop_images\/ROLLOVA_is_a_futuristic_gadget_2.png"
+            }
+          },
+          "14f61a8e-ea85-49a9-8314-8a6438c9da65": {
+            "type": "link",
+            "settings": {
+              "video_link": "https:\/\/www.youtube.com\/embed\/tVsN3RJBRQ0",
+              "link_image": "shopify:\/\/shop_images\/sddefault_2.png"
+            }
+          },
+          "1ea87734-9387-4b90-9503-0cbc3a8a5652": {
+            "type": "link",
+            "settings": {
+              "video_link": "https:\/\/www.youtube.com\/embed\/KOyilTTKygI",
+              "link_image": "shopify:\/\/shop_images\/Most_Advanced_INCH_TAPE_2.png"
+            }
+          },
+          "a02ec523-48a9-4245-b3b6-4742c6214ecd": {
+            "type": "link",
+            "settings": {
+              "video_link": "https:\/\/youtu.be\/sbp0sw0OZKE",
+              "link_image": "shopify:\/\/shop_images\/Gadget_Tech_PRODIGIOSI_2.png"
+            }
+          }
+        },
+        "block_order": [
+          "81c5ceae-e8b5-4cf1-9746-0893ce97fec9",
+          "11d8ebe3-cf5b-43c9-bdeb-5ac44e17d03e",
+          "d5ba8ba8-67f6-4195-8746-869796a7efa6",
+          "b9de344b-d420-4640-bf43-c86d4a16a5d7",
+          "8e368041-a1b1-4fb1-9bdc-ecdab1ae76c1",
+          "ec3921d9-82f4-48cb-83ef-7ae6f00a148f",
+          "14f61a8e-ea85-49a9-8314-8a6438c9da65",
+          "1ea87734-9387-4b90-9503-0cbc3a8a5652",
+          "a02ec523-48a9-4245-b3b6-4742c6214ecd"
+        ],
+        "settings": {
+          "banner_image1": "shopify:\/\/shop_images\/about-product3.webp",
+          "banner_image2": "shopify:\/\/shop_images\/about-product2.png",
+          "banner_title": "Affiliated Program",
+          "banner_sub_title": "Earn Up To <strong>10%<\/strong> Commission",
+          "banner_url": "https:\/\/hozo.kickbooster.me\/boost",
+          "affiliate_id": "Still need help on affiliation? <br>Write to <a href=\"maito:caroline@hozodesign.com\">caroline@hozodesign.com<\/a>"
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_ajax_enable": true,
+          "cart_notes_enable": false
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "blog_show_author": true,
+          "blog_show_date": true,
+          "show_share_buttons": true
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "layout": "list",
+          "blog_show_author": true,
+          "blog_show_date": true
+        }
+      },
+      "4da38456-9036-473b-9868-d643b39f0b63": {
+        "type": "Home-banner",
+        "disabled": true,
+        "blocks": {
+          "16647a8b-8b53-4bcc-a6e4-edc70222de92": {
+            "type": "text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame_901.png",
+              "mobile_image": "shopify:\/\/shop_images\/Frame_901.png",
+              "label_image": "shopify:\/\/shop_images\/Group_1025.png",
+              "text1": "All we want  <br>For Christmas",
+              "text2": "SHOP GIFTS",
+              "url2": "https:\/\/hozodesign.com\/collections\/all"
+            }
+          },
+          "d9c5452b-d8a9-4c5d-b51e-a1f747677368": {
+            "type": "text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Frame_1172.png",
+              "mobile_image": "shopify:\/\/shop_images\/Frame_1170.png",
+              "text1": "",
+              "text2": "",
+              "url2": "https:\/\/www.kickstarter.com\/projects\/hozodesign\/neoruler-rule-the-scales?ref=d7klta"
+            }
+          }
+        },
+        "block_order": [
+          "16647a8b-8b53-4bcc-a6e4-edc70222de92",
+          "d9c5452b-d8a9-4c5d-b51e-a1f747677368"
+        ],
+        "settings": {
+          "enableCustomBanner": true,
+          "section_bg": "#0f402d"
+        }
+      },
+      "support-page-blog": {
+        "type": "support-page-blog",
+        "blocks": {
+          "64429985-3c2a-4d45-ae3d-b54c4c410506": {
+            "type": "text",
+            "settings": {
+              "article": "journal\/difference-between-meazor-meazor-3d"
+            }
+          },
+          "e567f2bf-de00-4958-bec3-b722cc8ccc1f": {
+            "type": "text",
+            "settings": {
+              "article": "journal\/meazor-gda-award-winning-projects"
+            }
+          }
+        },
+        "block_order": [
+          "64429985-3c2a-4d45-ae3d-b54c4c410506",
+          "e567f2bf-de00-4958-bec3-b722cc8ccc1f"
+        ],
+        "settings": {
+          "title": "Read more about MEAZOR"
+        }
+      },
+      "meazor3d-support-blog": {
+        "type": "meazor3d-support-blog",
+        "blocks": {
+          "b2af5a03-ecbe-40e3-8845-6d9a52bfac7f": {
+            "type": "text",
+            "settings": {
+              "article": "journal\/meazor-3d-dos-donts-operation-guide"
+            }
+          },
+          "58a76eb8-9c38-4290-aa4e-07ce68d1cceb": {
+            "type": "text",
+            "settings": {
+              "article": "journal\/difference-between-meazor-meazor-3d"
+            }
+          }
+        },
+        "block_order": [
+          "b2af5a03-ecbe-40e3-8845-6d9a52bfac7f",
+          "58a76eb8-9c38-4290-aa4e-07ce68d1cceb"
+        ],
+        "settings": {
+          "title": "Read more about MEAZOR 3D"
+        }
+      },
+      "New-community": {
+        "type": "New-community",
+        "settings": {
+          "title": "",
+          "Page_first_url": "",
+          "title_first": "",
+          "Button_first_url": "",
+          "Button_first_title": "",
+          "Page_second_url": "",
+          "title_second": "",
+          "Button_second_url": "",
+          "Button_second_title": ""
+        }
+      },
+      "collection-template-pix": {
+        "type": "collection-template-pix",
+        "settings": {
+        }
+      },
+      "h-video-section": {
+        "type": "h-video-section",
+        "settings": {
+          "img1": "shopify:\/\/shop_images\/Read.png",
+          "url1": "https:\/\/www.youtube.com\/embed\/JQCqg8QoOZc"
+        }
+      },
+      "h-neo_ks_lp_new_0": {
+        "type": "h-neo_ks_lp_new_0",
+        "settings": {
+          "discount": "Exclusive Discount $50 OFF",
+          "discount_text_1": "First 8hrs Launch Day ONLY",
+          "discount_text_2": "(Only 200 limited spots)",
+          "discount_url": "https:\/\/www.kickstarter.com\/projects\/hozodesign\/neoruler-rule-the-scales"
+        }
+      },
+      "h-neo_ks_lp_new_1": {
+        "type": "h-neo_ks_lp_new_1",
+        "settings": {
+          "url": ""
+        }
+      },
+      "h-neo_ks_lp_new_2": {
+        "type": "h-neo_ks_lp_new_2",
+        "blocks": {
+          "h-neo_ks_lp_new_2-0": {
+            "type": "slide",
+            "settings": {
+              "slide_image": "shopify:\/\/shop_images\/Read.png"
+            }
+          },
+          "h-neo_ks_lp_new_2-1": {
+            "type": "slide",
+            "settings": {
+              "slide_image": "shopify:\/\/shop_images\/Draft.png"
+            }
+          },
+          "abcb9b7a-32f7-4c4a-aa18-033c8f4b1f6f": {
+            "type": "slide",
+            "settings": {
+              "slide_image": "shopify:\/\/shop_images\/Caliper.png"
+            }
+          },
+          "c71aa3d5-2ffb-494a-90d0-7542baf7f29b": {
+            "type": "slide",
+            "settings": {
+              "slide_image": "shopify:\/\/shop_images\/Divide.png"
+            }
+          }
+        },
+        "block_order": [
+          "h-neo_ks_lp_new_2-0",
+          "h-neo_ks_lp_new_2-1",
+          "abcb9b7a-32f7-4c4a-aa18-033c8f4b1f6f",
+          "c71aa3d5-2ffb-494a-90d0-7542baf7f29b"
+        ],
+        "settings": {
+        }
+      },
+      "h-neo_ks_lp_new_3": {
+        "type": "h-neo_ks_lp_new_3",
+        "blocks": {
+          "1362eb6f-2892-45db-9dda-ebfbe270eb7a": {
+            "type": "slide",
+            "settings": {
+              "text_1": "Photo Mode",
+              "text_2": "Only one click away from 2D to 3D Display",
+              "slide_image": "shopify:\/\/shop_images\/section3-right-swiper-1_680591df-4393-4c00-a4ff-1af353451b7a.png"
+            }
+          },
+          "3cce40c8-d53e-4e6d-a57a-f402eb2ddef1": {
+            "type": "slide",
+            "settings": {
+              "text_1": "Drawing Mode",
+              "text_2": "Only one click away from 2D to 3D Display",
+              "slide_image": "shopify:\/\/shop_images\/section3-right-swiper-2_7e6a7bec-76a6-4072-81fd-5b562d029f9a.png"
+            }
+          },
+          "a0edf7eb-f899-4442-a533-35d0abb20234": {
+            "type": "slide",
+            "settings": {
+              "text_1": "List Mode",
+              "text_2": "Only one click away from 2D to 3D Display",
+              "slide_image": "shopify:\/\/shop_images\/section3-right-swiper-3_b87f4890-b6e0-4a22-8ea4-00512b644b8a.png"
+            }
+          },
+          "af8546a1-060e-47fa-afeb-d82b0dbb1976": {
+            "type": "slide",
+            "disabled": true,
+            "settings": {
+              "text_1": "Drawing Mode",
+              "text_2": "Only one click away from 2D to 3D Display",
+              "slide_image": "shopify:\/\/shop_images\/section3-right-swiper-4_a9aac635-c851-4dbd-bbf1-f5a71fb747cb.png"
+            }
+          }
+        },
+        "block_order": [
+          "1362eb6f-2892-45db-9dda-ebfbe270eb7a",
+          "3cce40c8-d53e-4e6d-a57a-f402eb2ddef1",
+          "a0edf7eb-f899-4442-a533-35d0abb20234",
+          "af8546a1-060e-47fa-afeb-d82b0dbb1976"
+        ],
+        "settings": {
+        }
+      },
+      "h-neo_ks_lp_new_4": {
+        "type": "h-neo_ks_lp_new_4",
+        "settings": {
+        }
+      },
+      "h-neo_ks_lp_new_5": {
+        "type": "h-neo_ks_lp_new_5",
+        "settings": {
+        }
+      },
+      "h-neo_ks_lp_new_6": {
+        "type": "h-neo_ks_lp_new_6",
+        "blocks": {
+          "3422553c-5db0-4cdc-8baa-293717c016f4": {
+            "type": "slide",
+            "settings": {
+              "text_1": "Pointer Module",
+              "text_2": "Excel Measuring Details",
+              "slide_image": "shopify:\/\/shop_images\/Pointer.png"
+            }
+          },
+          "a6ec96a4-9509-4416-898a-31816c8c4112": {
+            "type": "slide",
+            "settings": {
+              "text_1": "Smartpen Module",
+              "text_2": "Empower Drawing Precision",
+              "slide_image": "shopify:\/\/shop_images\/Smartpen_Module.png"
+            }
+          },
+          "7b51b66a-78f8-48aa-8fcd-ae72d13cd4e5": {
+            "type": "slide",
+            "settings": {
+              "text_1": "Magnifier Module",
+              "text_2": "Magnify Reading Accuracy",
+              "slide_image": "shopify:\/\/shop_images\/Magnifier_Module.png"
+            }
+          },
+          "1a6c57d5-d19d-448c-a487-b1d8d7928e53": {
+            "type": "slide",
+            "settings": {
+              "text_1": "Caliper Module",
+              "text_2": "Enhance Object Measurement",
+              "slide_image": "shopify:\/\/shop_images\/Caliper_Module.png"
+            }
+          }
+        },
+        "block_order": [
+          "3422553c-5db0-4cdc-8baa-293717c016f4",
+          "a6ec96a4-9509-4416-898a-31816c8c4112",
+          "7b51b66a-78f8-48aa-8fcd-ae72d13cd4e5",
+          "1a6c57d5-d19d-448c-a487-b1d8d7928e53"
+        ],
+        "settings": {
+        }
+      },
+      "h-neo_ks_lp_new_7": {
+        "type": "h-neo_ks_lp_new_7",
+        "settings": {
+          "discount_url": "https:\/\/www.kickstarter.com\/projects\/hozodesign\/neoruler-rule-the-scales"
+        }
+      },
+      "a228a1a4-9aca-4f2f-8613-81f704f7276c": {
+        "type": "huanhuan-slider",
+        "blocks": {
+          "242a6d96-ac35-4641-a720-2bc565e9658b": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "isShowContent": "true",
+              "item_image_1_1": "shopify:\/\/shop_images\/Frame_831.jpg",
+              "item_image_1_2": "shopify:\/\/shop_images\/1_6.jpg",
+              "item_image_1_3": "shopify:\/\/shop_images\/Group_1146.png",
+              "quan_url": "https:\/\/hozodesign.com\/collections\/all",
+              "url": "https:\/\/hozodesign.com\/collections\/all",
+              "btn_url": "https:\/\/hozodesign.com\/collections\/all"
+            }
+          },
+          "ee67688f-e65d-4297-85c3-47e8120b2d4a": {
+            "type": "image",
+            "settings": {
+              "isShowContent": "false",
+              "item_image_1_1": "shopify:\/\/shop_images\/Easter_banner.jpg",
+              "item_image_1_2": "shopify:\/\/shop_images\/easter_shouji.jpg",
+              "quan_url": "",
+              "url": "https:\/\/hozodesign.com\/collections\/all",
+              "btn_url": ""
+            }
+          },
+          "a94ccfd1-687d-4c5b-aea4-c2b0abc87259": {
+            "type": "image",
+            "settings": {
+              "isShowContent": "false",
+              "item_image_1_1": "shopify:\/\/shop_images\/H_neoD.jpg",
+              "item_image_1_2": "shopify:\/\/shop_images\/H_neoM.jpg",
+              "quan_url": "",
+              "url": "https:\/\/www.kickstarter.com\/projects\/hozodesign\/neoruler-rule-the-scales?ref=d7klta",
+              "btn_url": ""
+            }
+          }
+        },
+        "block_order": [
+          "242a6d96-ac35-4641-a720-2bc565e9658b",
+          "ee67688f-e65d-4297-85c3-47e8120b2d4a",
+          "a94ccfd1-687d-4c5b-aea4-c2b0abc87259"
+        ],
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+      "a228a1a4-9aca-4f2f-8613-81f704f7276c",
+      "4da38456-9036-473b-9868-d643b39f0b63",
+      "1664471784dbb69e59",
+      "16644721306d866a07",
+      "166447196524425efa",
+      "1664471946c4545fbb",
+      "1664472257761cda99",
+      "166447227716fe831c",
+      "73c55049-ec55-43de-8c02-21c6cc4ae722"
+    ],
+    "blocks": {
+      "1635505136ee26d214": {
+        "type": "shopify:\/\/apps\/form-builder-with-file-upload\/blocks\/app-embed\/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "16865981829950876834": {
+        "type": "shopify:\/\/apps\/icart-cart-drawer-cart-upsell\/blocks\/icart-block\/e651bbc2-5760-47d8-a513-2aa6ee3a9aa7",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  },
+  "presets": {
+    "Default": {
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+          }
+        },
+        "hero-1": {
+          "type": "hero",
+          "settings": {
+            "hero_size": "large",
+            "text_size": "large"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {
+          }
+        },
+        "feature-columns": {
+          "type": "feature-columns",
+          "blocks": {
+            "feature-columns-0": {
+              "type": "text_block",
+              "settings": {
+              }
+            },
+            "feature-columns-1": {
+              "type": "text_block",
+              "settings": {
+              }
+            },
+            "feature-columns-2": {
+              "type": "text_block",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "feature-columns-0",
+            "feature-columns-1",
+            "feature-columns-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "grid": 4
+          }
+        },
+        "hero-2": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "quotes": {
+          "type": "quotes",
+          "blocks": {
+            "quotes-0": {
+              "type": "quote",
+              "settings": {
+              }
+            },
+            "quotes-1": {
+              "type": "quote",
+              "settings": {
+              }
+            },
+            "quotes-2": {
+              "type": "quote",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "quotes-0",
+            "quotes-1",
+            "quotes-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "image-bar": {
+          "type": "image-bar",
+          "blocks": {
+            "image-bar-0": {
+              "type": "image",
+              "settings": {
+              }
+            },
+            "image-bar-1": {
+              "type": "image",
+              "settings": {
+              }
+            },
+            "image-bar-2": {
+              "type": "image",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "image-bar-0",
+            "image-bar-1",
+            "image-bar-2"
+          ],
+          "settings": {
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "link_list",
+              "settings": {
+              }
+            },
+            "footer-1": {
+              "type": "newsletter",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1"
+          ],
+          "settings": {
+            "show_payment_icons": true
+          }
+        }
+      },
+      "content_for_index": [
+        "hero-1",
+        "feature-row",
+        "feature-columns",
+        "collection",
+        "hero-2",
+        "quotes",
+        "image-bar"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#6d6d6d",
+      "color_sale_text": "#DA2F0C",
+      "color_borders": "#e4e4e4",
+      "color_button": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "color_small_button_text_border": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_text_field_border": "#909090",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#f8f8f8",
+      "type_header_font": "muli_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "muli_n4",
+      "type_base_size": 18,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo": ""
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "slideshow_height": "medium",
+            "text_size": "medium",
+            "autorotate": false,
+            "autorotate_speed": 5
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_vendor": false,
+            "show_share_buttons": true,
+            "media_size": "medium",
+            "enable_image_zoom": true,
+            "enable_video_looping": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": 2,
+            "rows": 2,
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {
+          }
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {
+          }
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "link_list": {
+              "type": "link_list",
+              "settings": {
+              }
+            },
+            "text": {
+              "type": "text",
+              "settings": {
+              }
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "link_list",
+            "text",
+            "newsletter"
+          ],
+          "settings": {
+            "color_footer_bg": "#f8f8f8",
+            "color_footer_text": "#6d6d6d"
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}

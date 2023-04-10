@@ -1,0 +1,172 @@
+{
+  "sections": {
+    "main": {
+      "type": "tech-section",
+      "blocks": {
+        "ada96034-c439-46d0-9ccf-763b4722b0ff": {
+          "type": "slider",
+          "settings": {
+            "img1": "shopify:\/\/shop_images\/MEAZOR3D-1.png"
+          }
+        },
+        "cbd7d7bc-b4c6-4a43-85b1-0184e61d62ab": {
+          "type": "slider",
+          "settings": {
+            "img1": "shopify:\/\/shop_images\/MEAZOR3D-2.png"
+          }
+        },
+        "fc9305d3-4e17-484f-9fa7-dc2a8b745766": {
+          "type": "first",
+          "settings": {
+            "txt1": "MEAZOR APP 2.0",
+            "url1": "Android 6.0 or above and requires minimum 4GB ram. iOS 13 or above. Adapt to Connection protocol: Bluetooth 4.0 wireless connection."
+          }
+        },
+        "b65d05d2-ef77-4fbd-998f-4ea5b0230e37": {
+          "type": "first",
+          "settings": {
+            "txt1": "Laser Distance",
+            "url1": "<p><b>Range:<\/b> 0.3ft-131ft (0.1m-40m)  <\/p>\n<p> <b>Resolution: <\/b> 0.04inch(1mm) <\/p>\n<p><b>Accuracy:<\/b> ±1\/16in (±2mm)\nin ideal circumstances* <\/p>\n\n<span>*Non-ideal circumstances such as outdoor with strong light, or under the bad reflective surface, the error will be superimposed with maximum +- 1‰ of the measurement distance.<\/span>"
+          }
+        },
+        "811b8e36-8660-4e98-bd21-4b21c2bd3937": {
+          "type": "first",
+          "settings": {
+            "txt1": "Scale Rolling Ruler",
+            "url1": "<p><b>Range:<\/b> 0-300feets (0-99meters)<\/p>\n<p> <b>Resolution: <\/b> 0.04inch(1mm) <\/p>\n<p><b>Accuracy:<\/b> ±1mm or ±0.2% \nin ideal circumstances.** <\/p>\n\n<span>**Non-ideal circumstances: The accuracy decreases on slippery, uneven, soft, curved surfaces. Inclination, misalignment and other human error factors will also affect the measurement accuracy.<\/span>"
+          }
+        },
+        "44f2bd2b-6c61-4c5f-9cc2-09d33914b82d": {
+          "type": "first",
+          "settings": {
+            "txt1": "Data Storage",
+            "url1": "200 built-in data\n\n<span>(Support Laser measure data &amp; Scale Rolling ruler data)<\/span>"
+          }
+        },
+        "a79de022-9bd0-454e-9dcb-9f7ef829708f": {
+          "type": "first",
+          "settings": {
+            "txt1": "Scales Measure",
+            "url1": "4 built-in modes with 57 scales"
+          }
+        },
+        "6bd4adfa-a552-4488-a1e9-62ca543d05b4": {
+          "type": "first",
+          "settings": {
+            "txt1": "Floor Plan Scanning",
+            "url1": "<p><b>Range:<\/b> 0-184ft×184ft (33,856ft²)<br>or 56m×56m (3136m²)<\/p>\n<p><b>Accuracy:<\/b> ±1in (±25mm) <br>\nin ideal circumstances* <\/p>\n\n<span>*Non-ideal circumstances such as outdoor with strong light, or under the bad reflective surface, the error will be superimposed with maximum ±2‰ of the measurement distance.<\/span>"
+          }
+        },
+        "3c2fb961-cb0e-449f-af1e-c79c09ac0396": {
+          "type": "first",
+          "settings": {
+            "txt1": "Curve Scanning",
+            "url1": "<p><b>Range:<\/b> Maximum Curve Length(start point-endpoint):<br> 82feets (25 meters)\n<\/p>\n<p><b>Resolution:<\/b> Angle Resolution : 1.0°, <br>Length Resolution: 0.04inch(+-1mm) <\/p>"
+          }
+        },
+        "34bada93-6668-4cb6-85cb-7844d147d6cf": {
+          "type": "first",
+          "settings": {
+            "txt1": "Level",
+            "url1": "<p><b>Range:<\/b> Dual axis ±90°\n<\/p>\n<p> <b>Resolution: <\/b>  0.1°\n<\/p>\n<p><b>Accuracy:<\/b> ±0.2°at 0° ~45°. ±0.4° at other angles<\/p>"
+          }
+        },
+        "cbe0f7f8-8cc0-4551-b499-03eeaf80ac6d": {
+          "type": "first",
+          "settings": {
+            "txt1": "Protractor",
+            "url1": "<p><b>Range:<\/b> 0~360°\n<\/p>\n<p> <b>Resolution: <\/b>  0.17°\n<\/p>\n<p><b>Accuracy:<\/b>  ±0.3°at 0°~180°, ±0.4° at other angles<\/p>\n<span>Support laser assist mode<\/span>"
+          }
+        },
+        "57de7730-c4b1-43f0-9306-54d2843c0f3b": {
+          "type": "first",
+          "settings": {
+            "txt1": "Pro-Laser",
+            "url1": "Pythagorean mode with triangle third-side and area calculation.\nArea mode with rectangular area calculation.\nExport drawing to apps"
+          }
+        },
+        "e164b0ca-f172-4f48-be68-289e3ae50b91": {
+          "type": "first",
+          "settings": {
+            "txt1": "Support Units",
+            "url1": "mm, cm, m <br>\nin (decimal) <br>\nin (fractional)<br>\nfeet, yard"
+          }
+        },
+        "40e7c852-91c7-4a4e-82bc-b05320575e21": {
+          "type": "two",
+          "settings": {
+            "txt1": "Display",
+            "url1": "1.3-inch diagonal IPS-backlit display, 240×240 resolution at 184 PPI.\nCovered with tempered glass capacitive touch screen."
+          }
+        },
+        "3b201203-b23b-43fb-b8b4-4e1a18dbadff": {
+          "type": "two",
+          "settings": {
+            "txt1": "Battery",
+            "url1": "Built-in 650 mAh lithium‑polymer battery. Support 5V <br> -1A USB-C Port Charging. Support fast charging protocol adapter."
+          }
+        },
+        "13ed5e35-b46c-4779-8d43-1fb549ae7dbf": {
+          "type": "two",
+          "settings": {
+            "txt1": "Battery Life",
+            "url1": "- 30 days battery life in stand-by mode <br>\n- 6 hours continuous use under comprehensive power consumption. <br>\n- 0.75 hours continuous use under maximum power consumption."
+          }
+        },
+        "4f554b87-9b78-4b95-a6e3-151dc4a89b9e": {
+          "type": "two",
+          "settings": {
+            "txt1": "Materials",
+            "url1": "Aluminum Alloy <br>\nSilicone Rubber  <br>\nGlass  <br>\nABS+PC plastic <br>\nPOM"
+          }
+        },
+        "f82f137d-16a8-47d4-9e1d-001451ad5e28": {
+          "type": "two",
+          "settings": {
+            "txt1": "Operating Environment",
+            "url1": "<p><strong> Operating temperature <\/strong><\/p>\n50° to 95° F (10° to 35° C) \n<br>\n<p> <strong> Relative humidity <\/strong><\/p>\n0% to 90% noncondensing"
+          }
+        },
+        "00e4d197-4bf3-4266-b050-15f9c8e7da24": {
+          "type": "two",
+          "settings": {
+            "txt1": "",
+            "url1": "<div class=\"bottom-section w-100 d-flex\">\n                                                <figure class=\"mb-0\">\n                                                    <img src=\"\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/t\/21\/assets\/caution.svg?v=128491250521187484951663869724\" class=\"img-fluid\" alt=\"caution\">\n                                                <\/figure>\n                                                <div class=\"paragraph text-start\">\n                                                    <p><strong> CAUTION: :Laser Radiation <\/strong><\/p>\n                                                    <p> <strong>Do not Stare into Beam<\/strong> <\/p>\n                                                    <p><strong> Please keep away from children<\/strong> <\/p>\n                                                <\/div>\n                                            <\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "ada96034-c439-46d0-9ccf-763b4722b0ff",
+        "cbd7d7bc-b4c6-4a43-85b1-0184e61d62ab",
+        "fc9305d3-4e17-484f-9fa7-dc2a8b745766",
+        "b65d05d2-ef77-4fbd-998f-4ea5b0230e37",
+        "811b8e36-8660-4e98-bd21-4b21c2bd3937",
+        "44f2bd2b-6c61-4c5f-9cc2-09d33914b82d",
+        "a79de022-9bd0-454e-9dcb-9f7ef829708f",
+        "6bd4adfa-a552-4488-a1e9-62ca543d05b4",
+        "3c2fb961-cb0e-449f-af1e-c79c09ac0396",
+        "34bada93-6668-4cb6-85cb-7844d147d6cf",
+        "cbe0f7f8-8cc0-4551-b499-03eeaf80ac6d",
+        "57de7730-c4b1-43f0-9306-54d2843c0f3b",
+        "e164b0ca-f172-4f48-be68-289e3ae50b91",
+        "40e7c852-91c7-4a4e-82bc-b05320575e21",
+        "3b201203-b23b-43fb-b8b4-4e1a18dbadff",
+        "13ed5e35-b46c-4779-8d43-1fb549ae7dbf",
+        "4f554b87-9b78-4b95-a6e3-151dc4a89b9e",
+        "f82f137d-16a8-47d4-9e1d-001451ad5e28",
+        "00e4d197-4bf3-4266-b050-15f9c8e7da24"
+      ],
+      "settings": {
+        "txt1": "Functions",
+        "url1": "https:\/\/hozodesign.com\/products\/meazor3d",
+        "txt2": "Hardware",
+        "url2": "https:\/\/hozodesign.com\/products\/meazor3d",
+        "txt3": "MEAZOR 3D",
+        "url3": "https:\/\/hozodesign.com\/products\/meazor3d"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

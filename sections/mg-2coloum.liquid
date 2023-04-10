@@ -1,0 +1,91 @@
+<section class="hozo_3dcoloum">
+    <div class="container">
+        <div class="hozo_Ferocioushed">
+            <h2>{{ section.settings.text1 }}</h2>
+        </div>
+        <div class="row">
+               {%  for block in section.blocks %}
+            <div class="col-md-6">
+                <div class="ferocious-heading">
+                    <h2>  {{ block.settings.text1 }}</h2>
+                    <p class="complex-pera">  {{ block.settings.text2 }}</p>
+                </div>
+                <div class="hozo__3dfirst" style="background:url('{{ block.settings.img1 | img_url : 'master' }}');">
+<!--                    <div class="learn-more-b">
+                        <a href="#">Learn more</a>
+                    </div>  -->
+                    <div class="hozo__btnsection-3d">
+                        <img
+                          class="lazyload"
+                          data-src="{{ block.settings.img2 | img_url : 'master' }}">
+                    </div>
+                </div>
+                <div class="corl__3dmobile--div"> 
+                    <h4>{{ block.settings.text3 }}</h4>
+                </div>   
+            </div>
+                 {% endfor %}
+        </div>
+    </div>  
+</section>
+
+
+{% schema %}
+  {
+    "name": "Meazor-2coloum",
+    "settings": [
+
+      {
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add heading"
+          }
+      
+    ],
+        "blocks": [
+      {
+        "type": "section",
+        "name": "section",
+        "settings": [
+
+         {
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add heading"
+          },
+          {
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add sub-heading"
+          },
+         {
+            "id": "img1",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+           {
+            "id": "img2",
+            "type": "image_picker",
+            "label": "Add Image (hover)"
+          },
+           {
+            "id": "text3",
+            "type": "text",
+            "label": "Add text"
+          }
+        ]
+      }
+    ],
+    "presets":[{
+ "name": "Meazor-2coloum",
+"category": "Custom Content"
+
+}]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,522 @@
+
+
+<style>
+  .section-3 {
+    padding: 100px 0 100px;
+    background: #fff;
+  }
+
+  .section-3 .title {
+    font-family: 'alibaba-heavy';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 75px;
+    line-height: 105px;
+    text-align: center;
+    color: #070a0f;
+  }
+
+  .section-3 .sub-title {
+    font-family: 'alibaba-heavy';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 75px;
+    line-height: 105px;
+    text-align: center;
+    color: #56b1fd;
+  }
+
+  .section-3 .inner-box {
+    max-width: 907px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .section-3 .inner-box .left-box {
+    width: 54.5%;
+  }
+
+  .section-3 .t-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f3f6f8;
+    border-radius: 15px;
+    padding: 42px 43px 46px;
+  }
+
+  .section-3 .t-box .span {
+    font-family: 'alibaba-heavy';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 33.6607px;
+    line-height: 43px;
+    /* or 127% */
+    text-align: center;
+    color: #070a0f;
+    margin-left: 24px;
+  }
+
+  .section-3 .t-box .top-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+  }
+
+  .section-3 .t-box .span span {
+    color: #56b1fd;
+  }
+
+  .section-3 .b-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 58px 52px;
+    background: #f3f6f8;
+    border-radius: 15px;
+    margin-top: 15px;
+  }
+
+  .section-3 .b-box .span {
+    font-family: 'alibaba-heavy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 35px;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+    color: #070a0f;
+    margin-bottom: 21px;
+  }
+
+  .section-3 .img-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .section-3 .t-box .top-box img {
+    width: 90px;
+  }
+
+  .section-3 .inner-box .right-box {
+    position: relative;
+    height: 531px;
+    width: 74%;
+    overflow: hidden;
+    margin-left: 16px;
+    background: #f3f6f8;
+    border-radius: 15px;
+  }
+
+  .section-3 .inner-box .right-box .item-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #f3f6f8;
+    box-sizing: border-box;
+    padding-top: 37px;
+  }
+
+
+
+  .section-3 .right-box .item-box div:first-child {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 37px;
+    /* identical to box height */
+    text-align: center;
+    color: #56b1fd;
+    margin-bottom: 7px;
+  }
+
+  .section-3 .right-box .item-box div:nth-child(2) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20.3125px;
+    line-height: 24px;
+    text-align: center;
+    color: #070a0f;
+  }
+
+  .section-3 .swiper-slide img {
+    width: 75%;
+    height: auto;
+  }
+
+  .section-3 .download_box{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding:11px 15px 17px;
+    background: #FFFFFF;
+    border-radius: 13.0682px;
+  }
+
+  .section-3 .download_box span{
+    font-family: 'alibaba-heavy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25.0497px;
+    line-height: 35px;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+    color: #070A0F;
+    margin-bottom: 7px;
+  }
+
+  .section-3 .download_box .link_box{
+    display:flex;
+    gap:10px;
+    
+  }
+
+  .section-3 .download_box a{
+    display:block;
+    width:50%;
+  }
+
+
+  @media (max-width: 900px) {
+    .section-3 {
+      padding: 100px 0 40px;
+    }
+    .section-3 .title {
+      font-size: 64px;
+      line-height: 90px;
+    }
+
+    .section-3 .sub-title {
+      font-size: 64px;
+      line-height: 90px;
+    }
+
+    .section-3 .inner-box {
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .section-3 .inner-box .right-box .item-box{
+      justify-content:space-between;
+    }
+
+    .section-3 .t-box .top-box {
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+    .section-3 .t-box {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 20px;
+    }
+    .section-3 .download_box{
+    width:50%;
+      
+    }
+
+    .section-3 .inner-box .left-box,.section-3 .inner-box .right-box{
+      width:100%;
+  }
+
+
+    .section-3 .t-box > img {
+      flex-direction: row;
+      align-items: center;
+    }
+    .section-3 .t-box > img {
+      width: 50%;
+    }
+    .section-3 .t-box .top-box > img {
+      width: 50%;
+    }
+    .section-3 .t-box .span {
+      font-size: 32px;
+      margin-left: 10px;
+    }
+    .section-3 .b-box {
+      padding: 19px;
+    }
+    .section-3 .img-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .section-3 .inner-box .right-box {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 700px) {
+      .section-3 .t-box .top-box > img {
+        width: 30%;
+      }
+      .section-3 .t-box .span {
+        font-size: 26px;
+        line-height: 43px;
+      }
+      .section-3 .t-box > img {
+        width: 40%;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .section-3 .t-box .top-box > img {
+        width: 30%;
+      }
+      .section-3 .t-box .span {
+        font-size: 22px;
+        line-height: 31px;
+      }
+      .section-3 .t-box > img {
+        width: 40%;
+      }
+
+      .section-3 .t-box .span {
+        font-size: 18px;
+        margin-left: 5px;
+      }
+  
+    }
+  }
+
+  @media (max-width:420px) {
+    .section-3{
+      padding: 37px 0 33px;
+    }
+    .section-3 .inner-box .left-box{
+      width:100%;
+    }
+    .section-3 .inner-box .right-box{
+      width:100%;
+      height:380px;
+    }
+
+    .section-3 .right-box .item-box div:first-child{
+      font-size:22px;
+      line-height:26px;
+    }
+    .section-3 .right-box .item-box div:nth-child(2){
+    
+      font-size: 14px;
+      line-height: 17px;
+    }
+    
+
+    .section-3 .title {
+      font-size: 35px;
+      line-height: 50px;
+    }
+
+    .section-3 .sub-title {
+      font-size: 35px;
+      line-height: 50px;
+    }
+
+    .section-3 .t-box .span {
+      font-size: 18px;
+      line-height:25px;
+      margin-left: 5px;
+    }
+
+    .section-3 .download_box{
+      width:190px;
+      padding: 4px 7px 7px;
+      border-radius: 10px;
+    }
+
+    .section-3 .download_box img{
+      width:100%;
+    }
+
+    .section-3 .download_box span{
+      font-size:12px;
+      line-height: 22px;
+      margin-bottom:2px;
+    }
+
+
+    .section-3 .b-box .span{
+      font-size:16px;
+      line-height:18px;
+      margin-bottom:11px;
+      }
+
+
+  }
+
+</style>
+
+<section class="section-3">
+  <div class="title">One Tap</div>
+  <div class="sub-title">From Paper To CAD</div>
+
+  <div class="inner-box">
+    <div class="left-box">
+      <div class="t-box">
+        <div class="top-box">
+          <img
+            src="https://cdn.shopifycdn.net/s/files/1/0549/7667/6078/files/MEAZOR_APP_LOGO_1.png?v=1673586614"
+            alt=""
+          >
+          <div class="span">
+            MEAZOR<br>
+            APP <span>2.0</span>
+          </div>
+        </div>
+
+        <div class="download_box">
+          <span>Free for lifetime</span>
+          <div class="link_box">
+            <a href="https://play.google.com/store/apps/details?id=com.yufei.robbiva">
+              <img
+                src="https://cdn.shopifycdn.net/s/files/1/0549/7667/6078/files/google-play.png?v=1664887704"
+                alt=""
+              >
+            </a>
+            <a href="https://app.apple.com/us/app/meazor/id1574713401">
+              <img
+                src="https://cdn.shopifycdn.net/s/files/1/0549/7667/6078/files/apple_app_store.png?v=1664887700"
+                alt=""
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="b-box">
+        <div class="span">Export</div>
+
+        <div class="img-box">
+          <img src="https://cdn.shopifycdn.net/s/files/1/0549/7667/6078/files/file-0.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="right-box">
+      <!-- Swiper -->
+      <div class="swiper-container" id="swiper-container1">
+        <div class="swiper-wrapper">
+
+          {% for block in section.blocks %}
+            <div class="swiper-slide">
+              <div class="item-box">
+                <div>{{ block.settings.text_1}}</div>
+                <div>{{ block.settings.text_2}}</div>
+                <img onload="loadImage()" src="{{ block.settings.slide_image | img_url:'master' }}">
+              </div>
+            </div>
+          {% endfor %}
+         
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+{% schema %}
+    {
+      "name": "h-neo_kslp_new_3",
+      "settings": [],
+      "max_blocks": 4,
+      "blocks": [
+        {
+          "type": "slide",
+          "name": "slide",
+       
+          "settings": [
+            {
+              "type": "html",
+              "id": "text_1",
+              "label": "轮播文字1",
+              "default":"Drawing Mode"
+            },
+            {
+              "type": "html",
+              "id": "text_2",
+              "label": "轮播文字2",
+              "default":"Only one click away from 2D to 3D Display"
+            },
+            {
+              "id": "slide_image",
+              "type": "image_picker",
+              "label": "轮播图片"
+            }
+            
+          ]
+        }
+      ],
+
+      "default": {
+        "blocks": [
+          {
+            "type": "slide"
+          },
+          {
+            "type": "slide"
+          },
+          {
+            "type": "slide"
+          },
+          {
+            "type": "slide"
+          }
+        ]
+      }
+    }
+{% endschema %}
+
+{% stylesheet %}
+
+
+{% endstylesheet %}
+
+
+<script>
+
+  var swiper = new Swiper('#swiper-container1', {
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    direction: 'vertical',
+    slidesPerView: 1,
+    spaceBetween: 30,
+    mousewheel: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+  
+  function loadImage (){
+
+    if($(window).width()<900){
+    
+      $('.section-3 .right-box').height($('.section-3 .right-box .item-box img').height()+37+24+7+37)
+    
+    }
+
+    
+  }
+
+  //opacity清除内容重叠bug
+</script>
+
+

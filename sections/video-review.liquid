@@ -1,0 +1,154 @@
+
+{% if block.type == 'text' %}
+<section class="how-do-section">
+  <div class="container">
+     <div class="hozo_Ferocioushed feature-heading">
+          {% if section.settings.banner_title %}
+            <h2>{{section.settings.banner_title}}</h2> 
+         {% endif %}
+      </div>
+     
+         
+         {% if section.settings.banner_sub_title %}
+           <h6>{{section.settings.banner_sub_title}}</h6>
+          {% endif %}
+          
+         {% if section.settings.banner_url %}
+             <div class="partner-affiated-program-banner-btn">
+              <a href="{{section.settings.banner_url}}">Join us and earn</a>
+             </div>
+         {% endif %}
+  <div class="how-do-i-earn-row">
+
+    {% for block in section.blocks %}
+       {% if block.type == 'text' %}
+  
+       <div class="how-do-i-earn-col-3">
+          <div class="how-do-i-earn-col-img">
+              <img src="{{block.settings.commition_img | img_url : '500x500'}}">
+          </div>
+          <h1>{{block.settings.text}}</h1>
+        </div>
+    
+      {% endif %}
+    {% endfor %}
+    
+  </div>
+</section>
+{% endif %}
+<section class="professionals-speak-section mt-5">
+  <div class="container-fluid">
+    <div class="hozo_Ferocioushed feature-heading">
+          {% if section.settings.banner_title %}
+            <h2>{{section.settings.banner_title}}</h2> 
+         {% endif %}
+      </div>
+    <div class="professionals-speak-row">
+      <div class="owl-carousel owl-theme professionals-speak-silder arrowEnable">
+      {% for block in section.blocks %}
+         {% if block.type == 'link' %}
+            <div class="item">
+              <div class="professionals-speak-silder-row">
+                <div class="professionals-speak-silder-col-12">
+                  <img src="{{block.settings.link_image | img_url : '500x500'}}">
+                  <div class="professionals-video-btn">
+                      <div class="video-button12 banner-inner-btn">
+                   <a href="#" data-link="{{block.settings.video_link}}" class="custom-btn-new video-button-new">Watch the film<i class="fa fa-play"></i></a>
+                 </div>
+                  </div>
+              
+                </div>
+
+              </div>
+            {% if block.settings.video_title != blank %}
+              <h4 class="video-review-title">{{block.settings.video_title}}</h4>
+            {% endif %}
+            </div>
+            
+         {% endif %}
+      {% endfor %}
+      
+    </div>
+        {% if section.settings.affiliate_id %}
+      <div class="need-help-section">
+        <h1>{{ section.settings.affiliate_id }}</h1>
+      </div>
+      {% endif %}
+
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Video Program",
+    "settings": [
+          {
+            "id": "banner_title",
+            "type": "textarea",
+            "label": "Add heading"
+          },
+          {
+            "id": "banner_sub_title",
+            "type": "html",
+            "label": "Add sub title"
+          },
+          {
+            "id": "banner_url",
+            "type": "url",
+            "label": "Add link"
+          },
+          {
+            "id": "affiliate_id",
+            "type": "html",
+            "label": "video Contact"
+          }
+      ],
+      "blocks": [{
+            "type": "text",
+            "name": "Commition Icon",
+            "settings": [
+              {
+                "id": "commition_img",
+                "type": "image_picker",
+                "label": "Image"
+              },
+              {
+                "id": "text",
+                "type": "textarea",
+                "label": "Add title"
+              }
+          ]
+        },
+       {
+          "type": "link",
+          "name": "Video Link",
+          "settings": [
+            {
+              "id": "video_link",
+              "type": "url",
+              "label": "Video link"
+            },
+            {
+              "id": "video_title",
+              "type": "text",
+              "label": "video title"
+            },
+            {
+              "id": "link_image",
+              "type": "image_picker",
+              "label": "Image"
+            }
+          ]
+        }
+        
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

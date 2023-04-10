@@ -1,0 +1,306 @@
+ <section class="Products">
+      <div class="container">
+        <div class="top-content5">
+          {% if collection.title == 'Products' %}
+            <h2 class="text-capitalize pb-4">All Products</h2>
+            {% else %}
+              <h2 class="text-capitalize">{{ collection.title }}</h2>
+            {% endif %}
+        </div>
+        {% comment %}
+          *********************************
+          ***** Costom template start *****
+          *********************************
+        {% endcomment %}
+        {% if collection.title == 'Products' %}
+         
+          <div class="tabs">
+            <ul id="tabs-nav">
+              {% for collection in collections %}
+                {% if collection.title != '主页' and collection.title != 'Accessories' %}
+                    <li class="{% if collection.title == 'All products' %}order-1 active{% else %}order-{{ forloop.index }}{% endif %}">
+                      <a href="#{{ collection.title | handleize  }}">
+                        {% if collection.title == 'All products' %}
+                            All
+                        {% elsif collection.title == 'MEAZOR 3D Accessories' %}
+                          MEAZOR 3D
+                        {% elsif collection.title == 'meazor-accessories' %}
+                          MEAZOR
+                        {% else %}
+                          {{ collection.title }}
+                        {% endif %}
+                      </a>
+                    </li>
+                {% endif %}
+              {% endfor %}
+            
+            </ul> <!-- END tabs-nav -->
+            <div id="tabs-content">
+               
+               {% for collection in collections %}
+                 {% if collection.title != '主页' and collection.title != 'Accessories' and collection.title != 'All products' %}
+                  <div id="{{ collection.title | handleize  }}" class="tab-content {% if collection.title == 'All products' %}show{% endif %}">
+                    <div class="row align-items-center collectionInfo">
+                      <div class="col-md-6 ">
+                       <div class="customCollectionImage">
+                         <a 
+                           href="
+                           {% if collection.title == 'MEAZOR 3D Accessories' %}
+                              /products/meazor3d
+                            {% elsif collection.title == 'meazor-accessories' %}
+                              /products/meazor
+                             {% elsif collection.handle == 'rollova' %}
+                              /products/rollova
+                            {% else %}
+                             {{ collection.url }}
+                             {% endif %}
+                           "
+                           >
+                         {% if collection.image %}
+                            <img src="{{collection.image | img_url:'600x400'}}" class="col-image">
+                         {% else %}
+                            <img src="{{collection.featured_image | img_url:'600x400'}}" class="featured_img">
+                         {% endif %}
+                         </a>
+                       </div>
+                      </div>
+                      <div class="col-md-6 customCollectionContent">
+                        <h2>
+                          {% if collection.title == 'MEAZOR 3D Accessories' %}
+                            MEAZOR 3D Collections
+                          {% elsif collection.title == 'meazor-accessories' %}
+                            MEAZOR Collections
+                          {% else %}
+                            {{ collection.title }} Collections
+                          {% endif %}
+                       </h2>
+                        <p class="lead">{{ collection.description }}</p>
+                        <a 
+                           href="
+                           {% if collection.title == 'MEAZOR 3D Accessories' %}
+                              /products/meazor3d
+                            {% elsif collection.title == 'meazor-accessories' %}
+                              /products/meazor
+                             {% elsif collection.handle == 'rollova' %}
+                              /products/rollova
+                            {% else %}
+                             {{ collection.url }}
+                             {% endif %}
+                           "
+                           class="btn btn-primary">Learn More</a>
+                          
+                      </div>
+                    </div>
+
+                   {% if collection.handle != 'rollova' %}
+                    <div class="row">
+                    {% for product in collections.all.products %}
+                      {% for coll in product.collections %}
+                          {% if coll.title == collection.title %} 
+                            <div class="col-6 col-md-4">
+                              <div class="Products-main wow fadeInUp" data-wow-duration="2s">
+                                <form method="post" action="/cart/add">
+                                  <div class="Products-imag">
+                                    <a href="{{product.url}}">    <img data-swift-lazy=1 loading=lazy src="{{product.featured_image | img_url:'300x300'}}"></a>
+                                  </div>
+                                  <div class="Products-content">
+                                    <h6>{{product.title}}</h6>
+                                    <div class="productListPrice">
+                                        <span>{{product.price | money}} {% if product.compare_at_price > product.price %}<span class="compare-price">{{product.compare_at_price | money}}</span>{% endif %}</span>
+                                      </div>
+                                      <div class="addTOCart">
+                                        <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                                        <input min="1" type="number" id="quantity" hidden name="quantity" value="1"/>
+                                        <input type="submit" value="Add to cart" class="btn btn-outline-primary" />
+                                      </div>
+                                  </div>
+                                  </form>
+                              </div>
+                            </div>
+                          {% endif %}
+                        {% endfor %}
+                      {% endfor %}
+                       {% if is_empty_collection %}
+                          <div class="col-md-12 grid__item small--text-center">
+                            <p class="text-center">{{ 'collections.general.no_matches' | t }}</p>
+                          </div>
+                        {% endif %}
+                      </div>
+                     {% endif %}
+                   
+                    
+                  </div>
+               {% endif %}
+
+                 {% if collection.title == 'All products' %}
+                   <div id="{{ collection.title | handleize  }}" class="tab-content {% if collection.title == 'All products' %}show{% endif %}">
+                   
+                         {% for clctn in collections %}
+                          {% if clctn.title != '主页' and clctn.title != 'Accessories' and clctn.title != 'All products' %}
+                            <div class="row align-items-center collectionInfo">
+                                <div class="col-md-6 ">
+                                   <div class="customCollectionImage">
+                                    <a 
+                                   href="
+                                   {% if clctn.title == 'MEAZOR 3D Accessories' %}
+                                      /products/meazor3d
+                                    {% elsif clctn.title == 'meazor-accessories' %}
+                                      /products/meazor
+                                     {% elsif clctn.handle == 'rollova' %}
+                                      /products/rollova
+                                    {% else %}
+                                     {{ clctn.url }}
+                                     {% endif %}
+                                   "
+                                   >
+                                     {% if clctn.image %}
+                                        <img src="{{clctn.image | img_url:'600x400'}}" class="col-image">
+                                     {% else %}
+                                        <img src="{{clctn.featured_image | img_url:'600x400'}}" class="featured_img">
+                                     {% endif %}
+                                    </a>
+                                   </div>
+                                </div>
+                                <div class="col-md-6 customCollectionContent">
+                                  <h2>
+                                    {% if clctn.title == 'MEAZOR 3D Accessories' %}
+                                      MEAZOR 3D Collections
+                                    {% elsif clctn.title == 'meazor-accessories' %}
+                                      MEAZOR Collections
+                                    {% else %}
+                                      {{ clctn.title }} Collections
+                                    {% endif %}
+                                 </h2>
+                                  <p class="lead">{{ clctn.description }}</p>
+                                  <a 
+                                   href="
+                                   {% if clctn.title == 'MEAZOR 3D Accessories' %}
+                                      /products/meazor3d
+                                    {% elsif clctn.title == 'meazor-accessories' %}
+                                      /products/meazor
+                                     {% elsif clctn.handle == 'rollova' %}
+                                      /products/rollova
+                                    {% else %}
+                                     {{ clctn.url }}
+                                     {% endif %}
+                                   "
+                                   class="btn btn-primary">Learn More</a>
+                                </div>
+                            </div>
+
+                           {% if clctn.handle != 'rollova' %}
+                             <div class="row">
+                                {% for product in collections.all.products %}
+                                  {% for coll in product.collections %}
+                                      {% if coll.title == clctn.title %} 
+                                        <div class="col-6 col-md-4">
+                                          <div class="Products-main wow fadeInUp" data-wow-duration="2s">
+                                            <form method="post" action="/cart/add">
+                                              <div class="Products-imag">
+                                                <a href="{{product.url}}">    <img data-swift-lazy=1 loading=lazy src="{{product.featured_image | img_url:'300x300'}}"></a>
+                                              </div>
+                                              <div class="Products-content">
+                                                <h6>{{product.title}}</h6>
+                                                <div class="productListPrice">
+                                                    <span>{{product.price | money}} {% if product.compare_at_price > product.price %}<span class="compare-price">{{product.compare_at_price | money}}</span>{% endif %}</span>
+                                                  </div>
+                                                  <div class="addTOCart">
+                                                    <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                                                    <input min="1" type="number" id="quantity" hidden name="quantity" value="1"/>
+                                                    <input type="submit" value="Add to cart" class="btn btn-outline-primary" />
+                                                  </div>
+                                              </div>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      {% endif %}
+                                    {% endfor %}
+                                  {% endfor %}
+                                   {% if is_empty_collection %}
+                                      <div class="col-md-12 grid__item small--text-center">
+                                        <p class="text-center">{{ 'collections.general.no_matches' | t }}</p>
+                                      </div>
+                                    {% endif %}
+                                </div>
+                              {% endif %}
+                             
+                            {% endif %}
+                           {% endfor %}
+                         </div>
+                       {% endif %
+                     {% endif %}
+                 
+              {% endfor %}
+             
+            </div> <!-- END tabs-content -->
+          </div> <!-- END tabs -->
+  
+          <script>
+            // Show the first tab and hide the rest
+            // $('#tabs-nav li:first-child').addClass('active');
+            // $('.tab-content').hide();
+            // $('.tab-content:first').show();
+            
+            // Click function
+            $('#tabs-nav li').click(function(){
+              $('#tabs-nav li').removeClass('active');
+              $(this).addClass('active');
+              $('.tab-content').removeClass('show');
+              
+              var activeTab = $(this).find('a').attr('href');
+              $(activeTab).addClass('show');
+              return false;
+            });
+          </script>
+          {% else %}
+            <div class="row">
+              {% comment %}
+                ********************************
+                ***** Costom template end ******
+                ********************************
+              {% endcomment %}
+             {%- assign limit = 16 -%}
+              {% for product in collection.products %}
+              <div class="col-6 col-md-4">
+                <div class="Products-main wow fadeInUp" data-wow-duration="2s">
+                  <div class="Products-imag">
+                    <a href="{{product.url}}">    <img data-swift-lazy=1 loading=lazy src="{{product.featured_image | img_url:'300x300'}}"></a>
+                  </div>
+                  <div class="Products-content">
+                    <h6>{{product.title}}</h6>
+                    <div class="productListPrice">
+                      <span>{{product.price | money}} {% if product.compare_at_price > product.price %}<span class="compare-price">{{product.compare_at_price | money}}</span>{% endif %}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+              
+             {% if is_empty_collection %}
+                <div class="grid__item small--text-center">
+                  <p class="text-center">{{ 'collections.general.no_matches' | t }}</p>
+                </div>
+              {% endif %}
+    
+              {%- if paginate.pages > 1 -%}
+                {% include 'pagination', paginate: paginate %}
+              {%- endif -%}
+      
+            </div>
+         {% endif %}
+        
+      </div> 
+    </section>
+
+{% schema %}
+  {
+    "name": "Collection template",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

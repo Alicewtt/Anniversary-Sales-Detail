@@ -1,0 +1,76 @@
+<section class="conatct-page-product">
+        <div class="container">
+            <div class="row">
+               {% for block in section.blocks%}
+                <div class="col-md-4">
+                    <div class="conatct-product-inner">
+                        <h2><img src="{{block.settings.img1 | img_url : 'master'}}"></h2>
+                        <div class="conatct-product-icon">
+                            <img src="{{block.settings.img | img_url : 'master'}}">
+                        </div>
+                        <div class="support-btn">
+                            <a href="{{block.settings.url1}}" class="bg-white">Product Support <i class="fa fa-commenting-o" aria-hidden="true"></i></a>
+                            <br>
+                            <a href="{{block.settings.url2}}" class="bg-black">FAQ & USER MANUAL <i class="fa fa-file-o" aria-hidden="true"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+              {% if block.settings.cl == 'yes' %}
+               <div class="col-md-4"></div>
+              {% endif %}
+              {% endfor %}
+               
+               
+              
+              
+            </div>
+        </div>
+    </section>
+
+
+{% schema %}
+  {
+    "name": "contact-product",
+    "settings": [],
+     "blocks": [
+      {
+        "type": "text",
+        "name": "review",
+        "settings": [
+{
+            "id": "img1",
+            "type": "image_picker",
+            "label": "Add Image(small)"
+          },
+          {
+            "id": "img",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+           {
+            "id": "url1",
+            "type": "url",
+            "label": "Add Product Support Url"
+          },
+            {
+            "id": "url2",
+            "type": "url",
+            "label": "Add FAQ & USER MANUAL Url"
+          },
+           {
+            "id": "cl",
+            "type": "text",
+            "label": "Do not edit( only for developer)"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

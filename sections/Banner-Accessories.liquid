@@ -1,0 +1,50 @@
+<section class="top-pick-new">
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class='col-md-12 h-100'>
+          <div class="top-pick-inner" style="background-image:url('{{ section.settings.banner_image | img_url:'master' }}')">
+          <h3>{{ section.settings.banner_title }}</h3>
+          <div class="comman-btn-new">
+<!--             https://hozodesign.com/collections/meazor-accessories -->
+            <a href="{{ section.settings.url}}">{{ section.settings.button_title}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+"name": "Banner Accessories",
+   "settings": [
+       {
+      "type": "html",
+      "id": "banner_title",
+      "label": "Banner Title"
+    },
+   {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Banner Image"
+    },
+       {
+      "type": "text",
+      "id": "button_title",
+      "label": "Button Title"
+    },
+      {
+      "type": "url",
+      "id": "url",
+      "label": "Url"
+    }
+ ],
+    
+"presets":[{
+ "name": "Banner Accessories",
+"category": "Banner Accessories"
+
+}]
+  }
+{% endschema %}

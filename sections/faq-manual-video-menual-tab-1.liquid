@@ -1,0 +1,31 @@
+<section class="artical_instructions">
+        <div class="container">
+            <div class="top-bar">
+                <h2>Videos</h2>
+            </div>
+            <div class="video-introduction">
+                <iframe width="" height="" src="{{section.settings.url1}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        </section> 
+
+
+{% schema %}
+  {
+    "name": "Video-menual-tab-1",
+    "settings": [
+{
+            "id": "url1",
+            "type": "url",
+            "label": "Add video url"
+          }
+
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

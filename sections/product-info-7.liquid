@@ -1,0 +1,117 @@
+<section class="hozo__prd-newslet">
+    <div class="container">
+        <div class="hozo__fot-nelet">
+          <a href="{{section.settings.url03}}"> <img src="{{section.settings.img1 | img_url : 'master'}}"></a>
+            <div class="hozo__mobile--newcnts">
+                <div class="hozo__subleft">
+                    <h2>{{section.settings.text1}}</h2>
+                    <p>{{section.settings.text2}}</p>
+                </div>
+            </div>
+               {%- assign formId = 'Contact_' | append: section.id -%}
+    {% form 'customer', id: formId, novalidate: 'novalidate', class: 'contact-form form-single-field' %}
+            <input type="hidden" name="contact[tags]" value="newsletter">
+                <div class="form-group">
+                     <input type="email"
+          name="contact[email]"
+          id="{{ formId }}-email"
+          required            
+          class="input-group__field{% if form.errors %} input--error{% endif %}"
+          value="{{ form.email }}"
+           placeholder="{%- if form.posted_successfully? -%}Thank you for joining HOZO community!{% else %}Leave Your Email
+          {%- endif -%}" 
+          aria-label="{{ 'general.newsletter_form.email_placeholder' | t }}"
+          aria-required="true"
+          autocorrect="off"
+          autocapitalize="off"
+          {% if form.errors %}
+            aria-invalid="true"
+            aria-describedby="{{ formId }}-email-error"
+            data-form-status
+          {% endif %}
+                       
+          >
+                </div>
+                <div class="form-group">
+                    <button type="submit"><img src="{{'msg-btn.svg' | asset_url}}"> Send</button>
+                </div>
+           {% endform %}
+           {%- if form.posted_successfully? -%}
+      
+  {% elsif form.errors != blank %}   
+     
+  {% for field in form.errors %}
+  
+      {% if field == 'email' %}
+      <p class="errroOnemail">  Please enter a correct email address to unlock the deal.</p>
+      {% else %}
+    
+      {% endif %}
+     {% endfor %}
+      {% else %}
+      {%- unless form.posted_successfully? -%}
+        <p class="errroOnemail  old-subscriber">This email id is already used.</p>
+      {% endunless %}
+{% endif %}
+        </div>
+        <div class="hozo__subcnt">
+            <div class="hozo__subleft">
+                <h2>{{section.settings.text3}}</h2>
+                <p>{{section.settings.text4}}</p>
+            </div>
+            <div class="hozo__subright">
+              {{section.settings.text5}}
+            </div>
+        </div>                    
+    </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Product-info-7",
+    "settings": [
+{
+            "id": "url03",
+            "type": "url",
+            "label": "Add icon url"
+          },
+{
+            "id": "img1",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+{
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add text"
+          },
+{
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add text"
+          },
+{
+            "id": "text3",
+            "type": "textarea",
+            "label": "Add text"
+          },
+ {
+            "id": "text4",
+            "type": "textarea",
+            "label": "Add text"
+          },
+
+ {
+            "id": "text5",
+            "type": "textarea",
+            "label": "Add text"
+          }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

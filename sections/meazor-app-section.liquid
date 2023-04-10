@@ -1,0 +1,81 @@
+<section class="meazor-app-section">
+  <div class="container">
+    <div class="measzor-top-heading">
+       <span>{{ section.settings.title }}</span>
+    </div>
+    <div class="meazor-app-inner">
+      <div class="meazor-app-col-2">
+        <div class="meazor-app-child-1">
+          <img src="{{ section.settings.fram_image | img_url:'master' }}">
+        </div>
+      </div>
+      <div class="meazor-app-col-6">
+        <div class="meazor-app-child-2">
+          <h2>{{ section.settings.MEAZOR_title }}</h2>
+          <h3> {{ section.settings.free_title }}</h3>
+        </div>
+      </div>
+      <div class="meazor-app-col-4">
+        <div class="meazor-app-child-3">
+          <a href="{{ section.settings.app_url }}"><img src="{{ section.settings.app_image | img_url:'master' }}"></a>
+          <a href="{{ section.settings.app_url1 }}"><img src="{{ section.settings.app_image1 | img_url:'master' }}"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+"name": "meazor-app-section",
+   "settings": [
+       {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+      {
+      "type": "image_picker",
+      "id": "fram_image",
+      "label": "Fram Image"
+    },
+      {
+      "type": "text",
+      "id": "MEAZOR_title",
+      "label": "MEAZOR Title"
+    },
+        {
+      "type": "text",
+      "id": "free_title",
+      "label": "Free Title"
+    },
+   {
+      "type": "url",
+      "id": "app_url",
+      "label": "App Url"
+    },
+       {
+      "type": "image_picker",
+      "id": "app_image",
+      "label": "Second App Image"
+    },
+      {
+      "type": "url",
+      "id": "app_url1",
+      "label": "Second App Url"
+    },
+   {
+      "type": "image_picker",
+      "id": "app_image1",
+      "label": "App Image1"
+    }
+     
+ ],
+    
+"presets":[{
+ "name": "meazor-app-section",
+"category": "meazor-app-section"
+
+}]
+  }
+{% endschema %}

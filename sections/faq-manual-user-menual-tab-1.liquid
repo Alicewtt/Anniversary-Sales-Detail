@@ -1,0 +1,80 @@
+<section class="artical_subh_user_menual ">
+            <div class="container">
+                <div class="subh_user_menual text-center">
+                    <div class="top-bar">
+                        <h2> user manual</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 m-auto">
+                            <div class="row">
+                              {% for block in section.blocks  %}
+                                <div class="col-md-3 col-6">
+                                    <ul>
+                                        <li><a href="{{block.settings.url1}}"><img src="{{block.settings.img1 | img_url : 'master'}}"><p>{{block.settings.text1}}</p></a></li>
+                                        <li><a href="{{block.settings.url2}}"><img src="{{block.settings.img2 | img_url : 'master'}}"><p>{{block.settings.text2}}</p></a></li>
+
+                                    </ul>
+                                </div>
+                              
+                             {% endfor %} 
+                              
+                  
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+{% schema %}
+  {
+    "name": "User menual-tab-1",
+    "settings": [],
+"blocks": [
+      {
+        "type": "text",
+        "name": "text",
+        "settings": [
+          {
+            "id": "img1",
+            "type": "image_picker",
+            "label": "Add logo (1)"
+          },
+          {
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add country name (1)"
+          },
+         {
+            "id": "url1",
+            "type": "url",
+            "label": "Add url (1)"
+          },
+         {
+            "id": "img2",
+            "type": "image_picker",
+            "label": "Add logo (2)"
+          },
+          {
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add country name (2)"
+          },
+         {
+            "id": "url2",
+            "type": "url",
+            "label": "Add url (2)"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

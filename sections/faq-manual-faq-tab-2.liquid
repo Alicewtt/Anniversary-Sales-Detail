@@ -1,0 +1,73 @@
+<section class="faq-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 m-auto">
+                        <div class="top-bar text-center pb-5">
+                        <h2>FAQ</h2>
+                    </div>
+
+                       
+                    </div>
+                    <div class="col-md-10 m-auto">
+                        <div class="faq" id="accordion">
+                          
+                          
+                          {% for block in section.blocks %}
+
+                            <div class="card">
+                                <div class="card-header" id="faqHeading-{{forloop.index}}">
+                                    <div class="mb-0">
+                                        <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-{{forloop.index}}" data-aria-expanded="true" data-aria-controls="faqCollapse-{{forloop.index}}">
+                                            <span class="badge">{{forloop.index}}</span>{{block.settings.text1}}
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div id="faqCollapse-{{forloop.index}}" class="collapse" aria-labelledby="faqHeading-{{forloop.index}}" data-parent="#accordion">
+                                    <div class="card-body">
+                                      <p>{{block.settings.text2}}</p> </div>
+                                </div>
+                            </div>
+                          
+                           
+                         {% endfor %}
+                          
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+{% schema %}
+  {
+    "name": "Faq-tab-2",
+    "settings": [
+],
+"blocks": [
+      {
+        "type": "text",
+        "name": "FAQ",
+        "settings": [
+          {
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add Title"
+          },
+         {
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add Content"
+          }
+
+
+
+]
+}]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,34 @@
+ <section class="contct-banner " style="background-image: url('{{'contact-banner.png' | asset_url}}');">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 m-auto">
+                    <div class="contct-banner-content">
+                        <h2>{{section.settings.text1}}</h2>
+                        <p>{{section.settings.text2}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% schema %}
+  {
+    "name": "contact-top-section",
+    "settings": [
+ {
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add Heading"
+          },
+           {
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add Paragrapgh"
+          }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,718 @@
+<style>
+  .section-1 {
+    position: relative;
+    background: #070a0f;
+    padding-top: 200px;
+  }
+  .section-1-1{
+    background: #070a0f;
+  }
+
+  .section-1 .sticky-box {
+    width: 0;
+    height:0;
+    position: sticky;
+    left: 0;
+    top:0;
+    z-index: 2;
+  }
+
+  .section-1 .sticky-box #ruler_canvas{
+    position: absolute;
+    top: 388px;
+
+  }
+  .section-1 .font-list .section_1_animate_target{
+    position:absolute;
+    height:10px;
+    left:0;
+    width:100%;
+    top:50%;
+    background:red;
+  }
+
+
+  .section-1 .swiper-box {
+    position: sticky;
+    background-color: #070a0f;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .section-1 .swiper-slide {
+    background-color: #070a0f;
+    padding-top: 90px;
+  }
+
+  .section-1 .item-box {
+    height: 100%;
+  }
+
+  .section-1 #myimg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 99;
+  }
+
+  .section-1 #ruler_animate{
+    width:100%;
+    height:400px;
+  }
+
+  .section-1 #myimg_1 {
+    height: 100vh;
+    max-width: auto;
+    width: auto;
+    max-width: unset;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .section-1 .font-list {
+
+  }
+
+  .section-1 .font-list .h-font-1 {
+    font-family: 'alibaba-heavy';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 75px;
+    line-height: 105px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .section-1 .font-list .h-font-2 {
+    font-family: 'alibaba-heavy';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 75px;
+    line-height: 105px;
+    text-align: center;
+    color: #56b1fd;
+  }
+
+  .section-1 .font-list .h-font-2.swiper_1 {
+    line-height: 56px;
+  }
+
+  .section-1 .font-list .h-font-3.swiper_1 {
+    line-height: 170px;
+    padding-top: 190px;
+  }
+
+  .section-1 .font-list .h-font-3 {
+    font-family: 'alibaba-heavy';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 109.375px;
+    line-height: 122px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .section-1 .font-list .h-font-4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 37.5px;
+    line-height: 44px;
+    text-align: center;
+
+    color: #ffffff;
+  }
+
+  .section-1 .font-list{
+    height: 2000vh;
+  }
+  .section-1 .font-list .h-font-item-box {
+    height: 400vh;
+    position: relative;
+  }
+
+  .section-1 .font-list .h-font-item-box:nth-child(1) {
+    height: 281vh;
+  
+  }
+  .section-1 .font-list .h-font-item-box:nth-child(2) {
+    height: 333vh;
+  
+  }
+  .section-1 .font-list .h-font-item-box:nth-child(3) {
+    height: 649vh;
+  
+  }
+  .section-1 .font-list .h-font-item-box:nth-child(4) {
+    height: 491vh;
+  }
+  .section-1 .font-list .h-font-item-box:nth-child(5) {
+    height: 246vh;
+  
+  }
+
+  
+
+  
+  .section-1 .h-font-item-box .h-font-item{
+    
+  }
+
+  .section-1 .font-list .h-font-item-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top:185px;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  .section-1 .font-list .h-font-item-box:nth-child(4) .h-font-item-inner{
+    padding-top:250px;
+  }
+  .section-1 .font-list .h-font-item-box:nth-child(5) .h-font-item-inner{
+    padding-top:250px;
+  }
+
+  .section-1 .font-list .h-font-item{
+    width:100%;
+  }
+
+  .section-1 .font-list .h-font-item li {
+    width: 36%;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: left;
+    margin-left: 64%;
+    margin-top: 20px;
+    list-style: circle;
+    font-size: 25px;
+    white-space:nowrap;
+  }
+
+  .section-1 .font-list .h-font-item li:first-child {
+    color: #56b1fd;
+  }
+
+
+
+  @media (max-width: 900px) {
+    .section-1 {
+      border-radius: 15px 15px 0 0;
+      margin: 30px 20px 0;
+    }
+
+    .section-1-1{
+      background: #070a0f;
+      display: block;
+    height: 70vh;
+    margin: 0 20px;
+    border-radius: 0 0 15px 15px;
+    }
+    .section-1 {
+      border-radius: 15px 15px 0 0;
+      margin: 30px 20px 0;
+      padding-top:60px;
+    }
+
+    .section-1 .font-list .h-font-item-inner{
+      padding-top:77px;
+    }
+
+    .section-1 .font-list .h-font-item-box:nth-child(4) .h-font-item-inner{
+    padding-top:177px;
+    }
+    .section-1 .font-list .h-font-item-box:nth-child(5) .h-font-item-inner{
+      padding-top:177px;
+      }
+
+      .section-1 .font-list .h-font-item li{
+        white-space:break-spaces;
+      }
+    .section-1 .font-list .h-font-3.swiper_1 {
+      line-height: 1;
+      padding-top: 0;
+  }
+    
+    .section-1 .font-list .h-font-item-box{
+      padding-top:0;
+    }
+
+    .section-1 .sticky-box #ruler_canvas{
+      transform: translate(-50%,0)rotate(270deg);
+      top:758px;
+      left:50vw;
+    }
+
+    .section-1 .font-list .h-font-1 {
+      font-size: 64px;
+      line-height: 90px;
+    }
+
+    .section-1 .font-list .h-font-2 {
+      font-size: 64px;
+      line-height: 90px;
+    }
+
+    .section-1 .font-list .h-font-3 {
+      font-size: 64px;
+      line-height: 90px;
+    }
+
+    .section-1 .font-list .h-font-4 {
+      font-size: 40px;
+      line-height: 90px;
+    }
+  }
+
+  @media (max-width:420px){
+
+    .section-1 .sticky-box #ruler_canvas{
+      position: absolute;
+      transform: translate(-50%,0)rotate(270deg);
+      top: 489px;
+      left:46vw;
+    }
+
+   
+    .section-1 .font-list .h-font-1{
+
+      font-size: 36px;
+      line-height: 51px;
+    }
+
+    .section-1 .font-list .h-font-2 {
+      font-size: 36px;
+      line-height: 51px;
+    }
+
+    .section-1 .font-list .h-font-3 {
+      font-size: 36px;
+      line-height: 51px;
+    }
+
+    .section-1 .font-list .h-font-4 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    .section-1 .font-list .h-font-item li{
+      font-size:13px;
+    }
+  }
+
+
+  @media (max-width:379px){
+    .section-1 .sticky-box #ruler_canvas{
+      top:472px;
+    }
+    .section-1 .font-list .h-font-2 {
+      font-size: 32px;
+      line-height: 51px;
+    }
+
+    .section-1 .font-list .h-font-3 {
+      font-size: 32px;
+      line-height: 51px;
+    }
+    .section-1-1 {
+      padding-bottom: 100px;
+      box-sizing: content-box;
+    }
+    
+  }
+
+</style>
+
+<div class="section-1" id="section-1" style="">
+
+     
+
+   <div class="sticky-box">
+    <canvas id="ruler_canvas"  style="background:rgba(255,255,255,0);" width="100%" height="390"></canvas>
+    <canvas id="section_1_mobile_ruler_canvas"  style="background:rgba(255,255,255,0);" ></canvas>
+  </div>
+  <div class="font-list">
+    <div class="h-font-item-box">
+      <div class="h-font-item-inner">
+      
+        <div class="h-font-1">Your All-In-ONE</div>
+        <div  class="h-font-2 swiper_1 ">NeoRuler</div>
+        <div   class="h-font-3 opacity_animation">12 inches / 30.5cm</div>
+      
+      </div>
+      
+    </div>
+    <div class="h-font-item-box ruler_left_animation">
+      <div class="h-font-item-inner">
+        <div class="h-font-1">Convert Unit</div>
+        <div  id="section_1_animate_2"  class="h-font-2">Without Hesitation</div>
+        <div class="h-font-4">Metric & Imperial — Easy to convert</div>
+        <ul class="h-font-item">
+          <li class="app"><span>Metric</span></li>
+          <li class="app"><span>Imperial Decimal</span></li>
+          <li class="app section_1_m_animate_1"><span>Imperial Fractional</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="h-font-item-box">
+      <div class="h-font-item-inner">
+
+        <div class="h-font-1">Customize Scale
+        </div>
+        <div  id="section_1_animate_3" class="h-font-2">Without Calculation</div>
+        <div class="h-font-4">Any Scale — Read at ease</div>
+        <ul class="h-font-item">
+          <li class="app"><span>60 built-in Scales</span></li>
+          <li class="app"><span>Customize <br> your own scale</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="h-font-item-box">
+      <div class="h-font-item-inner">
+        <div class="h-font-1">Measure
+        </div>
+        <div  id="section_1_animate_4" class="h-font-2">Without Limitation</div>
+        <div class="h-font-4"> </div>
+        <ul class="h-font-item">
+          <li class="app"><span>Left/Right
+          </span></li>
+          <li class="app"><span>Measure From Any Point</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="h-font-item-box">
+      <div class="h-font-item-inner">
+      
+        <div class="h-font-1">Divide
+        </div>
+        <div  id="section_1_animate_5" class="h-font-2">Without Frustration</div>
+        <div class="h-font-4"> </div>
+        <ul class="h-font-item">
+          <li class="app"><span>Equal Devide Space</span></li>
+          <li class="app"><span>Divide In Any Length</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-1-1"></div>
+
+
+
+
+
+{% schema %}
+    {
+      "name": "h-neo_kslp_new_1",
+      "settings": [
+
+        {
+          "type": "url",
+          "id": "url",
+          "label": "绿色logo跳转链接"
+        }
+      ]
+    }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+  
+  var tween_ruler_2=null
+  var swiper_section_real_index=null
+  var mousewheel_is_enabled = false
+  var swiper_section_1 = new Swiper("#section_1_swiper", {
+    direction: "vertical",
+
+    on: {
+      slideChangeTransitionStart: () => {
+        $("html,body").animate({scrollTop:$(".section-1").offset().top},600);
+        swiper_section_1_relly_index = swiper_section_1.realIndex
+        mousewheel_is_enabled = swiper_section_1.mousewheel.enabled
+        $('.sticky-box canvas').eq(swiper_section_1_relly_index).show().siblings().hide()
+      },
+      beforeLoopFix:function(){
+
+        console.log('before');
+        alert(mySwiper.allowSlideNext); //提示
+        mySwiper.allowSlideNext= false;//设置
+        alert(mySwiper.allowSlideNext); //提示
+      },
+    }
+  });
+
+  const loader = new PxLoader()
+  const images = []
+  var c_1=$("#ruler_canvas")[0];
+  
+  var ruler_canvas_width = $(window).width();
+  if($(window).width()>900){
+
+    var ruler_canvas_height = 0.26*ruler_canvas_width;
+    $('.section-1-1').css('height',ruler_canvas_height*3)
+  
+    $('#ruler_canvas').attr('width',ruler_canvas_width)
+    $('#ruler_canvas').attr('height',ruler_canvas_height)
+    for (let i = 0; i < 114; i++) {
+      images[i] = loader.addImage(`https://cdn.shopifycdn.net/s/files/1/0549/7667/6078/files/H_MO2_${('00' + (i + 1)).slice(-3)}.png`)
+    }
+    section_1_images_1=images.slice(0, 16);
+    section_1_images_2=images.slice(17, 35);
+    section_1_images_3=images.slice(35, 73);
+    section_1_images_4=images.slice(73, 100);
+    section_1_images_5=images.slice(100, 114);
+  }else{
+
+    var ruler_canvas_height = 0.45*$(window).width();
+    var ruler_canvas_width = ruler_canvas_height/0.3114;
+    $('.section-1-1').css('height',ruler_canvas_width*1.5)
+    $('#ruler_canvas').attr('width',ruler_canvas_width)
+    $('#ruler_canvas').attr('height',ruler_canvas_height)
+    for (let i = 0; i < 110; i++) {
+      images[i] = loader.addImage(`https://cdn.shopifycdn.net/s/files/1/0549/7667/6078/files/HH_M_${('00' + i).slice(-3)}.png`)
+    }
+    section_1_images_1=images.slice(0, 15);
+    section_1_images_2=images.slice(16, 31);
+    section_1_images_3=images.slice(32, 70);
+    section_1_images_4=images.slice(71, 97);
+    section_1_images_5=images.slice(98, 109);
+  }
+
+  console.log(images,section_1_images_1,section_1_images_2,section_1_images_3,section_1_images_4,section_1_images_5)
+
+  loader.start()
+
+  // TweenMax can tween any property of any object. We use this object to cycle through the array
+  var obj = { curImg: 0 };
+
+
+  // create tween PC
+  var section_tween_1_pc = TweenMax.to(obj, 32,
+    {
+      curImg: images.length - 1,	// animate propery curImg to number of images
+      roundProps: "curImg",	
+      repeat: 0,				// only integers so it can be used as an array index
+      immediateRender: true,			// load first image automatically 自动加载第一张图片
+      ease: Linear.easeNone,			// show every image the same ammount of time
+      onUpdate: function () {
+        let context = $('#ruler_canvas')[0].getContext('2d')
+        context.fillStyle = 'rgba(0, 255, 255, 0)';
+        context.clearRect(0,0,c_1.width,c_1.height);  
+        context.beginPath();  
+        context.fillRect(0,0,c_1.width,c_1.height);  
+        context.closePath();  
+        context.drawImage(images[obj.curImg], 0, 0, ruler_canvas_width, ruler_canvas_height);
+        
+        if(obj.curImg < 9){
+          $(".opacity_animation").stop().animate({opacity:1},1000)
+        }
+        if(obj.curImg > 9){
+          $(".opacity_animation").stop().animate({opacity:0},1000)
+        }
+        if(obj.curImg < 22 && obj.curImg > 17){
+          $('.section-1 .font-list li:eq(0)').css({ 'color': '#56B1FD' }).siblings().css({ 'color': 'rgba(255, 255, 255, 0.6)' })
+        }
+        if(obj.curImg < 29 && obj.curImg > 23){
+          $('.section-1 .font-list li:eq(1)').css({ 'color': '#56B1FD' }).siblings().css({ 'color': 'rgba(255, 255, 255, 0.6)' })
+        }
+        if(obj.curImg < 35 && obj.curImg > 30){
+          $('.section-1 .font-list li:eq(2)').css({ 'color': '#56B1FD' }).siblings().css({ 'color': 'rgba(255, 255, 255, 0.6)' })
+        }
+        if(obj.curImg < 49 && obj.curImg > 36){
+          $('.section-1 .font-list li:eq(3)').css({ 'color': '#56B1FD' }).siblings().css({ 'color': 'rgba(255, 255, 255, 0.6)' })
+        }
+        if(obj.curImg < 72 && obj.curImg > 50){
+          $('.section-1 .font-list li:eq(4)').css({ 'color': '#56B1FD' }).siblings().css({ 'color': 'rgba(255, 255, 255, 0.6)' })
+        }
+        if(obj.curImg < 83 && obj.curImg > 73){
+          $('.section-1 .font-list li:eq(5)').css({ 'color': '#56B1FD' }).siblings().css({ 'color': 'rgba(255, 255, 255, 0.6)' })
+        }
+        if(obj.curImg < 100 && obj.curImg > 84){
+          $('.section-1 .font-list li:eq(6)').css({ 'color': '#56B1FD' }).siblings().css({ 'color': 'rgba(255, 255, 255, 0.6)' })
+        }
+        if(obj.curImg < 107 && obj.curImg > 101){
+          $('.section-1 .font-list li:eq(7)').css({ 'color': '#56B1FD' }).siblings().css({ 'color': 'rgba(255, 255, 255, 0.6)' })
+        }
+        if(obj.curImg < 114 && obj.curImg > 108){
+          $('.section-1 .font-list li:eq(8)').css({ 'color': '#56B1FD' }).siblings().css({ 'color': 'rgba(255, 255, 255, 0.6)' })
+        }
+      },
+    }
+  );
+  console.log('==获取屏幕宽度================================>>>',$(window).width())
+  // build scene
+  var scene_PC = new ScrollMagic.Scene({
+    triggerElement: '.section-1',
+    duration: $('.section-1').height(),
+  })
+    .setTween(section_tween_1_pc)
+    .addTo(controller);
+
+    if($(window).width()<900 && $(window).width()>419){
+      new ScrollMagic.Scene({triggerElement: '.ruler_left_animation'})
+    .setTween("#ruler_canvas", 0.5, {"transform":"translate(-60%,0)rotate(270deg)","top": "788px"})
+    .addTo(controller);
+    }else if($(window).width()<420){
+
+      new ScrollMagic.Scene({triggerElement: '.ruler_left_animation'})
+    .setTween("#ruler_canvas", 0.5, {"transform":"translate(-60%,0)rotate(270deg)","top": "472px"})
+    .addTo(controller);
+
+    }
+    
+  // create tween 1
+  var section_tween_1 = TweenMax.to(obj, 1.5,
+    {
+      curImg: section_1_images_1.length - 1,	// animate propery curImg to number of images
+      roundProps: "curImg",				// only integers so it can be used as an array index
+      paused:true,
+      repeat: 0,									// repeat 3 times
+      immediateRender: true,			// load first image automatically
+      // ease: Linear.easeNone,			// show every image the same ammount of time
+      onUpdate: function () {
+        //  c.clearRect(0,0,c.width,c.height);
+        let context = $('#ruler_canvas')[0].getContext('2d')
+
+        context.fillStyle = 'rgba(0, 255, 255, 0)';
+          context.clearRect(0,0,c_1.width,c_1.height);  
+          context.beginPath();  
+          context.fillRect(0,0,c_1.width,c_1.height);  
+          context.closePath();  
+          context.drawImage(section_1_images_1[obj.curImg], 0, 0, ruler_canvas_width, ruler_canvas_height);
+
+      },
+    }
+  );
+
+  // create tween 2
+  var section_tween_2 = TweenMax.to(obj, 10.5,
+    {
+      curImg: section_1_images_2.length - 1,	// animate propery curImg to number of images
+      roundProps: "curImg",				// only integers so it can be used as an array index
+      paused:true,
+      repeat: 0,									// repeat 3 times
+      immediateRender: true,			// load first image automatically
+      // ease: Linear.easeNone,			// show every image the same ammount of time
+      onUpdate: function () {
+        //  c.clearRect(0,0,c.width,c.height);  
+        let context = $('#ruler_canvas')[0].getContext('2d')
+
+        context.fillStyle = 'rgba(0, 255, 255, 0)';
+          context.clearRect(0,0,c_1.width,c_1.height);  
+          context.beginPath();  
+          context.fillRect(0,0,c_1.width,c_1.height);  
+          context.closePath();  
+          context.drawImage(section_1_images_2[obj.curImg], 0, 0, ruler_canvas_width, ruler_canvas_height)
+
+      },
+    }
+  );
+
+  // create tween 3
+  var section_tween_3 = TweenMax.to(obj, 1.5,
+    {
+      curImg: section_1_images_3.length - 1,	// animate propery curImg to number of images
+      roundProps: "curImg",				// only integers so it can be used as an array index
+      paused:true,
+      repeat: 0,									// repeat 3 times
+      immediateRender: true,			// load first image automatically
+      // ease: Linear.easeNone,			// show every image the same ammount of time
+      onUpdate: function () {
+        //  c.clearRect(0,0,c.width,c.height);  
+        let context = $('#ruler_canvas')[0].getContext('2d')
+
+        context.fillStyle = 'rgba(0, 255, 255, 0)';
+          context.clearRect(0,0,c_1.width,c_1.height);  
+          context.beginPath();  
+          context.fillRect(0,0,c_1.width,c_1.height);  
+          context.closePath();  
+          context.drawImage(section_1_images_3[obj.curImg], 0, 0, ruler_canvas_width, ruler_canvas_height)
+
+      },
+    }
+  );
+
+  // create tween 4
+  var section_tween_4 = TweenMax.to(obj, 1.5,
+    {
+      curImg: section_1_images_4.length - 1,	// animate propery curImg to number of images
+      roundProps: "curImg",				// only integers so it can be used as an array index
+      paused:true,
+      repeat: 0,									// repeat 3 times
+      immediateRender: true,			// load first image automatically
+      // ease: Linear.easeNone,			// show every image the same ammount of time
+      onUpdate: function () {
+        //  c.clearRect(0,0,c.width,c.height);  
+        let context = $('#ruler_canvas')[0].getContext('2d')
+
+        context.fillStyle = 'rgba(0, 255, 255, 0)';
+          context.clearRect(0,0,c_1.width,c_1.height);  
+          context.beginPath();  
+          context.fillRect(0,0,c_1.width,c_1.height);  
+          context.closePath();  
+          context.drawImage(section_1_images_4[obj.curImg], 0, 0, ruler_canvas_width, ruler_canvas_height);
+
+      },
+    }
+  );
+
+  // create tween 5
+  var section_tween_5 = TweenMax.to(obj, 1.5,
+    {
+      curImg: section_1_images_5.length - 1,	// animate propery curImg to number of images
+      roundProps: "curImg",				// only integers so it can be used as an array index
+      paused:true,
+      repeat: 0,									// repeat 3 times
+      immediateRender: true,			// load first image automatically
+      // ease: Linear.easeNone,			// show every image the same ammount of time
+      onUpdate: function () {
+        //  c.clearRect(0,0,c.width,c.height);  
+        let context = $('#ruler_canvas')[0].getContext('2d')
+
+        context.fillStyle = 'rgba(0, 255, 255, 0)';
+          context.clearRect(0,0,c_1.width,c_1.height);  
+          context.beginPath();  
+          context.fillRect(0,0,c_1.width,c_1.height);  
+          context.closePath();  
+          context.drawImage(section_1_images_5[obj.curImg], 0, 0, ruler_canvas_width, ruler_canvas_height)
+      },
+    }
+  );
+
+  function submitForm (e) {
+    console.log('滚动',e.deltaX, e.deltaY);
+
+    var section_1_window_top = $('.section-1').get(0).getBoundingClientRect().top
+
+    console.log(swiper_section_real_index,e.deltaY,'sectino_高度'+section_1_window_top,'屏幕高度'+ ($(window).height()),'具体屏幕顶部'+(section_1_window_top-(($(window).height()))))
+
+    if(section_1_window_top<(($(window).height())/2)&&section_1_window_top>5&&e.deltaY > 0){
+      
+      $("html,body").animate({scrollTop:$(".section-1").offset().top},600,function(){
+        
+      })
+     
+    }
+    return
+    if(swiper_section_real_index==0&&e.originalEvent.deltaY < 0){
+      $("html,body").animate({scrollTop:$(".section-0").offset().top-50},600);
+    }
+
+    if(swiper_section_real_index==3&&e.originalEvent.deltaY > 0){
+      $("html,body").animate({scrollTop:$(".section-2").offset().top-50},600);
+    }
+  } 
+
+{% endjavascript %}

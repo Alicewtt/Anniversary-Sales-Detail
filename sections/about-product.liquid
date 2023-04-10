@@ -1,0 +1,223 @@
+<section class="about-product">
+  <div class="container">
+    <div class="head-section">
+      <h2>{{ section.settings.title }}</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 d-flex">
+        <div class="about-product-inner flex-fill">
+          <div class="about-product-image">
+            <a href="{{ section.settings.pro_url1 }}">
+              <img src="{{ section.settings.image1 | img_url:'master' }}" class="img-fluid">
+            </a>
+          </div>
+          <div class="about-product-content">
+            <a href="{{ section.settings.pro_url1 }}"><p>{{ section.settings.protitle1 }} <i class="fa fa-angle-right"></i></p></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex">
+        <div class="about-product-inner flex-fill">
+          <div class="about-product-image">
+            <a href="{{ section.settings.pro_url2 }}">
+              <img src="{{ section.settings.image2 | img_url:'master' }}" class="img-fluid">
+            </a>
+          </div>
+          <div class="about-product-content">
+            <a href="{{ section.settings.pro_url2 }}"><p>{{ section.settings.protitle2 }} <i class="fa fa-angle-right"></i></p></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex">
+        <div class="about-product-inner flex-fill">
+          <div class="about-product-image">
+            <a href="{{ section.settings.pro_url3 }}">
+              <img src="{{ section.settings.image3 | img_url:'master' }}" class="img-fluid">
+            </a>
+          </div>
+          <div class="about-product-content">
+            <a href="{{ section.settings.pro_url3 }}"><p>{{ section.settings.protitle3 }} <i class="fa fa-angle-right"></i></p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-product about-product1">
+  <div class="container">
+    <div class="head-section">
+      <h2>{{ section.settings.about_title }}</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 d-flex">
+        <div class="about-product-inner flex-fill">
+          <div class="about-product-image">
+            <a href="{{ section.settings.ship_url }}">
+              <img src="{{ section.settings.ship_image | img_url :'master' }}" class="img-fluid">
+            </a>
+          </div>
+          <div class="about-product-content">
+            <a href="{{ section.settings.ship_url }}"><p>{{ section.settings.ship_title }} <i class="fa fa-angle-right"></i></p></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex">
+        <div class="about-product-inner flex-fill">
+          <div class="about-product-image">
+            <a href="{{ section.settings.return_url }}">
+              <img src="{{ section.settings.return_image | img_url :'master' }}" class="img-fluid">
+            </a>
+          </div>
+          <div class="about-product-content">
+            <a href="{{ section.settings.return_url }}"><p>{{ section.settings.return_title }} <i class="fa fa-angle-right"></i></p></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex">
+        <div class="about-product-inner flex-fill">
+          <div class="about-product-image">
+            <a href="{{ section.settings.warranty_url }}">
+              <img src="{{ section.settings.warranty_image | img_url :'master' }}" class="img-fluid">
+            </a>
+          </div>
+          <div class="about-product-content">
+            <a href="{{ section.settings.warranty_url }}"><p> {{ section.settings.Warranty_title }} <i class="fa fa-angle-right"></i></p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+"name": "about-product",
+   "settings": [
+       {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },  
+   {
+      "type": "text",
+      "id": "protitle1",
+      "label": "Product Title"
+    },
+     {
+      "type": "url",
+      "id": "pro_url1",
+      "label": "Url"
+    },
+     {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "Image"
+    },
+
+
+      {
+      "type": "text",
+      "id": "protitle2",
+      "label": "Product Title"
+    },
+     {
+      "type": "url",
+      "id": "pro_url2",
+      "label": "Url"
+    },
+     {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Image"
+    },
+
+
+
+      {
+      "type": "text",
+      "id": "protitle3",
+      "label": "Product Title"
+    },
+     {
+      "type": "url",
+      "id": "pro_url3",
+      "label": "Url"
+    },
+     {
+      "type": "image_picker",
+      "id": "image3",
+      "label": "Image"
+    },
+ {
+      "type": "text",
+      "id": "about_title",
+      "label": "About Title"
+    },
+
+
+     {
+      "type": "url",
+      "id": "return_url",
+      "label": "Return Url"
+    },
+     {
+      "type": "image_picker",
+      "id": "ship_image",
+      "label": "Ship Image"
+    },
+ {
+      "type": "text",
+      "id": "ship_title",
+      "label": "Ship Title"
+    },
+
+
+    {
+      "type": "url",
+      "id": "ship_url",
+      "label": "Ship Url"
+    },
+     {
+      "type": "image_picker",
+      "id": "return_image",
+      "label": "Return Image"
+    },
+ {
+      "type": "text",
+      "id": "return_title",
+      "label": "Return Title"
+    },
+
+
+
+     {
+      "type": "url",
+      "id": "warranty_url",
+      "label": "Warranty Url"
+    },
+     {
+      "type": "image_picker",
+      "id": "warranty_image",
+      "label": "Warranty Image"
+    },
+ {
+      "type": "text",
+      "id": "Warranty_title",
+      "label": "Warranty Title"
+    }
+     
+ ],
+    
+"presets":[{
+ "name": "about-product",
+"category": "about-product"
+
+}]
+  }
+{% endschema %}

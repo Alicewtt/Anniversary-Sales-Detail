@@ -1,0 +1,90 @@
+<section class="accessories-section">
+    <div class="container">
+        <div class="access-heading">
+           <h2>Accessories</h2>
+           <img src="{{'accessimg.png' | asset_url}}">
+        </div>
+         <div class="Common_outer">
+          <div class="owl-carousel owl-theme wow fadeInUp" id="Bestseller-slider">
+               {% for product in collections[section.settings.getcoll].products %}
+            <div class="item">
+              <div class="row">
+                <div class="col-md-12">
+                 <div class="Top_slidemain">
+                    <div class="Top_slideimg2">
+                      <a href="{{product.url}}"><img src="{{product.featured_image | img_url : 'master'}}" class="img-fluid"></a>
+                    </div>
+                    <div class="Bestseller_slidetext">
+                       <h6>{{product.title}}</h6>
+                       <p>{% if product.compare_at_price_max > product.price %}{{product.compare_at_price | money}}{% endif %}</p><span>{{ product.price | money}}</span>
+                       <div class="add-proquantity">
+                           <form method="post" action="/cart/add">
+                           	<div class="qty mt-4 float-left">
+                             
+                          <span class="minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+
+                   <input id="quantity" class="wtv_oks" name="quantity"  type="text" value="1"/ >
+
+                  <span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                            </div>
+
+                     <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                      <div class="shopnow-btn float-right">
+                        <button type="submit" class="buy-btn">ADD TO CART</button>
+                        
+                              </div>
+                             </form>
+                            </div>
+                       </div>
+
+                    </div>
+                 </div>
+                </div>
+              </div>
+            
+            {%  endfor  %}
+        
+            
+            
+
+          </div>
+        </div>
+    </div>
+</section>
+<div class="shop-box">
+    <a href="{{section.settings.url1}}" class="shopbtn Meet2">SHOP MORE</a>
+</div>
+
+
+
+
+
+{% schema %}
+  {
+"name": "meazore-accessories",
+   "settings": [
+        
+    
+         
+         {
+            "id": "getcoll",
+            "type": "collection",
+            "label": "Add collection"
+          },
+            {
+            "id": "url1",
+            "type": "url",
+            "label": "Add SHOP MORE"
+          }
+         
+          
+        
+      
+    ]
+  }
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

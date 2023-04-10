@@ -1,0 +1,75 @@
+<section class="feature-product" style="background-image: url('{{section.settings.image | img_url :'master' }}');">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-8">
+                  <div class="feature-img mt-5">
+                      <img src="{{section.settings.image1 | img_url :'master' }}">
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="feature-content">
+                      <h2>{{section.settings.text1}}</h2>
+                      <p>{{section.settings.text2}}</p>
+                      <div class="secfeature-cttn">
+                          <img src="{{'565.png' | asset_url }}">
+                      </div>
+                      <div class="all-append-btn">
+                           <a href="{{section.settings.url1}}">{{section.settings.text3}}</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+
+{% schema %}
+  {
+    "name": "Home-featured-one",
+    "settings": [
+         {
+            "id": "image",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+             {
+            "id": "image1",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+          {
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add Heading"
+          },
+
+        {
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add paragrapgh"
+          },
+          {
+            "id": "text3",
+            "type": "textarea",
+            "label": "Add button text"
+          },
+           {
+            "id": "url1",
+            "type": "url",
+            "label": "Add button url"
+          }
+],
+"presets":[{
+ "name": "home-featured-one",
+"category": "Custom Content"
+
+}]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

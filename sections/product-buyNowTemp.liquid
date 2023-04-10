@@ -1,0 +1,103 @@
+ {{'meazor.css' | asset_url | stylesheet_tag }}
+  {{'meazor-responsive.css' | asset_url | stylesheet_tag }}
+
+
+
+<section class="mezor__product-imgs">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="mezor__product-singleimg"> 
+                    <div class="mezor__product-titlecnts mobile__new-design-g" style="display:none;"> 
+                        <img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/MEAZOR3D_MONO_L_1_1.png?v=1663157944">
+                      
+                        <h2>{{ product.metafields.custom.subtitle }}</h2> 
+                        <p>{{ section.settings.text2}}</p>
+                    </div>
+                  
+                    <div class="mezor__product-3dpremium"> 
+                        <!-- <img src="assets/img/meazor-3dfirst.png"> -->
+                       <!-- <img src="{{ section.settings.img1 | img_url : 'master' }}"> -->
+                       <img src="{{ product.featured_media | img_url : 'master' }}">
+                    </div> 
+                    <div class="mezor__product-3dmezor"> 
+                        <!-- <img src="assets/img/meazor-3d-img.png"> -->
+                        <!--<img src="{{ section.settings.img2 | img_url : 'master' }}">-->
+                        
+                     
+
+                    </div>     
+                </div>   
+            </div> 
+            <div class="col-md-6">
+                <div class="mezor__product-singlecnts"> 
+                    <div class="mezor__product-titlecnts small_img-rvd2" id="myDivbBuynow"> 
+                        <img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/MEAZOR3D_MONO_L_1_1.png?v=1663157944">
+                   
+                        <h2>{{ product.metafields.custom.subtitle }}</h2> 
+                        <p>{{ product.metafields.custom.subtitle2}}</p>
+                      
+                     
+                        <div class="mazor__3d-price"><span style="font-size:22px" ></span> {{product.price | money}}</div>
+                       
+                        <button type="button" {% unless product.available %} disabled {% endunless %}  price="{{ product.price | money_without_currency }}" class="bunowtemplate" id="{{ product.variants.first.id }}">{% if product.available %}BUY NOW {% else %} SOLD OUT {% endif %}</button>
+                        
+                    
+                    </div> 
+                    
+
+                  
+                </div>  
+            </div> 
+        </div>     
+    </div>  
+</section>
+
+ 
+{% schema %}
+  {
+    "name": "Buy-now-template",
+    "settings": [
+  {
+            "id": "img1",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+      {
+            "id": "img3",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+          {
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add text"
+          },
+
+        {
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add text"
+          },
+       
+           
+         {
+            "id": "p1",
+            "type": "product",
+            "label": "Add product"
+          }
+  
+    ],
+    "presets":[{
+ "name": "Buy-now-template",
+"category": "Custom Content"
+
+}]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

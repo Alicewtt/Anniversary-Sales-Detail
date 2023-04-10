@@ -1,0 +1,406 @@
+<style>
+  .section-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+  }
+
+  .section-4 .inner-box{
+    display:flex;
+    align-items:center;
+    margin:0 auto;
+    max-width:907px;
+  }
+
+  .section-4 .inner-box .left-swiper,.section-4 .inner-box .right-swiper{
+    width:50%;
+    height:700px;
+    overflow:hidden;
+  }
+
+  .section-4 .right-box{
+      {% comment %} height: 700px;
+      overflow:hidden;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center; {% endcomment %}
+  }
+
+  .section-4 .right-box .font-1 {
+    font-family: 'alibaba-heavy';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 75px;
+    line-height: 105px;
+    /* identical to box height */
+    text-align: center;
+    color: #070A0F;
+  }
+
+  .section-4 .right-box .font-2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+    color: #070A0F;
+  }
+
+  .section-4 .right-box .font-3 {
+    font-family: 'alibaba-heavy';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 75px;
+    line-height: 105px;
+    text-align: center;
+    color: #56B1FD;
+  }
+
+  .section-4 .right-box .font-3 span{
+    font-size:24px;
+  }
+
+  .section-4 .right-box .font-4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 33.5px;
+    line-height: 44px;
+    text-align: center;
+    color: #070A0F;
+
+  }
+
+
+  {% comment %} .section-4 .section_4_swiper_1 {
+    height: 80%;
+    width: 100%;
+  } {% endcomment %}
+
+  {% comment %} .section-4 .section_4_swiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  } {% endcomment %}
+
+  {% comment %} .section-4 .section_4_swiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  } {% endcomment %}
+
+  {% comment %} .section-4 .section_4_swiper .swiper-slide-thumb-active {
+    opacity: 1;
+  } {% endcomment %}
+
+  {% comment %} .section-4 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } {% endcomment %}
+
+  .section-4 .h-item-box{
+    display:flex;
+    align-items:center;
+  
+  }
+  .section-4 .h-item-box>img{
+    width:50%;
+  }
+  .section-4 .h-item-box .right-box{
+    width:50%;
+  }
+  .section-4 .inner-box{
+    height:700px;
+  }
+
+  @media (max-width:900px) {
+
+    .section-4 .inner-box {
+      display:flex;
+      flex-direction:column;
+      max-width:100%;
+      width:100%;
+    }
+    .section-4 .inner-box .left-swiper,.section-4 .inner-box .right-swiper{
+      width:100%;
+      height:800px;
+      overflow:hidden;
+    }
+
+
+    .section-4 .h-item-box {
+      flex-direction: column-reverse;
+  }
+
+  .section-4 .h-item-box .right-box{
+    width:100%;
+  }
+
+    .section-4 .right-box .font-1 {
+
+      font-size: 64px;
+      line-height: 90px;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .section-4 .right-box .font-2 {
+      font-size: 48px;
+      line-height: 56px;
+    }
+
+    .section-4 .right-box .font-3{
+      font-size: 96px;
+      line-height: 134px;
+    }
+
+    .section-4 .right-box .font-4{
+      font-size: 36px;
+    line-height: 42px;
+    }
+
+    .section-4 {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 20px;
+    }
+
+
+
+    .section-4 .left-box img {
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
+  @media (max-width:420px) {
+
+    .section-4 .inner-box{
+      height:800px;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+
+    .section-4 .h-item-box .right-box{
+      width:100%;
+      height:auto;
+    }
+
+    .section-4 .h-item-box>img{
+      width:72%;
+    }
+
+    .section-4 .right-box .font-1 {
+      font-size: 35px;
+      line-height: 50px;
+        margin-bottom: 5px;
+    }
+    .section-4 .right-box .font-2 {
+      font-size: 26px;
+      line-height: 31px;
+    }
+    .section-4 .right-box .font-3 {
+      font-size: 53px;
+      line-height: 75px;
+    }
+    .section-4 .right-box .font-4 {
+      font-size: 20px;
+      line-height: 24px;
+        
+    }
+  }
+
+
+ 
+
+</style>
+<style>
+  .section-4 .inner-box{
+    height:auto;
+  }
+  .h-scroll-box{
+    width:100%;
+  }
+
+  .h-scroll-box .h-scroll-inner{
+  
+    height:100vh;
+    padding-top:50px;
+    position:sticky;
+    top:0;
+    left:0;
+    box-sizing:border-box;
+  }
+</style>
+<section class="section-4">
+      
+      <div class="h-scroll-box">
+        <div class="h-scroll-inner">
+           <div
+        style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+        class="swiper section_4_swiper_3"
+        >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+
+            <div class="h-item-box">
+              <img src="https://cdn.shopifycdn.net/s/files/1/0549/7667/6078/files/section4-img_1.png">
+              <div
+                class="right-box ani"
+                swiper-animate-effect="fadeInUp"
+                swiper-animate-duration="0.8s"
+                swiper-animate-delay="0s"
+              >
+                <h2 class="font-1">Why NEO?</h2>
+                <div class="font-2">Easy to Read</div>
+                <div class="font-3">1.14 inch</div>
+                <div class="font-4" style="white-space:nowrap">Backlit True-color LCD Display</div>
+              </div>
+              
+            </div>
+
+            
+
+          </div>
+          <div class="swiper-slide">
+
+            <div class="h-item-box">
+              <img src="https://cdn.shopifycdn.net/s/files/1/0549/7667/6078/files/section4-img_2.png">
+              <div
+                class="right-box ani"
+                swiper-animate-effect="fadeInUp"
+                swiper-animate-duration="0.8s"
+                swiper-animate-delay="0s"
+              >
+                <h2 class="font-1">Why NEO?</h2>
+                <div class="font-2">Real Accuracy</div>
+                <div class="font-3">±0.1mm<span>(0.002”)</span> </div>
+                <div class="font-4">Measurement Resolution</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+
+            <div class="h-item-box">
+              <img src="https://cdn.shopifycdn.net/s/files/1/0549/7667/6078/files/section4-img_3.png">
+              <div
+                class="right-box ani"
+                swiper-animate-effect="fadeInUp"
+                swiper-animate-duration="0.8s"
+                swiper-animate-delay="0s"
+              >
+                <h2 class="font-1">Why NEO?</h2>
+                <div class="font-2">Powerful Battery</div>
+                <div class="font-3">900 mAh</div>
+                <div class="font-4">Rechargeable Li-on Battery</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+
+            <div class="h-item-box">
+              <img src="https://cdn.shopifycdn.net/s/files/1/0549/7667/6078/files/section4-img_4.png">
+              <div
+                class="right-box ani"
+                swiper-animate-effect="fadeInUp"
+                swiper-animate-duration="0.8s"
+                swiper-animate-delay="0s"
+              >
+                <h2 class="font-1">Why NEO?</h2>
+                <div class="font-2">Durable Frame</div>
+                <div class="font-3">316 Steel</div>
+                <div class="font-4">Stainless Steel Blade<br>&Aluminum Frame</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+{% schema %}
+    {
+      "name": "h-neo_kslp_new_4",
+      "settings": [
+
+      ]
+    }
+{% endschema %}
+
+{% stylesheet %}
+
+
+{% endstylesheet %}
+
+<script>
+
+  var section_4_2_swiper = new Swiper(".section_4_swiper_1", {
+   
+    direction: "vertical",
+    mousewheel: {
+      releaseOnEdges: true,
+    }, 
+    effect : 'fade',
+    fadeEffect: {
+      crossFade: true,
+    },
+  });
+
+  var section_4_3_swiper = new Swiper(".section_4_swiper_3", {
+    
+    direction: "vertical",
+    allowTouchMove:false,
+    effect : 'fade',
+    fadeEffect: {
+      crossFade: false,
+    },
+    on:{
+      slideChange: function (e) {
+      },
+      init: function(){
+        swiperAnimateCache(this); //隐藏动画元素
+        swiperAnimate(this); //初始化完成开始动画
+      },
+      slideChangeTransitionEnd: function(){
+        swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+        this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 
+      },
+    
+    }
+  });
+
+  console.log('获取屏幕高度=====》',$(window).height())
+  
+  var section_4_scroll_hight = $(window).height()*3;
+  $(".h-scroll-box").height(section_4_scroll_hight)
+  var section_4_scroll_current_height = section_4_scroll_hight/4
+
+  section_4_scroll_h_1 = section_4_scroll_current_height;
+  section_4_scroll_h_2 = section_4_scroll_current_height*2;
+  section_4_scroll_h_3 = section_4_scroll_current_height*3;
+  console.log(section_4_scroll_h_1)
+  
+  // build scenes
+  new ScrollMagic.Scene({triggerElement: ".h-scroll-box", duration: section_4_scroll_h_1})
+  .on("enter", function(e){section_4_3_swiper.slideTo(0)})
+  .addTo(controller);
+  new ScrollMagic.Scene({triggerElement: ".h-scroll-box", duration: section_4_scroll_h_1, offset: section_4_scroll_h_1})
+  .on("enter", function(){section_4_3_swiper.slideTo(1)})
+  .addTo(controller);
+  new ScrollMagic.Scene({triggerElement: ".h-scroll-box", duration: section_4_scroll_h_1, offset: section_4_scroll_h_2})
+  .on("enter", function(){section_4_3_swiper.slideTo(2)})
+  .addTo(controller);
+  new ScrollMagic.Scene({triggerElement: ".h-scroll-box", duration: section_4_scroll_h_1, offset: section_4_scroll_h_3})
+  .on("enter", function(){section_4_3_swiper.slideTo(3)})
+  .addTo(controller);
+
+</script>

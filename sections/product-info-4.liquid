@@ -1,0 +1,112 @@
+<section class="hozo_beyond--dataimg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="hozo__beyond-imgbig">   
+                    <img src="{{section.settings.img1 | img_url : 'master'}}">
+                    <div class="nozo__dataimgbtn"><a href="javascript:void(0)">Learn more</a></div>
+                </div> 
+            </div>
+            <div class="col-md-6">
+                <ul>
+                  {% for block in section.blocks %}
+                    <li>
+                        <img src="{{block.settings.img1 | img_url : 'master'}}">
+                        <div class="hozo__datacnts">
+                            <h4>{{block.settings.text1 }}</h4>
+                            <p>{{block.settings.text2 }}</p>
+                        </div>
+                    </li>
+                  {% endfor %}
+                                                                                          
+                </ul>       
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="hozo_mazorapp">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="hozo__mazoleft-cnt">  
+                    <div class="hozo_ultrahed2 text-center"><img src="{{section.settings.img2 | img_url : 'master'}}"></div> 
+                    
+                    <img src="{{section.settings.img3 | img_url : 'master'}}">
+                    <p>{{section.settings.text1}}</p>
+                    <div class="hozo_maz-para">{{section.settings.text2}}</div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "product-info-4",
+    "settings": [
+ {
+            "id": "img1",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+{
+            "id": "img2",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+{
+            "id": "img3",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+ {
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add text"
+          },
+ {
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add text"
+          }
+],
+  "blocks": [
+      {
+        "type": "text",
+        "name": "section",
+        "settings": [
+
+
+          
+ {
+            "id": "img1",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+{
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add text"
+          },
+          {
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add text"
+          }
+         
+         
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

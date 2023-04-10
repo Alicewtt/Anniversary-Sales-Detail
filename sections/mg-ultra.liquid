@@ -1,0 +1,40 @@
+<section class="hozo-ultra-s">
+    <div class="container">
+        <div class="hozo_Ferocioushed ultra-heading">
+            <h2>Ultra 3D Adapter</h2>
+        </div>
+        <div class="hozo-ultra-images">
+             <img 
+              class="lazyload"
+              data-src="{{ 'ultra-img-1.png' | asset_url }}">
+             <div class="hozo-both--imgs"><img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/one-o.png?v=1662064403"> <img class="lazyload" data-src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/mobile-onew.png?v=1662064402"></div>
+             <button type="button"><a href="javascript:void(0)" style="color:black">More Detail</a></button>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+  {
+    "name": "mg-ultra",
+    "settings": [
+
+      {
+            "id": "url",
+            "type": "url",
+            "label": "Add url"
+          }
+    ],
+    
+    "presets":[{
+ "name": "Meazor-ultra",
+"category": "Custom Content"
+
+}]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
