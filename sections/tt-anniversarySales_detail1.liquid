@@ -372,6 +372,13 @@
                       <p class="tt-r-num">
                         {{block.settings.anniversary_product_num}}
                       </p>
+                      <script>
+                          const element = document.querySelector('#my-element');
+                          element.addEventListener('click', () => {
+                            const text = element.textContent;
+                            navigator.clipboard.writeText(text);
+                          });
+                      </script>
                       <a class="tt-r-link">copy code</a>
                       <span class="tt-r-link-code">{{block.settings.anniversary_product_code}}</span>
                     </div>
@@ -379,7 +386,6 @@
                     <div class="tt-r-vector">
                       <img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/Vector_e2a2799b-7ba2-41e9-b7c7-97b2de4abbbe.png?v=1681375552" alt="" width="40px" height="40px">
                     </div>
-                    
                   </div>
                 </div>
                 {% comment %} PC端 {% endcomment %}
