@@ -234,7 +234,7 @@
         let formattedNumber = Number(number).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
         document.getElementById('number').innerHTML = formattedNumber;
     }
-    convertToUSD("{{all_products[block.settings.product].price_max}}")
+    convertToUSD(number)
     convertToUSD("{{all_products[block.settings.product].price_min}}")
 </script>
 
