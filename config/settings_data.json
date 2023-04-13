@@ -3451,6 +3451,34 @@
         ],
         "settings": {
         }
+      },
+      "tt-anniversarySales_detail1": {
+        "type": "tt-anniversarySales_detail1",
+        "blocks": {
+          "e4014cca-9b0c-4bc2-9963-f1283c4acc28": {
+            "type": "anniversary",
+            "settings": {
+              "product": "meazor-master-kit",
+              "anniversary_product_title": "MEAZOR 3D Premium Combo",
+              "anniversary_product_desc1": "· 40M Multi-room Scan",
+              "anniversary_product_desc2": "· 3D Obstacle Avoidance",
+              "anniversary_product_desc3": "· Export to CAD",
+              "anniversary_product_num": "产品百分数",
+              "anniversary_product_code": "产品copy code"
+            }
+          }
+        },
+        "block_order": [
+          "e4014cca-9b0c-4bc2-9963-f1283c4acc28"
+        ],
+        "settings": {
+          "anniversary_big_title": "Recommended Deals"
+        }
+      },
+      "tt-anniversarySales_detail2": {
+        "type": "tt-anniversarySales_detail2",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
