@@ -3479,6 +3479,50 @@
         "type": "tt-anniversarySales_detail2",
         "settings": {
         }
+      },
+      "s-anniversary-banner": {
+        "type": "s-anniversary-banner",
+        "settings": {
+          "countdown_time": "2023-04-21T00:00:00+08:00",
+          "show_countdown_time": true
+        }
+      },
+      "s-anniversary-Rotation": {
+        "type": "s-anniversary-Rotation",
+        "blocks": {
+          "s-anniversary-Rotation-0": {
+            "type": "slide",
+            "settings": {
+              "product": "meazor3d",
+              "text_1": "Learn Mort",
+              "text_2": "Add to cart"
+            }
+          },
+          "s-anniversary-Rotation-1": {
+            "type": "slide",
+            "settings": {
+              "product": "meazor-3d-protection-kit",
+              "text_1": "Learn Mort",
+              "text_2": "Add to cart"
+            }
+          },
+          "648cad01-0df3-4df0-b9b4-06b1e9ed2b40": {
+            "type": "slide",
+            "settings": {
+              "product": "ultra-3d-adapter",
+              "text_1": "Learn Mort",
+              "text_2": "Add to cart"
+            }
+          }
+        },
+        "block_order": [
+          "s-anniversary-Rotation-0",
+          "s-anniversary-Rotation-1",
+          "648cad01-0df3-4df0-b9b4-06b1e9ed2b40"
+        ],
+        "settings": {
+          "text_heading_1": "Customer Top Picked"
+        }
       }
     },
     "content_for_index": [
