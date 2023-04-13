@@ -183,20 +183,20 @@
 
 <section class="section-banner_1">
     <div class="banner-img">
-        {% comment %} <img 
+        <img 
             class="pc-img"
             style=" width:100%;height:auto;"
-            src="{{ section.settings.item_image_1_1 | img_url : 'master'}}" alt="" > {% endcomment %}
-            <img src="../assets/pc-Frame1216.jpg" alt="">
-        {% comment %} <img
+            src="{{ section.settings.item_image_1_1 | img_url : 'master'}}" alt="">
+            
+        <img
              class="web-img" 
             style=" width:100%;height:auto;"
-            src="{{ section.settings.item_image_1_2 | img_url : 'master'}}" alt="" > {% endcomment %}
+            src="{{ section.settings.item_image_1_2 | img_url : 'master'}}" alt="">
         
     </div>
 
     <div class="s-Countdown" style="{% if section.settings.show_countdown_time %}display:block; {% else %}display:none; {% endif %}">
-        <p class="title">Grab your best deal before it’s gone!</p>
+        <p class="title">{{section.settings.text_heading_1}}</p>
         <div class="times">
             <ul class="Total_time">
                 <li id="hours" class="Hours"></li>
@@ -290,14 +290,18 @@
         "label": "图片",
         "info": "pc端图片"
       },
-
-      
       {
         "type": "image_picker",
         "id": "item_image_1_2",
         "label": "图片",
         "info": "移动端图片"
-      }
+      },
+      {
+        "type": "html",
+        "id": "text_heading_1",
+        "label": "标题",
+        "default":"Grab your best deal before it’s gone!"
+    }
 
 ]
 
