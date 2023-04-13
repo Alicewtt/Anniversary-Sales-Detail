@@ -357,7 +357,9 @@
                 <p class="tt-r-desc"> · 40M Multi-room Scan </p>
                 <p class="tt-r-desc"> · 3D Obstacle Avoidance </p>
                 <p class="tt-r-desc"> · Export to CAD</p>
-                <p class="tt-r-money">$296.65<span class="tt-r-money-old">$349</span></p>
+                <p class="tt-r-money">{{all_products[block.settings.product].price_max}}
+                  <span class="tt-r-money-old">{{all_products[block.settings.product].price_min}}</span>
+                </p>
                 {% comment %} 移动端 {% endcomment %}
                 <div class="tt-iphone tt-iphone-position">
                   <p class="tt-r-free">Free Gifts</p>
