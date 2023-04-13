@@ -360,8 +360,8 @@
               <div class="tt-r-box box-flex">
                 <p class="tt-r-title">{{block.settings.anniversary_product_title}}</p>
                 <p class="tt-r-desc"> {{block.settings.anniversary_product_desc}} </p>
-                <p class="tt-r-money">{{all_products[block.settings.product].price_max}}
-                  <span class="tt-r-money-old">{{all_products[block.settings.product].price_min}}</span>
+                <p class="tt-r-money">{{all_products[block.settings.product].price_max | times: 1.0 | money }}
+                  <span class="tt-r-money-old">{{all_products[block.settings.product].price_min | times: 1.0 | money }}</span>
                 </p>
                 {% comment %} 移动端 {% endcomment %}
                 <div class="tt-iphone tt-iphone-position">
