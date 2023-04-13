@@ -3463,8 +3463,9 @@
               "anniversary_product_desc1": "· 40M Multi-room Scan",
               "anniversary_product_desc2": "· 3D Obstacle Avoidance",
               "anniversary_product_desc3": "· Export to CAD",
-              "anniversary_product_num": "产品百分数",
-              "anniversary_product_code": "产品copy code"
+              "anniversary_product_free": true,
+              "anniversary_product_num": "15%",
+              "anniversary_product_code": "34455"
             }
           }
         },
