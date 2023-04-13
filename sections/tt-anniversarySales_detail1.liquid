@@ -1,20 +1,443 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
 <style>
-    .tt-bigBox {
-      background-color: #000;
-      padding-top: 120px;
-
-
-      
-      padding-bottom: 200px;
-    }
-
+  {% comment %} 更改分页器的样式 {% endcomment %}
+  .tt-bigBox .swiper{
+    --swiper-navigation-size: 10px!important;/* 设置按钮大小 */
+  }
+  .tt-bigBox .swiper-button-prev,
+  .tt-bigBox .swiper-button-next {
+    width: 32.81px;
+    height: 32.81px;
+    border-radius:16px;
+    background: #FFFFFF;
+    border: 0.78125px solid #DDDDDD;
+    color: #242424;
+  }
+  .tt-bigBox .swiper-pagination-bullet {
+    background: #55C1C5;
+  }
     .tt-bigBox .tt-h1-title {
-        background-color: #000;
-        padding-top: 120px;
-        padding-bottom: 200px;
+      width: 100%;
+      margin-bottom:38.19px;
+      height: 99px;
+      font-family: 'Alibaba PuHuiTi 2.0';
+      font-style: normal;
+      font-weight: 900;
+      line-height: 99px;
+      text-align: center;
+      color: #212121;
+      background-image: url('../assets/title-bg.png') ;
+      background-repeat: no-repeat;
+      background-position: center 0;
+      }
+      @media (min-width:411px) {
+        .tt-bigBox {
+          width: 937.5px;
+          border-radius: 15.625px;
+          margin:0 auto;
+        }
+        .tt-bigBox .tt-h1-title {
+          font-size: 56.25px;
+        }
+      }
+      @media (max-width:411px) {
+        .swiper-button-hide {
+          display:none;
+        }
+        .tt-bigBox {
+          width: 410px;
+          border-radius: 9.66px;
+        }
+        .tt-bigBox .tt-h1-title {
+          font-size: 32.25px;
+        }
+      }
+    .tt-bigBox .tt-products-box {
+      background: #FCF3E7;
+    }
+    .tt-bigBox .tt-products-box .tt-pro-bg {
+      border-radius: 15.625px;
+      margin:0 auto;
+    }
+    @media (min-width:411px) {
+      .tt-bigBox .tt-products-box .tt-pro-bg {
+        width: 937.5px;
+      }
+      .tt-bigBox .tt-products-box .tt-pro-bg{
+        display:flex;
+        justify-conten:center;
+        align-items: stretch;
+      }
+      .tt-bigBox .tt-products-box .box-flex {
+          width:calc( 100% / 2 - 20px );
+          flex:1;
       }
     }
+    @media (max-width:411px) {
+      .tt-bigBox .tt-products-box .tt-pro-bg {
+        width: 370px;
+      }
+      .tt-bigBox .tt-products-box .tt-pro-bg{
+          display: flex;
+          flex-direction: column
+      }
+        .tt-bigBox .tt-products-box .box-flex {
+            width: 100%;
+        }
+    }
+    .tt-bigBox .tt-products-box .tt-l-box {
+      
+      
+    }
+    .tt-bigBox .tt-products-box .tt-r-box {
+      padding :10px ;
+      position: relative;
+    }
+    .tt-bigBox .tt-products-box .tt-r-box .tt-r-title {
+      font-family: 'Alibaba PuHuiTi 2.0';
+      font-style: normal;
+      font-weight: 900;
+      line-height: 45px;
+      color: #000000;
+    }
+    @media (min-width:411px) {
+      .tt-bigBox .tt-products-box .tt-r-box .tt-r-title {
+        font-size: 26px;
+      }
+    }
+    @media (max-width:411px) {
+      .tt-bigBox .tt-products-box .tt-r-box .tt-r-title {
+        font-size: 20px;
+      }
+    }
+    .tt-bigBox .tt-products-box .tt-r-box .tt-r-desc{
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+     
+      line-height: 26px;
+      color: #242424;
+    }
+    @media (min-width:411px) {
+      ..tt-bigBox .tt-products-box .tt-r-box .tt-r-desc {
+        font-size: 20px;
+      }
+    }
+    @media (max-width:411px) {
+      ..tt-bigBox .tt-products-box .tt-r-box .tt-r-desc {
+        font-size: 13px;
+      }
+    }
+    .tt-bigBox .tt-products-box .tt-r-box .tt-r-money{
+      font-family: 'Alibaba PuHuiTi 2.0';
+      font-style: normal;
+      font-weight: 700;
+      line-height: 67px;
+      color: #BD4132;
+      margin-top: 20px;
+    }
+    @media (min-width:411px) {
+      ..tt-bigBox .tt-products-box .tt-r-box .tt-r-money {
+        font-size: 48px;
+      }
+    }
+    @media (max-width:411px) {
+      ..tt-bigBox .tt-products-box .tt-r-box .tt-r-money {
+        font-size: 24px;
+      }
+    }
+    .tt-bigBox .tt-products-box .tt-r-box .tt-r-money-old{
+      margin-left: 10px;
+      font-family: 'Alibaba PuHuiTi 2.0';
+      font-style: normal;
+      font-weight: 400;
+      line-height: 45px;
+      text-decoration-line: line-through;
+      color: #6A6A6A;
+    }
+    @media (min-width:411px) {
+      ..tt-bigBox .tt-products-box .tt-r-box .tt-r-money-old {
+        font-size: 32px;
+      }
+    }
+    @media (max-width:411px) {
+      ..tt-bigBox .tt-products-box .tt-r-box .tt-r-money-old {
+        font-size: 15px;
+      }
+    }
+  {% comment %} 移动和pc的free区域 {% endcomment %}
+  .tt-pc .tt-r-free {
+    background: #55C1C5;
+    border-radius: 18.75px 18.75px 18.75px 0px;
+    width: 156.25px;
+    height: 37.5px;
+    margin-top:15px;
+    font-family: 'Alibaba PuHuiTi 2.0';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 28.125px;
+  }
+  .tt-iphone .tt-r-free {
+    background: #55C1C5;
+    border-radius: 18.75px 18.75px 18.75px 0px;
+    width: 96.62px;
+    height: 23.19px;
+    margin-top:15px;
+    font-family: 'Alibaba PuHuiTi 2.0';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 17.3913px;
+  }
+  .tt-pc .tt-r-card {
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    width:  296.09px;
+    height: 118.75px;
+    background:url('../assets/cart-bg.png' )  no-repeat center;
+  }
+  .tt-iphone .tt-r-card {
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 183.09px;
+    height: 73.43px;
+    background:#333333;
+  }
+  .tt-iphone {
+    display:none;
+  }
+  .tt-iphone-position {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  @media (max-width:411px) {
+    .tt-pc {
+      display:none;
+    }
+    .tt-iphone {
+      display:block;
+    }
+  }
+  .tt-iphone .tt-r-card .tt-r-bai {
+    font-family: 'Alibaba PuHuiTi 2.0';
+    font-style: normal;
+    font-weight: 900;
+    position:relative;
+  }
+  .tt-pc .tt-r-card .tt-r-bai {
+    font-family: 'Alibaba PuHuiTi 2.0';
+    font-style: normal;
+    font-weight: 900;
+    position:relative;
+  }
+  .tt-iphone .tt-r-card .tt-r-bai .tt-r-num {
+    font-family: 'Alibaba PuHuiTi 2.0';
+    font-style: normal;
+    font-weight: 900;
+    color: #212121;
+    font-size: 38.6473px;
+  }
+  .tt-pc .tt-r-card .tt-r-bai .tt-r-num {
+    font-family: 'Alibaba PuHuiTi 2.0';
+    font-style: normal;
+    font-weight: 900;
+    color: #212121;
+    font-size: 62.5px;
+  }
+  .tt-iphone .tt-r-card .tt-r-bai .tt-r-link {
+    font-family: 'Alibaba PuHuiTi 2.0';
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #54B4B8;
+    position:absolute;
+    top:40px;
+    right:10px;
+    cursor: pointer;
+    font-size: 11.6px;
+  }
+  .tt-pc .tt-r-card .tt-r-bai .tt-r-link {
+    font-family: 'Alibaba PuHuiTi 2.0';
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #275589;
+    position:absolute;
+    top:70px;
+    right:10px;
+    cursor: pointer;
+    font-size: 18.75px;
+  }
+  .tt-iphone .tt-r-card .tt-r-off {
+    background: #55C1C5;
+    border-radius: 18.75px 18.75px 18.75px 0px;
+    font-family: 'Alibaba PuHuiTi 2.0';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23.4375px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 38.65px;
+    height: 23.19px;
+  }
+  .tt-pc .tt-r-card .tt-r-off {
+    background: #55C1C5;
+    border-radius: 18.75px 18.75px 18.75px 0px;
+    font-family: 'Alibaba PuHuiTi 2.0';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23.4375px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left:15px;
+    width: 62.5px;
+    height: 37.5px;
+  } 
   </style>
-<div class="tt-bigBox">
-    <div class="tt-h1-title">  Recommended Deals </div>
-</div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <section class="tt__section">
+    <div class="tt-bigBox">
+        <div class="tt-h1-title">Recommended Deals</div>
+          <div class="tt-products-box">
+            <div class="tt-pro-bg">
+              <div class="tt-l-box box-flex">
+                <!-- .swiper为容器 -->
+                <div class="swiper">
+                    <!-- 轮播区域 -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../assets/tt-pro-1.png" alt="" width="100%"></div>
+                        <div class="swiper-slide"><img src="../assets/tt-pro-2.png" alt="" width="100%"></div>
+                        <div class="swiper-slide"><img src="../assets/tt-pro-1.png" alt="" width="100%"></div>
+                        <div class="swiper-slide"><img src="../assets/tt-pro-1.png" alt="" width="100%"></div>
+                        <div class="swiper-slide"><img src="../assets/tt-pro-2.png" alt="" width="100%"></div>
+                    </div>
+                    <!-- 导航按钮 -->
+                    <div class="swiper-button-prev swiper-button-hide"></div>
+                    <div class="swiper-button-next swiper-button-hide"></div>
+                    <!-- 分页器 -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <script type="text/javascript">
+                    var mySwiper = new Swiper('.swiper', {
+                    direction: 'horizontal',
+                    loop: true,
+                    pagination: {
+                        el: '.swiper-pagination'
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev'
+                    },
+                    scrollbar: {
+                        el: '.swiper-srollbar'
+                    }
+                  })
+                
+                </script>
+              
+                </div>
+              <div class="tt-r-box box-flex">
+                <p class="tt-r-title">MEAZOR 3D Premium Combo</p>
+                <p class="tt-r-desc"> · 40M Multi-room Scan </p>
+                <p class="tt-r-desc"> · 3D Obstacle Avoidance </p>
+                <p class="tt-r-desc"> · Export to CAD</p>
+                <p class="tt-r-money">$296.65<span class="tt-r-money-old">$349</span></p>
+                {% comment %} 移动端 {% endcomment %}
+                <div class="tt-iphone tt-iphone-position">
+                  <p class="tt-r-free">Free Gifts</p>
+                  <div class="tt-r-card">
+                    <div class="tt-r-bai">
+                      <p class="tt-r-num">
+                        15%
+                      </p>
+                      <a class="tt-r-link">copy code</a><span></span>
+                    </div>
+                    <div class="tt-r-off">off</div>
+                    <div class="tt-r-vector">
+                      <img src="../assets/Vector.png" alt="" width="40px" height="40px">
+                    </div>
+                    
+                  </div>
+                </div>
+                {% comment %} Pc端 {% endcomment %}
+                <div class="tt-pc">
+                  <p class="tt-r-free">Free Gifts</p>
+                  <div class="tt-r-card">
+                    <div class="tt-r-bai">
+                      <p class="tt-r-num">
+                        15%
+                      </p>
+                      <a class="tt-r-link">copy code</a><span></span>
+                    </div>
+                    <div class="tt-r-off">off</div>
+                    <div class="tt-r-vector">
+                      <img src="../assets/Vector.png" alt="" width="40px" height="40px">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </section>
+{% schema %}
+    {
+    "name": "tt-anniversarySale",
+    "settings": [
+        {
+        "type": "image_picker",
+        "id": "image_1",
+        "label": "PC端背景图"
+        }
+    ],
+    "blocks": [
+        {
+        "type": "bottom-col-1",
+        "name": "bottom-col-1",
+        "settings": [
+              {
+            "id": "img",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+        {
+            "id": "prd",
+            "type": "product",
+            "label": "Add product"
+          }
+        ]
+      },
+       {
+        "type": "bottom-col-2",
+        "name": "bottom-col-2",
+        "settings": [
+              {
+            "id": "img",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+        {
+            "id": "prd",
+            "type": "product",
+            "label": "Add product"
+          } 
+        ]
+      }
+    ]
+    }
+{% endschema %}
+{% javascript %}
+{% endjavascript %}
