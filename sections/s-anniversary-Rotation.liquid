@@ -12,6 +12,12 @@
         border: 0.78125px solid #DDDDDD;
         color: #242424;
     }
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+        font-size: 7px;
+    }
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+        font-size: 7px;
+    }
     .tt-bigBox .swiper-pagination-bullet {
         background: #55C1C5;
     }
@@ -23,12 +29,18 @@
 
     }
     .Rotation_title{
+        width: 100%;
+        height: 79px;
         font-family: 'Alibaba PuHuiTi 2.0';
         font-weight: 900;
         font-size: 56.25px;
-        line-height: 79px;   
+        line-height: 79px;
+        color: #212121;
         text-align: center;
         margin:62.5px 0 38.19px 0;
+        background-image: url('https://cdn.shopify.com/s/files/1/0549/7667/6078/files/title-bg.png?v=1681375399') ;
+        background-repeat: no-repeat;
+        background-position: center 0;
     }
     .Product_Show{
      display:flex;
@@ -217,19 +229,6 @@
 </div>
 </div>
 
-<style>
-
-    
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
-    font-size: 7px;
-}
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
-    font-size: 7px;
-}
-
-
-</style>
-
 
 <script>        
   var mySwiper = new Swiper ('.swiper-container', {
@@ -277,7 +276,6 @@
                         "label": "购物车",
                         "default":"Add to cart"
                     }
-                
             ]
         }
       ],
