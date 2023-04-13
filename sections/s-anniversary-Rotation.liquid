@@ -1,0 +1,226 @@
+{% comment %} <link href="https://cdn.bootcdn.net/ajax/libs/Swiper/9.2.0/swiper-bundle.min.css" rel="stylesheet"> {% endcomment %}
+
+<link href="https://cdn.bootcdn.net/ajax/libs/Swiper/9.2.0/swiper-bundle.css" rel="stylesheet">
+
+<style>
+    {% comment %} 更改分页器的样式 {% endcomment %}
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 32.81px;
+        height: 32.81px;
+        border-radius:16px;
+        background: #FFFFFF;
+        border: 0.78125px solid #DDDDDD;
+        color: #242424;
+    }
+    .tt-bigBox .swiper-pagination-bullet {
+        background: #55C1C5;
+    }
+
+    .Rotation{
+      width: 937.5px;
+      margin:0px auto;
+      position: relative;
+
+    }
+    .Rotation .title{
+        font-family: 'Alibaba PuHuiTi 2.0';
+        font-weight: 900;
+        font-size: 56.25px;
+        line-height: 79px;   
+        text-align: center;
+        margin:62.5px 0 38.19px 0;
+    }
+    .Product_Show{
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+    }
+    .Product_Name{
+    font-family: 'Alibaba PuHuiTi 2.0';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 28px;
+    margin:23.44px 0 14.75px 0;
+    }
+
+    .Product_Show .Price{
+     display:flex;
+     align-items: center;
+     align-items: baseline;
+     margin-bottom: 12.53px;
+    }
+
+    .Product_Show .Price-1{
+        font-family: 'Alibaba PuHuiTi 2.0';
+        font-weight: 500;
+        font-size: 21.875px;
+        line-height: 31px;
+        margin-right: 8.37px;
+    }
+
+    .Product_Show .Price-2{
+        font-family: 'Alibaba PuHuiTi 2.0';
+        font-weight: 500;
+        font-size: 15.625px;
+        line-height: 22px;
+        text-decoration-line: line-through;
+    }
+
+    .Product_Show .Cart {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .Product_Show .Cart .cart-1{
+        width: 98.44px;
+        height: 31.25px;
+        color: #55C1C5;
+        background: #FFFFFF;
+        border: 1.5625px solid #55C1C5;
+        border-radius: 15.625px;
+
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 15.625px;
+        line-height: 20px;
+        text-align: center;
+        margin-right: 23.44px;
+        padding-top: 5px;
+    }
+
+    .Product_Show .Cart .cart-2{
+        width: 98.44px;
+        height: 31.25px;
+        color: #FFFFFF;
+        background: #55C1C5;
+        border: 1.5625px solid #55C1C5;
+        border-radius: 15.625px;
+    
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 15.625px;
+        line-height: 20px;
+        text-align: center;
+        padding-top: 5px;
+
+    }
+
+
+
+  </style>
+
+  <script src="{{ 'swiper-bundle.min.js' | asset_url }}"></script>
+  <script src="{{ 'swiper.min.js' | asset_url }}"></script>
+
+
+
+<div class="Rotation">
+<p class="title Rotation">Customer Top Picked</p>
+<div class="swiper-container" style="width: 937.5px;overflow: hidden;">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide Product_Show">
+            <img
+                style="width: 296.88px;height: auto;border-radius: 15.625px;"  
+                src="../assets/Meazor-Frame-1332.png" alt="">
+
+                <p class="Product_Name">MEAZOR 3D</p>
+
+                <div class="Price">
+                    <p class="Price-1">$279</p>
+                    <p class="Price-2">$299</p>
+                </div>
+                
+                <div class="Cart">
+                    <a class="cart-1" href="">Learn Mort</a>
+                    <a class="cart-2" href="">Add to cart</a>
+                </div>
+                
+        </div>
+
+
+         <div class="swiper-slide Product_Show">
+            <img
+                style="width: 296.88px;height: auto;border-radius: 15.625px;"  
+                src="../assets/Protection-Frame-1333.png" alt="">
+
+                <p class="Product_Name">MEAZOR 3D</p>
+
+                <div class="Price">
+                    <p class="Price-1">$279</p>
+                    <p class="Price-2">$299</p>
+                </div>
+                
+                <div class="Cart">
+                    <a class="cart-1" href="">Learn Mort</a>
+                    <a class="cart-2" href="">Add to cart</a>
+                </div>
+                
+        </div>
+
+        <div class="swiper-slide Product_Show">
+            <img
+                style="width: 296.88px;height: auto;border-radius: 15.625px;"  
+                src="../assets/Ultra-Frame-818.png" alt="">
+
+                <p class="Product_Name">MEAZOR 3D</p>
+
+                <div class="Price">
+                    <p class="Price-1">$279</p>
+                    <p class="Price-2">$299</p>
+                </div>
+                
+                <div class="Cart">
+                    <a class="cart-1" href="">Learn Mort</a>
+                    <a class="cart-2" href="">Add to cart</a>
+                </div>
+                
+        </div> 
+
+    </div>
+
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+
+</div>
+</div>
+
+<style>
+
+    
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    font-size: 7px;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    font-size: 7px;
+}
+
+
+</style>
+
+
+<script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+    autoplay:true,
+    loop: true,
+    
+    {% comment %} slidesPerView: 'auto',
+    // 块之间的距离
+    spaceBetween: 30, {% endcomment %}
+    // 如果需要前进后退按钮
+
+    slidesPerView: 3,
+    spaceBetween: 30,
+   navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+
+  })        
+  </script>
