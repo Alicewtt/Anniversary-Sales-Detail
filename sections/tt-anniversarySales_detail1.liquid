@@ -358,7 +358,9 @@
                 </div>
               <div class="tt-r-box box-flex">
                 <p class="tt-r-title">{{block.settings.anniversary_product_title}}</p>
-                <p class="tt-r-desc"> {{block.settings.anniversary_product_desc}}</p>
+                <p class="tt-r-desc"> {{block.settings.anniversary_product_desc1}} </p>
+                <p class="tt-r-desc"> {{block.settings.anniversary_product_desc2}} </p>
+                <p class="tt-r-desc"> {{block.settings.anniversary_product_desc3}}</p>
                 <p class="tt-r-money">{{all_products[block.settings.product].price_max}}
                   <span class="tt-r-money-old">{{all_products[block.settings.product].price_min}}</span>
                 </p>
@@ -431,17 +433,29 @@
                   "default": "MEAZOR 3D Premium Combo"
               },
               {
-                "type": "textarea",
-                "id": "anniversary_product_desc",
-                "label": "产品描述",
-                "default": " · 40M Multi-room Scan · 3D Obstacle Avoidance · Export to CAD "
+                "type": "text",
+                "id": "anniversary_product_desc1",
+                "label": "产品描述1",
+                "default": " · 40M Multi-room Scan "
+              },
+              {
+                "type": "text",
+                "id": "anniversary_product_desc2",
+                "label": "产品描述2",
+                "default": " · 3D Obstacle Avoidance "
+              },
+              {
+                "type": "text",
+                "id": "anniversary_product_desc3",
+                "label": "产品描述3",
+                "default": " · Export to CAD "
               },
               {
                 "type": "checkbox",
                 "id": "anniversary_product_free",
                 "label": "free Gifts?",
                 "default": true
-              },
+            },
               {
                   "type": "text",
                   "id": "anniversary_product_num",
