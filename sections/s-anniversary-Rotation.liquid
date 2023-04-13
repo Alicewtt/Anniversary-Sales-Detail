@@ -176,7 +176,7 @@
 
 
 
-<p class="Rotation_title">Customer Top Picked</p>
+<p class="Rotation_title">{{section.settings.text_heading_1}}</p>
 
 <div class="Rotation">
 <div class="swiper-container" style="width: 937.5px;overflow: hidden;">
@@ -202,7 +202,7 @@
                 
                 <div class="Cart">
                     <a class="cart-1" href="">{{block.settings.text_1}}</a>
-                    <a class="cart-2" href="">{{block.settings.text_1}}</a>
+                    <a class="cart-2" href="">{{block.settings.text_2}}</a>
                 </div>
                 
         </div>
@@ -249,7 +249,14 @@
   {% schema %}
   {
     "name": "s_anniversary_Rotation",
-    "settings": [],
+    "settings": [
+        {
+            "type": "html",
+            "id": "text_heading_1",
+            "label": "标题",
+            "default":"Customer Top Picked"
+        }
+    ],
     "blocks": [
         {
             "type": "slide",
