@@ -128,7 +128,7 @@
               border-radius: 9.66184px;
           }
     }
-    @media(max-width:410px){
+    @media(max-width:414px){
     .swiper-button-prev,.swiper-button-next{
       display: none;
     }
@@ -185,63 +185,28 @@
     {% for block in section.blocks %}
 
         <div class="swiper-slide Product_Show">
+
+            <option value="">{{all_products[block.settings.product].title}}</option>
+
             <img
                 class="Product_Show_imgs"
                 style="width: 296.88px;height: auto;border-radius: 15.625px;"  
-                src="../assets/Meazor-Frame-1332.png" alt="">
+                src="{{all_products[block.settings.product].featured_image | image_url}}" alt="">
 
-                <p class="Product_Name">MEAZOR 3D</p>
+                <p class="Product_Name">{{all_products[block.settings.product].title}}</p>
 
                 <div class="Price">
-                    <p class="Price-1">$279</p>
-                    <p class="Price-2">$299</p>
+                    <p class="Price-1">{{all_products[block.settings.product].price_max}}</p>
+                    <p class="Price-2">{{all_products[block.settings.product].price_min}}</p>
                 </div>
                 
                 <div class="Cart">
-                    <a class="cart-1" href="">Learn Mort</a>
-                    <a class="cart-2" href="">Add to cart</a>
+                    <a class="cart-1" href="">{{block.settings.text_1}}</a>
+                    <a class="cart-2" href="">{{block.settings.text_1}}</a>
                 </div>
                 
         </div>
 
-
-         {% comment %} <div class="swiper-slide Product_Show">
-            <img
-                style="width: 296.88px;height: auto;border-radius: 15.625px;"  
-                src="../assets/Protection-Frame-1333.png" alt="">
-
-                <p class="Product_Name">MEAZOR 3D</p>
-
-                <div class="Price">
-                    <p class="Price-1">$279</p>
-                    <p class="Price-2">$299</p>
-                </div>
-                
-                <div class="Cart">
-                    <a class="cart-1" href="">Learn Mort</a>
-                    <a class="cart-2" href="">Add to cart</a>
-                </div>
-                
-        </div>
-
-        <div class="swiper-slide Product_Show">
-            <img
-                style="width: 296.88px;height: auto;border-radius: 15.625px;"  
-                src="../assets/Ultra-Frame-818.png" alt="">
-
-                <p class="Product_Name">MEAZOR 3D</p>
-
-                <div class="Price">
-                    <p class="Price-1">$279</p>
-                    <p class="Price-2">$299</p>
-                </div>
-                
-                <div class="Cart">
-                    <a class="cart-1" href="">Learn Mort</a>
-                    <a class="cart-2" href="">Add to cart</a>
-                </div>
-                
-        </div>  {% endcomment %}
     {% endfor %}
 
     </div>
@@ -272,19 +237,12 @@
   var mySwiper = new Swiper ('.swiper-container', {
     autoplay:true,
     loop: true,
-    
-    {% comment %} slidesPerView: 'auto',
-    // 块之间的距离
-    spaceBetween: 30, {% endcomment %}
-    // 如果需要前进后退按钮
-
     slidesPerView: 3,
     spaceBetween: 30,
-   navigation: {
+    navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       }
-
   })        
   </script>
 
@@ -293,70 +251,48 @@
     "name": "s_anniversary_Rotation",
     "settings": [],
     "blocks": [
-      {
-        "type": "image",
-        "name": "Image text item",
-        "settings": [
-  
-          {
-            "type": "select",
-            "id": "isShowContent",
-            "label": "是否显示内容框",
-            "default": "true",
-            "options": [
-              {
-                "value": "true",
-                "label": "显示内容框"
-              },
-              {
-                "value": "false",
-                "label": "不显示内容框"
-              }
-             
+        {
+            "type": "slide",
+            "name": "slide",
+            "settings":[
+                    {
+                        "type": "product",
+                        "id": "product",
+                        "label": "Product"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_1",
+                        "label": "产品图片"
+                    },
+   
+                    {
+                        "type": "html",
+                        "id": "text_1",
+                        "label": "了解更多",
+                        "default":"Learn Mort"
+                    },
+                    {
+                        "type": "html",
+                        "id": "text_2",
+                        "label": "购物车",
+                        "default":"Add to cart"
+                    }
+                
             ]
+        }
+      ],
+      "default": {
+        "blocks": [
+          {
+            "type": "slide"
           },
           {
-            "type": "image_picker",
-            "id": "item_image_1_1",
-            "label": "图片",
-            "info": "pc端图片"
-          },
-  
-          
-          {
-            "type": "image_picker",
-            "id": "item_image_1_2",
-            "label": "图片",
-            "info": "移动端图片"
-          },
-          {
-            "type": "image_picker",
-            "id": "item_image_1_3",
-            "label": "图片",
-            "info": "优惠券图片"
-          },
-          {
-            "type": "url",
-            "id": "quan_url",
-            "label": "优惠券链接",
-            "info": "优惠券链接"
-          },
-          {
-            "type": "url",
-            "id": "url",
-            "label": "图片链接",
-            "info": "图片链接"
-          },
-  
-          {
-            "type": "url",
-            "id": "btn_url",
-            "label": "优惠券下边按钮链接",
-            "info": "优惠券下边按钮链接"
+            "type": "slide"
           }
         ]
       }
-    ]
-  }
+    }
+
   {% endschema %}
   
