@@ -182,6 +182,8 @@
 <div class="swiper-container" style="width: 937.5px;overflow: hidden;">
     <div class="swiper-wrapper">
 
+    {% for block in section.blocks %}
+
         <div class="swiper-slide Product_Show">
             <img
                 class="Product_Show_imgs"
@@ -203,7 +205,7 @@
         </div>
 
 
-         <div class="swiper-slide Product_Show">
+         {% comment %} <div class="swiper-slide Product_Show">
             <img
                 style="width: 296.88px;height: auto;border-radius: 15.625px;"  
                 src="../assets/Protection-Frame-1333.png" alt="">
@@ -239,7 +241,8 @@
                     <a class="cart-2" href="">Add to cart</a>
                 </div>
                 
-        </div> 
+        </div>  {% endcomment %}
+    {% endfor %}
 
     </div>
 
@@ -284,3 +287,76 @@
 
   })        
   </script>
+
+  {% schema %}
+  {
+    "name": "s_anniversary_Rotation",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image text item",
+        "settings": [
+  
+          {
+            "type": "select",
+            "id": "isShowContent",
+            "label": "是否显示内容框",
+            "default": "true",
+            "options": [
+              {
+                "value": "true",
+                "label": "显示内容框"
+              },
+              {
+                "value": "false",
+                "label": "不显示内容框"
+              }
+             
+            ]
+          },
+          {
+            "type": "image_picker",
+            "id": "item_image_1_1",
+            "label": "图片",
+            "info": "pc端图片"
+          },
+  
+          
+          {
+            "type": "image_picker",
+            "id": "item_image_1_2",
+            "label": "图片",
+            "info": "移动端图片"
+          },
+          {
+            "type": "image_picker",
+            "id": "item_image_1_3",
+            "label": "图片",
+            "info": "优惠券图片"
+          },
+          {
+            "type": "url",
+            "id": "quan_url",
+            "label": "优惠券链接",
+            "info": "优惠券链接"
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "图片链接",
+            "info": "图片链接"
+          },
+  
+          {
+            "type": "url",
+            "id": "btn_url",
+            "label": "优惠券下边按钮链接",
+            "info": "优惠券下边按钮链接"
+          }
+        ]
+      }
+    ]
+  }
+  {% endschema %}
+  
