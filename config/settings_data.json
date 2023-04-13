@@ -3476,11 +3476,23 @@
               "anniversary_product_num": "15%",
               "anniversary_product_code": "copy code"
             }
+          },
+          "2ddcff61-559d-46c5-a00b-64466167bf7d": {
+            "type": "anniversary",
+            "settings": {
+              "product": "meazor3d",
+              "anniversary_product_title": "MEAZOR 3D Premium Combo",
+              "anniversary_product_desc": "· 40M Multi-room Scan",
+              "anniversary_product_free": true,
+              "anniversary_product_num": "15%",
+              "anniversary_product_code": "copy code"
+            }
           }
         },
         "block_order": [
           "e4014cca-9b0c-4bc2-9963-f1283c4acc28",
-          "e8ce05d7-3de9-48fc-821d-b35c1da08e3f"
+          "e8ce05d7-3de9-48fc-821d-b35c1da08e3f",
+          "2ddcff61-559d-46c5-a00b-64466167bf7d"
         ],
         "settings": {
           "anniversary_big_title": "Recommended Deals"
