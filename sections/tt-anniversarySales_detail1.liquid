@@ -374,8 +374,9 @@
                       </p>
                       <script>
                           const element = document.querySelector('.tt-r-link');
+                          const elementCode = document.querySelector('.tt-r-link-code');
                           element.addEventListener('click', () => {
-                            const text = element.textContent;
+                            const text = elementCode.textContent;
                             navigator.clipboard.writeText(text);
                           });
                       </script>
