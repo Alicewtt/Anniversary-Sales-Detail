@@ -3465,10 +3465,22 @@
               "anniversary_product_num": "15%",
               "anniversary_product_code": "34455"
             }
+          },
+          "e8ce05d7-3de9-48fc-821d-b35c1da08e3f": {
+            "type": "anniversary",
+            "settings": {
+              "product": "rollova",
+              "anniversary_product_title": "MEAZOR 3D Premium Combo",
+              "anniversary_product_desc": "· 40M Multi-room Scan",
+              "anniversary_product_free": true,
+              "anniversary_product_num": "15%",
+              "anniversary_product_code": "copy code"
+            }
           }
         },
         "block_order": [
-          "e4014cca-9b0c-4bc2-9963-f1283c4acc28"
+          "e4014cca-9b0c-4bc2-9963-f1283c4acc28",
+          "e8ce05d7-3de9-48fc-821d-b35c1da08e3f"
         ],
         "settings": {
           "anniversary_big_title": "Recommended Deals"
