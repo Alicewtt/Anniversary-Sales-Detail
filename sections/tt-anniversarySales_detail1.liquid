@@ -361,7 +361,7 @@
                 </p>
                 {% comment %} 移动端 {% endcomment %}
                 <div class="tt-iphone tt-iphone-position">
-                  <p class="tt-r-free">Free Gifts</p>
+                  <p class="tt-r-free" style="{% if section.settings.show_countdown_time %}display:block; {% else %}display:none; {% endif %}">Free Gifts</p>
                   <div class="tt-r-card">
                     <div class="tt-r-bai">
                       <p class="tt-r-num">
@@ -379,7 +379,7 @@
                 </div>
                 {% comment %} Pc端 {% endcomment %}
                 <div class="tt-pc">
-                  <p class="tt-r-free">Free Gifts</p>
+                  <p class="tt-r-free" style="{% if section.settings.show_countdown_time %}display:block; {% else %}display:none; {% endif %}">Free Gifts</p>
                   <div class="tt-r-card">
                     <div class="tt-r-bai">
                       <p class="tt-r-num">
