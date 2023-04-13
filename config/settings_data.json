@@ -3517,12 +3517,21 @@
               "text_1": "Learn Mort",
               "text_2": "Add to cart"
             }
+          },
+          "129628c0-9a3a-43db-b243-bc330bf33381": {
+            "type": "slide",
+            "settings": {
+              "product": "meazor",
+              "text_1": "Learn Mort",
+              "text_2": "Add to cart"
+            }
           }
         },
         "block_order": [
           "s-anniversary-Rotation-0",
           "s-anniversary-Rotation-1",
-          "648cad01-0df3-4df0-b9b4-06b1e9ed2b40"
+          "648cad01-0df3-4df0-b9b4-06b1e9ed2b40",
+          "129628c0-9a3a-43db-b243-bc330bf33381"
         ],
         "settings": {
           "text_heading_1": "Customer Top Picked"
