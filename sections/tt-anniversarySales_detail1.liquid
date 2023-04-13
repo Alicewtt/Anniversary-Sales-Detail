@@ -404,39 +404,51 @@
         }
     ],
     "blocks": [
-        {
-        "type": "bottom-col-1",
-        "name": "bottom-col-1",
-        "settings": [
+      {
+          "type": "recommendation",
+          "name":"Recommendation",
+          "settings": [
               {
-            "id": "img",
-            "type": "image_picker",
-            "label": "Add Image"
-          },
-        {
-            "id": "prd",
-            "type": "product",
-            "label": "Add product"
-          }
-        ]
-      },
-       {
-        "type": "bottom-col-2",
-        "name": "bottom-col-2",
-        "settings": [
+                  "type": "product",
+                  "id": "product",
+                  "label": "Product"
+              },
               {
-            "id": "img",
-            "type": "image_picker",
-            "label": "Add Image"
-          },
-        {
-            "id": "prd",
-            "type": "product",
-            "label": "Add product"
-          } 
-        ]
+                  "type": "image_picker",
+                  "id": "recommended_product_image_1",
+                  "label": "右边的第一个配件图片"
+              },
+              {
+                  "type": "text",
+                  "id": "recommended_product_title_1",
+                  "label": "右边的第一个配件标题",
+                  "default": "右边的第一个配件标题"
+              },
+              {
+                  "type": "text",
+                  "id": "recommended_product_price_1",
+                  "label": "右边的第一个配件价格",
+                  "default": "右边的第一个配件价格"
+              },
+              {
+                  "type": "product",
+                  "id": "recommended_product_1",
+                  "label": "第一个打包的产品"
+              },
+              {
+                  "type": "text",
+                  "id": "recommended_product_1_btn_text",
+                  "label":"Recommendation product 1 button text",
+                  "default": "添加购物车"
+              },
+              {
+                  "type": "text",
+                  "id": "recommended_product_1_text",
+                  "label": "Recommended product 1 text"
+              }
+          ]
       }
-    ]
+  ]
     }
 {% endschema %}
 {% javascript %}
