@@ -201,7 +201,7 @@
     margin-left:-15px;
     width:  326.09px;
     height: 118.75px;
-    background:url('https://cdn.shopify.com/s/files/1/0549/7667/6078/files/cart-bg.png?v=1681375375')  no-repeat center;
+    background:url('https://cdn.shopify.com/s/files/1/0549/7667/6078/files/cart-bg.png?v=1681375375 ')  no-repeat center;
   }
   .tt-iphone .tt-r-card {
     display:flex;
@@ -209,7 +209,7 @@
     justify-content: space-evenly;
     width: 183.09px;
     height: 73.43px;
-    background:url('https://cdn.shopify.com/s/files/1/0549/7667/6078/files/cart-bg.png?v=1681375375')  no-repeat center;
+    background:url('https://cdn.shopify.com/s/files/1/0549/7667/6078/files/cart-bg.png?v=1681375375 ')  no-repeat center;
   }
   .tt-iphone {
     display:none;
@@ -337,7 +337,7 @@
                     <div class="swiper-button-next swiper-button-hide"></div>
                     <!-- 分页器 -->
                     <div class="swiper-pagination"></div>
-                </div>
+                  </div>
                   <script type="text/javascript">
                     var mySwiper = new Swiper('.swiper', {
                     direction: 'horizontal',
@@ -358,7 +358,7 @@
                 </div>
               <div class="tt-r-box box-flex">
                 <p class="tt-r-title">{{block.settings.anniversary_product_title}}</p>
-                <p class="tt-r-desc"> {{block.settings.anniversary_product_desc1}} </p>
+                <p class="tt-r-desc"> {{block.settings.anniversary_product_desc}}</p>
                 <p class="tt-r-money">{{all_products[block.settings.product].price_max}}
                   <span class="tt-r-money-old">{{all_products[block.settings.product].price_min}}</span>
                 </p>
@@ -431,17 +431,17 @@
                   "default": "MEAZOR 3D Premium Combo"
               },
               {
-                "type": "text",
-                "id": "anniversary_product_desc1",
-                "label": "产品描述1",
-                "default": " · 40M Multi-room Scan "
+                "type": "textarea",
+                "id": "anniversary_product_desc",
+                "label": "产品描述",
+                "default": " · 40M Multi-room Scan · 3D Obstacle Avoidance · Export to CAD "
               },
               {
                 "type": "checkbox",
                 "id": "anniversary_product_free",
                 "label": "free Gifts?",
                 "default": true
-            },
+              },
               {
                   "type": "text",
                   "id": "anniversary_product_num",

@@ -206,7 +206,7 @@
                 <p class="Product_Name">{{all_products[block.settings.product].title}}</p>
 
                 <div class="Price">
-                    <p class="Price-1">${{all_products[block.settings.product].price_max}}</p>
+                    <p class="Price-1">{{all_products[block.settings.product].price_max | times: 1.0 | money }}</p>
                     <p class="Price-2">${{all_products[block.settings.product].price_min}}</p>
                 </div>
                 
@@ -227,16 +227,7 @@
 </div>
 </div>
 
-<script>
-    function convertToUSD() {
-        let number = document.getElementById('number');
-        console.log(number)
-        let formattedNumber = Number(number).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
-        document.getElementById('number').innerHTML = formattedNumber;
-    }
-    convertToUSD(number)
-    convertToUSD("{{all_products[block.settings.product].price_min}}")
-</script>
+
 
 <script>        
   var mySwiper = new Swiper ('.swiper-container', {
