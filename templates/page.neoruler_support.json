@@ -44,6 +44,25 @@
         "title": "Understand better with NeoRuler"
       }
     },
+    "support-page-blog": {
+      "type": "support-page-blog",
+      "settings": {
+        "title": ""
+      }
+    },
+    "meazor-app-section3": {
+      "type": "meazor-app-section3",
+      "settings": {
+        "title": "MEAZOR APP 2.0",
+        "fram_image": "shopify:\/\/shop_images\/Frame_46_256x256_17334631-77f9-4277-88a7-481631c5c8f5.png",
+        "MEAZOR_title": "MEAZOR APP 2.0",
+        "free_title": "<span>Free<\/span> for life time",
+        "app_url": "https:\/\/apps.apple.com\/......",
+        "app_image": "shopify:\/\/shop_images\/apple_app_store_256x256_93f2049f-c55b-4b18-9918-c1019d1967e5.png",
+        "app_url1": "https:\/\/play.google.com\/store\/apps\/details?id=com.yufei.robbiva",
+        "app_image1": "shopify:\/\/shop_images\/google-play_256x256_55cda97b-54f5-4199-ae00-bab58d953ad9.png"
+      }
+    },
     "meazor-faq-section-Rollova": {
       "type": "meazor-faq-section-Rollova",
       "settings": {
@@ -59,16 +78,6 @@
         "subtitle": "",
         "button_url": "",
         "Button_title": ""
-      }
-    },
-    "support-page-blog": {
-      "type": "support-page-blog",
-      "settings": {
-      }
-    },
-    "meazor-app-section3": {
-      "type": "meazor-app-section3",
-      "settings": {
       }
     }
   },
