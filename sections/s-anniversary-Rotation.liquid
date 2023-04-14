@@ -212,27 +212,9 @@
                 
                 <div class="Cart">
                      <a class="cart-1" href="">{{block.settings.text_1}}</a>
-                   {% comment %}<a class="cart-2" href="">{{block.settings.text_2}}</a> {% endcomment %}
+                     <a class="cart-2" href="">{{block.settings.text_2}}</a>
 
-  
-                     <form method="post" action="/cart/add">
-
-                      <input type="hidden" name="id" value="{{ product.variants[0].id }}" />
-
-                      <script>
-                        console.log({{all_products[block.settings.product] | json}})
-                    </script>
-                      {% comment %} <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" /> {% endcomment %}
-
-                      <button class="cart-2" type="submit">Add to Cart</button>
-
-                      </form>
-
-
-
-         
                 </div>
-
 
                 
         </div>
