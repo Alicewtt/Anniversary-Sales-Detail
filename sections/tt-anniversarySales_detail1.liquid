@@ -407,19 +407,13 @@
 
                         // 给按钮增加点击事件
                         button.click(function() {
-                          // 在这里编写点击事件的处理逻辑
-                          console.log('按钮被点击了');
-                        });
-
-                        // 复制按钮的点击事件
-                        async function copy() {
                           try {
                             await navigator.clipboard.writeText(value);
                             console.log('复制成功');
                           } catch (err) {
                             console.error('复制失败', err);
                           }
-                        }
+                        });
                     </script>
                     </div>
                     <div class="tt-r-off">off</div>
