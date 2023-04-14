@@ -60,9 +60,11 @@
       }
     .tt-bigBox .tt-products-box {
       background-color:{{ section.settings.section_background_color }};
-      border-radius: 15.625px;
     }
     @media (min-width:411px) {
+      .tt-bigBox .tt-products-box {
+        border-radius: 15.625px;
+      }
       .tt-bigBox .tt-products-box .tt-pro-bg{
         width: 937.5px;
         display:flex;
@@ -76,6 +78,9 @@
       }
     }
     @media (max-width:411px) {
+      .tt-bigBox .tt-products-box {
+        border-radius: 9.66184px;
+      }
       .tt-bigBox .tt-products-box .tt-pro-bg{
         width: 370px;
           display: flex;
