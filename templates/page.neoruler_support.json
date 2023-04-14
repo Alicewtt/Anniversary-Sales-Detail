@@ -65,10 +65,22 @@
     },
     "meazor-faq-section-Rollova": {
       "type": "meazor-faq-section-Rollova",
+      "blocks": {
+        "dd727dde-cfe2-496b-981f-649b300a4622": {
+          "type": "FAQ",
+          "settings": {
+            "qustion": "",
+            "answer": ""
+          }
+        }
+      },
+      "block_order": [
+        "dd727dde-cfe2-496b-981f-649b300a4622"
+      ],
       "settings": {
-        "title": "",
-        "Button_title": "",
-        "button_url": ""
+        "title": "NeoRuler FAQ",
+        "Button_title": "More specs",
+        "button_url": "https:\/\/hozodesign.com\/pages\/meazor-spec"
       }
     },
     "still-need-help-section-Rollav": {
