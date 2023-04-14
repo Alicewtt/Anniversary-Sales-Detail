@@ -3473,8 +3473,8 @@
               "product": "target-plates-kit",
               "anniversary_product_title": "NeoRuler",
               "anniversary_product_desc": "· Customizeable Scales<br>\n · 8 units<br>\n · 0.1mm resolution<br>",
-              "anniversary_product_order": true,
-              "anniversary_product_free": true,
+              "anniversary_product_order": false,
+              "anniversary_product_free": false,
               "anniversary_product_num": "15%",
               "anniversary_product_code": "1213"
             }
@@ -3591,6 +3591,12 @@
         ],
         "settings": {
           "text_heading_1": "Customer Top Picked"
+        }
+      },
+      "tt-anniversarySales_detail3": {
+        "type": "tt-anniversarySales_detail3",
+        "settings": {
+          "anniversary_join_title": "Join social contest"
         }
       }
     },
