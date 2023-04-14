@@ -12,6 +12,7 @@
     },
     "user-mannual-section-Rollova": {
       "type": "user-mannual-section-Rollova",
+      "disabled": true,
       "blocks": {
         "9d3f4e93-21b7-4488-9cc7-d14a6e603592": {
           "type": "Flag",
@@ -44,6 +45,37 @@
         "title": "Understand better with NeoRuler"
       }
     },
+    "support-page-blog": {
+      "type": "support-page-blog",
+      "blocks": {
+        "d863cc66-4c3a-4dd4-b034-a26f745e1db7": {
+          "type": "text",
+          "settings": {
+            "article": "journal\/neoruler-pre-launch-massive-giveaway-announcement"
+          }
+        },
+        "9c331edb-c936-4112-8fe0-a0b83220bbfd": {
+          "type": "text",
+          "settings": {
+            "article": "journal\/neoruler-pre-launch-massive-giveaway-announcement"
+          }
+        },
+        "c82f8e5b-28bd-4e4f-b253-e7d49ab30280": {
+          "type": "text",
+          "settings": {
+            "article": "journal\/neoruler-pre-launch-massive-giveaway-announcement"
+          }
+        }
+      },
+      "block_order": [
+        "d863cc66-4c3a-4dd4-b034-a26f745e1db7",
+        "9c331edb-c936-4112-8fe0-a0b83220bbfd",
+        "c82f8e5b-28bd-4e4f-b253-e7d49ab30280"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
     "meazor-faq-section-Rollova": {
       "type": "meazor-faq-section-Rollova",
       "settings": {
@@ -59,11 +91,6 @@
         "subtitle": "",
         "button_url": "",
         "Button_title": ""
-      }
-    },
-    "support-page-blog": {
-      "type": "support-page-blog",
-      "settings": {
       }
     }
   },
