@@ -74,7 +74,7 @@
         margin-bottom:31.25px;
     }
       .tt-can .tt-link-box-a {
-        background: #FCF3E7;
+        background-color:{{ section.settings.section_background_color }};
         border-radius: 15.625px;
         display:flex;
     }
@@ -130,6 +130,12 @@
             "id": "anniversary_little_title",
             "label": "推荐小标题",
             "default": "Check out HOZO’s Ultimate Guide"
+        },
+        {
+          "type": "color",
+          "id": "section_background_color",
+          "label": "整体背景",
+          "default": "#FCF3E7"
         }
         ],
         "blocks": [

@@ -26,7 +26,7 @@
         }
       }
     .tt_section_join {
-        background:#FCF3E7;
+        background-color:{{ section.settings.section_background_color }};
         position:relative;
         width:100%
     }
@@ -58,6 +58,12 @@
             "type": "image_picker",
             "id": "image",
             "label": "产品背景图"
+        },
+        {
+          "type": "color",
+          "id": "section_background_color",
+          "label": "整体背景",
+          "default": "#FCF3E7"
         }
         ]
     }
