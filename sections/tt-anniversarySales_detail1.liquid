@@ -406,10 +406,8 @@
                             links.forEach(function(link) {
                               link.addEventListener('click', async function(event) {
                                 event.preventDefault(); // 阻止<a>标签的默认行为
-
                                 // 获取相邻元素的值
-                                var value = link.previousElementSibling.innerHTML;
-
+                                var value = link.nextElementSibling.innerHTML;
                                 try {
                                   await navigator.clipboard.writeText(value);
                                   console.log('复制成功');
