@@ -215,21 +215,17 @@
                    {% comment %}<a class="cart-2" href="">{{block.settings.text_2}}</a> {% endcomment %}
 
                    <form method="post" action="/cart/add">
-                	<div class="qty">
+                	{% comment %} <div class="qty">
                 	    <label>Quantity</label>
                         <span class="minus">-</span>
                                  <input type="text" id="quantity" name="quantity" value="1" min="1" class="count quantity-selector quantity-input" readonly="">
                         <span class="plus">+</span>
-                    </div>
-                         
-                           
+                    </div> {% endcomment %}
                       <form method="post" action="/cart/add">
 
                       <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
 
-                    
-
-                        <button class="cart-2" type="submit">Add to Cart</button>
+                      <button class="cart-2" type="submit">Add to Cart</button>
 
                       </form>
 
