@@ -122,6 +122,7 @@
 
     .Product_Show_imgs{
         width: 296.88px;
+        background-color: {{ section.settings.background_color }};
     }
 
     @media(max-width:768px){
@@ -209,7 +210,7 @@
 
             <img
                 class="Product_Show_imgs"
-        style="height: auto;border-radius: 15.625px; background-color: {{ section.settings.background_color }};"  
+        style="height: auto;border-radius: 15.625px;"  
                 src="{{all_products[block.settings.product].featured_image | image_url}}" alt="">
 
                 <p class="Product_Name">{{all_products[block.settings.product].title}}</p>
