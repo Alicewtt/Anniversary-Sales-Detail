@@ -50,7 +50,7 @@
     }
     .Product_Show .img_box{
         width: 296.88px;
-        background-color: {{ block.settings.background_color }};
+        background-color: {{ section.settings.background_color }};
         border-radius: 15.625px;
     }
 
@@ -285,7 +285,13 @@
             "id": "text_heading_1",
             "label": "标题",
             "default":"Customer Top Picked"
-        }
+        },
+        {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background color",
+            "default": "#FCF3E7"
+          }
     ],
     "blocks": [
         {
@@ -308,13 +314,8 @@
                         "id": "text_2",
                         "label": "购物车",
                         "default":"Add to cart"
-                    },
-                    {
-                        "type": "color",
-                        "id": "background_color",
-                        "label": "Background color",
-                        "default": "#FCF3E7"
-                      }
+                    }
+
             ]
         }
       ],
