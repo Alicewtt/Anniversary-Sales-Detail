@@ -88,10 +88,10 @@
       "type": "h-still-need-help-section-Rollav",
       "settings": {
         "h_image": "shopify:\/\/shop_images\/02_1.png",
-        "title": "",
-        "subtitle": "",
+        "title": "Still need help?",
+        "subtitle": "Get solutions from HOZO Team",
         "button_url": "",
-        "Button_title": ""
+        "Button_title": "Submit your inquiry"
       }
     }
   },
