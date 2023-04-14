@@ -89,11 +89,11 @@
                         <li class="rolvo-imag">
                           <a href="{{product.url}}"> 
                             <div class="sub-image">
-                              <img src="{{product.featured_image | img_url : '400x'}}">
+                              <img src="{{product.featured_image | img_url : '400x'}}" data-huanhuan="h-123">
                             </div>
                           </a>
                         </li>
-                        
+
                          <p>{{product.title}}
                           {% for t in product.tags %}
                             {% if t contains 'NEW' %} 
