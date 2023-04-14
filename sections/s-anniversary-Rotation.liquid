@@ -121,6 +121,10 @@
 
     }
 
+    .Product_Show_imgs{
+        width: 296.88px;
+    }
+
     @media(max-width:768px){
         .swiper-button-prev,.swiper-button-next{
             display: none;
@@ -202,7 +206,7 @@
 
             <img
                 class="Product_Show_imgs"
-                style="width: 296.88px;height: auto;border-radius: 15.625px;"  
+                style="height: auto;border-radius: 15.625px;"  
                 src="{{all_products[block.settings.product].featured_image | image_url}}" alt="">
 
                 <p class="Product_Name">{{all_products[block.settings.product].title}}</p>
