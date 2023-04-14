@@ -404,6 +404,7 @@
                         var value = $('.tt-r-link-code').text();
                         var link = $('.tt-r-link');
                         link.addEventListener('click', async function(event) {
+                          alert(111111111111);
                           event.preventDefault(); // 阻止<a>标签的默认行为
                           try {
                             await navigator.clipboard.writeText(value);
