@@ -90,9 +90,16 @@
       
       
     }
-    .tt-bigBox .tt-products-box .tt-r-box {
-      padding :10px 20px ;
-      position: relative;
+    @media (min-width:411px) {
+      .tt-bigBox .tt-products-box .tt-r-box {
+        padding :10px 20px ;
+        position: relative;
+      }
+    }
+    @media (max-width:411px) {
+      .tt-bigBox .tt-products-box .tt-r-box {
+        position: relative;
+      }
     }
     .tt-bigBox .tt-products-box .tt-r-box .tt-r-title {
       font-family: 'Alibaba PuHuiTi 2.0';
@@ -168,6 +175,7 @@
         width: 156px ;
         height: 121px ;
         background:url('https://cdn.shopify.com/s/files/1/0549/7667/6078/files/cart-logo.png?v=1681375351')  no-repeat center;
+        background-size:100%;
       }
     }
     @media (max-width:411px) {
