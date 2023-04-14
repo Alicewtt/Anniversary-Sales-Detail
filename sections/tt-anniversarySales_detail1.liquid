@@ -336,9 +336,21 @@
     color: #FFFFFF;
     width: 62.5px;
     height: 37.5px;
+    margin-right:20px;
   } 
   .tt-pc .tt-r-card .tt-r-vector {
-    cursor:pointer;
+    background: #55C1C5;
+    border-radius: 18.75px 18.75px 18.75px 0px;
+    font-family: 'Alibaba PuHuiTi 2.0';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23.4375px;
+    line-height: 37.5px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 62.5px;
+    height: 37.5px;
+    margin-right:20px;
   } 
   </style>
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
@@ -432,8 +444,13 @@
                       <img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/Vector_e2a2799b-7ba2-41e9-b7c7-97b2de4abbbe.png?v=1681375552" alt="" width="30px" height="30px">
                     </div>
                     <form method="post" action="/cart/add">
+
                       <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-                      <button type="submit"></button>
+
+                    
+
+                        <button type="submit">Add to Cart</button>
+
                       </form>
                   </div>
                 </div>
@@ -471,10 +488,6 @@
                     <div class="tt-r-vector">
                       <img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/Vector_e2a2799b-7ba2-41e9-b7c7-97b2de4abbbe.png?v=1681375552" alt="" width="40px" height="40px">
                     </div>
-                    <form method="post" action="/cart/add">
-                      <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-                      <button type="submit">Add to Cart</button>
-                      </form>
                   </div>
                 </div>
               </div>
