@@ -407,6 +407,7 @@
 
                         // 给按钮增加点击事件
                         button.click(function() {
+                          console.log('======================');
                           try {
                             await navigator.clipboard.writeText(value);
                             console.log('复制成功');
