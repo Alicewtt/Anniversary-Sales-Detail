@@ -400,19 +400,24 @@
                       <a class="tt-r-link">copy code</a>
                       <span class="tt-r-link-code">{{block.settings.anniversary_product_code}}</span>
                       <script>
-                        // 获取相邻元素的值
-                        var value = $('.tt-r-link-code').text();
-                        var link = $('.tt-r-link');
-                        link.addEventListener('click', async function(event) {
-                          alert(111111111111);
-                          event.preventDefault(); // 阻止<a>标签的默认行为
-                          try {
-                            await navigator.clipboard.writeText(value);
-                            console.log('复制成功');
-                          } catch (err) {
-                            console.error('复制失败', err);
-                          }
-                        });
+                           // 获取所有<a>标签元素
+                            var links = document.querySelectorAll('a.tt-r-link');
+                            // 给每个<a>标签增加点击事件
+                            links.forEach(function(link) {
+                              link.addEventListener('click', async function(event) {
+                                event.preventDefault(); // 阻止<a>标签的默认行为
+
+                                // 获取相邻元素的值
+                                var value = link.previousElementSibling.innerHTML;
+
+                                try {
+                                  await navigator.clipboard.writeText(value);
+                                  console.log('复制成功');
+                                } catch (err) {
+                                  console.error('复制失败', err);
+                                }
+                              });
+                            });
                     </script>
                     </div>
                     <div class="tt-r-off">off</div>
