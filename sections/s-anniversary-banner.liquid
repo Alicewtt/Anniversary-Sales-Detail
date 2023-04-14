@@ -195,7 +195,7 @@
         
     </div>
 
-    <div class="s-Countdown" style="{% if section.settings.show_countdown_time %}display:block; {% else %}display:none; {% endif %}">
+    <div class="s-Countdown" style="{% if section.settings.show_countdown_time %}display:block; {% else %}display:none; {% endif %} background-color: {{ settings.background_color }};">
         <p class="title">{{section.settings.text_heading_1}}</p>
         <div class="times">
             <ul class="Total_time">

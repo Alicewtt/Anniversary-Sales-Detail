@@ -53,7 +53,7 @@
         }
       }
     .tt-bigBox .tt-products-box {
-      background: #FCF3E7;
+      background: background-color: {{ settings.section_background_color }};;
       margin-bottom:15px;
     }
     .tt-bigBox .tt-products-box .tt-pro-bg {
@@ -535,6 +535,12 @@
       "id": "anniversary_big_title",
       "label": "推荐大标题",
       "default": "  Recommended Deals"
+    },
+    {
+      "type": "color",
+      "id": "section_background_color",
+      "label": "整体背景",
+      "default": "#FCF3E7"
     }
   ],
   "blocks": [
