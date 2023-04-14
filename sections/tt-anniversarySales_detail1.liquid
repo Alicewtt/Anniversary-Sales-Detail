@@ -403,6 +403,7 @@
                         const elementCode = document.querySelector('.tt-r-link-code');
                         element.addEventListener('click', () => {
                           const text = elementCode.textContent;
+                          console.log(text);
                           document.execCommand(text); // 复制到粘贴板
                         });
                     </script>
