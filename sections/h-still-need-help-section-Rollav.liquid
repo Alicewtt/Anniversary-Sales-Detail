@@ -2,7 +2,7 @@
 
 <section class="still-need-help-section">
       <div class="container">
-        <div class="still-need-help-section-inner" style="background-image:url(https://cdn.shopify.com/s/files/1/0549/7667/6078/files/1_3.png?v=1664808024);">
+        <div class="still-need-help-section-inner" style="background-image:url('{{ block.settings.h_image | img_url:'master' }}');">
           <div class="still-need-help-col">
             <h1> {{ section.settings.title }}</h1>
             <p> {{ section.settings.subtitle }}</p>
@@ -19,6 +19,12 @@
   {
 "name": "still-need-help-section",
    "settings": [
+    {
+      "id": "h_image",
+      "type": "image_picker",
+      "label": "图片"
+
+    },
        {
       "type": "text",
       "id": "title",
