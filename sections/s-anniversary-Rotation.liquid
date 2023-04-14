@@ -208,7 +208,7 @@
 <p class="Rotation_title">{{section.settings.text_heading_1}}</p>
 
 <div class="Rotation">
-<div class="swiper-container" style="width: 937.5px;overflow: hidden;">
+<div class="swiper-container" style="overflow: hidden;">
     <div class="swiper-wrapper">
 
     {% for block in section.blocks %}
@@ -252,19 +252,22 @@
 
 
 <script>
+    var swiper_width = 0;
     var swiper_spaceBetween;
     var swiper_slidesPerView;
-    if($(window).width()<1200){
-        swiper_slidesPerView=1;
-        swiper_spaceBetween=10;
+    if($(window).width() > 1200){
+        swiper_width = 937.5
+        swiper_slidesPerView= 3;
+        swiper_spaceBetween= 30;
     }
 
 
   var mySwiper = new Swiper ('.swiper-container', {
     {% comment %} autoplay:true, {% endcomment %}
     loop: true,
-    slidesPerView: swiper_slidesPerView,
+    slidesPerView: 3,
     spaceBetween: swiper_spaceBetween,
+    width: swiper_width,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
