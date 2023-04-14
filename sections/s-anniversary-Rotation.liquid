@@ -227,7 +227,21 @@
 </div>
 </div>
 
-<script>
+
+
+<script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+    autoplay:true,
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+  })        
+  </script>
+  <script>
     $('.cart-2').click(function () {
       var id = $(this).attr('data-id');
       console.log(id);
@@ -243,20 +257,6 @@
       });
     });
   </script>
-
-<script>        
-  var mySwiper = new Swiper ('.swiper-container', {
-    autoplay:true,
-    loop: true,
-    slidesPerView: 3,
-    spaceBetween: 30,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      }
-  })        
-  </script>
-
   {% schema %}
   {
     "name": "s_anniversary_Rotation",
