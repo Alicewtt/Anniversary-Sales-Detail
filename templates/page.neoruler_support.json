@@ -12,6 +12,7 @@
     },
     "user-mannual-section-Rollova": {
       "type": "user-mannual-section-Rollova",
+      "disabled": true,
       "blocks": {
         "9d3f4e93-21b7-4488-9cc7-d14a6e603592": {
           "type": "Flag",
@@ -86,6 +87,7 @@
     "h-still-need-help-section-Rollav": {
       "type": "h-still-need-help-section-Rollav",
       "settings": {
+        "h_image": "shopify:\/\/shop_images\/02_1.png",
         "title": "",
         "subtitle": "",
         "button_url": "",
