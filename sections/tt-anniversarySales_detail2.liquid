@@ -155,7 +155,45 @@
             "label": "推荐小标题",
             "default": "Check out HOZO’s Ultimate Guide"
         }
-        ]
+        ],
+        "blocks": [
+            {
+                "type": "anniversary-1",
+                "name":"新增块",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "anniversary_product_title",
+                        "label": "产品标题",
+                        "default": "MEAZOR 3D Premium Combo"
+                    },
+                    {
+                      "type": "textarea",
+                      "id": "anniversary_product_desc",
+                      "label": "产品描述",
+                      "default": "· First digital measure tape<br/>· Measure curves and lines<br/>· One roll at a time"
+                    },
+                    {
+                      "type": "checkbox",
+                      "id": "anniversary_product_free",
+                      "label": "free Gifts?",
+                      "default": true
+                  },
+                    {
+                        "type": "text",
+                        "id": "anniversary_product_num",
+                        "label": "产品百分数",
+                        "default": "15%"
+                    },
+                    {
+                      "type": "text",
+                      "id": "anniversary_product_code",
+                      "label": "产品copy code",
+                      "default": "12133"
+                  }
+                ]
+            }
+          ]
     }
 {% endschema %}
 {% javascript %}
