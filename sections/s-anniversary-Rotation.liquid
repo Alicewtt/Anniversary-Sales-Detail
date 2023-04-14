@@ -120,7 +120,7 @@
 
     }
 
-    .Product_Show_imgs{
+    .Product_Show .img_box{
         width: 296.88px;
         background-color: {{ section.settings.background_color }};
     }
@@ -208,10 +208,14 @@
 
         <div class="swiper-slide Product_Show">
 
-            <img
-                class="Product_Show_imgs"
-        style="height: auto;border-radius: 15.625px;"  
-                src="{{all_products[block.settings.product].featured_image | image_url}}" alt="">
+            <div class="img_box">
+                <img
+                    class="Product_Show_imgs"
+            style="height: auto;border-radius: 15.625px;"  
+                    src="{{all_products[block.settings.product].featured_image | image_url}}" alt="">
+            
+            </div>
+
 
                 <p class="Product_Name">{{all_products[block.settings.product].title}}</p>
 
