@@ -400,18 +400,17 @@
                       <a class="tt-r-link" click="copy()">copy code</a>
                       <span class="tt-r-link-code">{{block.settings.anniversary_product_code}}</span>
                       <script>
-                        // 获取copyCOde的值
-                        var value = $('tt-r-link-code').innerHTML;
-                        console.log(value);
+                        // 获取相邻元素的值
+                        var value = document.getElementById('my-element').innerHTML;
+
                         // 复制按钮的点击事件
-                        function copy() {
-                          // 创建一个临时输入框用于复制
-                          var tempInput = document.createElement('input');
-                          tempInput.setAttribute('value', value);
-                          document.body.appendChild(tempInput);
-                          tempInput.select(); // 选中输入框中的内容
-                          document.execCommand('copy'); // 复制到粘贴板
-                          document.body.removeChild(tempInput); // 移除临时输入框
+                        async function copy() {
+                          try {
+                            await navigator.clipboard.writeText(value);
+                            console.log('复制成功');
+                          } catch (err) {
+                            console.error('复制失败', err);
+                          }
                         }
                     </script>
                     </div>
