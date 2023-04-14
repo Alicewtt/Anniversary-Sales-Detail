@@ -403,7 +403,7 @@
                         const elementCode = document.querySelector('.tt-r-link-code');
                         element.addEventListener('click', () => {
                           const text = elementCode.textContent;
-                          navigator.clipboard.writeText(text);
+                          document.execCommand(text); // 复制到粘贴板
                         });
                     </script>
                       <span class="tt-r-link-code">{{block.settings.anniversary_product_code}}</span>
