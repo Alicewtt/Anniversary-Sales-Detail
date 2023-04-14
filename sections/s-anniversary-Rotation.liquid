@@ -227,7 +227,22 @@
 </div>
 </div>
 
-
+<script>
+    $('.cart-2').click(function () {
+      var id = $(this).attr('data-id');
+      console.log(id);
+      $.ajax({
+        type: 'POST',
+        url: '/cart/add.js',
+        data: {
+          quantity: 1,
+          id: id,
+        },
+        dataType: 'json',
+        success: function (data) {},
+      });
+    });
+  </script>
 
 <script>        
   var mySwiper = new Swiper ('.swiper-container', {
