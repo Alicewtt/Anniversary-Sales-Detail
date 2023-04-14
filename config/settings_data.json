@@ -3505,19 +3505,22 @@
             "type": "anniversary-1",
             "settings": {
               "anniversary1_title": "How to choose your First HOZO product?",
-              "image": "shopify:\/\/shop_images\/link-1.png"
+              "image": "shopify:\/\/shop_images\/link-1.png",
+              "anniversary1_url": "https:\/\/hozodesign.com\/products\/meazor3d"
             }
           },
           "30a6ee23-dd10-42fa-93d2-49d744489446": {
             "type": "anniversary-1",
             "settings": {
-              "anniversary1_title": "MEAZOR 3D vs MEAZOR"
+              "anniversary1_title": "MEAZOR 3D vs MEAZOR",
+              "anniversary1_url": "#"
             }
           },
           "d6cd0369-07ad-4fff-a7ce-b7ec67150310": {
             "type": "anniversary-1",
             "settings": {
-              "anniversary1_title": "HOZO’s Gift Guide Perfect Gifts for your loved one!"
+              "anniversary1_title": "HOZO’s Gift Guide Perfect Gifts for your loved one!",
+              "anniversary1_url": "#"
             }
           }
         },
