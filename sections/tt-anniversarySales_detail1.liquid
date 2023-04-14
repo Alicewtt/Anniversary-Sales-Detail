@@ -87,8 +87,8 @@
         }
     }
     .tt-bigBox .tt-products-box .tt-l-box {
-      
-      
+
+
     }
     @media (min-width:411px) {
       .tt-bigBox .tt-products-box .tt-r-box {
@@ -192,7 +192,7 @@
         background-size:100%;
       }
     }
-    
+
   {% comment %} 移动和pc的free区域 {% endcomment %}
   .tt-pc .tt-r-free {
     background: #55C1C5;
@@ -337,7 +337,7 @@
     width: 62.5px;
     height: 37.5px;
     margin-right:20px;
-  } 
+  }
   .tt-pc .tt-r-card .tt-r-vector {
     background: #55C1C5;
     border-radius: 18.75px 18.75px 18.75px 0px;
@@ -351,226 +351,247 @@
     width: 62.5px;
     height: 37.5px;
     margin-right:20px;
-  } 
-  </style>
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-  <section class="tt__section">
-   
-    <div class="tt-bigBox">
-        <div class="tt-h1-title">{{ section.settings.anniversary_big_title }}</div>
-        {% for block in section.blocks %}
-          <div class="tt-products-box">
-            <div class="tt-pro-bg">
-              <div class="tt-l-box box-flex">
-                <!-- .swiper为容器 -->
-                <div class="swiper">
-                    <!-- 轮播区域 -->
-                    <div class="swiper-wrapper">
-                      {% for w_img in all_products[block.settings.product].images %}
-                        <div class="swiper-slide">
-                          <img
-                            class="Product_Show_imgs"
-                            width="100%"  
-                            src="{{ w_img | image_url}}" alt="">
-                        </div>
-                      {% endfor %}
-                    </div>
-                    <!-- 导航按钮 -->
-                    <div class="swiper-button-prev swiper-button-hide"></div>
-                    <div class="swiper-button-next swiper-button-hide"></div>
-                    <!-- 分页器 -->
-                    <div class="swiper-pagination"></div>
+  }
+</style>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<section class="tt__section">
+  <div class="tt-bigBox">
+    <div class="tt-h1-title">{{ section.settings.anniversary_big_title }}</div>
+    {% for block in section.blocks %}
+      <div class="tt-products-box">
+        <div class="tt-pro-bg">
+          <div class="tt-l-box box-flex">
+            <!-- .swiper为容器 -->
+            <div class="swiper">
+              <!-- 轮播区域 -->
+              <div class="swiper-wrapper">
+                {% for w_img in all_products[block.settings.product].images %}
+                  <div class="swiper-slide">
+                    <img
+                      class="Product_Show_imgs"
+                      width="100%"
+                      src="{{ w_img | image_url}}"
+                      alt=""
+                    >
                   </div>
-                  <script type="text/javascript">
-                    var mySwiper = new Swiper('.swiper', {
-                    direction: 'horizontal',
-                    loop: true,
-                    pagination: {
-                        el: '.swiper-pagination'
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev'
-                    },
-                    scrollbar: {
-                        el: '.swiper-srollbar'
-                    }
-                  })
-                
-                </script>
+                {% endfor %}
+              </div>
+              <!-- 导航按钮 -->
+              <div class="swiper-button-prev swiper-button-hide"></div>
+              <div class="swiper-button-next swiper-button-hide"></div>
+              <!-- 分页器 -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <script type="text/javascript">
+              var mySwiper = new Swiper('.swiper', {
+                direction: 'horizontal',
+                loop: true,
+                pagination: {
+                  el: '.swiper-pagination',
+                },
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+                scrollbar: {
+                  el: '.swiper-srollbar',
+                },
+              });
+            </script>
+          </div>
+          <div class="tt-r-box box-flex">
+            <p class="tt-r-title">{{ block.settings.anniversary_product_title }}</p>
+            <p class="tt-r-desc">{{ block.settings.anniversary_product_desc }}</p>
+            <div
+              class="tt-order"
+              style="{% if block.settings.anniversary_product_order %}display:block; {% else %}display:none; {% endif %}"
+            ></div>
+            <p class="tt-r-money">
+              {{ all_products[block.settings.product].price_max | times: 1.0 | money }}
+              <span class="tt-r-money-old">
+                {{- all_products[block.settings.product].price_min | times: 1.0 | money -}}
+              </span>
+            </p>
+            {% comment %} 移动端 {% endcomment %}
+            <div class="tt-iphone tt-iphone-position">
+              <p
+                class="tt-r-free"
+                style="{% if block.settings.anniversary_product_free %}display:block; {% else %}display:none; {% endif %}"
+              >
+                Free Gifts
+              </p>
+              <div class="tt-r-card">
+                <div class="tt-r-bai">
+                  <p class="tt-r-num">
+                    {{ block.settings.anniversary_product_num }}
+                  </p>
+                  <a class="tt-r-link">copy code</a>
+                  <span class="tt-r-link-code">{{ block.settings.anniversary_product_code }}</span>
+                  <script>
+                    // 获取所有<a>标签元素
+                    var links = document.querySelectorAll('a.tt-r-link');
+                    // 给每个<a>标签增加点击事件
+                    links.forEach(function (link) {
+                      link.addEventListener('click', async function (event) {
+                        event.preventDefault(); // 阻止<a>标签的默认行为
+                        var clickedLink = event.target;
+                        // 获取<a>标签下一个元素的值
+                        var value = link.nextElementSibling.innerHTML;
+                        try {
+                          await navigator.clipboard.writeText(value);
+                          console.log('复制成功');
+                        } catch (err) {
+                          console.error('复制失败', err);
+                        }
+                      });
+                    });
+                  </script>
                 </div>
-              <div class="tt-r-box box-flex">
-                <p class="tt-r-title">{{block.settings.anniversary_product_title}}</p>
-                <p class="tt-r-desc"> {{block.settings.anniversary_product_desc}} </p>
-                <div class="tt-order"  style="{% if block.settings.anniversary_product_order %}display:block; {% else %}display:none; {% endif %}">
-                  
+                <div class="tt-r-off">off</div>
+                <div class="tt-r-vector">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/Vector_e2a2799b-7ba2-41e9-b7c7-97b2de4abbbe.png?v=1681375552"
+                    alt=""
+                    width="30px"
+                    height="30px"
+                  >
                 </div>
-                <p class="tt-r-money">{{all_products[block.settings.product].price_max | times: 1.0 | money }}
-                  <span class="tt-r-money-old">{{all_products[block.settings.product].price_min | times: 1.0 | money }}</span>
-                </p>
-                {% comment %} 移动端 {% endcomment %}
-                <div class="tt-iphone tt-iphone-position">
-                  <p class="tt-r-free" style="{% if block.settings.anniversary_product_free %}display:block; {% else %}display:none; {% endif %}">Free Gifts</p>
-                  <div class="tt-r-card">
-                    <div class="tt-r-bai">
-                      <p class="tt-r-num">
-                        {{block.settings.anniversary_product_num}}
-                      </p>
-                      <a class="tt-r-link">copy code</a>
-                      <span class="tt-r-link-code">{{block.settings.anniversary_product_code}}</span>
-                      <script>
-                        // 获取所有<a>标签元素
-                         var links = document.querySelectorAll('a.tt-r-link');
-                         // 给每个<a>标签增加点击事件
-                         links.forEach(function(link) {
-                           link.addEventListener('click', async function(event) {
-                             event.preventDefault(); // 阻止<a>标签的默认行为
-                             var clickedLink = event.target;
-                              // 获取<a>标签下一个元素的值
-                             var value = link.nextElementSibling.innerHTML;
-                             try {
-                               await navigator.clipboard.writeText(value);
-                               console.log('复制成功');
-                             } catch (err) {
-                               console.error('复制失败', err);
-                             }
-                           });
-                         });
-                 </script>
-                    </div>
-                    <div class="tt-r-off">off</div>
-                    <div class="tt-r-vector">
-                      <img src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/Vector_e2a2799b-7ba2-41e9-b7c7-97b2de4abbbe.png?v=1681375552" alt="" width="30px" height="30px">
-                    </div>
-                  </div>
+              </div>
+            </div>
+            {% comment %} PC端 {% endcomment %}
+            <div class="tt-pc">
+              <p
+                class="tt-r-free"
+                style="{% if block.settings.anniversary_product_free %}display:block; {% else %}display:none; {% endif %}"
+              >
+                Free Gifts
+              </p>
+              <div class="tt-r-card">
+                <div class="tt-r-bai">
+                  <p class="tt-r-num">
+                    {{ block.settings.anniversary_product_num }}
+                  </p>
+                  <a class="tt-r-link">copy code</a>
+                  <span class="tt-r-link-code">{{ block.settings.anniversary_product_code }}</span>
+                  <script>
+                    // 获取所有<a>标签元素
+                    var links = document.querySelectorAll('a.tt-r-link');
+                    // 给每个<a>标签增加点击事件
+                    links.forEach(function (link) {
+                      link.addEventListener('click', async function (event) {
+                        event.preventDefault(); // 阻止<a>标签的默认行为
+                        var clickedLink = event.target;
+                        // 获取<a>标签下一个元素的值
+                        var value = link.nextElementSibling.innerHTML;
+                        try {
+                          await navigator.clipboard.writeText(value);
+                          console.log('复制成功');
+                        } catch (err) {
+                          console.error('复制失败', err);
+                        }
+                      });
+                    });
+                  </script>
                 </div>
-                {% comment %} PC端 {% endcomment %}
-                <div class="tt-pc">
-                  <p class="tt-r-free" style="{% if block.settings.anniversary_product_free %}display:block; {% else %}display:none; {% endif %}">Free Gifts</p>
-                  <div class="tt-r-card">
-                    <div class="tt-r-bai">
-                      <p class="tt-r-num">
-                        {{block.settings.anniversary_product_num}}
-                      </p>
-                      <a class="tt-r-link">copy code</a>
-                      <span class="tt-r-link-code">{{block.settings.anniversary_product_code}}</span>
-                      <script>
-                           // 获取所有<a>标签元素
-                            var links = document.querySelectorAll('a.tt-r-link');
-                            // 给每个<a>标签增加点击事件
-                            links.forEach(function(link) {
-                              link.addEventListener('click', async function(event) {
-                                event.preventDefault(); // 阻止<a>标签的默认行为
-                                var clickedLink = event.target;
-                                 // 获取<a>标签下一个元素的值
-                                var value = link.nextElementSibling.innerHTML;
-                                try {
-                                  await navigator.clipboard.writeText(value);
-                                  console.log('复制成功');
-                                } catch (err) {
-                                  console.error('复制失败', err);
-                                }
-                              });
-                            });
-                    </script>
-                    </div>
-                    <div class="tt-r-off">off</div>
-                    <div class="tt-r-vector ">
-                      <img class="tt-add-to-cart hh_add_cart" data-id="{{all_products[block.settings.product].variants[0].id}}" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/Vector_e2a2799b-7ba2-41e9-b7c7-97b2de4abbbe.png?v=1681375552" alt="" width="40px" height="40px">
-                    </div>
-                  </div>
+                <div class="tt-r-off">off</div>
+                <div class="tt-r-vector ">
+                  <img
+                    class="tt-add-to-cart"
+                    data-id="{{all_products[block.settings.product].variants[0].id}}"
+                    src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/Vector_e2a2799b-7ba2-41e9-b7c7-97b2de4abbbe.png?v=1681375552"
+                    alt=""
+                    width="40px"
+                    height="40px"
+                  >
                 </div>
               </div>
             </div>
           </div>
-        {% endfor %}
-    </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
 
-  </section>
-
-  <script>
-    $('.tt-add-to-cart').click(function(){
-      
-      var id =$(this).attr('data-id')
-      console.log(id)
-      $.ajax({
-        type: 'POST',
-        url: '/cart/add.js',
-        data: {
-          quantity: 1,
-          id: id
-        },
-          dataType: 'json', 
-         success: function (data) { 
-         
-          
-         } 
-         });
-    })
-  </script>
+<script>
+  $('.tt-add-to-cart').click(function () {
+    var id = $(this).attr('data-id');
+    console.log(id);
+    $.ajax({
+      type: 'POST',
+      url: '/cart/add.js',
+      data: {
+        quantity: 1,
+        id: id,
+      },
+      dataType: 'json',
+      success: function (data) {},
+    });
+  });
+</script>
 
 {% schema %}
+{
+  "name": "tt-anniversarySale",
+  "settings": [
     {
-    "name": "tt-anniversarySale",
-    "settings": [
-      {
-        "type": "text",
-        "id": "anniversary_big_title",
-        "label": "推荐大标题",
-        "default": "  Recommended Deals"
+      "type": "text",
+      "id": "anniversary_big_title",
+      "label": "推荐大标题",
+      "default": "  Recommended Deals"
     }
-    ],
-    "blocks": [
-      {
-          "type": "anniversary",
-          "name":"新增块",
-          "settings": [
-              {
-                  "type": "product",
-                  "id": "product",
-                  "label": "Product"
-              },
-              {
-                  "type": "text",
-                  "id": "anniversary_product_title",
-                  "label": "产品标题",
-                  "default": "MEAZOR 3D Premium Combo"
-              },
-              {
-                "type": "textarea",
-                "id": "anniversary_product_desc",
-                "label": "产品描述",
-                "default": "· First digital measure tape<br/>· Measure curves and lines<br/>· One roll at a time"
-              },
-              {
-                "type": "checkbox",
-                "id": "anniversary_product_order",
-                "label": "PRE-ORDER?",
-                "default": true
-            },
-              {
-                "type": "checkbox",
-                "id": "anniversary_product_free",
-                "label": "free Gifts?",
-                "default": true
-            },
-              {
-                  "type": "text",
-                  "id": "anniversary_product_num",
-                  "label": "产品百分数",
-                  "default": "15%"
-              },
-              {
-                "type": "text",
-                "id": "anniversary_product_code",
-                "label": "产品copy code",
-                "default": "12133"
-            }
-          ]
-      }
-    ]
+  ],
+  "blocks": [
+    {
+      "type": "anniversary",
+      "name": "新增块",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "text",
+          "id": "anniversary_product_title",
+          "label": "产品标题",
+          "default": "MEAZOR 3D Premium Combo"
+        },
+        {
+          "type": "textarea",
+          "id": "anniversary_product_desc",
+          "label": "产品描述",
+          "default": "· First digital measure tape<br/>· Measure curves and lines<br/>· One roll at a time"
+        },
+        {
+          "type": "checkbox",
+          "id": "anniversary_product_order",
+          "label": "PRE-ORDER?",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "anniversary_product_free",
+          "label": "free Gifts?",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "anniversary_product_num",
+          "label": "产品百分数",
+          "default": "15%"
+        },
+        {
+          "type": "text",
+          "id": "anniversary_product_code",
+          "label": "产品copy code",
+          "default": "12133"
+        }
+      ]
     }
+  ]
+}
 {% endschema %}
 {% javascript %}
 {% endjavascript %}
