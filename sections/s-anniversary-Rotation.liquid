@@ -258,17 +258,21 @@
     slidesPerView: 3,
     spaceBetween: 30,
     centeredSlides:true,  
+
+    breakpoints: {
+        // 当屏幕宽度大于等于 420 像素时
+        420: {
+          spaceBetween: 40,
+          slidesPerView: 1
+        }
+      },
+
+
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        // 当屏幕宽度大于等于 420 像素时
-        420: {
-          spaceBetween: 20,
-          slidesPerView: 1
-        }
       }
+
   })        
   </script>
   <script>
