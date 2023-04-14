@@ -117,7 +117,6 @@
         font-size: 15.625px;
         line-height: 20px;
         text-align: center;
-        {% comment %} padding-top: 5px; {% endcomment %}
 
     }
 
@@ -210,7 +209,7 @@
 
             <img
                 class="Product_Show_imgs"
-                style="height: auto;border-radius: 15.625px;"  
+        style="height: auto;border-radius: 15.625px; background-color: {{ section.settings.background_color }};"  
                 src="{{all_products[block.settings.product].featured_image | image_url}}" alt="">
 
                 <p class="Product_Name">{{all_products[block.settings.product].title}}</p>
@@ -301,7 +300,13 @@
                         "id": "text_2",
                         "label": "购物车",
                         "default":"Add to cart"
-                    }
+                    },
+                    {
+                        "type": "color",
+                        "id": "background_color",
+                        "label": "Background color",
+                        "default": "#FCF3E7"
+                      }
             ]
         }
       ],
