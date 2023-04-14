@@ -217,7 +217,7 @@
   
                      <form method="post" action="/cart/add">
 
-                      <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                      <input type="hidden" name="id" value="{{ product.variants[0].id }}" />
 
                       <script>
                         console.log({{all_products[block.settings.product] | json}})
