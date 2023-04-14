@@ -3,21 +3,34 @@
     "meazor-section-banner-Rollova": {
       "type": "meazor-section-banner-Rollova",
       "settings": {
+        "title": "NeoRuler Support",
+        "subtitle": "Everything you need to know about NeoRuler!",
+        "Banner_image": "shopify:\/\/shop_images\/AIO.png",
+        "video_title": "",
+        "video_url": ""
       }
     },
     "user-mannual-section-Rollova": {
       "type": "user-mannual-section-Rollova",
       "settings": {
+        "title": ""
       }
     },
     "meazor-faq-section-Rollova": {
       "type": "meazor-faq-section-Rollova",
       "settings": {
+        "title": "",
+        "Button_title": "",
+        "button_url": ""
       }
     },
     "still-need-help-section-Rollav": {
       "type": "still-need-help-section-Rollav",
       "settings": {
+        "title": "",
+        "subtitle": "",
+        "button_url": "",
+        "Button_title": ""
       }
     }
   },

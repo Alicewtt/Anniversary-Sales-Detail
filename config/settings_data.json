@@ -3556,8 +3556,7 @@
             "settings": {
               "product": "meazor3d",
               "text_1": "Learn Mort",
-              "text_2": "Add to cart",
-              "background_color": "#EA0606"
+              "text_2": "Add to cart"
             }
           },
           "s-anniversary-Rotation-1": {
@@ -3565,8 +3564,7 @@
             "settings": {
               "product": "meazor-3d-protection-kit",
               "text_1": "Learn Mort",
-              "text_2": "Add to cart",
-              "background_color": "#fcf3e7"
+              "text_2": "Add to cart"
             }
           },
           "648cad01-0df3-4df0-b9b4-06b1e9ed2b40": {
@@ -3574,8 +3572,7 @@
             "settings": {
               "product": "ultra-3d-adapter",
               "text_1": "Learn Mort",
-              "text_2": "Add to cart",
-              "background_color": "#fcf3e7"
+              "text_2": "Add to cart"
             }
           }
         },
