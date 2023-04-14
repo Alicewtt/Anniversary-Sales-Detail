@@ -1,7 +1,18 @@
 <style>
+    @media (min-width:411px) {
+        .tt_section_join {
+            height:375px;
+        }
+      }
+      @media (max-width:411px) {
+        .tt_section_join {
+            height:193px;
+        }
+      }
     .tt_section_join {
         background:#FCF3E7;
         position:relative;
+        width:100%
     }
     .tt_section_join .tt-h1-title {
         position: absolute;
@@ -24,7 +35,7 @@
   </section>
   {% schema %}
     {
-        "name": "tt-anniversarySale-1",
+        "name": "tt-anniversarySale-join",
         "settings": [
         {
             "type": "text",
