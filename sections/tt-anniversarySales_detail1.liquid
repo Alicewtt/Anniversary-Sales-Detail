@@ -491,7 +491,9 @@
 
   <script>
     $('.tt-add-to-cart').click(function(){
-    
+      
+      var id =$this.attr('data-id')
+      console.log(id)
       $.ajax({
         type: 'POST',
         url: '/cart/add.js',
