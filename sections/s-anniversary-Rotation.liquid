@@ -251,21 +251,20 @@
 
 
 
-<script>        
+<script>
+    var swiper_spaceBetween;
+    var swiper_slidesPerView;
+    if($(window).width()<420){
+        swiper_slidesPerView=1;
+        swiper_spaceBetween=10;
+    }
+
+
   var mySwiper = new Swiper ('.swiper-container', {
     {% comment %} autoplay:true, {% endcomment %}
     loop: true,
-    slidesPerView: 3,
-    spaceBetween: 30,
-    breakpoints: {
-        // 当屏幕宽度大于等于 420 像素时
-        420: {
-          slidesPerView: 1,
-          spaceBetween: 40,
-        }
-      }
-
-
+    slidesPerView: swiper_slidesPerView,
+    spaceBetween: swiper_spaceBetween,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
