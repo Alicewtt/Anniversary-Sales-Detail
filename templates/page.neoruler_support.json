@@ -3,21 +3,62 @@
     "meazor-section-banner-Rollova": {
       "type": "meazor-section-banner-Rollova",
       "settings": {
+        "title": "NeoRuler Support",
+        "subtitle": "Everything you need to know about NeoRuler!",
+        "Banner_image": "shopify:\/\/shop_images\/AIO.png",
+        "video_title": "Video Tutorial",
+        "video_url": "https:\/\/www.youtube.com\/embed\/C09Rn8TEp2o"
       }
     },
     "user-mannual-section-Rollova": {
       "type": "user-mannual-section-Rollova",
+      "blocks": {
+        "9d3f4e93-21b7-4488-9cc7-d14a6e603592": {
+          "type": "Flag",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1172.png",
+            "url": ""
+          }
+        },
+        "2cc99c67-8397-496a-a9c4-d493aa6efa3a": {
+          "type": "Flag",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1172.png",
+            "url": "#"
+          }
+        },
+        "1db5dac3-5188-4e43-9576-ec24cc04216c": {
+          "type": "Flag",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1172.png",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "9d3f4e93-21b7-4488-9cc7-d14a6e603592",
+        "2cc99c67-8397-496a-a9c4-d493aa6efa3a",
+        "1db5dac3-5188-4e43-9576-ec24cc04216c"
+      ],
       "settings": {
+        "title": "Understand better with NeoRuler"
       }
     },
     "meazor-faq-section-Rollova": {
       "type": "meazor-faq-section-Rollova",
       "settings": {
+        "title": "",
+        "Button_title": "",
+        "button_url": ""
       }
     },
     "still-need-help-section-Rollav": {
       "type": "still-need-help-section-Rollav",
       "settings": {
+        "title": "",
+        "subtitle": "",
+        "button_url": "",
+        "Button_title": ""
       }
     },
     "support-page-blog": {
