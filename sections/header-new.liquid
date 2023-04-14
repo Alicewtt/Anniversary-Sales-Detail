@@ -93,13 +93,13 @@
                             </div>
                           </a>
                         </li>
+                        
                          <p>{{product.title}}
                           {% for t in product.tags %}
-     {% if t contains 'NEW' %} 
+                            {% if t contains 'NEW' %} 
                             <span>new </span>
-            
-     {% endif %}
-  {% endfor %}
+                            {% endif %}
+                          {% endfor %}
                          </p>
                       </ul>
                     {%  endfor %}
