@@ -1,0 +1,51 @@
+
+
+<section class="still-need-help-section">
+      <div class="container">
+        <div class="still-need-help-section-inner" style="background-image:url(https://cdn.shopify.com/s/files/1/0549/7667/6078/files/1_3.png?v=1664808024);">
+          <div class="still-need-help-col">
+            <h1> {{ section.settings.title }}</h1>
+            <p> {{ section.settings.subtitle }}</p>
+             <a href="{{ section.settings.button_url }}">{{ section.settings.Button_title }}<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          </div>
+          
+        </div>
+      </div>
+</section>
+
+
+
+{% schema %}
+  {
+"name": "still-need-help-section",
+   "settings": [
+       {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+   {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+     {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button Url"
+    },
+     {
+      "type": "text",
+      "id": "Button_title",
+      "label": "Button title"
+    }
+    
+ ],
+    
+"presets":[{
+ "name": "still-need-help-section",
+"category": "still-need-help-section"
+
+}]
+  }
+{% endschema %}
