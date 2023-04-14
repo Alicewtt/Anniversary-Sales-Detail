@@ -12,8 +12,34 @@
     },
     "user-mannual-section-Rollova": {
       "type": "user-mannual-section-Rollova",
+      "blocks": {
+        "9d3f4e93-21b7-4488-9cc7-d14a6e603592": {
+          "type": "Flag",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1172.png",
+            "url": ""
+          }
+        },
+        "2cc99c67-8397-496a-a9c4-d493aa6efa3a": {
+          "type": "Flag",
+          "settings": {
+            "url": ""
+          }
+        },
+        "1db5dac3-5188-4e43-9576-ec24cc04216c": {
+          "type": "Flag",
+          "settings": {
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "9d3f4e93-21b7-4488-9cc7-d14a6e603592",
+        "2cc99c67-8397-496a-a9c4-d493aa6efa3a",
+        "1db5dac3-5188-4e43-9576-ec24cc04216c"
+      ],
       "settings": {
-        "title": ""
+        "title": "Understand better with NeoRuler"
       }
     },
     "meazor-faq-section-Rollova": {
