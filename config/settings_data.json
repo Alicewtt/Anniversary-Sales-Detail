@@ -3507,10 +3507,17 @@
               "anniversary1_title": "How to choose your First HOZO product?",
               "image": "shopify:\/\/shop_images\/link-1.png"
             }
+          },
+          "30a6ee23-dd10-42fa-93d2-49d744489446": {
+            "type": "anniversary-1",
+            "settings": {
+              "anniversary1_title": "MEAZOR 3D vs MEAZOR"
+            }
           }
         },
         "block_order": [
-          "e144611c-2283-4783-b9de-def15ec00244"
+          "e144611c-2283-4783-b9de-def15ec00244",
+          "30a6ee23-dd10-42fa-93d2-49d744489446"
         ],
         "settings": {
           "anniversary_big_title": "Can’t Decide?111",
