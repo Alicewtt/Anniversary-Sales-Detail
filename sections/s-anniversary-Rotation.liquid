@@ -201,13 +201,13 @@
             <img
                 class="Product_Show_imgs"
                 style="width: 296.88px;height: auto;border-radius: 15.625px;"  
-                src="{{all_products[block.settings.product].featured_image | image_url}}" alt="">
+                src="{{all_products[block.settings.product].images | image_url}}" alt="">
 
                 <p class="Product_Name">{{all_products[block.settings.product].title}}</p>
 
                 <div class="Price">
-                    <p class="Price-1">{{all_products[block.settings.product].price_max | times: 1.0 | money}}</p>
-                    <p class="Price-2">{{all_products[block.settings.product].price_min | times: 1.0 | money}}</p>
+                    <p class="Price-1">{{all_products[block.settings.product].price_min | times: 1.0 | money}}</p>
+                    <p class="Price-2">{{all_products[block.settings.product].price_max | times: 1.0 | money}}</p>
                 </div>
                 
                 <div class="Cart">
