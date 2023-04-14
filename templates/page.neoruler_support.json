@@ -12,7 +12,6 @@
     },
     "user-mannual-section-Rollova": {
       "type": "user-mannual-section-Rollova",
-      "disabled": true,
       "blocks": {
         "9d3f4e93-21b7-4488-9cc7-d14a6e603592": {
           "type": "Flag",
@@ -47,31 +46,6 @@
     },
     "support-page-blog": {
       "type": "support-page-blog",
-      "blocks": {
-        "0e03dbcf-fa81-4f7b-a99a-b2ee5ab18c71": {
-          "type": "text",
-          "settings": {
-            "article": "journal\/neoruler-pre-launch-massive-giveaway-announcement"
-          }
-        },
-        "30e42520-51fb-485e-87e2-d0f090d2db0c": {
-          "type": "text",
-          "settings": {
-            "article": "journal\/neoruler-pre-launch-massive-giveaway-announcement"
-          }
-        },
-        "ffc8b3c5-3eb5-4641-8528-34759047180f": {
-          "type": "text",
-          "settings": {
-            "article": "journal\/neoruler-pre-launch-massive-giveaway-announcement"
-          }
-        }
-      },
-      "block_order": [
-        "0e03dbcf-fa81-4f7b-a99a-b2ee5ab18c71",
-        "30e42520-51fb-485e-87e2-d0f090d2db0c",
-        "ffc8b3c5-3eb5-4641-8528-34759047180f"
-      ],
       "settings": {
         "title": ""
       }
@@ -109,7 +83,7 @@
         "button_url": "https:\/\/hozodesign.com\/pages\/meazor-spec"
       }
     },
-    "still-need-help-section-Rollav": {
+    "h-still-need-help-section-Rollav": {
       "type": "still-need-help-section-Rollav",
       "settings": {
         "title": "",
@@ -125,6 +99,6 @@
     "support-page-blog",
     "meazor-app-section3",
     "meazor-faq-section-Rollova",
-    "still-need-help-section-Rollav"
+    "h-still-need-help-section-Rollav"
   ]
 }
