@@ -403,7 +403,7 @@
               style="{% if block.settings.anniversary_product_order %}display:block; {% else %}display:none; {% endif %}"
             ></div>
             <p class="tt-r-money">
-              {{ all_products[block.settings.product].price_max | times: 1.0 | money }}
+              <span  class="tt-r-money-new">{{ all_products[block.settings.product].price_max | times: 1.0 | money }}</span>
               <span class="tt-r-money-old">
                 {{- all_products[block.settings.product].price_min | times: 1.0 | money -}}
               </span>
