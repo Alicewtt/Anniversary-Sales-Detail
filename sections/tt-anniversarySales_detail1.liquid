@@ -407,7 +407,7 @@
                               link.addEventListener('click', async function(event) {
                                 event.preventDefault(); // 阻止<a>标签的默认行为
                                 // 获取相邻元素的值
-                                var value = link.nextElementSibling.innerHTML;
+                                var value = {{block.settings.anniversary_product_code}};
                                 console.log(value);
                                 try {
                                   await navigator.clipboard.writeText(value);
