@@ -58,9 +58,6 @@
           margin: 16.25px auto;
         }
       }
-    .tt-bigBox .tt-products-box {
-      background-color:{{ section.settings.section_background_color }};
-    }
     @media (min-width:421px) {
       .tt-bigBox .tt-products-box {
         border-radius: 15.625px;
@@ -82,7 +79,7 @@
         border-radius: 9.66184px;
       }
       .tt-bigBox .tt-products-box .tt-pro-bg{
-        width: 370px;
+          width: 370px;
           display: flex;
           flex-direction: column;
           margin:0 auto;
@@ -91,6 +88,9 @@
             width: 100%;
         }
     }
+    .tt-bigBox .tt-products-box .tt-pro-bg{
+      background-color:{{ section.settings.section_background_color }};
+  }
     .tt-bigBox .tt-products-box .tt-l-box {
 
 
