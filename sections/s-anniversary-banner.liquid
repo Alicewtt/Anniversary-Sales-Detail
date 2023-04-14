@@ -18,8 +18,7 @@
         width: 625px;
         height: 218.75px;
         margin: auto;
-        {% comment %} background-color: #FCF3E7; {% endcomment %}
-        background-color: {{ settings.background_color }};
+        background-color: {{ section.settings.background_color }};
         margin-top: 23.44px;
         border-radius: 15.625px;
         
@@ -195,11 +194,8 @@
         
     </div>
 
-    <div class="s-Countdown" style="{% if section.settings.show_countdown_time %}display:block; {% else %}display:none; {% endif %} background-color: {{ settings.background_color }};">
-        <script>
-            console.log({{ settings.background_color }})
+    <div class="s-Countdown" style="{% if section.settings.show_countdown_time %}display:block; {% else %}display:none; {% endif %}">
 
-        </script>
         <p class="title">{{section.settings.text_heading_1}}</p>
         <div class="times">
             <ul class="Total_time">
