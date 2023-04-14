@@ -3461,6 +3461,7 @@
               "product": "meazor-master-kit",
               "anniversary_product_title": "MEAZOR 3D Premium Combo",
               "anniversary_product_desc": "· 40M Multi-room Scan <br>\n · 3D Obstacle Avoidance <br>\n · Export to CAD  <br>",
+              "anniversary_product_order": false,
               "anniversary_product_free": true,
               "anniversary_product_num": "15%",
               "anniversary_product_code": "34455"
@@ -3472,6 +3473,7 @@
               "product": "target-plates-kit",
               "anniversary_product_title": "NeoRuler",
               "anniversary_product_desc": "· Customizeable Scales<br>\n · 8 units<br>\n · 0.1mm resolution<br>",
+              "anniversary_product_order": true,
               "anniversary_product_free": true,
               "anniversary_product_num": "15%",
               "anniversary_product_code": "1213"
@@ -3483,6 +3485,7 @@
               "product": "rollova",
               "anniversary_product_title": "ROLLOVA V2.0",
               "anniversary_product_desc": "· First digital measure tape<br>\n· Measure curves and lines<br>\n· One roll at a time",
+              "anniversary_product_order": false,
               "anniversary_product_free": true,
               "anniversary_product_num": "15%",
               "anniversary_product_code": "5657"
