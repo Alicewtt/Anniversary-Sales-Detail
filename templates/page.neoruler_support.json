@@ -1,0 +1,30 @@
+{
+  "sections": {
+    "meazor-section-banner-Rollova": {
+      "type": "meazor-section-banner-Rollova",
+      "settings": {
+      }
+    },
+    "user-mannual-section-Rollova": {
+      "type": "user-mannual-section-Rollova",
+      "settings": {
+      }
+    },
+    "meazor-faq-section-Rollova": {
+      "type": "meazor-faq-section-Rollova",
+      "settings": {
+      }
+    },
+    "still-need-help-section-Rollav": {
+      "type": "still-need-help-section-Rollav",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "meazor-section-banner-Rollova",
+    "user-mannual-section-Rollova",
+    "meazor-faq-section-Rollova",
+    "still-need-help-section-Rollav"
+  ]
+}
