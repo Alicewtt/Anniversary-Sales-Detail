@@ -3544,7 +3544,8 @@
           "show_countdown_time": true,
           "item_image_1_1": "shopify:\/\/shop_images\/pc-Frame_1216.jpg",
           "item_image_1_2": "shopify:\/\/shop_images\/web-Frame_1216.jpg",
-          "text_heading_1": "Grab your best deal before it’s gone!"
+          "text_heading_1": "Grab your best deal before it’s gone!",
+          "background_color": "#EA0606"
         }
       },
       "s-anniversary-Rotation": {
