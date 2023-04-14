@@ -402,14 +402,9 @@
                       <script>
                         // 获取相邻元素的值
                         var value = $('.tt-r-link-code').text();
-                        console.log('======================');
-                        console.log(value);
-                        // 获取按钮元素
-                        var button = $('.tt-r-link');
-
-                        // 给按钮增加点击事件
-                        button.click(function() {
-                          console.log('======================');
+                        var link = $('.tt-r-link');
+                        link.addEventListener('click', async function(event) {
+                          event.preventDefault(); // 阻止<a>标签的默认行为
                           try {
                             await navigator.clipboard.writeText(value);
                             console.log('复制成功');
