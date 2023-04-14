@@ -123,6 +123,7 @@
     .Product_Show .img_box{
         width: 296.88px;
         background-color: {{ section.settings.background_color }};
+        border-radius: 15.625px;
     }
 
     @media(max-width:768px){
@@ -211,7 +212,7 @@
             <div class="img_box">
                 <img
                     class="Product_Show_imgs"
-            style="height: auto;border-radius: 15.625px;"  
+            style="height: auto;"  
                     src="{{all_products[block.settings.product].featured_image | image_url}}" alt="">
             
             </div>
