@@ -215,7 +215,7 @@
                    {% comment %}<a class="cart-2" href="">{{block.settings.text_2}}</a> {% endcomment %}
 
   
-                      <form method="post" action="/cart/add">
+                      {% comment %} <form method="post" action="/cart/add">
 
                       <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
 
@@ -226,9 +226,15 @@
 
                       <button class="cart-2" type="submit">Add to Cart</button>
 
-                      </form>
+                      </form> {% endcomment %}
 
 
+
+                      <form action="/cart" method="post" id="addToCart">
+                        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" />
+                                  <button type="submit" class="buy-btn">Buy Now</button>
+                                   
+                                       </form>
                 </div>
 
 
