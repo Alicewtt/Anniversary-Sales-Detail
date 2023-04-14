@@ -6,3 +6,49 @@
         </div>
     </div>
   </section>
+  {% schema %}
+    {
+        "name": "tt-anniversarySale-1",
+        "settings": [
+          {
+            "type": "text",
+            "id": "anniversary_big_title",
+            "label": "推荐大标题",
+            "default": "Can’t Decide?"
+        },
+        {
+            "type": "text",
+            "id": "anniversary_little_title",
+            "label": "推荐小标题",
+            "default": "Check out HOZO’s Ultimate Guide"
+        }
+        ],
+        "blocks": [
+            {
+                "type": "anniversary-1",
+                "name":"新增块",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "anniversary1_title",
+                        "label": "标题1",
+                        "default": "How to choose your First HOZO product?"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "产品背景图"
+                    },
+                    {
+                        "type": "text",
+                        "id": "anniversary1_url",
+                        "label": "跳转链接",
+                        "default": "#"
+                    }
+                ]
+            }
+          ]
+    }
+{% endschema %}
+{% javascript %}
+{% endjavascript %}
