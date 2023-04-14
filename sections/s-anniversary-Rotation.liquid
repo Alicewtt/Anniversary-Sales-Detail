@@ -223,7 +223,9 @@
                     </div> {% endcomment %}
                       <form method="post" action="/cart/add">
 
-                      <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                      {% comment %} <input type="hidden" name="id" value="{{ product.variants.first.id }}" /> {% endcomment %}
+
+                      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" />
 
                       <button class="cart-2" type="submit">Add to Cart</button>
 
