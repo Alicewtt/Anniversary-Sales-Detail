@@ -51,8 +51,8 @@
 
     }
     .Product_Show .img_box{
-        border-radius: 15.625px;
-     background-color: {{ section.settings.background_color }};
+    border-radius: 15.625px;
+    background-color: {{ section.settings.background_color }};
 
     }
 
@@ -256,12 +256,12 @@
     var swiper_spaceBetween;
     var swiper_slidesPerView;
     if($(window).width() < 1200){
-        swiper_width = 937.5
+        {% comment %} swiper_width = 937.5 {% endcomment %}
         swiper_slidesPerView = 3;
         swiper_spaceBetween = 30;
     }
     if($(window).width() < 768){
-        swiper_width = 154.59
+        {% comment %} swiper_width = 154.59 {% endcomment %}
         swiper_slidesPerView = 1;
         swiper_spaceBetween = 10;
     }
@@ -270,7 +270,7 @@
   var mySwiper = new Swiper ('.swiper-container', {
     autoplay:true,
     loop: true,
-    width: swiper_width,
+    {% comment %} width: swiper_width, {% endcomment %}
     slidesPerView: swiper_slidesPerView,
     spaceBetween: swiper_spaceBetween,
     observer: true,// 开启动态检查器，检测swiper和slide
