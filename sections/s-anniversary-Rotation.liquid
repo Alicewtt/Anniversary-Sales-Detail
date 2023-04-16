@@ -255,12 +255,16 @@
     var swiper_width = 0;
     var swiper_spaceBetween;
     var swiper_slidesPerView;
-    if($(window).width() > 1200){
+    if($(window).width() < 1200){
         swiper_width = 937.5
-        swiper_slidesPerView= 5;
-        swiper_spaceBetween= 30;
+        swiper_slidesPerView = 5;
+        swiper_spaceBetween = 30;
     }
-
+    if($(window).width() < 768){
+        swiper_width = 154.59
+        swiper_slidesPerView = 1;
+        swiper_spaceBetween = 0;
+    }
 
 
   var mySwiper = new Swiper ('.swiper-container', {
@@ -269,6 +273,8 @@
     slidesPerView: 3,
     spaceBetween: swiper_spaceBetween,
     width: swiper_width,
+    observer: true,// 开启动态检查器，检测swiper和slide
+    observerParents:true, // 修改swiper的父元素时，自动初始化swiper
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
