@@ -257,7 +257,7 @@
     var swiper_slidesPerView;
     if($(window).width() < 1200){
         swiper_width = 937.5
-        swiper_slidesPerView = 5;
+        swiper_slidesPerView = 3;
         swiper_spaceBetween = 30;
     }
     if($(window).width() < 768){
@@ -268,7 +268,7 @@
 
 
   var mySwiper = new Swiper ('.swiper-container', {
-    {% comment %} autoplay:true, {% endcomment %}
+    autoplay:true,
     loop: true,
     slidesPerView: 3,
     spaceBetween: swiper_spaceBetween,
