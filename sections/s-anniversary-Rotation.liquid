@@ -263,16 +263,16 @@
     if($(window).width() < 768){
         swiper_width = 154.59
         swiper_slidesPerView = 1;
-        swiper_spaceBetween = 0;
+        swiper_spaceBetween = 10;
     }
 
 
   var mySwiper = new Swiper ('.swiper-container', {
     autoplay:true,
     loop: true,
-    {% comment %} slidesPerView: 3, {% endcomment %}
-    spaceBetween: swiper_spaceBetween,
     width: swiper_width,
+    slidesPerView: swiper_slidesPerView,
+    spaceBetween: swiper_spaceBetween,
     observer: true,// 开启动态检查器，检测swiper和slide
     observerParents:true, // 修改swiper的父元素时，自动初始化swiper
     navigation: {
