@@ -276,7 +276,7 @@
     slidesPerView: 'auto',
 
     {% comment %} slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 30, {% endcomment %}
     breakpoints: { 
 
       420: {
@@ -288,7 +288,11 @@
       slidesPerView: 3,
       spaceBetween: 10,
     }
-  } {% endcomment %}
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    }
+  } 
 
     navigation: {
         nextEl: ".swiper-button-next",
