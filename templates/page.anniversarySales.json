@@ -25,10 +25,36 @@
             "anniversary_product_num": "15%",
             "anniversary_product_code": "12133"
           }
+        },
+        "715420d7-d638-4a9a-907e-f5496e616e93": {
+          "type": "anniversary",
+          "settings": {
+            "product": "meazor",
+            "anniversary_product_title": "MEAZOR 3D Premium Combo",
+            "anniversary_product_desc": "· First digital measure tape<br>· Measure curves and lines<br>· One roll at a time",
+            "anniversary_product_order": true,
+            "anniversary_product_free": true,
+            "anniversary_product_num": "15%",
+            "anniversary_product_code": "12133"
+          }
+        },
+        "8ca88f77-0aaa-46ee-9428-de1489fa6b45": {
+          "type": "anniversary",
+          "settings": {
+            "product": "meazor-expert-protractor",
+            "anniversary_product_title": "MEAZOR 3D Premium Combo",
+            "anniversary_product_desc": "· First digital measure tape<br>· Measure curves and lines<br>· One roll at a time",
+            "anniversary_product_order": true,
+            "anniversary_product_free": true,
+            "anniversary_product_num": "15%",
+            "anniversary_product_code": "12133"
+          }
         }
       },
       "block_order": [
-        "fef87af7-e252-4369-831a-bfb24165fe06"
+        "fef87af7-e252-4369-831a-bfb24165fe06",
+        "715420d7-d638-4a9a-907e-f5496e616e93",
+        "8ca88f77-0aaa-46ee-9428-de1489fa6b45"
       ],
       "settings": {
         "anniversary_big_title": "Recommended Deals",
