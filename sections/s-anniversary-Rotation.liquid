@@ -12,9 +12,16 @@
         border: 0.78125px solid #DDDDDD;
         color: #242424;
     }
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+        font-size: 7px;
+    }
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+        font-size: 7px;
+    }
     .tt-bigBox .swiper-pagination-bullet {
         background: #55C1C5;
     }
+
 
     .Rotation{
       width: 937.5px;
@@ -23,19 +30,32 @@
 
     }
     .Rotation_title{
+        width: 100%;
+        height: 79px;
         font-family: 'Alibaba PuHuiTi 2.0';
         font-weight: 900;
         font-size: 56.25px;
-        line-height: 79px;   
+        line-height: 79px;
+        color: #212121;
         text-align: center;
         margin:62.5px 0 38.19px 0;
+        background-image: url('https://cdn.shopify.com/s/files/1/0549/7667/6078/files/title-bg.png?v=1681375399') ;
+        background-repeat: no-repeat;
+        background-position: center -16px;
     }
     .Product_Show{
      display:flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
+
     }
+    .Product_Show .img_box{
+    border-radius: 15.625px;
+     background-color: {{ section.settings.background_color }};
+
+    }
+
     .Product_Name{
     font-family: 'Alibaba PuHuiTi 2.0';
     font-weight: 700;
@@ -105,9 +125,10 @@
         font-size: 15.625px;
         line-height: 20px;
         text-align: center;
-        padding-top: 5px;
 
     }
+
+
 
     @media(max-width:768px){
         .swiper-button-prev,.swiper-button-next{
@@ -115,36 +136,53 @@
           }
       
           .Rotation_title{
+            height: 36px;
               font-size: 23.1884px;
               line-height: 32px;
               margin:31.4px 0 23.07px 0;
-      
+              background-size: 94px;
+              background-position: center -9px;
+          }
+          .swiper-slide{
+       width: auto;
+
+            {% comment %} width: 154.59px; {% endcomment %}
           }
           .Product_Show{
-             margin-left: 14.49px;
+           
+            border-radius: 9.66184px;
+            margin: 14.49px 0 15.46px 0;
+
           }
-          .Product_Show_imgs{
-              width: 154.59px;
-              border-radius: 9.66184px;
-          }
+          .Product_Show .img_box{
+     
+        }
+
     }
-    @media(max-width:410px){
+    @media(max-width:420px){
     .swiper-button-prev,.swiper-button-next{
       display: none;
     }
 
     .Rotation_title{
+        height: 36px;
         font-size: 23.1884px;
         line-height: 32px;
         margin:31.4px 0 23.07px 0;
-
+        background-size: 94px;
+        background-position: center -9px;
+    }
+    .swiper-slide{
+       {% comment %} width: 154.59px; {% endcomment %}
+       width: auto;
     }
     .Product_Show{
-       margin-left: 14.49px;
-    }
-    .Product_Show_imgs{
-        width: 154.59px;
         border-radius: 9.66184px;
+        margin: 14.49px 0 15.46px 0;
+
+    }
+    .Product_Show .img_box{
+
     }
     .Product_Show .Price{
         font-weight: 700;
@@ -162,125 +200,165 @@
         line-height: 11px;
         
     }
+
     .Product_Show .Cart .cart-1,
     .Product_Show .Cart .cart-2{
+        width: 73px;
+        height: 23.19px;
         font-size: 9.66184px;
+        line-height: 10px;
     }
-
+    .Product_Name{
+        font-size: 15.4589px;
+        line-height: 15px;
+    }
     }
 
   </style>
 
-  <script src="{{ 'swiper-bundle.min.js' | asset_url }}"></script>
+  <script src="{{ 'jquery.min.js' | asset_url }}" ></script>
+ <script src="{{ 'swiper-bundle.min.js' | asset_url }}"></script>
   <script src="{{ 'swiper.min.js' | asset_url }}"></script>
 
 
 
-<p class="Rotation_title">Customer Top Picked</p>
+<p class="Rotation_title">{{section.settings.text_heading_1}}</p>
 
 <div class="Rotation">
-<div class="swiper-container" style="width: 937.5px;overflow: hidden;">
+<div class="swiper-container" style="overflow: hidden;">
     <div class="swiper-wrapper">
 
-        <div class="swiper-slide Product_Show">
-            <img
-                class="Product_Show_imgs"
-                style="width: 296.88px;height: auto;border-radius: 15.625px;"  
-                src="../assets/Meazor-Frame-1332.png" alt="">
-
-                <p class="Product_Name">MEAZOR 3D</p>
-
-                <div class="Price">
-                    <p class="Price-1">$279</p>
-                    <p class="Price-2">$299</p>
-                </div>
-                
-                <div class="Cart">
-                    <a class="cart-1" href="">Learn Mort</a>
-                    <a class="cart-2" href="">Add to cart</a>
-                </div>
-                
-        </div>
-
-
-         <div class="swiper-slide Product_Show">
-            <img
-                style="width: 296.88px;height: auto;border-radius: 15.625px;"  
-                src="../assets/Protection-Frame-1333.png" alt="">
-
-                <p class="Product_Name">MEAZOR 3D</p>
-
-                <div class="Price">
-                    <p class="Price-1">$279</p>
-                    <p class="Price-2">$299</p>
-                </div>
-                
-                <div class="Cart">
-                    <a class="cart-1" href="">Learn Mort</a>
-                    <a class="cart-2" href="">Add to cart</a>
-                </div>
-                
-        </div>
+    {% for block in section.blocks %}
 
         <div class="swiper-slide Product_Show">
-            <img
-                style="width: 296.88px;height: auto;border-radius: 15.625px;"  
-                src="../assets/Ultra-Frame-818.png" alt="">
 
-                <p class="Product_Name">MEAZOR 3D</p>
+            <div class="img_box">
+                <img
+                    style="height: auto;"  
+                    src="{{all_products[block.settings.product].featured_image | image_url}}" alt="">
+            
+            </div>
+
+
+                <p class="Product_Name">{{all_products[block.settings.product].title}}</p>
 
                 <div class="Price">
-                    <p class="Price-1">$279</p>
-                    <p class="Price-2">$299</p>
+                    <p class="Price-1">{{all_products[block.settings.product].price_min | times: 1.0 | money}}</p>
+                    <p class="Price-2">{{all_products[block.settings.product].price_max | times: 1.0 | money}}</p>
                 </div>
                 
                 <div class="Cart">
-                    <a class="cart-1" href="">Learn Mort</a>
-                    <a class="cart-2" href="">Add to cart</a>
+                     <a class="cart-1" href="">{{block.settings.text_1}}</a>
+                     <button class="cart-2" 
+                        data-id="{{all_products[block.settings.product].variants[0].id}}"
+                    >{{block.settings.text_2}}</button>
+
                 </div>
-                
-        </div> 
+        </div>
+
+    {% endfor %}
 
     </div>
 
     <!-- 如果需要导航按钮 -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-
-
 </div>
 </div>
 
-<style>
-
-    
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
-    font-size: 7px;
-}
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
-    font-size: 7px;
-}
-
-
-</style>
 
 
 <script>        
   var mySwiper = new Swiper ('.swiper-container', {
     autoplay:true,
     loop: true,
-    
-    {% comment %} slidesPerView: 'auto',
-    // 块之间的距离
-    spaceBetween: 30, {% endcomment %}
-    // 如果需要前进后退按钮
-
     slidesPerView: 3,
     spaceBetween: 30,
-   navigation: {
+    breakpoints: { 
+    // 当屏幕宽度小于等于768px时（用于移动端）
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    }
+  }
+
+    navigation: {
         nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        prevEl: ".swiper-button-prev"
       }
 
-  })        
+  })     
+
+
+    $('.cart-2').click(function () {
+      var id = $(this).attr('data-id');
+      console.log(id);
+      $.ajax({
+        type: 'POST',
+        url: '/cart/add.js',
+        data: {
+          quantity: 1,
+          id: id,
+        },
+        dataType: 'json',
+        success: function (data) {}
+      })
+    })
   </script>
+  {% schema %}
+  {
+    "name": "s_anniversary_Rotation",
+    "settings": [
+        {
+            "type": "html",
+            "id": "text_heading_1",
+            "label": "标题",
+            "default":"Customer Top Picked"
+        },
+        {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background color",
+            "default": "#FCF3E7"
+          }
+    ],
+    "blocks": [
+        {
+            "type": "slide",
+            "name": "slide",
+            "settings":[
+                    {
+                        "type": "product",
+                        "id": "product",
+                        "label": "Product"
+                    },
+                    {
+                        "type": "html",
+                        "id": "text_1",
+                        "label": "了解更多",
+                        "default":"Learn Mort"
+                    },
+                    {
+                        "type": "html",
+                        "id": "text_2",
+                        "label": "购物车",
+                        "default":"Add to cart"
+                    }
+
+            ]
+        }
+      ],
+      "default": {
+        "blocks": [
+          {
+            "type": "slide"
+          },
+          {
+            "type": "slide"
+          }
+        ]
+      }
+    }
+
+  {% endschema %}
+  
