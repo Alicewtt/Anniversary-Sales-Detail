@@ -3594,7 +3594,11 @@
       "s-anniversary-all": {
         "type": "s-anniversary-all",
         "settings": {
-          "product": "meazor-expert-accessory-kit"
+        }
+      },
+      "alireviews-widget-543991": {
+        "type": "alireviews-widget-543991",
+        "settings": {
         }
       }
     },
@@ -3607,7 +3611,8 @@
       "1664471946c4545fbb",
       "1664472257761cda99",
       "166447227716fe831c",
-      "73c55049-ec55-43de-8c02-21c6cc4ae722"
+      "73c55049-ec55-43de-8c02-21c6cc4ae722",
+      "alireviews-widget-543991"
     ],
     "blocks": {
       "1635505136ee26d214": {
