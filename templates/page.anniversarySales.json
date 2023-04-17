@@ -63,6 +63,28 @@
     },
     "s-anniversary-Rotation": {
       "type": "s-anniversary-Rotation",
+      "blocks": {
+        "530af421-2b76-45c1-9679-15c2e1e0ac63": {
+          "type": "slide",
+          "settings": {
+            "product": "meazor-expert-accessory-kit",
+            "text_1": "Learn Mort",
+            "text_2": "Add to cart"
+          }
+        },
+        "15d738f8-adb1-4f70-89d0-29ec3b184a70": {
+          "type": "slide",
+          "settings": {
+            "product": "mini-protection-case",
+            "text_1": "Learn Mort",
+            "text_2": "Add to cart"
+          }
+        }
+      },
+      "block_order": [
+        "530af421-2b76-45c1-9679-15c2e1e0ac63",
+        "15d738f8-adb1-4f70-89d0-29ec3b184a70"
+      ],
       "settings": {
         "text_heading_1": "Customer Top Picked",
         "background_color": "#FCF3E7"
