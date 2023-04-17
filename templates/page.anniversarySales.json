@@ -1,28 +1,43 @@
 {
   "sections": {
-    "tt-anniversarySales_detail1": {
-      "type": "tt-anniversarySales_detail1",
-      "settings": {
-      }
-    },
-    "tt-anniversarySales_detail2": {
-      "type": "tt-anniversarySales_detail2",
-      "settings": {
-      }
-    },
-    "tt-anniversarySales_detail3": {
-      "type": "tt-anniversarySales_detail3",
-      "settings": {
-      }
-    },
     "s-anniversary-banner": {
       "type": "s-anniversary-banner",
       "settings": {
+        "countdown_time": "2023-04-21T00:00:00+08:00",
+        "show_countdown_time": true,
+        "background_color": "#FCF3E7",
+        "item_image_1_1": "shopify:\/\/shop_images\/pc-Frame_1216.jpg",
+        "item_image_1_2": "shopify:\/\/shop_images\/web-Frame_1216.jpg",
+        "text_heading_1": "Grab your best deal before it’s gone!"
+      }
+    },
+    "tt-anniversarySales_detail1": {
+      "type": "tt-anniversarySales_detail1",
+      "settings": {
+        "anniversary_big_title": "Recommended Deals",
+        "section_background_color": "#FCF3E7"
       }
     },
     "s-anniversary-Rotation": {
       "type": "s-anniversary-Rotation",
       "settings": {
+        "text_heading_1": "Customer Top Picked",
+        "background_color": "#FCF3E7"
+      }
+    },
+    "tt-anniversarySales_detail2": {
+      "type": "tt-anniversarySales_detail2",
+      "settings": {
+        "anniversary_big_title": "Can’t Decide?",
+        "anniversary_little_title": "Check out HOZO’s Ultimate Guide",
+        "section_background_color": "#FCF3E7"
+      }
+    },
+    "tt-anniversarySales_detail3": {
+      "type": "tt-anniversarySales_detail3",
+      "settings": {
+        "anniversary_join_title": "Join social contest",
+        "section_background_color": "#FCF3E7"
       }
     }
   },
