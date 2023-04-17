@@ -272,15 +272,23 @@
   var mySwiper = new Swiper ('.swiper-container', {
     autoplay:true,
     loop: true,
-    slidesPerView: 3,
+    loopedSlides: 3, // 假设你有3个幻灯片
+    slidesPerView: 'auto',
+
+    {% comment %} slidesPerView: 3,
     spaceBetween: 30,
     breakpoints: { 
+
+      420: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      }
     // 当屏幕宽度小于等于768px时（用于移动端）
     768: {
-      slidesPerView: 1,
+      slidesPerView: 3,
       spaceBetween: 10,
     }
-  }
+  } {% endcomment %}
 
     navigation: {
         nextEl: ".swiper-button-next",
