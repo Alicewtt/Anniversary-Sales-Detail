@@ -273,7 +273,7 @@
 var swiper_width = 0;
     var swiper_spaceBetween;
     var swiper_slidesPerView;
-    if($(window).width() < 768){
+    if($(window).width() > 768){
         {% comment %} swiper_width = 937.5 {% endcomment %}
         swiper_slidesPerView = 3;
         swiper_spaceBetween = 30;
