@@ -3451,6 +3451,145 @@
         ],
         "settings": {
         }
+      },
+      "tt-anniversarySales_detail1": {
+        "type": "tt-anniversarySales_detail1",
+        "blocks": {
+          "e4014cca-9b0c-4bc2-9963-f1283c4acc28": {
+            "type": "anniversary",
+            "settings": {
+              "product": "meazor-master-kit",
+              "anniversary_product_title": "MEAZOR 3D Premium Combo",
+              "anniversary_product_desc": "· 40M Multi-room Scan <br>\n · 3D Obstacle Avoidance <br>\n · Export to CAD  <br>",
+              "anniversary_product_order": false,
+              "anniversary_product_free": true,
+              "anniversary_product_num": "15%",
+              "anniversary_product_code": "34455"
+            }
+          },
+          "e8ce05d7-3de9-48fc-821d-b35c1da08e3f": {
+            "type": "anniversary",
+            "settings": {
+              "product": "target-plates-kit",
+              "anniversary_product_title": "NeoRuler",
+              "anniversary_product_desc": "· Customizeable Scales<br>\n · 8 units<br>\n · 0.1mm resolution<br>",
+              "anniversary_product_order": false,
+              "anniversary_product_free": false,
+              "anniversary_product_num": "15%",
+              "anniversary_product_code": "1213"
+            }
+          },
+          "2ddcff61-559d-46c5-a00b-64466167bf7d": {
+            "type": "anniversary",
+            "settings": {
+              "product": "rollova",
+              "anniversary_product_title": "ROLLOVA V2.0",
+              "anniversary_product_desc": "· First digital measure tape<br>\n· Measure curves and lines<br>\n· One roll at a time",
+              "anniversary_product_order": false,
+              "anniversary_product_free": true,
+              "anniversary_product_num": "15%",
+              "anniversary_product_code": "5657"
+            }
+          }
+        },
+        "block_order": [
+          "e4014cca-9b0c-4bc2-9963-f1283c4acc28",
+          "e8ce05d7-3de9-48fc-821d-b35c1da08e3f",
+          "2ddcff61-559d-46c5-a00b-64466167bf7d"
+        ],
+        "settings": {
+          "anniversary_big_title": "Recommended Deals"
+        }
+      },
+      "tt-anniversarySales_detail2": {
+        "type": "tt-anniversarySales_detail2",
+        "blocks": {
+          "e144611c-2283-4783-b9de-def15ec00244": {
+            "type": "anniversary-1",
+            "settings": {
+              "anniversary1_title": "How to choose your First HOZO product?",
+              "image": "shopify:\/\/shop_images\/link-1.png",
+              "anniversary1_url": "https:\/\/hozodesign.com\/products\/meazor3d"
+            }
+          },
+          "30a6ee23-dd10-42fa-93d2-49d744489446": {
+            "type": "anniversary-1",
+            "settings": {
+              "anniversary1_title": "MEAZOR 3D vs MEAZOR",
+              "anniversary1_url": "https:\/\/hozodesign.com\/collections\/all"
+            }
+          },
+          "d6cd0369-07ad-4fff-a7ce-b7ec67150310": {
+            "type": "anniversary-1",
+            "settings": {
+              "anniversary1_title": "HOZO’s Gift Guide Perfect Gifts for your loved one!",
+              "anniversary1_url": "https:\/\/hozodesign.com\/pages\/blog#inspirations"
+            }
+          }
+        },
+        "block_order": [
+          "e144611c-2283-4783-b9de-def15ec00244",
+          "30a6ee23-dd10-42fa-93d2-49d744489446",
+          "d6cd0369-07ad-4fff-a7ce-b7ec67150310"
+        ],
+        "settings": {
+          "anniversary_big_title": "Can’t Decide?111",
+          "anniversary_little_title": "Check out HOZO’s Ultimate Guide11111"
+        }
+      },
+      "s-anniversary-banner": {
+        "type": "s-anniversary-banner",
+        "settings": {
+          "countdown_time": "2023-04-21T00:00:00+08:00",
+          "show_countdown_time": true,
+          "background_color": "#fcf3e7",
+          "item_image_1_1": "shopify:\/\/shop_images\/pc-Frame_1216.jpg",
+          "item_image_1_2": "shopify:\/\/shop_images\/web-Frame_1216.jpg",
+          "text_heading_1": "Grab your best deal before it’s gone!"
+        }
+      },
+      "s-anniversary-Rotation": {
+        "type": "s-anniversary-Rotation",
+        "blocks": {
+          "s-anniversary-Rotation-0": {
+            "type": "slide",
+            "settings": {
+              "product": "meazor3d",
+              "text_1": "Learn Mort",
+              "text_2": "Add to cart"
+            }
+          },
+          "s-anniversary-Rotation-1": {
+            "type": "slide",
+            "settings": {
+              "product": "meazor-3d-protection-kit",
+              "text_1": "Learn Mort",
+              "text_2": "Add to cart"
+            }
+          },
+          "648cad01-0df3-4df0-b9b4-06b1e9ed2b40": {
+            "type": "slide",
+            "settings": {
+              "product": "ultra-3d-adapter",
+              "text_1": "Learn Mort",
+              "text_2": "Add to cart"
+            }
+          }
+        },
+        "block_order": [
+          "s-anniversary-Rotation-0",
+          "s-anniversary-Rotation-1",
+          "648cad01-0df3-4df0-b9b4-06b1e9ed2b40"
+        ],
+        "settings": {
+          "text_heading_1": "Customer Top Picked",
+          "background_color": "#fcf3e7"
+        }
+      },
+      "tt-anniversarySales_detail3": {
+        "type": "tt-anniversarySales_detail3",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
