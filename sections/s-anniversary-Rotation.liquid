@@ -280,16 +280,16 @@
       slidesPerView: 1,
       spaceBetween: 10,
     }
+  }
 
     navigation: {
         nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        prevEl: ".swiper-button-prev"
       }
 
   })     
-  console.log(mySwiper.version,111);
-  </script>
-  <script>
+
+
     $('.cart-2').click(function () {
       var id = $(this).attr('data-id');
       console.log(id);
@@ -301,9 +301,9 @@
           id: id,
         },
         dataType: 'json',
-        success: function (data) {},
-      });
-    });
+        success: function (data) {}
+      })
+    })
   </script>
   {% schema %}
   {
