@@ -298,6 +298,10 @@ var swiper_width = 0;
     spaceBetween: swiper_spaceBetween,
     observer: true,// 开启动态检查器，检测swiper和slide
     observerParents:true, // 修改swiper的父元素时，自动初始化swiper
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   })
 
 {% comment %}     
