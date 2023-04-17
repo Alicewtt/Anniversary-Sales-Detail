@@ -1,5 +1,7 @@
 
-<link href="https://cdn.bootcdn.net/ajax/libs/Swiper/9.2.0/swiper-bundle.css" rel="stylesheet">
+{% comment %} <link href="https://cdn.bootcdn.net/ajax/libs/Swiper/9.2.0/swiper-bundle.css" rel="stylesheet"> {% endcomment %}
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
 
 <style>
     {% comment %} 更改分页器的样式 {% endcomment %}
@@ -215,10 +217,11 @@
     }
 
   </style>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 
   <script src="{{ 'jquery.min.js' | asset_url }}" ></script>
-  <script src="{{ 'swiper-bundle.min.js' | asset_url }}"></script>
-  <script src="{{ 'swiper.min.js' | asset_url }}"></script>
+  {% comment %} <script src="{{ 'swiper-bundle.min.js' | asset_url }}"></script>
+  <script src="{{ 'swiper.min.js' | asset_url }}"></script> {% endcomment %}
 
 
 
@@ -295,7 +298,7 @@
       }
 
   })     
-  console.log(mySwiper.version,111);    
+  console.log(mySwiper.version,111);
   </script>
   <script>
     $('.cart-2').click(function () {
