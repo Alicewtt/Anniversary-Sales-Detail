@@ -13,6 +13,23 @@
     },
     "tt-anniversarySales_detail1": {
       "type": "tt-anniversarySales_detail1",
+      "blocks": {
+        "fef87af7-e252-4369-831a-bfb24165fe06": {
+          "type": "anniversary",
+          "settings": {
+            "product": "meazor3d",
+            "anniversary_product_title": "MEAZOR 3D Premium Combo",
+            "anniversary_product_desc": "· First digital measure tape<br>· Measure curves and lines<br>· One roll at a time",
+            "anniversary_product_order": true,
+            "anniversary_product_free": true,
+            "anniversary_product_num": "15%",
+            "anniversary_product_code": "12133"
+          }
+        }
+      },
+      "block_order": [
+        "fef87af7-e252-4369-831a-bfb24165fe06"
+      ],
       "settings": {
         "anniversary_big_title": "Recommended Deals",
         "section_background_color": "#FCF3E7"
