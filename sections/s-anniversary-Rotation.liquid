@@ -268,38 +268,47 @@
 
 
 
-<script>        
+<script>      
+
+var swiper_width = 0;
+    var swiper_spaceBetween;
+    var swiper_slidesPerView;
+    if($(window).width() < 1200){
+        {% comment %} swiper_width = 937.5 {% endcomment %}
+        swiper_slidesPerView = 3;
+        swiper_spaceBetween = 30;
+    }else{
+        {% comment %} swiper_width = 154.59 {% endcomment %}
+        swiper_slidesPerView = 1;
+        swiper_spaceBetween = 10;
+    }
+
+
   var mySwiper = new Swiper ('.swiper-container', {
     autoplay:true,
     loop: true,
-    loopedSlides: 3, // 假设你有3个幻灯片
-    slidesPerView: 'auto',
+    {% comment %} width: swiper_width, {% endcomment %}
+    slidesPerView: swiper_slidesPerView,
+    spaceBetween: swiper_spaceBetween,
+    observer: true,// 开启动态检查器，检测swiper和slide
+    observerParents:true, // 修改swiper的父元素时，自动初始化swiper
 
-    {% comment %} slidesPerView: 3,
-    spaceBetween: 30, {% endcomment %}
-    breakpoints: { 
 
-      420: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      }
-    // 当屏幕宽度小于等于768px时（用于移动端）
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 10,
-    }
-    1200: {
-      slidesPerView: 3,
-      spaceBetween: 10,
-    }
-  } 
+{% comment %}     
+  var mySwiper = new Swiper ('.swiper-container', {
+    autoplay:true,
+    loop: true,
+
+
+    slidesPerView: 3,
+    spaceBetween: 30, 
 
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
       }
 
-  })     
+  })      {% endcomment %}
 
 
     $('.cart-2').click(function () {
