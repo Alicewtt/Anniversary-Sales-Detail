@@ -1,0 +1,36 @@
+{
+  "sections": {
+    "tt-anniversarySales_detail1": {
+      "type": "tt-anniversarySales_detail1",
+      "settings": {
+      }
+    },
+    "tt-anniversarySales_detail2": {
+      "type": "tt-anniversarySales_detail2",
+      "settings": {
+      }
+    },
+    "tt-anniversarySales_detail3": {
+      "type": "tt-anniversarySales_detail3",
+      "settings": {
+      }
+    },
+    "s-anniversary-banner": {
+      "type": "s-anniversary-banner",
+      "settings": {
+      }
+    },
+    "s-anniversary-Rotation": {
+      "type": "s-anniversary-Rotation",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "s-anniversary-banner",
+    "tt-anniversarySales_detail1",
+    "s-anniversary-Rotation",
+    "tt-anniversarySales_detail2",
+    "tt-anniversarySales_detail3"
+  ]
+}
