@@ -26,11 +26,11 @@
       line-height: 99px;
       text-align: center;
       color: #212121;
-      background-image: url('../assets/title-bg.png') ;
+      background-image: url('https://cdn.shopify.com/s/files/1/0549/7667/6078/files/title-bg.png?v=1681375399') ;
       background-repeat: no-repeat;
       background-position: center 0;
       }
-      @media (min-width:411px) {
+      @media (min-width:421px) {
         .tt-bigBox {
           width: 937.5px;
           border-radius: 15.625px;
@@ -39,59 +39,68 @@
         .tt-bigBox .tt-h1-title {
           font-size: 56.25px;
         }
+        .tt-bigBox .tt-products-box {
+          margin:31.25px auto;
+        }
       }
-      @media (max-width:411px) {
+      @media (max-width:421px) {
         .swiper-button-hide {
           display:none;
         }
         .tt-bigBox {
-          width: 410px;
+          width: 100%;
           border-radius: 9.66px;
         }
         .tt-bigBox .tt-h1-title {
           font-size: 32.25px;
         }
+        .tt-bigBox .tt-products-box {
+          margin: 15px;
+        }
       }
-    .tt-bigBox .tt-products-box {
-      background: #FCF3E7;
-    }
-    .tt-bigBox .tt-products-box .tt-pro-bg {
-      border-radius: 15.625px;
-      margin:0 auto;
-    }
-    @media (min-width:411px) {
-      .tt-bigBox .tt-products-box .tt-pro-bg {
-        width: 937.5px;
-      }
+    @media (min-width:421px) {
       .tt-bigBox .tt-products-box .tt-pro-bg{
+        width: 937.5px;
         display:flex;
         justify-conten:center;
         align-items: stretch;
+        margin:0 auto;
+        border-radius: 15.625px;
       }
       .tt-bigBox .tt-products-box .box-flex {
           width:calc( 100% / 2 - 20px );
           flex:1;
       }
     }
-    @media (max-width:411px) {
-      .tt-bigBox .tt-products-box .tt-pro-bg {
-        width: 370px;
-      }
+    @media (max-width:421px) {
       .tt-bigBox .tt-products-box .tt-pro-bg{
+          width: 100%;
           display: flex;
-          flex-direction: column
+          flex-direction: column;
+          border-radius: 9.66184px;
       }
         .tt-bigBox .tt-products-box .box-flex {
             width: 100%;
         }
     }
+    .tt-bigBox .tt-products-box .tt-pro-bg{
+      background-color:{{ section.settings.section_background_color }};
+  }
     .tt-bigBox .tt-products-box .tt-l-box {
-      
-      
+
+
     }
-    .tt-bigBox .tt-products-box .tt-r-box {
-      padding :10px ;
-      position: relative;
+    @media (min-width:421px) {
+      .tt-bigBox .tt-products-box .tt-r-box {
+        padding-left:8px;
+        position: relative;
+      }
+    }
+    @media (max-width:421px) {
+      .tt-bigBox .tt-products-box .tt-r-box {
+        padding :10px 20px ;
+        position: relative;
+      }
     }
     .tt-bigBox .tt-products-box .tt-r-box .tt-r-title {
       font-family: 'Alibaba PuHuiTi 2.0';
@@ -100,12 +109,12 @@
       line-height: 45px;
       color: #000000;
     }
-    @media (min-width:411px) {
+    @media (min-width:421px) {
       .tt-bigBox .tt-products-box .tt-r-box .tt-r-title {
         font-size: 26px;
       }
     }
-    @media (max-width:411px) {
+    @media (max-width:421px) {
       .tt-bigBox .tt-products-box .tt-r-box .tt-r-title {
         font-size: 20px;
       }
@@ -114,18 +123,18 @@
       font-family: 'Roboto';
       font-style: normal;
       font-weight: 400;
-     
       line-height: 26px;
       color: #242424;
     }
-    @media (min-width:411px) {
-      ..tt-bigBox .tt-products-box .tt-r-box .tt-r-desc {
+    @media (min-width:421px) {
+      .tt-bigBox .tt-products-box .tt-r-box .tt-r-desc {
         font-size: 20px;
       }
     }
-    @media (max-width:411px) {
-      ..tt-bigBox .tt-products-box .tt-r-box .tt-r-desc {
+    @media (max-width:421px) {
+      .tt-bigBox .tt-products-box .tt-r-box .tt-r-desc {
         font-size: 13px;
+        margin-bottom:30px;
       }
     }
     .tt-bigBox .tt-products-box .tt-r-box .tt-r-money{
@@ -134,16 +143,20 @@
       font-weight: 700;
       line-height: 67px;
       color: #BD4132;
-      margin-top: 20px;
     }
-    @media (min-width:411px) {
-      ..tt-bigBox .tt-products-box .tt-r-box .tt-r-money {
+    @media (min-width:421px) {
+      .tt-bigBox .tt-products-box .tt-r-box .tt-r-money {
         font-size: 48px;
+        margin-top: 20px;
       }
     }
-    @media (max-width:411px) {
-      ..tt-bigBox .tt-products-box .tt-r-box .tt-r-money {
+    @media (max-width:421px) {
+      .tt-bigBox .tt-products-box .tt-r-box .tt-r-money {
         font-size: 24px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        display:flex;
+        align-items: center;
       }
     }
     .tt-bigBox .tt-products-box .tt-r-box .tt-r-money-old{
@@ -155,16 +168,35 @@
       text-decoration-line: line-through;
       color: #6A6A6A;
     }
-    @media (min-width:411px) {
-      ..tt-bigBox .tt-products-box .tt-r-box .tt-r-money-old {
+    @media (min-width:421px) {
+      .tt-bigBox .tt-products-box .tt-r-box .tt-r-money-old {
         font-size: 32px;
       }
-    }
-    @media (max-width:411px) {
-      ..tt-bigBox .tt-products-box .tt-r-box .tt-r-money-old {
-        font-size: 15px;
+      .tt-r-box  .tt-order {
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 156px ;
+        height: 121px ;
+        background:url('https://cdn.shopify.com/s/files/1/0549/7667/6078/files/cart-logo.png?v=1681375351')  no-repeat center;
+        background-size:100%;
       }
     }
+    @media (max-width:421px) {
+      .tt-bigBox .tt-products-box .tt-r-box .tt-r-money-old {
+        font-size: 15px;
+      }
+      .tt-r-box .tt-order {
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 86px ;
+        height: 86px ;
+        background:url('https://cdn.shopify.com/s/files/1/0549/7667/6078/files/cart-logo.png?v=1681375351')  no-repeat center;
+        background-size:100%;
+      }
+    }
+
   {% comment %} 移动和pc的free区域 {% endcomment %}
   .tt-pc .tt-r-free {
     background: #55C1C5;
@@ -197,18 +229,20 @@
   .tt-pc .tt-r-card {
     display:flex;
     align-items:center;
-    justify-content: space-between;
-    width:  296.09px;
+    justify-content: space-evenly;
+    margin-left:-15px;
+    width:  326.09px;
     height: 118.75px;
-    background:url('../assets/cart-bg.png' )  no-repeat center;
+    background:url('https://cdn.shopify.com/s/files/1/0549/7667/6078/files/cart-bg.png?v=1681375375 ')  no-repeat center;
   }
   .tt-iphone .tt-r-card {
     display:flex;
     align-items:center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 183.09px;
     height: 73.43px;
-    background:#333333;
+    background:url('https://cdn.shopify.com/s/files/1/0549/7667/6078/files/cart-bg.png?v=1681375375 ')  no-repeat center;
+    background-size :100%;
   }
   .tt-iphone {
     display:none;
@@ -216,9 +250,9 @@
   .tt-iphone-position {
     position: absolute;
     right: 10px;
-    bottom: 10px;
+    bottom: 25px;
   }
-  @media (max-width:411px) {
+  @media (max-width:421px) {
     .tt-pc {
       display:none;
     }
@@ -278,13 +312,16 @@
     cursor: pointer;
     font-size: 18.75px;
   }
+  .tt-r-link-code {
+    display:none;
+  }
   .tt-iphone .tt-r-card .tt-r-off {
     background: #55C1C5;
     border-radius: 18.75px 18.75px 18.75px 0px;
     font-family: 'Alibaba PuHuiTi 2.0';
     font-style: normal;
     font-weight: 700;
-    font-size: 23.4375px;
+    font-size: 14.4375px;
     line-height: 23px;
     text-align: center;
     color: #FFFFFF;
@@ -298,146 +335,268 @@
     font-style: normal;
     font-weight: 700;
     font-size: 23.4375px;
-    line-height: 33px;
+    line-height: 37.5px;
     text-align: center;
     color: #FFFFFF;
-    margin-left:15px;
     width: 62.5px;
     height: 37.5px;
-  } 
-  </style>
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-  <section class="tt__section">
-    <div class="tt-bigBox">
-        <div class="tt-h1-title">Recommended Deals</div>
-          <div class="tt-products-box">
-            <div class="tt-pro-bg">
-              <div class="tt-l-box box-flex">
-                <!-- .swiper为容器 -->
-                <div class="swiper">
-                    <!-- 轮播区域 -->
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="../assets/tt-pro-1.png" alt="" width="100%"></div>
-                        <div class="swiper-slide"><img src="../assets/tt-pro-2.png" alt="" width="100%"></div>
-                        <div class="swiper-slide"><img src="../assets/tt-pro-1.png" alt="" width="100%"></div>
-                        <div class="swiper-slide"><img src="../assets/tt-pro-1.png" alt="" width="100%"></div>
-                        <div class="swiper-slide"><img src="../assets/tt-pro-2.png" alt="" width="100%"></div>
-                    </div>
-                    <!-- 导航按钮 -->
-                    <div class="swiper-button-prev swiper-button-hide"></div>
-                    <div class="swiper-button-next swiper-button-hide"></div>
-                    <!-- 分页器 -->
-                    <div class="swiper-pagination"></div>
+    margin-right:20px;
+  }
+  .tt-pc .tt-r-card .tt-r-vector {
+    margin-right:10px;
+    cursor:pointer;
+  }
+  .tt-iphone .tt-r-card .tt-r-vector {
+    cursor:pointer;
+  }
+</style>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<section class="tt__section">
+  <div class="tt-bigBox">
+    <div class="tt-h1-title">{{ section.settings.anniversary_big_title }}</div>
+    {% for block in section.blocks %}
+      <div class="tt-products-box">
+        <div class="tt-pro-bg">
+          <div class="tt-l-box box-flex">
+            <!-- .swiper为容器 -->
+            <div class="swiper">
+              <!-- 轮播区域 -->
+              <div class="swiper-wrapper">
+                {% for w_img in all_products[block.settings.product].images %}
+                  <div class="swiper-slide">
+                    <img
+                      class="Product_Show_imgs"
+                      width="100%"
+                      src="{{ w_img | image_url}}"
+                      alt=""
+                    >
                   </div>
-                  <script type="text/javascript">
-                    var mySwiper = new Swiper('.swiper', {
-                    direction: 'horizontal',
-                    loop: true,
-                    pagination: {
-                        el: '.swiper-pagination'
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev'
-                    },
-                    scrollbar: {
-                        el: '.swiper-srollbar'
-                    }
-                  })
-                
-                </script>
-              
+                {% endfor %}
+              </div>
+              <!-- 导航按钮 -->
+              <div class="swiper-button-prev swiper-button-hide"></div>
+              <div class="swiper-button-next swiper-button-hide"></div>
+              <!-- 分页器 -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <script type="text/javascript">
+              var mySwiper = new Swiper('.swiper', {
+                direction: 'horizontal',
+                loop: true,
+                pagination: {
+                  el: '.swiper-pagination',
+                },
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+                scrollbar: {
+                  el: '.swiper-srollbar',
+                },
+              });
+            </script>
+          </div>
+          <div class="tt-r-box box-flex">
+            <p class="tt-r-title">{{ block.settings.anniversary_product_title }}</p>
+            <p class="tt-r-desc">{{ block.settings.anniversary_product_desc }}</p>
+            <div
+              class="tt-order"
+              style="{% if block.settings.anniversary_product_order %}display:block; {% else %}display:none; {% endif %}"
+            ></div>
+            <p class="tt-r-money">
+              <span  class="tt-r-money-new">{{ all_products[block.settings.product].price_max | times: 1.0 | money }}</span>
+              <span class="tt-r-money-old">
+                {{- all_products[block.settings.product].price_min | times: 1.0 | money -}}
+              </span>
+            </p>
+            {% comment %} 移动端 {% endcomment %}
+            <div class="tt-iphone tt-iphone-position">
+              <p
+                class="tt-r-free"
+                style="{% if block.settings.anniversary_product_free %}display:block; {% else %}display:none; {% endif %}"
+              >
+                Free Gifts
+              </p>
+              <div class="tt-r-card">
+                <div class="tt-r-bai">
+                  <p class="tt-r-num">
+                    {{ block.settings.anniversary_product_num }}
+                  </p>
+                  <a class="tt-r-link">copy code</a>
+                  <span class="tt-r-link-code">{{ block.settings.anniversary_product_code }}</span>
+                  <script>
+                    // 获取所有<a>标签元素
+                    var links = document.querySelectorAll('a.tt-r-link');
+                    // 给每个<a>标签增加点击事件
+                    links.forEach(function (link) {
+                      link.addEventListener('click', async function (event) {
+                        event.preventDefault(); // 阻止<a>标签的默认行为
+                        var clickedLink = event.target;
+                        // 获取<a>标签下一个元素的值
+                        var value = link.nextElementSibling.innerHTML;
+                        try {
+                          await navigator.clipboard.writeText(value);
+                          console.log('复制成功');
+                        } catch (err) {
+                          console.error('复制失败', err);
+                        }
+                      });
+                    });
+                  </script>
                 </div>
-              <div class="tt-r-box box-flex">
-                <p class="tt-r-title">MEAZOR 3D Premium Combo</p>
-                <p class="tt-r-desc"> · 40M Multi-room Scan </p>
-                <p class="tt-r-desc"> · 3D Obstacle Avoidance </p>
-                <p class="tt-r-desc"> · Export to CAD</p>
-                <p class="tt-r-money">$296.65<span class="tt-r-money-old">$349</span></p>
-                {% comment %} 移动端 {% endcomment %}
-                <div class="tt-iphone tt-iphone-position">
-                  <p class="tt-r-free">Free Gifts</p>
-                  <div class="tt-r-card">
-                    <div class="tt-r-bai">
-                      <p class="tt-r-num">
-                        15%
-                      </p>
-                      <a class="tt-r-link">copy code</a><span></span>
-                    </div>
-                    <div class="tt-r-off">off</div>
-                    <div class="tt-r-vector">
-                      <img src="../assets/Vector.png" alt="" width="40px" height="40px">
-                    </div>
-                    
-                  </div>
+                <div class="tt-r-off">off</div>
+                <div class="tt-r-vector ">
+                  <img
+                    class="tt-add-to-cart"
+                    data-id="{{all_products[block.settings.product].variants[0].id}}"
+                    src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/Vector_e2a2799b-7ba2-41e9-b7c7-97b2de4abbbe.png?v=1681375552"
+                    alt=""
+                    width="30px"
+                    height="30px"
+                  >
                 </div>
-                {% comment %} Pc端 {% endcomment %}
-                <div class="tt-pc">
-                  <p class="tt-r-free">Free Gifts</p>
-                  <div class="tt-r-card">
-                    <div class="tt-r-bai">
-                      <p class="tt-r-num">
-                        15%
-                      </p>
-                      <a class="tt-r-link">copy code</a><span></span>
-                    </div>
-                    <div class="tt-r-off">off</div>
-                    <div class="tt-r-vector">
-                      <img src="../assets/Vector.png" alt="" width="40px" height="40px">
-                    </div>
-                  </div>
+              </div>
+            </div>
+            {% comment %} PC端 {% endcomment %}
+            <div class="tt-pc">
+              <p
+                class="tt-r-free"
+                style="{% if block.settings.anniversary_product_free %}display:block; {% else %}display:none; {% endif %}"
+              >
+                Free Gifts
+              </p>
+              <div class="tt-r-card">
+                <div class="tt-r-bai">
+                  <p class="tt-r-num">
+                    {{ block.settings.anniversary_product_num }}
+                  </p>
+                  <a class="tt-r-link">copy code</a>
+                  <span class="tt-r-link-code">{{ block.settings.anniversary_product_code }}</span>
+                  <script>
+                    // 获取所有<a>标签元素
+                    var links = document.querySelectorAll('a.tt-r-link');
+                    // 给每个<a>标签增加点击事件
+                    links.forEach(function (link) {
+                      link.addEventListener('click', async function (event) {
+                        event.preventDefault(); // 阻止<a>标签的默认行为
+                        var clickedLink = event.target;
+                        // 获取<a>标签下一个元素的值
+                        var value = link.nextElementSibling.innerHTML;
+                        try {
+                          await navigator.clipboard.writeText(value);
+                          console.log('复制成功');
+                        } catch (err) {
+                          console.error('复制失败', err);
+                        }
+                      });
+                    });
+                  </script>
+                </div>
+                <div class="tt-r-off">off</div>
+                <div class="tt-r-vector ">
+                  <img
+                    class="tt-add-to-cart"
+                    data-id="{{all_products[block.settings.product].variants[0].id}}"
+                    src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/Vector_e2a2799b-7ba2-41e9-b7c7-97b2de4abbbe.png?v=1681375552"
+                    alt=""
+                    width="40px"
+                    height="40px"
+                  >
                 </div>
               </div>
             </div>
           </div>
-    </div>
-  </section>
-{% schema %}
-    {
-    "name": "tt-anniversarySale",
-    "settings": [
-        {
-        "type": "image_picker",
-        "id": "image_1",
-        "label": "背景图123"
-        }
-    ],
-    "blocks": [
-        {
-        "type": "bottom-col-1",
-        "name": "bottom-col-1",
-        "settings": [
-              {
-            "id": "img",
-            "type": "image_picker",
-            "label": "Add Image"
-          },
-        {
-            "id": "prd",
-            "type": "product",
-            "label": "Add product"
-          }
-        ]
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<script>
+  $('.tt-add-to-cart').click(function () {
+    var id = $(this).attr('data-id');
+    console.log(id);
+    $.ajax({
+      type: 'POST',
+      url: '/cart/add.js',
+      data: {
+        quantity: 1,
+        id: id,
       },
-       {
-        "type": "bottom-col-2",
-        "name": "bottom-col-2",
-        "settings": [
-              {
-            "id": "img",
-            "type": "image_picker",
-            "label": "Add Image"
-          },
-        {
-            "id": "prd",
-            "type": "product",
-            "label": "Add product"
-          } 
-        ]
-      }
-    ]
+      dataType: 'json',
+      success: function (data) {},
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "tt-anniversarySale",
+  "settings": [
+    {
+      "type": "text",
+      "id": "anniversary_big_title",
+      "label": "推荐大标题",
+      "default": "  Recommended Deals"
+    },
+    {
+      "type": "color",
+      "id": "section_background_color",
+      "label": "整体背景",
+      "default": "#FCF3E7"
     }
+  ],
+  "blocks": [
+    {
+      "type": "anniversary",
+      "name": "新增块",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "text",
+          "id": "anniversary_product_title",
+          "label": "产品标题",
+          "default": "MEAZOR 3D Premium Combo"
+        },
+        {
+          "type": "textarea",
+          "id": "anniversary_product_desc",
+          "label": "产品描述",
+          "default": "· First digital measure tape<br/>· Measure curves and lines<br/>· One roll at a time"
+        },
+        {
+          "type": "checkbox",
+          "id": "anniversary_product_order",
+          "label": "PRE-ORDER?",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "anniversary_product_free",
+          "label": "free Gifts?",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "anniversary_product_num",
+          "label": "产品百分数",
+          "default": "15%"
+        },
+        {
+          "type": "text",
+          "id": "anniversary_product_code",
+          "label": "产品copy code",
+          "default": "12133"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
 {% javascript %}
 {% endjavascript %}
