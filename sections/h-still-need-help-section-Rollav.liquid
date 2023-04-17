@@ -1,9 +1,25 @@
-
+<style>
+  .h-still-need-help-col{
+    position: relative;
+    
+    top: 50px;
+    transform: translateY(0);
+    right: 0;
+  }
+  .still-need-help-col h1{
+    color: #000;
+  }
+  .still-need-help-col p{
+    color:#000;
+    padding-bottom: 40px;
+    padding-top: 10px;
+  }
+</style>
 
 <section class="still-need-help-section">
       <div class="container">
-        <div class="still-need-help-section-inner" style="background-image:url(https://cdn.shopify.com/s/files/1/0549/7667/6078/files/1_3.png?v=1664808024);">
-          <div class="still-need-help-col">
+        <div class="still-need-help-section-inner" style="background-image:url({{ section.settings.h_image | img_url:'master' }});">
+          <div class="still-need-help-col h-still-need-help-col">
             <h1> {{ section.settings.title }}</h1>
             <p> {{ section.settings.subtitle }}</p>
              <a href="{{ section.settings.button_url }}">{{ section.settings.Button_title }}<i class="fa fa-angle-right" aria-hidden="true"></i></a>
@@ -11,6 +27,8 @@
           
         </div>
       </div>
+
+      
 </section>
 
 
@@ -19,6 +37,12 @@
   {
 "name": "still-need-help-section",
    "settings": [
+    {
+      "id": "h_image",
+      "type": "image_picker",
+      "label": "图片"
+
+    },
        {
       "type": "text",
       "id": "title",
