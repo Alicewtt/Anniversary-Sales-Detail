@@ -275,13 +275,19 @@
     slidesPerView: 3,
     spaceBetween: 30,
     breakpoints: {
-      // 当屏幕宽度小于等于320px时，设置slidesPerView为1
-      420: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-
+      1280: {  //当屏幕宽度小于等于1280
+        slidesPerView: 4,
+        spaceBetween: 30
       }
-    }
+      768: {  //当屏幕宽度小于等于768
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      320: {  //当屏幕宽度小于等于320
+        slidesPerView: 2,
+        spaceBetween: 10,
+      }
+    } 
 
     navigation: {
         nextEl: ".swiper-button-next",
