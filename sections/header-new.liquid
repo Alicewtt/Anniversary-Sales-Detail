@@ -81,7 +81,7 @@
                          {% if block.type == 'product' %}  
                 <li>
                   <a href="{{ block.settings.url1 }}" class="new_menu">{{ block.settings.text1 }} </a>
-                  <div class="megamenu-panel h-123">
+                  <div class="megamenu-panel">
                     <div class="megamenu-lists"> 
                          {% for product in collections[block.settings.coll].products limit : 2 %}
                 
@@ -89,17 +89,17 @@
                         <li class="rolvo-imag">
                           <a href="{{product.url}}"> 
                             <div class="sub-image">
-                              <img src="{{product.featured_image | img_url : '400x'}}" data-huanhuan="h-123">
+                              <img src="{{product.featured_image | img_url : '400x'}}">
                             </div>
                           </a>
                         </li>
-
                          <p>{{product.title}}
                           {% for t in product.tags %}
-                            {% if t contains 'NEW' %} 
+     {% if t contains 'NEW' %} 
                             <span>new </span>
-                            {% endif %}
-                          {% endfor %}
+            
+     {% endif %}
+  {% endfor %}
                          </p>
                       </ul>
                     {%  endfor %}
@@ -108,7 +108,7 @@
                         <li class="rolvo-imag">
                           <a href="{{ section.settings.coll_url }}"> 
                             <div class="sub-image">
-                              <img src="{{ section.settings.coll-img |img_url:'master' }}" data-huanhuan="h-234">
+                              <img src="{{ section.settings.coll-img |img_url:'master' }}">
                             </div>
                           </a>
                         </li>
@@ -117,7 +117,7 @@
                          </p>
                       </ul>
 
-                      <!--  for collection   -->
+<!--  for collection   -->
                    
                     </div>
                   </div>
