@@ -1,0 +1,72 @@
+<style>
+    @media (min-width:421px) {
+        .tt_section_join {
+            height:375px;
+        }
+        .tt_section_join .tt-h1-title {
+            height: 44px;
+            font-size: 31.25px;
+            line-height: 44px;
+            bottom: 50px;
+            width:100%;
+            text-align:center;
+        }
+      }
+      @media (max-width:421px) {
+        .tt_section_join {
+            height:193px;
+        }
+        .tt_section_join .tt-h1-title {
+            height: 27px;
+            font-size: 19.3237px;
+            line-height: 27px;
+            bottom: 50px;
+            width:100%;
+            text-align:center;
+        }
+      }
+    .tt_section_join {
+        background-color:{{ section.settings.section_background_color }};
+        position:relative;
+        width:100%
+    }
+    .tt_section_join .tt-h1-title {
+        position: absolute;
+        font-family: 'Alibaba PuHuiTi 2.0';
+        font-style: normal;
+        font-weight: 700;
+        
+    }
+</style>
+<section class="tt_section_join">
+    <div class="tt-join">
+        <p class="tt-h1-title">{{ section.settings.anniversary_join_title }}</p>
+        <img style="width: 100%;height: auto;" src="{{ block.settings.image | image_url }}" alt="">
+    </div>
+  </section>
+  {% schema %}
+    {
+        "name": "tt-anniversarySale-join",
+        "settings": [
+        {
+            "type": "text",
+            "id": "anniversary_join_title",
+            "label": "标题",
+            "default": "Join social contest "
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "产品背景图"
+        },
+        {
+          "type": "color",
+          "id": "section_background_color",
+          "label": "整体背景",
+          "default": "#FCF3E7"
+        }
+        ]
+    }
+{% endschema %}
+{% javascript %}
+{% endjavascript %}
