@@ -92,6 +92,27 @@
     },
     "tt-anniversarySales_detail2": {
       "type": "tt-anniversarySales_detail2",
+      "blocks": {
+        "b61ee59b-6a89-42be-8207-6306d6788272": {
+          "type": "anniversary-1",
+          "settings": {
+            "anniversary1_title": "How to choose your First HOZO product?",
+            "image": "shopify:\/\/shop_images\/link-1.png",
+            "anniversary1_url": "#"
+          }
+        },
+        "e1fee8b8-9983-4a35-8620-5b9b075a306c": {
+          "type": "anniversary-1",
+          "settings": {
+            "anniversary1_title": "How to choose your First HOZO product?",
+            "anniversary1_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "b61ee59b-6a89-42be-8207-6306d6788272",
+        "e1fee8b8-9983-4a35-8620-5b9b075a306c"
+      ],
       "settings": {
         "anniversary_big_title": "Can’t Decide?",
         "anniversary_little_title": "Check out HOZO’s Ultimate Guide",
