@@ -1,32 +1,145 @@
 {
-    "sections": {
-      "tt-anniversarySales_detail1": {
-        "type": "tt-anniversarySales_detail1",
-        "settings": {}
-      },
-
-      "tt-anniversarySales_detail2": {
-        "type": "tt-anniversarySales_detail2",
-        "settings": {}
-      },
-      "tt-anniversarySales_detail3": {
-        "type": "tt-anniversarySales_detail3",
-        "settings": {}
-      },
-      "s-anniversary-banner": {
-        "type": "s-anniversary-banner",
-        "settings": { }
-      },
-      "s-anniversary-Rotation": {
-        "type": "s-anniversary-Rotation",
-        "settings": { }
-    }
+  "sections": {
+    "s-anniversary-banner": {
+      "type": "s-anniversary-banner",
+      "settings": {
+        "countdown_time": "2023-04-21T00:00:00+08:00",
+        "show_countdown_time": true,
+        "background_color": "#FCF3E7",
+        "item_image_1_1": "shopify:\/\/shop_images\/pc-Frame_1216.jpg",
+        "item_image_1_2": "shopify:\/\/shop_images\/web-Frame_1216.jpg",
+        "text_heading_1": "Grab your best deal before it’s gone!"
+      }
     },
-    "order": [
-      "s-anniversary-banner",
-      "tt-anniversarySales_detail1",
-      "s-anniversary-Rotation",
-      "tt-anniversarySales_detail2",
-      "tt-anniversarySales_detail3"
-    ]
-  }
+    "tt-anniversarySales_detail1": {
+      "type": "tt-anniversarySales_detail1",
+      "blocks": {
+        "fef87af7-e252-4369-831a-bfb24165fe06": {
+          "type": "anniversary",
+          "settings": {
+            "product": "meazor3d",
+            "anniversary_product_title": "MEAZOR 3D Premium Combo",
+            "anniversary_product_desc": "· First digital measure tape<br>· Measure curves and lines<br>· One roll at a time",
+            "anniversary_product_order": true,
+            "anniversary_product_free": true,
+            "anniversary_product_num": "15%",
+            "anniversary_product_code": "12133"
+          }
+        },
+        "715420d7-d638-4a9a-907e-f5496e616e93": {
+          "type": "anniversary",
+          "settings": {
+            "product": "meazor",
+            "anniversary_product_title": "MEAZOR 3D Premium Combo",
+            "anniversary_product_desc": "· First digital measure tape<br>· Measure curves and lines<br>· One roll at a time",
+            "anniversary_product_order": true,
+            "anniversary_product_free": true,
+            "anniversary_product_num": "15%",
+            "anniversary_product_code": "12133"
+          }
+        },
+        "8ca88f77-0aaa-46ee-9428-de1489fa6b45": {
+          "type": "anniversary",
+          "settings": {
+            "product": "meazor-expert-protractor",
+            "anniversary_product_title": "MEAZOR 3D Premium Combo",
+            "anniversary_product_desc": "· First digital measure tape<br>· Measure curves and lines<br>· One roll at a time",
+            "anniversary_product_order": true,
+            "anniversary_product_free": true,
+            "anniversary_product_num": "15%",
+            "anniversary_product_code": "12133"
+          }
+        }
+      },
+      "block_order": [
+        "fef87af7-e252-4369-831a-bfb24165fe06",
+        "715420d7-d638-4a9a-907e-f5496e616e93",
+        "8ca88f77-0aaa-46ee-9428-de1489fa6b45"
+      ],
+      "settings": {
+        "anniversary_big_title": "Recommended Deals",
+        "section_background_color": "#FCF3E7"
+      }
+    },
+    "s-anniversary-Rotation": {
+      "type": "s-anniversary-Rotation",
+      "blocks": {
+        "530af421-2b76-45c1-9679-15c2e1e0ac63": {
+          "type": "slide",
+          "settings": {
+            "product": "meazor-expert-accessory-kit",
+            "text_1": "Learn Mort",
+            "text_2": "Add to cart"
+          }
+        },
+        "15d738f8-adb1-4f70-89d0-29ec3b184a70": {
+          "type": "slide",
+          "settings": {
+            "product": "mini-protection-case",
+            "text_1": "Learn Mort",
+            "text_2": "Add to cart"
+          }
+        }
+      },
+      "block_order": [
+        "530af421-2b76-45c1-9679-15c2e1e0ac63",
+        "15d738f8-adb1-4f70-89d0-29ec3b184a70"
+      ],
+      "settings": {
+        "text_heading_1": "Customer Top Picked",
+        "background_color": "#FCF3E7"
+      }
+    },
+    "tt-anniversarySales_detail2": {
+      "type": "tt-anniversarySales_detail2",
+      "blocks": {
+        "b61ee59b-6a89-42be-8207-6306d6788272": {
+          "type": "anniversary-1",
+          "settings": {
+            "anniversary1_title": "How to choose your First HOZO product?",
+            "image": "shopify:\/\/shop_images\/link-1.png",
+            "anniversary1_url": "#"
+          }
+        },
+        "e1fee8b8-9983-4a35-8620-5b9b075a306c": {
+          "type": "anniversary-1",
+          "settings": {
+            "anniversary1_title": "MEAZOR 3D vs MEAZOR",
+            "anniversary1_url": "#"
+          }
+        },
+        "6bb06708-726e-40a3-b1b2-971be299ad8c": {
+          "type": "anniversary-1",
+          "settings": {
+            "anniversary1_title": "HOZO’s Gift GuidePerfect Gifts for your loved one!",
+            "anniversary1_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "b61ee59b-6a89-42be-8207-6306d6788272",
+        "e1fee8b8-9983-4a35-8620-5b9b075a306c",
+        "6bb06708-726e-40a3-b1b2-971be299ad8c"
+      ],
+      "settings": {
+        "anniversary_big_title": "Can’t Decide?",
+        "anniversary_little_title": "Check out HOZO’s Ultimate Guide",
+        "section_background_color": "#FCF3E7"
+      }
+    },
+    "tt-anniversarySales_detail3": {
+      "type": "tt-anniversarySales_detail3",
+      "settings": {
+        "anniversary_join_title": "Join social contest",
+        "section_background_color": "#FCF3E7"
+      }
+    }
+  },
+  "order": [
+    "s-anniversary-banner",
+    "tt-anniversarySales_detail1",
+    "s-anniversary-Rotation",
+    "tt-anniversarySales_detail2",
+    "tt-anniversarySales_detail3"
+  ]
+}
