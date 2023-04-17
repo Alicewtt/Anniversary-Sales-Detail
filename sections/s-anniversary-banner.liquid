@@ -1,0 +1,305 @@
+<style>
+    .section-banner_1{
+        max-width: 1500px;
+        margin: auto;
+        margin-top: 129px;
+    }
+    .banner-img{
+        max-height: 844px;
+
+    }
+
+    .banner-img .web-img{
+         display: none;
+
+    }
+
+    .s-Countdown{
+        width: 625px;
+        height: 218.75px;
+        margin: auto;
+        background-color: #FCF3E7;
+        margin-top: 23.44px;
+        border-radius: 15.625px;
+        
+    }
+    .s-Countdown .title{
+        text-align: center;
+        font-family: 'Alibaba PuHuiTi 2.0';
+        font-weight: 700;
+        font-size: 28.13px;
+        line-height: 39px;
+        padding-top: 15.6px;
+
+    }
+    .s-Countdown .times{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+        position: relative;
+
+    }
+    .s-Countdown .Hours{
+        width: 118px;
+        font-family: 'Alibaba PuHuiTi 2.0';
+        font-weight: 700;
+        font-size: 100px;
+        line-height: 100px;
+        color:#55C1C5;
+        margin: 0px 25px;
+    }
+
+    .s-Countdown .times-p1{
+        margin: 0 20px;
+        color: #55C1C5;
+        font-family: 'Alibaba PuHuiTi 2.0';
+        font-weight: 700;
+        font-size: 90px;
+        position: absolute;
+        left: 195px;
+        top: -25px;
+    }
+    .s-Countdown .times-p2{
+        margin: 0 20px;
+        color: #55C1C5;
+        font-family: 'Alibaba PuHuiTi 2.0';
+        font-weight: 700;
+        font-size: 90px;
+        position: absolute;
+        right:195px;
+        top: -25px;
+
+    }
+    .s-Countdown .Total_time{
+        text-align: center;
+    }
+    .s-Countdown .Heaven{
+        font-family: 'Alibaba PuHuiTi 2.0';
+        font-weight: 500;
+        font-size: 18.75px;
+        line-height: 26px;
+        padding-top: 12px;
+    }
+
+    @media(max-width:768px){
+        .section-banner_1{
+            margin-top: 0;
+            margin: auto;
+
+           }
+        .banner-img .pc-img{
+           display:none;
+        }
+        .banner-img .web-img{
+            height: 579.71px;
+            display: block;
+        }
+
+        .s-Countdown{
+            width: 371.01px;
+            height: 119.81px;
+        }
+        .s-Countdown .title{
+            font-size: 15.4589px;
+            line-height: 22px;
+            padding-top: 9.6px;
+    
+        }
+        .s-Countdown .Hours{
+            width: 57px;
+            font-size: 48.3092px;
+            line-height: 68px;
+        
+        }
+        .s-Countdown .Heaven{
+            font-size: 11.5942px;
+            line-height: 16px;
+            padding: 0;
+        }
+        .s-Countdown .times-p1{
+            font-size: 48.3092px;
+            line-height: 68px;
+            top: -6px;
+            left: 108px;
+        }
+        .s-Countdown .times-p2{
+            font-size: 48.3092px;
+            line-height: 68px;
+            top: -6px;
+            right: 108px;
+        }
+    }
+    
+    @media(max-width:410px){
+        .section-banner_1{
+            margin-top: 0;
+            margin: auto;
+
+           }
+        .banner-img .pc-img{
+           display:none;
+        }
+        .banner-img .web-img{
+            height: 579.71px;
+            display: block;
+        }
+
+        .s-Countdown{
+            width: 371.01px;
+            height: 119.81px;
+        }
+        .s-Countdown .title{
+            font-size: 15.4589px;
+            line-height: 22px;
+            padding-top: 9.6px;
+    
+        }
+        .s-Countdown .Hours{
+            width: 57px;
+            font-size: 48.3092px;
+            line-height: 68px;
+        
+        }
+        .s-Countdown .Heaven{
+            font-size: 11.5942px;
+            line-height: 16px;
+            padding: 0;
+        }
+        .s-Countdown .times-p1{
+            font-size: 48.3092px;
+            line-height: 68px;
+            top: -6px;
+            left: 108px;
+        }
+        .s-Countdown .times-p2{
+            font-size: 48.3092px;
+            line-height: 68px;
+            top: -6px;
+            right: 108px;
+        }
+    }
+    </style>
+
+<section class="section-banner_1">
+    <div class="banner-img">
+        {% comment %} <img 
+            class="pc-img"
+            style=" width:100%;height:auto;"
+            src="{{ section.settings.item_image_1_1 | img_url : 'master'}}" alt="" > {% endcomment %}
+            <img src="../assets/pc-Frame1216.jpg" alt="">
+        {% comment %} <img
+             class="web-img" 
+            style=" width:100%;height:auto;"
+            src="{{ section.settings.item_image_1_2 | img_url : 'master'}}" alt="" > {% endcomment %}
+        
+    </div>
+
+    <div class="s-Countdown" style="{% if section.settings.show_countdown_time %}display:block; {% else %}display:none; {% endif %}">
+        <p class="title">Grab your best deal before it’s gone!</p>
+        <div class="times">
+            <ul class="Total_time">
+                <li id="hours" class="Hours"></li>
+                <li class="Heaven">HRS</li>
+            </ul>
+            
+            <p class="times-p1">:</p>
+
+            <ul  class="Total_time">
+                <li id="minutes" class="Hours"></li>
+                <li class="Heaven">MIN</li>
+            </ul>
+            <p class="times-p2">:</p>
+
+            <ul  class="Total_time">
+                <li id="seconds" class="Hours"></li>
+                <li class="Heaven">SEC</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.slim.min.js"></script>
+
+<script>
+
+    function startCountdown(isoDateString) {
+        // 设置倒计时日期
+        var countDownDate = new Date(isoDateString).getTime();
+      
+        // 更新倒计时每秒
+        var x = setInterval(function() {
+      
+          // 获取当前时间
+          var now = new Date().getTime();
+      
+          // 计算时间差
+          var distance = countDownDate - now;
+      
+          // 时间计算
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+          // 格式化时间
+          hours = hours.toString().padStart(2, '0');
+          minutes = minutes.toString().padStart(2, '0');
+          seconds = seconds.toString().padStart(2, '0');
+      
+          // 显示结果
+          document.getElementById("hours").innerHTML = hours + "";
+          document.getElementById("minutes").innerHTML = minutes + "";
+          document.getElementById("seconds").innerHTML = seconds + "";
+      
+          // 如果倒计时结束，显示文本
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("hours").innerHTML = "";
+            document.getElementById("minutes").innerHTML = "";
+            document.getElementById("seconds").innerHTML = "时间到";
+          }
+        }, 1000);
+      }
+      
+      {% comment %} startCountdown("2023-04-21T00:00:00+08:00"); {% endcomment %}
+      startCountdown("{{section.settings.countdown_time}}");
+</script>
+
+
+
+
+{% schema %}
+  {
+    "name": "s_anniversary_1",
+    "settings": [
+        {
+            "id": "countdown_time",
+            "type": "html",
+            "label": "传入倒计时结束的时间(要求使用iso8601标准格式时间)‘2023-04-21T00:00:00+08:00’",
+            "default":"2023-04-21T00:00:00+08:00"
+        },
+        {
+            "type": "checkbox",
+            "id": "show_countdown_time",
+            "label": "显示倒计时？",
+            "default": true
+        },
+        {
+        "type": "image_picker",
+        "id": "item_image_1_1",
+        "label": "图片",
+        "info": "pc端图片"
+      },
+
+      
+      {
+        "type": "image_picker",
+        "id": "item_image_1_2",
+        "label": "图片",
+        "info": "移动端图片"
+      }
+
+]
+
+  }
+{% endschema %}
