@@ -107,11 +107,19 @@
             "anniversary1_title": "MEAZOR 3D vs MEAZOR",
             "anniversary1_url": "#"
           }
+        },
+        "6bb06708-726e-40a3-b1b2-971be299ad8c": {
+          "type": "anniversary-1",
+          "settings": {
+            "anniversary1_title": "HOZO’s Gift GuidePerfect Gifts for your loved one!",
+            "anniversary1_url": "#"
+          }
         }
       },
       "block_order": [
         "b61ee59b-6a89-42be-8207-6306d6788272",
-        "e1fee8b8-9983-4a35-8620-5b9b075a306c"
+        "e1fee8b8-9983-4a35-8620-5b9b075a306c",
+        "6bb06708-726e-40a3-b1b2-971be299ad8c"
       ],
       "settings": {
         "anniversary_big_title": "Can’t Decide?",
