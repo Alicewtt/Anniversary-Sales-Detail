@@ -272,12 +272,17 @@
   var mySwiper = new Swiper ('.swiper-container', {
     {% comment %} autoplay:true, {% endcomment %}
     loop: true,
-    slidesPerView: 3,
-    spaceBetween: 30,
+
     breakpoints: {
       // 当屏幕宽度小于等于320px时，设置slidesPerView为1
       420: {
-        slidesPerView: 1
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+      }
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 30,
       }
 
     }
