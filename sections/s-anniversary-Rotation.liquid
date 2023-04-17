@@ -150,19 +150,14 @@
               background-position: center -9px;
           }
           .swiper-slide{
-       width: auto;
+             width: auto;
 
-            {% comment %} width: 154.59px; {% endcomment %}
           }
           .Product_Show{
-           
             border-radius: 9.66184px;
             margin: 14.49px 0 15.46px 0;
 
           }
-          .Product_Show .img_box{
-     
-        }
 
     }
     @media(max-width:420px){
@@ -179,15 +174,11 @@
         background-position: center -9px;
     }
     .swiper-slide{
-       {% comment %} width: 154.59px; {% endcomment %}
        width: auto;
     }
     .Product_Show{
         border-radius: 9.66184px;
         margin: 14.49px 0 15.46px 0;
-
-    }
-    .Product_Show .img_box{
 
     }
     .Product_Show .Price{
@@ -227,9 +218,7 @@
   <script src="{{ 'swiper.min.js' | asset_url }}"></script>
 
 
-
 <p class="Rotation_title">{{section.settings.text_heading_1}}</p>
-
 <div class="Rotation">
 <div class="swiper-container" style="overflow: hidden;">
     <div class="swiper-wrapper">
@@ -237,14 +226,12 @@
     {% for block in section.blocks %}
 
         <div class="swiper-slide Product_Show">
-
             <div class="img_box">
                 <img
                     style="height: auto;"  
                     src="{{all_products[block.settings.product].featured_image | image_url}}" alt="">
             
             </div>
-
 
                 <p class="Product_Name">{{all_products[block.settings.product].title}}</p>
 
@@ -280,11 +267,10 @@ var swiper_width = 0;
     var swiper_spaceBetween;
     var swiper_slidesPerView;
     if($(window).width() > 768){
-        {% comment %} swiper_width = 937.5 {% endcomment %}
+        
         swiper_slidesPerView = 3;
         swiper_spaceBetween = 30;
     }else{
-        {% comment %} swiper_width = 154.59 {% endcomment %}
         swiper_slidesPerView = 1;
         swiper_spaceBetween = 10;
     }
@@ -293,7 +279,7 @@ var swiper_width = 0;
   var mySwiper = new Swiper ('.swiper-container', {
     autoplay:true,
     loop: true,
-    {% comment %} width: swiper_width, {% endcomment %}
+
     slidesPerView: swiper_slidesPerView,
     spaceBetween: swiper_spaceBetween,
     observer: true,// 开启动态检查器，检测swiper和slide
@@ -301,24 +287,8 @@ var swiper_width = 0;
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    },
+    }
   })
-
-{% comment %}     
-  var mySwiper = new Swiper ('.swiper-container', {
-    autoplay:true,
-    loop: true,
-
-
-    slidesPerView: 3,
-    spaceBetween: 30, 
-
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      }
-
-  })      {% endcomment %}
 
 
     $('.cart-2').click(function () {
