@@ -137,7 +137,8 @@
         "35ba1424-9541-4826-89e4-2e639093bca3": {
           "type": "tab_1_left_right_content",
           "settings": {
-            "txt1": "Built-in Scales\n93 built-in scales distributed in 8 scale modes:",
+            "txt1": "Built-in Scales",
+            "url1": "93 built-in scales distributed in 8 scale modes:",
             "left_image_1": "shopify:\/\/shop_images\/scale_chart-11.png",
             "left_image_2": "shopify:\/\/shop_images\/scale_chart-10.png"
           }
