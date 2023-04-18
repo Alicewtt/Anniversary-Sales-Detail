@@ -47,6 +47,24 @@
     },
     "support-page-blog": {
       "type": "support-page-blog",
+      "blocks": {
+        "1f8353b8-b8da-48b3-b765-84435c0210da": {
+          "type": "text",
+          "settings": {
+            "article": "journal\/neoruler-pre-launch-massive-giveaway-announcement"
+          }
+        },
+        "546e7307-f8b9-4496-bf6b-830187d5b303": {
+          "type": "text",
+          "settings": {
+            "article": "新闻\/hozo-gift-guide-perfect-gifts-for-your-loved-ones"
+          }
+        }
+      },
+      "block_order": [
+        "1f8353b8-b8da-48b3-b765-84435c0210da",
+        "546e7307-f8b9-4496-bf6b-830187d5b303"
+      ],
       "settings": {
         "title": ""
       }
@@ -57,7 +75,7 @@
         "title": "MEAZOR APP 2.0",
         "fram_image": "shopify:\/\/shop_images\/Frame_46_256x256_17334631-77f9-4277-88a7-481631c5c8f5.png",
         "MEAZOR_title": "MEAZOR APP 2.0",
-        "free_title": "<span>Free<\/span> for life time",
+        "free_title": "Free for life time",
         "app_url": "https:\/\/apps.apple.com\/......",
         "app_image": "shopify:\/\/shop_images\/apple_app_store_256x256_93f2049f-c55b-4b18-9918-c1019d1967e5.png",
         "app_url1": "https:\/\/play.google.com\/store\/apps\/details?id=com.yufei.robbiva",
