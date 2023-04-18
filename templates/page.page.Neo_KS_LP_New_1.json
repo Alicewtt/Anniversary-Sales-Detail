@@ -95,7 +95,8 @@
           "type": "slide",
           "settings": {
             "text_1": "Drawing Mode",
-            "text_2": "Only one click away from 2D to 3D Display"
+            "text_2": "Only one click away from 2D to 3D Display",
+            "slide_image": "shopify:\/\/shop_images\/section3-right-swiper-4.png"
           }
         }
       },
