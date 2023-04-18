@@ -66,6 +66,28 @@
     },
     "h-neo_ks_lp_new_3": {
       "type": "h-neo_ks_lp_new_3",
+      "blocks": {
+        "ddacec99-0f97-4ed1-b5f4-bab493d5a65b": {
+          "type": "slide",
+          "settings": {
+            "text_1": "Photo Mode",
+            "text_2": "Only one click away from 2D to 3D Display",
+            "slide_image": "shopify:\/\/shop_images\/section3-right-swiper-1_680591df-4393-4c00-a4ff-1af353451b7a.png"
+          }
+        },
+        "036ece74-a744-4fa2-92b2-d2e927bc5808": {
+          "type": "slide",
+          "settings": {
+            "text_1": "Drawing Mode",
+            "text_2": "Only one click away from 2D to 3D Display",
+            "slide_image": "shopify:\/\/shop_images\/section3-right-swiper-2_7e6a7bec-76a6-4072-81fd-5b562d029f9a.png"
+          }
+        }
+      },
+      "block_order": [
+        "ddacec99-0f97-4ed1-b5f4-bab493d5a65b",
+        "036ece74-a744-4fa2-92b2-d2e927bc5808"
+      ],
       "settings": {
       }
     },
