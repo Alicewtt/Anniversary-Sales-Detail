@@ -3258,7 +3258,7 @@
       "h-neo_ks_lp_new_1": {
         "type": "h-neo_ks_lp_new_1",
         "settings": {
-          "url": ""
+          "url": "https:\/\/www.kickstarter.com\/projects\/hozodesign\/neoruler-rule-the-scales"
         }
       },
       "h-neo_ks_lp_new_2": {
@@ -3588,6 +3588,11 @@
       },
       "tt-anniversarySales_detail3": {
         "type": "tt-anniversarySales_detail3",
+        "settings": {
+        }
+      },
+      "h-neo_ks_lp_new_0_static": {
+        "type": "h-neo_ks_lp_new_0_static",
         "settings": {
         }
       }
