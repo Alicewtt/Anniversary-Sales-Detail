@@ -19,21 +19,13 @@
             "image": "shopify:\/\/shop_images\/Frame_51_1.png",
             "url": ""
           }
-        },
-        "244d06de-5f3d-43c9-a978-b7a378fb8ece": {
-          "type": "Flag",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_53.png",
-            "url": ""
-          }
         }
       },
       "block_order": [
-        "9d3f4e93-21b7-4488-9cc7-d14a6e603592",
-        "244d06de-5f3d-43c9-a978-b7a378fb8ece"
+        "9d3f4e93-21b7-4488-9cc7-d14a6e603592"
       ],
       "settings": {
-        "title": "Understand better with NeoRuler"
+        "title": "User Manual"
       }
     },
     "support-page-blog": {
