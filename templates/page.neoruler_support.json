@@ -84,18 +84,6 @@
     },
     "meazor-faq-section-Rollova": {
       "type": "meazor-faq-section-Rollova",
-      "blocks": {
-        "dd727dde-cfe2-496b-981f-649b300a4622": {
-          "type": "FAQ",
-          "settings": {
-            "qustion": "",
-            "answer": ""
-          }
-        }
-      },
-      "block_order": [
-        "dd727dde-cfe2-496b-981f-649b300a4622"
-      ],
       "settings": {
         "title": "NeoRuler FAQ",
         "Button_title": "More specs",
