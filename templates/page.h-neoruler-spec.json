@@ -133,6 +133,13 @@
             "txt1": "",
             "url1": "<div class=\"bottom-section w-100 d-flex\">\n                                                <figure class=\"mb-0\">\n                                                    <img src=\"\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/t\/21\/assets\/caution.svg?v=128491250521187484951663869724\" class=\"img-fluid\" alt=\"caution\">\n                                                <\/figure>\n                                                <div class=\"paragraph text-start\">\n                                                    <p><strong> CAUTION: :Laser Radiation <\/strong><\/p>\n                                                    <p> <strong>Do not Stare into Beam<\/strong> <\/p>\n                                                    <p><strong> Please keep away from children<\/strong> <\/p>\n                                                <\/div>\n                                            <\/div>"
           }
+        },
+        "35ba1424-9541-4826-89e4-2e639093bca3": {
+          "type": "tab_1_left_right_content",
+          "settings": {
+            "left_image_1": "shopify:\/\/shop_images\/scale_chart-11.png",
+            "left_image_2": "shopify:\/\/shop_images\/scale_chart-10.png"
+          }
         }
       },
       "block_order": [
@@ -154,7 +161,8 @@
         "13ed5e35-b46c-4779-8d43-1fb549ae7dbf",
         "4f554b87-9b78-4b95-a6e3-151dc4a89b9e",
         "f82f137d-16a8-47d4-9e1d-001451ad5e28",
-        "00e4d197-4bf3-4266-b050-15f9c8e7da24"
+        "00e4d197-4bf3-4266-b050-15f9c8e7da24",
+        "35ba1424-9541-4826-89e4-2e639093bca3"
       ],
       "settings": {
         "txt1": "Functions",
