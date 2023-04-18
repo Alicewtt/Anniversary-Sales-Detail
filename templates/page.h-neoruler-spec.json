@@ -18,8 +18,8 @@
         "fc9305d3-4e17-484f-9fa7-dc2a8b745766": {
           "type": "first",
           "settings": {
-            "txt1": "MEAZOR APP 2.0",
-            "url1": "Android 6.0 or above and requires minimum 4GB ram. iOS 13 or above. Adapt to Connection protocol: Bluetooth 4.0 wireless connection."
+            "txt1": "Built-in Scales",
+            "url1": "93 built-in scales distributed in 8 scale modes:"
           }
         },
         "b65d05d2-ef77-4fbd-998f-4ea5b0230e37": {
@@ -137,6 +137,7 @@
         "35ba1424-9541-4826-89e4-2e639093bca3": {
           "type": "tab_1_left_right_content",
           "settings": {
+            "txt1": "Built-in Scales\n93 built-in scales distributed in 8 scale modes:",
             "left_image_1": "shopify:\/\/shop_images\/scale_chart-11.png",
             "left_image_2": "shopify:\/\/shop_images\/scale_chart-10.png"
           }
