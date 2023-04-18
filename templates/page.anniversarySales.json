@@ -5,7 +5,7 @@
       "settings": {
         "countdown_time": "2023-04-21T00:00:00+08:00",
         "show_countdown_time": true,
-        "background_color": "#FCF3E7",
+        "background_color": "#fcf3e7",
         "item_image_1_1": "shopify:\/\/shop_images\/pc-Frame_1216.jpg",
         "item_image_1_2": "shopify:\/\/shop_images\/web-Frame_1216.jpg",
         "text_heading_1": "Grab your best deal before it’s gone!"
@@ -42,7 +42,7 @@
           "type": "anniversary",
           "settings": {
             "product": "meazor-expert-protractor",
-            "anniversary_product_title": "MEAZOR 3D Premium Combo",
+            "anniversary_product_title": "MEAZOR",
             "anniversary_product_desc": "· First digital measure tape<br>· Measure curves and lines<br>· One roll at a time",
             "anniversary_product_order": true,
             "anniversary_product_free": true,
@@ -58,7 +58,7 @@
       ],
       "settings": {
         "anniversary_big_title": "Recommended Deals",
-        "section_background_color": "#FCF3E7"
+        "section_background_color": "#fcf3e7"
       }
     },
     "s-anniversary-Rotation": {
@@ -87,7 +87,7 @@
       ],
       "settings": {
         "text_heading_1": "Customer Top Picked",
-        "background_color": "#FCF3E7"
+        "background_color": "#fcf3e7"
       }
     },
     "tt-anniversarySales_detail2": {
@@ -98,14 +98,14 @@
           "settings": {
             "anniversary1_title": "How to choose your First HOZO product?",
             "image": "shopify:\/\/shop_images\/link-1.png",
-            "anniversary1_url": "#"
+            "anniversary1_url": ""
           }
         },
         "e1fee8b8-9983-4a35-8620-5b9b075a306c": {
           "type": "anniversary-1",
           "settings": {
             "anniversary1_title": "MEAZOR 3D vs MEAZOR",
-            "anniversary1_url": "#"
+            "anniversary1_url": "https:\/\/hozodesign.com\/blogs\/journal\/difference-between-meazor-meazor-3d"
           }
         },
         "6bb06708-726e-40a3-b1b2-971be299ad8c": {
@@ -124,12 +124,14 @@
       "settings": {
         "anniversary_big_title": "Can’t Decide?",
         "anniversary_little_title": "Check out HOZO’s Ultimate Guide",
-        "section_background_color": "#FCF3E7"
+        "section_background_color": "#fcf3e7"
       }
     },
     "tt-anniversarySales_detail3": {
       "type": "tt-anniversarySales_detail3",
       "settings": {
+        "anniversary_join_title": "Join social contest",
+        "section_background_color": "#FCF3E7"
       }
     }
   },
