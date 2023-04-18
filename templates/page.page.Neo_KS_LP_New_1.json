@@ -121,6 +121,35 @@
     },
     "h-neo_ks_lp_new_6": {
       "type": "h-neo_ks_lp_new_6",
+      "blocks": {
+        "d084167e-5e6d-4e5c-9b0b-90e6bf787bd3": {
+          "type": "slide",
+          "settings": {
+            "text_1": "Pointer Module",
+            "text_2": "Excel Measuring Details",
+            "slide_image": "shopify:\/\/shop_images\/Pointer.png"
+          }
+        },
+        "4b0eaa77-2c68-4506-9630-88cbbbd386d3": {
+          "type": "slide",
+          "settings": {
+            "text_1": "Drawing Mode",
+            "text_2": "Only one click away from 2D to 3D Display"
+          }
+        },
+        "8fc71656-9270-400c-94c6-d4ac64bd07ab": {
+          "type": "slide",
+          "settings": {
+            "text_1": "Drawing Mode",
+            "text_2": "Only one click away from 2D to 3D Display"
+          }
+        }
+      },
+      "block_order": [
+        "d084167e-5e6d-4e5c-9b0b-90e6bf787bd3",
+        "4b0eaa77-2c68-4506-9630-88cbbbd386d3",
+        "8fc71656-9270-400c-94c6-d4ac64bd07ab"
+      ],
       "settings": {
       }
     },
