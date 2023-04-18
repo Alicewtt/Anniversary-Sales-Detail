@@ -1,7 +1,7 @@
 {
   "sections": {
-    "main": {
-      "type": "tech-section",
+    "tech-section-neoruler": {
+      "type": "tech-section-neoruler",
       "blocks": {
         "ada96034-c439-46d0-9ccf-763b4722b0ff": {
           "type": "slider",
@@ -19,7 +19,7 @@
           "type": "first",
           "settings": {
             "txt1": "MEAZOR APP 2.0",
-            "url1": "MEAZOR APP 2.0*\n-Save unlimited customized scales\n-4 built-in Theme for NeoRuler\n-Data list, Drawing mode&amp; more"
+            "url1": "Android 6.0 or above and requires minimum 4GB ram. iOS 13 or above. Adapt to Connection protocol: Bluetooth 4.0 wireless connection."
           }
         },
         "b65d05d2-ef77-4fbd-998f-4ea5b0230e37": {
@@ -167,6 +167,6 @@
     }
   },
   "order": [
-    "main"
+    "tech-section-neoruler"
   ]
 }
