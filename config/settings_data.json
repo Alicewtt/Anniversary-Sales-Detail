@@ -3590,11 +3590,6 @@
         "type": "tt-anniversarySales_detail3",
         "settings": {
         }
-      },
-      "s-anniversary-all": {
-        "type": "s-anniversary-all",
-        "settings": {
-        }
       }
     },
     "content_for_index": [
