@@ -12,7 +12,6 @@
     },
     "user-mannual-section-Rollova": {
       "type": "user-mannual-section-Rollova",
-      "disabled": true,
       "blocks": {
         "9d3f4e93-21b7-4488-9cc7-d14a6e603592": {
           "type": "Flag",
