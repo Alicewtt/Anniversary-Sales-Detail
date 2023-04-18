@@ -82,11 +82,28 @@
             "text_2": "Only one click away from 2D to 3D Display",
             "slide_image": "shopify:\/\/shop_images\/section3-right-swiper-2_7e6a7bec-76a6-4072-81fd-5b562d029f9a.png"
           }
+        },
+        "27b5e6ac-7d57-4ea2-a2a6-dfd15ebde728": {
+          "type": "slide",
+          "settings": {
+            "text_1": "List Mode",
+            "text_2": "Only one click away from 2D to 3D Display",
+            "slide_image": "shopify:\/\/shop_images\/section3-right-swiper-3_b87f4890-b6e0-4a22-8ea4-00512b644b8a.png"
+          }
+        },
+        "18199e71-2f2c-493e-b8dd-eec04a168758": {
+          "type": "slide",
+          "settings": {
+            "text_1": "Drawing Mode",
+            "text_2": "Only one click away from 2D to 3D Display"
+          }
         }
       },
       "block_order": [
         "ddacec99-0f97-4ed1-b5f4-bab493d5a65b",
-        "036ece74-a744-4fa2-92b2-d2e927bc5808"
+        "036ece74-a744-4fa2-92b2-d2e927bc5808",
+        "27b5e6ac-7d57-4ea2-a2a6-dfd15ebde728",
+        "18199e71-2f2c-493e-b8dd-eec04a168758"
       ],
       "settings": {
       }
