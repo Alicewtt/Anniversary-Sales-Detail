@@ -127,120 +127,124 @@ $('.meazor-carousel').owlCarousel({
 </script>
 
 {% schema %}
-   {
-    "name": "tech_section_neoruler",
-    "settings": [
+{
+  "name":"tech_section_neoruler",
+  "settings":[
      {
-            "id": "txt1",
-            "type": "textarea",
-            "label": "Add tab-1 heading"
-          },
-      {
-            "id": "url1",
-            "type": "url",
-            "label": "Add tab-1 url(buy now)"
-          },
-      {
-            "id": "txt2",
-            "type": "textarea",
-            "label": "Add tab-2 text"
-          },
-   {
-            "id": "url2",
-            "type": "url",
-            "label": "Add tab-2 url(buy now)"
-          },
-  {
-            "id": "txt3",
-            "type": "textarea",
-            "label": "Add back-button text"
-          },
-   {
-            "id": "url3",
-            "type": "url",
-            "label": "Add back-button url"
-          }
-      
-    ],
-     "blocks": [
-       {
-        "type": "slider",
-        "name": "slider",
-        "settings": [
-              {
-            "id": "img1",
-            "type": "image_picker",
-            "label": "Add image"
-          }
-          
-         
+        "id":"txt1",
+        "type":"textarea",
+        "label":"Add tab-1 heading"
+     },
+     {
+        "id":"url1",
+        "type":"url",
+        "label":"Add tab-1 url(buy now)"
+     },
+     {
+        "id":"txt2",
+        "type":"textarea",
+        "label":"Add tab-2 text"
+     },
+     {
+        "id":"url2",
+        "type":"url",
+        "label":"Add tab-2 url(buy now)"
+     },
+     {
+        "id":"txt3",
+        "type":"textarea",
+        "label":"Add back-button text"
+     },
+     {
+        "id":"url3",
+        "type":"url",
+        "label":"Add back-button url"
+     }
+  ],
+  "blocks":[
+     {
+        "type":"slider",
+        "name":"slider",
+        "settings":[
+           {
+              "id":"img1",
+              "type":"image_picker",
+              "label":"Add image"
+           }
         ]
-      },
-        {
-        "type": "first",
-        "name": "Tab-1",
-        "settings": [
-              {
-            "id": "txt1",
-            "type": "textarea",
-            "label": "Add heading"
-          },
-      {
-            "id": "url1",
-            "type": "html",
-            "label": "Add content"
-          }
-        
-          
-         
+     },
+     {
+        "type":"first",
+        "name":"Tab-1",
+        "settings":[
+           {
+              "id":"txt1",
+              "type":"textarea",
+              "label":"Add heading"
+           },
+           {
+              "id":"url1",
+              "type":"html",
+              "label":"Add content"
+           }
         ]
-      },
-       {
-        "type": "two",
-        "name": "Tab-2",
-        "settings": [
-             {
-            "id": "txt1",
-            "type": "textarea",
-            "label": "Add heading"
-          },
-      {
-            "id": "url1",
-            "type": "html",
-            "label": "Add content"
-          }
-        
-          
-         
+     },
+     {
+        "type":"two",
+        "name":"Tab-2",
+        "settings":[
+           {
+              "id":"txt1",
+              "type":"textarea",
+              "label":"Add heading"
+           },
+           {
+              "id":"url1",
+              "type":"html",
+              "label":"Add content"
+           }
         ]
-      },
-      {
-        "type": "tab_1_left_right_content",
-        "name": "tab_1_left_right_content",
-        "settings": [
-             {
-              "type": "image_picker",
-              "id": "left_image",
-              "label": "图片"
-          },
-      {
-            "id": "url1",
-            "type": "html",
-            "label": "Add content"
-          }
-        
-          
-         
+     },
+     {
+        "type":"tab_1_left_right_content",
+        "name":"tab_1_left_right_content",
+        "settings":[
+           {
+              "type":"image_picker",
+              "id":"left_image_1",
+              "label":"图片"
+           },
+           {
+              "type":"image_picker",
+              "id":"left_image_2",
+              "label":"图片"
+           }
         ]
-      }
-    ],
-    "presets":[{
-  "name": "tech_section_neoruler",
-  "category": "Custom Content"
-
-
-}]
-  }
+     },
+     {
+        "type":"tab_2_left_right_content",
+        "name":"tab_2_left_right_content",
+        "settings":[
+           {
+              "type":"image_picker",
+              "id":"left_image_1_1",
+              "label":"图片"
+           },
+           {
+              "type":"image_picker",
+              "id":"left_image_2_1",
+              "label":"图片"
+           }
+        ]
+     }
+  ],
+  "presets":[
+     {
+        "name":"tech_section_neoruler",
+        "category":"Custom Content"
+     }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
