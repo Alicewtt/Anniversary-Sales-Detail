@@ -17,6 +17,7 @@
     "h-video-section": {
       "type": "h-video-section",
       "settings": {
+        "img1": "shopify:\/\/shop_images\/Read.png",
         "url1": ""
       }
     },
@@ -28,6 +29,38 @@
     },
     "h-neo_ks_lp_new_2": {
       "type": "h-neo_ks_lp_new_2",
+      "blocks": {
+        "4e2f15ff-cf6f-4586-825b-711eaf46c76b": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/Read.png"
+          }
+        },
+        "aebb238b-7710-4b9e-9a09-49da6fe60bf3": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/Draft.png"
+          }
+        },
+        "8fd15870-b38a-4a08-9f8a-d3c218c61afa": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/Caliper.png"
+          }
+        },
+        "d07e99d9-b425-45d3-b68c-18c89cf4d0cd": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/Divide.png"
+          }
+        }
+      },
+      "block_order": [
+        "4e2f15ff-cf6f-4586-825b-711eaf46c76b",
+        "aebb238b-7710-4b9e-9a09-49da6fe60bf3",
+        "8fd15870-b38a-4a08-9f8a-d3c218c61afa",
+        "d07e99d9-b425-45d3-b68c-18c89cf4d0cd"
+      ],
       "settings": {
       }
     },
