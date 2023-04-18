@@ -1,5 +1,10 @@
 {
   "sections": {
+    "h-neo_ks_lp_new_0_static": {
+      "type": "h-neo_ks_lp_new_0_static",
+      "settings": {
+      }
+    },
     "h-neo_ks_lp_new_0": {
       "type": "h-neo_ks_lp_new_0",
       "settings": {
@@ -47,6 +52,7 @@
     }
   },
   "order": [
+    "h-neo_ks_lp_new_0_static",
     "h-neo_ks_lp_new_0",
     "h-video-section",
     "h-neo_ks_lp_new_1",
