@@ -141,15 +141,25 @@
         "8fc71656-9270-400c-94c6-d4ac64bd07ab": {
           "type": "slide",
           "settings": {
-            "text_1": "Drawing Mode",
-            "text_2": "Only one click away from 2D to 3D Display"
+            "text_1": "Magnifier Module",
+            "text_2": "Magnify Reading Accuracy",
+            "slide_image": "shopify:\/\/shop_images\/Magnifier_Module.png"
+          }
+        },
+        "ef0922c6-dd59-405e-ae2a-e01f83ff34c6": {
+          "type": "slide",
+          "settings": {
+            "text_1": "Caliper Module",
+            "text_2": "Enhance Object Measurement",
+            "slide_image": "shopify:\/\/shop_images\/Caliper_Module.png"
           }
         }
       },
       "block_order": [
         "d084167e-5e6d-4e5c-9b0b-90e6bf787bd3",
         "4b0eaa77-2c68-4506-9630-88cbbbd386d3",
-        "8fc71656-9270-400c-94c6-d4ac64bd07ab"
+        "8fc71656-9270-400c-94c6-d4ac64bd07ab",
+        "ef0922c6-dd59-405e-ae2a-e01f83ff34c6"
       ],
       "settings": {
       }
