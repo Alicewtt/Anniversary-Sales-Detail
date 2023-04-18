@@ -6,6 +6,10 @@
     object-fit: none;
     object-position: none;
   }
+  .h-function-box{
+    padding:40px;
+    height:auto;
+  }
 </style>
 <div class="page-wrapper techpage-box">
   <section class="meazor-wrapper">
@@ -62,7 +66,8 @@
                     {% endif %}
                     {% if block.type == 'tab_1_left_right_content' %}
                       <div class="col-lg-12  mt-3 {% if forloop.index == 2 %} {% endif %}">
-                        <div class="function-box">
+                        <div class="function-box h-function-box">
+
                           <h4>{{ block.settings.txt1 }}</h4>
                           <div>
                             <img data-swift-lazy=1 loading="lazy" src="{{block.settings.left_image_1 | img_url : 'master'}}" alt="">
