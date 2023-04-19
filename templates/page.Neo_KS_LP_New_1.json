@@ -251,6 +251,11 @@
       "settings": {
         "title": ""
       }
+    },
+    "030fa4eb-67e1-4ba1-9fdf-76493aa50e5d": {
+      "type": "h-neoruler-parent-child",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -269,6 +274,7 @@
     "ce33b8da-58aa-4b3d-9e5c-76e7dccc475a",
     "alireviews-widget-544875",
     "h-video-review",
-    "072ab0c0-4616-480a-a410-c13564d9d6ff"
+    "072ab0c0-4616-480a-a410-c13564d9d6ff",
+    "030fa4eb-67e1-4ba1-9fdf-76493aa50e5d"
   ]
 }
