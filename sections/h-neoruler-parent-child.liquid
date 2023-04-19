@@ -264,6 +264,9 @@
       $(".child-item .item-parent").eq(btn_index[0]-1).css('display','flex').siblings().hide();
       $(".child-item .item-parent").eq(btn_index[0]-1).find('.item').eq(btn_index[1]-1).addClass('active').siblings().removeClass('active')
 
+      $(".middle-text span").eq(btn_index[0]-1).show().siblings().hide();
+      
+
       i++;
       if(i == count){
           i = 0;
