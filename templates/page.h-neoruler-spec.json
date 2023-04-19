@@ -75,7 +75,7 @@
           "type": "two",
           "settings": {
             "txt1": "Operating Environment",
-            "url1": "<b>Operating temperature<\/b><br>\n50° to 95° F (10° to 35° C)\n<b>Relative humidity \n0% to 90% noncondensing<\/b>"
+            "url1": "<b>Operating temperature<\/b><br>\n50° to 95° F (10° to 35° C)\n<b>Relative humidity <\/b>\n0% to 90% noncondensing"
           }
         },
         "00e4d197-4bf3-4266-b050-15f9c8e7da24": {
