@@ -358,6 +358,47 @@
       "settings": {
         "title": "Read More About NeoRuler"
       }
+    },
+    "ef01a681-8dad-413e-aba7-776a34cc8909": {
+      "type": "h-neoruler-Social-Media",
+      "blocks": {
+        "26dfd5ba-937e-40ac-ac47-29db09857ded": {
+          "type": "item",
+          "settings": {
+            "img1": "shopify:\/\/shop_images\/Group_751.png",
+            "url1": ""
+          }
+        },
+        "f84d1380-fd78-4627-aa02-52736d133bff": {
+          "type": "item",
+          "settings": {
+            "img1": "shopify:\/\/shop_images\/Group_752.png",
+            "url1": ""
+          }
+        },
+        "7d5b3279-8d8e-471e-b73c-21ff9226e562": {
+          "type": "item",
+          "settings": {
+            "img1": "shopify:\/\/shop_images\/Group_753.png",
+            "url1": ""
+          }
+        },
+        "ba5a0186-9535-4f05-b4ec-9ce8dee9e469": {
+          "type": "item",
+          "settings": {
+            "img1": "shopify:\/\/shop_images\/Group_754.png",
+            "url1": ""
+          }
+        }
+      },
+      "block_order": [
+        "26dfd5ba-937e-40ac-ac47-29db09857ded",
+        "f84d1380-fd78-4627-aa02-52736d133bff",
+        "7d5b3279-8d8e-471e-b73c-21ff9226e562",
+        "ba5a0186-9535-4f05-b4ec-9ce8dee9e469"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -379,6 +420,7 @@
     "ce33b8da-58aa-4b3d-9e5c-76e7dccc475a",
     "alireviews-widget-544875",
     "h-video-review",
-    "072ab0c0-4616-480a-a410-c13564d9d6ff"
+    "072ab0c0-4616-480a-a410-c13564d9d6ff",
+    "ef01a681-8dad-413e-aba7-776a34cc8909"
   ]
 }
