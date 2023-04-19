@@ -65,6 +65,13 @@
             "url": ""
           }
         },
+        "98d95e4c-1a24-46b5-aa66-413c6a67a6ac": {
+          "type": "Flag",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_41_cb6a1c01-104f-4eca-972a-6fc97bcbd038.png",
+            "url": ""
+          }
+        },
         "835f711a-807f-4321-a526-7250f2ca57f0": {
           "type": "Flag",
           "settings": {
@@ -78,14 +85,31 @@
             "image": "shopify:\/\/shop_images\/Frame_43_39d87ee4-0633-4143-b65c-a2adc44bddd6.png",
             "url": ""
           }
+        },
+        "584f2b96-9964-4e0c-a004-1627b70f4097": {
+          "type": "Flag",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_44_0ba24a36-c1db-414c-a742-ed2f19551b91.png",
+            "url": ""
+          }
+        },
+        "cacee0bb-207a-4600-a064-d0bf443819be": {
+          "type": "Flag",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_39_b968ab42-c425-4095-b76d-a86ec1bd8224.png",
+            "url": ""
+          }
         }
       },
       "block_order": [
         "9d3f4e93-21b7-4488-9cc7-d14a6e603592",
         "244d06de-5f3d-43c9-a978-b7a378fb8ece",
         "2efebc6e-0084-4e42-968f-fc59e2021204",
+        "98d95e4c-1a24-46b5-aa66-413c6a67a6ac",
         "835f711a-807f-4321-a526-7250f2ca57f0",
-        "0e485c8b-a4fb-4b0a-8ba9-c39576443a5a"
+        "0e485c8b-a4fb-4b0a-8ba9-c39576443a5a",
+        "584f2b96-9964-4e0c-a004-1627b70f4097",
+        "cacee0bb-207a-4600-a064-d0bf443819be"
       ],
       "settings": {
         "title": "User Manual"
