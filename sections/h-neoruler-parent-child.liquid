@@ -103,8 +103,12 @@
   var count = $(".h-result-img").length;
   var i = 0;
   var timer = setInterval(function(){
-      $(".h-result-img").eq(i).show().siblings().hide();
 
+    var app = $(".h-result-img").eq(i)
+
+      $(".h-result-img").eq(i).show().siblings().hide();
+      $(app).attr('data-slider')
+      console.log($(app).attr('data-slider'))
       i++;
       if(i == count){
           i = 0;
