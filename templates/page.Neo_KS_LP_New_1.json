@@ -227,6 +227,30 @@
         "banner_url": "",
         "affiliate_id": ""
       }
+    },
+    "072ab0c0-4616-480a-a410-c13564d9d6ff": {
+      "type": "h-neoruler-blog",
+      "blocks": {
+        "781c6ebe-2ab6-480d-b575-78ef0d5d542f": {
+          "type": "text",
+          "settings": {
+            "article": "journal\/xmas-giveaway-make-a-wish-to-hozo"
+          }
+        },
+        "5533a819-9b6d-4326-8c1d-c427c8ff5ae0": {
+          "type": "text",
+          "settings": {
+            "article": "journal\/neoruler-pre-launch-massive-giveaway-announcement"
+          }
+        }
+      },
+      "block_order": [
+        "781c6ebe-2ab6-480d-b575-78ef0d5d542f",
+        "5533a819-9b6d-4326-8c1d-c427c8ff5ae0"
+      ],
+      "settings": {
+        "title": ""
+      }
     }
   },
   "order": [
@@ -244,6 +268,7 @@
     "h-neo_ks_lp_new_7",
     "ce33b8da-58aa-4b3d-9e5c-76e7dccc475a",
     "alireviews-widget-544875",
-    "h-video-review"
+    "h-video-review",
+    "072ab0c0-4616-480a-a410-c13564d9d6ff"
   ]
 }
