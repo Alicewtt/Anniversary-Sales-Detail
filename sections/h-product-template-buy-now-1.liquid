@@ -283,7 +283,7 @@ function openCity_1(evt,cityName) {
   var index= $(evt).index()
   $(evt).addClass('active').siblings().removeClass('active')
   console.log($(this),index,$(evt).parent().siblings('.tabcontent').eq(index))
-  $(evt).parent().siblings('.tabcontent').eq(index).show().siblings('.tabcontent').hidden();
+  $(evt).parent().siblings('.tabcontent').eq(index).show().siblings('.tabcontent').hide();
   
   
   {% comment %} for (i = 0; i < tabcontent.length; i++) {
