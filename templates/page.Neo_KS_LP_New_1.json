@@ -400,27 +400,19 @@
       "settings": {
       }
     },
-    "b0072e49-824c-4019-ad87-7c464fbfbd08": {
-      "type": "meazor-faq-section",
+    "7082cffd-a0a7-4e64-b813-4ea745a631a4": {
+      "type": "h-faq-section",
       "blocks": {
-        "9217b2af-0778-471f-aa47-278e28173b90": {
+        "5cafca09-f446-4b7f-9556-b52ab24d5216": {
           "type": "FAQ",
           "settings": {
-            "qustion": "1",
-            "answer": "2"
-          }
-        },
-        "42c0b0ee-1d92-4188-ae30-755e8a61a3f3": {
-          "type": "FAQ",
-          "settings": {
-            "qustion": "1",
-            "answer": "2"
+            "qustion": "123",
+            "answer": "123"
           }
         }
       },
       "block_order": [
-        "9217b2af-0778-471f-aa47-278e28173b90",
-        "42c0b0ee-1d92-4188-ae30-755e8a61a3f3"
+        "5cafca09-f446-4b7f-9556-b52ab24d5216"
       ],
       "settings": {
         "title": "Pre-order FAQ",
@@ -450,6 +442,6 @@
     "h-video-review",
     "072ab0c0-4616-480a-a410-c13564d9d6ff",
     "ef01a681-8dad-413e-aba7-776a34cc8909",
-    "b0072e49-824c-4019-ad87-7c464fbfbd08"
+    "7082cffd-a0a7-4e64-b813-4ea745a631a4"
   ]
 }
