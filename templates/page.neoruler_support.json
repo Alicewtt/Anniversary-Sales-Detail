@@ -13,12 +13,6 @@
     "support-page-blog": {
       "type": "support-page-blog",
       "blocks": {
-        "1f8353b8-b8da-48b3-b765-84435c0210da": {
-          "type": "text",
-          "settings": {
-            "article": "journal\/neoruler-pre-launch-massive-giveaway-announcement"
-          }
-        },
         "546e7307-f8b9-4496-bf6b-830187d5b303": {
           "type": "text",
           "settings": {
@@ -33,7 +27,6 @@
         }
       },
       "block_order": [
-        "1f8353b8-b8da-48b3-b765-84435c0210da",
         "546e7307-f8b9-4496-bf6b-830187d5b303",
         "a3db6c3e-5196-4c58-a8e6-1e2e484fb718"
       ],
