@@ -39,8 +39,10 @@
       text-align:center;
       }
   
+      div#myDivbb>img, div#myDivbb>h2, div#myDivbb>p, div#myDivbBuynow>img, div#myDivbBuynow>h2, div#myDivbBuynow>p {
+          display: block;
+      }
   }
-
 </style>
 
 <section class="mezor__product-imgs">
@@ -56,6 +58,7 @@
             <h2>{{ section.settings.text1 }}</h2>
             <p>{{ section.settings.text2 }}</p>
           </div>
+          
           <div class="mezor__product-3dpremium hh-mezor__product-3dpremium">
             <button class="btn btn-primary QWButton" data-product="{{ product.handle }}">Quick View</button>
             {% comment %}
