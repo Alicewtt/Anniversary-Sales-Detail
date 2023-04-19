@@ -188,6 +188,8 @@
     "ce33b8da-58aa-4b3d-9e5c-76e7dccc475a": {
       "type": "h-title-img",
       "settings": {
+        "title1": "Compare With Neo",
+        "img1": "shopify:\/\/shop_images\/Frame_1400.png"
       }
     }
   },
