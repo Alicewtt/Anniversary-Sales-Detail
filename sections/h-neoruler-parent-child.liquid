@@ -299,7 +299,7 @@
 
 <script>
   var myVar;
-
+  var timer
   function myFunction() {
     if (myVar) {
       clearTimeout(myVar);
@@ -314,7 +314,7 @@
     }
     
 
-    var timer = setInterval(function () {
+    timer = setInterval(function () {
       var app = $('.h-result-img').eq(i);
 
       var btn_index = $(app).attr('data-slider').split(',');
