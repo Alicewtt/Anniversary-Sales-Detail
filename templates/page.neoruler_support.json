@@ -89,10 +89,50 @@
             "qustion": "What is the measurement range and accuracy of NeoRuler?",
             "answer": "The measurement range of NeoRuler is 30.5cm (12 inches) and the measurement accuracy is 0.1mm (±0.004inch)"
           }
+        },
+        "28405080-159c-48d8-b0f0-3293fc325dc9": {
+          "type": "FAQ",
+          "settings": {
+            "qustion": "How many scales are supported by NeoRuler?",
+            "answer": "93 built-in scales are supported for maximum versatility, With NeoRuler’s customizable scale function, you can define an unlimited number of scales."
+          }
+        },
+        "9d57e81c-e78d-41e4-919c-dcd5c8eb5c7f": {
+          "type": "FAQ",
+          "settings": {
+            "qustion": "",
+            "answer": ""
+          }
+        },
+        "b6f92599-f14f-4d37-89ac-f5347e2fa0e4": {
+          "type": "FAQ",
+          "settings": {
+            "qustion": "",
+            "answer": ""
+          }
+        },
+        "ece5386c-84c1-4f7e-b0c1-1fb8c11ad59d": {
+          "type": "FAQ",
+          "settings": {
+            "qustion": "",
+            "answer": ""
+          }
+        },
+        "bd489751-4eea-477a-945d-83eba5558138": {
+          "type": "FAQ",
+          "settings": {
+            "qustion": "",
+            "answer": ""
+          }
         }
       },
       "block_order": [
-        "09be2f56-1cea-437a-be65-e79aaa4c0866"
+        "09be2f56-1cea-437a-be65-e79aaa4c0866",
+        "28405080-159c-48d8-b0f0-3293fc325dc9",
+        "9d57e81c-e78d-41e4-919c-dcd5c8eb5c7f",
+        "b6f92599-f14f-4d37-89ac-f5347e2fa0e4",
+        "ece5386c-84c1-4f7e-b0c1-1fb8c11ad59d",
+        "bd489751-4eea-477a-945d-83eba5558138"
       ],
       "settings": {
         "title": "NeoRuler FAQ",
