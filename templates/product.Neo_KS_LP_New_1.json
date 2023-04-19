@@ -7,11 +7,51 @@
     },
     "h-product-template-buy-now": {
       "type": "h-product-template-buy-now",
+      "blocks": {
+        "4677f599-58fa-429f-a248-3c381d3857d2": {
+          "type": "first",
+          "settings": {
+            "pr1": ""
+          }
+        },
+        "ef30139c-daef-4dff-b59f-4f72e5baae94": {
+          "type": "first",
+          "settings": {
+            "pr1": ""
+          }
+        },
+        "ec4a306d-59e4-4871-810c-8e94b004b80d": {
+          "type": "first",
+          "settings": {
+            "pr1": ""
+          }
+        },
+        "4087fdb8-988d-4f09-806c-2d5c311652f1": {
+          "type": "last",
+          "settings": {
+            "pr1": ""
+          }
+        },
+        "fa1e5e29-b5cd-43b3-af91-c0a1354b6caf": {
+          "type": "last",
+          "settings": {
+            "pr1": ""
+          }
+        }
+      },
+      "block_order": [
+        "4677f599-58fa-429f-a248-3c381d3857d2",
+        "ef30139c-daef-4dff-b59f-4f72e5baae94",
+        "ec4a306d-59e4-4871-810c-8e94b004b80d",
+        "4087fdb8-988d-4f09-806c-2d5c311652f1",
+        "fa1e5e29-b5cd-43b3-af91-c0a1354b6caf"
+      ],
       "settings": {
-        "text1": "",
-        "text2": "",
+        "img3": "shopify:\/\/shop_images\/Group_076361c8-5e26-44f8-be0a-7e461f8b4b59.png",
+        "text1": "Rule The Scales",
+        "text2": "Customizable Scales | 8 units | 0.1mm resolution",
         "p1": "",
-        "price": ""
+        "price": "$129"
       }
     },
     "h-neo_ks_lp_new_0": {
