@@ -82,15 +82,15 @@
         <img class="pc-img" style=" width:187px;height:auto;" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/14.png"  >
       </div>
       <div class="result-box">
-        <img class="h-result-img" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
-        <img class="h-result-img" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
-        <img class="h-result-img" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
-        <img class="h-result-img" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
-        <img class="h-result-img" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
-        <img class="h-result-img" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
-        <img class="h-result-img" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
-        <img class="h-result-img" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
-        <img class="h-result-img" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
+        <img class="h-result-img" data-slider="[1,1]" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
+        <img class="h-result-img" data-slider="[1,2]" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
+        <img class="h-result-img" data-slider="[1,3]" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
+        <img class="h-result-img" data-slider="[2,1]" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
+        <img class="h-result-img" data-slider="[2,2]" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
+        <img class="h-result-img" data-slider="[2,3]" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
+        <img class="h-result-img" data-slider="[3,1]" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
+        <img class="h-result-img" data-slider="[3,2]" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
+        <img class="h-result-img" data-slider="[3,3]" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
         
       </div>
     </div>
@@ -103,7 +103,8 @@
   var count = $(".h-result-img").length;
   var i = 0;
   var timer = setInterval(function(){
-      $("元素").eq(i).show().siblings().hide();
+      $(".h-result-img").eq(i).show().siblings().hide();
+
       i++;
       if(i == count){
           i = 0;
