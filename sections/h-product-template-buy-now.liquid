@@ -19,7 +19,7 @@
     font-size:31px;
   }
 
-  .h-mezor__product-3dmezor{
+  .h-mezor__product-3dpremium{
     display:flex;
     align-items: center;
     justify-content:  center;
@@ -55,7 +55,7 @@
             <h2>{{ section.settings.text1 }}</h2>
             <p>{{ section.settings.text2 }}</p>
           </div>
-          <div class="mezor__product-3dpremium">
+          <div class="mezor__product-3dpremium h-mezor__product-3dpremium">
             <button class="btn btn-primary QWButton" data-product="{{ product.handle }}">Quick View</button>
             {% comment %}
               <img src="assets/img/meazor-3dfirst.png">
@@ -67,7 +67,7 @@
               data-src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/Frame_503.png?v=1681882937"
             >
           </div>
-          <div class="mezor__product-3dmezor h-mezor__product-3dmezor ">
+          <div class="mezor__product-3dmezor  ">
             {% comment %}
               <img src="assets/img/meazor-3d-img.png">
               <img src="{{ section.settings.img2 | img_url : 'master' }}">
