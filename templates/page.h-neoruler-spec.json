@@ -43,55 +43,6 @@
             "url1": "Divider allows the user to divide a certain distance (slider's distance) and display with LED tickmarks.<br><br>\n\n<b>Minimum divide sections:<\/b> 2<br>\n<b>Maximum divide sections:<\/b>12<br>\n<b>Divider’s resolution:<\/b>±0.5mm"
           }
         },
-        "a79de022-9bd0-454e-9dcb-9f7ef829708f": {
-          "type": "first",
-          "settings": {
-            "txt1": "Scales Measure",
-            "url1": "4 built-in modes with 57 scales"
-          }
-        },
-        "6bd4adfa-a552-4488-a1e9-62ca543d05b4": {
-          "type": "first",
-          "settings": {
-            "txt1": "Floor Plan Scanning",
-            "url1": "<p><b>Range:<\/b> 0-184ft×184ft (33,856ft²)<br>or 56m×56m (3136m²)<\/p>\n<p><b>Accuracy:<\/b> ±1in (±25mm) <br>\nin ideal circumstances* <\/p>\n\n<span>*Non-ideal circumstances such as outdoor with strong light, or under the bad reflective surface, the error will be superimposed with maximum ±2‰ of the measurement distance.<\/span>"
-          }
-        },
-        "3c2fb961-cb0e-449f-af1e-c79c09ac0396": {
-          "type": "first",
-          "settings": {
-            "txt1": "Curve Scanning",
-            "url1": "<p><b>Range:<\/b> Maximum Curve Length(start point-endpoint):<br> 82feets (25 meters)\n<\/p>\n<p><b>Resolution:<\/b> Angle Resolution : 1.0°, <br>Length Resolution: 0.04inch(+-1mm) <\/p>"
-          }
-        },
-        "34bada93-6668-4cb6-85cb-7844d147d6cf": {
-          "type": "first",
-          "settings": {
-            "txt1": "Level",
-            "url1": "<p><b>Range:<\/b> Dual axis ±90°\n<\/p>\n<p> <b>Resolution: <\/b>  0.1°\n<\/p>\n<p><b>Accuracy:<\/b> ±0.2°at 0° ~45°. ±0.4° at other angles<\/p>"
-          }
-        },
-        "cbe0f7f8-8cc0-4551-b499-03eeaf80ac6d": {
-          "type": "first",
-          "settings": {
-            "txt1": "Protractor",
-            "url1": "<p><b>Range:<\/b> 0~360°\n<\/p>\n<p> <b>Resolution: <\/b>  0.17°\n<\/p>\n<p><b>Accuracy:<\/b>  ±0.3°at 0°~180°, ±0.4° at other angles<\/p>\n<span>Support laser assist mode<\/span>"
-          }
-        },
-        "57de7730-c4b1-43f0-9306-54d2843c0f3b": {
-          "type": "first",
-          "settings": {
-            "txt1": "Pro-Laser",
-            "url1": "Pythagorean mode with triangle third-side and area calculation.\nArea mode with rectangular area calculation.\nExport drawing to apps"
-          }
-        },
-        "e164b0ca-f172-4f48-be68-289e3ae50b91": {
-          "type": "first",
-          "settings": {
-            "txt1": "Support Units",
-            "url1": "mm, cm, m <br>\nin (decimal) <br>\nin (fractional)<br>\nfeet, yard"
-          }
-        },
         "40e7c852-91c7-4a4e-82bc-b05320575e21": {
           "type": "two",
           "settings": {
@@ -151,13 +102,6 @@
         "b65d05d2-ef77-4fbd-998f-4ea5b0230e37",
         "811b8e36-8660-4e98-bd21-4b21c2bd3937",
         "44f2bd2b-6c61-4c5f-9cc2-09d33914b82d",
-        "a79de022-9bd0-454e-9dcb-9f7ef829708f",
-        "6bd4adfa-a552-4488-a1e9-62ca543d05b4",
-        "3c2fb961-cb0e-449f-af1e-c79c09ac0396",
-        "34bada93-6668-4cb6-85cb-7844d147d6cf",
-        "cbe0f7f8-8cc0-4551-b499-03eeaf80ac6d",
-        "57de7730-c4b1-43f0-9306-54d2843c0f3b",
-        "e164b0ca-f172-4f48-be68-289e3ae50b91",
         "40e7c852-91c7-4a4e-82bc-b05320575e21",
         "3b201203-b23b-43fb-b8b4-4e1a18dbadff",
         "13ed5e35-b46c-4779-8d43-1fb549ae7dbf",
