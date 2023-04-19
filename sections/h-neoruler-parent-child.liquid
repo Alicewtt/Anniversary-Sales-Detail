@@ -284,7 +284,8 @@
 
   $('.child-item .item').click(function(){
     clearInterval(timer);
-
+    var index = $(this).index()
+    $(this).addClass('active').siblings().removeClass('active');
   
   })
 
