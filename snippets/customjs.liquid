@@ -1184,8 +1184,11 @@ function openCity(evt, cityName) {
   console.log(evt,cityName)
 
 
-  document.getElementById(cityName).style.display = "block";
+if (document.getElementById(cityName) == null) { 
   document.getElementsByClassName(cityName).style.display = "block";
+
+}
+  document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
   
 }
