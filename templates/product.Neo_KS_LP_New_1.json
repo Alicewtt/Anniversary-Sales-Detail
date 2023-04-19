@@ -119,9 +119,10 @@
       "settings": {
       }
     },
-    "831ec065-5cb9-4a0d-9333-d579ba7ac0be": {
-      "type": "h-video-section",
+    "4a3f0dc4-547c-42b7-a8b7-116cfef6acd4": {
+      "type": "h-video-section-1",
       "settings": {
+        "img1": "shopify:\/\/shop_images\/plan_1.png",
         "url1": ""
       }
     },
@@ -307,7 +308,7 @@
     "030fa4eb-67e1-4ba1-9fdf-76493aa50e5d",
     "h-neo_ks_lp_new_1",
     "h-neo_ks_lp_new_2",
-    "831ec065-5cb9-4a0d-9333-d579ba7ac0be",
+    "4a3f0dc4-547c-42b7-a8b7-116cfef6acd4",
     "h-neo_ks_lp_new_3",
     "h-neo_ks_lp_new_4",
     "h-neo_ks_lp_new_5",
