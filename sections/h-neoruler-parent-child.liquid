@@ -17,11 +17,11 @@
   }
 </style>
 
-<div class="swiper-container parent-swiper">
+<div class="swiper-container outer-swiper-container">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
       aa
-      <div class="swiper-container child-swiper">
+      <div class="swiper-container inner-swiper-container">
         <div class="swiper-wrapper">
          
           <div class="swiper-slide">11</div>
@@ -32,16 +32,14 @@
     </div>
     <div class="swiper-slide">
       bb
-    <div class="swiper-container child-swiper">
-      <div class="swiper-wrapper">
-       
-        <div class="swiper-slide">111</div>
-        <div class="swiper-slide">222</div>
-        <div class="swiper-slide">333</div>
-        <div class="swiper-slide">444</div>
-       
+      <div class="swiper-container inner-swiper-container">
+        <div class="swiper-wrapper">
+         
+          <div class="swiper-slide">111</div>
+          <div class="swiper-slide">222</div>
+          <div class="swiper-slide">333</div>
+        </div>
       </div>
-    </div>
     </div>
     <div class="swiper-slide">cc</div>
   </div>
@@ -50,30 +48,51 @@
 
 
 <script>
-  var parentSwiper = new Swiper('.parent-swiper', {
-    
-    on: {
-      slideChangeTransitionEnd: function () {
-        if (this.activeIndex === this.slides.length - 1) {
-          childSwiper.slideNext();
-        }
-      }
-    }
-  });
-
-  var childSwiper = new Swiper('.child-swiper', {
+  var outerSwiper = new Swiper('.outer-swiper-container', {
+    // 外部轮播的配置
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
     },
     on: {
-      slideChangeTransitionEnd: function () {
-        if (this.activeIndex === this.slides.length - 1) {
-          parentSwiper.slideNext();
+      slideChangeTransitionEnd: function() {
+        var innerSwiper = this.slides[this.activeIndex].querySelector('.inner-swiper-container').swiper;
+        if (innerSwiper.isEnd) {
+          this.slideNext();
         }
       }
     }
   });
+  
+  var innerSwipers = [];
+  var innerSwiperContainers = document.querySelectorAll('.inner-swiper-container');
+  for (var i = 0; i < innerSwiperContainers.length; i++) {
+    var innerSwiper = new Swiper(innerSwiperContainers[i], {
+      // 内部轮播的配置
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      nested: true,
+      on: {
+        slideChangeTransitionStart: function() {
+          for (var j = 0; j < innerSwipers.length; j++) {
+            if (innerSwipers[j] !== this) {
+              innerSwipers[j].autoplay.stop();
+            }
+          }
+        },
+        slideChangeTransitionEnd: function() {
+          for (var j = 0; j < innerSwipers.length; j++) {
+            if (innerSwipers[j] !== this) {
+              innerSwipers[j].autoplay.start();
+            }
+          }
+        }
+      }
+    });
+    innerSwipers.push(innerSwiper);
+  }
 </script>
 
 {% schema %}
