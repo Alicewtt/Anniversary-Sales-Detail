@@ -769,7 +769,7 @@ $('#myDivbb button').on('click', function(){
     $('.QWButton').addClass('showBtn');
 })
 $('.mezor__prd-back').on('click', function(){
-    $('.mezor__product-singlecnts').removeClass('mazor__pluginin');
+    $(this).parents(".mezor__product-singlecnts").removeClass('mazor__pluginin');
   $('.QWButton').removeClass('showBtn');
  
     $('.mezor__product-3dpremium').show();
