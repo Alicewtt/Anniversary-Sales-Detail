@@ -98,7 +98,7 @@
                 {% endfor %}
               </select>
 
-              <ul class="new-list">
+              {% comment %} <ul class="new-list">
                 {% for variant in product.variants %}
                   <li
                     number="{{ forloop.index }}"
@@ -131,7 +131,7 @@
                     </div>
                   </li>
                 {% endfor %}
-              </ul>
+              </ul> {% endcomment %}
 
               <h3 data-h="123">Modular Design for Every Possibility</h3>
 
