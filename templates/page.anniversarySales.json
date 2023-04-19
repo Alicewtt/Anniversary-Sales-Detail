@@ -29,9 +29,9 @@
         "715420d7-d638-4a9a-907e-f5496e616e93": {
           "type": "anniversary",
           "settings": {
-            "product": "meazor",
-            "anniversary_product_title": "MEAZOR 3D Premium Combo",
-            "anniversary_product_desc": "· First digital measure tape<br>· Measure curves and lines<br>· One roll at a time",
+            "product": "neoruler-1",
+            "anniversary_product_title": "NeoRuler",
+            "anniversary_product_desc": "Customizeable Scales\n8 units\n0.1mm resolution",
             "anniversary_product_order": true,
             "anniversary_product_free": true,
             "anniversary_product_num": "15%",
@@ -131,7 +131,7 @@
       "type": "tt-anniversarySales_detail3",
       "settings": {
         "anniversary_join_title": "Join social contest",
-        "section_background_color": "#FCF3E7"
+        "section_background_color": "#fcf3e7"
       }
     }
   },
