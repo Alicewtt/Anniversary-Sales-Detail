@@ -283,6 +283,8 @@
   })
 
   $('.child-item .item').click(function(){
+    console.log($(this))
+
     clearInterval(timer);
     var index = $(this).index()
     var i =
