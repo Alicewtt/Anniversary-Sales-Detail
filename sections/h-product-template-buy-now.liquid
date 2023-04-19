@@ -79,15 +79,18 @@
             {% assign product = all_products[section.settings.p1] %}
             <div class="mazor__3d-price" style="display:flex;align-items:center;">
               <span style="font-size:22px">Start from</span> {{ section.settings.price }}
-              <a href="#h-top">
+              
                 <img
-                  class="lazyload" style="width: 142px !important;height: 28px;"
+                  class="lazyload h-to-faq" style="width: 142px !important;height: 28px;"
                   data-src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/Group_1348.png?v=1681904948"
                 >
-              </a>
+            
               <script>
-
-                $('html,body').animate({scrollTop:$('.h-fay-section').offset().top-50}, 500);
+                $('.h-to-faq').click(function(){
+                  $('html,body').animate({scrollTop:$('.h-fay-section').offset().top-50}, 500);
+                
+                
+                })
               </script>
             </div>
 
