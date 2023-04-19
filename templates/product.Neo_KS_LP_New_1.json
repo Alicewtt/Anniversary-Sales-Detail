@@ -301,6 +301,50 @@
       "settings": {
         "title": ""
       }
+    },
+    "2ac9996c-1e1e-4d1d-9f89-966d83465677": {
+      "type": "h-faq-section",
+      "blocks": {
+        "17cc62dc-6354-42cd-84e5-d6e1bf1c9802": {
+          "type": "FAQ",
+          "settings": {
+            "qustion": "1. What's the benefit of pre-order? Will you communicate the production status?",
+            "answer": "By pre-ordering with HOZO, you will be among the first to receive our newly released product and enjoy the exclusive pre-order discount. In addition, we will send you production updates by email and keep you notified about the progress."
+          }
+        },
+        "d3a796dc-089f-47cf-a2e0-211fc0504b5f": {
+          "type": "FAQ",
+          "settings": {
+            "qustion": "2. When will my pre-order items be shipped?",
+            "answer": "All pre-order products will be shipped in June; we will send you a notification email 5-7 business days before shipping. After receiving the tracking number, you can expect to receive the product 4-8 business days (depending on the country). "
+          }
+        },
+        "f2b109d3-959f-4528-9531-dd0f61cf362c": {
+          "type": "FAQ",
+          "settings": {
+            "qustion": "3. Can I modify or cancel my order?",
+            "answer": "We're happy to help you update your order and time before shipping; please get in touch with us at support@hozodesign.com. But unfortunately, we cannot change your order after it is shipped. "
+          }
+        },
+        "8db55d55-2bad-475d-a1ad-9ad6ab05d032": {
+          "type": "FAQ",
+          "settings": {
+            "qustion": "4. Can I order in-stock product(s) with the pre-order product?",
+            "answer": "Yes, and we will ship them separately."
+          }
+        }
+      },
+      "block_order": [
+        "17cc62dc-6354-42cd-84e5-d6e1bf1c9802",
+        "d3a796dc-089f-47cf-a2e0-211fc0504b5f",
+        "f2b109d3-959f-4528-9531-dd0f61cf362c",
+        "8db55d55-2bad-475d-a1ad-9ad6ab05d032"
+      ],
+      "settings": {
+        "title": "",
+        "Button_title": "",
+        "button_url": ""
+      }
     }
   },
   "order": [
@@ -320,6 +364,7 @@
     "ce33b8da-58aa-4b3d-9e5c-76e7dccc475a",
     "alireviews-widget-544875",
     "h-video-review",
-    "072ab0c0-4616-480a-a410-c13564d9d6ff"
+    "072ab0c0-4616-480a-a410-c13564d9d6ff",
+    "2ac9996c-1e1e-4d1d-9f89-966d83465677"
   ]
 }
