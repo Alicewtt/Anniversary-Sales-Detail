@@ -92,16 +92,17 @@
 
 <script>
 
-  {% comment %} $('.professionals-speak-silder').owlCarousel({
+  $('.professionals-speak-silder').owlCarousel({
     loop:false,
     center:false,
-    margin:40,
+    margin:30,
     URLhashListener:true,
     autoplayHoverPause:true,
     startPosition: 'URLHash',
      responsive:{
         0:{
-            items:1.2
+          stagePadding: 0,
+          items: 1.2
         },
         600:{
             items:2
@@ -110,14 +111,13 @@
             items:2
         }
     }  
-  }); {% endcomment %}
+  });
 
-  $('.professionals-speak-silder').owlCarousel({
+  $('.h-hozos-journal-blog-slider').owlCarousel({
     stagePadding: 200,
       loop:true,
       margin:30,
       nav:false,
-      center:false,
       items:1,
       lazyLoad: true,
       nav:true,
@@ -129,7 +129,6 @@
             },
             1000: {
                 stagePadding: 200
-                items: 2
             }
         }
     })
