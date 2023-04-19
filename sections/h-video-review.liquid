@@ -92,7 +92,7 @@
 
 <script>
 
-  $('.professionals-speak-silder').owlCarousel({
+  {% comment %} $('.professionals-speak-silder').owlCarousel({
     loop:false,
     center:false,
     margin:40,
@@ -110,7 +110,27 @@
             items:2
         }
     }  
-  });
+  }); {% endcomment %}
+
+  $('.professionals-speak-silder').owlCarousel({
+    stagePadding: 200,
+      loop:true,
+      margin:30,
+      nav:false,
+      items:1,
+      lazyLoad: true,
+      nav:true,
+      autoplayHoverPause:true,
+      responsive: {
+            0: {
+              stagePadding: 0,
+              items: 1.2
+            },
+            1000: {
+                stagePadding: 200
+            }
+        }
+    })
 
 
 </script>
