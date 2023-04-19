@@ -31,13 +31,20 @@
           "settings": {
             "pr1": "neoprotection-folio"
           }
+        },
+        "12834943-1e0b-4a7b-a73f-876dbf5ea6f1": {
+          "type": "last",
+          "settings": {
+            "pr1": "neocollection-case"
+          }
         }
       },
       "block_order": [
         "0c0fea24-58ce-415c-9492-23ee587d0f76",
         "e9a2aaa1-72e0-46d9-b109-8eb94f90e6d8",
         "77108b6d-95cc-4859-a5c8-8d831419d440",
-        "f87d02ea-6394-4864-9b20-1e9a83ae02a0"
+        "f87d02ea-6394-4864-9b20-1e9a83ae02a0",
+        "12834943-1e0b-4a7b-a73f-876dbf5ea6f1"
       ],
       "settings": {
         "text1": "",
