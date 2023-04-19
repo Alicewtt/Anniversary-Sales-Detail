@@ -128,8 +128,8 @@
         "803e999f-dc25-460d-a223-37e3ad5a0189": {
           "type": "FAQ",
           "settings": {
-            "qustion": "",
-            "answer": ""
+            "qustion": "What file formats does the MEAZOR app support?",
+            "answer": "Drawing Mode: export files in .dxf(2D) .dxf(3D) , Also export scale drawing in .pdf .jpg formats(auto-scale fit to A3(Metrics) \/ Tabloid(Imperial) size paper) List Mode: export files in excel sheet(.xls), .txt"
           }
         }
       },
