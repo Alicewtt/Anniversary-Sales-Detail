@@ -1,0 +1,365 @@
+
+<link href="https://cdn.bootcdn.net/ajax/libs/Swiper/9.2.0/swiper-bundle.css" rel="stylesheet">
+
+<style>
+    {% comment %} 更改分页器的样式 {% endcomment %}
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 32.81px;
+        height: 32.81px;
+        border-radius:16px;
+        background: #FFFFFF;
+        border: 0.78125px solid #DDDDDD;
+        color: #242424;
+    }
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+        font-size: 7px;
+    }
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+        font-size: 7px;
+    }
+    .tt-bigBox .swiper-pagination-bullet {
+        background: #55C1C5;
+    }
+
+
+    .Rotation{
+      max-width: 937.5px;
+      margin:0px auto;
+      position: relative;
+
+    }
+
+    {% comment %} @media (max-width:420px){
+      .Rotation{
+        width: 100%;}
+    } {% endcomment %}
+
+    .Rotation_title{
+        width: 100%;
+        height: 79px;
+        font-family: 'Alibaba PuHuiTi 2.0';
+        font-weight: 900;
+        font-size: 56.25px;
+        line-height: 79px;
+        color: #212121;
+        text-align: center;
+        margin:62.5px 0 38.19px 0;
+        background-image: url('https://cdn.shopify.com/s/files/1/0549/7667/6078/files/title-bg.png?v=1681375399') ;
+        background-repeat: no-repeat;
+        background-position: center -16px;
+    }
+    .Product_Show{
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+
+    }
+    .Product_Show .img_box{
+    border-radius: 15.625px;
+     background-color: {{ section.settings.background_color }};
+
+    }
+
+    .Product_Name{
+    font-family: 'Alibaba PuHuiTi 2.0';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 28px;
+    margin:23.44px 0 14.75px 0;
+    }
+
+    .Product_Show .Price{
+     display:flex;
+     align-items: center;
+     align-items: baseline;
+     margin-bottom: 12.53px;
+    }
+
+    .Product_Show .Price-1{
+        font-family: 'Alibaba PuHuiTi 2.0';
+        font-weight: 500;
+        font-size: 21.875px;
+        line-height: 31px;
+        margin-right: 8.37px;
+    }
+
+    .Product_Show .Price-2{
+        font-family: 'Alibaba PuHuiTi 2.0';
+        font-weight: 500;
+        font-size: 15.625px;
+        line-height: 22px;
+        text-decoration-line: line-through;
+        color: #7D7D7D;
+    }
+
+    .Product_Show .Cart {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .Product_Show .Cart .cart-1{
+        width: 98.44px;
+        height: 31.25px;
+        color: #55C1C5;
+        background: #FFFFFF;
+        border: 1.5625px solid #55C1C5;
+        border-radius: 15.625px;
+
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 15.625px;
+        line-height: 20px;
+        text-align: center;
+        margin-right: 23.44px;
+        padding-top: 5px;
+    }
+
+    .Product_Show .Cart .cart-2{
+        width: 98.44px;
+        height: 31.25px;
+        color: #FFFFFF;
+        background: #55C1C5;
+        border: 1.5625px solid #55C1C5;
+        border-radius: 15.625px;
+    
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 15.625px;
+        line-height: 20px;
+        text-align: center;
+
+    }
+
+
+
+    @media(max-width:768px){
+        .swiper-button-prev,.swiper-button-next{
+            display: none;
+          }
+      
+          .Rotation_title{
+            height: 36px;
+              font-size: 23.1884px;
+              line-height: 32px;
+              margin:31.4px 0 23.07px 0;
+              background-size: 94px;
+              background-position: center -9px;
+          }
+          .swiper-slide{
+             width: auto;
+
+          }
+          .Product_Show{
+            border-radius: 9.66184px;
+            margin: 14.49px 0 15.46px 0;
+
+          }
+
+    }
+    @media(max-width:420px){
+    .swiper-button-prev,.swiper-button-next{
+      display: none;
+    }
+
+    .Rotation_title{
+        height: 36px;
+        font-size: 23.1884px;
+        line-height: 32px;
+        margin:31.4px 0 23.07px 0;
+        background-size: 94px;
+        background-position: center -9px;
+    }
+    .swiper-slide{
+       width: auto;
+    }
+    .Product_Show{
+        border-radius: 9.66184px;
+        margin: 14.49px 0 15.46px 0;
+
+    }
+    .Product_Show .Price{
+        font-weight: 700;
+        font-size: 15.4589px;
+        line-height: 15px;
+        margin-bottom: 10px;
+
+    }
+    .Product_Show .Price-1{
+        font-size: 11.5942px;
+        line-height: 16px;
+    }
+    .Product_Show .Price-2{
+        font-size: 8.13628px;
+        line-height: 11px;
+        
+    }
+
+    .Product_Show .Cart .cart-1,
+    .Product_Show .Cart .cart-2{
+        width: 73px;
+        height: 23.19px;
+        font-size: 9.66184px;
+        line-height: 10px;
+    }
+    .Product_Name{
+        font-size: 15.4589px;
+        line-height: 15px;
+    }
+    }
+
+  </style>
+
+  <script src="{{ 'jquery.min.js' | asset_url }}" ></script>
+ <script src="{{ 'swiper-bundle.min.js' | asset_url }}"></script>
+  <script src="{{ 'swiper.min.js' | asset_url }}"></script>
+
+
+<p class="Rotation_title">{{section.settings.text_heading_1}}</p>
+<div class="Rotation">
+<div class="swiper-container" style="overflow: hidden;">
+    <div class="swiper-wrapper">
+
+    {% for block in section.blocks %}
+
+        <div class="swiper-slide Product_Show">
+            <div class="img_box">
+                <img
+                    style="height: auto;"  
+                    src="{{all_products[block.settings.product].featured_image | image_url}}" alt="">
+            
+            </div>
+
+                <p class="Product_Name">{{all_products[block.settings.product].title}}</p>
+
+                <div class="Price">
+                    <p class="Price-1">{{all_products[block.settings.product].price_min | times: 1.0 | money}}</p>
+                    <p class="Price-2">{{all_products[block.settings.product].price_max | times: 1.0 | money}}</p>
+                </div>
+                
+                <div class="Cart">
+                     <a class="cart-1" href="">{{block.settings.text_1}}</a>
+                     <button class="cart-2" 
+                        data-id="{{all_products[block.settings.product].variants[0].id}}"
+                    >{{block.settings.text_2}}</button>
+
+                </div>
+        </div>
+
+    {% endfor %}
+
+    </div>
+
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+</div>
+
+
+
+<script>      
+
+var swiper_width = 0;
+    var swiper_spaceBetween;
+    var swiper_slidesPerView;
+    if($(window).width() > 768){
+        
+        swiper_slidesPerView = 3;
+        swiper_spaceBetween = 30;
+    }else{
+        swiper_slidesPerView = 1;
+        swiper_spaceBetween = 10;
+    }
+
+
+  var mySwiper = new Swiper ('.swiper-container', {
+    autoplay:true,
+    loop: true,
+
+    slidesPerView: swiper_slidesPerView,
+    spaceBetween: swiper_spaceBetween,
+    observer: true,// 开启动态检查器，检测swiper和slide
+    observerParents:true, // 修改swiper的父元素时，自动初始化swiper
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  })
+
+
+    $('.cart-2').click(function () {
+      var id = $(this).attr('data-id');
+      console.log(id);
+      $.ajax({
+        type: 'POST',
+        url: '/cart/add.js',
+        data: {
+          quantity: 1,
+          id: id,
+        },
+        dataType: 'json',
+        success: function (data) {}
+      })
+    })
+  </script>
+  {% schema %}
+  {
+    "name": "s_anniversary_Rotation",
+    "settings": [
+        {
+            "type": "html",
+            "id": "text_heading_1",
+            "label": "标题",
+            "default":"Customer Top Picked"
+        },
+        {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background color",
+            "default": "#FCF3E7"
+          }
+    ],
+    "blocks": [
+        {
+            "type": "slide",
+            "name": "slide",
+            "settings":[
+                    {
+                        "type": "product",
+                        "id": "product",
+                        "label": "Product"
+                    },
+                    {
+                        "type": "html",
+                        "id": "text_1",
+                        "label": "了解更多",
+                        "default":"Learn Mort"
+                    },
+                    {
+                        "type": "html",
+                        "id": "text_2",
+                        "label": "购物车",
+                        "default":"Add to cart"
+                    }
+
+            ]
+        }
+      ],
+      "default": {
+        "blocks": [
+          {
+            "type": "slide"
+          },
+          {
+            "type": "slide"
+          }
+        ]
+      }
+    }
+
+  {% endschema %}
+  
