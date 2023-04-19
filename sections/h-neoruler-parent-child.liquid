@@ -224,7 +224,8 @@
       
       $(".fist-box .item").eq(btn_index[0]-1).addClass('active').siblings().removeClass('active')
       $(".child-item .item-parent").eq(btn_index[0]-1).css('display','flex').siblings().hide();
-      $(".child-item .item-parent:eq("+btn_index[0]-1+") .item").addClass('active').siblings().removeClass('active')
+      $(".child-item .item-parent").eq(btn_index[0]-1).find('.item').eq(btn_index[1]-1).addClass('active').siblings().removeClass('active')
+
       i++;
       if(i == count){
           i = 0;
