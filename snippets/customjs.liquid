@@ -1170,11 +1170,8 @@ let formData = {
   <script>
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
-
-  tabcontent = document.querySelectorAll('.mezor__product-pluginout .tabcontent');
-
-  console.log(tabcontent)
-
+  console.log($)
+  tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
@@ -1187,24 +1184,6 @@ function openCity(evt, cityName) {
   
 }
 
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-
-  tabcontent = document.querySelectorAll(' .tabcontent');
-
-  console.log(tabcontent)
-
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("h-tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-  
-}
 
 $(".quickcartheader").click(function(){
    var getall_i =$(this).attr('id')
