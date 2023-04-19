@@ -26,7 +26,7 @@
           "type": "first",
           "settings": {
             "txt1": "Support Units",
-            "url1": "mm, cm, m<br>\ninch (decimal,fractional),feet, yard<br>\nmile&amp;km***<br>"
+            "url1": "mm, cm, m<br>\ninch (decimal,fractional),feet, yard<br>\nmile&amp;km***<br>\n<p style=\"font-size:12px;margin-top:20px;\">***Mile&amp;km units are only available in map mode and when the selected scale is greater than 1:50000.<\/p>"
           }
         },
         "811b8e36-8660-4e98-bd21-4b21c2bd3937": {
