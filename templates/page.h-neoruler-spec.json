@@ -39,8 +39,8 @@
         "44f2bd2b-6c61-4c5f-9cc2-09d33914b82d": {
           "type": "first",
           "settings": {
-            "txt1": "Data Storage",
-            "url1": "200 built-in data\n\n<span>(Support Laser measure data &amp; Scale Rolling ruler data)<\/span>"
+            "txt1": "Space Divider",
+            "url1": "Divider allows the user to divide a certain distance (slider's distance) and display with LED tickmarks.<br><br>\n\n<b>Minimum divide sections:<\/b> 2<br>\n<b>Maximum divide sections:<\/b>12<br>\nDivider’s resolution:±0.5mm"
           }
         },
         "a79de022-9bd0-454e-9dcb-9f7ef829708f": {
