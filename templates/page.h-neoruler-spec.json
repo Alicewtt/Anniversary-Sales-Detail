@@ -46,8 +46,8 @@
         "40e7c852-91c7-4a4e-82bc-b05320575e21": {
           "type": "two",
           "settings": {
-            "txt1": "Display",
-            "url1": "1.3-inch diagonal IPS-backlit display, 240×240 resolution at 184 PPI.\nCovered with tempered glass capacitive touch screen."
+            "txt1": "Range & Accuracy",
+            "url1": "<b>Range:<\/b> 12 inch (305mm)<br>\n<b>Accuracy:<\/b> ±0.004 inch (±0.1mm) under 1:1 mode\nin ideal circumstances. **<br><br>\n<p style=\"font-size:12px;\">**Non-ideal circumstances: The accuracy decreases on shaking, falling, sliding with high velocity. Inclination, misalignment and other human error factors will also affect the measurement accuracy.<\/p>"
           }
         },
         "3b201203-b23b-43fb-b8b4-4e1a18dbadff": {
