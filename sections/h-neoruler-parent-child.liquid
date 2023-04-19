@@ -369,6 +369,7 @@
     console.log($(this).attr('data-slider'));
     $(this).addClass('active').siblings().removeClass('active');
     $('.h-result-img').eq(i).show().siblings().hide();
+    $('.h-result-img').eq(i).addClass('active').siblings().removeClass('active');
     myFunction();
   });
 </script>
