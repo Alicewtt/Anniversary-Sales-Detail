@@ -107,8 +107,8 @@
         "ece5386c-84c1-4f7e-b0c1-1fb8c11ad59d": {
           "type": "FAQ",
           "settings": {
-            "qustion": "",
-            "answer": ""
+            "qustion": "How long does the battery last per full charge?",
+            "answer": "The theoretical standby time for a fully charged NeoRuler is around 45 days, and the continuous working time lasts around 12 hours."
           }
         },
         "bd489751-4eea-477a-945d-83eba5558138": {
