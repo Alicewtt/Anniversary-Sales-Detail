@@ -64,6 +64,12 @@
       "settings": {
       }
     },
+    "831ec065-5cb9-4a0d-9333-d579ba7ac0be": {
+      "type": "h-video-section",
+      "settings": {
+        "url1": ""
+      }
+    },
     "h-neo_ks_lp_new_3": {
       "type": "h-neo_ks_lp_new_3",
       "blocks": {
@@ -177,6 +183,7 @@
     "h-video-section",
     "h-neo_ks_lp_new_1",
     "h-neo_ks_lp_new_2",
+    "831ec065-5cb9-4a0d-9333-d579ba7ac0be",
     "h-neo_ks_lp_new_3",
     "h-neo_ks_lp_new_4",
     "h-neo_ks_lp_new_5",
