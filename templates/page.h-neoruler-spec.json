@@ -53,36 +53,36 @@
         "3b201203-b23b-43fb-b8b4-4e1a18dbadff": {
           "type": "two",
           "settings": {
-            "txt1": "Battery",
-            "url1": "Built-in 650 mAh lithium‑polymer battery. Support 5V <br> -1A USB-C Port Charging. Support fast charging protocol adapter."
+            "txt1": "Display",
+            "url1": "1.14” Full-Color LCD Display,\n240×135 resolution at 240 PPI."
           }
         },
         "13ed5e35-b46c-4779-8d43-1fb549ae7dbf": {
           "type": "two",
           "settings": {
             "txt1": "Battery Life",
-            "url1": "- 30 days battery life in stand-by mode <br>\n- 6 hours continuous use under comprehensive power consumption. <br>\n- 0.75 hours continuous use under maximum power consumption."
+            "url1": "- 180 days battery life in stand-by mode<br>\n- 14 days continuous use under comprehensive power consumption.<br>\n- 12 hours continuous use under maximum power consumption.<br>"
           }
         },
         "4f554b87-9b78-4b95-a6e3-151dc4a89b9e": {
           "type": "two",
           "settings": {
-            "txt1": "Materials",
-            "url1": "Aluminum Alloy <br>\nSilicone Rubber  <br>\nGlass  <br>\nABS+PC plastic <br>\nPOM"
+            "txt1": "Battery",
+            "url1": "Built-in 1000 mAh lithium‑polymer battery. <br>\nSupport 5V -1A USB-C Port Charging."
           }
         },
         "f82f137d-16a8-47d4-9e1d-001451ad5e28": {
           "type": "two",
           "settings": {
             "txt1": "Operating Environment",
-            "url1": "<p><strong> Operating temperature <\/strong><\/p>\n50° to 95° F (10° to 35° C) \n<br>\n<p> <strong> Relative humidity <\/strong><\/p>\n0% to 90% noncondensing"
+            "url1": "<b>Operating temperature<\/b><br>\n50° to 95° F (10° to 35° C)\n<b>Relative humidity \n0% to 90% noncondensing<\/b>"
           }
         },
         "00e4d197-4bf3-4266-b050-15f9c8e7da24": {
           "type": "two",
           "settings": {
-            "txt1": "",
-            "url1": "<div class=\"bottom-section w-100 d-flex\">\n                                                <figure class=\"mb-0\">\n                                                    <img src=\"\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/t\/21\/assets\/caution.svg?v=128491250521187484951663869724\" class=\"img-fluid\" alt=\"caution\">\n                                                <\/figure>\n                                                <div class=\"paragraph text-start\">\n                                                    <p><strong> CAUTION: :Laser Radiation <\/strong><\/p>\n                                                    <p> <strong>Do not Stare into Beam<\/strong> <\/p>\n                                                    <p><strong> Please keep away from children<\/strong> <\/p>\n                                                <\/div>\n                                            <\/div>"
+            "txt1": "Materials",
+            "url1": "Aluminum Alloy,<br> Stainless Steel, <br>ABS ,PC, POM"
           }
         },
         "35ba1424-9541-4826-89e4-2e639093bca3": {
