@@ -277,7 +277,7 @@
     clearInterval(timer);
     var index = $(this).index()
     $(this).addClass('active').siblings().removeClass('active');
-    $(".child-item .item-parent").eq(index-1).css('display','flex').siblings().hide();
+    $(".child-item .item-parent").eq(index).css('display','flex').siblings().hide();
 
   
   })
