@@ -196,6 +196,11 @@
       "type": "alireviews-widget-544875",
       "settings": {
       }
+    },
+    "video-review": {
+      "type": "video-review",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -212,6 +217,7 @@
     "h-neo_ks_lp_new_6",
     "h-neo_ks_lp_new_7",
     "ce33b8da-58aa-4b3d-9e5c-76e7dccc475a",
-    "alireviews-widget-544875"
+    "alireviews-widget-544875",
+    "video-review"
   ]
 }
