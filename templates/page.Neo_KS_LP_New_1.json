@@ -65,6 +65,15 @@
         "discount_url": "https:\/\/www.kickstarter.com\/projects\/hozodesign\/neoruler-rule-the-scales"
       }
     },
+    "b02f5f48-ec0c-4197-9993-1a7ea9fb6ce6": {
+      "type": "h-product-template-buy-now-1",
+      "settings": {
+        "text1": "",
+        "text2": "",
+        "p1": "",
+        "price": ""
+      }
+    },
     "h-video-section": {
       "type": "h-video-section",
       "settings": {
@@ -306,6 +315,7 @@
     "h-neo_ks_lp_new_0_static",
     "h-product-template-buy-now",
     "h-neo_ks_lp_new_0",
+    "b02f5f48-ec0c-4197-9993-1a7ea9fb6ce6",
     "h-video-section",
     "030fa4eb-67e1-4ba1-9fdf-76493aa50e5d",
     "h-neo_ks_lp_new_1",
