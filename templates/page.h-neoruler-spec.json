@@ -32,8 +32,8 @@
         "811b8e36-8660-4e98-bd21-4b21c2bd3937": {
           "type": "first",
           "settings": {
-            "txt1": "Scale Rolling Ruler",
-            "url1": "<p><b>Range:<\/b> 0-300feets (0-99meters)<\/p>\n<p> <b>Resolution: <\/b> 0.04inch(1mm) <\/p>\n<p><b>Accuracy:<\/b> ±1mm or ±0.2% \nin ideal circumstances.** <\/p>\n\n<span>**Non-ideal circumstances: The accuracy decreases on slippery, uneven, soft, curved surfaces. Inclination, misalignment and other human error factors will also affect the measurement accuracy.<\/span>"
+            "txt1": "Smart Scale",
+            "url1": "in custom scale mode, the product can calculate any scale based on the markings on the drawing. <br><br>\n\n<b>Minimum calculated scale:<\/b> 100,000:1 <br>\n<b>Maximum calculated scale :<\/b> 1:100,000.<br>\n<b>Accuracy:<\/b> ±0.004 inch (±0.1mm)<br>"
           }
         },
         "44f2bd2b-6c61-4c5f-9cc2-09d33914b82d": {
