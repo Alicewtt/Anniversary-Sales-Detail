@@ -1,40 +1,40 @@
 <style>
   
 
-  .h-neoruler-parent-child {
-    background: #000;
+  .h-neoruler-Social-Media {
+    background: #fff;
     position:relative;
   }
 
-  .h-neoruler-parent-child-inner{
+  .h-neoruler-Social-Media-inner{
     padding: 50px 20px 300px;
     max-width: 1200px;
     margin: 0 auto;
   }
 
-  .h-neoruler-parent-child h2 {
+  .h-neoruler-Social-Media h2 {
     font-family: 'Alibaba PuHuiTi 2.0';
     font-style: normal;
     font-weight: 900;
     font-size: 56.25px;
     line-height: 79px;
     text-align: center;
-    color: #fff;
+    color: #000;
     margin-bottom:23px;
   }
 
-  .h-neoruler-parent-child h2 span {
+  .h-neoruler-Social-Media h2 span {
     color: #56b1fd;
   }
 
-  .h-inner-wrap .fist-box {
+  .h-neoruler-Social-Media .fist-box {
     width: 610px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto 31px;
   }
 
-.h-inner-wrap .middle-text{
+  .h-neoruler-Social-Media .middle-text{
   font-family: 'Alibaba PuHuiTi 2.0';
   font-style: normal;
   font-weight: 500;
@@ -44,71 +44,26 @@
   margin-bottom:46px;
   color:#fff;
 }
-  .h-inner-wrap .fist-box .active{
-    border:2px solid #fff;
-  }
-  .h-inner-wrap .child-item .active{
-    border:2px solid #fff;
-  }
 
-  .h-inner-wrap .child-item {
-    width: 650px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto 39px;
-  }
-
-  .h-inner-wrap .child-item .img-item{
-    width:100%;
-  }
-  .h-inner-wrap .child-item img{
-    display:block;
-  }
-  .h-inner-wrap .result-box{
-    position:absolute;
-    left:0;
-  
-  }
-
-  .h-inner-wrap .result-box img{
-    display:none;
-  }
 
 
   
 
 </style>
-<section class="h-neoruler-parent-child">
+<section class="h-neoruler-Social-Media">
 
-  <div class="h-neoruler-parent-child-inner">
-    <h2>Epic <span>Neo Functions</span></h2>
+  <div class="h-neoruler-Social-Media-inner">
+    <h2>Social Media</h2>
 
     <div></div>
   
     <div class="h-wrap">
       <div class="h-inner-wrap">
-        <div class="fist-box">
-          <img class="pc-img"  style=" width:60px;height:auto;" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/9.png"  >
-          <img class="pc-img" style=" width:60px;height:auto;" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/10.png"  >
-          <img class="pc-img" style=" width:60px;height:auto;" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/11.png"  >
-        </div>
-        <div class="middle-text">Switch in between Metric and Imperial in one swipe without multiple calculation.</div>
-        <div class="child-item">
-          <img class="pc-img" style=" width:187px;height:auto;" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/12.png"  >
-          <img class="pc-img" style=" width:187px;height:auto;" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/13.png"  >
-          <img class="pc-img" style=" width:187px;height:auto;" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/14.png"  >
-        </div>
-        <div class="result-box">
-          <img class="h-result-img" data-slider="1,1" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
-          <img class="h-result-img" data-slider="1,2" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
-          <img class="h-result-img" data-slider="1,3" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
-          <img class="h-result-img" data-slider="2,1" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
-          <img class="h-result-img" data-slider="2,2" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
-          <img class="h-result-img" data-slider="2,3" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
-          <img class="h-result-img" data-slider="3,1" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
-          <img class="h-result-img" data-slider="3,2" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
+        {% for block in section.blocks %}
+          <a style="display:block" href="block.settings.url1">
           <img class="h-result-img" data-slider="3,3" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
-          
+          </a>
+        {% endfor %} 
         </div>
       </div>
   
@@ -144,11 +99,30 @@
 
 {% schema %}
 {
-  "name": "h-neoruler-parent-child",
+  "name": "h-neoruler-Social-Media",
   "settings": [],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "item",
+      "settings": [
+        {
+          "id": "img1",
+          "type": "image_picker",
+          "label": "Add Image"
+        },
+
+        {
+          "id": "url1",
+          "type": "url",
+          "label": "Add Image"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
-      "name": "h-neoruler-parent-child",
+      "name": "h-neoruler-Social-Media",
       "category": "Custom Content"
     }
   ]
