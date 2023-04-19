@@ -302,6 +302,44 @@
         "title": ""
       }
     },
+    "ea25da0d-592b-4eaf-81d7-e0af65345550": {
+      "type": "h-neoruler-Social-Media",
+      "blocks": {
+        "f9b4c91e-dd97-4ce6-b6a8-5d49706c9f09": {
+          "type": "item",
+          "settings": {
+            "img1": "shopify:\/\/shop_images\/Group_751.png",
+            "url1": ""
+          }
+        },
+        "5237ed4f-375a-42c6-bbe0-4067bb4608d9": {
+          "type": "item",
+          "settings": {
+            "url1": ""
+          }
+        },
+        "575d8161-a206-4b7b-8ac0-0a0eb39a4d6c": {
+          "type": "item",
+          "settings": {
+            "url1": ""
+          }
+        },
+        "ebaa3106-1095-4916-8e2b-c9696f933bd7": {
+          "type": "item",
+          "settings": {
+            "url1": ""
+          }
+        }
+      },
+      "block_order": [
+        "f9b4c91e-dd97-4ce6-b6a8-5d49706c9f09",
+        "5237ed4f-375a-42c6-bbe0-4067bb4608d9",
+        "575d8161-a206-4b7b-8ac0-0a0eb39a4d6c",
+        "ebaa3106-1095-4916-8e2b-c9696f933bd7"
+      ],
+      "settings": {
+      }
+    },
     "2ac9996c-1e1e-4d1d-9f89-966d83465677": {
       "type": "h-faq-section",
       "blocks": {
@@ -365,6 +403,7 @@
     "alireviews-widget-544875",
     "h-video-review",
     "072ab0c0-4616-480a-a410-c13564d9d6ff",
+    "ea25da0d-592b-4eaf-81d7-e0af65345550",
     "2ac9996c-1e1e-4d1d-9f89-966d83465677"
   ]
 }
