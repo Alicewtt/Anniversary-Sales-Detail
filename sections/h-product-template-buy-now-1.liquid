@@ -133,7 +133,7 @@
                 <button class="tablinks active" onclick="openCity(event, 'h-first')">Creative Classic</button>
                 <button class="tablinks" onclick="openCity(event, 'h-last')">Architech Advance</button>
               </div>
-              <div id="first h-first" class="tabcontent  active" style="display:block">
+              <div id="first h-first" class="tabcontent h-first active" style="display:block">
                 <ul class="new-list">
                   {% for block in section.blocks %}
                     {% if block.type == 'first' %}
@@ -191,7 +191,7 @@
                 </ul>
               </div>
 
-              <div id="last h-last" class="tabcontent ">
+              <div id="last h-last" class="tabcontent h-first ">
                 <ul class="new-list">
                   {% for block in section.blocks %}
                     {% if block.type == 'last' %}
