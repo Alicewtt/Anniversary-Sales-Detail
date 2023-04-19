@@ -1,6 +1,16 @@
 {{ 'meazor.css' | asset_url | stylesheet_tag }}
 {{ 'meazor-responsive.css' | asset_url | stylesheet_tag }}
 
+
+<style>
+
+  .h-mezor__product-3dpremium{
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+</style>
+
 <section class="mezor__product-imgs">
   <div class="container">
     <div class="row align-items-center h-123">
@@ -14,7 +24,7 @@
             <h2>{{ section.settings.text1 }}</h2>
             <p>{{ section.settings.text2 }}</p>
           </div>
-          <div class="mezor__product-3dpremium">
+          <div class="mezor__product-3dpremium h-mezor__product-3dpremium">
             <button class="btn btn-primary QWButton" data-product="{{ product.handle }}">Quick View</button>
             {% comment %}
               <img src="assets/img/meazor-3dfirst.png">
