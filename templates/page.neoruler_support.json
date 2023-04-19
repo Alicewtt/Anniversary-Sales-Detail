@@ -57,11 +57,27 @@
             "image": "shopify:\/\/shop_images\/Frame_53.png",
             "url": ""
           }
+        },
+        "835f711a-807f-4321-a526-7250f2ca57f0": {
+          "type": "Flag",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_42_0480bcb6-b49b-4b81-ae61-5a0ab5f4f7da.png",
+            "url": ""
+          }
+        },
+        "2efebc6e-0084-4e42-968f-fc59e2021204": {
+          "type": "Flag",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_39_ef84a6a0-af5d-4333-a71d-b6d5822fa367.png",
+            "url": ""
+          }
         }
       },
       "block_order": [
         "9d3f4e93-21b7-4488-9cc7-d14a6e603592",
-        "244d06de-5f3d-43c9-a978-b7a378fb8ece"
+        "244d06de-5f3d-43c9-a978-b7a378fb8ece",
+        "835f711a-807f-4321-a526-7250f2ca57f0",
+        "2efebc6e-0084-4e42-968f-fc59e2021204"
       ],
       "settings": {
         "title": "User Manual"
