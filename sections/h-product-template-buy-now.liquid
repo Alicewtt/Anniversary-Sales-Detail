@@ -1,0 +1,283 @@
+ {{'meazor.css' | asset_url | stylesheet_tag }}
+ {{'meazor-responsive.css' | asset_url | stylesheet_tag }}
+
+<section class="mezor__product-imgs">
+    <div class="container">
+        <div class="row align-items-center h-123">
+            <div class="col-md-6">
+                <div class="mezor__product-singleimg"> 
+                
+                   <div class="mezor__product-titlecnts mobile__new-design-g" style="display:none;"> 
+                        <img
+                          class="lazyload"
+                          data-src="{{ section.settings.img3 | img_url : 'master' }}">     
+                        <h2>{{ section.settings.text1}}</h2> 
+                        <p>{{ section.settings.text2}}</p>
+                    </div>
+                    <div class="mezor__product-3dpremium"> 
+                      <button class="btn btn-primary QWButton" data-product="{{ product.handle }}">Quick View</button>
+                      {% comment %}
+                        <img src="assets/img/meazor-3dfirst.png"> 
+                        <img src="{{ section.settings.img1 | img_url : 'master' }}">
+                        <img src="{{ product.featured_image | img_url: '1000x1000' }}" alt="{{product.featured_image.alt}}" />
+                      {% endcomment %}
+                      <img 
+                        class="lazyload"
+                        data-src="https://cdn.shopify.com/s/files/1/0549/7667/6078/products/700.png?v=1669346040">
+                      
+                    </div> 
+                    <div class="mezor__product-3dmezor"> 
+                        
+                      {% comment %}           
+                        <img src="assets/img/meazor-3d-img.png">
+                        <img src="{{ section.settings.img2 | img_url : 'master' }}">
+                        
+                         <video style="display:none;" class="mazor--video" id="videoclip" width="100%" height="100%" autoplay loop playshine muted>
+                          <source id="mp4video" src="https://cdn.shopify.com/videos/c/o/v/6041c1b814e54dcfa269fd604c183afc.mp4" type="video/mp4" />
+                        </video>
+                      {% endcomment %}
+                      <button class="btn btn-primary QWButton" data-product="{{ product.handle }}">Quick View</button>
+                      <img 
+                        class="lazyload"
+                        data-src="//cdn.shopify.com/s/files/1/0549/7667/6078/products/20_e0d2c871-63c8-406a-87e0-d0d711848cd1_1000x1000.png?v=1667292107" 
+                        alt="{{product.featured_image.alt}}" />
+                      
+                    </div>     
+                </div>   
+            </div> 
+            <div class="col-md-6">
+                <div class="mezor__product-singlecnts"> 
+                    <div class="mezor__product-titlecnts" id="myDivbb"> 
+                        <img 
+                          class="lazyload"
+                          data-src="{{ section.settings.img3 | img_url : 'master' }}">     
+                        <h2>{{ section.settings.text1}}</h2> 
+                        <p>{{ section.settings.text2}}</p>
+                       {% assign product = all_products[section.settings.p1] %}
+                        <div class="mazor__3d-price"><span style="font-size:22px" >Start from</span> {{ section.settings.price}}</div>
+                       
+                        <button type="button" {% unless product.available %} disabled {% endunless %}  price="{{ product.price | money_without_currency }}" class="deproduct select" id="{{ product.variants.first.id }}">{% if product.available %}BUY NOW {% else %} SOLD OUT {% endif %}</button>
+                    </div> 
+                    <div class="mezor__product-pluginout"> 
+                        <div class="mezor__prd-back"><img class="lazyload" data-src="{{ 'black__left.svg' | asset_url}}"> Back</div>
+                        <ul>
+                         <select name="id" id="{{ product.handle }}" style="display: none;">
+  {% for variant in product.variants %}
+    {% if variant.available %}
+    <option value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money }}</option>     
+    {% else %}
+    <option disabled="disabled">{{ variant.title }} - Sold Out</option>
+    {% endif %}
+  {% endfor %}
+    </select>  
+                      
+                         <ul class="new-list">
+                        {% for variant in product.variants %}
+                              
+                            <li  number="{{ forloop.index }}"class="variant_meazor_li premiummajoq__3dclick {%  if forloop.index < 2 %} mezor__activepack{% endif %}" price="{{ variant.price | money_without_currency }}" id="{{ variant.id }}" videourl="{{ variant.metafields.custom.videourl }}">
+                               
+                                <div class="price-main">
+                                   <p >{{ variant.title }}</p>
+                                     {% if variant.metafields.custom.sub_text %}
+                                      <div class="d-flex align-items-center mt-1">
+                                          <p class="new_price pr-3">{{ variant.price | money }}  </p>
+                                          {{ variant.metafields.custom.sub_text }} 
+                                      </div>  
+                                    {% endif %}
+                                </div>
+
+                              {% if variant.metafields.custom.sub_text %}
+                                  <img class="tickIcon lazyload" data-src="{{ 'tick_Icon.png' | asset_img_url: 'master' }}">
+                                {% endif %}
+                          
+                                {% unless variant.metafields.custom.sub_text %}
+                                 <p class="new_price mr-3">{{ variant.price | money }}  </p>
+                                 <img class="tickIcon lazyload" data-src="{{ 'tick_Icon.png' | asset_img_url: 'master' }}">   
+                                {% endunless %}
+                               
+                                  
+                                 <div class="special-variant-specification   {%  if forloop.index < 2 %} activevari  {% endif %}">{{ variant.metafields.custom.variant_specification }}</div>
+                           
+                            </li>
+                           
+                          {% endfor %}
+                         </ul>
+                          
+                          <h3 data-h="123">Top Pick Accessories</h3>
+                              <div class="tab">
+                            <button class="tablinks active" onclick="openCity(event, 'first')">Creative Classic</button>
+                            <button class="tablinks" onclick="openCity(event, 'last')">Architech Advance</button>
+
+                            </div>
+                             <div id="first" class="tabcontent active"  style="display:block">
+                             <ul class="new-list">
+                          {%  for block in section.blocks %}
+                         
+                            {% if block.type == 'first' %}
+                               {% assign pr1 = all_products[block.settings.pr1] %}
+                            <li class="premiummajoq__3dclick2"  price="{{ pr1.price | money_without_currency }}" id="{{ pr1.variants.first.id }}">
+                                <div>
+                                  <img 
+                                    class="lazyload"
+                                    data-src="{{ pr1.featured_media | img_url : 'master'}}">
+                                </div>
+                                <div>
+                                  <p><a href="{{ pr1.url }}">{{ pr1.title }}</a></p>
+                                  <div class="tab-price-main">
+                                        <div>
+                                          <p class="tab-price">{{ pr1.price | money }}  {% if pr1.compare_at_price > pr1.price %}  <span class="special-pr">{{  pr1.compare_at_price | money }}</span> {%  endif %}</p>
+                                        </div>
+                                        <div>
+
+
+                              
+                                        {% if pr1.compare_at_price > pr1.price %}  <span><strong> {{ pr1.compare_at_price | minus: pr1.price | times: 100.0 | divided_by: pr1.compare_at_price | money_without_currency | times: 100 | remove: '.0'}}% OFF </strong></span>{% endif %}
+                                        </div>
+                                         
+                                      </div>
+                                </div>
+                                <span class="multiTick">
+                                    <img class="tickIcon lazyload" data-src="{{ 'tick_Icon.png' | asset_img_url: 'master' }}">
+                                  </span>
+                            </li>
+                            
+                              {% endif %}
+                             {%  endfor %}
+                             </ul>
+                              </div>
+                        
+                            <div id="last" class="tabcontent">
+                              <ul class="new-list">
+                                 {%  for block in section.blocks %}
+                               {% if block.type == 'last' %}
+                               {% assign pr1 = all_products[block.settings.pr1] %}
+                            <li class="premiummajoq__3dclick2"  price="{{ pr1.price | money_without_currency }}" id="{{ pr1.variants.first.id }}">
+                               <div>
+                                 <img 
+                                  class="lazyload"
+                                  data-src="{{ pr1.featured_media | img_url : 'master'}}" class="gggggg">
+                               </div>
+                                <div>
+                                 <p class="poto"><a href="{{ pr1.url }}">{{ pr1.title }}</a></p>
+                                  <div class="tab-price-main">
+                                      <div>
+                                        <p class="tab-price">{{ pr1.price | money }}  {% if pr1.compare_at_price > pr1.price %}  <span class="special-pr">{{  pr1.compare_at_price | money }}</span> {%  endif %}</p>
+                                      </div>
+                                      <div>
+                                      {% if pr1.compare_at_price > pr1.price %}  <span><strong> {{ pr1.compare_at_price | minus: pr1.price | times: 100.0 | divided_by: pr1.compare_at_price | money_without_currency | times: 100 | remove: '.0'}}% OFF </strong></span>{% endif %}
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <span class="multiTick">
+                                    <img class="tickIcon lazyload" data-src="{{ 'tick_Icon.png' | asset_img_url: 'master' }}">
+                                  </span>
+                              </li>
+                            
+                              {% endif %}
+                            
+                          {% endfor %}
+                              </ul>
+                            </div>
+                          <div class="btm-professional-s">  
+                           <p>Total <span class="totalprice">{{ product.price | money}}</span></p>
+                          <div class="btm-professional-btns"> 
+                            <button type="button" class="finaladd mxform">Add to cart</button>
+                            <button type="button" class="finaladdnow">Buy Now</button>
+                           </div>
+                          </div>
+                        </ul>
+                    </div>                  
+                </div>  
+            </div> 
+        </div>     
+    </div>  
+</section>
+
+ 
+{% schema %}
+  {
+    "name": "Meazor",
+    "settings": [
+  {
+            "id": "img1",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+             {
+            "id": "img2",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+      {
+            "id": "img3",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
+          {
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add text"
+          },
+
+        {
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add text"
+          },
+       
+           
+         {
+            "id": "p1",
+            "type": "product",
+            "label": "Add product"
+          },
+       {
+            "id": "price",
+            "type": "text",
+            "label": "Add price"
+          }
+  
+    ],
+         "blocks": [
+      {
+        "type": "first",
+        "name": "first tab",
+        "settings": [
+
+       {
+            "id": "pr1",
+            "type": "product",
+            "label": "Add add on product"
+          }
+
+         
+        ]
+      },
+           {
+        "type": "last",
+        "name": "last tab",
+        "settings": [
+
+       {
+            "id": "pr1",
+            "type": "product",
+            "label": "Add add on product"
+          }
+
+         
+        ]
+      }
+    ],
+    "presets":[{
+ "name": "Meazor-New",
+"category": "Custom Content"
+
+}]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
