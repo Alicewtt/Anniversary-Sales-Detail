@@ -1,213 +1,234 @@
 {% if template.name == 'product' %}
   {% unless product.metafields.custom.floating_head == 'false' %}
-<div class="popup-add-to-cart">
-    <div class="container">
+    <div class="popup-add-to-cart">
+      <div class="container">
         <div class="row align-items-center">
-            <div class="col-7 col-md-6 d-flex align-items-center">
-                <h4>{{ product.title }}</h4><div class="stars-holder d-flex mb-0 ml-4">
-                    <ul class="stars-list">
-						<li>
-							<div product-id="{{ product.id }}" class="alr-display-review-badge"></div>
-						</li>
-					</ul>
-				    <span data-cy="product-reviews-rate"></span>
-                </div>
+          <div class="col-7 col-md-6 d-flex align-items-center">
+            <h4>{{ product.title }}</h4>
+            <div class="stars-holder d-flex mb-0 ml-4">
+              <ul class="stars-list">
+                <li>
+                  <div product-id="{{ product.id }}" class="alr-display-review-badge"></div>
+                </li>
+              </ul>
+              <span data-cy="product-reviews-rate"></span>
             </div>
-            <div class="col-5 col-md-6 d-flex justify-content-end align-items-center">
-                <div class="js-sticky-bar js-main-product-price-holder">
-    
-        <div class="product-price-holder product-variant-price" >
-          {% if product.compare_at_price > 0 %}
-            <span class="discounted-price-title">From&nbsp;</span>
-            {%  endif %}
-        {% if product.compare_at_price > 0 %}      
-<div class="d-md-inline">
-  <strong class="discounted-price">{{ product.compare_at_price_max | money }}</strong></div>
-          {%  endif  %}
-          
-          <div class="d-md-inline">
-  <span class="original-price totalprice">{{ product.first_available_variant.price | money}}</span>
+          </div>
+          <div class="col-5 col-md-6 d-flex justify-content-end align-items-center">
+            <div class="js-sticky-bar js-main-product-price-holder">
+              <div class="product-price-holder product-variant-price">
+                {% if product.compare_at_price > 0 %}
+                  <span class="discounted-price-title">From&nbsp;</span>
+                {% endif %}
+                {% if product.compare_at_price > 0 %}
+                  <div class="d-md-inline">
+                    <strong class="discounted-price">{{ product.compare_at_price_max | money }}</strong>
+                  </div>
+                {% endif %}
+
+                <div class="d-md-inline">
+                  <span class="original-price totalprice">{{ product.first_available_variant.price | money }}</span>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="btn btn-primary scroll-to-section js-scroll-to-section backtotop"
+              id="{{ product.variants.first.id }}"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
-    
-</div>
-
-                <button class="btn btn-primary scroll-to-section js-scroll-to-section backtotop" id="{{ product.variants.first.id }}">Add to cart
-                </button>
-            </div>
-        </div>
-    </div>
-          <div class="mini__botto-bars">
-      <div class="mini__botto-bars--j">
-        <p><a href="#" class="m_menu cartpix site-header__cart backtotopcart"><i class="fa fa-shopping-cart" aria-hidden="true" style="color:#fff;"></i></a></p>
-        <a href="#" class="backtotopmobile" id="{{ product.variants.first.id }}">Shop Now</a>
-      </div>    
-    </div>
-</div>
-{% endunless %}
-    {% endif %}
-    {% if section.settings.enambe_annoncement %}
-      <div class="topbar text-center">
-          {{ section.settings.annoncement }}
       </div>
-   {% endif %}
-   <header class="header_area header-new">
-      <div class="main_header_area animated">
-        <div class="container">
-          <nav id="navigation1" class="navigation navigation1">
-            <div class="nav-header">
-              <a class="nav-brand" href="/"> <img src="{{section.settings.logo | img_url : 'master'}}"> </a>
-            </div>
-<!--             <div class="nav-search">
+      <div class="mini__botto-bars">
+        <div class="mini__botto-bars--j">
+          <p>
+            <a href="#" class="m_menu cartpix site-header__cart backtotopcart"
+              ><i class="fa fa-shopping-cart" aria-hidden="true" style="color:#fff;"></i
+            ></a>
+          </p>
+          <a href="#" class="backtotopmobile" id="{{ product.variants.first.id }}">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  {% endunless %}
+{% endif %}
+{% if section.settings.enambe_annoncement %}
+  <div class="topbar text-center">
+    {{ section.settings.annoncement }}
+  </div>
+{% endif %}
+<header class="header_area header-new">
+  <div class="main_header_area animated">
+    <div class="container">
+      <nav id="navigation1" class="navigation navigation1">
+        <div class="nav-header">
+          <a class="nav-brand" href="/"> <img src="{{section.settings.logo | img_url : 'master'}}"> </a>
+        </div>
+        <!--
+          <div class="nav-search">
               <div class="nav-search-button">
                 <a href="{{shop.url}}/account" class="m_menu useraccount_re"> <i class="fa fa-user-o" aria-hidden="true" style="color:black;"></i></a>
               </div>
                <div class="nav-search-button">
                  <a href="#" class="m_menu cartpix site-header__cart"><i class="fa fa-shopping-cart" aria-hidden="true"  style="color:black;"></i></a>
               </div>
-          </div> -->
-            
-              <ul class="mobile-nav-menu">
-                <li><a href="{{shop.url}}/account" class="m_menu useraccount_re"> <i class="fa fa-user-o" aria-hidden="true" style="color:black;"></i></a></li>
-                <li><a href="#" class="m_menu cartpix site-header__cart"><i class="fa fa-shopping-cart" aria-hidden="true" style="color:black;"></i></a></li>  
-              </ul>
-            
-            <div class="nav-toggle"></div>
-            <div class="nav-menus-wrapper">
-              <ul class="nav-menu">
-                 
-                <li><a href="/" class="inner-logo"> <img src="{{section.settings.logo | img_url : 'master'}}"> </a></li>
-                    {% for block in section.blocks %}
-                         {% if block.type == 'product' %}  
+          </div>
+        -->
+
+        <ul class="mobile-nav-menu">
+          <li>
+            <a href="{{shop.url}}/account" class="m_menu useraccount_re">
+              <i class="fa fa-user-o" aria-hidden="true" style="color:black;"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="m_menu cartpix site-header__cart"
+              ><i class="fa fa-shopping-cart" aria-hidden="true" style="color:black;"></i
+            ></a>
+          </li>
+        </ul>
+
+        <div class="nav-toggle"></div>
+        <div class="nav-menus-wrapper">
+          <ul class="nav-menu">
+            <li>
+              <a href="/" class="inner-logo"> <img src="{{section.settings.logo | img_url : 'master'}}"> </a>
+            </li>
+            {% for block in section.blocks %}
+              {% if block.type == 'product' %}
                 <li>
                   <a href="{{ block.settings.url1 }}" class="new_menu">{{ block.settings.text1 }} </a>
                   <div class="megamenu-panel h-123">
-                    <div class="megamenu-lists"> 
-                         {% for product in collections[block.settings.coll].products limit : 2 %}
-                
-                      <ul class="megamenu-list list-col-3 rolvo-imagcontent">
-                        <li class="rolvo-imag">
-                          <a href="{{product.url}}"> 
-                            <div class="sub-image">
-                              <img src="{{product.featured_image | img_url : '400x'}}" data-huanhuan="h-123">
-                            </div>
-                          </a>
-                        </li>
+                    <div class="megamenu-lists">
+                      {% for product in collections[block.settings.coll].products limit: 2 %}
+                        <ul class="megamenu-list list-col-3 rolvo-imagcontent">
+                          <li class="rolvo-imag">
+                            <a href="{{product.url}}">
+                              <div class="sub-image">
+                                <img src="{{product.featured_image | img_url : '400x'}}" data-huanhuan="h-123">
+                              </div>
+                            </a>
+                          </li>
 
-                         <p>{{product.title}}
-                          {% for t in product.tags %}
-                            {% if t contains 'NEW' %} 
-                            <span>new </span>
-                            {% endif %}
-                          {% endfor %}
-                         </p>
-                      </ul>
-                    {%  endfor %}
-                      <!-- for collection   -->
-                 <ul class="megamenu-list list-col-3 rolvo-imagcontent header-icons">
+                          <p>
+                            {{ product.title }}
+                            {% for t in product.tags %}
+                              {% if t contains 'NEW' %}
+                                <span>new </span>
+                              {% endif %}
+                            {% endfor %}
+                          </p>
+                        </ul>
+                      {% endfor %}
+                      <!-- for collection -->
+                      <ul class="megamenu-list list-col-3 rolvo-imagcontent header-icons">
                         <li class="rolvo-imag">
-                          <a href="{{ section.settings.coll_url }}"> 
+                          <a href="{{ section.settings.coll_url }}">
                             <div class="sub-image">
                               <img src="{{ section.settings.coll-img |img_url:'master' }}" data-huanhuan="h-234">
                             </div>
                           </a>
                         </li>
-                         <p>{{ section.settings.coll_title }}
-                          
-                         </p>
+                        <p>{{ section.settings.coll_title }}</p>
                       </ul>
 
-                      <!--  for collection   -->
-                   
+                      <!-- for collection -->
                     </div>
                   </div>
                 </li>
-                           {% endif %}
-                {% endfor %}
-             {% for block in section.blocks %}
-              {% if block.type == 'support' %}  
-                <li><a href="{{ block.settings.lurl1 }}">{{ block.settings.ltext1 }}</a></li> 
-                {% endif %}
-                {% endfor %}
-                  
-           {% for block in section.blocks %}
-              {% if block.type == 'icon' %}  
+              {% endif %}
+            {% endfor %}
+            {% for block in section.blocks %}
+              {% if block.type == 'support' %}
+                <li>
+                  <a href="{{ block.settings.lurl1 }}">{{ block.settings.ltext1 }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+
+            {% for block in section.blocks %}
+              {% if block.type == 'icon' %}
                 <li>
                   <a href="{{ block.settings.url1 }}" class="new_menu">{{ block.settings.text1 }} </a>
                   <div class="megamenu-panel">
-                    <div class="megamenu-lists"> 
-                     {% for link in linklists[block.settings.coll1].links %}
-                      <ul class="megamenu-list list-col-3 rolvo-imagcontent header-icons">
-                        <li class="rolvo-imag resize-image">
-                          <a href="{{link.url}}"> 
-                            <div class="sub-image">
-                                 {% assign menutile = link.title %}
+                    <div class="megamenu-lists">
+                      {% for link in linklists[block.settings.coll1].links %}
+                        <ul class="megamenu-list list-col-3 rolvo-imagcontent header-icons">
+                          <li class="rolvo-imag resize-image">
+                            <a href="{{link.url}}">
+                              <div class="sub-image">
+                                {% assign menutile = link.title %}
                                 {% for block in section.blocks %}
                                   {% assign checktile = block.settings.mn %}
                                   {% if checktile == menutile %}
-                              <img src="{{ block.settings.mi | img_url : 'master' }}">
-                               {% break %}
-                                
+                                    <img src="{{ block.settings.mi | img_url : 'master' }}">
+                                    {% break %}
                                   {% endif %}
-                                  {% endfor %}
-                                  </div>
-                         </a>
-                        </li>
-                         <p>{{link.title}}</p>
-                      </ul>
-                    {% endfor %}
-                     
+                                {% endfor %}
+                              </div>
+                            </a>
+                          </li>
+                          <p>{{ link.title }}</p>
+                        </ul>
+                      {% endfor %}
                     </div>
                   </div>
                 </li>
-                 {% endif %}
-                  {% endfor %}
-      {% for block in section.blocks %}
-              {% if block.type == 'link' %}  
-                <li><a href="{{ block.settings.lurl1 }}">{{ block.settings.ltext1 }}</a></li> 
-                {% endif %}
-                {% endfor %}
+              {% endif %}
+            {% endfor %}
+            {% for block in section.blocks %}
+              {% if block.type == 'link' %}
+                <li>
+                  <a href="{{ block.settings.lurl1 }}">{{ block.settings.ltext1 }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
 
-                
-                <li><a href="{{shop.url}}/account" class="m_menu useraccount_re"> <i class="fa fa-user-o" aria-hidden="true" style="color:black;"></i></a></li>
-                <li><a href="#" class="m_menu cartpix site-header__cart"><i class="fa fa-shopping-cart" aria-hidden="true" style="color:black;"></i></a></li>  
-                
-              </ul>
-
-              
-            </div>
-          </nav>
+            <li>
+              <a href="{{shop.url}}/account" class="m_menu useraccount_re">
+                <i class="fa fa-user-o" aria-hidden="true" style="color:black;"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="m_menu cartpix site-header__cart"
+                ><i class="fa fa-shopping-cart" aria-hidden="true" style="color:black;"></i
+              ></a>
+            </li>
+          </ul>
         </div>
+      </nav>
+    </div>
+  </div>
+  <!--
+    <div class="nav-search new__mobile-d">
+      <div class="nav-search-button">
+        <a href="https://hozodesign.com/account" class="m_menu useraccount_re"> <i class="fa fa-user-o" aria-hidden="true" style="color:black;"></i></a>
       </div>
-<!--       <div class="nav-search new__mobile-d">
-  <div class="nav-search-button">
-    <a href="https://hozodesign.com/account" class="m_menu useraccount_re"> <i class="fa fa-user-o" aria-hidden="true" style="color:black;"></i></a>
-  </div>
-   <div class="nav-search-button">
-     <a href="#" class="m_menu cartpix site-header__cart"><i class="fa fa-shopping-cart" aria-hidden="true" style="color:black;"></i></a>
-  </div>
-</div> -->
-      
-    </header>
+       <div class="nav-search-button">
+         <a href="#" class="m_menu cartpix site-header__cart"><i class="fa fa-shopping-cart" aria-hidden="true" style="color:black;"></i></a>
+      </div>
+    </div>
+  -->
+</header>
 
 <!-- ********** header-section* ********* -->
 
-
 <style>
-#atharva_minicart.show_minicart {
+  #atharva_minicart.show_minicart {
     z-index: 99999999999999999999 !important;
-}
-#atharva_minicart table {
+  }
+  #atharva_minicart table {
     height: calc(100vh - 410px);
-}
- 
-  
-body #atharva_minicart {
+  }
+
+  body #atharva_minicart {
     z-index: 99999999999999999999 !important;
-} 
-#atharva_minicart table {
-    background: #efefef!important;
-    width: 100%!important;
+  }
+  #atharva_minicart table {
+    background: #efefef !important;
+    width: 100% !important;
     margin-bottom: 0;
     overflow: auto;
     height: calc(100vh - 333px) !important;
@@ -215,196 +236,179 @@ body #atharva_minicart {
     overflow-x: hidden;
     overflow-y: auto;
     border-bottom: #e6e6e6 1px solid;
-}
-a.atharva_minicart_cart {
-    transition: all .2s ease,visibility 0s;
+  }
+  a.atharva_minicart_cart {
+    transition: all 0.2s ease, visibility 0s;
     border-radius: 200px;
-    border: 3px solid rgb(50,112,167);
+    border: 3px solid rgb(50, 112, 167);
     background: rgb(50 112 167 / 20%) !important;
     padding: 14px 30px;
-    color: rgb(50,112,167) !important;
+    color: rgb(50, 112, 167) !important;
     font-size: 15px;
-} 
-  
-a.atharva_minicart_checkout {
-    transition: all .2s ease,visibility 0s;
+  }
+
+  a.atharva_minicart_checkout {
+    transition: all 0.2s ease, visibility 0s;
     border-radius: 200px;
-    border: 3px solid rgb(50,112,167);
+    border: 3px solid rgb(50, 112, 167);
     background: rgb(50 112 167 / 20%) !important;
     padding: 14px 30px;
-    color: rgb(50,112,167) !important;
+    color: rgb(50, 112, 167) !important;
     font-size: 15px;
-}  
-  
+  }
 </style>
 
-
-
-
 {% schema %}
-  {
-    "name": "Header-set",
-     "settings": [
+{
+  "name": "Header-set",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enambe_annoncement",
+      "label": "Enable Annoncement"
+    },
+    {
+      "type": "text",
+      "id": "annoncement",
+      "label": "Annoncement"
+    },
+    {
+      "id": "logo",
+      "type": "image_picker",
+      "label": "Add Logo"
+    },
+    {
+      "id": "coll_url",
+      "type": "url",
+      "label": "Collection Url"
+    },
+    {
+      "id": "coll-img",
+      "type": "image_picker",
+      "label": "Collection Image"
+    },
+    {
+      "id": "coll_title",
+      "type": "text",
+      "label": "Collection Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
         {
-          "type": "checkbox",
-          "id": "enambe_annoncement",
-          "label": "Enable Annoncement"
-         },
-        {
-          "type": "text",
-          "id": "annoncement",
-          "label": "Annoncement"
-         },
-        {
-          "id": "logo",
-          "type": "image_picker",
-          "label": "Add Logo"
+          "id": "text1",
+          "type": "textarea",
+          "label": "Add Menu name"
         },
         {
-          "id": "coll_url",
+          "id": "url1",
           "type": "url",
-          "label": "Collection Url"
-         },
-          {
-          "id": "coll-img",
-          "type": "image_picker",
-          "label": "Collection Image"
-         },
-         {
-          "id": "coll_title",
-          "type": "text",
-          "label": "Collection Title"
-         }
-      ],
-      "blocks": [
+          "label": "Add Menu link"
+        },
         {
-          "type": "product",
-          "name": "Product",
-          "settings": [
-            {
-              "id": "text1",
-              "type": "textarea",
-              "label": "Add Menu name"
-            },
-           {
-              "id": "url1",
-              "type": "url",
-              "label": "Add Menu link"
-            },
-            {
-              "id": "coll",
-              "type": "collection",
-              "label": "Add collection"
-            }  
-          ]
-      },
-      {
-        "type": "Support",
-        "name": "Support",
-        "settings": [
-          {
-            "id": "text1",
-            "type": "textarea",
-            "label": "Add Menu name"
-          },
-         {
-            "id": "url1",
-            "type": "url",
-            "label": "Add Menu link"
-          },
-          {
-            "id": "coll",
-            "type": "collection",
-            "label": "Add collection"
-          }  
-        ]
+          "id": "coll",
+          "type": "collection",
+          "label": "Add collection"
+        }
+      ]
     },
-     {
-        "type": "icon",
-        "name": "icon",
-        "settings": [
-           {
-            "id": "text1",
-            "type": "textarea",
-            "label": "Add Menu name"
-          },
-         {
-            "id": "url1",
-            "type": "url",
-            "label": "Add Menu link"
-          },
-          {
-            "id": "coll1",
-            "type": "link_list",
-            "label": "Add Navigation"
-          }
+    {
+      "type": "Support",
+      "name": "Support",
+      "settings": [
+        {
+          "id": "text1",
+          "type": "textarea",
+          "label": "Add Menu name"
+        },
+        {
+          "id": "url1",
+          "type": "url",
+          "label": "Add Menu link"
+        },
+        {
+          "id": "coll",
+          "type": "collection",
+          "label": "Add collection"
+        }
+      ]
+    },
+    {
+      "type": "icon",
+      "name": "icon",
+      "settings": [
+        {
+          "id": "text1",
+          "type": "textarea",
+          "label": "Add Menu name"
+        },
+        {
+          "id": "url1",
+          "type": "url",
+          "label": "Add Menu link"
+        },
+        {
+          "id": "coll1",
+          "type": "link_list",
+          "label": "Add Navigation"
+        }
+      ]
+    },
+    {
+      "type": "link",
+      "name": "link",
+      "settings": [
+        {
+          "id": "ltext1",
+          "type": "textarea",
+          "label": "Add Menu name"
+        },
+        {
+          "id": "lurl1",
+          "type": "url",
+          "label": "Add Menu link"
+        }
+      ]
+    },
 
-       
-          
-        ]
-      },
-      {
-        "type": "link",
-        "name": "link",
-        "settings": [
-          {
-            "id": "ltext1",
-            "type": "textarea",
-            "label": "Add Menu name"
-          },
-         {
-            "id": "lurl1",
-            "type": "url",
-            "label": "Add Menu link"
-          }
-         
-          
-        ]
-      },
-     
-      {
-        "type": "support",
-        "name": "support",
-        "settings": [
-          {
-            "id": "ltext1",
-            "type": "textarea",
-            "label": "Add Menu name"
-          },
-         {
-            "id": "lurl1",
-            "type": "url",
-            "label": "Add Menu link"
-          }
-         
-          
-        ]
-      },
-  
-  {
-        "type": "image",
-        "name": "icon-img",
-        "settings": [
-          {
-            "id": "mn",
-            "type": "textarea",
-            "label": "Add Menu name"
-          },
-         {
-            "id": "mi",
-            "type": "image_picker",
-            "label": "Add Menu image"
-          }
-         
-          
-        ]
-      }
-  
+    {
+      "type": "support",
+      "name": "support",
+      "settings": [
+        {
+          "id": "ltext1",
+          "type": "textarea",
+          "label": "Add Menu name"
+        },
+        {
+          "id": "lurl1",
+          "type": "url",
+          "label": "Add Menu link"
+        }
+      ]
+    },
 
-
-    ]
-
-  }
+    {
+      "type": "image",
+      "name": "icon-img",
+      "settings": [
+        {
+          "id": "mn",
+          "type": "textarea",
+          "label": "Add Menu name"
+        },
+        {
+          "id": "mi",
+          "type": "image_picker",
+          "label": "Add Menu image"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
 {% stylesheet %}
 {% endstylesheet %}
