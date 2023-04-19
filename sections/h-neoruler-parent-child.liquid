@@ -50,10 +50,7 @@
 <script>
   var outerSwiper = new Swiper('.outer-swiper-container', {
     // 外部轮播的配置
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+   
     on: {
       slideChangeTransitionEnd: function() {
         var innerSwiper = this.slides[this.activeIndex].querySelector('.inner-swiper-container').swiper;
