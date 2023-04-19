@@ -8,25 +8,104 @@
     "h-neo_ks_lp_new_0": {
       "type": "h-neo_ks_lp_new_0",
       "settings": {
+        "discount": "Exclusive Discount $50 OFF",
+        "discount_text_1": "First 8hrs Launch Day ONLY",
+        "discount_text_2": "(Only 200 limited spots)",
+        "discount_url": "https:\/\/www.kickstarter.com\/projects\/hozodesign\/neoruler-rule-the-scales"
       }
     },
     "h-video-section": {
       "type": "h-video-section",
       "settings": {
+        "img1": "shopify:\/\/shop_images\/Read.png",
+        "url1": "https:\/\/www.youtube.com\/embed\/JQCqg8QoOZc"
       }
     },
     "h-neo_ks_lp_new_1": {
       "type": "h-neo_ks_lp_new_1",
       "settings": {
+        "url": ""
       }
     },
     "h-neo_ks_lp_new_2": {
       "type": "h-neo_ks_lp_new_2",
+      "blocks": {
+        "63621cd3-f6f6-4fba-8474-9966980f2d7e": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/Read.png"
+          }
+        },
+        "9fdd0eec-d121-495f-ae93-d1e9883da643": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/Draft.png"
+          }
+        },
+        "eb783729-0c90-41db-9304-155b9b7ae024": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/Caliper.png"
+          }
+        },
+        "cf0ec8b3-dd0c-4223-8f17-26a7a39d64b1": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/Divide.png"
+          }
+        }
+      },
+      "block_order": [
+        "63621cd3-f6f6-4fba-8474-9966980f2d7e",
+        "9fdd0eec-d121-495f-ae93-d1e9883da643",
+        "eb783729-0c90-41db-9304-155b9b7ae024",
+        "cf0ec8b3-dd0c-4223-8f17-26a7a39d64b1"
+      ],
       "settings": {
       }
     },
     "h-neo_ks_lp_new_3": {
       "type": "h-neo_ks_lp_new_3",
+      "blocks": {
+        "3859224b-4cb5-41b5-8c4b-4d2a95dfabd9": {
+          "type": "slide",
+          "settings": {
+            "text_1": "Photo Mode",
+            "text_2": "Only one click away from 2D to 3D Display",
+            "slide_image": "shopify:\/\/shop_images\/section3-right-swiper-1_680591df-4393-4c00-a4ff-1af353451b7a.png"
+          }
+        },
+        "ea080b01-cac5-48ed-a9b3-5575642d713b": {
+          "type": "slide",
+          "settings": {
+            "text_1": "Drawing Mode",
+            "text_2": "Only one click away from 2D to 3D Display",
+            "slide_image": "shopify:\/\/shop_images\/section3-right-swiper-2_7e6a7bec-76a6-4072-81fd-5b562d029f9a.png"
+          }
+        },
+        "83c66806-bea4-4371-b851-d77e206eff24": {
+          "type": "slide",
+          "settings": {
+            "text_1": "List Mode",
+            "text_2": "Only one click away from 2D to 3D Display",
+            "slide_image": "shopify:\/\/shop_images\/section3-right-swiper-3_b87f4890-b6e0-4a22-8ea4-00512b644b8a.png"
+          }
+        },
+        "28cb67f7-707d-410f-9bb3-4592bf666bd1": {
+          "type": "slide",
+          "settings": {
+            "text_1": "Drawing Mode",
+            "text_2": "Only one click away from 2D to 3D Display",
+            "slide_image": "shopify:\/\/shop_images\/section3-right-swiper-4_a9aac635-c851-4dbd-bbf1-f5a71fb747cb.png"
+          }
+        }
+      },
+      "block_order": [
+        "3859224b-4cb5-41b5-8c4b-4d2a95dfabd9",
+        "ea080b01-cac5-48ed-a9b3-5575642d713b",
+        "83c66806-bea4-4371-b851-d77e206eff24",
+        "28cb67f7-707d-410f-9bb3-4592bf666bd1"
+      ],
       "settings": {
       }
     },
@@ -48,6 +127,7 @@
     "h-neo_ks_lp_new_7": {
       "type": "h-neo_ks_lp_new_7",
       "settings": {
+        "discount_url": ""
       }
     }
   },
