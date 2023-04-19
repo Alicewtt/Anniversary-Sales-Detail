@@ -282,8 +282,9 @@ function openCity_1(evt,cityName) {
   tabcontent = document.getElementsByClassName("tabcontent");
   var index= $(evt).index()
   $(evt).addClass('active').siblings().removeClass('active')
-  $(evt).parent().siblings('tabcontent').eq(index).show().siblings('tabcontent').hidden();
   console.log($(this),index,$(evt).parent().siblings('tabcontent'))
+  $(evt).parent().siblings('tabcontent').eq(index).show().siblings('tabcontent').hidden();
+  
   
   {% comment %} for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
