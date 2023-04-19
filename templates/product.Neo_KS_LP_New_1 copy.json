@@ -1,0 +1,281 @@
+{
+  "sections": {
+    "h-neo_ks_lp_new_0_static": {
+      "type": "h-neo_ks_lp_new_0_static",
+      "settings": {
+      }
+    },
+    "h-product-template-buy-now": {
+      "type": "h-product-template-buy-now",
+      "settings": {
+        "text1": "",
+        "text2": "",
+        "p1": "",
+        "price": ""
+      }
+    },
+    "h-neo_ks_lp_new_0": {
+      "type": "h-neo_ks_lp_new_0",
+      "settings": {
+        "discount": "Exclusive Discount $50 OFF",
+        "discount_text_1": "First 8hrs Launch Day ONLY",
+        "discount_text_2": "(Only 200 limited spots)",
+        "discount_url": "https:\/\/www.kickstarter.com\/projects\/hozodesign\/neoruler-rule-the-scales"
+      }
+    },
+    "h-video-section": {
+      "type": "h-video-section",
+      "settings": {
+        "img1": "shopify:\/\/shop_images\/Read.png",
+        "url1": "https:\/\/www.youtube.com\/embed\/JQCqg8QoOZc"
+      }
+    },
+    "030fa4eb-67e1-4ba1-9fdf-76493aa50e5d": {
+      "type": "h-neoruler-parent-child",
+      "settings": {
+      }
+    },
+    "h-neo_ks_lp_new_1": {
+      "type": "h-neo_ks_lp_new_1",
+      "disabled": true,
+      "settings": {
+        "url": ""
+      }
+    },
+    "h-neo_ks_lp_new_2": {
+      "type": "h-neo_ks_lp_new_2",
+      "blocks": {
+        "63621cd3-f6f6-4fba-8474-9966980f2d7e": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/Read.png"
+          }
+        },
+        "9fdd0eec-d121-495f-ae93-d1e9883da643": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/Draft.png"
+          }
+        },
+        "eb783729-0c90-41db-9304-155b9b7ae024": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/Caliper.png"
+          }
+        },
+        "cf0ec8b3-dd0c-4223-8f17-26a7a39d64b1": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/Divide.png"
+          }
+        }
+      },
+      "block_order": [
+        "63621cd3-f6f6-4fba-8474-9966980f2d7e",
+        "9fdd0eec-d121-495f-ae93-d1e9883da643",
+        "eb783729-0c90-41db-9304-155b9b7ae024",
+        "cf0ec8b3-dd0c-4223-8f17-26a7a39d64b1"
+      ],
+      "settings": {
+      }
+    },
+    "831ec065-5cb9-4a0d-9333-d579ba7ac0be": {
+      "type": "h-video-section",
+      "settings": {
+        "url1": ""
+      }
+    },
+    "h-neo_ks_lp_new_3": {
+      "type": "h-neo_ks_lp_new_3",
+      "blocks": {
+        "3859224b-4cb5-41b5-8c4b-4d2a95dfabd9": {
+          "type": "slide",
+          "settings": {
+            "text_1": "Photo Mode",
+            "text_2": "Only one click away from 2D to 3D Display",
+            "slide_image": "shopify:\/\/shop_images\/section3-right-swiper-1_680591df-4393-4c00-a4ff-1af353451b7a.png"
+          }
+        },
+        "ea080b01-cac5-48ed-a9b3-5575642d713b": {
+          "type": "slide",
+          "settings": {
+            "text_1": "Drawing Mode",
+            "text_2": "Only one click away from 2D to 3D Display",
+            "slide_image": "shopify:\/\/shop_images\/section3-right-swiper-2_7e6a7bec-76a6-4072-81fd-5b562d029f9a.png"
+          }
+        },
+        "83c66806-bea4-4371-b851-d77e206eff24": {
+          "type": "slide",
+          "settings": {
+            "text_1": "List Mode",
+            "text_2": "Only one click away from 2D to 3D Display",
+            "slide_image": "shopify:\/\/shop_images\/section3-right-swiper-3_b87f4890-b6e0-4a22-8ea4-00512b644b8a.png"
+          }
+        },
+        "28cb67f7-707d-410f-9bb3-4592bf666bd1": {
+          "type": "slide",
+          "settings": {
+            "text_1": "Drawing Mode",
+            "text_2": "Only one click away from 2D to 3D Display",
+            "slide_image": "shopify:\/\/shop_images\/section3-right-swiper-4_a9aac635-c851-4dbd-bbf1-f5a71fb747cb.png"
+          }
+        }
+      },
+      "block_order": [
+        "3859224b-4cb5-41b5-8c4b-4d2a95dfabd9",
+        "ea080b01-cac5-48ed-a9b3-5575642d713b",
+        "83c66806-bea4-4371-b851-d77e206eff24",
+        "28cb67f7-707d-410f-9bb3-4592bf666bd1"
+      ],
+      "settings": {
+      }
+    },
+    "h-neo_ks_lp_new_4": {
+      "type": "h-neo_ks_lp_new_4",
+      "settings": {
+      }
+    },
+    "h-neo_ks_lp_new_5": {
+      "type": "h-neo_ks_lp_new_5",
+      "settings": {
+      }
+    },
+    "h-neo_ks_lp_new_6": {
+      "type": "h-neo_ks_lp_new_6",
+      "blocks": {
+        "e86946b7-bacd-475c-b437-0b1c75a0e458": {
+          "type": "slide",
+          "settings": {
+            "text_1": "Pointer Module",
+            "text_2": "Excel Measuring Details",
+            "slide_image": "shopify:\/\/shop_images\/Pointer.png"
+          }
+        },
+        "03b157ce-5dc8-4058-a27f-6404f88f13a6": {
+          "type": "slide",
+          "settings": {
+            "text_1": "Smartpen Module",
+            "text_2": "Empower Drawing Precision",
+            "slide_image": "shopify:\/\/shop_images\/Smartpen_Module.png"
+          }
+        },
+        "e4a8b3fd-ceeb-4ef8-897f-a8ce92f2c892": {
+          "type": "slide",
+          "settings": {
+            "text_1": "Magnifier Module",
+            "text_2": "Magnify Reading Accuracy",
+            "slide_image": "shopify:\/\/shop_images\/Magnifier_Module.png"
+          }
+        },
+        "22379995-6739-4882-98e8-3885383ee4fd": {
+          "type": "slide",
+          "settings": {
+            "text_1": "Caliper Module",
+            "text_2": "Enhance Object Measurement",
+            "slide_image": "shopify:\/\/shop_images\/Caliper_Module.png"
+          }
+        }
+      },
+      "block_order": [
+        "e86946b7-bacd-475c-b437-0b1c75a0e458",
+        "03b157ce-5dc8-4058-a27f-6404f88f13a6",
+        "e4a8b3fd-ceeb-4ef8-897f-a8ce92f2c892",
+        "22379995-6739-4882-98e8-3885383ee4fd"
+      ],
+      "settings": {
+      }
+    },
+    "h-neo_ks_lp_new_7": {
+      "type": "h-neo_ks_lp_new_7",
+      "settings": {
+        "discount_url": "https:\/\/www.kickstarter.com\/projects\/hozodesign\/neoruler-rule-the-scales"
+      }
+    },
+    "ce33b8da-58aa-4b3d-9e5c-76e7dccc475a": {
+      "type": "h-title-img",
+      "settings": {
+        "title1": "<h2>Compare With<span> Neo<\/span>\n<\/h2>",
+        "img1": "shopify:\/\/shop_images\/Frame_1400.png"
+      }
+    },
+    "alireviews-widget-544875": {
+      "type": "alireviews-widget-544875",
+      "settings": {
+      }
+    },
+    "h-video-review": {
+      "type": "h-video-review",
+      "blocks": {
+        "a2110de4-d7c0-45a7-b2e9-0a83e99b482c": {
+          "type": "link",
+          "settings": {
+            "video_link": "https:\/\/www.youtube.com\/embed\/oZEHJ3wTyaA",
+            "video_title": "NeoRuler - This will revolutionise our industry!",
+            "link_image": "shopify:\/\/shop_images\/maxresdefault_1.png"
+          }
+        },
+        "c35914d7-c3d6-4732-9a7b-926125747496": {
+          "type": "link",
+          "settings": {
+            "video_link": "https:\/\/www.youtube.com\/embed\/TF55XTfeC5o",
+            "video_title": "RIGHELLO SMART questo NEORULER di HOZO Design è PAZZESCO kickstarter",
+            "link_image": "shopify:\/\/shop_images\/maxresdefault_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "a2110de4-d7c0-45a7-b2e9-0a83e99b482c",
+        "c35914d7-c3d6-4732-9a7b-926125747496"
+      ],
+      "settings": {
+        "banner_title": "Video Reviews",
+        "banner_sub_title": "",
+        "banner_url": "",
+        "affiliate_id": ""
+      }
+    },
+    "072ab0c0-4616-480a-a410-c13564d9d6ff": {
+      "type": "h-neoruler-blog",
+      "blocks": {
+        "781c6ebe-2ab6-480d-b575-78ef0d5d542f": {
+          "type": "text",
+          "settings": {
+            "article": "journal\/xmas-giveaway-make-a-wish-to-hozo"
+          }
+        },
+        "5533a819-9b6d-4326-8c1d-c427c8ff5ae0": {
+          "type": "text",
+          "settings": {
+            "article": "journal\/neoruler-pre-launch-massive-giveaway-announcement"
+          }
+        }
+      },
+      "block_order": [
+        "781c6ebe-2ab6-480d-b575-78ef0d5d542f",
+        "5533a819-9b6d-4326-8c1d-c427c8ff5ae0"
+      ],
+      "settings": {
+        "title": ""
+      }
+    }
+  },
+  "order": [
+    "h-neo_ks_lp_new_0_static",
+    "h-product-template-buy-now",
+    "h-neo_ks_lp_new_0",
+    "h-video-section",
+    "030fa4eb-67e1-4ba1-9fdf-76493aa50e5d",
+    "h-neo_ks_lp_new_1",
+    "h-neo_ks_lp_new_2",
+    "831ec065-5cb9-4a0d-9333-d579ba7ac0be",
+    "h-neo_ks_lp_new_3",
+    "h-neo_ks_lp_new_4",
+    "h-neo_ks_lp_new_5",
+    "h-neo_ks_lp_new_6",
+    "h-neo_ks_lp_new_7",
+    "ce33b8da-58aa-4b3d-9e5c-76e7dccc475a",
+    "alireviews-widget-544875",
+    "h-video-review",
+    "072ab0c0-4616-480a-a410-c13564d9d6ff"
+  ]
+}
