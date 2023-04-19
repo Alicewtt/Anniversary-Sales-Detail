@@ -131,10 +131,10 @@
               </style>
               <h3 data-h="123">Top Pick Accessories</h3>
               <div class="tab">
-                <button class="tablinks active" onclick="openCity(event, 'h-first')">Creative Classic</button>
-                <button class="tablinks" onclick="openCity(event, 'h-last')">Architech Advance</button>
+                <button class="tablinks active" onclick="openCity(event, 'hfirst')">Creative Classic</button>
+                <button class="tablinks" onclick="openCity(event, 'hlast')">Architech Advance</button>
               </div>
-              <div id="first h-first" class="tabcontent h-first active" style="display:block">
+              <div id="first hfirst" class="tabcontent hfirst active" style="display:block">
                 <ul class="new-list">
                   {% for block in section.blocks %}
                     {% if block.type == 'first' %}
@@ -191,9 +191,9 @@
                   {% endfor %}
                 </ul>
               </div>
-              
 
-              <div id="last h-last" class="tabcontent h-first ">
+
+              <div id="last hlast" class="tabcontent hfirst ">
                 <ul class="new-list">
                   {% for block in section.blocks %}
                     {% if block.type == 'last' %}
