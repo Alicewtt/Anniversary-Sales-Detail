@@ -383,22 +383,7 @@
               <!-- 分页器 -->
               <div class="swiper-pagination"></div>
             </div>
-            <script type="text/javascript">
-              var mySwiper = new Swiper('.swiper', {
-                direction: 'horizontal',
-                loop: true,
-                pagination: {
-                  el: '.swiper-pagination',
-                },
-                navigation: {
-                  nextEl: '.swiper-button-next',
-                  prevEl: '.swiper-button-prev',
-                },
-                scrollbar: {
-                  el: '.swiper-srollbar',
-                },
-              });
-            </script>
+            
           </div>
           <div class="tt-r-box box-flex">
             <p class="tt-r-title">{{ block.settings.anniversary_product_title }}</p>
@@ -494,6 +479,23 @@
       dataType: 'json',
       success: function (data) {},
     });
+  });
+</script>
+
+<script type="text/javascript">
+  var mySwiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    scrollbar: {
+      el: '.swiper-srollbar',
+    },
   });
 </script>
 
