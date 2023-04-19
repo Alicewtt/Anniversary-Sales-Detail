@@ -32,6 +32,7 @@
     },
     "h-neo_ks_lp_new_1": {
       "type": "h-neo_ks_lp_new_1",
+      "disabled": true,
       "settings": {
         "url": ""
       }
