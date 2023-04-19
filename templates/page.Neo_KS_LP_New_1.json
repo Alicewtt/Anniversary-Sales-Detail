@@ -406,15 +406,15 @@
         "9217b2af-0778-471f-aa47-278e28173b90": {
           "type": "FAQ",
           "settings": {
-            "qustion": "",
-            "answer": ""
+            "qustion": "1",
+            "answer": "2"
           }
         },
         "42c0b0ee-1d92-4188-ae30-755e8a61a3f3": {
           "type": "FAQ",
           "settings": {
-            "qustion": "",
-            "answer": ""
+            "qustion": "1",
+            "answer": "2"
           }
         }
       },
