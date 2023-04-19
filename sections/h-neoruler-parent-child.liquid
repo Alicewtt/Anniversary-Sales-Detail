@@ -286,7 +286,7 @@
     clearInterval(timer);
     var index = $(this).index()
     $(this).addClass('active').siblings().removeClass('active');
-    $(".h-result-img").eq(index).show().siblings().hide();
+    $(".h-result-img").eq($(this).attr('data-slider')-1).show().siblings().hide();
   })
 
 
