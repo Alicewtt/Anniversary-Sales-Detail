@@ -51,10 +51,7 @@
 
 <script>
   var parentSwiper = new Swiper('.parent-swiper', {
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+    
     on: {
       slideChangeTransitionEnd: function () {
         if (this.activeIndex === this.slides.length - 1) {
