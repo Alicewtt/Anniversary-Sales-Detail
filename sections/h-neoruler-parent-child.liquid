@@ -308,12 +308,12 @@
   }
   function myTimer() {
     var count = $('.h-result-img').length;
-
-    if ($('.h-result-img').css('display') == 'none') {
-      // do something
+    var i = 0;
+    if ($('.h-result-img.active')&&$('.h-result-img.active').css('display') != 'none') {
+      i = $('.h-result-img.active').index()
     }
 
-    var i = ||0;
+    
 
     var timer = setInterval(function () {
       var app = $('.h-result-img').eq(i);
