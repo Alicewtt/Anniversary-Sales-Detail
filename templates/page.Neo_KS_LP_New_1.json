@@ -56,6 +56,56 @@
         "price": "$129"
       }
     },
+    "e59991df-2e33-4de0-99c9-d947d47464de": {
+      "type": "h-product-template-buy-now-1",
+      "blocks": {
+        "ac2a20e9-4151-4ff2-abbf-97091f7b956d": {
+          "type": "first",
+          "settings": {
+            "pr1": "reading-kit"
+          }
+        },
+        "dd7e4cc2-f7f3-4a12-aad0-495fa306ce4e": {
+          "type": "first",
+          "settings": {
+            "pr1": "caliper-kit"
+          }
+        },
+        "bb159120-6b76-41b3-8d4f-6a46b3901486": {
+          "type": "first",
+          "settings": {
+            "pr1": "drafting-kit"
+          }
+        },
+        "29dc75c8-74aa-4476-a70d-59c00f7d3204": {
+          "type": "last",
+          "settings": {
+            "pr1": "neoprotection-folio"
+          }
+        },
+        "139deb4d-99cb-49cb-8723-211b182f536e": {
+          "type": "last",
+          "settings": {
+            "pr1": "neocollection-case"
+          }
+        }
+      },
+      "block_order": [
+        "ac2a20e9-4151-4ff2-abbf-97091f7b956d",
+        "dd7e4cc2-f7f3-4a12-aad0-495fa306ce4e",
+        "bb159120-6b76-41b3-8d4f-6a46b3901486",
+        "29dc75c8-74aa-4476-a70d-59c00f7d3204",
+        "139deb4d-99cb-49cb-8723-211b182f536e"
+      ],
+      "settings": {
+        "img1": "shopify:\/\/shop_images\/116.png",
+        "img3": "shopify:\/\/shop_images\/116.png",
+        "text1": "",
+        "text2": "",
+        "p1": "",
+        "price": ""
+      }
+    },
     "h-neo_ks_lp_new_0": {
       "type": "h-neo_ks_lp_new_0",
       "settings": {
@@ -63,15 +113,6 @@
         "discount_text_1": "First 8hrs Launch Day ONLY",
         "discount_text_2": "(Only 200 limited spots)",
         "discount_url": "https:\/\/www.kickstarter.com\/projects\/hozodesign\/neoruler-rule-the-scales"
-      }
-    },
-    "b02f5f48-ec0c-4197-9993-1a7ea9fb6ce6": {
-      "type": "h-product-template-buy-now-1",
-      "settings": {
-        "text1": "",
-        "text2": "",
-        "p1": "",
-        "price": ""
       }
     },
     "h-video-section": {
@@ -314,8 +355,8 @@
   "order": [
     "h-neo_ks_lp_new_0_static",
     "h-product-template-buy-now",
+    "e59991df-2e33-4de0-99c9-d947d47464de",
     "h-neo_ks_lp_new_0",
-    "b02f5f48-ec0c-4197-9993-1a7ea9fb6ce6",
     "h-video-section",
     "030fa4eb-67e1-4ba1-9fdf-76493aa50e5d",
     "h-neo_ks_lp_new_1",
