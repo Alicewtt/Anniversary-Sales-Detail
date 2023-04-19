@@ -9,6 +9,11 @@
     align-items: flex-end;
     justify-content: flex-end;
   }
+
+  .h-mobile__new-design-g{
+    display:none !important;
+  }
+
 </style>
 
 <section class="mezor__product-imgs">
@@ -16,7 +21,7 @@
     <div class="row align-items-center h-123">
       <div class="col-md-6">
         <div class="mezor__product-singleimg">
-          <div class="mezor__product-titlecnts mobile__new-design-g" style="display:none;">
+          <div class="mezor__product-titlecnts mobile__new-design-g h-mobile__new-design-g" style="display:none;">
             <img
               class="lazyload"
               data-src="{{ section.settings.img3 | img_url : 'master' }}"
