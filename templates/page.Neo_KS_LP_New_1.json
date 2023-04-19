@@ -121,6 +121,46 @@
     },
     "h-neo_ks_lp_new_6": {
       "type": "h-neo_ks_lp_new_6",
+      "blocks": {
+        "e86946b7-bacd-475c-b437-0b1c75a0e458": {
+          "type": "slide",
+          "settings": {
+            "text_1": "Pointer Module",
+            "text_2": "Excel Measuring Details",
+            "slide_image": "shopify:\/\/shop_images\/Pointer.png"
+          }
+        },
+        "03b157ce-5dc8-4058-a27f-6404f88f13a6": {
+          "type": "slide",
+          "settings": {
+            "text_1": "Smartpen Module",
+            "text_2": "Empower Drawing Precision",
+            "slide_image": "shopify:\/\/shop_images\/Smartpen_Module.png"
+          }
+        },
+        "e4a8b3fd-ceeb-4ef8-897f-a8ce92f2c892": {
+          "type": "slide",
+          "settings": {
+            "text_1": "Magnifier Module",
+            "text_2": "Magnify Reading Accuracy",
+            "slide_image": "shopify:\/\/shop_images\/Magnifier_Module.png"
+          }
+        },
+        "22379995-6739-4882-98e8-3885383ee4fd": {
+          "type": "slide",
+          "settings": {
+            "text_1": "Caliper Module",
+            "text_2": "Enhance Object Measurement",
+            "slide_image": "shopify:\/\/shop_images\/Caliper_Module.png"
+          }
+        }
+      },
+      "block_order": [
+        "e86946b7-bacd-475c-b437-0b1c75a0e458",
+        "03b157ce-5dc8-4058-a27f-6404f88f13a6",
+        "e4a8b3fd-ceeb-4ef8-897f-a8ce92f2c892",
+        "22379995-6739-4882-98e8-3885383ee4fd"
+      ],
       "settings": {
       }
     },
