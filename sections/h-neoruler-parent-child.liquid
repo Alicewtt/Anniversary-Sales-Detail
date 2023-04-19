@@ -1,12 +1,10 @@
 <style>
-  
-
   .h-neoruler-parent-child {
     background: #000;
-    position:relative;
+    position: relative;
   }
 
-  .h-neoruler-parent-child-inner{
+  .h-neoruler-parent-child-inner {
     padding: 50px 20px 300px;
     max-width: 1200px;
     margin: 0 auto;
@@ -20,7 +18,7 @@
     line-height: 79px;
     text-align: center;
     color: #fff;
-    margin-bottom:23px;
+    margin-bottom: 23px;
   }
 
   .h-neoruler-parent-child h2 span {
@@ -32,267 +30,342 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto 31px;
-    background: #1E2024;
+    background: #1e2024;
     border-radius: 78.125px;
   }
-  .h-inner-wrap .fist-box .item{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+  .h-inner-wrap .fist-box .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 203.12px;
     height: 93.75px;
-    border-radius:46px;
+    border-radius: 46px;
   }
-  .h-inner-wrap .fist-box .item span{
+  .h-inner-wrap .fist-box .item span {
     font-family: 'Alibaba PuHuiTi 2.0';
     font-style: normal;
     font-weight: 700;
     font-size: 15.625px;
     line-height: 22px;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
-.h-inner-wrap .middle-text{
-  font-family: 'Alibaba PuHuiTi 2.0';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18.75px;
-  line-height: 23px;
-  text-align: center;
-  margin-bottom:46px;
-  color:#fff;
-}
-  .h-inner-wrap .fist-box .active{
-    border:2px solid #56B1FD;
+  .h-inner-wrap .middle-text {
+    font-family: 'Alibaba PuHuiTi 2.0';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18.75px;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 46px;
+    color: #fff;
   }
-  .h-inner-wrap .child-item .item.active{
-    border:2px solid #56B1FD;
-    
+  .h-inner-wrap .fist-box .active {
+    border: 2px solid #56b1fd;
+  }
+  .h-inner-wrap .child-item .item.active {
+    border: 2px solid #56b1fd;
   }
 
   .h-inner-wrap .child-item {
     max-width: 650px;
-   
+
     margin: 0 auto 39px;
   }
 
-  .h-inner-wrap .child-item .img-item{
-    width:100%;
+  .h-inner-wrap .child-item .img-item {
+    width: 100%;
   }
-  .h-inner-wrap .child-item img{
-    display:block;
-    width:187px;
-    height:auto;
+  .h-inner-wrap .child-item img {
+    display: block;
+    width: 187px;
+    height: auto;
   }
 
-  .h-inner-wrap .child-item .item-parent{
-    
-    
-    display:none;
+  .h-inner-wrap .child-item .item-parent {
+    display: none;
     justify-content: space-between;
   }
 
-  .h-inner-wrap .child-item .item{
-    border-radius:8px;
-    border:2px solid #000;
+  .h-inner-wrap .child-item .item {
+    border-radius: 8px;
+    border: 2px solid #000;
   }
 
-
-  .h-inner-wrap .result-box{
-    position:absolute;
-    left:0;
-  
+  .h-inner-wrap .result-box {
+    position: absolute;
+    left: 0;
   }
 
-  .h-inner-wrap .result-box img{
-    display:none;
+  .h-inner-wrap .result-box img {
+    display: none;
   }
 
-@media (max-width:768px){
+  @media (max-width: 768px) {
+    .h-neoruler-parent-child-inner {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 130px;
+    }
 
-  .h-neoruler-parent-child-inner{
-    padding-left:15px;
-    padding-right:15px;
-    padding-bottom:130px;
+    .h-neoruler-parent-child h2 {
+      font-size: 32px;
+      line-height: 45px;
+    }
+
+    .h-inner-wrap .fist-box .item img {
+      width: 38.9px !important;
+    }
+
+    .h-inner-wrap .fist-box .item span {
+      font-size: 12px;
+    }
+
+    .h-inner-wrap .fist-box {
+      width: calc(100% - 30px);
+    }
+
+    .h-inner-wrap .fist-box .item {
+      width: 131px;
+      height: 70px;
+    }
+
+    .h-inner-wrap .middle-text {
+      font-size: 16px;
+    }
+
+    .h-inner-wrap .child-item img {
+      width: 121px;
+      height: auto;
+    }
   }
-
-  .h-neoruler-parent-child h2 {
-    font-size:32px;
-    line-height:45px;
-
-
-}
-
-.h-inner-wrap .fist-box .item img{
-  width:38.9px !important;
-
-}
-
-.h-inner-wrap .fist-box .item span{
-  font-size:12px;
-}
-
-.h-inner-wrap .fist-box{
-  width:calc( 100% - 30px );
-}
-
-.h-inner-wrap .fist-box .item{
-  width:131px;
-  height:70px;
-}
-
-.h-inner-wrap .middle-text{
-
-  font-size:16px;
-}
-
-.h-inner-wrap .child-item img{
-  width:121px;
-  height:auto;
-}
-
-}
-  
-
 </style>
 <section class="h-neoruler-parent-child">
-
   <div class="h-neoruler-parent-child-inner">
     <h2>Epic <span>Neo Functions</span></h2>
 
     <div></div>
-  
+
     <div class="h-wrap">
       <div class="h-inner-wrap">
         <div class="fist-box">
           <div class="item">
-            <img class="pc-img"  style=" width:60px;height:auto;" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/9.png"  >
+            <img
+              class="pc-img"
+              style=" width:60px;height:auto;"
+              src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/9.png"
+            >
             <span>Unit Conversion</span>
           </div>
           <div class="item">
-            <img class="pc-img" style=" width:60px;height:auto;" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/10.png"  >
+            <img
+              class="pc-img"
+              style=" width:60px;height:auto;"
+              src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/10.png"
+            >
             <span>Smart Scale</span>
           </div>
           <div class="item">
-            <img class="pc-img"  style=" width:60px;height:auto;" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/11.png"  >
+            <img
+              class="pc-img"
+              style=" width:60px;height:auto;"
+              src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/11.png"
+            >
             <span>Space Divider</span>
           </div>
-          
-
-          
-          
         </div>
-        
+
         <div class="middle-text">
-          <span style="display:block">Switch in between Metric and Imperial in one swipe without multiple calculation.</span>
+          <span style="display:block"
+            >Switch in between Metric and Imperial in one swipe without multiple calculation.</span
+          >
           <span style="display:none">The customized scale allows you to define your own scale when out-of-plans.</span>
           <span style="display:none">Equal divide space quickly in any length without any calculation.</span>
-          
         </div>
         <div class="child-item">
-
           <div class="item-parent" style="display:flex">
-            <div class="item" >
-              <img class="pc-img" data-slider="1"  src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_1_1.png"  >
+            <div class="item">
+              <img
+                class="pc-img"
+                data-slider="1"
+                src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_1_1.png"
+              >
             </div>
             <div class="item">
-              <img class="pc-img" data-slider="2" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_1_2.png"  >
+              <img
+                class="pc-img"
+                data-slider="2"
+                src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_1_2.png"
+              >
             </div>
             <div class="item">
-              <img class="pc-img" data-slider="3" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_1_3.png"  >
+              <img
+                class="pc-img"
+                data-slider="3"
+                src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_1_3.png"
+              >
             </div>
           </div>
 
           <div class="item-parent">
             <div class="item">
-              <img class="pc-img" data-slider="4" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_2_1.png"  >
+              <img
+                class="pc-img"
+                data-slider="4"
+                src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_2_1.png"
+              >
             </div>
             <div class="item">
-              <img class="pc-img" data-slider="5" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_2_2.png"  >
+              <img
+                class="pc-img"
+                data-slider="5"
+                src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_2_2.png"
+              >
             </div>
             <div class="item">
-              <img class="pc-img" data-slider="6" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_2_3.png"  >
+              <img
+                class="pc-img"
+                data-slider="6"
+                src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_2_3.png"
+              >
             </div>
           </div>
 
           <div class="item-parent">
             <div class="item">
-              <img class="pc-img" data-slider="7" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_3_1.png"  >
+              <img
+                class="pc-img"
+                data-slider="7"
+                src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_3_1.png"
+              >
             </div>
             <div class="item">
-              <img class="pc-img" data-slider="8" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_3_2.png"  >
+              <img
+                class="pc-img"
+                data-slider="8"
+                src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_3_2.png"
+              >
             </div>
-            
           </div>
-          
         </div>
         <div class="result-box">
-          <img class="h-result-img" data-slider="1,1" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_1.png"  >
-          <img class="h-result-img" data-slider="1,2" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_2.png"  >
-          <img class="h-result-img" data-slider="1,3" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_3.png"  >
-          <img class="h-result-img" data-slider="2,1" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_4.png"  >
-          <img class="h-result-img" data-slider="2,2" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_5.png"  >
-          <img class="h-result-img" data-slider="2,3" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_6.png"  >
-          <img class="h-result-img" data-slider="3,1" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_7.png"  >
-          <img class="h-result-img" data-slider="3,2" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_8.png"  >
-          
+          <img
+            class="h-result-img"
+            data-slider="1,1"
+            src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_1.png"
+          >
+          <img
+            class="h-result-img"
+            data-slider="1,2"
+            src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_2.png"
+          >
+          <img
+            class="h-result-img"
+            data-slider="1,3"
+            src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_3.png"
+          >
+          <img
+            class="h-result-img"
+            data-slider="2,1"
+            src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_4.png"
+          >
+          <img
+            class="h-result-img"
+            data-slider="2,2"
+            src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_5.png"
+          >
+          <img
+            class="h-result-img"
+            data-slider="2,3"
+            src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_6.png"
+          >
+          <img
+            class="h-result-img"
+            data-slider="3,1"
+            src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_7.png"
+          >
+          <img
+            class="h-result-img"
+            data-slider="3,2"
+            src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/neoruler_8.png"
+          >
         </div>
       </div>
-  
-  
-  </div>
-
- 
-    
+    </div>
   </div>
 </section>
 
 <script>
-  var count = $(".h-result-img").length;
-  var i = 0;
-  var timer = setInterval(function(){
+  var myVar;
 
-    var app = $(".h-result-img").eq(i)
+  function myFunction() {
+    if (myVar) {
+      clearTimeout(myVar);
+    }
+    myVar = setTimeout(function () {myTimer();}, 5000);
+  }
+  function myTimer() {
+    var count = $('.h-result-img').length;
+    var i = 0;
 
-    var btn_index = $(app).attr('data-slider').split(',')
+    var timer = setInterval(function () {
+      var app = $('.h-result-img').eq(i);
 
-      $(".h-result-img").eq(i).show().siblings().hide();
-      
-      $(".fist-box .item").eq(btn_index[0]-1).addClass('active').siblings().removeClass('active')
-      $(".child-item .item-parent").eq(btn_index[0]-1).css('display','flex').siblings().hide();
-      $(".child-item .item-parent").eq(btn_index[0]-1).find('.item').eq(btn_index[1]-1).addClass('active').siblings().removeClass('active')
+      var btn_index = $(app).attr('data-slider').split(',');
 
-      $(".middle-text span").eq(btn_index[0]-1).show().siblings().hide();
-      
+      $('.h-result-img').eq(i).show().siblings().hide();
+
+      $('.fist-box .item')
+        .eq(btn_index[0] - 1)
+        .addClass('active')
+        .siblings()
+        .removeClass('active');
+      $('.child-item .item-parent')
+        .eq(btn_index[0] - 1)
+        .css('display', 'flex')
+        .siblings()
+        .hide();
+      $('.child-item .item-parent')
+        .eq(btn_index[0] - 1)
+        .find('.item')
+        .eq(btn_index[1] - 1)
+        .addClass('active')
+        .siblings()
+        .removeClass('active');
+
+      $('.middle-text span')
+        .eq(btn_index[0] - 1)
+        .show()
+        .siblings()
+        .hide();
 
       i++;
-      if(i == count){
-          i = 0;
+      if (i == count) {
+        i = 0;
       }
-  },2000);
+    }, 2000);
+  }
 
-  $('.fist-box .item').click(function(){
+  $('.fist-box .item').click(function () {
     clearInterval(timer);
-    var index = $(this).index()
+    var index = $(this).index();
     $(this).addClass('active').siblings().removeClass('active');
-    $(".child-item .item-parent").eq(index).css('display','flex').siblings().hide();
-    $(".middle-text span").eq(index).show().siblings().hide();
-  
-  })
+    $('.child-item .item-parent').eq(index).css('display', 'flex').siblings().hide();
+    $('.middle-text span').eq(index).show().siblings().hide();
+  });
 
-  $('.child-item .item').click(function(){
+  $('.child-item .item').click(function () {
     clearInterval(timer);
 
-    var i =$(this).children('img').attr('data-slider')-1
-    var index = $(this).index()
-    console.log($(this).attr('data-slider'))
+    var i = $(this).children('img').attr('data-slider') - 1;
+    var index = $(this).index();
+    console.log($(this).attr('data-slider'));
     $(this).addClass('active').siblings().removeClass('active');
-    $(".h-result-img").eq(i).show().siblings().hide();
-  })
-
-
+    $('.h-result-img').eq(i).show().siblings().hide();
+    myFunction();
+  });
 </script>
 
 {% schema %}
