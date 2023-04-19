@@ -310,7 +310,17 @@
     </div>
   </div>
 </section>
+<script>
+  function openCity_1(evt) {
 
+    tabcontent = document.getElementsByClassName("tabcontent");
+    var index= $(evt).index()
+    $(evt).addClass('active').siblings().removeClass('active')
+    console.log($(this),index,$(evt).parent().siblings('.tabcontent').eq(index))
+    $(evt).parent().siblings('.tabcontent').eq(index).show().siblings('.tabcontent').hide();
+    
+  }
+</script>
 {% schema %}
 {
   "name": "Meazor",
