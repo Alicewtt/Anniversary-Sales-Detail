@@ -4,7 +4,7 @@
         <h2>{{ section.settings.title }}</h2>
       </div>
       <div class="hozos-journal-inner mb-5 h-345">
-          <div class="owl-carousel owl-theme hozos-journal-blog-slider arrowEnable">
+          <div class="owl-carousel owl-theme h-hozos-journal-blog-slider arrowEnable">
   
              {% for block in section.blocks %}
                 {% assign article = articles[block.settings.article] %}
@@ -34,6 +34,28 @@
       </div>
   </div>
 </section>
+
+<script>
+  $('.h-hozos-journal-blog-slider').owlCarousel({
+    stagePadding: 200,
+      loop:true,
+      margin:30,
+      nav:false,
+      items:1,
+      lazyLoad: true,
+      nav:true,
+      responsive: {
+            0: {
+                stagePadding: 0
+            },
+            1000: {
+                stagePadding: 200
+            }
+        }
+    })
+    
+</script>
+
 {% schema %}
   {
     "name": "Support page post",
