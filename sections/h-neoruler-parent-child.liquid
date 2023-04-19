@@ -283,9 +283,10 @@
   })
 
   $('.child-item .item').click(function(){
+    clearInterval(timer);
+
     console.log($(this))
 
-    clearInterval(timer);
     var index = $(this).index()
     console.log($(this).attr('data-slider'))
     $(this).addClass('active').siblings().removeClass('active');
