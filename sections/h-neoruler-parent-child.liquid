@@ -274,9 +274,16 @@
   },2000);
 
   $('.fist-box .item').click(function(){
-    
     clearInterval(timer);
+    var index = $(this).index()
+    $(this).addClass('active').siblings().removeClass('active');
+    $(".child-item .item-parent").eq(index-1).css('display','flex').siblings().hide();
 
+  
+  })
+
+  $('.child-item .item').click(function(){
+    clearInterval(timer);
 
   
   })
