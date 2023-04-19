@@ -281,10 +281,10 @@ function openCity_1(evt,cityName) {
  
   tabcontent = document.getElementsByClassName("tabcontent");
   var index= $(evt).index()
-  console.log($(this),index)
   $(evt).addClass('active').siblings().removeClass('active')
-  {% comment %} $(evt).parent().siblings('tabcontent').eq(index).show().siblings('tabcontent').hidden(); {% endcomment %}
-
+  $(evt).parent().siblings('tabcontent').eq(index).show().siblings('tabcontent').hidden();
+  console.log($(this),index,$(evt).parent().siblings('tabcontent'))
+  
   {% comment %} for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
