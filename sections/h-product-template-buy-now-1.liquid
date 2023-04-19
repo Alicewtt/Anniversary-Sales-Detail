@@ -276,10 +276,11 @@
 
   
 function openCity_1(evt, cityName) {
-  var i, tabcontent, tablinks;
-  console.log($)
+
+ 
   tabcontent = document.getElementsByClassName("tabcontent");
   var index= $(this).index()
+  console.log($(this),index)
   $(this).addClass('active').siblings().remove('active')
   $(this).parent().siblings('tabcontent').eq(index).show().siblings('tabcontent').hidden();
 
