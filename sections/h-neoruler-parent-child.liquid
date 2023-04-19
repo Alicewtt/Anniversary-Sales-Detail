@@ -285,7 +285,7 @@
   $('.child-item .item').click(function(){
     clearInterval(timer);
     var index = $(this).index()
-    var i =($(this).attr('data-slider'))-1
+    var i =($(this).attr('data-slider'))
     console.log(i)
     $(this).addClass('active').siblings().removeClass('active');
     $(".h-result-img").eq(i).show().siblings().hide();
