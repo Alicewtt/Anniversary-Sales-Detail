@@ -278,7 +278,7 @@
     var index = $(this).index()
     $(this).addClass('active').siblings().removeClass('active');
     $(".child-item .item-parent").eq(index).css('display','flex').siblings().hide();
-
+    $(".middle-text span").eq(index).show().siblings().hide();
   
   })
 
@@ -286,7 +286,7 @@
     clearInterval(timer);
     var index = $(this).index()
     $(this).addClass('active').siblings().removeClass('active');
-  
+    
   })
 
 
