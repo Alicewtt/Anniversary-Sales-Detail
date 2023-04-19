@@ -30,8 +30,14 @@
         "url1": "https:\/\/www.youtube.com\/embed\/JQCqg8QoOZc"
       }
     },
+    "030fa4eb-67e1-4ba1-9fdf-76493aa50e5d": {
+      "type": "h-neoruler-parent-child",
+      "settings": {
+      }
+    },
     "h-neo_ks_lp_new_1": {
       "type": "h-neo_ks_lp_new_1",
+      "disabled": true,
       "settings": {
         "url": ""
       }
@@ -203,7 +209,7 @@
         "a2110de4-d7c0-45a7-b2e9-0a83e99b482c": {
           "type": "link",
           "settings": {
-            "video_link": "https:\/\/youtu.be\/oZEHJ3wTyaA",
+            "video_link": "https:\/\/www.youtube.com\/embed\/oZEHJ3wTyaA",
             "video_title": "NeoRuler - This will revolutionise our industry!",
             "link_image": "shopify:\/\/shop_images\/maxresdefault_1.png"
           }
@@ -211,7 +217,7 @@
         "c35914d7-c3d6-4732-9a7b-926125747496": {
           "type": "link",
           "settings": {
-            "video_link": "https:\/\/youtu.be\/TF55XTfeC5o",
+            "video_link": "https:\/\/www.youtube.com\/embed\/TF55XTfeC5o",
             "video_title": "RIGHELLO SMART questo NEORULER di HOZO Design è PAZZESCO kickstarter",
             "link_image": "shopify:\/\/shop_images\/maxresdefault_2.png"
           }
@@ -227,6 +233,30 @@
         "banner_url": "",
         "affiliate_id": ""
       }
+    },
+    "072ab0c0-4616-480a-a410-c13564d9d6ff": {
+      "type": "h-neoruler-blog",
+      "blocks": {
+        "781c6ebe-2ab6-480d-b575-78ef0d5d542f": {
+          "type": "text",
+          "settings": {
+            "article": "journal\/xmas-giveaway-make-a-wish-to-hozo"
+          }
+        },
+        "5533a819-9b6d-4326-8c1d-c427c8ff5ae0": {
+          "type": "text",
+          "settings": {
+            "article": "journal\/neoruler-pre-launch-massive-giveaway-announcement"
+          }
+        }
+      },
+      "block_order": [
+        "781c6ebe-2ab6-480d-b575-78ef0d5d542f",
+        "5533a819-9b6d-4326-8c1d-c427c8ff5ae0"
+      ],
+      "settings": {
+        "title": ""
+      }
     }
   },
   "order": [
@@ -234,6 +264,7 @@
     "h-product-template-buy-now",
     "h-neo_ks_lp_new_0",
     "h-video-section",
+    "030fa4eb-67e1-4ba1-9fdf-76493aa50e5d",
     "h-neo_ks_lp_new_1",
     "h-neo_ks_lp_new_2",
     "831ec065-5cb9-4a0d-9333-d579ba7ac0be",
@@ -244,6 +275,7 @@
     "h-neo_ks_lp_new_7",
     "ce33b8da-58aa-4b3d-9e5c-76e7dccc475a",
     "alireviews-widget-544875",
-    "h-video-review"
+    "h-video-review",
+    "072ab0c0-4616-480a-a410-c13564d9d6ff"
   ]
 }
