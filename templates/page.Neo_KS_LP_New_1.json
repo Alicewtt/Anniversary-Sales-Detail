@@ -7,6 +7,31 @@
     },
     "h-product-template-buy-now": {
       "type": "h-product-template-buy-now",
+      "blocks": {
+        "0c0fea24-58ce-415c-9492-23ee587d0f76": {
+          "type": "first",
+          "settings": {
+            "pr1": "reading-kit"
+          }
+        },
+        "e9a2aaa1-72e0-46d9-b109-8eb94f90e6d8": {
+          "type": "first",
+          "settings": {
+            "pr1": "caliper-kit"
+          }
+        },
+        "77108b6d-95cc-4859-a5c8-8d831419d440": {
+          "type": "first",
+          "settings": {
+            "pr1": "drafting-kit"
+          }
+        }
+      },
+      "block_order": [
+        "0c0fea24-58ce-415c-9492-23ee587d0f76",
+        "e9a2aaa1-72e0-46d9-b109-8eb94f90e6d8",
+        "77108b6d-95cc-4859-a5c8-8d831419d440"
+      ],
       "settings": {
         "text1": "",
         "text2": "",
