@@ -1186,7 +1186,7 @@ function openCity(evt, cityName) {
 if (document.getElementById(cityName) == null) { 
   console.log(evt,cityName)
 
-  document.getElementsByClassName(cityName).style.display = "block";
+  $('.'+cityName).css('display','block');
 
 }
   document.getElementById(cityName).style.display = "block";
