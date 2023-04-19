@@ -22,6 +22,8 @@
                       <a href="#{{ collection.title | handleize  }}">
                         {% if collection.title == 'All products' %}
                             All
+                            {% elsif collection.title == 'neoruler' %}
+                            NEORULER
                         {% elsif collection.title == 'MEAZOR 3D Accessories' %}
                           MEAZOR 3D
                         {% elsif collection.title == 'meazor-accessories' %}
