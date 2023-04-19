@@ -783,10 +783,8 @@ $('.premiummajoq__3dclick').on('click', function(){
     $('.majoq__3dclick').removeClass('mezor__activepack');
      $('.special-variant-specification').removeClass('activevari');
     $('.premiummajoq__3dclick').removeClass('mezor__activepack');
-    
       var varNo =$(this).attr("number");	
   $('.QWButton').attr('data-variable', varNo);
-  
       if(varNo == 1){	
           $('.mezor__product-3dpremium').show();	
           $('.mezor__product-3dmezor').hide();	
@@ -794,7 +792,6 @@ $('.premiummajoq__3dclick').on('click', function(){
           $('.mezor__product-3dpremium').hide();	
           $('.mezor__product-3dmezor').show();	
       }
-  
     $(this).addClass('mezor__activepack');
     $(this).parents(".special-variant-specification").addClass('activevari');
     // $('.mezor__product-3dmezor video').get(0).play();
@@ -802,7 +799,6 @@ $('.premiummajoq__3dclick').on('click', function(){
     // $('.mazor--video').hide();
    $('.newmz').show();
   $('.rollovano').hide();
-  
 })
 
 $('body').find('.mezor__product-pluginout ul select#meazor-3d-new + li + li').addClass('majoq__3dclick').removeClass('premiummajoq__3dclick'); 
