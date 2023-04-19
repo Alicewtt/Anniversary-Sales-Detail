@@ -43,6 +43,12 @@
     margin: 0 auto;
   }
 
+
+  .h-inner-wrap .fist-box .active{
+    border:2px solid #fff;
+  }
+
+
   .h-inner-wrap .child-item {
     width: 650px;
     display: flex;
@@ -106,9 +112,11 @@
 
     var app = $(".h-result-img").eq(i)
 
+    var btn_index = $(app).attr('data-slider').split(',')
+
       $(".h-result-img").eq(i).show().siblings().hide();
-      $(app).attr('data-slider')
-      console.log($(app).attr('data-slider').split(','))
+      
+      $(".fist-box img").eq(btn_index[0]-1).addClass('active').siblings().removeClass('active')
       i++;
       if(i == count){
           i = 0;
