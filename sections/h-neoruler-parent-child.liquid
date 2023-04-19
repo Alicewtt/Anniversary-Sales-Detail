@@ -15,36 +15,20 @@
     width: 100%;
     height: auto;
   }
+
+
+  .h-neoruler-parent-child{
+    background:#000;
+  }
+
+
 </style>
+<section class="h-neoruler-parent-child">
 
-<div class="swiper-container outer-swiper-container">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      aa
-      <div class="swiper-container inner-swiper-container">
-        <div class="swiper-wrapper">
-         
-          <div class="swiper-slide">11</div>
-          <div class="swiper-slide">22</div>
-          <div class="swiper-slide">33</div>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      bb
-      <div class="swiper-container inner-swiper-container">
-        <div class="swiper-wrapper">
-         
-          <div class="swiper-slide">111</div>
-          <div class="swiper-slide">222</div>
-          <div class="swiper-slide">333</div>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-slide">cc</div>
-  </div>
-</div>
+  <h2> Epic <span>Neo Functions</span></h2>
 
+
+</section>
 
 
 <script>
@@ -67,7 +51,7 @@
     var innerSwiper = new Swiper(innerSwiperContainers[i], {
       // 内部轮播的配置
       autoplay: {
-        delay: 3000,
+        delay: 2000,
         disableOnInteraction: false,
       },
       nested: true,
