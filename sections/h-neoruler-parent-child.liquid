@@ -1,0 +1,74 @@
+<style>
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
+</style>
+
+<div class="swiper-container parent-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="swiper-container child-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://picsum.photos/id/1015/500/300"></div>
+          <div class="swiper-slide"><img src="https://picsum.photos/id/1016/500/300"></div>
+          <div class="swiper-slide"><img src="https://picsum.photos/id/1018/500/300"></div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide"><img src="https://picsum.photos/id/1020/500/300"></div>
+    <div class="swiper-slide"><img src="https://picsum.photos/id/1021/500/300"></div>
+  </div>
+</div>
+
+
+
+<script>
+  var parentSwiper = new Swiper('.parent-swiper', {
+    direction: 'horizontal',
+    on: {
+      slideChangeTransitionEnd: function () {
+        if (this.activeIndex === this.slides.length - 1) {
+          childSwiper.slideNext();
+        }
+      }
+    }
+  });
+
+  var childSwiper = new Swiper('.child-swiper', {
+    direction: 'horizontal',
+    on: {
+      slideChangeTransitionEnd: function () {
+        if (this.activeIndex === this.slides.length - 1) {
+          parentSwiper.slideNext();
+        }
+      }
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "h-neoruler-parent-child",
+  "settings": [],
+  "presets": [
+    {
+      "name": "h-neoruler-parent-child",
+      "category": "Custom Content"
+    }
+  ]
+  }
+
+{% endschema %}
