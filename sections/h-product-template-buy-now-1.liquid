@@ -282,7 +282,7 @@ function openCity_1(evt,cityName) {
   tabcontent = document.getElementsByClassName("tabcontent");
   var index= $(evt).index()
   $(evt).addClass('active').siblings().removeClass('active')
-  console.log($(this),index,$(evt).parent().siblings('.tabcontent'))
+  console.log($(this),index,$(evt).parent().siblings('.tabcontent').eq(index))
   $(evt).parent().siblings('.tabcontent').eq(index).show().siblings('.tabcontent').hidden();
   
   
