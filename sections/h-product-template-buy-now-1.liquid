@@ -136,8 +136,8 @@
               <h3 data-h="123">Modular Design for Every Possibility</h3>
 
               <div class="tab">
-                <button class="tablinks active" onclick="openCity_1(event, 'h-first')">NeoFunction</button>
-                <button class="tablinks" onclick="openCity_1(event, 'h-last')">NeoLook</button>
+                <button class="tablinks active" onclick="openCity_1(this, 'h-first')">NeoFunction</button>
+                <button class="tablinks" onclick="openCity_1(this, 'h-last')">NeoLook</button>
               </div>
               <div id="first" class="tabcontent h-first active" style="display:block">
                 <ul class="new-list">
@@ -280,10 +280,10 @@ function openCity_1(evt,cityName) {
 
  
   tabcontent = document.getElementsByClassName("tabcontent");
-  var index= $(this).index()
+  var index= $(evt).index()
   console.log($(this),index)
-  $(this).addClass('active').siblings().remove('active')
-  $(this).parent().siblings('tabcontent').eq(index).show().siblings('tabcontent').hidden();
+  $(evt).addClass('active').siblings().remove('active')
+  $(evt).parent().siblings('tabcontent').eq(index).show().siblings('tabcontent').hidden();
 
   {% comment %} for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
