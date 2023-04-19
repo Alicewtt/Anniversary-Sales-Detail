@@ -200,6 +200,10 @@
     "video-review": {
       "type": "video-review",
       "settings": {
+        "banner_title": "Video Reviews",
+        "banner_sub_title": "",
+        "banner_url": "",
+        "affiliate_id": ""
       }
     }
   },
