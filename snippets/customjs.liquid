@@ -1170,8 +1170,11 @@ let formData = {
   <script>
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
-  console.log($)
+
   tabcontent = document.querySelectorAll('.mezor__product-pluginout .tabcontent');
+
+  console.log(tabcontent)
+
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
