@@ -44,18 +44,11 @@
     "user-mannual-section-Rollova": {
       "type": "user-mannual-section-Rollova",
       "blocks": {
-        "9d3f4e93-21b7-4488-9cc7-d14a6e603592": {
-          "type": "Flag",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_51_1.png",
-            "url": ""
-          }
-        },
         "244d06de-5f3d-43c9-a978-b7a378fb8ece": {
           "type": "Flag",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_53.png",
-            "url": ""
+            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0549\/7667\/6078\/files\/traditional_Chinese.pdf?v=1681898416"
           }
         },
         "2efebc6e-0084-4e42-968f-fc59e2021204": {
@@ -102,7 +95,6 @@
         }
       },
       "block_order": [
-        "9d3f4e93-21b7-4488-9cc7-d14a6e603592",
         "244d06de-5f3d-43c9-a978-b7a378fb8ece",
         "2efebc6e-0084-4e42-968f-fc59e2021204",
         "98d95e4c-1a24-46b5-aa66-413c6a67a6ac",
