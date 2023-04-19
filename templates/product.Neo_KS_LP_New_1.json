@@ -56,6 +56,7 @@
     },
     "h-neo_ks_lp_new_0": {
       "type": "h-neo_ks_lp_new_0",
+      "disabled": true,
       "settings": {
         "discount": "Exclusive Discount $50 OFF",
         "discount_text_1": "First 8hrs Launch Day ONLY",
@@ -183,6 +184,7 @@
     },
     "h-neo_ks_lp_new_6": {
       "type": "h-neo_ks_lp_new_6",
+      "disabled": true,
       "blocks": {
         "e86946b7-bacd-475c-b437-0b1c75a0e458": {
           "type": "slide",
@@ -228,6 +230,7 @@
     },
     "h-neo_ks_lp_new_7": {
       "type": "h-neo_ks_lp_new_7",
+      "disabled": true,
       "settings": {
         "discount_url": "https:\/\/www.kickstarter.com\/projects\/hozodesign\/neoruler-rule-the-scales"
       }
