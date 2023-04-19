@@ -127,6 +127,54 @@
         "url1": "https:\/\/www.youtube.com\/embed\/ZXF06BcS81Q"
       }
     },
+    "bd2b18a2-df25-496a-95dc-5841578c4242": {
+      "type": "h-product-template-buy-now-1",
+      "blocks": {
+        "867c1d3e-ffd0-470c-b4d1-b218fb7bba6a": {
+          "type": "first",
+          "settings": {
+            "pr1": "reading-kit"
+          }
+        },
+        "833c77d2-0763-4ae5-a99f-66b359fbbd06": {
+          "type": "first",
+          "settings": {
+            "pr1": "caliper-kit"
+          }
+        },
+        "c120fa66-2689-4351-8a9a-ed8a550601a0": {
+          "type": "first",
+          "settings": {
+            "pr1": "drafting-kit"
+          }
+        },
+        "24081a76-7fff-46d3-aec0-d22aa4eb25a9": {
+          "type": "last",
+          "settings": {
+            "pr1": "neoprotection-folio"
+          }
+        },
+        "3b3514a5-3ea4-46ac-85d7-263b3415d485": {
+          "type": "last",
+          "settings": {
+            "pr1": "neocollection-case"
+          }
+        }
+      },
+      "block_order": [
+        "867c1d3e-ffd0-470c-b4d1-b218fb7bba6a",
+        "833c77d2-0763-4ae5-a99f-66b359fbbd06",
+        "c120fa66-2689-4351-8a9a-ed8a550601a0",
+        "24081a76-7fff-46d3-aec0-d22aa4eb25a9",
+        "3b3514a5-3ea4-46ac-85d7-263b3415d485"
+      ],
+      "settings": {
+        "text1": "",
+        "text2": "",
+        "p1": "",
+        "price": ""
+      }
+    },
     "h-neo_ks_lp_new_3": {
       "type": "h-neo_ks_lp_new_3",
       "blocks": {
@@ -387,54 +435,6 @@
         "Button_title": "",
         "button_url": ""
       }
-    },
-    "bd2b18a2-df25-496a-95dc-5841578c4242": {
-      "type": "h-product-template-buy-now-1",
-      "blocks": {
-        "867c1d3e-ffd0-470c-b4d1-b218fb7bba6a": {
-          "type": "first",
-          "settings": {
-            "pr1": "reading-kit"
-          }
-        },
-        "833c77d2-0763-4ae5-a99f-66b359fbbd06": {
-          "type": "first",
-          "settings": {
-            "pr1": "caliper-kit"
-          }
-        },
-        "c120fa66-2689-4351-8a9a-ed8a550601a0": {
-          "type": "first",
-          "settings": {
-            "pr1": "drafting-kit"
-          }
-        },
-        "24081a76-7fff-46d3-aec0-d22aa4eb25a9": {
-          "type": "last",
-          "settings": {
-            "pr1": "neoprotection-folio"
-          }
-        },
-        "3b3514a5-3ea4-46ac-85d7-263b3415d485": {
-          "type": "last",
-          "settings": {
-            "pr1": "neocollection-case"
-          }
-        }
-      },
-      "block_order": [
-        "867c1d3e-ffd0-470c-b4d1-b218fb7bba6a",
-        "833c77d2-0763-4ae5-a99f-66b359fbbd06",
-        "c120fa66-2689-4351-8a9a-ed8a550601a0",
-        "24081a76-7fff-46d3-aec0-d22aa4eb25a9",
-        "3b3514a5-3ea4-46ac-85d7-263b3415d485"
-      ],
-      "settings": {
-        "text1": "",
-        "text2": "",
-        "p1": "",
-        "price": ""
-      }
     }
   },
   "order": [
@@ -446,6 +446,7 @@
     "h-neo_ks_lp_new_1",
     "h-neo_ks_lp_new_2",
     "4a3f0dc4-547c-42b7-a8b7-116cfef6acd4",
+    "bd2b18a2-df25-496a-95dc-5841578c4242",
     "h-neo_ks_lp_new_3",
     "h-neo_ks_lp_new_4",
     "h-neo_ks_lp_new_5",
@@ -456,7 +457,6 @@
     "h-video-review",
     "072ab0c0-4616-480a-a410-c13564d9d6ff",
     "ea25da0d-592b-4eaf-81d7-e0af65345550",
-    "2ac9996c-1e1e-4d1d-9f89-966d83465677",
-    "bd2b18a2-df25-496a-95dc-5841578c4242"
+    "2ac9996c-1e1e-4d1d-9f89-966d83465677"
   ]
 }
