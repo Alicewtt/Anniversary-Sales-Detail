@@ -117,6 +117,20 @@
             "qustion": "What is the battery capacity? Is the battery replaceable?",
             "answer": "The battery capacity is a rechargeable Li-on 1000 mAh battery. It can be used for about 1-2 weeks on a single charge. Like most electronic devices, the battery is designed to retain an estimated 80% of its original capacity at 500-800 complete charge cycles and is not replaceable."
           }
+        },
+        "3f961915-e62e-4539-9a17-38f4f907c235": {
+          "type": "FAQ",
+          "settings": {
+            "qustion": "What languages does the MEAZOR app come with?",
+            "answer": "The MEAZOR app supports 7 languages: French, Spanish, Chinese (Simplified), Chinese (Traditional), Japanese, Italian, German, and English (US)."
+          }
+        },
+        "803e999f-dc25-460d-a223-37e3ad5a0189": {
+          "type": "FAQ",
+          "settings": {
+            "qustion": "",
+            "answer": ""
+          }
         }
       },
       "block_order": [
@@ -124,7 +138,9 @@
         "28405080-159c-48d8-b0f0-3293fc325dc9",
         "b6f92599-f14f-4d37-89ac-f5347e2fa0e4",
         "ece5386c-84c1-4f7e-b0c1-1fb8c11ad59d",
-        "bd489751-4eea-477a-945d-83eba5558138"
+        "bd489751-4eea-477a-945d-83eba5558138",
+        "3f961915-e62e-4539-9a17-38f4f907c235",
+        "803e999f-dc25-460d-a223-37e3ad5a0189"
       ],
       "settings": {
         "title": "NeoRuler FAQ",
