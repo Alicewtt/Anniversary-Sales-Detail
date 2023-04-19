@@ -308,7 +308,12 @@
   }
   function myTimer() {
     var count = $('.h-result-img').length;
-    var i = 0;
+
+    if ($('.h-result-img').css('display') == 'none') {
+      // do something
+    }
+
+    var i = ||0;
 
     var timer = setInterval(function () {
       var app = $('.h-result-img').eq(i);
@@ -316,6 +321,7 @@
       var btn_index = $(app).attr('data-slider').split(',');
 
       $('.h-result-img').eq(i).show().siblings().hide();
+      $('.h-result-img').eq(i).addClass('active').siblings().removeClass('active');
 
       $('.fist-box .item')
         .eq(btn_index[0] - 1)
