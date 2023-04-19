@@ -51,8 +51,10 @@
 
 <script>
   var parentSwiper = new Swiper('.parent-swiper', {
-    direction: 'horizontal',
-    
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     on: {
       slideChangeTransitionEnd: function () {
         if (this.activeIndex === this.slides.length - 1) {
@@ -63,8 +65,10 @@
   });
 
   var childSwiper = new Swiper('.child-swiper', {
-    direction: 'horizontal',
-    loop:true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     on: {
       slideChangeTransitionEnd: function () {
         if (this.activeIndex === this.slides.length - 1) {
