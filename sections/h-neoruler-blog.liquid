@@ -36,25 +36,24 @@
 </section>
 
 <script>
-    $('.h-hozos-journal-blog-slider').owlCarousel({
-      loop:false,
-      center:false,
-      margin:40,
-      URLhashListener:true,
-      autoplayHoverPause:true,
-      startPosition: 'URLHash',
-       responsive:{
-          0:{
-              items:1.2
-          },
-          600:{
-              items:2
-          },
-          1000:{
-              items:2
-          }
-      }  
-    });
+  $('.h-hozos-journal-blog-slider').owlCarousel({
+    stagePadding: 200,
+      loop:true,
+      margin:30,
+      nav:false,
+      items:1,
+      lazyLoad: true,
+      nav:true,
+      responsive: {
+            0: {
+              stagePadding: 0,
+              items: 1.2
+            },
+            1000: {
+                stagePadding: 200
+            }
+        }
+    })
     
 </script>
 
