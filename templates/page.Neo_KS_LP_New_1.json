@@ -197,8 +197,8 @@
       "settings": {
       }
     },
-    "video-review": {
-      "type": "video-review",
+    "h-video-review": {
+      "type": "h-video-review",
       "blocks": {
         "a2110de4-d7c0-45a7-b2e9-0a83e99b482c": {
           "type": "link",
@@ -244,6 +244,6 @@
     "h-neo_ks_lp_new_7",
     "ce33b8da-58aa-4b3d-9e5c-76e7dccc475a",
     "alireviews-widget-544875",
-    "video-review"
+    "h-video-review"
   ]
 }
