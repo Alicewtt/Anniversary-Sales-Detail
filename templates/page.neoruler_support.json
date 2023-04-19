@@ -82,6 +82,18 @@
     },
     "meazor-faq-section-Rollova": {
       "type": "meazor-faq-section-Rollova",
+      "blocks": {
+        "09be2f56-1cea-437a-be65-e79aaa4c0866": {
+          "type": "FAQ",
+          "settings": {
+            "qustion": "What is the measurement range and accuracy of NeoRuler?",
+            "answer": "The measurement range of NeoRuler is 30.5cm (12 inches) and the measurement accuracy is 0.1mm (±0.004inch)"
+          }
+        }
+      },
+      "block_order": [
+        "09be2f56-1cea-437a-be65-e79aaa4c0866"
+      ],
       "settings": {
         "title": "NeoRuler FAQ",
         "Button_title": "More specs",
