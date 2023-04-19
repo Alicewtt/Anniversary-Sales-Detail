@@ -244,6 +244,7 @@
     },
     "alireviews-widget-544875": {
       "type": "alireviews-widget-544875",
+      "disabled": true,
       "settings": {
       }
     },
