@@ -71,7 +71,7 @@
             </button>
           </div> {% endcomment %}
           <div class="mezor__product-pluginout">
-            <div class="mezor__prd-back"><img class="lazyload" data-src="{{ 'black__left.svg' | asset_url}}"> Back</div>
+            {% comment %} <div class="mezor__prd-back"><img class="lazyload" data-src="{{ 'black__left.svg' | asset_url}}"> Back</div> {% endcomment %}
             <ul>
               <select name="id" id="{{ product.handle }}" style="display: none;">
                 {% for variant in product.variants %}
