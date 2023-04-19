@@ -11,7 +11,7 @@
   text-align:left;
   }
 
-  .mezor__product-titlecnts button{
+  .mezor__product-titlecnts .h-hbtn{
     min-width:199px;
   }
 
@@ -111,7 +111,7 @@
                 disabled
               {% endunless %}
               price="{{ product.price | money_without_currency }}"
-              class="deproduct select"
+              class="deproduct select h-hbtn"
               id="{{ product.variants.first.id }}"
             >
               {% if product.available %}Pre-order Now {% else %} SOLD OUT {% endif %}
