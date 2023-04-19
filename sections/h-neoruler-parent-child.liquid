@@ -285,7 +285,7 @@
   $('.child-item .item').click(function(){
     clearInterval(timer);
 
-    var i =$(this).children('img').attr('data-slider')
+    var i =$(this).children('img').attr('data-slider')-1
     var index = $(this).index()
     console.log($(this).attr('data-slider'))
     $(this).addClass('active').siblings().removeClass('active');
