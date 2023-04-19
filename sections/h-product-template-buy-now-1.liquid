@@ -136,8 +136,8 @@
               <h3 data-h="123">Modular Design for Every Possibility</h3>
 
               <div class="tab">
-                <button class="tablinks active" onclick="openCity_1(this, 'h-first')">NeoFunction</button>
-                <button class="tablinks" onclick="openCity_1(this, 'h-last')">NeoLook</button>
+                <button class="tablinks active" onclick="openCity_1(this)">NeoFunction</button>
+                <button class="tablinks" onclick="openCity_1(this)">NeoLook</button>
               </div>
               <div id="first" class="tabcontent h-first active" style="display:block">
                 <ul class="new-list">
@@ -276,26 +276,13 @@
 <script>
 
   
-function openCity_1(evt,cityName) {
+function openCity_1(evt) {
 
- 
   tabcontent = document.getElementsByClassName("tabcontent");
   var index= $(evt).index()
   $(evt).addClass('active').siblings().removeClass('active')
   console.log($(this),index,$(evt).parent().siblings('.tabcontent').eq(index))
   $(evt).parent().siblings('.tabcontent').eq(index).show().siblings('.tabcontent').hide();
-  
-  
-  {% comment %} for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("h_tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active"; {% endcomment %}
   
 }
 
