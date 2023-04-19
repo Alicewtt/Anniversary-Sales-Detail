@@ -25,11 +25,11 @@
                         {% elsif collection.title == 'neoruler' %}
                             NEORULER
                         {% elsif collection.title == 'MEAZOR 3D Accessories' %}
-                          MEAZOR 3D
+                            MEAZOR 3D
                         {% elsif collection.title == 'meazor-accessories' %}
-                          MEAZOR
+                            MEAZOR
                         {% else %}
-                          {{ collection.title }}
+                          {% comment %} {{ collection.title }} {% endcomment %}
                         {% endif %}
                       </a>
                     </li>
