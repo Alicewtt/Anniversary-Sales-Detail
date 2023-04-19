@@ -58,6 +58,13 @@
             "url": ""
           }
         },
+        "2efebc6e-0084-4e42-968f-fc59e2021204": {
+          "type": "Flag",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_40_c34d5316-2a5a-4af5-b249-35dd6084d84d.png",
+            "url": ""
+          }
+        },
         "835f711a-807f-4321-a526-7250f2ca57f0": {
           "type": "Flag",
           "settings": {
@@ -65,10 +72,10 @@
             "url": ""
           }
         },
-        "2efebc6e-0084-4e42-968f-fc59e2021204": {
+        "0e485c8b-a4fb-4b0a-8ba9-c39576443a5a": {
           "type": "Flag",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_40_c34d5316-2a5a-4af5-b249-35dd6084d84d.png",
+            "image": "shopify:\/\/shop_images\/Frame_43_39d87ee4-0633-4143-b65c-a2adc44bddd6.png",
             "url": ""
           }
         }
@@ -76,8 +83,9 @@
       "block_order": [
         "9d3f4e93-21b7-4488-9cc7-d14a6e603592",
         "244d06de-5f3d-43c9-a978-b7a378fb8ece",
+        "2efebc6e-0084-4e42-968f-fc59e2021204",
         "835f711a-807f-4321-a526-7250f2ca57f0",
-        "2efebc6e-0084-4e42-968f-fc59e2021204"
+        "0e485c8b-a4fb-4b0a-8ba9-c39576443a5a"
       ],
       "settings": {
         "title": "User Manual"
