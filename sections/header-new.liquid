@@ -115,6 +115,9 @@
                           <p>
                             {{ product.title }}
                             {% for t in product.tags %}
+                              {% if t contains 'Pre-order' %}
+                                <span>Pre-order </span>
+                              {% endif %}
                               {% if t contains 'NEW' %}
                                 <span>new </span>
                               {% endif %}
