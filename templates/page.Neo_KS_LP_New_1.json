@@ -47,10 +47,13 @@
         "12834943-1e0b-4a7b-a73f-876dbf5ea6f1"
       ],
       "settings": {
-        "text1": "",
-        "text2": "",
+        "img1": "shopify:\/\/shop_images\/116.png",
+        "img2": "shopify:\/\/shop_images\/116.png",
+        "img3": "shopify:\/\/shop_images\/116.png",
+        "text1": "Rule The Scales",
+        "text2": "Customizable Scales | 8 units | 0.1mm resolution",
         "p1": "",
-        "price": ""
+        "price": "$129"
       }
     },
     "h-neo_ks_lp_new_0": {
