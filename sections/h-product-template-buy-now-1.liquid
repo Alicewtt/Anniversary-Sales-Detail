@@ -287,6 +287,42 @@ function openCity_1(evt) {
 }
 
 
+$(".premiummajoq__3dclick2").click(function(){
+
+  console.log('===》test,')
+
+    if($(this).hasClass("addon")){
+      $(this).removeClass("addon");
+    }else{
+    $(this).addClass("addon");
+    }
+    var inputs = $(".addon");
+    var getaddon_price = 0;
+    var getall_id=[];
+    var quantity =1
+    for(var i = 0; i < inputs.length; i++){
+        getaddon_price += parseInt($(inputs[i]).attr("price"));
+        getid= parseInt($(inputs[i]).attr("id"))
+        getall_id.push({
+                id:getid, 
+                quantity:quantity
+            });
+    }
+    var getdefault =parseInt($(".mezor__activepack").attr('price'));
+      total = getdefault + getaddon_price;
+      $(".totalprice").text("$"+total);
+        // $(".transcy-money").text("$"+total);
+      
+        getall_i=parseInt($(".mezor__activepack").attr('id')); 
+      getall_id.push({
+                id: getall_i,
+                quantity:quantity
+            });
+      console.log(getall_id); 
+
+ }); 
+
+
 </script>
 
 {% schema %}
