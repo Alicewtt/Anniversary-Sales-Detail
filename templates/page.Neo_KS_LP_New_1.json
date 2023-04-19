@@ -399,6 +399,26 @@
       ],
       "settings": {
       }
+    },
+    "b0072e49-824c-4019-ad87-7c464fbfbd08": {
+      "type": "meazor-faq-section",
+      "blocks": {
+        "9217b2af-0778-471f-aa47-278e28173b90": {
+          "type": "FAQ",
+          "settings": {
+            "qustion": "",
+            "answer": ""
+          }
+        }
+      },
+      "block_order": [
+        "9217b2af-0778-471f-aa47-278e28173b90"
+      ],
+      "settings": {
+        "title": "Pre-order FAQ",
+        "Button_title": "",
+        "button_url": ""
+      }
     }
   },
   "order": [
@@ -421,6 +441,7 @@
     "alireviews-widget-544875",
     "h-video-review",
     "072ab0c0-4616-480a-a410-c13564d9d6ff",
-    "ef01a681-8dad-413e-aba7-776a34cc8909"
+    "ef01a681-8dad-413e-aba7-776a34cc8909",
+    "b0072e49-824c-4019-ad87-7c464fbfbd08"
   ]
 }
