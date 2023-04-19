@@ -25,8 +25,8 @@
         "b65d05d2-ef77-4fbd-998f-4ea5b0230e37": {
           "type": "first",
           "settings": {
-            "txt1": "Laser Distance",
-            "url1": "<p><b>Range:<\/b> 0.3ft-131ft (0.1m-40m)  <\/p>\n<p> <b>Resolution: <\/b> 0.04inch(1mm) <\/p>\n<p><b>Accuracy:<\/b> ±1\/16in (±2mm)\nin ideal circumstances* <\/p>\n\n<span>*Non-ideal circumstances such as outdoor with strong light, or under the bad reflective surface, the error will be superimposed with maximum +- 1‰ of the measurement distance.<\/span>"
+            "txt1": "Support Units",
+            "url1": "mm, cm, m<br>\ninch (decimal,fractional),feet, yard<br>\nmile&amp;km***<br>"
           }
         },
         "811b8e36-8660-4e98-bd21-4b21c2bd3937": {
