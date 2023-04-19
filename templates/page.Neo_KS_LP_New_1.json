@@ -5,6 +5,11 @@
       "settings": {
       }
     },
+    "h-product-template-buy-now": {
+      "type": "h-product-template-buy-now",
+      "settings": {
+      }
+    },
     "h-neo_ks_lp_new_0": {
       "type": "h-neo_ks_lp_new_0",
       "settings": {
@@ -179,6 +184,7 @@
   },
   "order": [
     "h-neo_ks_lp_new_0_static",
+    "h-product-template-buy-now",
     "h-neo_ks_lp_new_0",
     "h-video-section",
     "h-neo_ks_lp_new_1",
