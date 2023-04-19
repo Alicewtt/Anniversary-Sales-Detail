@@ -1,0 +1,156 @@
+<style>
+  
+
+  .h-neoruler-parent-child {
+    background: #000;
+    position:relative;
+  }
+
+  .h-neoruler-parent-child-inner{
+    padding: 50px 20px 300px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .h-neoruler-parent-child h2 {
+    font-family: 'Alibaba PuHuiTi 2.0';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56.25px;
+    line-height: 79px;
+    text-align: center;
+    color: #fff;
+    margin-bottom:23px;
+  }
+
+  .h-neoruler-parent-child h2 span {
+    color: #56b1fd;
+  }
+
+  .h-inner-wrap .fist-box {
+    width: 610px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 31px;
+  }
+
+.h-inner-wrap .middle-text{
+  font-family: 'Alibaba PuHuiTi 2.0';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.75px;
+  line-height: 23px;
+  text-align: center;
+  margin-bottom:46px;
+  color:#fff;
+}
+  .h-inner-wrap .fist-box .active{
+    border:2px solid #fff;
+  }
+  .h-inner-wrap .child-item .active{
+    border:2px solid #fff;
+  }
+
+  .h-inner-wrap .child-item {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 39px;
+  }
+
+  .h-inner-wrap .child-item .img-item{
+    width:100%;
+  }
+  .h-inner-wrap .child-item img{
+    display:block;
+  }
+  .h-inner-wrap .result-box{
+    position:absolute;
+    left:0;
+  
+  }
+
+  .h-inner-wrap .result-box img{
+    display:none;
+  }
+
+
+  
+
+</style>
+<section class="h-neoruler-parent-child">
+
+  <div class="h-neoruler-parent-child-inner">
+    <h2>Epic <span>Neo Functions</span></h2>
+
+    <div></div>
+  
+    <div class="h-wrap">
+      <div class="h-inner-wrap">
+        <div class="fist-box">
+          <img class="pc-img"  style=" width:60px;height:auto;" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/9.png"  >
+          <img class="pc-img" style=" width:60px;height:auto;" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/10.png"  >
+          <img class="pc-img" style=" width:60px;height:auto;" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/11.png"  >
+        </div>
+        <div class="middle-text">Switch in between Metric and Imperial in one swipe without multiple calculation.</div>
+        <div class="child-item">
+          <img class="pc-img" style=" width:187px;height:auto;" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/12.png"  >
+          <img class="pc-img" style=" width:187px;height:auto;" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/13.png"  >
+          <img class="pc-img" style=" width:187px;height:auto;" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/14.png"  >
+        </div>
+        <div class="result-box">
+          <img class="h-result-img" data-slider="1,1" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
+          <img class="h-result-img" data-slider="1,2" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
+          <img class="h-result-img" data-slider="1,3" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
+          <img class="h-result-img" data-slider="2,1" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
+          <img class="h-result-img" data-slider="2,2" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
+          <img class="h-result-img" data-slider="2,3" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
+          <img class="h-result-img" data-slider="3,1" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
+          <img class="h-result-img" data-slider="3,2" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
+          <img class="h-result-img" data-slider="3,3" src="https://cdn.shopify.com/s/files/1/0549/7667/6078/files/15.png"  >
+          
+        </div>
+      </div>
+  
+  
+  </div>
+
+ 
+    
+  </div>
+</section>
+
+<script>
+  var count = $(".h-result-img").length;
+  var i = 0;
+  var timer = setInterval(function(){
+
+    var app = $(".h-result-img").eq(i)
+
+    var btn_index = $(app).attr('data-slider').split(',')
+
+      $(".h-result-img").eq(i).show().siblings().hide();
+      
+      $(".fist-box img").eq(btn_index[0]-1).addClass('active').siblings().removeClass('active')
+      $(".child-item img").eq(btn_index[1]-1).addClass('active').siblings().removeClass('active')
+      i++;
+      if(i == count){
+          i = 0;
+      }
+  },2000);
+
+
+</script>
+
+{% schema %}
+{
+  "name": "h-neoruler-parent-child",
+  "settings": [],
+  "presets": [
+    {
+      "name": "h-neoruler-parent-child",
+      "category": "Custom Content"
+    }
+  ]
+}
+{% endschema %}
