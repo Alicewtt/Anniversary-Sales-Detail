@@ -20,7 +20,7 @@
             "product": "meazor3d",
             "anniversary_product_title": "MEAZOR 3D Premium Combo",
             "anniversary_product_desc": "· First digital measure tape<br>· Measure curves and lines<br>· One roll at a time",
-            "anniversary_product_order": true,
+            "anniversary_product_order": false,
             "anniversary_product_free": true,
             "anniversary_product_num": "15%",
             "anniversary_product_code": "12133"
