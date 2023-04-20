@@ -2172,7 +2172,7 @@
         "type": "New-feature",
         "settings": {
           "title": "Featured products",
-          "feature_collection": "meazor-accessories",
+          "feature_collection": "product-header-support",
           "btn_title": "Shop Now",
           "learnmore_url": "shopify:\/\/collections"
         }
