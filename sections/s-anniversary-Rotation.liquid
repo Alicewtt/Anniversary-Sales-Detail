@@ -232,8 +232,8 @@
                 <p class="Product_Name">{{all_products[block.settings.product].title}}</p>
 
                 <div class="Price">
-                    <p class="Price-1">{{all_products[block.settings.product].price_min | times: 1.0 | money}}</p>
-                    <p class="Price-2">{{all_products[block.settings.product].price_max | times: 1.0 | money}}</p>
+                    <p class="Price-1">{{block.settings.h_new_price}}</p>
+                    <p class="Price-2">{{block.settings.h_old_price}}</p>
                 </div>
                 
                 <div class="Cart">
@@ -334,6 +334,18 @@ var swiper_width = 0;
                         "id": "text_1",
                         "label": "了解更多",
                         "default":"Learn Mort"
+                    },
+                    {
+                      "type": "text",
+                      "id": "h_new_price",
+                      "label": "新价格",
+                      "default": "$448"
+                    },
+                    {
+                      "type": "text",
+                      "id": "h_old_price",
+                      "label": "旧价格",
+                      "default": "$848"
                     },
                     {
                         "type": "html",
