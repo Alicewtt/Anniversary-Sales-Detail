@@ -403,10 +403,10 @@
             ></div>
             <p class="tt-r-money">
               <span class="tt-r-money-new">
-                {{- all_products[block.settings.product].price | times: 1.0 | money -}}
+                {{block.settings.h_new_price }}
               </span>
               <span class="tt-r-money-old">
-                {{- all_products[block.settings.product].compare_at_price | times: 1.0 | money -}}
+                {{block.settings.h_old_price }}
               </span>
             </p>
             {% comment %} 移动端 {% endcomment %}
@@ -582,11 +582,24 @@
           "label": "free Gifts?",
           "default": true
         },
+        
         {
           "type": "text",
           "id": "anniversary_product_num",
           "label": "产品百分数",
           "default": "15%"
+        },
+        {
+          "type": "text",
+          "id": "h_new_price",
+          "label": "新价格",
+          "default": "$448"
+        },
+        {
+          "type": "text",
+          "id": "h_old_price",
+          "label": "旧价格",
+          "default": "$848"
         },
         {
           "type": "text",
