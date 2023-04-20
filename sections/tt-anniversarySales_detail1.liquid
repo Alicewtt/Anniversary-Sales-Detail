@@ -360,7 +360,6 @@
   .tt-iphone .tt-r-card .tt-r-vector {
     cursor:pointer;
   }
-  
 </style>
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
@@ -372,7 +371,7 @@
         <div class="tt-pro-bg">
           <div class="tt-l-box box-flex">
             <!-- .swiper为容器 -->
-            <div class="tt-h-swiper">
+            <div class="tt-h-swiper tt-h-swiper-{{ forloop.index }}">
               <!-- 轮播区域 -->
               <div class="swiper-wrapper">
                 {% for w_img in all_products[block.settings.product].images %}
@@ -392,7 +391,6 @@
               <!-- 分页器 -->
               <div class="swiper-pagination"></div>
             </div>
-            
           </div>
           <div class="tt-r-box box-flex">
             <p class="tt-r-title">{{ block.settings.anniversary_product_title }}</p>
@@ -402,7 +400,9 @@
               style="{% if block.settings.anniversary_product_order %}display:block; {% else %}display:none; {% endif %}"
             ></div>
             <p class="tt-r-money">
-              <span  class="tt-r-money-new">{{ all_products[block.settings.product].price_max | times: 1.0 | money }}</span>
+              <span class="tt-r-money-new">
+                {{- all_products[block.settings.product].price_max | times: 1.0 | money -}}
+              </span>
               <span class="tt-r-money-old">
                 {{- all_products[block.settings.product].price_min | times: 1.0 | money -}}
               </span>
@@ -422,7 +422,6 @@
                   </p>
                   <a class="tt-r-link">copy code</a>
                   <span class="tt-r-link-code">{{ block.settings.anniversary_product_code }}</span>
-                  
                 </div>
                 <div class="tt-r-off">off</div>
                 <div class="tt-r-vector ">
@@ -452,7 +451,6 @@
                   </p>
                   <a class="tt-r-link">copy code</a>
                   <span class="tt-r-link-code">{{ block.settings.anniversary_product_code }}</span>
-                  
                 </div>
                 <div class="tt-r-off">off</div>
                 <div class="tt-r-vector ">
@@ -470,6 +468,24 @@
           </div>
         </div>
       </div>
+
+      <script type="text/javascript">
+        var mySwiper = new Swiper('.tt-h-swiper-{{forloop.index}}', {
+          direction: 'horizontal',
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          scrollbar: {
+            el: '.swiper-srollbar',
+          },
+        });
+      </script>
+
     {% endfor %}
   </div>
 </section>
@@ -491,22 +507,7 @@
   });
 </script>
 
-<script type="text/javascript">
-  var mySwiper = new Swiper('.tt-h-swiper', {
-    direction: 'horizontal',
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    scrollbar: {
-      el: '.swiper-srollbar',
-    },
-  });
-</script>
+
 
 <script>
   // 获取所有<a>标签元素
@@ -527,7 +528,6 @@
     });
   });
 </script>
-
 
 {% schema %}
 {
