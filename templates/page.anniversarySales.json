@@ -14,6 +14,18 @@
     "tt-anniversarySales_detail1": {
       "type": "tt-anniversarySales_detail1",
       "blocks": {
+        "715420d7-d638-4a9a-907e-f5496e616e93": {
+          "type": "anniversary",
+          "settings": {
+            "product": "neoruler",
+            "anniversary_product_title": "NeoRuler",
+            "anniversary_product_desc": "<br>· Customizable Scales<br>· 8 units<br>· 0.1mm resolution",
+            "anniversary_product_order": true,
+            "anniversary_product_free": false,
+            "anniversary_product_num": "15%",
+            "anniversary_product_code": "12133"
+          }
+        },
         "fef87af7-e252-4369-831a-bfb24165fe06": {
           "type": "anniversary",
           "settings": {
@@ -26,34 +38,22 @@
             "anniversary_product_code": "12133"
           }
         },
-        "715420d7-d638-4a9a-907e-f5496e616e93": {
-          "type": "anniversary",
-          "settings": {
-            "product": "neoruler",
-            "anniversary_product_title": "NeoRuler",
-            "anniversary_product_desc": "<br>· Customizable Scales<br>· 8 units<br>· 0.1mm resolution",
-            "anniversary_product_order": true,
-            "anniversary_product_free": true,
-            "anniversary_product_num": "15%",
-            "anniversary_product_code": "12133"
-          }
-        },
         "8ca88f77-0aaa-46ee-9428-de1489fa6b45": {
           "type": "anniversary",
           "settings": {
             "product": "rollova",
-            "anniversary_product_title": "MEAZOR",
+            "anniversary_product_title": "ROLLOVA",
             "anniversary_product_desc": "· First digital measure tape<br>· Measure curves and lines<br>· One roll at a time",
-            "anniversary_product_order": true,
-            "anniversary_product_free": true,
+            "anniversary_product_order": false,
+            "anniversary_product_free": false,
             "anniversary_product_num": "15%",
             "anniversary_product_code": "12133"
           }
         }
       },
       "block_order": [
-        "fef87af7-e252-4369-831a-bfb24165fe06",
         "715420d7-d638-4a9a-907e-f5496e616e93",
+        "fef87af7-e252-4369-831a-bfb24165fe06",
         "8ca88f77-0aaa-46ee-9428-de1489fa6b45"
       ],
       "settings": {
