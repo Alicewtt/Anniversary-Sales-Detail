@@ -523,7 +523,7 @@
       var value = link.nextElementSibling.innerHTML;
       try {
         await navigator.clipboard.writeText(value);
-        console.log('复制成功');
+        alert('copy success');
       } catch (err) {
         console.error('复制失败', err);
       }
