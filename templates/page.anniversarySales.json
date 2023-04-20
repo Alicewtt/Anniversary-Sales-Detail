@@ -23,6 +23,8 @@
             "anniversary_product_order": true,
             "anniversary_product_free": false,
             "anniversary_product_num": "15%",
+            "h_new_price": "$110",
+            "h_old_price": "$129",
             "anniversary_product_code": "HOZO5TH"
           }
         },
@@ -35,6 +37,8 @@
             "anniversary_product_order": false,
             "anniversary_product_free": true,
             "anniversary_product_num": "15%",
+            "h_new_price": "$448",
+            "h_old_price": "$848",
             "anniversary_product_code": "HOZO5TH"
           }
         },
@@ -47,6 +51,8 @@
             "anniversary_product_order": false,
             "anniversary_product_free": false,
             "anniversary_product_num": "15%",
+            "h_new_price": "$448",
+            "h_old_price": "$848",
             "anniversary_product_code": "HOZO5TH"
           }
         }
