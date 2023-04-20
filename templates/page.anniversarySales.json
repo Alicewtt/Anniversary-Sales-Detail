@@ -108,20 +108,11 @@
             "image": "shopify:\/\/shop_images\/226.png",
             "anniversary1_url": "https:\/\/hozodesign.com\/blogs\/journal\/difference-between-meazor-meazor-3d"
           }
-        },
-        "6bb06708-726e-40a3-b1b2-971be299ad8c": {
-          "type": "anniversary-1",
-          "settings": {
-            "anniversary1_title": "HOZO’s Gift GuidePerfect Gifts for your loved one!",
-            "image": "shopify:\/\/shop_images\/3D_Displacement_bb3cbc10-61b8-4802-b213-7da01a83b6d9.gif",
-            "anniversary1_url": "#"
-          }
         }
       },
       "block_order": [
         "b61ee59b-6a89-42be-8207-6306d6788272",
-        "e1fee8b8-9983-4a35-8620-5b9b075a306c",
-        "6bb06708-726e-40a3-b1b2-971be299ad8c"
+        "e1fee8b8-9983-4a35-8620-5b9b075a306c"
       ],
       "settings": {
         "anniversary_big_title": "Can’t Decide?",
