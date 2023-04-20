@@ -3,7 +3,7 @@
     "s-anniversary-banner": {
       "type": "s-anniversary-banner",
       "settings": {
-        "countdown_time": "2023-04-22T00:00:00+08:00",
+        "countdown_time": "2023-04-21T12:00:00+08:00",
         "show_countdown_time": true,
         "background_color": "#fcf3e7",
         "item_image_1_1": "shopify:\/\/shop_images\/pc-Frame_1216.jpg",
