@@ -131,6 +131,7 @@
     },
     "tt-anniversarySales_detail3": {
       "type": "tt-anniversarySales_detail3",
+      "disabled": true,
       "settings": {
         "anniversary_join_title": "Join social contest",
         "section_background_color": "#fcf3e7"
