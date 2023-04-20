@@ -45,7 +45,7 @@
             "anniversary_product_title": "ROLLOVA",
             "anniversary_product_desc": "· First digital measure tape<br>· Measure curves and lines<br>· One roll at a time",
             "anniversary_product_order": false,
-            "anniversary_product_free": false,
+            "anniversary_product_free": true,
             "anniversary_product_num": "15%",
             "anniversary_product_code": "12133"
           }
@@ -68,7 +68,7 @@
           "type": "slide",
           "settings": {
             "product": "meazor-expert-accessory-kit",
-            "text_1": "Learn Mort",
+            "text_1": "Learn More",
             "text_2": "Add to cart"
           }
         },
