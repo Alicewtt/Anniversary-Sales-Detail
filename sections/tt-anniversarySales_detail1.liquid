@@ -403,10 +403,10 @@
             ></div>
             <p class="tt-r-money">
               <span class="tt-r-money-new">
-                {{- all_products[block.settings.product].price_max | times: 1.0 | money -}}
+                {{- all_products[block.settings.product].price | times: 1.0 | money -}}
               </span>
               <span class="tt-r-money-old">
-                {{- all_products[block.settings.product].price_min | times: 1.0 | money -}}
+                {{- all_products[block.settings.product].compare_at_price | times: 1.0 | money -}}
               </span>
             </p>
             {% comment %} 移动端 {% endcomment %}
