@@ -3593,7 +3593,7 @@
       },
       "16865981829950876834": {
         "type": "shopify:\/\/apps\/icart-cart-drawer-cart-upsell\/blocks\/icart-block\/e651bbc2-5760-47d8-a513-2aa6ee3a9aa7",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
