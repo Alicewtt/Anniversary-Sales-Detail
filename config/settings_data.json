@@ -2001,6 +2001,7 @@
         "blocks": {
           "20801223-99e4-45d7-8f01-a7fa5addbe08": {
             "type": "link",
+            "disabled": true,
             "settings": {
               "ltext1": "sale",
               "lurl1": "https:\/\/hozodesign.com\/pages\/sales"
