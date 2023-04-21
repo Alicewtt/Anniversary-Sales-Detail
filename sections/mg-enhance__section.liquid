@@ -1,361 +1,287 @@
 <section class="enhance__section">
-  <div class="container">
-    <div class="hozo_Ferocioushed ultra-heading">
-      <h2>{{ section.settings.text1 }}</h2>
-    </div>
-
-    <div class="mezor__professional-k enhance__mobilenone">
-      <div class="mezor__favorite-k">
-        <h3>{{ section.settings.text2 }}</h3>
-        <ul class="nav nav-tabs" id="enance__tab" role="tablist">
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              id="creative-tab"
-              data-toggle="tab"
-              href="#creativehome"
-              role="tab"
-              aria-controls="home"
-              aria-selected="true"
-            >
-              Creative classic
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              id="architect-tab"
-              data-toggle="tab"
-              href="#architectprofile"
-              role="tab"
-              aria-controls="profile"
-              aria-selected="false"
-            >
-              Architect advance
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active" id="creativehome" role="tabpanel" aria-labelledby="creative-tab">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="creative_bigimg owl-carousel owl-theme">
-              {% assign snumb = 1 %}
-              {% for block in section.blocks %}
-                {% if block.type == 'bottom-col-1' %}
-                  <div class="item" data-hash="zero{{ snumb }}">
-                    {% assign pr1 = all_products[block.settings.prd] %}
-                    <div class="creative_bigimg--inners">
-                      <button class="btn btn-primary QWButton" data-product="{{ pr1.handle }}">Quick View</button>
-                      <img
-                        class="lazyload"
-                        data-src="{{ pr1.metafields.custom.image_url }}"
-                        class="hn-image"
-                      >
-                    </div>
-                  </div>
-                  {% assign snumb = snumb | plus: 1 %}
-                {% endif %}
-              {% endfor %}
-            </div>
-            <div class="mezor__professional-k enhance__mobileshow">
-              <div class="mezor__favorite-k">
-                <h3>{{ section.settings.text2 }}</h3>
-                <ul class="nav nav-tabs" id="enance__tab" role="tablist">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link active"
-                      id="creative-tab"
-                      data-toggle="tab"
-                      href="#creativehome"
-                      role="tab"
-                      aria-controls="home"
-                      aria-selected="true"
-                    >
-                      Creative classic
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      id="architect-tab"
-                      data-toggle="tab"
-                      href="#architectprofile"
-                      role="tab"
-                      aria-controls="profile"
-                      aria-selected="false"
-                    >
-                      Architect advance
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="creative_itemsimg owl-carousel owl-theme">
-              {% assign ssnumb1 = 1 %}
-              {% for block in section.blocks %}
-                {% if block.type == 'bottom-col-1' %}
-                  <a href="#zero{{ ssnumb1 }}" class="item" data-hash="zero{{ ssnumb1 }}">
-                    <div class="creative_itemsimgg">
-                      <div class="creative_itemimg--img">
-                        {% assign pr1 = all_products[block.settings.prd] %}
-                        <button class="btn btn-primary QWButton" data-product="{{ pr1.handle }}">Quick View</button>
-                        <img
-                          class="lazyload"
-                          data-src="{{ pr1.featured_image| img_url : 'master'}}"
-                          class="hn-image1"
-                        >
-                      </div>
-                      <div
-                        number="{{ ssnumb1 }}"
-                        class="creative_itemimg--cnts1 {% if ssnumb1 < 2 %}nextaddon{% endif %}"
-                        price="{{ pr1.price | money_without_currency }}"
-                        image="{{ pr1.metafields.custom.image_url }}"
-                        id="{{ pr1.variants.first.id }}"
-                      >
-                        <h4>{{ pr1.title }}</h4>
-                        <div class="tab-price-main">
-                          <div>
-                            <p class="tab-price">
-                              {{ pr1.price | money }}
-                              {% if pr1.compare_at_price_max > pr1.price %}
-                                <span class="special-pr">{{ pr1.compare_at_price_max | money }}</span>
-                              {% endif %}
-                            </p>
-                          </div>
-                          <div>
-                            {% if pr1.compare_at_price_max > pr1.price %}
-                              <span
-                                ><strong class="mg-tag">
-                                  {{
-                                    pr1.compare_at_price_max
-                                    | minus: pr1.price
-                                    | times: 100.0
-                                    | divided_by: pr1.compare_at_price_max
-                                    | money_without_currency
-                                    | times: 100
-                                    | remove: '.0'
-                                  -}}
-                                  % OFF
-                                </strong></span
-                              >
-                            {%- endif %}
-                          </div>
-                        </div>
-                      </div>
-                      <span class="multiTick">
-                        <img class="tickIcon lazyload" data-src="{{ 'tick_Icon.png' | asset_img_url: 'master' }}">
-                      </span>
-                    </div>
-                  </a>
-                  {% assign ssnumb1 = ssnumb1 | plus: 1 %}
-                {% endif %}
-              {% endfor %}
-            </div>
-            <div class="add_mazor--btns "><button class="enaddtocart1 mxform" type="button">Add to cart</button></div>
-          </div>
+    <div class="container">
+        <div class="hozo_Ferocioushed ultra-heading">
+            <h2>{{ section.settings.text1 }}</h2>
         </div>
-      </div>
 
-      
-      <div class="tab-pane fade" id="architectprofile" role="tabpanel" aria-labelledby="architect-tab">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="creative_bigimg owl-carousel owl-theme">
-              {% assign snumb2 = 1 %}
-              {% for block in section.blocks %}
-                {% if block.type == 'bottom-col-2' %}
-                  <div class="item" data-hash="zero{{ snumb2 }}">
-                    <div class="creative_bigimg--inners">
-                      {% assign pr1 = all_products[block.settings.prd] %}
-                      <button class="btn btn-primary QWButton" data-product="{{ pr1.handle }}">Quick View</button>
-                      <img
-                        class="lazyload"
-                        data-src="{{ pr1.metafields.custom.image_url }}"
-                      >
-                    </div>
-                  </div>
-                  {% assign snumb2 = snumb2 | plus: 1 %}
-                {% endif %}
-              {% endfor %}
+        <div class="mezor__professional-k enhance__mobilenone">
+            <div class="mezor__favorite-k">
+            <h3>{{ section.settings.text2 }}</h3>
+           <ul class="nav nav-tabs" id="enance__tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="creative-tab" data-toggle="tab" href="#creativehome" role="tab" aria-controls="home" aria-selected="true">
+                    Creative classic     
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="architect-tab" data-toggle="tab" href="#architectprofile" role="tab" aria-controls="profile" aria-selected="false">
+                    Architect advance        
+                </a>
+              </li>
+            </ul>
             </div>
-            <div class="mezor__professional-k enhance__mobileshow">
-              <div class="mezor__favorite-k">
-                <h3>{{ section.settings.text2 }}</h3>
-                <ul class="nav nav-tabs" id="enance__tab" role="tablist">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link active"
-                      id="creative-tab"
-                      data-toggle="tab"
-                      href="#creativehome"
-                      role="tab"
-                      aria-controls="home"
-                      aria-selected="true"
-                    >
-                      Creative classic
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      id="architect-tab"
-                      data-toggle="tab"
-                      href="#architectprofile"
-                      role="tab"
-                      aria-controls="profile"
-                      aria-selected="false"
-                    >
-                      Architect advance
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="creative_itemsimg owl-carousel owl-theme">
-              {% assign ssnumb3 = 1 %}
-              {% for block in section.blocks %}
-                {% if block.type == 'bottom-col-2' %}
-                  <a href="#zero{{ ssnumb3 }}" class="item" data-hash="zero{{ ssnumb3 }}">
-                    <div class="creative_itemsimgg">
-                      <div class="creative_itemimg--img">
-                        {% assign pr1 = all_products[block.settings.prd] %}
-                        <button class="btn btn-primary QWButton" data-product="{{ pr1.handle }}">Quick View</button>
-                        <img
-                          class="lazyload"
-                          data-src="{{ pr1.featured_image| img_url : 'master'}}"
-                        >
+        </div>
+
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="creativehome" role="tabpanel" aria-labelledby="creative-tab">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="creative_bigimg owl-carousel owl-theme">
+                       {% assign snumb = 1 %}
+                      {% for block in section.blocks %}
+                          {% if block.type =='bottom-col-1' %}
+                      <div class="item" data-hash="zero{{ snumb }}">
+                             {% assign pr1 = all_products[block.settings.prd] %}
+                        <div class="creative_bigimg--inners">
+                          <button class="btn btn-primary QWButton" data-product="{{ pr1.handle }}">Quick View</button>
+                            <img 
+                              class="lazyload"
+                              data-src="{{ pr1.metafields.custom.image_url }}" class="hn-image">    
+                        </div>     
                       </div>
-
+                          {% assign snumb = snumb | plus: 1 %}
+                            {%  endif %}
+                      {% endfor %}
                       
-                      <div
-                        class="creative_itemimg--cnts2 {% if ssnumb3 < 2 %}nextaddon2{% endif %}"
-                        price="{{ pr1.price | money_without_currency }}"
-                        image="{{ pr1.metafields.custom.image_url }}"
-                        id="{{ pr1.variants.first.id }}"
-                      >
-                        <h4>{{ pr1.title }}</h4>
-
-                        <div class="tab-price-main">
-                          <div>
-                            <p class="tab-price">
-                              {{ pr1.price | money }}
-                              {% if pr1.compare_at_price_max > pr1.price %}
-                                <span class="special-pr">{{ pr1.compare_at_price_max | money }}</span>
-                              {% endif %}
-                            </p>
-                          </div>
-                          <div>
-                            {% if pr1.compare_at_price_max > pr1.price %}
-                              <span
-                                ><strong class="mg-tag">
-                                  {{
-                                    pr1.compare_at_price_max
-                                    | minus: pr1.price
-                                    | times: 100.0
-                                    | divided_by: pr1.compare_at_price_max
-                                    | money_without_currency
-                                    | times: 100
-                                    | remove: '.0'
-                                  -}}
-                                  % OFF
-                                </strong></span
-                              >
-                            {%- endif %}
-                          </div>
-                        </div>
-                      </div>
-                      <span class="multiTick">
-                        <img class="tickIcon lazyload" data-src="{{ 'tick_Icon.png' | asset_img_url: 'master' }}">
-                      </span>
                     </div>
-                  </a>
-                  {% assign ssnumb3 = ssnumb3 | plus: 1 %}
-                {% endif %}
-              {% endfor %}
+              <div class="mezor__professional-k enhance__mobileshow">
+            <div class="mezor__favorite-k">
+            <h3>{{ section.settings.text2 }}</h3>
+            <ul class="nav nav-tabs" id="enance__tab" role="tablist">
+             
+             <li class="nav-item">
+                <a class="nav-link active" id="creative-tab" data-toggle="tab" href="#creativehome" role="tab" aria-controls="home" aria-selected="true">
+                    Creative classic     
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="architect-tab" data-toggle="tab" href="#architectprofile" role="tab" aria-controls="profile" aria-selected="false">
+                    Architect advance        
+                </a>
+              </li>
+                    
             </div>
-            <div class="add_mazor--btns"><button type="button" class="enaddtocart2 mxform">Add to cart</button></div>
+        </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="creative_itemsimg owl-carousel owl-theme">
+                       {% assign ssnumb1 = 1 %}
+                     {% for block in section.blocks %}
+                       {% if block.type =='bottom-col-1' %}
+                          <a href="#zero{{ ssnumb1 }}" class="item" data-hash="zero{{ ssnumb1 }}">
+                        <div class="creative_itemsimgg">
+                         
+                             <div class="creative_itemimg--img">
+                                {% assign pr1 = all_products[block.settings.prd] %}
+                                 <button class="btn btn-primary QWButton" data-product="{{ pr1.handle }}">Quick View</button>
+                                <img 
+                                  class="lazyload"
+                                  data-src="{{ pr1.featured_image| img_url : 'master'}}" class="hn-image1">    
+                             </div> 
+                            <div number="{{ ssnumb1 }}" class="creative_itemimg--cnts1 {% if ssnumb1 < 2 %}nextaddon{% endif %}" price="{{ pr1.price | money_without_currency }}" image="{{ pr1.metafields.custom.image_url }}" id="{{ pr1.variants.first.id }}">
+                                <h4>{{ pr1.title }}</h4>
+                                  <div class="tab-price-main">
+                                      <div>
+                                            <p class="tab-price">{{ pr1.price | money }}  {% if pr1.compare_at_price_max > pr1.price %}  <span class="special-pr">{{  pr1.compare_at_price_max | money }}</span> {%  endif %}</p>
+                                      </div>
+                                      <div>
+                                          {% if pr1.compare_at_price_max > pr1.price %}  <span><strong  class="mg-tag"> {{ pr1.compare_at_price_max | minus: pr1.price | times: 100.0 | divided_by: pr1.compare_at_price_max | money_without_currency | times: 100 | remove: '.0'}}% OFF </strong></span>{% endif %}
+                                      </div>
+                                  </div>
+                              </div>
+                              <span class="multiTick">
+                                <img class="tickIcon lazyload" data-src="{{ 'tick_Icon.png' | asset_img_url: 'master' }}">
+                              
+                              </span>
+                            
+                        </div>  
+                            </a>
+                        {% assign ssnumb1 = ssnumb1 | plus: 1 %}
+                         {%  endif %}
+                      {% endfor %}
+                     
+                      
+                    </div> 
+                 <div class="add_mazor--btns "><button class="enaddtocart1 mxform" type="button">Add to cart</button></div>
+                  
+                </div>
+            </div>
+
+
+
+          </div>
+          
+          <div class="tab-pane fade" id="architectprofile" role="tabpanel" aria-labelledby="architect-tab">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="creative_bigimg owl-carousel owl-theme">
+                       {% assign snumb2 = 1 %}
+                      {% for block in section.blocks %}
+                          {% if block.type =='bottom-col-2' %}
+                      <div class="item" data-hash="zero{{ snumb2 }}">
+                        <div class="creative_bigimg--inners">
+                            {% assign pr1 = all_products[block.settings.prd] %}
+                            <button class="btn btn-primary QWButton" data-product="{{ pr1.handle }}">Quick View</button>
+                            <img 
+                              class="lazyload"
+                              data-src="{{ pr1.metafields.custom.image_url }}">    
+                        </div>     
+                      </div>
+                          {% assign snumb2 = snumb2 | plus: 1 %}
+                            {%  endif %}
+                      {% endfor %}
+                      
+                    </div>
+                      <div class="mezor__professional-k enhance__mobileshow">
+            <div class="mezor__favorite-k">
+            <h3>{{ section.settings.text2 }}</h3>
+            <ul class="nav nav-tabs" id="enance__tab" role="tablist">
+                <li class="nav-item">
+                <a class="nav-link active" id="creative-tab" data-toggle="tab" href="#creativehome" role="tab" aria-controls="home" aria-selected="true">
+                    Creative classic     
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="architect-tab" data-toggle="tab" href="#architectprofile" role="tab" aria-controls="profile" aria-selected="false">
+                    Architect advance        
+                </a>
+              </li>
+            </ul>
+            </div>
+        </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="creative_itemsimg owl-carousel owl-theme">
+                       {% assign ssnumb3 = 1 %}
+                     {% for block in section.blocks %}
+                       {% if block.type =='bottom-col-2' %}
+                     <a href="#zero{{ ssnumb3 }}" class="item" data-hash="zero{{ ssnumb3 }}">
+                        <div class="creative_itemsimgg">
+                          
+                            <div class="creative_itemimg--img">
+                               
+                                  {% assign pr1 = all_products[block.settings.prd] %}
+                               <button class="btn btn-primary QWButton" data-product="{{ pr1.handle }}">Quick View</button>
+                                <img 
+                                  class="lazyload"
+                                  data-src="{{ pr1.featured_image| img_url : 'master'}}">   
+                               
+                            </div> 
+                      
+                            <div class="creative_itemimg--cnts2 {% if ssnumb3 < 2 %}nextaddon2{% endif %}" price="{{ pr1.price | money_without_currency }}" image="{{ pr1.metafields.custom.image_url }}" id="{{ pr1.variants.first.id }}">
+                                <h4>{{ pr1.title }}</h4>
+                               
+                               <div class="tab-price-main">
+                                  
+                                      <div>
+                                            <p class="tab-price">{{ pr1.price | money }}  {% if pr1.compare_at_price_max > pr1.price %}  <span class="special-pr">{{  pr1.compare_at_price_max | money }}</span> {%  endif %}</p>
+                                      </div>
+                                      <div>
+                                          {% if pr1.compare_at_price_max > pr1.price %}  <span><strong class="mg-tag"> {{ pr1.compare_at_price_max | minus: pr1.price | times: 100.0 | divided_by: pr1.compare_at_price_max | money_without_currency | times: 100 | remove: '.0'}}% OFF </strong></span>{% endif %}
+                                      </div>
+                                </div>
+                            </div>
+                             <span class="multiTick">
+                              
+                                <img class="tickIcon lazyload" data-src="{{ 'tick_Icon.png' | asset_img_url: 'master' }}">
+                              
+                              </span>
+                          
+                        </div>
+                       </a>
+                        {% assign ssnumb3 = ssnumb3 | plus: 1 %}
+                         {%  endif %}
+                      {% endfor %}
+                     
+                      
+                    </div> 
+                 <div class="add_mazor--btns"><button type="button" class="enaddtocart2 mxform">Add to cart</button></div>
+                  
+                </div>
+            </div>
           </div>
         </div>
-      </div>
+
     </div>
-  </div>
 </section>
 
+
 {% schema %}
-{
-  "name": "Meazor-enhance__section",
-  "settings": [
-    {
-      "id": "text1",
-      "type": "textarea",
-      "label": "Add Heading"
-    },
-    {
-      "id": "text2",
-      "type": "textarea",
-      "label": "Add text"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "heading",
-      "name": "heading",
-      "settings": [
+   {
+    "name": "Meazor-enhance__section",
+    "settings": [
+     {
+            "id": "text1",
+            "type": "textarea",
+            "label": "Add Heading"
+          },
+      {
+            "id": "text2",
+            "type": "textarea",
+            "label": "Add text"
+          }
+      
+    ],
+     "blocks": [
+      {
+        "type": "heading",
+        "name": "heading",
+        "settings": [
+
+       {
+            "id": "text",
+            "type": "textarea",
+            "label": "Add text"
+          }
+        ]
+      },
         {
-          "id": "text",
-          "type": "textarea",
-          "label": "Add text"
-        }
-      ]
-    },
-    {
-      "type": "bottom-col-1",
-      "name": "bottom-col-1",
-      "settings": [
+        "type": "bottom-col-1",
+        "name": "bottom-col-1",
+        "settings": [
+              {
+            "id": "img",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
         {
-          "id": "img",
-          "type": "image_picker",
-          "label": "Add Image"
-        },
+            "id": "prd",
+            "type": "product",
+            "label": "Add product"
+          }
+      
+        
+          
+         
+        ]
+      },
+       {
+        "type": "bottom-col-2",
+        "name": "bottom-col-2",
+        "settings": [
+              {
+            "id": "img",
+            "type": "image_picker",
+            "label": "Add Image"
+          },
         {
-          "id": "prd",
-          "type": "product",
-          "label": "Add product"
-        }
-      ]
-    },
-    {
-      "type": "bottom-col-2",
-      "name": "bottom-col-2",
-      "settings": [
-        {
-          "id": "img",
-          "type": "image_picker",
-          "label": "Add Image"
-        },
-        {
-          "id": "prd",
-          "type": "product",
-          "label": "Add product"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Meazor-enhance__section",
-      "category": "Custom Content"
-    }
-  ]
-}
+            "id": "prd",
+            "type": "product",
+            "label": "Add product"
+          }
+      
+        
+          
+         
+        ]
+      }
+    ],
+    "presets":[{
+ "name": "Meazor-enhance__section",
+"category": "Custom Content"
+
+}]
+  }
 {% endschema %}
 
 {% stylesheet %}
