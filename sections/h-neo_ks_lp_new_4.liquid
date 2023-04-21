@@ -418,7 +418,7 @@ margin-top:32px;
     }
   });
 
-  console.log('获取屏幕高度=====》',$(window).height())
+  {% comment %} console.log('获取屏幕高度=====》',$(window).height()) {% endcomment %}
   
   var section_4_scroll_hight = $(window).height()*3;
   $(".h-scroll-box").height(section_4_scroll_hight)
@@ -427,7 +427,7 @@ margin-top:32px;
   section_4_scroll_h_1 = section_4_scroll_current_height;
   section_4_scroll_h_2 = section_4_scroll_current_height*2;
   section_4_scroll_h_3 = section_4_scroll_current_height*3;
-  console.log(section_4_scroll_h_1)
+  {% comment %} console.log(section_4_scroll_h_1) {% endcomment %}
   
   // build scenes
   new ScrollMagic.Scene({triggerElement: ".h-scroll-box", duration: section_4_scroll_h_1})
