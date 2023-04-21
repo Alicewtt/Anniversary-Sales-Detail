@@ -1999,6 +1999,13 @@
       "header-new": {
         "type": "header-new",
         "blocks": {
+          "20801223-99e4-45d7-8f01-a7fa5addbe08": {
+            "type": "link",
+            "settings": {
+              "ltext1": "sale",
+              "lurl1": "https:\/\/hozodesign.com\/pages\/sales"
+            }
+          },
           "452ecb02-aa22-475d-9c4d-658c9bc39803": {
             "type": "product",
             "settings": {
@@ -2067,6 +2074,7 @@
           }
         },
         "block_order": [
+          "20801223-99e4-45d7-8f01-a7fa5addbe08",
           "452ecb02-aa22-475d-9c4d-658c9bc39803",
           "bb17f675-f85d-403d-9157-0369bcf78248",
           "469c18c6-e357-4264-a8fe-80d048e78781",
