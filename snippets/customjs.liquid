@@ -1043,7 +1043,7 @@
       $(this).addClass('nextaddon2');
     }
   });
-{% comment %} 产品页面第二个配件选择 {% endcomment %}
+
   $('.enaddtocart1').click(function () {
     var getall_i = $('.nextaddon').attr('id');
     var getall_id = [];
@@ -1108,7 +1108,6 @@
   });
   $('.bunowtemplate').click(function () {
     var getall_i = $(this).attr('id');
-    
     var getall_id = [];
     var quantity = 1;
 
@@ -1116,8 +1115,7 @@
       id: getall_i,
       quantity: quantity,
     });
-
-    console.log(getall_id,$(this));
+    console.log(getall_id);
     let formData = {
       items: getall_id,
     };
@@ -1176,7 +1174,7 @@
     $('.QWButton').click(function () {
       var getProduct = $(this).data('product');
       var proVariant = $(this).data('variable');
-      console.log('调试-==》',$(this))
+
       // var mainTemplate = '<div class="carousel-inner"></div></div>'
       jQuery.getJSON(window.Shopify.routes.root + 'products/' + getProduct + '.js', function (product) {
         var lines = product.description.split('<br>');
