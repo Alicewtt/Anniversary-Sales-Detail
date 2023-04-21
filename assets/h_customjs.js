@@ -114,7 +114,7 @@
           $('.count').val(1);
         }
       });
-    });
+ 
 
     function redimedia() {}
 
@@ -572,7 +572,7 @@
         },
       });
     }
-
+  });
       // {% comment %} 张欢欢解决报错 {% endcomment %}
       $(document).ready(function(){
     $('#myDivbb button').on('click', function(){
