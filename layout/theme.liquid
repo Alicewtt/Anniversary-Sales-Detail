@@ -538,116 +538,7 @@ b.type = "text/javascript";b.async = true;
 b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
 s.parentNode.insertBefore(b, s);})(window.lintrk);
 </script>
-  <script>
-    //dropdown on  click //
-$(".dropdown_click .selected").on('click', function() {
-    $(".dropdown_click .drop-content ul").slideToggle();
-});
-
-$(".dropdown_click .drop-content ul li span").on('click', function() {
-    // var bindText = $(this).html();
-    $(".dropdown_click .selected  span").html($(this).html());
-    $(".dropdown_click .drop-content ul").slideUp();
-}); 
-
-
-$(document).bind('click', function(e) {
-    var $clickhide = $(e.target);
-    if (! $clickhide.parents().hasClass("dropdown_c"))
-        $(".dropdown_c .drop-content ul").slideUp();
-});
-$(document).ready(function(){
-  $('.accordion-list > li > .answer').hide();
-    
-  $('.accordion-list > li').click(function() {
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active").find(".answer").slideUp();
-    } else {
-      $(".accordion-list > li.active .answer").slideUp();
-      $(".accordion-list > li.active").removeClass("active");
-      $(this).addClass("active").find(".answer").slideDown();
-    }
-    return false;
-  });
-  
-
-  $('.hozos-journal-blog-slider').owlCarousel({
-  stagePadding: 200,
-    loop:true,
-    margin:30,
-    nav:false,
-    items:1,
-    lazyLoad: true,
-    nav:true,
-    responsive: {
-          0: {
-              stagePadding: 0
-          },
-          1000: {
-              stagePadding: 200
-          }
-      }
-  })
-  
-   $('.professionals-speak-silder').owlCarousel({
-      items:2,
-      loop:true,
-      center:true,
-      margin:40,
-      URLhashListener:true,
-      autoplayHoverPause:true,
-      startPosition: 'URLHash',
-       responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items:2
-          },
-          1000:{
-              items:2
-          }
-      }  
-    });
-  });
-
-  </script>
-<script>
-$(document).ready(function(){
-  $('.award-winning-team-silder').owlCarousel({
-      loop:true,
-      margin:10,
-      nav:true,
-      responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items:1
-          },
-          1000:{
-              items:1
-          }
-      }
-  })
-  $('.owl-carousel').owlCarousel({
-      loop:true,
-      margin:10,
-      nav:true,
-      responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items:3
-          },
-          1000:{
-              items:5
-          }
-      }
-  })
-});
-</script>
+{% comment %} 优化代码加载位置 {% endcomment %}
 <script type="text/javascript">
               var galleryThumbs = new Swiper('.gallery-thumbs', {
   effect: 'coverflow',
@@ -767,6 +658,119 @@ fisrtSlideMB[0].children[0].children[0].setAttribute("loading","eager");
   </div>
 </div>
 {% endif %}
+
+
+<script>
+  //dropdown on  click //
+$(".dropdown_click .selected").on('click', function() {
+  $(".dropdown_click .drop-content ul").slideToggle();
+});
+
+$(".dropdown_click .drop-content ul li span").on('click', function() {
+  // var bindText = $(this).html();
+  $(".dropdown_click .selected  span").html($(this).html());
+  $(".dropdown_click .drop-content ul").slideUp();
+}); 
+
+
+$(document).bind('click', function(e) {
+  var $clickhide = $(e.target);
+  if (! $clickhide.parents().hasClass("dropdown_c"))
+      $(".dropdown_c .drop-content ul").slideUp();
+});
+$(document).ready(function(){
+$('.accordion-list > li > .answer').hide();
+  
+$('.accordion-list > li').click(function() {
+  if ($(this).hasClass("active")) {
+    $(this).removeClass("active").find(".answer").slideUp();
+  } else {
+    $(".accordion-list > li.active .answer").slideUp();
+    $(".accordion-list > li.active").removeClass("active");
+    $(this).addClass("active").find(".answer").slideDown();
+  }
+  return false;
+});
+
+
+$('.hozos-journal-blog-slider').owlCarousel({
+stagePadding: 200,
+  loop:true,
+  margin:30,
+  nav:false,
+  items:1,
+  lazyLoad: true,
+  nav:true,
+  responsive: {
+        0: {
+            stagePadding: 0
+        },
+        1000: {
+            stagePadding: 200
+        }
+    }
+})
+
+ $('.professionals-speak-silder').owlCarousel({
+    items:2,
+    loop:true,
+    center:true,
+    margin:40,
+    URLhashListener:true,
+    autoplayHoverPause:true,
+    startPosition: 'URLHash',
+     responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:2
+        }
+    }  
+  });
+});
+
+</script>
+<script>
+$(document).ready(function(){
+$('.award-winning-team-silder').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+});
+</script>
+
 </body>
 
 </html>
