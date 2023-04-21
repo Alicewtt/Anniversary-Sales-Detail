@@ -3443,12 +3443,24 @@
               "url": "https:\/\/www.kickstarter.com\/projects\/hozodesign\/neoruler-rule-the-scales?ref=d7klta",
               "btn_url": ""
             }
+          },
+          "4e6eada5-fe2f-4356-860a-7fa40d834010": {
+            "type": "image",
+            "settings": {
+              "isShowContent": "true",
+              "item_image_1_1": "shopify:\/\/shop_images\/Frame_1440.png",
+              "item_image_1_2": "shopify:\/\/shop_images\/Frame_1442.png",
+              "quan_url": "",
+              "url": "https:\/\/hozodesign.com\/products\/meazor3d",
+              "btn_url": ""
+            }
           }
         },
         "block_order": [
           "242a6d96-ac35-4641-a720-2bc565e9658b",
           "ee67688f-e65d-4297-85c3-47e8120b2d4a",
-          "a94ccfd1-687d-4c5b-aea4-c2b0abc87259"
+          "a94ccfd1-687d-4c5b-aea4-c2b0abc87259",
+          "4e6eada5-fe2f-4356-860a-7fa40d834010"
         ],
         "settings": {
         }
