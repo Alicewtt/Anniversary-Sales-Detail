@@ -438,7 +438,6 @@
     },
     "a547e6ce-0aa1-47fb-ac3d-539a799d3f8b": {
       "type": "mg-enhance__section",
-      "disabled": true,
       "blocks": {
         "6d5f751c-f61a-46fd-8c50-24d65aee71fe": {
           "type": "heading",
@@ -461,6 +460,7 @@
         "4d6e9dc2-6265-4137-be5f-3cd06db4dfba": {
           "type": "bottom-col-1",
           "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_1398.png",
             "prd": "reading-kit"
           }
         },
