@@ -1021,8 +1021,7 @@ $(document).ready(function () {
   });
 
   $('.creative_itemimg--cnts1').click(function () {
-    console.log('测试选择配件')
-    return
+  
     if ($(this).hasClass('nextaddon')) {
       //$(this).removeClass("addon");
     } else {
