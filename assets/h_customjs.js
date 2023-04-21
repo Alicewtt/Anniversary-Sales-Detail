@@ -573,7 +573,7 @@ $(document).ready(function () {
     });
   }
 
-// {% comment %} 张欢欢解决报错 {% endcomment %}
+  // {% comment %} 张欢欢解决报错 {% endcomment %}
 
   $('#myDivbb button').on('click', function () {
     $('.mezor__product-singlecnts').addClass('mazor__pluginin');
@@ -966,194 +966,194 @@ $(document).ready(function () {
     console.log(getall_id);
 
   });
-})
 
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  console.log($);
-  tabcontent = document.getElementsByClassName('tabcontent');
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = 'none';
-  }
-  tablinks = document.getElementsByClassName('tablinks');
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(' active', '');
-  }
 
-  if (document.getElementById(cityName) == null) {
-    console.log(evt, cityName);
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    console.log($);
+    tabcontent = document.getElementsByClassName('tabcontent');
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = 'none';
+    }
+    tablinks = document.getElementsByClassName('tablinks');
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(' active', '');
+    }
 
-    $('.' + cityName).css('display', 'block');
+    if (document.getElementById(cityName) == null) {
+      console.log(evt, cityName);
+
+      $('.' + cityName).css('display', 'block');
+      evt.currentTarget.className += ' active';
+    }
+    document.getElementById(cityName).style.display = 'block';
     evt.currentTarget.className += ' active';
   }
-  document.getElementById(cityName).style.display = 'block';
-  evt.currentTarget.className += ' active';
-}
 
-$('.quickcartheader').click(function () {
-  var getall_i = $(this).attr('id');
-  var getall_id = [];
-  var quantity = 1;
+  $('.quickcartheader').click(function () {
+    var getall_i = $(this).attr('id');
+    var getall_id = [];
+    var quantity = 1;
 
-  getall_id.push({
-    id: getall_i,
-    quantity: quantity,
-  });
-  console.log(getall_id);
-  let formData = {
-    items: getall_id,
-  };
-  fetch(window.Shopify.routes.root + 'cart/add.js', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(formData),
-  })
-    .then((response) => {
-      $('.mx2form').click();
-
-      window.location.href = '/cart';
+    getall_id.push({
+      id: getall_i,
+      quantity: quantity,
+    });
+    console.log(getall_id);
+    let formData = {
+      items: getall_id,
+    };
+    fetch(window.Shopify.routes.root + 'cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
     })
-    .catch((error) => {
-      alert('Something went wrong.Please try again later.');
-    });
-});
+      .then((response) => {
+        $('.mx2form').click();
 
-$('.creative_itemimg--cnts1').click(function () {
-  if ($(this).hasClass('nextaddon')) {
-    //$(this).removeClass("addon");
-  } else {
-    $('.creative_itemimg--cnts1').removeClass('nextaddon');
-    $(this).addClass('nextaddon');
-  }
-});
-$('.creative_itemimg--cnts2').click(function () {
-  if ($(this).hasClass('nextaddon2')) {
-    //$(this).removeClass("addon");
-  } else {
-    $('.creative_itemimg--cnts2').removeClass('nextaddon2');
-    $(this).addClass('nextaddon2');
-  }
-});
-// {% comment %} 产品页面第二个配件选择模块 {% endcomment %}
-$('.enaddtocart1').click(function () {
-  var getall_i = $('.nextaddon').attr('id');
-  var getall_id = [];
-  var quantity = 1;
-
-  getall_id.push({
-    id: getall_i,
-    quantity: quantity,
+        window.location.href = '/cart';
+      })
+      .catch((error) => {
+        alert('Something went wrong.Please try again later.');
+      });
   });
-  console.log(getall_id);
-  let formData = {
-    items: getall_id,
-  };
-  fetch(window.Shopify.routes.root + 'cart/add.js', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(formData),
-  })
-    .then((response) => { })
-    .catch((error) => {
-      alert('Something went wrong.Please try again later.');
-    });
-});
 
-$('.enaddtocart2').click(function () {
-  var getall_i = $('.nextaddon2').attr('id');
-  var getall_id = [];
-  var quantity = 1;
-
-  getall_id.push({
-    id: getall_i,
-    quantity: quantity,
+  $('.creative_itemimg--cnts1').click(function () {
+    if ($(this).hasClass('nextaddon')) {
+      //$(this).removeClass("addon");
+    } else {
+      $('.creative_itemimg--cnts1').removeClass('nextaddon');
+      $(this).addClass('nextaddon');
+    }
   });
-  console.log(getall_id);
-  let formData = {
-    items: getall_id,
-  };
-  fetch(window.Shopify.routes.root + 'cart/add.js', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(formData),
-  })
-    .then((response) => { })
-    .catch((error) => {
-      alert('Something went wrong.Please try again later.');
-    });
-});
+  $('.creative_itemimg--cnts2').click(function () {
+    if ($(this).hasClass('nextaddon2')) {
+      //$(this).removeClass("addon");
+    } else {
+      $('.creative_itemimg--cnts2').removeClass('nextaddon2');
+      $(this).addClass('nextaddon2');
+    }
+  });
+  // {% comment %} 产品页面第二个配件选择模块 {% endcomment %}
+  $('.enaddtocart1').click(function () {
+    var getall_i = $('.nextaddon').attr('id');
+    var getall_id = [];
+    var quantity = 1;
 
-$('.backtotop').click(function () {
-  if (!$('#myDivbb').length == 0) {
+    getall_id.push({
+      id: getall_i,
+      quantity: quantity,
+    });
+    console.log(getall_id);
+    let formData = {
+      items: getall_id,
+    };
+    fetch(window.Shopify.routes.root + 'cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => { })
+      .catch((error) => {
+        alert('Something went wrong.Please try again later.');
+      });
+  });
+
+  $('.enaddtocart2').click(function () {
+    var getall_i = $('.nextaddon2').attr('id');
+    var getall_id = [];
+    var quantity = 1;
+
+    getall_id.push({
+      id: getall_i,
+      quantity: quantity,
+    });
+    console.log(getall_id);
+    let formData = {
+      items: getall_id,
+    };
+    fetch(window.Shopify.routes.root + 'cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => { })
+      .catch((error) => {
+        alert('Something went wrong.Please try again later.');
+      });
+  });
+
+  $('.backtotop').click(function () {
+    if (!$('#myDivbb').length == 0) {
+      $('html, body').animate(
+        {
+          scrollTop: $('.mezor__product-3dpremium').offset().top,
+        },
+        2000
+      );
+    }
+  });
+  $('.bunowtemplate').click(function () {
+    var getall_i = $(this).attr('id');
+
+    var getall_id = [];
+    var quantity = 1;
+
+    getall_id.push({
+      id: getall_i,
+      quantity: quantity,
+    });
+
+    console.log(getall_id, $(this));
+    let formData = {
+      items: getall_id,
+    };
+    fetch(window.Shopify.routes.root + 'cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => { })
+      .catch((error) => {
+        alert('Something went wrong.Please try again later.');
+      });
+  });
+  $('.scroll-to-section').click(function () {
+    if (!$('#myDivbBuynow').length == 0) {
+      $('html, body').animate(
+        {
+          scrollTop: $('.mezor__product-3dpremium').offset().top,
+        },
+        2000
+      );
+    }
+  });
+  $('.backtotopmobile').click(function () {
     $('html, body').animate(
       {
-        scrollTop: $('.mezor__product-3dpremium').offset().top,
+        scrollTop: $('.mezor__product-singleimg').offset().top,
       },
       2000
     );
-  }
-});
-$('.bunowtemplate').click(function () {
-  var getall_i = $(this).attr('id');
-
-  var getall_id = [];
-  var quantity = 1;
-
-  getall_id.push({
-    id: getall_i,
-    quantity: quantity,
   });
-
-  console.log(getall_id, $(this));
-  let formData = {
-    items: getall_id,
-  };
-  fetch(window.Shopify.routes.root + 'cart/add.js', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(formData),
-  })
-    .then((response) => { })
-    .catch((error) => {
-      alert('Something went wrong.Please try again later.');
-    });
-});
-$('.scroll-to-section').click(function () {
-  if (!$('#myDivbBuynow').length == 0) {
+  $('.backtotopcart').click(function () {
     $('html, body').animate(
       {
-        scrollTop: $('.mezor__product-3dpremium').offset().top,
+        scrollTop: $('#atharva_minicart_count').offset().top,
       },
       2000
     );
-  }
-});
-$('.backtotopmobile').click(function () {
-  $('html, body').animate(
-    {
-      scrollTop: $('.mezor__product-singleimg').offset().top,
-    },
-    2000
-  );
-});
-$('.backtotopcart').click(function () {
-  $('html, body').animate(
-    {
-      scrollTop: $('#atharva_minicart_count').offset().top,
-    },
-    2000
-  );
-});
+  });
 
-$(document).ready(function () {
+
   function selectThumb() {
     $('#carousel-thumbs .thumb, #QWcarousel-thumbs .thumb').click(function () {
       $('#carousel-thumbs .thumb, #QWcarousel-thumbs .thumb').removeClass('selected');
