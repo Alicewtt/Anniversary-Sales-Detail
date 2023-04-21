@@ -127,8 +127,77 @@
         "url1": "https:\/\/www.youtube.com\/embed\/ZXF06BcS81Q"
       }
     },
+    "a547e6ce-0aa1-47fb-ac3d-539a799d3f8b": {
+      "type": "mg-enhance__section",
+      "blocks": {
+        "6d5f751c-f61a-46fd-8c50-24d65aee71fe": {
+          "type": "heading",
+          "settings": {
+            "text": "Top Pick Accessories"
+          }
+        },
+        "ce70f680-2302-4190-ab69-346d3ecb841e": {
+          "type": "heading",
+          "settings": {
+            "text": "NeoFunction"
+          }
+        },
+        "8c5a619a-39df-4720-9cca-cfa17ea0e2b9": {
+          "type": "heading",
+          "settings": {
+            "text": "NeoLook"
+          }
+        },
+        "4d6e9dc2-6265-4137-be5f-3cd06db4dfba": {
+          "type": "bottom-col-1",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_1398.png",
+            "prd": "reading-kit"
+          }
+        },
+        "f6170fdb-8532-48a7-a7cd-c0490ccd4199": {
+          "type": "bottom-col-1",
+          "settings": {
+            "prd": "drafting-kit"
+          }
+        },
+        "3f831cb3-278a-4b14-8c67-d60ecce749b8": {
+          "type": "bottom-col-1",
+          "settings": {
+            "prd": "caliper-kit"
+          }
+        },
+        "68b68bf9-cd94-4953-9cfb-d40a5ba1363e": {
+          "type": "bottom-col-2",
+          "settings": {
+            "prd": "neoprotection-folio"
+          }
+        },
+        "e29b3f97-f0f3-4acb-a2bd-9b9ffe164367": {
+          "type": "bottom-col-2",
+          "settings": {
+            "prd": "neocollection-case"
+          }
+        }
+      },
+      "block_order": [
+        "6d5f751c-f61a-46fd-8c50-24d65aee71fe",
+        "ce70f680-2302-4190-ab69-346d3ecb841e",
+        "8c5a619a-39df-4720-9cca-cfa17ea0e2b9",
+        "4d6e9dc2-6265-4137-be5f-3cd06db4dfba",
+        "f6170fdb-8532-48a7-a7cd-c0490ccd4199",
+        "3f831cb3-278a-4b14-8c67-d60ecce749b8",
+        "68b68bf9-cd94-4953-9cfb-d40a5ba1363e",
+        "e29b3f97-f0f3-4acb-a2bd-9b9ffe164367"
+      ],
+      "settings": {
+        "text1": "Top Pick Accessories",
+        "text2": "Modular Design for Every Possibility"
+      }
+    },
     "bd2b18a2-df25-496a-95dc-5841578c4242": {
       "type": "h-product-template-buy-now-1",
+      "disabled": true,
       "blocks": {
         "867c1d3e-ffd0-470c-b4d1-b218fb7bba6a": {
           "type": "first",
@@ -435,75 +504,6 @@
         "Button_title": "",
         "button_url": ""
       }
-    },
-    "a547e6ce-0aa1-47fb-ac3d-539a799d3f8b": {
-      "type": "mg-enhance__section",
-      "disabled": true,
-      "blocks": {
-        "6d5f751c-f61a-46fd-8c50-24d65aee71fe": {
-          "type": "heading",
-          "settings": {
-            "text": "Top Pick Accessories"
-          }
-        },
-        "ce70f680-2302-4190-ab69-346d3ecb841e": {
-          "type": "heading",
-          "settings": {
-            "text": "NeoFunction"
-          }
-        },
-        "8c5a619a-39df-4720-9cca-cfa17ea0e2b9": {
-          "type": "heading",
-          "settings": {
-            "text": "NeoLook"
-          }
-        },
-        "4d6e9dc2-6265-4137-be5f-3cd06db4dfba": {
-          "type": "bottom-col-1",
-          "settings": {
-            "img": "shopify:\/\/shop_images\/Frame_1398.png",
-            "prd": "reading-kit"
-          }
-        },
-        "f6170fdb-8532-48a7-a7cd-c0490ccd4199": {
-          "type": "bottom-col-1",
-          "settings": {
-            "prd": "drafting-kit"
-          }
-        },
-        "3f831cb3-278a-4b14-8c67-d60ecce749b8": {
-          "type": "bottom-col-1",
-          "settings": {
-            "prd": "caliper-kit"
-          }
-        },
-        "68b68bf9-cd94-4953-9cfb-d40a5ba1363e": {
-          "type": "bottom-col-2",
-          "settings": {
-            "prd": "neoprotection-folio"
-          }
-        },
-        "e29b3f97-f0f3-4acb-a2bd-9b9ffe164367": {
-          "type": "bottom-col-2",
-          "settings": {
-            "prd": "neocollection-case"
-          }
-        }
-      },
-      "block_order": [
-        "6d5f751c-f61a-46fd-8c50-24d65aee71fe",
-        "ce70f680-2302-4190-ab69-346d3ecb841e",
-        "8c5a619a-39df-4720-9cca-cfa17ea0e2b9",
-        "4d6e9dc2-6265-4137-be5f-3cd06db4dfba",
-        "f6170fdb-8532-48a7-a7cd-c0490ccd4199",
-        "3f831cb3-278a-4b14-8c67-d60ecce749b8",
-        "68b68bf9-cd94-4953-9cfb-d40a5ba1363e",
-        "e29b3f97-f0f3-4acb-a2bd-9b9ffe164367"
-      ],
-      "settings": {
-        "text1": "Top Pick Accessories",
-        "text2": "Modular Design for Every Possibility"
-      }
     }
   },
   "order": [
@@ -515,6 +515,7 @@
     "h-neo_ks_lp_new_1",
     "h-neo_ks_lp_new_2",
     "4a3f0dc4-547c-42b7-a8b7-116cfef6acd4",
+    "a547e6ce-0aa1-47fb-ac3d-539a799d3f8b",
     "bd2b18a2-df25-496a-95dc-5841578c4242",
     "h-neo_ks_lp_new_3",
     "h-neo_ks_lp_new_4",
@@ -526,7 +527,6 @@
     "h-video-review",
     "072ab0c0-4616-480a-a410-c13564d9d6ff",
     "ea25da0d-592b-4eaf-81d7-e0af65345550",
-    "2ac9996c-1e1e-4d1d-9f89-966d83465677",
-    "a547e6ce-0aa1-47fb-ac3d-539a799d3f8b"
+    "2ac9996c-1e1e-4d1d-9f89-966d83465677"
   ]
 }
