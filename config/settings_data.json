@@ -3409,19 +3409,6 @@
       "a228a1a4-9aca-4f2f-8613-81f704f7276c": {
         "type": "huanhuan-slider",
         "blocks": {
-          "242a6d96-ac35-4641-a720-2bc565e9658b": {
-            "type": "image",
-            "disabled": true,
-            "settings": {
-              "isShowContent": "true",
-              "item_image_1_1": "shopify:\/\/shop_images\/Frame_831.jpg",
-              "item_image_1_2": "shopify:\/\/shop_images\/1_6.jpg",
-              "item_image_1_3": "shopify:\/\/shop_images\/Group_1146.png",
-              "quan_url": "https:\/\/hozodesign.com\/collections\/all",
-              "url": "https:\/\/hozodesign.com\/collections\/all",
-              "btn_url": "https:\/\/hozodesign.com\/collections\/all"
-            }
-          },
           "ee67688f-e65d-4297-85c3-47e8120b2d4a": {
             "type": "image",
             "settings": {
@@ -3430,17 +3417,6 @@
               "item_image_1_2": "shopify:\/\/shop_images\/easter_shouji.jpg",
               "quan_url": "",
               "url": "https:\/\/hozodesign.com\/collections\/all",
-              "btn_url": ""
-            }
-          },
-          "a94ccfd1-687d-4c5b-aea4-c2b0abc87259": {
-            "type": "image",
-            "settings": {
-              "isShowContent": "false",
-              "item_image_1_1": "shopify:\/\/shop_images\/Frame_1439.png",
-              "item_image_1_2": "shopify:\/\/shop_images\/Frame_1441.png",
-              "quan_url": "",
-              "url": "https:\/\/hozodesign.com\/products\/neoruler",
               "btn_url": ""
             }
           },
@@ -3454,13 +3430,23 @@
               "url": "https:\/\/hozodesign.com\/products\/meazor3d",
               "btn_url": ""
             }
+          },
+          "14c0e8b0-0163-416c-9c47-6d8d8942b05e": {
+            "type": "image",
+            "settings": {
+              "isShowContent": "true",
+              "item_image_1_1": "shopify:\/\/shop_images\/Frame_1440.png",
+              "item_image_1_2": "shopify:\/\/shop_images\/Frame_1442.png",
+              "quan_url": "",
+              "url": "https:\/\/hozodesign.com\/products\/meazor3d",
+              "btn_url": ""
+            }
           }
         },
         "block_order": [
-          "242a6d96-ac35-4641-a720-2bc565e9658b",
           "ee67688f-e65d-4297-85c3-47e8120b2d4a",
-          "a94ccfd1-687d-4c5b-aea4-c2b0abc87259",
-          "4e6eada5-fe2f-4356-860a-7fa40d834010"
+          "4e6eada5-fe2f-4356-860a-7fa40d834010",
+          "14c0e8b0-0163-416c-9c47-6d8d8942b05e"
         ],
         "settings": {
         }
