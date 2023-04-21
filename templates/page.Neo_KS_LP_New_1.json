@@ -419,6 +419,78 @@
         "Button_title": "",
         "button_url": ""
       }
+    },
+    "84e9b002-0480-4cff-ab20-274d026b68ce": {
+      "type": "mg-enhance__section",
+      "blocks": {
+        "abd106c5-55e3-4077-a1b5-d5ceefae482a": {
+          "type": "heading",
+          "settings": {
+            "text": "Modular Design for Every Possibility"
+          }
+        },
+        "3958b0f3-8fef-4996-bf96-50bcdbddcd0a": {
+          "type": "heading",
+          "settings": {
+            "text": "NeoFunction"
+          }
+        },
+        "6f40bcf8-6dbf-49af-bc43-38484a861d91": {
+          "type": "heading",
+          "settings": {
+            "text": "NeoLook"
+          }
+        },
+        "db6cdf21-ca6a-4b3c-b161-86b2b5cf51ec": {
+          "type": "bottom-col-1",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_1398.png",
+            "prd": "caliper-kit"
+          }
+        },
+        "bca1e28c-b9eb-49eb-971c-224f8ecb82f9": {
+          "type": "bottom-col-1",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_1472.png",
+            "prd": "drafting-kit"
+          }
+        },
+        "bb2c5fd0-95f6-459a-8499-0aad6926c028": {
+          "type": "bottom-col-1",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_1481.png",
+            "prd": "reading-kit"
+          }
+        },
+        "eea47404-a1c3-4c4e-b5e7-749895c5fd8f": {
+          "type": "bottom-col-2",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/neoruler_6.png",
+            "prd": "neoprotection-folio"
+          }
+        },
+        "194895c3-450e-42c4-a9c9-9a91bd441d9a": {
+          "type": "bottom-col-2",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/neoruler_2.png",
+            "prd": "neocollection-case"
+          }
+        }
+      },
+      "block_order": [
+        "abd106c5-55e3-4077-a1b5-d5ceefae482a",
+        "3958b0f3-8fef-4996-bf96-50bcdbddcd0a",
+        "6f40bcf8-6dbf-49af-bc43-38484a861d91",
+        "db6cdf21-ca6a-4b3c-b161-86b2b5cf51ec",
+        "bca1e28c-b9eb-49eb-971c-224f8ecb82f9",
+        "bb2c5fd0-95f6-459a-8499-0aad6926c028",
+        "eea47404-a1c3-4c4e-b5e7-749895c5fd8f",
+        "194895c3-450e-42c4-a9c9-9a91bd441d9a"
+      ],
+      "settings": {
+        "text1": "",
+        "text2": ""
+      }
     }
   },
   "order": [
@@ -442,6 +514,7 @@
     "h-video-review",
     "072ab0c0-4616-480a-a410-c13564d9d6ff",
     "ef01a681-8dad-413e-aba7-776a34cc8909",
-    "7082cffd-a0a7-4e64-b813-4ea745a631a4"
+    "7082cffd-a0a7-4e64-b813-4ea745a631a4",
+    "84e9b002-0480-4cff-ab20-274d026b68ce"
   ]
 }
