@@ -1108,6 +1108,7 @@
   });
   $('.bunowtemplate').click(function () {
     var getall_i = $(this).attr('id');
+    
     var getall_id = [];
     var quantity = 1;
 
@@ -1115,7 +1116,7 @@
       id: getall_i,
       quantity: quantity,
     });
-    console.log(getall_id);
+    console.log(getall_id,$(this));
     let formData = {
       items: getall_id,
     };
