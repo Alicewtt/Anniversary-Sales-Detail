@@ -1174,7 +1174,7 @@
     $('.QWButton').click(function () {
       var getProduct = $(this).data('product');
       var proVariant = $(this).data('variable');
-
+      console.log('调试-==》',$(this))
       // var mainTemplate = '<div class="carousel-inner"></div></div>'
       jQuery.getJSON(window.Shopify.routes.root + 'products/' + getProduct + '.js', function (product) {
         var lines = product.description.split('<br>');
