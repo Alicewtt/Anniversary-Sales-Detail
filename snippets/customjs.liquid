@@ -639,7 +639,10 @@
     margin:10,
     items:1,
     dots:true,
-    URLhashListener:true
+    URLhashListener:true,
+    afterMove: function() {
+      console.log('Moved!');
+    }
   })
 
   $('.creative_itemsimg').owlCarousel({
