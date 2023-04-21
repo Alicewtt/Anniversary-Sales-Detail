@@ -3430,23 +3430,11 @@
               "url": "https:\/\/hozodesign.com\/products\/meazor3d",
               "btn_url": ""
             }
-          },
-          "14c0e8b0-0163-416c-9c47-6d8d8942b05e": {
-            "type": "image",
-            "settings": {
-              "isShowContent": "true",
-              "item_image_1_1": "shopify:\/\/shop_images\/Frame_1440.png",
-              "item_image_1_2": "shopify:\/\/shop_images\/Frame_1442.png",
-              "quan_url": "",
-              "url": "https:\/\/hozodesign.com\/products\/meazor3d",
-              "btn_url": ""
-            }
           }
         },
         "block_order": [
           "ee67688f-e65d-4297-85c3-47e8120b2d4a",
-          "4e6eada5-fe2f-4356-860a-7fa40d834010",
-          "14c0e8b0-0163-416c-9c47-6d8d8942b05e"
+          "4e6eada5-fe2f-4356-860a-7fa40d834010"
         ],
         "settings": {
         }
