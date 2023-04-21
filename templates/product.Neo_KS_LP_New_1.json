@@ -438,6 +438,7 @@
     },
     "a547e6ce-0aa1-47fb-ac3d-539a799d3f8b": {
       "type": "mg-enhance__section",
+      "disabled": true,
       "blocks": {
         "6d5f751c-f61a-46fd-8c50-24d65aee71fe": {
           "type": "heading",
