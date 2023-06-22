@@ -1185,15 +1185,6 @@
           "out_of_stock": "在庫切れ"
         }
       },
-      "vendor": {
-        "label": "ブランド"
-      },
-      "price": {
-        "label": "価格"
-      },
-      "product_type": {
-        "label": "製品タイプ"
-      },
       "boolean": {
         "true_label": "はい",
         "false_label": "いいえ"

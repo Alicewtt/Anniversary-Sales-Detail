@@ -1359,15 +1359,6 @@
           "out_of_stock": "품절"
         }
       },
-      "vendor": {
-        "label": "상표"
-      },
-      "price": {
-        "label": "가격"
-      },
-      "product_type": {
-        "label": "상품 유형"
-      },
       "boolean": {
         "true_label": "예",
         "false_label": "아니"

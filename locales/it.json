@@ -1569,13 +1569,9 @@
     },
     "filters": {
       "availability": {
-        "label": "Disponibilità",
         "value": {
           "in_stock": "disponibile"
         }
-      },
-      "tags": {
-        "label": "Più filtri"
       }
     },
     "page_titles": {
